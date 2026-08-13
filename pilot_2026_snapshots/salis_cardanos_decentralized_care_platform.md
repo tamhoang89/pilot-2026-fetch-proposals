@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 21
+- **Revision:** 31
 - **Proposer:** `stake1u996wjw2a9sqjd2k3c7mddv8330xmaan3axy4xst3zk9njsnmcn6e`
 - **Funding requested:** ₳125,000
-- **Last finalized:** 2026-08-12T18:07:28.610000+00:00
+- **Last finalized:** 2026-08-13T16:25:20.275000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -18,7 +18,7 @@ TRL 7 - System prototype demonstrated in operational environment
 
 SALIS is independently founded and led by Amber Morris, who has directed the project from concept through development of a live Cardano-native Decentralized Care Platform. As a solopreneur, I lead product strategy, platform architecture, user experience, Smart Booking Contract design, provider research, business planning, outreach, and ecosystem development.
 
-SALIS has been primarily self-funded and already operates with provider discovery, provider-owned care profiles, onboarding workflows, CIP-30 wallet connectivity, and non-custodial Smart Booking Contracts on Cardano mainnet.
+SALIS has been primarily self-funded and already operates with provider discovery, provider-owned care profiles, onboarding workflows, CIP-30 wallet connectivity, and non-custodial Smart Booking Contract infrastructure configured for Cardano mainnet.
 
 This existing production foundation provides the environment for implementing and validating the proposed CIP-0170 Verifiable Provider Authority integration. I will continue leading product direction, provider onboarding, adoption, and delivery while engaging specialized development and technical expertise for implementation, security, and KERI/CIP-0170 integration work.
 
@@ -35,11 +35,11 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-SALIS will generate genuine CIP-0170 usage through independent providers who voluntarily claim or create profiles and elect to establish Verifiable Provider Authority. SALIS currently has approximately 250 seeded, unclaimed provider profiles forming an identified outreach pool; these are prospects, not counted adoption.
+SALIS currently has approximately 250 seeded, unclaimed provider profiles demonstrating an established provider acquisition pipeline. These are prospects, not users or counted adoption, and SALIS will continue researching and adding prospective providers during the adoption period.
 
-Qualifying activity includes provider-authority attestations and optional CIP-0170 attestations included within genuine booking-confirmation transactions. The latter uses the existing booking transaction rather than generating a second transaction solely for adoption.
+The 500-transaction target is based on a planning model rather than guaranteed user behavior. Across the existing prospect pool and continued provider acquisition, the model assumes approximately 100 external providers voluntarily become active and average five qualifying CIP-0170 transactions. Activity may include an initial provider-authority attestation and subsequent attestations associated with genuine booking confirmations. Actual participation and frequency depend on independent provider choices and platform use.
 
-The 500-transaction/100 ADA target assumes an average qualifying network fee of approximately 0.20 ADA across legitimate authority and booking-attestation activity. Seeded profiles, SALIS-controlled wallets, testing, and transactions created solely to increase metrics will not count. Only qualifying activity independently initiated by external users will be measured.
+The modeled path is direct outreach → profile claim/create → optional authority activation → normal SALIS booking activity. Seeded listings, SALIS-controlled wallets, testing, and transactions created solely to increase metrics will not count. Only independently initiated qualifying external-user activity will be measured.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -63,13 +63,15 @@ SALIS combines Provider-Owned Profiles, Smart Booking Contracts, and non-custodi
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-SALIS is a live Cardano-native decentralized care platform operating in a production environment on Cardano mainnet. The platform supports provider discovery, provider-owned care profiles, CIP-30 wallet connectivity, Smart Booking Contracts, and non-custodial ADA escrow using an Aiken-compiled Plutus V3 validator.
+SALIS is a live decentralized care platform deployed in a production environment. The existing product supports provider discovery, provider-owned care profiles, onboarding workflows, CIP-30 wallet connectivity, and an Aiken-compiled Plutus V3 Smart Booking Contract configured for Cardano mainnet.
 
-Real booking transactions can be completed through the production platform, with separate development and production environments supporting continued improvements. The existing platform provides the operational foundation for deploying and validating additional Cardano-native capabilities, including the proposed CIP-0170 Verifiable Provider Authority integration.
+The existing production platform constitutes the pre-Catalyst baseline and will be recorded before funded development begins. It excludes CIP-0170 provider authority, KERI verification, and CIP-0170 booking attestations. Those capabilities are the proposed integration and are separately assessed at TRL 4.
+
+The production platform at [https://www.salis.care/ ](https://www.salis.care/)and supporting technical documentation provide evidence of the existing operational product.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-SALIS already operates on Cardano mainnet using CIP-30 wallet connectivity, Lucid transaction construction, Koios and Blockfrost blockchain services, and an Aiken-compiled Plutus V3 validator for non-custodial ADA Smart Booking Contract escrow. Funds remain under smart-contract control until booking settlement conditions are met.
+SALIS’s existing production architecture is configured for Cardano mainnet using CIP-30 wallet connectivity, Lucid transaction construction, Koios and Blockfrost blockchain services, and an Aiken-compiled Plutus V3 validator for non-custodial ADA Smart Booking Contract escrow. Funds remain under smart-contract control until booking settlement conditions are met.
 
 The proposed CIP-0170 Verifiable Provider Authority integration adds a separate identity and authority layer without replacing or disrupting the existing booking architecture. Participating providers will associate a KERI Autonomic Identifier (AID) with their SALIS profile and use CIP-0170 transaction metadata to anchor privacy-safe attestations of profile authority.
 
@@ -137,9 +139,11 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Catalyst funding will enable SALIS to implement and deploy CIP-0170 Verifiable Provider Authority within its existing Cardano mainnet platform. Without funding, SALIS will continue operating through its existing Smart Booking Contracts, while this additional authority layer would remain a longer-term development priority.
+Catalyst funding will enable SALIS to implement and deploy CIP-0170 Verifiable Provider Authority. SALIS’s existing booking platform, wallet integration, and Smart Booking Contract are pre-existing infrastructure and excluded from funded delivery.
 
-Funding will support specialized development, KERI/CIP-0170 integration, the off-chain verifier, provider authority workflows, privacy and security review, testing, feature-flagged deployment, documentation, and mainnet validation. It will also support provider onboarding and outreach needed to introduce the optional integration to external users and measure genuine adoption.
+The new integration will be tracked as SALIS-CIP170-PABA using a dedicated feature namespace, feature flag, release tags, metadata schema, tests, and deployment evidence. A pre-development baseline will distinguish existing SALIS functionality from Catalyst-funded additions.
+
+Funding supports KERI/CIP-0170 integration, verification, provider-authority workflows, security review, testing, deployment, documentation, and mainnet validation. New transaction and deployment evidence will be documented at milestones.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -183,7 +187,7 @@ Yes
 
 SALIS is a live Cardano-native decentralized care platform connecting people seeking self-pay care directly with independent providers. It reduces reliance on centralized directories, booking services, and payment processors while expanding Cardano utility into everyday care.
 
-SALIS already uses Cardano mainnet, CIP-30 wallets, and Smart Booking Contracts for transparent booking agreements and non-custodial ADA payment workflows. However, while a wallet signature proves control of a wallet, it does not independently prove that the person controlling it has authority to act for the provider or institution represented by a SALIS profile.
+SALIS integrates Cardano infrastructure, CIP-30 wallets, and Smart Booking Contracts configured for Cardano mainnet for transparent booking agreements and non-custodial ADA payment workflows. However, while a wallet signature proves control of a wallet, it does not independently prove that the person controlling it has authority to act for the provider or institution represented by a SALIS profile.
 
 This proposal adds **Verifiable Provider Authority using CIP-0170**. Participating providers will be able to use KERI-backed Cardano attestations to establish verifiable authority over public profiles and optional care-agreement confirmation attestations. The architecture also establishes a foundation for future institutional authority workflows.
 
@@ -238,4 +242,4 @@ The proposed CIP-0170 Verifiable Provider Authority integration is currently at 
 
 Participating providers will associate a KERI identifier with their SALIS profile and use CIP-0170 metadata to attest profile authority. Verification will occur off-chain, while sensitive member, care, and credential information remains off-chain.
 
-SALIS already operates its booking infrastructure on Cardano mainnet. The next stage is implementing and validating the CIP-0170 verifier and provider-authority workflow before progressive production deployment behind feature flags.
+SALIS’s existing booking infrastructure is configured for Cardano mainnet. The next stage is implementing and validating the CIP-0170 verifier and provider-authority workflow before progressive production deployment behind feature flags.

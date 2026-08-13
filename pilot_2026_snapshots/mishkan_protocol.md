@@ -5,14 +5,14 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 7
+- **Revision:** 10
 - **Proposer:** `stake1uxd9qla44kaftahx8r8z4q5lgyn0lcd8n7uytpjntdcph3qlgneay`
 - **Funding requested:** ₳100,000
-- **Last finalized:** 2026-08-12T20:01:35.937000+00:00
+- **Last finalized:** 2026-08-13T15:38:20.837000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
-TRL 7 - System prototype demonstrated in operational environment
+TRL 6 - Technology demonstrated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
@@ -42,11 +42,13 @@ Frequency: claims run on a rolling weekly onboarding schedule across the full pi
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-rimary channel is direct outreach into existing token-holder communities already active on Discord/Telegram for supported chains — starting with communities adjacent to Poloos Council's existing user base, who already understand and use the exact workflow (docket, submit, vote, archive) Mishkan Protocol generalizes. That gives a warm first cohort rather than a cold launch.
+Current base: Poloos Council has approximately 50 wallets today. Reaching 150 can't come from Poloos alone — the target splits across two channels with different, realistic conversion assumptions.
 
-Beyond that: Cardano Catalyst itself is an onboarding channel — its proposer and voter community is a natural first Cardano user base already fluent in on-chain governance. We'll also list in ecosystem directories (Gitcoin, chain-specific grant directories) once live on each chain, since public-goods-focused users specifically search those for this category of tool.
+Poloos crossover: \~30% of the existing 50-wallet base (about 15 members) are expected to self-claim on Cardano — conservative, since a new wallet is real friction and not everyone will bother.
 
-Evidence backing this: Snapshot and Tally reported user growth between 35–45% between 2023 and 2025, reflecting adoption that came from DAOs choosing them once a credible community used them, not paid acquisition
+Primary channel: the remaining \~135 come from Cardano Catalyst's own proposer/voter community and broader outreach — users already holding Cardano wallets and already fluent in on-chain governance, removing wallet-setup friction entirely. This channel does most of the work, not Poloos crossover, which is why the target isn't capped near 50.
+
+Evidence: Snapshot and Tally's growth came from users already active in a given ecosystem adopting a new tool, not cross-ecosystem migration — the same pattern applies here.
 
 ### Is the underlying project open source?
 
@@ -60,17 +62,18 @@ Mishkan Protocol wins on two fronts: (1) it is chain-agnostic by architecture, v
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-Mishkan Protocol's core workflow — docket, submit, vote, archive, petitions — is live today, generalized from Poloos Council, an existing functioning token-gated governance app. Working EVM support (BNB Chain testnet, Ethereum Sepolia) is deployed, with Supabase-backed state and a live public interface.
+TRL6— deployed and working on a public testnet, or live in another ecosystem, under realistic conditions. Mishkan Protocol's core workflow — docket, submit, vote, archive, petitions — is live and working today in another ecosystem: EVM, with working deployments on BNB Chain testnet and Ethereum Sepolia, real wallets connecting, real balance checks gating votes, and the docket/archive cycle running end-to-end under realistic conditions.
 
-Real wallets connect, real balance checks gate voting, and the docket/archive cycle runs end-to-end today, on EVM chains. This does not yet qualify as complete and qualified (TRL 8): chain coverage is EVM-only, multi-instance hosting isn't built, and no security audit has been performed. The core pattern is proven; broadening chain coverage and hardening it is the remaining work.
+no Cardano code exists yet; that is precisely the work this grant funds. TRL6 is the accurate description: proven under realistic conditions elsewhere, not yet demonstrated on Cardano at all.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-Mishkan Protocol's architecture separates the application from any single chain via a ChainAdapter interface: connectWallet(), getBalance(), signVote(), and isEligible() are implemented once per chain, while the docket, voting UI, archive, and petitions logic stay chain-agnostic. An EVM adapter already covers BNB Chain and Ethereum through this pattern.
 
-For Cardano, a new adapter implements the same interface using CIP-30 for wallet connection and Blockfrost/Koios to read CIP-0113 programmable-token balances at vote time — this verifies a wallet holds the community's governance token and is eligible to vote. Voting stays gasless: a signed message off-chain (mirroring the EVM pattern), not an on-chain transaction, so casting a vote costs nothing.
+Mishkan Protocol separates the app from any single chain via a ChainAdapter interface (connectWallet, getBalance, signVote, isEligible), implemented once per chain. An EVM adapter already covers BNB Chain and Ethereum; Cardano gets its own adapter using CIP-30 for wallet connection and Blockfrost/Koios to read CIP-0113 balances.
 
-This fits CIP-0113 specifically because programmable tokens are designed to carry exactly this kind of policy-enforced, verifiable balance — well suited as the eligibility signal for one-holder-one-vote governance. On-chain identity (CIP-0170) is the natural next layer: strengthening "one holder" against a single person controlling multiple wallets, which balance-checking alone can't solve. Application state stays off-chain in Supabase; only eligibility verification touches the chain
+How CIP-0113 actually produces counted transactions: the governance token is minted once under a declared policy ID at council setup (a mint under the policy — team-paid, excluded from the counted target per §5.2). Each pilot member's "Join Council" self-claim is a **transfer** under that same declared policy — moving the token from a claim/distribution UTXO to the member's own wallet, initiated and fee-paid by the member's wallet, not the team's. This matches the Standard directly: "fees paid by mints, transfers, and rule updates under your declared policy" — our counted fees are transfers under the declared policy ID, run by the member, not the team.
+
+Voting itself stays a signed message off-chain (gasless, no transaction, no counted fee) — only the self-claim transfer touches the chain and counts toward the target.
 
 ### Fits the timeline
 
@@ -124,11 +127,17 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Without this funding, Cardano support doesn't happen on any near-term timeline — as a solo founder chain expansion only gets built where there's dedicated time or funding attached to it, and Cardano currently has neither.
+100,000 ADA, tied directly to the M1/M2 deliverables already declared:
 
-This grant would fund: (1) building and testing the Cardano ChainAdapter (CIP-30 wallet connection, CIP-0113 balance reads via Blockfrost/Koios) on preprod testnet; (2) integrating CIP-0170 identity as a second eligibility signal; (3) documentation and a working demo Council so Cardano-native communities can self-deploy without custom support.
+- Development — Cardano ChainAdapter, CIP-30 wallet connect, CIP-0113 balance reads, self-claim flow: 45,000 ADA (45%)
+- Testing & QA — preprod validation, test evidence bundle, bug log: 15,000 ADA (15%)
+- Mainnet deployment — one-time registry/policy setup transaction, deployment: 5,000 ADA (5%)
+- Infrastructure — Blockfrost/Koios API, hosting across the adoption phase: 10,000 ADA (10%)
+- Documentation — README, release notes, self-deploy guide: 5,000 ADA (5%)
+- Community onboarding & outreach — Poloos/Catalyst outreach, Demo Day prep and video: 15,000 ADA (15%)
+- Reporting & project management across the 4-month program: 5,000 ADA (5%)
 
-At a high level, spend is founder development time plus Blockfrost/Koios API and testnet operating costs .
+Without this funding, none of this happens on a defined timeline.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
