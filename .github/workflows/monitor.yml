@@ -25,7 +25,7 @@ jobs:
         run: pip install requests
 
       - name: Run fetch script
-        run: python fetch_proposals/fetch_proposals.py
+        run: python fetch_proposals.py
 
       - name: Commit and push if there are changes
         run: |
