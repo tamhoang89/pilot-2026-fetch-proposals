@@ -1,24 +1,17 @@
 #!/usr/bin/env python3
 """
-Catalyst Proposal Fetcher
+Catalyst Pilot Proposal Fetcher
 ==========================
-Crawl proposals của 1 campaign trên Project Catalyst, parse thành markdown
-chuẩn. KHÔNG tự commit git - việc đó do GitHub Actions (hoặc bạn) làm sau
-khi script chạy xong. Script chỉ có nhiệm vụ: fetch -> ghi file.
-
-Cấu trúc thư mục kỳ vọng (repo root):
-    fetch_proposals.py       <- file này, đặt ngay tại repo root
-    pilot_2026_snapshots/
-        index.json            <- map proposal_id -> tên file hiện tại
-        <ten-du-an>.json       <- snapshot JSON gốc (để so sánh lần sau)
-        <ten-du-an>.md         <- bản markdown đã format
+Crawl proposals của 1 campaign trên Project Catalyst, parse thành markdown chuẩn.
 
 Cách dùng:
     pip install requests --break-system-packages
     python3 fetch_proposals.py
 """
 
+import html
 import json
+import os
 import re
 from datetime import datetime, timezone
 from pathlib import Path
@@ -32,6 +25,14 @@ BASE_URL = "https://app.projectcatalyst.io/v1"
 REPO_ROOT = Path(__file__).resolve().parent
 STATE_DIR = REPO_ROOT / "pilot_2026_snapshots"
 INDEX_FILE = STATE_DIR / "index.json"
+
+# Telegram: điền qua biến môi trường (secrets trên GitHub Actions), không hard-code ở đây
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
+# GITHUB_REPOSITORY tự có sẵn khi chạy trong GitHub Actions (dạng "user/repo")
+GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY")
+TELEGRAM_FIELD_TRUNCATE = 250  # số ký tự tối đa hiển thị mỗi giá trị trước/sau
+TELEGRAM_MAX_FIELDS = 8  # số field tối đa liệt kê trong 1 tin nhắn
 # ===================================
 
 
@@ -157,6 +158,85 @@ def load_previous_snapshot(json_path: Path) -> dict | None:
     return None
 
 
+def truncate(text, length: int = TELEGRAM_FIELD_TRUNCATE) -> str:
+    text = str(text)
+    if len(text) <= length:
+        return text
+    return text[:length].rstrip() + "…"
+
+
+def diff_formdata(old_fd: dict, new_fd: dict, title_map: dict) -> list[tuple[str, str, str]]:
+    """So sánh formData cũ và mới, trả về list (tên câu hỏi, giá trị cũ, giá trị mới)
+    cho từng field có thay đổi."""
+    changes = []
+    all_keys = sorted(set(old_fd.keys()) | set(new_fd.keys()))
+    for key in all_keys:
+        old_val = old_fd.get(key)
+        new_val = new_fd.get(key)
+        if old_val == new_val:
+            continue
+        title = clean_title(title_map.get(key, key))
+        old_display = "(trống)" if old_val in (None, "", []) else truncate(old_val)
+        new_display = "(trống)" if new_val in (None, "", []) else truncate(new_val)
+        changes.append((title, old_display, new_display))
+    return changes
+
+
+def build_telegram_message(
+    proposal_title: str,
+    old_rev,
+    new_rev: int,
+    changes: list[tuple[str, str, str]],
+    slug: str,
+) -> str:
+    lines = [f"🔔 <b>{html.escape(proposal_title)}</b>"]
+    if old_rev is None:
+        lines.append("Proposal mới được phát hiện lần đầu.")
+    else:
+        lines.append(f"Revision {old_rev} → {new_rev}")
+        lines.append("")
+        for field_title, old_v, new_v in changes[:TELEGRAM_MAX_FIELDS]:
+            lines.append(f"• <b>{html.escape(field_title)}</b>")
+            lines.append(f"  Trước: {html.escape(old_v)}")
+            lines.append(f"  Sau: {html.escape(new_v)}")
+            lines.append("")
+        if len(changes) > TELEGRAM_MAX_FIELDS:
+            lines.append(f"…và {len(changes) - TELEGRAM_MAX_FIELDS} mục khác thay đổi.")
+
+    if GITHUB_REPOSITORY:
+        lines.append("")
+        lines.append(
+            f"🔗 Xem đầy đủ: https://github.com/{GITHUB_REPOSITORY}"
+            f"/blob/main/pilot_2026_snapshots/{slug}.md"
+        )
+
+    message = "\n".join(lines)
+    if len(message) > 4000:  # Telegram giới hạn 4096 ký tự / tin nhắn
+        message = message[:3950] + "\n\n…(rút gọn, xem link đầy đủ ở trên)"
+    return message
+
+
+def send_telegram(message: str):
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+        return  # chưa cấu hình Telegram -> bỏ qua lặng lẽ
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    try:
+        resp = requests.post(
+            url,
+            json={
+                "chat_id": TELEGRAM_CHAT_ID,
+                "text": message,
+                "parse_mode": "HTML",
+                "disable_web_page_preview": True,
+            },
+            timeout=15,
+        )
+        if not resp.ok:
+            print(f"[warn] Gửi Telegram thất bại: {resp.status_code} {resp.text}")
+    except requests.RequestException as e:
+        print(f"[warn] Lỗi khi gửi Telegram: {e}")
+
+
 def main():
     STATE_DIR.mkdir(exist_ok=True)
     index = load_index()  # proposal_id -> slug hiện tại
@@ -213,6 +293,13 @@ def main():
         )
         print(status)
         changed_summaries.append(status)
+
+        # Tính diff theo field (nếu đã có snapshot cũ) rồi gửi Telegram
+        changes = []
+        if prev is not None:
+            changes = diff_formdata(prev.get("formData", {}), detail.get("formData", {}), title_map)
+        message = build_telegram_message(title, prev_rev, new_rev, changes, new_slug)
+        send_telegram(message)
 
     save_index(index)
 
