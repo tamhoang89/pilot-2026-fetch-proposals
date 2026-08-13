@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 5
+- **Revision:** 15
 - **Proposer:** `stake1u8wlhvams7vckmfrrff7j7lyc9eaqwezx9cym5ln6pzxm3gta7m74`
 - **Funding requested:** ₳50,000
-- **Last finalized:** 2026-08-13T06:03:54.816000+00:00
+- **Last finalized:** 2026-08-13T17:57:39.223000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -46,17 +46,25 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-BetFi will generate genuine usage by integrating CIP 0113 programmable assets into our existing gaming ecosystem. Real users will interact with these assets through player access, tournament participation, membership and partner experiences. User initiated mints, transfers and rule interactions will create measurable Cardano activity.
+BetFi has an existing base of 390 registered accounts, including 276 unique connected Cardano wallets. Production records show 298 users have played real Poker and 74 have used the Sportsbook. In the last 30 days, 326 users logged into BetFi and 33 placed Sportsbook bets. We also have 479 completed ADA deposit transactions backed by unique on chain transaction hashes.
 
-We target 2,000 qualifying transactions and 350 ADA in network fees. During the first two weeks after mainnet launch, we will introduce the integration to existing BetFi users, VIP Table partners and Cardano communities through live gaming events, partner activations and social channels. Usage will continue through recurring Poker, Sportsbook, tournament and partner activity. We will track qualifying transactions, external wallets, fees and repeat usage.
+Our VIP Table network includes Risk Gaming, Melting Moons, Broker Punks, Bear Market Bulls, BankFi, Wojaks, Walkers Fit, Starforged Infinity and Hops on Cardano, providing existing community distribution channels.
+
+We target 150 to 200 external wallets for CIP 0113 adoption. Users will interact with programmable assets for player access, tournament participation, membership, achievements and partner experiences. During the first two weeks, we will launch through existing BetFi users, VIP partner events and community channels. Our 2,000 transaction target represents approximately 10 to 13 qualifying interactions per participating wallet across the measurement period. Users will initiate transactions and pay their own Cardano network fees. Team wallets and sponsored transactions will not count toward the target.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-BetFi already reaches users through our live Cardano platform, social channels, community events, ecosystem partnerships and VIP Table Ownership program. VIP partners can operate branded poker experiences and introduce their existing communities directly to BetFi.
+BetFi has 390 registered accounts, 276 unique connected Cardano wallets, 298 lifetime Poker players and 74 lifetime Sportsbook users, with 326 users logging in during the last 30 days.
 
-Our ChangeNOW integration creates another onboarding channel, allowing users from other blockchain ecosystems to convert supported assets into ADA and enter Cardano more easily.
+Our VIP Table model gives Web3 projects branded poker experiences they promote to their communities. Partners include Melting Moons, BankFi, Starforged Infinity, Broker Punks, Bear Market Bulls, Wojaks, Walkers Fit and Hops on Cardano.
 
-Poker, Sportsbook and upcoming Prediction Markets allow us to reach poker players, sports fans and Web3 communities. The new CIP 0113 functionality will be introduced directly into these existing user flows. We will measure new users, external wallets, qualifying transactions, partner referrals, network fees and repeat usage.
+Evidence:\
+Melting Moons: [https://x.com/MeltingMoons/status/2085925703162192052](https://x.com/MeltingMoons_/status/2085925703162192052)\
+VIP page: <https://betfi.poker/meltingmoons>\
+BankFi: <https://x.com/BankFiOfficial/status/2084710935617294584>\
+Starforged: <https://x.com/BetFicasino/status/2085406568494010699>
+
+We target 150 to 200 external CIP 0113 wallets. In the first two weeks after mainnet launch, we will activate existing users and partner communities through branded events, platform promotion and partner social channels.
 
 ### Is the underlying project open source?
 
@@ -68,11 +76,11 @@ BetFi competes with traditional poker and sportsbooks, crypto gaming platforms, 
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-BetFi is currently TRL 9. Our Poker and Sportsbook platform is live in production and used by real users within the Cardano ecosystem. Our team built the platform and Cardano infrastructure from the ground up, including wallet connectivity, deposits, withdrawals, poker cash games, Multi Table Tournaments, Sportsbook infrastructure, player accounts and administrative systems. The Catalyst Pilot is not funding the creation of BetFi. It will support a new CIP 0113 Programmable Token integration within our existing production platform, giving the new technology an immediate environment for deployment, testing and real user adoption.
+BetFi is currently TRL 9. Our Poker and Sportsbook platform is live in production and used by real users within the Cardano ecosystem. BetFi was developed with support from Abhiwan Technology and includes Cardano wallet connectivity, deposits, withdrawals, poker cash games, Multi Table Tournaments, Sportsbook infrastructure, player accounts and administrative systems. Production usage and gaming volume are publicly available at <https://betfi.poker/stats>. The Catalyst Pilot is not funding the creation of BetFi. It will support a new CIP 0113 integration within our existing production platform, giving the new technology an immediate environment for development, testing, deployment and real user adoption.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-BetFi’s existing production platform uses Cardano wallets and ADA within our gaming ecosystem. The proposed integration will add a new CIP 0113 programmable token layer designed specifically for BetFi users. Programmable assets will connect a user’s Cardano wallet with utility inside BetFi, such as player access, tournament participation, VIP membership, achievements and partner experiences. User initiated mints, transfers and applicable rule updates will occur on Cardano under the declared policy. This architecture fits BetFi because it adds verifiable on chain utility to an existing product while creating genuine Cardano transactions from real users.
+BetFi will use CIP 0113’s shared script architecture with non custodial user ownership. Programmable token UTxOs reside at the programmable_logic_base script, while each user’s stake credential represents ownership and transactions are authorized through their connected Cardano wallet. The CIP 0113 on chain registry maps our programmable token policy to the applicable issuance and transfer validators. programmable_logic_global acts as the global validation coordinator and enforces transaction wide programmable token rules. BetFi will use the CIP 0113 issuance_mint policy and an application transfer substandard based on the permissioned transfer reference pattern. Cardano remains the source of truth for ownership, minting, burning, transfers and validation. BetFi handles wallet connectivity, transaction construction, indexing, submission, confirmation and reconciliation off chain. The user's wallet signs the transaction, Cardano executes the applicable CIP 0113 validators, and BetFi verifies the confirmed transaction, policy ID, resulting UTxO and expected ownership state before updating application state.
 
 ### Fits the timeline
 
@@ -96,15 +104,15 @@ Incorporated entity
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-BetFi targets Cardano and Web3 users who enjoy poker, sports betting and prediction markets, while creating an entry point for traditional gaming users into Cardano.
+BetFi is an early stage startup already operating in production. Our live database currently records 390 registered accounts, 276 unique connected Cardano wallets, 298 lifetime Poker players, 74 lifetime Sportsbook users and 479 completed ADA deposit transactions backed by unique on chain transaction hashes.
 
-We are an early-stage startup, but BetFi is already live in production. Within only a few months of our games going live, more than 100,000 ADA in gaming volume has been processed across BetFi Poker and Sportsbook, demonstrating real usage and demand rather than projected adoption.
+Since launch, more than 100,000 ADA in cumulative Poker and Sportsbook gaming volume has been processed through the platform. This represents settled gaming activity rather than deposits, withdrawals or BetFi revenue.
 
-BetFi also operates Multi Table Tournament (MTT) poker on Cardano and has established community partnerships through our VIP Table Ownership model, allowing Cardano projects to operate branded poker experiences.
+These production metrics, including gaming volume, Poker and Sportsbook activity, rake data and measurement methodology, are publicly available for verification: 
 
-Our ChangeNOW integration further expands our addressable market by creating a pathway for users from other blockchain ecosystems to convert supported assets into ADA and enter Cardano.
+Platform Live Stats: <https://betfi.poker/stats>
 
-Sportsbook and prediction markets build on this early traction and expand BetFi into larger global markets.
+Live platform: [**https://betfi.poker/**](https://betfi.poker/)
 
 ### Applicant name
 
@@ -132,7 +140,7 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-The 50,000 ADA will allow BetFi to prioritize and accelerate a dedicated CIP 0113 integration that is outside our current development budget and roadmap. Funding will support architecture, Cardano development, programmable token implementation, integration into BetFi, user experience, testing, security review, mainnet deployment, monitoring and documentation. BetFi will continue funding its existing Poker and Sportsbook operations independently. Catalyst funding is specifically for bringing this new Cardano capability from concept to production and real user adoption, allowing programmable assets to gain practical utility inside an already operating gaming platform.
+The 50,000 ADA will allow BetFi to prioritize and accelerate a dedicated CIP 0113 integration outside our current development budget. Funding will support CIP 0113 architecture and Cardano development (20,000 ADA), BetFi product and wallet integration (12,000), testing, QA and security review (8,000), mainnet deployment and monitoring (5,000), and documentation, analytics and adoption measurement (5,000). BetFi will continue funding existing Poker and Sportsbook operations independently. Catalyst funding is specifically for moving this new Cardano capability from concept to production and measurable real user adoption.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
