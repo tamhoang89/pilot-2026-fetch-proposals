@@ -7,8 +7,7 @@ chuẩn. KHÔNG tự commit git - việc đó do GitHub Actions (hoặc bạn) l
 khi script chạy xong. Script chỉ có nhiệm vụ: fetch -> ghi file.
 
 Cấu trúc thư mục kỳ vọng (repo root):
-    fetch_proposals/
-        fetch_proposals.py   <- file này
+    fetch_proposals.py       <- file này, đặt ngay tại repo root
     pilot_2026_snapshots/
         index.json            <- map proposal_id -> tên file hiện tại
         <ten-du-an>.json       <- snapshot JSON gốc (để so sánh lần sau)
@@ -16,7 +15,7 @@ Cấu trúc thư mục kỳ vọng (repo root):
 
 Cách dùng:
     pip install requests --break-system-packages
-    python3 fetch_proposals/fetch_proposals.py
+    python3 fetch_proposals.py
 """
 
 import json
@@ -29,8 +28,8 @@ import requests
 # ============ CẤU HÌNH ============
 CAMPAIGN_ID = "6c4b4dd9-0000-5575-a5d3-d2ef6765893d"
 BASE_URL = "https://app.projectcatalyst.io/v1"
-# Repo root = thư mục cha của thư mục chứa script này (fetch_proposals/../)
-REPO_ROOT = Path(__file__).resolve().parent.parent
+# Repo root = thư mục chứa script này (script đặt ngay tại repo root)
+REPO_ROOT = Path(__file__).resolve().parent
 STATE_DIR = REPO_ROOT / "pilot_2026_snapshots"
 INDEX_FILE = STATE_DIR / "index.json"
 # ===================================
