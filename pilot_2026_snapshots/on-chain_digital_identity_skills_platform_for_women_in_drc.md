@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 1
+- **Revision:** 3
 - **Proposer:** `stake1uy4wpy72qartj5jhttqymvcqh5x90kfs3p6qlad7ujluhpcxggr2r`
 - **Funding requested:** ₳53,471
-- **Last finalized:** 2026-08-13T16:43:12.441000+00:00
+- **Last finalized:** 2026-08-14T18:46:26.831000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,15 +16,15 @@ TRL 5 - Technology validated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-GenderChain is built by a multidisciplinary team combining programme leadership, blockchain development, software engineering, gender inclusion, community mobilisation and monitoring and evaluation.
+[GenderChain](https://genderchain.africa/) is built by a multidisciplinary team combining programme leadership, blockchain development, software engineering, gender inclusion, community mobilisation and monitoring and evaluation.
 
 [**Imara Kabiona Abel**](https://portfolio.lkb.dpdns.org/) leads the programme, coordinating product delivery, partnerships, operations and reporting. His experience in logistics, project management, community initiatives and Web3 programmes provides the operational and coordination capacity required to deliver the pilot.
 
-[**Bernard Sibanda**](https://www.linkedin.com/in/bernard-sibanda-954563243/), Chief Technology Officer, leads the overall technical direction and software architecture. Olivier Mwatsi Mulamo leads the blockchain component, while 
+[**Bernard Sibanda**](https://www.linkedin.com/in/bernard-sibanda-954563243/), Chief Technology Officer, leads the overall technical direction and software architecture. 
 
 [**Akilimali Cizungu Innocent**](https://www.linkedin.com/in/akili-innocent-7649951a8/) contributes software development and implementation capacity. Together, they provide the technical skills required to build, test and deploy the Cardano identity and credential infrastructure.
 
-[**Ancilla Shabani**](https://www.linkedin.com/in/%F0%9F%87%A8%F0%9F%87%A9-ancilla-nsimire-shabani-a8404b11a/) leads community mobilisation, gender and inclusion, ensuring that the product is accessible to women and users with limited previous Web3 experience. 
+[**Ancilla Shabani**](https://www.linkedin.com/in/%F0%9F%87%A8%F0%9F%87%A9-ancilla-nsimire-shabani-a8404b11a/) leads community mobilisation, gender and inclusion, ensuring that the product is accessible to women and users with limited previous Web3 experience.
 
 **Furaha Ngabo Daniella** leads monitoring and evaluation, supporting user tracking, impact measurement, evidence collection and reporting.
 
@@ -240,11 +240,9 @@ Yes
 
 ### Licensing / IP details
 
-Yes , the project will be developed using an open source approach. 
+Yes , the [project](https://docs.google.com/document/d/1I3DGZtTWXSjwFw1g7KWd3KZtV3bjQIk3/edit?usp=sharing&ouid=116007738936707797082&rtpof=true&sd=true) will be developed using an open source approach.
 
-The source code of the components developed as part of the project will be published in a public GitHub repository under an appropriate open source license, to encourage transparency, auditability, reuse, and contributions from the Cardano ecosystem. 
-
-Any proprietary components or third-party services will be clearly identified and kept separate from the project's open source code.
+[Find the full project here ](https://docs.google.com/document/d/1I3DGZtTWXSjwFw1g7KWd3KZtV3bjQIk3/edit?usp=sharing&ouid=116007738936707797082&rtpof=true&sd=true)
 
 ### Technical
 
