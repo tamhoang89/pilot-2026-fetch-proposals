@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 6
+- **Revision:** 10
 - **Proposer:** `stake1uy02n73u26njqm4lw7xfzavnu2jfpldf7z2e2rwsvtxsa4cvxcfh6`
 - **Funding requested:** ₳57,000
-- **Last finalized:** 2026-08-13T07:29:58.507000+00:00
+- **Last finalized:** 2026-08-14T06:31:05.321000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -92,9 +92,11 @@ Yes
 
 **Usage**
 
-- Transactions occur only at meaningful milestones, not every game action.
+- Transactions occur only at meaningful identity or gameplay milestones.
 
-- Users may transact multiple times as identity or progression is updated, creating genuine repeat usage.
+- We target approximately 120 real users, averaging 4–5 qualifying interactions per user during the adoption period.
+
+- Repeat transactions come from identity updates, achievements, and progression milestones, supporting the 500-transaction target.
 
 **Adoption**
 
@@ -114,15 +116,20 @@ Yes
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-**Existing channels:** C2VN LMS, Cardano2VN community channels, GitHub, YouTube, and our existing developer/student network.
+- Existing channels: C2VN LMS, Cardano2VN community, GitHub, YouTube, and our developer/student network.
 
-**Onboarding:** Users will enter through playable demos, technical content, workshops, and guided challenges, then complete real Cardano interactions inside the live product.
+- Initial target: onboard approximately 120 real users during the Pilot.
 
-**Developer acquisition:** Open-source repositories, Godot-focused tutorials, workshops, and the Game Jam will convert learners into builders who can reuse the integration in their own projects.
+- With \~120 users averaging 4–5 meaningful identity/progression interactions per user, the product can support the 500-transaction target.
 
-**Initial market:** We will activate our existing Vietnam-based developer and Cardano communities first, giving us a reachable launch audience rather than starting from zero.
+- Users enter through playable demos, workshops, guided challenges, and Godot-focused technical content.
 
-**Expansion:** Public GitHub resources and English technical content will extend distribution to the wider Godot and Cardano developer ecosystems.
+
+- Initial acquisition focuses on our existing Vietnam-based communities, reducing cold-start risk.
+
+- GitHub, English technical content, and open-source distribution will extend reach to the wider Godot/Cardano ecosystem.
+
+- Usage will be tracked through distinct external wallets and qualifying mainnet transactions.
 
 ### Is the underlying project open source?
 
@@ -245,21 +252,23 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-- ₳57,000 funds new Pilot development and launch work, not existing C2VN/Cardano2VN platforms.
+₳57,000 funds new Pilot work only:
 
-- Production Godot game and gameplay development.
+- ₳18,000 — Godot game development: gameplay, quests, UI, and production build.
 
-- CIP-0170 identity/attestation and Cardano wallet integration.
+- ₳14,000 — CIP-0170 & Cardano integration: identity/attestations, wallet and transaction flows.
 
-- Backend/API development connecting Godot with Cardano.
+- ₳8,000 — Backend/API development connecting Godot with Cardano.
 
-- Testnet validation, QA, security testing, and mainnet deployment.
+- ₳6,000 — Testnet validation, QA, security testing, and mainnet deployment.
 
-- Open-source components, reference implementation, and technical documentation.
+- ₳6,000 — Open-source components, reference implementation, examples, and documentation.
 
-- User onboarding, launch, and adoption measurement.
+- ₳5,000 — User onboarding, launch activities, adoption measurement, and improvements.
 
-- Without Pilot funding, LAB3 could continue experimentation, but production mainnet deployment and structured real-user adoption would be significantly slower.
+Total: ₳57,000.
+
+No funding is allocated to already-completed C2VN/Cardano2VN platforms.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
