@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 29
+- **Revision:** 35
 - **Proposer:** `stake1u90cjqt5yy4wvhtnu0pudpxgdp7kfnn5e56fqs0qf00znsqh6c3g8`
 - **Funding requested:** ₳50,000
-- **Last finalized:** 2026-08-13T18:22:12.238000+00:00
+- **Last finalized:** 2026-08-14T15:16:48.669000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,14 +16,15 @@ TRL 5 - Technology validated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-The delivery record is public and checkable.\
-Four merged PRs into paritytech/polkadot-sdk, all in pallet-revive's Ethereum JSON-RPC layer: eth_getBlockReceipts, eth_feeHistory percentile validation, eth_getLogs block tags. Open work on XRPLF/xrpl-rust and Blockstream/lwk (BIP-352 silent payments for Liquid), and an RFC to polkadot-fellows on JSON-RPC compatibility. These are heavily reviewed repositories where being wrong about an encoding detail does not get merged.
+Maheswaran Velmurugan, sole contributor. I do the engineering, the outreach and the support. [github.com/soloking1412](http://github.com/soloking1412). This is my only proposal this round, and I have no other Catalyst commitments.
 
-That is the skill this needs. Attest is a standards implementation, not a product: CESR primitives, KERI self-addressing identifiers, CBOR script hashing, CIP-170 and CIP-171 conformance. Being right matters more than shipping fast.
+The record is checkable, not asserted. Four merged PRs into paritytech/polkadot-sdk in pallet-revive's Ethereum JSON-RPC layer: eth_getBlockReceipts, eth_feeHistory percentile validation, eth_getLogs block tags. Open work on XRPLF/xrpl-rust and Blockstream/lwk (BIP-352 silent payments for Liquid), and an RFC to polkadot-fellows on JSON-RPC compatibility. These are heavily reviewed repositories where being wrong about an encoding detail does not get merged.
 
-I also audit for a living, with 20+ high and medium findings across Sherlock, Code4rena, Cantina and Immunefi. Attest is tooling for auditors, built by someone who does the work.
+That is the skill this needs. Attest is a standards implementation: CESR primitives, KERI identifiers, CBOR script hashing, CIP-170 and CIP-171 conformance.
 
-It already exists: six packages, 207 tests, CI green, script hashing validated against contracts deployed on mainnet.
+I audit for a living, 20+ high and medium findings across Sherlock, Code4rena, Cantina and Immunefi. Attest is tooling for auditors, built by someone who does the work.
+
+No other contributors today. If I bring anyone in during the pilot I will name them and their role in the milestone report.
 
 ### Eligible area
 
@@ -31,19 +32,23 @@ Yes
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Third parties transact, from their own wallets, paying their own fees. I never pay on anyone's behalf.
+Third parties transact from their own wallets, paying their own fees. I never pay on anyone's behalf.
 
-Audit firms anchor a report at delivery and again at re-review. Protocol teams anchor a build for every validator they ship, and a DeFi release is rarely one contract. Eight to fifteen validators is normal, each getting its own attestation.
+Audit firms anchor a report at delivery and at re-review. Protocol teams anchor a build per validator shipped, and a release is rarely one contract; eight to fifteen validators is normal. Ten organisations shipping weekly is about 400 transactions a month. Delivering M1 early extends the window.
 
-Ten organisations shipping weekly is about 400 transactions a month. Delivering M1 early extends the window, which is what makes 770 reachable rather than heroic.
+Arithmetic: 900 bytes of metadata in a 1,200-byte transaction. At 155,381 + 44 per byte that is 0.208 ADA. 770 x 0.208 = 160 ADA, the bottom of the ambitious band.
 
-Arithmetic: a publication carries the CIP-170 record, the document and the CIP-171 record. About 900 bytes of metadata in a 1,200-byte transaction. At 155,381 + 44 per byte that is 0.208 ADA. 770 x 0.208 = 160 ADA.
+First two weeks after going live:
 
-Ambitious: 160 is the bottom of the stated band and needs ten organisations live and publishing, which is the whole job.
+Days 1-3. Verifier live at a public URL indexing label 170. OOBI and declared footprint published.
 
-Reasonable: no consumer adoption needed. Ten teams that already ship Cardano contracts, already hold ADA, publishing from CI they already run.
+Days 4-7. The three organisations from M1 publish from their own wallets on mainnet. Check the epoch-1 floor of 13.3 ADA.
 
-Integrity: every attestation resolves to a public git commit and a real script hash, signed from a third party's own stake key. I cannot manufacture volume without inventing fake contracts and auditors.
+Days 8-12. Two more onboarded in person: KERI identifier, Action in their pipeline. Fix what the first three hit, which I expect in wallet setup, not the protocol.
+
+Days 13-14. First audit attestation from an audit firm. Publish a per-epoch table.
+
+Integrity: every attestation resolves to a public git commit and a real script hash, signed from a third party stake key.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -153,7 +158,7 @@ CIP-170 covers the other half and is already in production in Reeve at the Carda
 
 Ethereum solved the build half years ago with verified contracts on Etherscan; it is table stakes there. Cardano has no equivalent. The audit half is unsolved on both chains.
 
-I have not shipped this to users yet. I am not going to claim traction I do not have.
+No external users yet; the Preview deployment is mine. I am not going to claim traction I do not have.
 
 ### Applicant name
 
@@ -187,9 +192,19 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Without funding this stays a repo nobody adopts. I can write code unpaid. I cannot unpaid onboard eight to ten audit firms and protocol teams — a KERI identifier each, the Action in their pipelines.
+Without funding this stays a repo nobody adopts. I can write code unpaid. What I cannot do unpaid is onboard ten audit firms and protocol teams, a KERI identifier each and the Action in their pipelines.
 
-Spend: engineering to mainnet (publish path, indexer, public API); infrastructure (KERIA agent, witnesses, hosted verifier); hands-on onboarding for first adopters; independent review of the verification logic.
+Budget, tied to M1 deliverables:
+
+Engineering to mainnet, ₳24,000. Publish path, hosted verifier and indexer, CIP-10 label registration, GitHub Action (M1 items 1, 2, 3, 5).
+
+Onboarding, ₳13,000. Hands-on integration with the first ten organisations (M1 item 4, and the adoption target).
+
+Independent review of the verification logic, ₳6,000. Before anyone relies on it (M1 item 6).
+
+Infrastructure, ₳5,000. KERIA agent, witnesses and verifier hosting for four months.
+
+Transaction fees and contingency, ₳2,000.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -211,7 +226,7 @@ Yes
 
 ### How far along is the integration you're proposing, today?
 
-TRL 4 - Technology validated in lab
+TRL 5 - Technology validated in relevant environment
 
 ### On-chain identity (CIP-0170) - fee target (ADA)
 
@@ -301,8 +316,10 @@ Yes
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-Written and unit-tested, but never run against a live KERIA agent or the chain.
+Live on Cardano Preview. Transaction b796a647356699979383311ecab2273a636f33c9097e32390963cedebf49f254 carries the CIP-170 ATTEST record, the attestation document and the CIP-171 record under labels 170, 1701 and 1984.
 
-Done: full CIP-170 record codec, 64-byte metadata chunking, CESR encoding, SAID computation, KEL anchor verification. One transaction emits label 170, the document and the CIP-171 record, all round-trip tested.
+The flow runs end to end: the document's identifier is committed to the issuer's key event log on a live KERIA agent, the transaction cites that sequence, and "attest verify" returns verified from chain data alone.
 
-Missing: an agent, a wallet, a transaction — M1.
+Publishing to Preview found a real defect that offline tests could not: the transaction builder rejects the tagged metadata form and needs native values. Fixed and committed.
+
+Remaining for M1: mainnet, and external issuers publishing from their own wallets.
