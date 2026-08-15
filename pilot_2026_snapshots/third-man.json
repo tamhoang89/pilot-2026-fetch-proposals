@@ -7,7 +7,7 @@
   "title": "THIRD-MAN",
   "tagline": "Trust the deal, not the stranger.",
   "requestedAmount": 190000,
-  "updatedAt": 1786730749480,
+  "updatedAt": 1786784405115,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 5 - Technology validated in relevant environment",
@@ -48,7 +48,7 @@
     "eligOneProposal": true,
     "problemSolution": "We're building 3rd Man, an automated escrow system that solves a problem most people doing business with a stranger have faced, anywhere in the world: nobody wants to pay first, and nobody wants to deliver first. If you're buying something secondhand, hiring a freelancer, or paying for work in stages, you're stuck in a standoff. The usual fix is finding someone both sides trust to hold the money until the deal is done a \"third man.\" It works, but only if you know someone trustworthy who's willing to do it, and even then they could be slow, unavailable, or dishonest. 3rd Man replaces that person with a smart contract on Cardano holding payment until both sides confirm the deal is done, except it can't be bribed and can't run off with the money. You create a deal, share a link over any messaging app, and pay through whichever rail is native to your market mobile money like M-Pesa, or card/bank rails elsewhere. Funds lock automatically once payment lands, and release once the condition is met, with a real dispute process if something goes wrong. The trust gap this solves exists globally, but is sharpest in mobile-money, informal-commerce markets. We launch first in Kenya, where the gap is easiest to prove, then extend to other mobile-money markets worldwide.",
     "supportingLinks": [
-      "https://github.com/paloxman/third-man-protocol"
+      "https://github.com/paloxmah0/third-man-protocol"
     ],
     "eligDependencies": true,
     "eligGoodStanding": true,
@@ -64,16 +64,16 @@
   },
   "createdAt": 1786730394065,
   "headRevision": {
-    "id": "a12cd9b0-f2ba-4ee7-907f-2168d11d5c00",
-    "number": 2,
+    "id": "c3b96a4a-acad-4b8d-8233-1c6d19cf348a",
+    "number": 3,
     "kind": "saved",
-    "createdAt": 1786730733796
+    "createdAt": 1786784385822
   },
   "latestFinalization": {
-    "id": "57a587b8-3bdf-4ace-9a9e-839bcd4b7711",
-    "cycle": 1,
-    "revisionId": "a12cd9b0-f2ba-4ee7-907f-2168d11d5c00",
-    "finalizedAt": 1786730749480
+    "id": "c2e353eb-1357-4188-bf92-df47a4ab7a9c",
+    "cycle": 2,
+    "revisionId": "c3b96a4a-acad-4b8d-8233-1c6d19cf348a",
+    "finalizedAt": 1786784405115
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",

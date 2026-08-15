@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 2
+- **Revision:** 3
 - **Proposer:** `stake1u9zkjnsdmkway764336rl8gj2kacdnwnz0g6scp3nn847vga6a5kc`
 - **Funding requested:** ₳190,000
-- **Last finalized:** 2026-08-14T18:05:49.480000+00:00
+- **Last finalized:** 2026-08-15T09:00:05.115000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -143,7 +143,7 @@ We're building 3rd Man, an automated escrow system that solves a problem most pe
 
 ### Supporting links (repo, site, demo)
 
-- https://github.com/paloxman/third-man-protocol
+- https://github.com/paloxmah0/third-man-protocol
 
 ### Identified dependencies
 
