@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 5
+- **Revision:** 10
 - **Proposer:** `stake1uyqe7s205xndy8l4c32pakhldsmp0wrpj75lzhpfmw79ntck5hhzr`
-- **Funding requested:** ₳89,000
-- **Last finalized:** 2026-08-12T17:16:24.323000+00:00
+- **Funding requested:** ₳75,000
+- **Last finalized:** 2026-08-15T05:55:03.108000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,13 +16,13 @@ TRL 5 - Technology validated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-**Oliseh Genesis : Founder and Product Lead**\
-Oliseh created Rvess Pay and built Akiot. He will lead product strategy, Cardano integration, backend development, infrastructure, and delivery.\
-[LinkedIn:](https://www.linkedin.com/in/olisehgenesis/)
+Mwijusya Oliseh: Founder and Product Lead. \
+Created Rvess Pay and built [SovAds](https://sovads.org). Leads product strategy, Cardano integration, backend development, infrastructure, and delivery.\
+GitHub: <https://github.com/Olisehgenesis/> · LinkedIn: <https://www.linkedin.com/in/olisehgenesis/>
 
-**Sam “The Tutor” :Software Developer**\
-Sam is an experienced developer who will support implementation, testing, technical documentation, and mainnet readiness.\
-<https://x.com/african_devrel>
+Atwebembeire Samuel :Software Developer. \
+Supports implementation, testing, technical documentation, and mainnet readiness.\
+GitHub: <https://github.com/sam-thetutor>
 
 ### Eligible area
 
@@ -34,19 +34,19 @@ N/A. Rvess is prioritizing sustainable operations, regulatory compliance, liquid
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Rvess targets 1,600 genuine stablecoin settlement transactions generating approximately 280 ADA in Cardano network fees. The target assumes about 400 external users completing an average of four transactions during the adoption period.
+Rvess targets 1,150 genuine stablecoin settlement transactions generating 400 ADA in Cardano network fees, from 400 external users completing roughly 3 transactions each during the adoption period.
 
-Users will include Ugandan freelancers, remote workers, Cardano contributors, merchants, and families receiving cross-border payments. They will transact to convert verified Cardano stablecoins into UGX through MTN MoMo or Airtel Money. Usage is expected to repeat as users receive earnings, remittances, ecosystem rewards, and business payments.
+Users include Ugandan freelancers, remote workers, Cardano contributors, merchants, and families receiving cross-border payments, plus the Bidi Bidi refugee settlement community. They transact to convert verified Cardano stablecoins into UGX through MTN MoMo or Airtel Money via our Relworx and MarzPay integrations. Usage is expected to repeat as users receive earnings, remittances, and payments.
 
-Users will be recruited through Ugandan Cardano communities, freelancer groups, referrals, direct demonstrations, and integrations with wallets and dApps. Rvess will monitor weekly transaction pace and focus onboarding during the first two weeks after launch.
-
-Only transactions initiated by independent external users for genuine settlement needs will count. Rvess will not use team-controlled wallets, circular transfers, scripts, subsidized self-transactions, or fee-padding. Standard Catalyst labels and Dune Analytics will verify transaction fees, distinct wallets, frequency, and retained usage.
+Week 1 focuses on Bidi Bidi field visits and community onboarding. Week 2 expands to Kampala Cardano/freelancer communities and wallet/dApp outreach. Only transactions from independent external users count; Rvess will not use team-controlled wallets, circular transfers, or subsidized self-transactions. Dune Analytics verifies fees, distinct wallets, and retained usage.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Rvess will launch through a controlled Uganda pilot. Users will be recruited through Cardano communities, freelancer groups, meetups, demonstrations, and referrals.
+Rvess is operated by Buildfi Tech UG Ltd (URSB ERN 80034893783008, registered 29 Jun 2026, status: Compliant). We hold a payment integration license with Relworx ([relworx.com](http://relworx.com)), covering MTN MoMo and Airtel Money disbursement, plus a wallet/settlement integration with MarzPay ([wallet.wearemarz.com](http://wallet.wearemarz.com)).
 
-We will also approach Cardano wallets, dApps, stablecoin communities, and contributor programs that need African payouts. Dune Analytics will track genuine external wallets and repeat transactions. Rvess will not fund circular or scripted usage. Current evidence is limited to the public beta; interviews, pilot registrations, and written commitments will be collected before launch.
+Channels: (1) Bidi Bidi refugee settlement, one of Uganda's largest refugee settlements - early-stage community contact established; reachable population to be confirmed via week-one field visits. (2) Kampala Cardano and freelancer communities, reached through demonstrations, meetups, and referrals. (3) In-person field events at both locations in weeks one and two, run by the founding team.
+
+Target: 400 external users, 1,150 transactions, 400 ADA in counted fees. Week 1: Bidi Bidi outreach. Week 2: Kampala expansion and wallet/dApp partner outreach. Dune Analytics tracks genuine external wallets; no circular or scripted usage.
 
 ### Is the underlying project open source?
 
@@ -120,9 +120,17 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Funding enables the new stablecoin settlement integration rather than work already completed. It will pay for Cardano stablecoin policy verification, wallet asset support, mainnet deposit monitoring, quote and accounting changes, Dune transaction labeling, mobile-money settlement integration, security testing, and production deployment.
+Funding enables the new stablecoin settlement integration rather than work already completed. Requested amount: 75,000 ADA. 
 
-It will also support compliance implementation, controlled Uganda onboarding, technical documentation, infrastructure, monitoring, and initial liquidity operations. Without this funding, Rvess would remain focused on its current Cardano payment experience and the stablecoin-to-mobile-money route would develop more slowly. The grant accelerates delivery of a verified mainnet integration within three months and its transition into sustained use.
+- Stablecoin integration dev (policy allowlisting, wallet asset support, quoting): 27,000 ADA (36%)
+- Deposit monitoring,labeling: 12,000 ADA (16%)
+- Mobile-money settlement integration (Relworx/MarzPay): 10,500 ADA (14%)
+- Security testing & audit: 7,500 ADA (10%)
+- Compliance & Uganda onboarding: 6,000 ADA (8%)
+- Infrastructure & monitoring: 5,250 ADA (7%)
+- Initial liquidity operations: 6,750 ADA (9%)
+
+Without this funding, we would remain focused on current Cardano payment experience and the route would develop more slowly. The grant accelerates delivery of a verified mainnet integration within three months and its transition into sustained use.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -208,7 +216,7 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-1600
+1150
 
 ### Standard read and attested
 
@@ -216,7 +224,7 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-280
+400
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
