@@ -7,7 +7,7 @@
   "title": "Wargrum: Scaling a Launched Cardano TCG to Mass Adoption",
   "tagline": "Wargrum is live on Cardano mainnet with card payments and managed wallets. This proposal funds tournaments, player trading, and the GRUM economy to turn our launch into sustained on-chain activity.",
   "requestedAmount": 200000,
-  "updatedAt": 1786845398645,
+  "updatedAt": 1786845746102,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 9 - Actual system proven in operational environment",
@@ -29,9 +29,9 @@
     ],
     "otherFunding": false,
     "standOutTeam": true,
-    "submittingAs": "Individual",
+    "submittingAs": "Incorporated entity",
     "targetMarket": "Our target market is trading card game players, a mainstream audience that already spends heavily on digital cards. Hearthstone, Marvel Snap, and Magic Arena have shown that tens of millions of players will pay for digital packs, and the physical TCG market exceeds 6 billion USD a year. Wargrum targets the slice of that audience that wants real ownership: players tired of buying cards locked inside a publisher's account.\n\nEvidence of demand: Wargrum is not a concept. The game is live at [play.wargrum.io](https://play.wargrum.io) with real-time multiplayer, a full starter set, mainnet Cardano purchases, and card purchases through Stripe at 8.99 USD per booster. Our first edition collection is minted on Cardano with published print runs shown in the in-game Bazaar. The project has a community built since 2022 through Jason Appleton's Cardano audience, a waitlist and Discord grown across multiple public teasers, and third-party coverage including a feature by Phaser, the engine that powers the game.\n\nThe commercially significant fact: a card payment plus a managed wallet means our addressable market is every TCG player with a debit card, not the small subset who already hold ADA.",
-    "applicantName": "Eli Skenandore",
+    "applicantName": "Superviolet LLC",
     "businessModel": "Wargrum earns revenue directly from players: booster packs and boxes at 8.99 USD per pack or 55 ADA, paid in ADA or by card through Stripe, plus marketplace fees on player-to-player trades and tournament entry fees. This is the proven TCG model that has run profitably for decades, with the chain adding resale value and provable scarcity that digital TCGs cannot match.\n\nIt keeps running after the pilot because players pay for fun, not subsidies: packs are exciting to open, cards are needed to compete, and collections hold value. Set releases create recurring revenue waves, seasons create recurring engagement, and every trade pays a fee. Operations are already funded by sales and the founders. Pilot funding accelerates the flywheel with content, tournament prize pools, and user acquisition. The goal by pilot end: organic player activity generates network fees and sales that exceed infrastructure costs, making Wargrum a permanently self-sustaining source of Cardano usage.",
     "cip113TxCount": 200000,
     "eligNamedTeam": true,
@@ -66,16 +66,16 @@
   },
   "createdAt": 1786843122690,
   "headRevision": {
-    "id": "8aed880d-31a8-422f-b509-316bc203b10b",
-    "number": 18,
+    "id": "29d6e359-e6b3-42c5-aa42-80cb6bdcf069",
+    "number": 20,
     "kind": "saved",
-    "createdAt": 1786845282642
+    "createdAt": 1786845723751
   },
   "latestFinalization": {
-    "id": "549d9751-76f7-4bd9-90b6-7a67b6c786d5",
-    "cycle": 1,
-    "revisionId": "8aed880d-31a8-422f-b509-316bc203b10b",
-    "finalizedAt": 1786845398645
+    "id": "1da6016e-fdbb-4d66-a80a-e458b53e6946",
+    "cycle": 2,
+    "revisionId": "29d6e359-e6b3-42c5-aa42-80cb6bdcf069",
+    "finalizedAt": 1786845746102
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",

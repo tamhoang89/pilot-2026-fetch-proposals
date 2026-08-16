@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 18
+- **Revision:** 20
 - **Proposer:** `stake1u9cu08wj5rwd9d0vjakf0qv8mc46zzqlkft4s8k20sl0l0qvng7uy`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-16T01:56:38.645000+00:00
+- **Last finalized:** 2026-08-16T02:02:26.102000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -84,7 +84,7 @@ Yes
 
 ### Submitting as
 
-Individual
+Incorporated entity
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
@@ -96,7 +96,7 @@ The commercially significant fact: a card payment plus a managed wallet means ou
 
 ### Applicant name
 
-Eli Skenandore
+Superviolet LLC
 
 ### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
 
