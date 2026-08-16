@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 28
+- **Revision:** 40
 - **Proposer:** `stake1uydsltz2939nz2f7nmyeqdmjrkkqd32c37vz7ag2ets3mtsqwpypa`
-- **Funding requested:** ₳175,000
-- **Last finalized:** 2026-08-13T10:40:47.729000+00:00
+- **Funding requested:** ₳115,000
+- **Last finalized:** 2026-08-16T17:55:26.538000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -26,7 +26,7 @@ Mario will lead the technical architecture, Cardano integration, backend develop
 
 Together, we have already built TAGBASE’s operational NFC platform, dynamic cryptographic verification, APIs, cloud infrastructure, analytics, tag-configuration tools, and iOS and Android applications: <https://www.tagbase.io>
 
-The existing platform substantially reduces delivery risk because the project extends working NFC infrastructure rather than starting from zero. No additional core team members are required. We may engage an independent We do not provide services to any other proposal submitted in this funding round.
+The existing platform substantially reduces delivery risk because the project extends working NFC infrastructure rather than starting from zero. No additional core team members are required. We do not provide services to any other proposal submitted in this funding round.
 
 ### Eligible area
 
@@ -38,23 +38,23 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Our Programmable Tokens integration targets 1,200 genuine Cardano transactions and at least 200 ADA in network fees during the adoption phase.
+Our only integration is Programmable Tokens (CIP-0113). We target 200 ADA in network fees from 600 expected transactions: 275 artwork registrations, 275 initial ownership assignments and 50 NFC-verified secondary transfers.
 
-Artists, brands and certificate issuers transact when registering tokens for NFC-tagged objects and assigning them to buyers. Owners transact again when an item is sold, gifted or transferred. Each transfer requires a fresh cryptographic NFC scan.
+Artists transact when registering NFC-tagged artworks and assigning ownership to buyers after a sale. Collectors transact when an artwork is later sold, gifted or reassigned. Every ownership transfer requires a fresh cryptographic scan of the artwork’s physical NFC tag.
 
-We project 500 asset registrations, 500 initial ownership assignments and 200 secondary transfers. We will start with at least two issuers, then scale through existing customers and contacts in art, certificates, luxury goods and marketplaces.
+We expect approximately 300 transactions from artists who already use TAGBASE Verify and their buyers. Another 300 will come from additional artists reached through direct conversations, demonstrations, customer referrals and art-market outreach.
 
-During the first two weeks after launch, we will onboard the initial issuers and connect at least 50 physical objects. Week 1 focuses on issuer setup, wallet onboarding and asset registration. Week 2 covers ownership assignments, first NFC-verified transfers, user support and issue resolution.
+During the first two weeks after launch, we will aim to onboard two artists and connect 50 artworks. Week 1 covers setup, wallets and registrations. Week 2 covers ownership assignments, initial transfers, support and issue resolution.
 
-Only transactions linked to real objects and external user actions count; tests, failed scans and artificial activity are excluded. Continued registration and ownership changes sustain usage.
+External users initiate transactions and pay their own network fees. Team-controlled, sponsored, test, failed-scan and artificial activity will not count.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-We will start with existing TAGBASE customers. Artists already use our secure NFC tags to connect physical artworks with digital records, giving us direct access to issuers, objects and buyers. We will invite them to test Cardano ownership transfers when artworks are sold or gifted.
+We will start with existing TAGBASE customers. Artists already use our secure NFC tags to connect physical artworks with digital records, giving us direct access to artists, artworks and buyers. We will invite them to use Cardano ownership transfers when artworks are sold or gifted.
 
-We will also use existing contacts in art authentication, certificates, luxury goods and marketplaces. Our GS1 Austria, Silicon Alps, Newland and NFC Forum partnerships provide further access to brands and technology providers.
+Additional artists will be reached through direct conversations, demonstrations, customer referrals and existing contacts in the art and authentication sectors.
 
-For the pilot, we aim to onboard at least 2 issuers. TAGBASE will configure the first tags, support wallet onboarding and guide initial transfers.
+For the pilot, we aim to onboard at least two artists. TAGBASE will configure the first tags, support wallet onboarding and guide artists and buyers through the initial ownership assignments and NFC-verified transfers.
 
 ### Is the underlying project open source?
 
@@ -118,7 +118,7 @@ Incorporated entity
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
 Our initial target market is artists, galleries, art platforms and collectors who need ownership records to remain connected to physical artworks when they are sold, gifted or resold. We will then expand to luxury brands, collectible producers, certificate issuers and secondary marketplaces handling watches, limited editions and other valuable physical objects.\
-This is a commercially significant market with frequent ownership changes. The Art Basel and UBS Global Art Market Report 2026 estimates global art sales at $59.6 billion across 41.5 million transactions in 2025. Online-only art sales represented $9.2 billion, showing the importance of trusted digital processes for physical assets: <https://theartmarket.artbasel.com/global-sales>\
+This is a commercially significant market where ownership records must remain trustworthy across high-value sales and transfers. The Art Basel and UBS Global Art Market Report 2026 estimates global art sales at $59.6 billion across 41.5 million transactions in 2025. Online-only art sales represented $9.2 billion, showing the importance of trusted digital processes for physical assets: <https://theartmarket.artbasel.com/global-sales>\
 TAGBASE already has artists as paying customers who use our secure NFC tags to connect physical artworks with digital records. This gives us direct access to issuers, objects and buyers for testing NFC-verified transfers when artworks are sold. We also have projects and business relationships involving certificates, authentication, luxury goods and physical product identities. These customer relationships show demand for solutions that go beyond initial authentication and maintain trustworthy records throughout an object’s lifecycle.
 
 ### Applicant name
@@ -135,7 +135,7 @@ Usage continues beyond the pilot because every newly tagged object can create a 
 
 ### Programmable tokens (CIP-0113) - expected transaction count
 
-1200
+600
 
 ### Named, verifiable team
 
@@ -147,16 +147,16 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Without this funding, the Cardano integration would be deprioritized in TAGBASE’s roadmap, with no defined delivery date. The 175,000 ADA grant enables two core team members to deliver it within the program timeline.
+Without this funding, the Cardano integration would be deprioritized in TAGBASE’s roadmap, with no defined delivery date. The 115,000 ADA grant enables two core team members to deliver it within the program timeline.
 
 Budget breakdown:
 
-- CIP-0113 architecture and validator development: 50,000 ADA
-- Backend and NFC authorization integration: 40,000 ADA
-- Wallet integration and user interface: 25,000 ADA
-- Testing, security review and mainnet deployment: 25,000 ADA
-- Pilot onboarding, support and reporting: 20,000 ADA
-- Infrastructure, network fees and NFC tags: 15,000 ADA
+- CIP-0113 architecture and validator development: 32,000 ADA
+- Backend and NFC authorization integration: 27,000 ADA
+- Wallet integration and user interface: 17,000 ADA
+- Testing, security validation and mainnet deployment: 17,000 ADA
+- Pilot onboarding, support and reporting: 12,000 ADA
+- Infrastructure, network fees and NFC tags: 10,000 ADA
 
 Funding covers the two team members’ development and implementation work. The remainder supports deployment, testing, infrastructure and real-user onboarding.
 
@@ -257,6 +257,6 @@ Yes
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-We have identified the core principle: digital ownership should only be transferable after the linked physical NFC tag has been cryptographically verified. No detailed Cardano architecture, CIP-0113 prototype or testnet implementation exists yet.
+We have identified the core principle: digital ownership should only be transferable after the linked physical NFC tag has been cryptographically verified. A conceptual architecture and end-to-end transfer flow have been defined, but no CIP-0113 prototype, validator or testnet implementation exists yet.
 
 The underlying TAGBASE components are already operational, including NFC identity creation, dynamic cryptographic verification, APIs, cloud infrastructure and mobile applications. The grant will cover the complete integration journey: technical design, programmable-token implementation, Cardano transaction service, wallet integration, testnet validation, security testing and mainnet deployment.
