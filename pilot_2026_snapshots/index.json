@@ -15,5 +15,7 @@
   "6987f81e-e01a-4d04-a700-c83cc8e460e4": "getmyidkeri-backed_identity_attestations_for_cardano_handle",
   "9bab51c3-8599-4a9a-bbd6-068e72233eb6": "third-man",
   "c2eb3010-b4e9-46dd-bfdb-f83184364b0d": "stablecoin_payments_for_cardano_rwas_launchpad",
-  "6942b4ae-3301-432b-b848-ddc1cc312ddd": "policykit_modular_compliance_for_cip-113_tokens"
+  "6942b4ae-3301-432b-b848-ddc1cc312ddd": "policykit_modular_compliance_for_cip-113_tokens",
+  "d9f11222-fa10-44ab-852e-10d3e38c16a9": "wargrum_scaling_a_launched_cardano_tcg_to_mass_adoption",
+  "09e49b74-16ec-459b-ab4d-20fb9ae792a2": "built-in_rwa_kycaml_rules_for_cip-0113_tokens"
 }
