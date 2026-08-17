@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 21
+- **Revision:** 26
 - **Proposer:** `stake1u8x4lqtk6czqrlhjqyqlp8a8y7u0ekcxytg6796nm2xnxxsrvccyp`
 - **Funding requested:** ₳70,000
-- **Last finalized:** 2026-08-17T08:29:25.742000+00:00
+- **Last finalized:** 2026-08-17T11:58:43.080000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,19 +16,24 @@ TRL 9 - Actual system proven in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-I'm Daniel Olanrewaju, solo founder. I've shipped multiple Cardano and Web3 projects in the last 12 months, demonstrating both delivery discipline and ecosystem depth:
+I'm Daniel Olanrewaju, solo founder. Proof of past work:
 
-- SkillSwap: current project. I built it full-stack from zero to Cardano mainnet in 12 weeks under the Piece of Pie Hackathon. Awarded Cardano Pie by Gimbalabs and the Cardano Foundation.
-- Tagwise: Solana-based identity protocol mapping @handles to wallet addresses. I shipped the on-chain program, published SDK, and full documentation site.
-- TripFi (Contribution): BCH-powered AI travel booking platform I contributed to. Won Runner Up in the BCH-1 Hackcelerator Application Track.
+- LinkedIn: <https://www.linkedin.com/in/devfreeguy/>
+- GitHub: <https://github.com/devfreeguy>
+- X: <https://x.com/devfreeguy>
+
+Recent shipped projects demonstrating delivery discipline and Cardano/Web3 depth:
+
+- SkillSwap (this project): full-stack build from zero to Cardano mainnet in 12 weeks under the Piece of Pie Hackathon. Awarded Cardano Pie by Gimbalabs and the Cardano Foundation. Live: <https://myskillswap.xyz>. Repo: <https://github.com/devfreeguy/skill-swap>. X: <https://x.com/myskillswap>
+- Tagwise: Solana-based identity protocol mapping @handles to wallet addresses. I shipped the on-chain program, published SDK, and full documentation site. Site: <https://www.tagwise.me>. Docs: <https://docs.tagwise.me>. SDK: <https://www.npmjs.com/package/@tagwise/tip-sdk>
 
 Technical relevance to this proposal:
 
 - Deep hands-on experience with CIP-8 wallet auth, CIP-30 transaction signing, multi-provider chain infrastructure (Blockfrost, Koios, Maestro), and on-chain metadata anchoring already shipped in SkillSwap
-- My prior identity protocol work on Tagwise directly informs the KERI/ACDC integration path
+- Tagwise directly informs the KERI/ACDC integration path (identity protocol with AID-like resolution, wallet-derived identity, and on-chain state)
 - Consistent public track record of shipping under hackathon deadlines
 
-Part of the 70k ADA grant is explicitly allocated to team expansion (see funding breakdown). I will recruit a KERI-experienced developer and a designer within the first month post-selection.
+Part of the 70k ADA grant is allocated to team expansion. I will recruit a KERI-experienced developer and a designer within the first month post-selection.
 
 ### Eligible area
 
@@ -42,17 +47,19 @@ N/A
 
 Genuine usage generation is baked into SkillSwap's core loop, not bolted on.
 
-Who transacts: users completing peer-to-peer skill swaps. Every completed swap generates one credential issuance and one on-chain anchor transaction. Credential revocations and updates generate additional on-chain activity.
+Who transacts: users completing peer-to-peer skill swaps. Every completed swap generates one credential issuance and one on-chain anchor. Revocations and updates add more on-chain activity.
 
-Why they transact: users pay the 2 ADA swap fee because it unlocks a skill exchange they want. The credential issued at completion is a permanent, portable proof of that exchange, creating an incentive loop where credential value grows with each swap.
+Why they transact: users pay the 2 ADA commitment fee because it unlocks a skill exchange they want. The credential issued at completion is a permanent, portable proof of that exchange, creating an incentive loop where credential value grows with each swap.
 
-How often: current baseline is 7 completed mainnet swaps and 50+ users since going live July 19th. Realistic projection over the 3-month pilot:
+How often: baseline is 7 completed mainnet swaps and 50+ users since going live July 19th. Realistic 3-month projection:
 
 - Month 1: 20-40 swaps (KERI setup + growth push begins)
 - Month 2: 80-150 swaps (credential feature live + paid promotion)
 - Month 3: 200-350 swaps (network effects from portable credentials)
 
-Fee target: 70,000 ADA grant with committed fee generation of 5,500+ ADA in network fees over the pilot period, driven by anchor, refund, and credential update transactions. Grounded in current organic baseline extrapolated conservatively.
+Fee math: \~600 CIP-0170 anchor transactions × \~0.3 ADA average network fee = \~180 ADA. Committed target of 200 ADA in Cardano network fees provides a small buffer.
+
+Note: the 2 ADA commitment fee goes to SkillSwap treasury, not the Cardano network. It is NOT counted in this target.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -92,7 +99,7 @@ SkillSwap wins on three axes: 1) money-free exchange lowers the barrier for emer
 SkillSwap is fully operational on Cardano mainnet at <https://myskillswap.xyz>. Every core system has been tested and validated with real users paying real ADA:
 
 - CIP-8 wallet authentication with cryptographic signature verification
-- 2 ADA swap fee payments and automatic on-chain refunds on decline
+- 2 ADA commitment fee payments and automatic on-chain refunds on decline
 - End-to-end encrypted messaging (Pusher primary, Ably fallback)
 - Multi-provider on-chain proof anchoring (Blockfrost, Koios, Maestro fallback)
 - Deliverable submission and dual-party swap confirmation
@@ -107,7 +114,7 @@ SkillSwap already runs a production-grade Cardano on-chain architecture that CIP
 Current architecture (live on mainnet):
 
 1. Wallet auth via CIP-8 signature verification using @cardano-foundation/cardano-verify-datasignature
-2. CIP-30 transaction signing in user wallets (Eternl, Nami, Lace) for 2 ADA swap fees
+2. CIP-30 transaction signing in user wallets (Eternl, Nami, Lace) for 2 ADA commitment fees
 3. Multi-provider tx submission via Blockfrost (primary), Koios, Maestro (fallback) for redundancy
 4. Proof anchoring via Cardano metadata transactions under a registered metadata label (5757)
 5. Automatic refund path via a platform hot wallet with signed CBOR verification before dispatch
@@ -171,16 +178,16 @@ Daniel Olanrewaju
 
 ### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
 
-Current revenue: 2 ADA swap initiation fee paid to the platform treasury on every swap request. Fully refunded if declined, retained on acceptance. This is live on mainnet today.
+Fee model: SkillSwap charges a 2 ADA commitment fee on every swap request. This is anti-spam, not a service charge. It filters out low-effort requests and ensures every swap is intentional. Fully refunded if the receiver declines. Live on mainnet today.
 
-Post-grant revenue expansion:
+Post-grant revenue streams:
 
-1. Premium credential features: verified issuer status, custom credential schemas for institutions, and bulk credential issuance for bootcamps and training organizations
-2. Institutional partnerships: MetaC-style education nonprofits paying to issue credentials to their students at graduation
+1. Premium credential features: verified issuer status, custom credential schemas, bulk issuance for bootcamps and training organizations
+2. Institutional partnerships: education nonprofits (like MetaC) paying to issue credentials to graduates
 3. Enterprise verification API: employers and DAOs paying to verify SkillSwap credentials at scale
-4. Premium user features: highlighted profiles, priority matching, and analytics for power users
+4. Premium user features: highlighted profiles, priority matching, analytics for power users
 
-Why usage continues post-grant: the 2 ADA fee alone covers infrastructure at current scale (Vercel, NeonDB, Cloudinary, Blockfrost). Growth is unit-economic positive from day one. Every swap generates a fee. Credential portability creates network effects that outlast grant funding.
+Why usage continues post-grant: the commitment fee alone covers infrastructure at current scale (Vercel, NeonDB, Cloudinary, Blockfrost). Growth is unit-economic positive from day one. Credential portability creates network effects that outlast grant funding.
 
 ### On-chain identity (CIP-0170) - expected transaction count
 
@@ -242,7 +249,7 @@ TRL 3 - Experimental proof of concept
 
 ### On-chain identity (CIP-0170) - fee target (ADA)
 
-5500
+200
 
 ### Clear budget
 
