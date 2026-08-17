@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 9
+- **Revision:** 16
 - **Proposer:** `stake1u9mjgumqzg4se5hfq8jpqhajrr8ace4ks499vg3hgwmgdasz4v347`
 - **Funding requested:** ₳120,000
-- **Last finalized:** 2026-08-17T14:57:24.694000+00:00
+- **Last finalized:** 2026-08-17T19:52:55.745000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -57,7 +57,7 @@ First two weeks, target 80 wallets. Week one is direct posting into Cardano comm
 
 Alongside both, direct outreach through our network for warm introductions to DAOs and treasuries needing diversified exposure.
 
-Demo Day puts the product in front of the ecosystem as our window opens, and part of the grant funds onboarding incentives for early depositors.
+Demo Day puts the product in front of the ecosystem exactly as our measurement window opens.
 
 Onboarding is one screen: connect Lace, pick a basket, mint. Under 60 seconds.
 
@@ -65,7 +65,7 @@ We report distinct wallets weekly against the 300 target.
 
 ### Is the underlying project open source?
 
-Yes
+No
 
 ### Who else solves this today - competitors/alternatives, and why does your approach win?
 
@@ -163,18 +163,20 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-This funding turns a validated design into a shipped mainnet product inside three months, and pays for the part that benefits more than us.
+This funding turns a validated design into a shipped mainnet product inside three months.
 
-Cardano is not a port. eUTXO demands a native Aiken implementation, a different concurrency model and a different oracle pattern, so it takes dedicated engineering rather than spare capacity. Funded, that work happens now and in the open. Unfunded, it happens slowly and narrowly.
+Cardano is not a port. eUTXO demands a native Aiken implementation, a different concurrency model and a different oracle pattern, so it takes dedicated engineering, not leftover capacity. Unfunded, it happens slowly and narrowly.
 
-The open-source CIP-113 basket substandard is the clearest case. No single product justifies generalising, documenting and maintaining it for other issuers. A grant does.
+It also pays for work no single product justifies alone: a published specification of how basket vaults hold and move CIP-113 programmable tokens, the hardest unsolved part of that standard.
 
 Allocation: 
 
-- 60% engineering (Aiken validators, rebalancing engine, CIP-113 integration, front end)
-- 15% audit
-- 15% basket liquidity for accurate NAV
-- 10% launch.
+- 70% engineering
+- 20% audit
+- 5% infrastructure
+- 5% documentation.
+
+No funds purchase assets, provide liquidity or incentivise users. Baskets need no seeded liquidity: mint and redeem settle against the underlying at NAV, so the protocol is its own primary market.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -186,13 +188,13 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-Deployed on Cardano mainnet and usable by end of window:
+Deployed on Cardano mainnet and usable at by end of window:
 
-1. Six Aiken validators live: basket_registry, basket_vault, order_validator, basket_token_policy, rebalance_manager, nav_module. Declared footprint: script hashes, policy IDs, token names, message tag, team wallets
-2. Three baskets live: two permissionless, each holding four to six native and stablecoin constituents, and one CIP-113 gated basket whose token is a programmable token, under conservative deposit caps
-3. Three repeatable flows, each evidenced by independent mainnet transaction hashes: mint, redeem, rebalance. Oracles evidenced by Charli3 reads in NAV, stablecoins by USDM/USDCx settlement, CIP-113 by ledger-enforced eligibility on transfer
-4. Open-source repo at a tagged commit, plus our CIP-113 basket substandard published
-5. Release notes covering architecture, scope and limitations, a test bundle with checklist, bug log and security note, a walkthrough video, and Demo Day
+1. Six Aiken validators live: basket_registry, basket_vault, order_validator, basket_token_policy, rebalance_manager, nav_module. Declared footprint: script hashes, policy IDs, addresses, token names, message tag, team wallets.
+2. Three baskets live: two permissionless, each holding four to six native and stablecoin constituents, and one CIP-113 gated basket whose token is a programmable token, under conservative deposit caps.
+3. Three repeatable flows evidenced by independent mainnet transaction hashes: mint, redeem, rebalance. Oracles evidenced by Charli3 reads in NAV, stablecoins by USDM/USDCx, CIP-113 by ledger eligibility.
+4. A published technical specification of our CIP-113 basket integration, documenting how transfer logic composes when one transaction moves several programmable assets.
+5. Release notes with architecture, scope and limitations, a test bundle, a walkthrough video, and Demo Day.
 
 ### Oracles - expected transaction count
 
