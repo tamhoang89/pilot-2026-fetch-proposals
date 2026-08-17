@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 25
+- **Revision:** 28
 - **Proposer:** `stake1u94sq8k5rjax9vf5eyyzdnmh0d7nmhgf38f4tchdnspyy5qrlwfym`
 - **Funding requested:** ₳145,000
-- **Last finalized:** 2026-08-15T13:00:48.408000+00:00
+- **Last finalized:** 2026-08-17T13:47:56.604000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -64,9 +64,11 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Our RWA platform is built on steady and sustainable portfolio growth, which attracts buyers that employ the DCA approach. This leads to consistent monthly (sometimes bi-monthly with each paycheck) transactions by these users. With the integration of stablecoins, users will be able to purchase RWAs by moving money from their bank to stablecoins without needing to worry about ADA tax implications; this reduced barrier to entry will encourage more frequent and consistent purchases regardless of market activity. With over 1,000 users (400-500 active every month), we anticipate this product to generate several hundred qualifying transactions per month. The RWA platform is anticipated to account for \~30-35% of qualifying transactions.
+Our RWA platform is built on steady and sustainable portfolio growth, which attracts DCA buyers. With the integration of stablecoins, users will be able to purchase RWAs by moving money from their bank to stablecoins without needing to worry about ADA tax implications; this reduced barrier to entry will encourage more frequent purchases regardless of market activity. With over 1,000 users (400-500 active every month), we anticipate this product to generate several hundred qualifying transactions per month.
 
-While our launchpad already has usage, stablecoin integrations will enable more risk-averse companies to try their hand at fundraising with the assurance that they will be receiving a USD-equivalent asset rather than ADA. The launchpad may take 1-2 months to ramp up qualifying transactions as new launches begin after stablecoin integration is supported, however this should steady out over time and ultimately overtake the RWA platform's transaction volume.
+For our launchpad, stablecoin integrations will enable risk-averse companies to try their hand at fundraising. Due to the nature of a launchpad, these transactions will be less consistent but high impact for each sale; the RWA platform will serve as the transaction backbone to maintain our "rhythm".
+
+We will align the launchpad integration with a high-potential sale that is already committed (not dependent on this proposal). The 2-week sprint after going live will consist of running/promoting this sale and the integrations, a site-wide banner on the RWA platform for awareness, and an X marketing campaign with graphics to showcase the benefits of our stablecoin integrations.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -96,9 +98,18 @@ Our RWA platform has been operational on Cardano mainnet for more than 1 year, r
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-The foundational core of both of our products is transactions processing. We have a comprehensive suite of tools and processes for transaction building, indexing, and processing on both the frontend and backend. Stablecoins, however, are not yet part of this infrastructure.
+The foundational core of both of our products is transactions processing. We have a comprehensive suite of tools and processes for transaction building, indexing, and processing on both the frontend and backend.
 
-Much of our transaction infrastructure is part of a Web2.5-esque architecture that leverages the UTxO model for on-chain payments and distributions but off-chain processing. This will allow us to support stablecoins with flexible implementations and without the need for an on-chain oracle. This will allow us to adapt our solutions over time to match the needs of any corporate and enterprise use cases involving our products.
+Our transaction infrastructure leverages the UTxO model for on-chain payments and distributions but off-chain processing. We can support stablecoins with flexible implementations and without the need for an on-chain oracle. This will allow us to adapt our solutions over time to match the needs of any corporate and enterprise use cases involving our products.
+
+Specifically, the integration work defined in this proposal will include:
+
+- Backend tracking, utilizing multi-source exchange APIs, of ADA's current and historical price to enable real-time and delayed transaction processing
+- Backend tracking, using libraries that integrate with Cardano's main DEXs, to ensure that USDM and USDCx, which are assumed to be $1 for the purposes of purchases, do not slip more than an acceptable amount from that assumed peg.
+- Websocket integrations for real-time price updates (note: this is partially supported for the RWA platform already for a different use case).
+- Frontend UI/UX and transaction building updates that utilize real-time price updates to facilitate both stablecoin and ADA purchases.
+- Frontend UI updates for user education and clarity around stablecoin purchase options.
+- Overhaul off-chain transaction processing to validate stablecoin and dynamic ADA payments.
 
 ### Fits the timeline
 
@@ -150,9 +161,13 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Stablecoins on Cardano, while widely available, are not yet widely adopted. Without funding, we are not able to justify the business decision of investing development hours into stablecoin-related infrastructure. We are optimistic that this Catalyst fund will turn the tide by investing in stablecoin infrastructure; we aim to be a strong part of the shift towards adoption of stablecoins on Cardano. This funding will enable us to optimize for long-term stablecoin adoption without focusing on the short-term bottom line, implementing the volatility-eliminating features that are needed to drive greater corporate and enterprise usage of our launchpad and RWA platform.
+Stablecoins on Cardano, while widely available, are not yet widely adopted. Without funding, we are not able to justify the business decision of investing development hours into stablecoin-related infrastructure. This funding will enable us to optimize for long-term stablecoin adoption without focusing on the short-term bottom line, implementing the volatility-eliminating features that are needed to drive greater corporate and enterprise usage of our launchpad and RWA platform.
 
-95% of the funding will be directed to applicable software engineering, with 5% reserved for operational overhead.
+130,000 ADA - Software engineering salaries to support dedicated frontend and backend development time for the integrations.
+
+14,000 ADA - Project management, non-technical product design, UI mockups
+
+1,000 ADA - Vendor costs & overhead, e.g. short-term price API costs
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
