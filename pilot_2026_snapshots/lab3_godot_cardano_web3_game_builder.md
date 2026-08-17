@@ -5,14 +5,14 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 10
+- **Revision:** 15
 - **Proposer:** `stake1uy02n73u26njqm4lw7xfzavnu2jfpldf7z2e2rwsvtxsa4cvxcfh6`
 - **Funding requested:** ₳57,000
-- **Last finalized:** 2026-08-14T06:31:05.321000+00:00
+- **Last finalized:** 2026-08-17T11:18:12.760000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
-TRL 7 - System prototype demonstrated in operational environment
+TRL 5 - Technology validated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
@@ -116,20 +116,23 @@ Yes
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-- Existing channels: C2VN LMS, Cardano2VN community, GitHub, YouTube, and our developer/student network.
+- Existing channels: C2VN LMS, Cardano2VN, GitHub, YouTube, and our developer/student community.
 
-- Initial target: onboard approximately 120 real users during the Pilot.
+- Public active-user counts for the Godot × Cardano product are not available, so we do not rely on unverified existing-user volumes.
 
-- With \~120 users averaging 4–5 meaningful identity/progression interactions per user, the product can support the 500-transaction target.
+- Pilot target: \~120 real external users.
 
-- Users enter through playable demos, workshops, guided challenges, and Godot-focused technical content.
+- Expected share from existing Godot × Cardano users: 0%. Users will be onboarded through our education/community channels and new outreach.
 
+- Week 1: \~40 users via guided setup, workshops, and community outreach.
 
-- Initial acquisition focuses on our existing Vietnam-based communities, reducing cold-start risk.
+- Week 2: \~40 users via playable challenges and developer testing.
 
-- GitHub, English technical content, and open-source distribution will extend reach to the wider Godot/Cardano ecosystem.
+- Remaining \~40 users will come through GitHub, YouTube, Godot content, and open-source distribution.
 
-- Usage will be tracked through distinct external wallets and qualifying mainnet transactions.
+- At 4–5 qualifying interactions per user, \~120 users can support the 500-transaction target.
+
+- Usage will be measured through distinct external wallets and qualifying mainnet transactions.
 
 ### Is the underlying project open source?
 
@@ -145,50 +148,43 @@ Yes
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-- C2VN LMS and Cardano2VN are live, publicly accessible products used for Cardano learning, developer onboarding, and community distribution.
+Godot × Cardano is at TRL 5.
 
-- C2VN LMS: <https://lms.cardano2vn.io/>
+- Repository: <https://github.com/dmt041104111003/lab3-godot-cardano-testnet>
 
-- Cardano2VN: <https://cardano2vn.io/>
+- Live demo: <https://dmt041104111003.github.io/lab3-godot-cardano-testnet/>
 
-- LAB3 has also developed Godot × Cardano prototypes and open-source examples, providing an existing technical foundation for the Pilot.
+- Public Preprod validation:
 
-- The Pilot does not fund these existing platforms. It builds a new Godot product and CIP-0170 integration on top of this operational ecosystem.
+  - <https://preprod.cardanoscan.io/transaction/30219e447faf3a89784c73f27916ee15882bdd7575478152a0d01500173e8162>
+
+  - <https://preprod.cardanoscan.io/transaction/4a4b87a9e9b398526308c2c7ba239d0e185f0857bd22935dfae5e6d5bb00e501>
+
+- The prototype demonstrates a repeatable Godot → Cardano public-testnet interaction flow.
+
+- C2VN LMS/Cardano2VN are used only for onboarding/distribution.
+
+- The Pilot extends this validated baseline with CIP-0170 identity/attestations.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-**Godot layer**
+- Existing channels: C2VN LMS, Cardano2VN, GitHub, YouTube, and our developer/student community.
 
-- Handles gameplay, quests, UI, and high-frequency game state.
-- Keeps normal gameplay off-chain for speed and low cost.
+- Public active-user counts for the Godot × Cardano product are not available, so we do not rely on unverified existing-user volumes.
 
-**Cardano integration layer**
+- Pilot target: \~120 real external users.
 
-- Connects Godot with Cardano services.
-- Handles wallet interaction, transaction construction/submission, and retrieval of required on-chain data.
+- Expected share from existing Godot × Cardano users: 0%. Users will be onboarded through our education/community channels and new outreach.
 
-**CIP-0170 identity layer**
+- Week 1: \~40 users via guided setup, workshops, and community outreach.
 
-- Links participating wallets with verifiable player identity/attestations.
-- Selected achievements and progression events trigger meaningful on-chain interactions rather than recording every game action.
+- Week 2: \~40 users via playable challenges and developer testing.
 
-**Existing infrastructure**
+- Remaining \~40 users will come through GitHub, YouTube, Godot content, and open-source distribution.
 
-- C2VN LMS supports onboarding and guided user journeys.
-- Cardano2VN provides an existing distribution/community channel.
-- LAB3's Godot × Cardano work provides the development foundation.
+- At 4–5 qualifying interactions per user, \~120 users can support the 500-transaction target.
 
-**Measurement**
-
-- Qualifying mainnet transactions will use the Pilot-required transaction label, enabling transparent measurement of real users, activity, and network fees.
-
-- High-frequency gameplay remains off-chain for speed and low cost.
-
-- Cardano is used only for selected events requiring persistent, verifiable identity or attestations.
-
-- CIP-0170 handles the identity/attestation layer rather than ordinary game state.
-
-- This minimizes unnecessary transactions while keeping meaningful achievements independently verifiable.
+- Usage will be measured through distinct external wallets and qualifying mainnet transactions.
 
 ### Fits the timeline
 
