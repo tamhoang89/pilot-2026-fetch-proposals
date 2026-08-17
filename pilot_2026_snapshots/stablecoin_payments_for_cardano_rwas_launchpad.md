@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 28
+- **Revision:** 29
 - **Proposer:** `stake1u94sq8k5rjax9vf5eyyzdnmh0d7nmhgf38f4tchdnspyy5qrlwfym`
 - **Funding requested:** ₳145,000
-- **Last finalized:** 2026-08-17T13:47:56.604000+00:00
+- **Last finalized:** 2026-08-17T14:59:37.571000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -267,3 +267,5 @@ Our company was bootstrapped for 5 years (no external funding). In early 2026, w
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
 We have not yet begun any planning or development beyond the extent required to ensure that this proposal is accurate, viable, and beneficial to our business operations and applicable related targets.
+
+Note for clarification: we *do* currently allow users to send in USDM and USDCx as payment on our launchpad. They are treated the same as any other Cardano native asset, with no support for their benefits as stablecoins. The integrations in this proposal focus around USD-pegged sale pricing, allow stablecoins to be effectively used as intended and to allow more volatile assets (e.g. ADA) to be pegged to those stablecoin values. Currently, any price fluctuation during a sale leads to inconsistent value across payment options, which has been a major roadblock to stablecoin usage for us.

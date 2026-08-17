@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 35
+- **Revision:** 44
 - **Proposer:** `stake1u90cjqt5yy4wvhtnu0pudpxgdp7kfnn5e56fqs0qf00znsqh6c3g8`
 - **Funding requested:** ₳50,000
-- **Last finalized:** 2026-08-14T15:16:48.669000+00:00
+- **Last finalized:** 2026-08-17T14:59:56.557000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,15 +16,21 @@ TRL 5 - Technology validated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-Maheswaran Velmurugan, sole contributor. I do the engineering, the outreach and the support. [github.com/soloking1412](http://github.com/soloking1412). This is my only proposal this round, and I have no other Catalyst commitments.
+Maheswaran Velmurugan, sole contributor. Engineering, outreach and support. My only proposal this round; no other Catalyst commitments.
 
-The record is checkable, not asserted. Four merged PRs into paritytech/polkadot-sdk in pallet-revive's Ethereum JSON-RPC layer: eth_getBlockReceipts, eth_feeHistory percentile validation, eth_getLogs block tags. Open work on XRPLF/xrpl-rust and Blockstream/lwk (BIP-352 silent payments for Liquid), and an RFC to polkadot-fellows on JSON-RPC compatibility. These are heavily reviewed repositories where being wrong about an encoding detail does not get merged.
+Checkable references:
 
-That is the skill this needs. Attest is a standards implementation: CESR primitives, KERI identifiers, CBOR script hashing, CIP-170 and CIP-171 conformance.
+[linkedin.com/in/maheswaran-velmurugan](http://linkedin.com/in/maheswaran-velmurugan)
 
-I audit for a living, 20+ high and medium findings across Sherlock, Code4rena, Cantina and Immunefi. Attest is tooling for auditors, built by someone who does the work.
+[audits.sherlock.xyz/watson/soloking](http://audits.sherlock.xyz/watson/soloking), 7 findings, 3 high and 4 medium, one top-25 finish.
 
-No other contributors today. If I bring anyone in during the pilot I will name them and their role in the milestone report.
+Arbitrum Foundation grant delivered, both milestones accepted and paid: [questbook.app/dashboard/?grantId=67d802bd46da2f90cc3267b0&chainId=10&role=builder&proposalId=68f638ebfb7e884efac8d911&isRenderingProposalBody=true](http://questbook.app/dashboard/?grantId=67d802bd46da2f90cc3267b0&chainId=10&role=builder&proposalId=68f638ebfb7e884efac8d911&isRenderingProposalBody=true)
+
+Four merged PRs into paritytech/polkadot-sdk, in pallet-revive's Ethereum JSON-RPC layer: eth_getBlockReceipts, eth_feeHistory percentile validation, eth_getLogs block tags. Open work on XRPLF/xrpl-rust and Blockstream/lwk (BIP-352 silent payments), plus an RFC to polkadot-fellows. Heavily reviewed repositories where being wrong about an encoding detail does not get merged.
+
+Attest is a standards implementation, CESR primitives, KERI identifiers, CBOR script hashing and CIP-170/171 conformance, so that is exactly the skill it needs.
+
+No other contributors today. If I bring anyone in I will name them and their role in the milestone report.
 
 ### Eligible area
 
@@ -56,7 +62,7 @@ I need about ten organisations, not thousands of users. That is direct outreach,
 
 Channels:
 
-1\. Cardano audit firms, directly. I audit for a living, with 20+ high and medium severity findings across Sherlock, Code4rena, Cantina and Immunefi. I approach them as a peer with a tool that makes their output harder to dispute, not as a vendor.
+1\. Cardano audit firms, directly. I compete in audit contests with findings on Sherlock, so I approach them as a peer with a tool that makes their output harder to dispute, not as a vendor.
 
 2\. The Aiken ecosystem. The GitHub Action drops into an existing release workflow in about ten lines. No new infrastructure, no wallet setup.
 
@@ -192,17 +198,19 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Without funding this stays a repo nobody adopts. I can write code unpaid. What I cannot do unpaid is onboard ten audit firms and protocol teams, a KERI identifier each and the Action in their pipelines.
+The code in the repository was written before this proposal. It is contributed to the programme at no cost, and none of the requested funds pay for it. That covers the packages, CLI, verifier, indexer, Action and the Preview deployment.
 
-Budget, tied to M1 deliverables:
+Everything below has not happened yet.
 
-Engineering to mainnet, ₳24,000. Publish path, hosted verifier and indexer, CIP-10 label registration, GitHub Action (M1 items 1, 2, 3, 5).
+Onboarding and integration support, ₳20,000. Ten organisations, hands-on: a KERI identifier and a pipeline change each. This is the bulk of the job and none of it is written.
 
-Onboarding, ₳13,000. Hands-on integration with the first ten organisations (M1 item 4, and the adoption target).
+Mainnet hardening, CIP-10 label registration, and publishing the Action, ₳12,000.
 
-Independent review of the verification logic, ₳6,000. Before anyone relies on it (M1 item 6).
+Hosting and operating the verifier for four months, ₳6,000.
 
-Infrastructure, ₳5,000. KERIA agent, witnesses and verifier hosting for four months.
+Independent security review of the verification logic, ₳8,000.
+
+Documentation, Demo Day and milestone reporting, ₳2,000.
 
 Transaction fees and contingency, ₳2,000.
 

@@ -22,5 +22,7 @@
   "02a73fce-d510-477f-991f-834566a324a4": "cardano_monthly_reports",
   "d3cb11f9-e7b6-4672-845a-fd36e1539ce7": "portable_verifiable_skill_credentials_on_cardano_via_keri",
   "b61946e2-0eb3-44d2-a78a-dccaa6bebe1c": "signed_delivery_attestations_for_restaurant_supply_chains",
-  "96231fc3-008b-4b43-bb5b-16254ef254f1": "stablecoin_working_capital_and_last-mile_cash_rails"
+  "96231fc3-008b-4b43-bb5b-16254ef254f1": "stablecoin_working_capital_and_last-mile_cash_rails",
+  "c1b4b368-3ce1-4a12-9c32-44d90b97a4e8": "darwin_the_index_layer_for_programmable_assets_on_cardano",
+  "f0ea1b4c-12c1-42b9-8fde-cc80bf9942dd": "pay_by_cexplorer_stablecoin_checkout_for_any_business"
 }

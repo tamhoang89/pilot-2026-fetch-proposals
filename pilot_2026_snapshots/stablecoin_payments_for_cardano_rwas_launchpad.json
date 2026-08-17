@@ -7,7 +7,7 @@
   "title": "Stablecoin Payments for Cardano RWAs & Launchpad",
   "tagline": "BankFi's RWA platform and NFT/Token launchpad will peg prices to USD and accept stablecoin payments for non-volatile investment opportunities.",
   "requestedAmount": 145000,
-  "updatedAt": 1786974476604,
+  "updatedAt": 1786978777571,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 9 - Actual system proven in operational environment",
@@ -60,20 +60,20 @@
     "eligStandardAttested": true,
     "stablecoinsFeeTarget": 780,
     "activeCommitmentsList": "Our company was bootstrapped for 5 years (no external funding). In early 2026, we received our only grant to date: a $40,000 payment through the Builder DAO for a combination of marketing and KPI growth. All planned work was completed ahead of schedule, and the majority of KPIs have already been reached. There is one month remaining until the end of that funding cycle, but there is no overlap between the work funded through the Builder DAO and the features detailed in this proposal.\n\n<https://drive.tiny.cloud/1/1k7o5om77fbj49trj4wcd7e92e5fxyf06ggt48984hs8asnh/ffb3c626-36ed-4918-8315-c029f24823dd>",
-    "trlIntegrationEvidence": "We have not yet begun any planning or development beyond the extent required to ensure that this proposal is accurate, viable, and beneficial to our business operations and applicable related targets."
+    "trlIntegrationEvidence": "We have not yet begun any planning or development beyond the extent required to ensure that this proposal is accurate, viable, and beneficial to our business operations and applicable related targets.\n\nNote for clarification: we *do* currently allow users to send in USDM and USDCx as payment on our launchpad. They are treated the same as any other Cardano native asset, with no support for their benefits as stablecoins. The integrations in this proposal focus around USD-pegged sale pricing, allow stablecoins to be effectively used as intended and to allow more volatile assets (e.g. ADA) to be pegged to those stablecoin values. Currently, any price fluctuation during a sale leads to inconsistent value across payment options, which has been a major roadblock to stablecoin usage for us."
   },
   "createdAt": 1786714448577,
   "headRevision": {
-    "id": "3390c5f4-f57b-46d9-8a26-295412078b2e",
-    "number": 28,
+    "id": "82ea5afd-2eaa-4c5d-adad-69a3d26d526f",
+    "number": 29,
     "kind": "saved",
-    "createdAt": 1786974457235
+    "createdAt": 1786978658586
   },
   "latestFinalization": {
-    "id": "116f9f43-aab0-4f5c-ba8f-e7f1c05b64fe",
-    "cycle": 2,
-    "revisionId": "3390c5f4-f57b-46d9-8a26-295412078b2e",
-    "finalizedAt": 1786974476604
+    "id": "753a0477-dbbd-4be7-84a0-62df11058397",
+    "cycle": 3,
+    "revisionId": "82ea5afd-2eaa-4c5d-adad-69a3d26d526f",
+    "finalizedAt": 1786978777571
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",

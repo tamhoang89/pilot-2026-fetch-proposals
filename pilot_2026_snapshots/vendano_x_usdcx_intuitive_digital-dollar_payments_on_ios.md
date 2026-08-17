@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 5
+- **Revision:** 9
 - **Proposer:** `stake1uxlrwkwcyese8dh5nxar7mwr4yy90gdfmaat7ysdshxtqwcvp4qhk`
 - **Funding requested:** ₳125,000
-- **Last finalized:** 2026-08-12T17:22:16.449000+00:00
+- **Last finalized:** 2026-08-17T15:22:02.795000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -36,23 +36,19 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Counted usage comes only from external users making genuine USDCx payments on Cardano; my own/test wallets and subsidized or reimbursed transactions will not be used to manufacture activity.
+Counted usage comes only from external users making genuine USDCx payments on Cardano; my own/test wallets and subsidized or reimbursed transactions will not be counted.
 
-The working adoption model targets 5 merchants active at launch and 7 during the measured window, supported by roughly 50-75 distinct external customer wallets. At 7 merchants averaging about 5-6 USDCx customer payments per day across an approximately 35-day measurement period, the 1,300-transaction target is ambitious but reachable through ordinary repeat checkout activity.
+The 1,300-payment figure is the declared program target, not a claim of existing volume. The first two weeks target 3–5 merchants, 20–30 customers, and at least 50 payments while the flow is stabilized. The broader measured-window target assumes the initial 5 converted Rare Evo exhibitors grow to 8–10 active merchants, supported by roughly 100–150 external customer wallets averaging repeat purchases across the participating merchants.
 
-Usage will be recruited through direct merchant outreach plus Vendano's established App Store, X, YouTube, Medium/Coinmonks, r/Cardano, Cardano Forum, and Cardano-community channels.
-
-The first two weeks target 3-5 merchants, 20-30 external customers and at least 50 successful USDCx payments. I will provide hands-on support, publish walkthroughs, and correct checkout friction quickly before scaling the merchant cohort.
-
-The 475 ADA fee target remains tied to the same genuine external transactions; no user will be paid, reimbursed, rewarded, or given subsidized fees to increase measured usage.
+Before release I will personally contact the businesses in Rare Evo’s published exhibitor directory, prioritizing likely merchandise sellers using the expo map, and seek at least 3 onboarding commitments before launch. No merchant is claimed as committed today. This is an ambitious acquisition target built from a concrete prospect pool, not existing USDCx demand. Hands-on support and rapid fixes during the first two weeks will determine whether the cadence can scale.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Vendano already has working public acquisition channels: the App Store, X, YouTube, Medium/Coinmonks, r/Cardano, the Cardano Forum, and Cardano community outreach. Current organic App Store acquisition is small but measurable: 11 app units in the last 30 days.
+Vendano has established public channels I have used before: the App Store, X, YouTube, Medium/Coinmonks, r/Cardano, and the Cardano Forum. Current organic App Store acquisition is small but measurable: 11 App Store units in the last 30 days.
 
-The pilot changes the model from broad wallet promotion to merchant-led adoption. I will approach roughly 20-30 Cardano-friendly merchants/vendors, targeting 5-7 active merchants as recurring payment endpoints.
+The primary merchant channel is Rare Evo’s published 2026 exhibitor directory and expo map. I will personally contact the listed exhibitors, prioritizing those most likely to sell merchandise at Cardano events, and present Vendano as an iPhone checkout option. The target is to convert at least 5 exhibitors into pilot merchants; no exhibitor is represented as already committed.
 
-In the first two weeks after mainnet release, I will target 3-5 merchants onboarded, 20-30 external customers completing the flow, and at least 50 genuine USDCx payments. I will publish walkthrough/demo content through the channels above, provide hands-on merchant support, and prioritize fixes found in real transactions. The broader adoption window will build from that cohort rather than relying on sponsored or team-wallet activity.
+In the first two weeks after release, I will target 3–5 merchants onboarded, 20–30 external customers, and at least 50 genuine USDCx payments. I will publish walkthroughs through the named channels, provide hands-on support, and prioritize fixes found in real transactions.
 
 ### Is the underlying project open source?
 
@@ -70,11 +66,11 @@ The differentiator is a payment-first iOS experience combined with self-custody.
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-Vendano is beyond prototype or testnet validation. It is a functioning self-custody Cardano wallet distributed publicly through Apple's App Store and has operated on Cardano mainnet for approximately eight months.
+Vendano is a packaged, live, self-custody Cardano wallet distributed publicly through Apple’s App Store and has operated on Cardano mainnet for approximately eight months. It is beyond prototype or testnet validation. 
 
 The production application supports wallet creation/import, ADA transactions, native-asset discovery, transaction history, address-based and simplified payment flows, and an existing Store Mode.
 
-The public App Store release and live mainnet operation provide independently verifiable evidence that the underlying product is mature enough to support an incremental stablecoin integration.
+Customers install the production app directly from the App Store; they do not clone the repository, use Xcode, or supply API keys. The repository instructions are solely for developers compiling the open-source code. The public App Store release and live mainnet operation provide independently verifiable evidence of TRL 7.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
@@ -215,8 +211,8 @@ These steps are technically manageable. The product opportunity is making them u
 
 ### Supporting links (repo, site, demo)
 
-- https://vendano.net/
 - https://apps.apple.com/us/app/vendano-cardano-wallet/id6751762014
+- https://vendano.net/
 - https://github.com/vendano/vendano-ios
 - https://www.youtube.com/watch?v=XtmH3UH9N2g
 
