@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 10
+- **Revision:** 12
 - **Proposer:** `stake1uyqe7s205xndy8l4c32pakhldsmp0wrpj75lzhpfmw79ntck5hhzr`
 - **Funding requested:** ₳75,000
-- **Last finalized:** 2026-08-15T05:55:03.108000+00:00
+- **Last finalized:** 2026-08-17T17:28:16.162000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -42,11 +42,11 @@ Week 1 focuses on Bidi Bidi field visits and community onboarding. Week 2 expand
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Rvess is operated by Buildfi Tech UG Ltd (URSB ERN 80034893783008, registered 29 Jun 2026, status: Compliant). We hold a payment integration license with Relworx ([relworx.com](http://relworx.com)), covering MTN MoMo and Airtel Money disbursement, plus a wallet/settlement integration with MarzPay ([wallet.wearemarz.com](http://wallet.wearemarz.com)).
+Rvess is operated by Buildfi Tech UG Ltd (URSB ERN 80034893783008, registered, status: Compliant). We hold a live Relworx merchant account (RELC479A9A03C), covering MTN MoMo/Airtel payout across Kenya, Uganda, and East Africa - already integrated into the pilot. We also hold a MarzPay account (251757317597, merchant 323175), a lower-rate Uganda-only gateway not yet wired in; that integration is new work funded here.
 
-Channels: (1) Bidi Bidi refugee settlement, one of Uganda's largest refugee settlements - early-stage community contact established; reachable population to be confirmed via week-one field visits. (2) Kampala Cardano and freelancer communities, reached through demonstrations, meetups, and referrals. (3) In-person field events at both locations in weeks one and two, run by the founding team.
+Channels: (1) Planned campus activations at Makerere and Kyambogo University, Kampala, targeting tech/CS/blockchain-adjacent students. (2) Kampala Cardano and freelancer communities via demonstrations, meetups, referrals. (3) Field events at both in weeks one and two.
 
-Target: 400 external users, 1,150 transactions, 400 ADA in counted fees. Week 1: Bidi Bidi outreach. Week 2: Kampala expansion and wallet/dApp partner outreach. Dune Analytics tracks genuine external wallets; no circular or scripted usage.
+Target: 400 users, 1,150 transactions, 400 ADA fees. Week 1: campus activations. Week 2: Kampala/Cardano expansion. Dune tracks external wallets; no scripted usage.
 
 ### Is the underlying project open source?
 
@@ -120,17 +120,12 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Funding enables the new stablecoin settlement integration rather than work already completed. Requested amount: 75,000 ADA. 
+Rvess's Cardano pilot already has a live Relworx account (RELC479A9A03C): payout, deposit monitoring, ledger, state machine, webhooks, dashboard.\
+This grant does NOT rebuild that.
 
-- Stablecoin integration dev (policy allowlisting, wallet asset support, quoting): 27,000 ADA (36%)
-- Deposit monitoring,labeling: 12,000 ADA (16%)
-- Mobile-money settlement integration (Relworx/MarzPay): 10,500 ADA (14%)
-- Security testing & audit: 7,500 ADA (10%)
-- Compliance & Uganda onboarding: 6,000 ADA (8%)
-- Infrastructure & monitoring: 5,250 ADA (7%)
-- Initial liquidity operations: 6,750 ADA (9%)
+It funds: (1) stablecoin-specific work - policy allowlisting (USDM/USDCx), quoting, rate locking, ledger extensions, new trigger into existing Relworx payout; (2) new MarzPay integration (251757317597, merchant 323175), a lower-rate Uganda-only gateway not yet wired in.
 
-Without this funding, we would remain focused on current Cardano payment experience and the route would develop more slowly. The grant accelerates delivery of a verified mainnet integration within three months and its transition into sustained use.
+Budget (75,000 ADA): Stablecoin policy/quoting 26,000 (35%); ledger extension 11,000 (15%); MarzPay integration+routing+Dune labeling 13,000 (17%); security audit 7,500 (10%); compliance/onboarding 6,000 (8%); infra/monitoring 4,750 (6%); liquidity 5,250 (7%); docs/Demo Day 1,500 (2%).
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
