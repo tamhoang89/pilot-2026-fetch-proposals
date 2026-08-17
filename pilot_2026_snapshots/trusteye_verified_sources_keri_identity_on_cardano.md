@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 4
+- **Revision:** 13
 - **Proposer:** `stake1u80xxjl5pktq7fyeh46f2mwnzvjhjafmsdzv0hq3hxzc9kq6vwzsx`
-- **Funding requested:** ₳72,000
-- **Last finalized:** 2026-08-10T17:39:41.822000+00:00
+- **Funding requested:** ₳50,000
+- **Last finalized:** 2026-08-17T18:03:39.077000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -28,22 +28,15 @@ Yes
 
 ### Optional: Voluntary give-back pledge: grant repayment terms and/or treasury revenue share, with your own thresholds/terms and/or %. If no such relevant offer exists, please write 'N/A'.
 
-Voluntary pledge: once cumulative TrustEye revenue directly attributable to the Cardano higher-assurance organizational plan (subscriptions that include the CIP-0170 accountable-source feature) exceeds 50,000 ADA-equivalent, we will share 10% of further attributable revenue with the Cardano treasury, paid annually for three years from M1, up to a cumulative cap equal to the full 72,000 ADA grant. 
+Voluntary pledge: once cumulative TrustEye revenue directly attributable to the Cardano higher-assurance organizational plan (subscriptions that include the CIP-0170 accountable-source feature) exceeds 50k ADA-equivalent, we will share 10% of further attributable revenue with the Cardano treasury, paid annually for three years from M1, up to a cumulative cap equal to the full 50k ADA grant. 
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Who transacts: organization administrators, from their own wallets. Cadence: a one-time onboarding footprint per organization (identifier inception, operator and device authorizations — 5-10 events), then Verified Source Attestations whenever a real evidence package or inspection batch completes — roughly 4-6 per active organization per week, following case flow, not the target. Model: 6-10 independently funded organizations (6 is the wallet minimum at our award — organization count, not transaction volume, is the binding constraint), averaging 35-55 qualifying transactions each: \~340 transactions producing 112-136 ADA gross at 0.33-0.40 ADA/tx, against the declared 110 ADA target (floor 60). The target sits in the lower third of the Credible band — deliberately, because zero organizations are committed today and we will not inflate ambition we cannot evidence. The workflow shape matches the rising floors: onboarding events concentrate in early epochs (9.17 ADA floors), recurring attestations carry the late epochs (18.33 ADA) and continue past the window. Team-paid, sponsored, reimbursed, or incentivized transactions never count and are excluded in telemetry.
+Who transacts: organization administrators, from their own wallets. Cadence: a one-time onboarding footprint per organization (identifier inception, operator and device authorizations — 5-10 events), then Verified Source Attestations whenever a real evidence package or inspection batch completes — roughly 4-6 per active organization per week, following case flow, not the target. Model: 6-10 independently funded organizations (program minimum 5 external wallets) averaging 30-50 qualifying transactions each: \~300 transactions producing 99-120 ADA gross at 0.33-0.40 ADA/tx against the declared 100 ADA target (floor 50). Conversion realism: the named channels hold roughly 25-35 outreach starts, so the 6-organization base case needs about one conversion in four to six — worked across the \~9-week pre-M1 runway, not a cold launch. Sensitivity: base case 6 organizations averaging \~50; success case 8-10 averaging 30-40; below 6 active organizations we treat the target as at risk rather than manufacture volume. The target sits deliberately in the Credible band because zero organizations are committed today. Team-paid, sponsored, reimbursed, or incentivized transactions never count.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Named channels, not a generic plan (no commitments claimed):
-
-1. direct professional contacts at Romanian insurers and banks from the lead applicant's 10+ years in banking and fintech — claims and collateral field evidence, 3-5 organizations;
-2. Flip.ro, a Romanian refurbished-device marketplace whose buy-back intake is condition-photo evidence;
-3. eMAG Buy-Back, the same workflow at retail scale;
-4. auto trade-in and remarketing dealers in the Autovit/OLX ecosystem, 3-5.
-
-That is 8-12 realistic outreach starts toward the 6-10 active organizations the model needs. Onboarding: a ten-minute administrator flow, wallet setup and self-payment guidance, lifecycle playbooks, and a public dashboard. First two weeks after M1: individual onboarding sessions with every validated organization, first genuine attestations from each active workflow, 24-hour review of failed wallet journeys, a published transaction list and counting methodology, and one public technical demonstration.
+Named channels, not a generic plan (no commitments claimed): (1) direct contacts at Romanian insurers and banks from the lead applicant's banking/fintech career — 3-5; (2) loss-adjusting and inspection vendors serving those insurers, via warm referrals — 5-8; (3) Flip.ro and eMAG Buy-Back — condition-photo intake workflows; (4) auto trade-in/remarketing dealers in the Autovit/OLX ecosystem — 10-15; (5) equipment-leasing and fleet operators from the same network — 3-5. Roughly 25-35 outreach starts for 6-10 active organizations (one conversion in four to six), worked across the \~9-week pre-M1 runway; written pilot intents are the current top priority. Onboarding: ten-minute administrator flow, wallet setup and self-payment guidance, lifecycle playbooks, public dashboard. First two weeks after M1: onboarding sessions, first attestations from each active workflow, 24-hour review of failed wallet journeys, published transaction list and methodology, one public technical demonstration.
 
 ### Is the underlying project open source?
 
@@ -59,7 +52,7 @@ C2PA Content Credentials: the principal open provenance standard; it separates m
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-TRL 8: a complete system deployed in production and distributed through both major app stores — [iOS](https://apps.apple.com/app/trusteye/id678440283)  and [Android](https://play.google.com/store/apps/details?id=io.trusteye.app)  — with a public website and verifier at <https://trusteye.io> . \
+TRL 8: a complete system deployed in production and distributed through both major app stores — [iOS](https://apps.apple.com/app/trusteye/id6784402834) and [Android](https://play.google.com/store/apps/details?id=io.trusteye.app) — with a public website and verifier at <https://trusteye.io> . \
 The production system combines photo/video capture, SHA-256 content binding, a tamper-evident evidence chain, ECDSA P-256 signatures from a device-held hardware-backed key, Apple App Attest and Android platform attestation, public-chain timestamp anchoring, and an exportable evidence bundle checkable independently of the device. An operational B2B layer provides organization records, API keys, and reporting. This states technical readiness; no active-user or revenue figure is claimed.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
@@ -92,11 +85,11 @@ Individual
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-Initial target: small and medium field-evidence organizations  (like inspection firms, independent adjusters, field-audit and delivery-verification teams) that manage several operators or capture devices and must let third parties verify where evidence came from. The buyer is an organization administrator or compliance lead.\
-\
-Demand evidence, stated candidly: TrustEye is a live product with an operational B2B organization/API layer (organization records, API keys, shared sealing capacity, reporting) — a real integration surface. That enterprises pay for capture-integrity workflows is validated in the market: Truepic Vision sells authenticated remote inspection to insurers. What we do NOT claim: no committed pilot organization, external wallet source, or signed distribution commitment exists at submission; no existing TrustEye app user is assumed to become a Cardano user; zero of the declared target is attributed to named partners. Converting outreach into 6-10 wallet-paying organizations is the declared principal risk of this proposal.\
-\
-Reachable market we will work first: direct professional contacts at Romanian insurers and banks from the lead applicant's 10+ years in banking/fintech (3-5 organizations), refurbished-device buy-back marketplaces,  and auto trade-in/remarketing dealers (3-5) —roughly 8-12 realistic outreach starts for the 6-10 active organizations the usage model requires.
+Initial target: small and medium field-evidence organizations (inspection firms, independent adjusters, field-audit and delivery teams) that manage several operators or capture devices and must let third parties verify where evidence came from. The buyer is an organization administrator or compliance lead.
+
+Demand evidence, stated candidly: TrustEye is a live product with an operational B2B organization/API layer (org records, API keys, reporting) — a real integration surface. Enterprises already pay for capture-integrity workflows: Truepic Vision sells authenticated remote inspection to insurers. What we do NOT claim: no committed pilot organization or signed distribution commitment exists at submission; no existing TrustEye app user is assumed to become a Cardano user; zero of the declared target is attributed to named partners. Conversion is the declared principal risk of this proposal.
+
+Reachable market we will work first: direct contacts at Romanian insurers and banks from the lead applicant's 10+ years in banking/fintech (3-5); independent loss-adjusting and inspection vendors serving those insurers, via warm referrals (5-8); Flip.ro and eMAG Buy-Back (condition-photo intake); auto trade-in/remarketing dealers in the Autovit/OLX ecosystem (10-15); equipment-leasing and fleet operators from the same network (3-5) — roughly 25-35 outreach starts for the 6-10 active organizations required: a one-in-four to one-in-six conversion, worked across the \~9-week pre-M1 runway.
 
 ### Applicant name
 
@@ -108,7 +101,7 @@ TrustEye already sells consumer sealing capacity and a B2B organization/API serv
 
 ### On-chain identity (CIP-0170) - expected transaction count
 
-340
+300
 
 ### Named, verifiable team
 
@@ -120,7 +113,7 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Without the grant, Cardano stays a background-anchoring roadmap item like Solana and Ethereum — no accountable-source layer, no external-wallet CIP-0170 flow, no public verification artifacts. The grant funds only future work. Build (28,800 ADA): CIP-0170/KERI profile and Verified Source Attestation implementation with the reference-wallet flow (9,500); chain indexing and identity-state resolution (5,500); backend and verifier integration (5,500); security testing, threat-model review, and wallet-compatibility hardening (3,800); test vectors, the Apache-2.0 artifact set, telemetry/dashboard, onboarding tooling, and M1 operations (4,500). Adoption (up to 28,800) and Kicker (14,400) are earned only through valid external usage. No user subsidies, no fee refunds, no re-granting.
+Without the grant, Cardano stays a background-anchoring roadmap item like Solana and Ethereum — no accountable-source layer, no external-wallet CIP-0170 flow, no public verification artifacts. The grant funds only future work. Build (20,000 ADA): CIP-0170/KERI profile and Verified Source Attestation implementation with the reference-wallet flow (8,000); chain indexing and identity-state resolution (4,500); backend and verifier integration (4,500); tests, the Apache-2.0 artifact set, telemetry/dashboard, and M1 operations (3,000). Adoption (up to 20,000) and Kicker (10,000) are earned only through valid external usage and fund onboarding, support, and continued operation. No user subsidies, no fee refunds, no re-granting.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -147,7 +140,7 @@ TRL 3 - Experimental proof of concept
 
 ### On-chain identity (CIP-0170) - fee target (ADA)
 
-110
+100
 
 ### Clear budget
 
@@ -163,11 +156,11 @@ Yes
 
 ### What solution are you building, and what specific problem does it solve - for whom?
 
-TrustEye is a production mobile camera and verification system, live on iOS and Android, that creates cryptographic evidence about how a photo or video was captured: a device-held hardware key signs the captured bytes, the app preserves a tamper-evident proof chain, and a public web verifier checks the result. It proves provenance and integrity  (not that the depicted scene is true).
+TrustEye is a production mobile camera and verification system, live on iOS and Android, that creates cryptographic evidence about how a photo or video was captured: a device-held hardware key signs the captured bytes, the app preserves a tamper-evident proof chain, and a public web verifier checks the result. It proves provenance and integrity — not that the depicted scene is true.
 
 The gap: a valid device signature answers "did these bytes come from this device, unchanged?" It does not answer "which accountable organization controlled that device at capture time?" Today that relationship lives in TrustEye's database, so a verifier must trust our service.
 
-Who has this problem: field-inspection and evidence-collection organizations whose evidence feeds third-party decisions (insurance claims, RealFi/RWA collateral inspections, financed-project monitoring, proof of delivery, buy-back condition assessment, and compliance review). Their reviewers need a durable chain from organization to operator and device to evidence, verifiable even if TrustEye is unavailable.
+Who has this problem: field-inspection and evidence-collection organizations whose evidence feeds third-party decisions — insurance claims, RealFi/RWA collateral inspections, financed-project monitoring, proof of delivery, buy-back condition assessment, and compliance review. Their reviewers need a durable chain from organization to operator and device to evidence, verifiable even if TrustEye is unavailable.
 
 The funded solution: a Cardano-native accountable-source layer. Each participating organization controls a CIP-0170/KERI identifier, authorizes operators and devices, and publishes Verified Source Attestations from its own wallet — one externally paid transaction binding its identifier, device-authorization state, evidence-bundle hash, and timestamp. A public verifier joins identity, device, content, and time.
 
@@ -177,6 +170,7 @@ The funded solution: a Cardano-native accountable-source layer. Each participati
 - https://apps.apple.com/app/trusteye/id6784402834
 - https://play.google.com/store/apps/details?id=io.trusteye.app
 - https://e7d.tech/
+- https://projectcatalyst.io/proposers/georgescumarius
 
 ### Identified dependencies
 
