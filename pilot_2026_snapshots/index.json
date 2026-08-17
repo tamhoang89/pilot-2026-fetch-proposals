@@ -18,5 +18,7 @@
   "6942b4ae-3301-432b-b848-ddc1cc312ddd": "policykit_modular_compliance_for_cip-113_tokens",
   "d9f11222-fa10-44ab-852e-10d3e38c16a9": "wargrum_scaling_a_launched_cardano_tcg_to_mass_adoption",
   "09e49b74-16ec-459b-ab4d-20fb9ae792a2": "built-in_rwa_kycaml_rules_for_cip-0113_tokens",
-  "c3ff227f-1ab3-41a5-9697-3fc667597358": "advancedsecurity_oracle_multi-sig-attested_exploit_alerts"
+  "c3ff227f-1ab3-41a5-9697-3fc667597358": "advancedsecurity_oracle_multi-sig-attested_exploit_alerts",
+  "02a73fce-d510-477f-991f-834566a324a4": "cardano_monthly_reports",
+  "d3cb11f9-e7b6-4672-845a-fd36e1539ce7": "portable_verifiable_skill_credentials_on_cardano_via_keri"
 }
