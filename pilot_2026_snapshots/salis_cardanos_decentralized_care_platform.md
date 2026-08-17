@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 31
+- **Revision:** 39
 - **Proposer:** `stake1u996wjw2a9sqjd2k3c7mddv8330xmaan3axy4xst3zk9njsnmcn6e`
 - **Funding requested:** ₳125,000
-- **Last finalized:** 2026-08-13T16:25:20.275000+00:00
+- **Last finalized:** 2026-08-17T16:01:19.098000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -20,8 +20,8 @@ SALIS is independently founded and led by Amber Morris, who has directed the pro
 
 SALIS has been primarily self-funded and already operates with provider discovery, provider-owned care profiles, onboarding workflows, CIP-30 wallet connectivity, and non-custodial Smart Booking Contract infrastructure configured for Cardano mainnet.
 
-This existing production foundation provides the environment for implementing and validating the proposed CIP-0170 Verifiable Provider Authority integration. I will continue leading product direction, provider onboarding, adoption, and delivery while engaging specialized development and technical expertise for implementation, security, and KERI/CIP-0170 integration work.
-
+This existing production foundation provides the environment for implementing and validating the proposed CIP-0170 Verifiable Provider Authority integration. I am the sole project team member, developer, project lead, and accountable delivery owner for this proposal. No additional developers, security specialists, or KERI/CIP-0170 contributors are currently part of the proposed team. If specialized technical advice or services are required during implementation, they will be procured after award based on demonstrated project needs and are not represented as existing team members or confirmed contributors in this proposal. I remain responsible for product direction, implementation oversight, provider onboarding, adoption, milestone delivery, and evidence.\
+\
 GitHub: <https://github.com/ambercodes>\
 LinkedIn: <https://www.linkedin.com/in/amber-m-400365113/>
 
@@ -35,11 +35,11 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-SALIS currently has approximately 250 seeded, unclaimed provider profiles demonstrating an established provider acquisition pipeline. These are prospects, not users or counted adoption, and SALIS will continue researching and adding prospective providers during the adoption period.
+SALIS currently has approximately 250 seeded, unclaimed provider profiles forming an established acquisition pipeline. These are prospects, not users or counted adoption, and SALIS will continue identifying additional providers during the adoption period.
 
-The 500-transaction target is based on a planning model rather than guaranteed user behavior. Across the existing prospect pool and continued provider acquisition, the model assumes approximately 100 external providers voluntarily become active and average five qualifying CIP-0170 transactions. Activity may include an initial provider-authority attestation and subsequent attestations associated with genuine booking confirmations. Actual participation and frequency depend on independent provider choices and platform use.
+The 500-transaction target is a planning model, not guaranteed user behavior. Across the existing and expanding prospect pool, the model assumes approximately 100 external providers voluntarily become active and average five qualifying CIP-0170 transactions. Activity may include an initial provider-authority attestation plus attestations associated with genuine booking confirmations. Actual participation and frequency depend on independent provider choices and platform use.
 
-The modeled path is direct outreach → profile claim/create → optional authority activation → normal SALIS booking activity. Seeded listings, SALIS-controlled wallets, testing, and transactions created solely to increase metrics will not count. Only independently initiated qualifying external-user activity will be measured.
+The modeled path is direct outreach → profile claim/create → optional authority activation → normal SALIS booking activity. The corresponding ₳130 fee target is an aggregate target across qualifying activity. Seeded listings, SALIS-controlled wallets, testing, and transactions created solely to increase metrics will not count; only independently initiated external-user activity qualifies.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -103,7 +103,7 @@ Individual
 
 SALIS serves two primary markets: Independent Care Providers and people seeking self-pay care, including holistic, wellness, integrative, and traditional practitioners who often operate as independent businesses.
 
-These providers already rely on digital profiles, booking platforms, payment processors, and institutional relationships to establish their public presence and conduct business. SALIS currently maintains a seeded directory of approximately 250 provider profiles, demonstrating an established provider research and acquisition process. These seeded listings are not counted as SALIS users until providers independently claim or create profiles.
+These providers already rely on digital profiles, booking platforms, payment processors, and institutional relationships to establish their public presence and conduct business. SALIS currently maintains a seeded directory of approximately 250 provider profiles, demonstrating an established provider research and outreach process. These seeded listings are not counted as SALIS users until providers independently claim or create profiles.
 
 The proposed CIP-0170 integration addresses a specific trust gap within this model: a wallet signature can prove control of a Cardano wallet, but not the real-world authority of the person acting for the provider or institution represented by a public profile.
 
@@ -139,11 +139,7 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Catalyst funding will enable SALIS to implement and deploy CIP-0170 Verifiable Provider Authority. SALIS’s existing booking platform, wallet integration, and Smart Booking Contract are pre-existing infrastructure and excluded from funded delivery.
-
-The new integration will be tracked as SALIS-CIP170-PABA using a dedicated feature namespace, feature flag, release tags, metadata schema, tests, and deployment evidence. A pre-development baseline will distinguish existing SALIS functionality from Catalyst-funded additions.
-
-Funding supports KERI/CIP-0170 integration, verification, provider-authority workflows, security review, testing, deployment, documentation, and mainnet validation. New transaction and deployment evidence will be documented at milestones.
+Catalyst request: ₳125,000. Preliminary budget uses a $25,500 USD planning basis: $14,000 CIP-0170/KERI architecture, backend/frontend development, wallet/identity integration, testing, deployment, documentation and technical evidence; $8,500 provider outreach, onboarding materials, user education, activation support and external-user validation; $3,000 project management, Catalyst reporting and Demo Day delivery. Existing SALIS infrastructure is excluded from funded work. Amber Morris is the sole project team member and delivery owner.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -169,7 +165,7 @@ TRL 4 - Technology validated in lab
 
 ### On-chain identity (CIP-0170) - fee target (ADA)
 
-100
+130
 
 ### Clear budget
 

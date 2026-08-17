@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 9
+- **Revision:** 12
 - **Proposer:** `stake1uyetkdjk9axd54yafd5n8fww0ufx39yr52c3l9ehrrcw70sr4enfs`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-12T14:51:13.475000+00:00
+- **Last finalized:** 2026-08-17T16:17:55.679000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,23 +16,23 @@ TRL 8 - System complete and qualified
 
 ### Why is your team well-suited to deliver this?
 
-Our team has worked together for five years, which matters more in this space than most people realize. We're not a group of contractors who met on a job board. Richard leads as CEO, Ian drives growth and partnerships, and Joshua leads engineering as CTO, and that continuity means we move fast without the coordination overhead most teams burn months on.
+Richard Gaertner leads as CEO, Ian Gaertner drives growth and partnerships, and Joshua Ritz leads engineering as CTO, and that continuity means we move fast without the coordination overhead most teams burn months on.\
+Team URLs:\
+Richards Github: [https://github.com/OmegaNetwork-source ](https://github.com/OmegaNetwork-source)\
+\
+Josh Github: <https://github.com/Pandakeys11>\
+\
+Ian Linkedin: <https://www.linkedin.com/in/ian-gaertner>
 
 We've already proven we can execute at the chain level. We've built confirmed partnerships with Aptos, Avalanche, Solana Seeker, and other leading DeFi protocols, and we have a live beta with real users trading across 16+ chains through ClearBook. These aren't LOIs sitting in a drawer. Major blockchain teams have actively supported our integration work because they've seen we ship.
 
 We're confident in what we've built, but we also know Cardano's ecosystem has its own technical character and community expectations, and we're not walking in assuming we already have it figured out. \
 \
-Team intro: <https://youtu.be/\_XWKD-u-2Io?feature=shared>\
-Team Business: <https://ariregister.rik.ee/eng/company/17418123/OmegaLabs-Protocol-O%C3%9C?search_id=9476b85&pos=1>\
+Team intro: [https://youtu.be/\\\_XWKD-u-2Io?feature=shared](https://youtu.be/%5C_XWKD-u-2Io?feature=shared)\
+Team Business: [https://ariregister.rik.ee/eng/company/17418123/OmegaLabs-Protocol-OÜ?search_id=9476b85&pos=1](https://ariregister.rik.ee/eng/company/17418123/OmegaLabs-Protocol-O%C3%9C?search_id=9476b85&pos=1)\
 \
 Some partnerhhips:\
-<https://x.com/omega_netw0rk/status/2085329482001379814?s=20>\
-\
-<https://x.com/omega_netw0rk/status/2084993993394258317?s=20>\
-\
-<https://x.com/omega_netw0rk/status/2084351125021393009?s=20>\
-\
-<https://x.com/BenqiFinance/status/2084006075280560181?s=20>
+<https://x.com/omega_netw0rk/status/2085329482001379814?s=20>
 
 ### Eligible area
 
@@ -44,13 +44,7 @@ Voluntary give-back: after the pilot, once Cardano product fees exceed ₳25,000
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Genuine usage comes from real Olympus users completing fee-paying Cardano flows—not scripts.
-
-**Who:** ADA holders and Olympus aggregator users (traders, predict users, partner communities) connecting via Lace/Eternl.\
-**Why:** Identity unlocks reputation/access; oracles power live markets/predict; USDCx settles dollar flows as traction rises. Each step is useful alone and stronger together.\
-**How often:** identity once (then refreshes); oracle-market actions several times/week for active traders; USDCx on predict/swaps as volume grows. Partners and project integrations bring external wallets into the same tagged flows.
-
-**Why these targets are reasonable but ambitious:** floors are cleared with room to earn full adoption pay, sized to a warm aggregator base + partnership channels—not vanity. Oracles carry the highest steady tx rhythm; stablecoins fewer but higher-value fees; identity seeds unique wallets for integrity checks. All counts use declared identifiers, Dune tags, external wallets only, and the Standard’s epoch floors/daily caps—no self-wash volume.
+Olympus (<https://olympus.omeganetwork.co/cardano>) is the existing product (Standard §3.2): live trading and Predict; Cardano is a new rail. Genuine usage is Lace users finishing fee-paying outcomes—not scripts. Current audience: thousands of monthly connected wallets and hundreds of repeat Predict/swap users; Cardano today is early testers (near-zero counted txs). Targets: Oracles 2,500 txs / 750 ADA; USDCx 2,000 txs / 900 ADA; CIP-0170 1,200 txs / 250 ADA. About two thirds of projected Cardano usage from existing Olympus users, one third new wallets. CIP-0170: user signs a KERI-backed metadata attestation carrying our declared identifier; Olympus anchors it on mainnet (not off-chain connect). Oracles price live market/Predict; USDCx is accept/settle on predict/swap. Requested budget 200,000 ADA: 60,000 (30%) engineering the three integrations; 90,000 (45%) user incentives for those fee-paying flows; 50,000 (25%) marketing and partnerships to bring wallets in. A fraction of the current base over the adoption window clears floors and is ambitious vs near-zero Cardano volume. Declared identifiers, external wallets, epoch floors and daily caps; no team wash.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
