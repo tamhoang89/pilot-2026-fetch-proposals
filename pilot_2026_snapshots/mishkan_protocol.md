@@ -5,24 +5,25 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 10
+- **Revision:** 15
 - **Proposer:** `stake1uxd9qla44kaftahx8r8z4q5lgyn0lcd8n7uytpjntdcph3qlgneay`
 - **Funding requested:** ₳100,000
-- **Last finalized:** 2026-08-13T15:38:20.837000+00:00
+- **Last finalized:** 2026-08-17T20:52:36.122000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
-TRL 6 - Technology demonstrated in relevant environment
+TRL 5 - Technology validated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-Leslie T. Borerwe 
-
-[Linkedin](https://www.linkedin.com/in/leslie-borerwe/)
+LLeslie T. Borerwe\
+[LinkedIn](https://www.linkedin.com/in/leslie-borerwe/)
 
 This is a solo-founder team, and that's relevant context rather than a gap to hide: the founder is a self-taught developer, having transitioned into software from a non-technical trade background, now building exclusively in civic-tech and fintech for African and emerging markets.
 
 Directly relevant to this proposal: the founder has already shipped Poloos Council, a live, functioning token-gated governance app — the exact docket/submit/vote/archive workflow Mishkan Protocol generalizes and proposes extending to Cardano. This isn't a concept being built from scratch for the grant; it's a working pattern being made chain-agnostic, which lowers delivery risk considerably compared to a net-new build.
+
+The one area outside the founder's current track record is Cardano-native smart-contract work (CIP-0113's transfer-logic and issuer-logic scripts). Rather than overstating in-house capability the record doesn't yet support, the budget includes a dedicated line to hire a Cardano/Aiken smart-contract specialist for exactly this piece — their name and verifiable credentials (GitHub, prior audited Cardano work) will be added to this application once engaged, ahead of Month 1 delivery.
 
 ### Eligible area
 
@@ -64,16 +65,15 @@ Mishkan Protocol wins on two fronts: (1) it is chain-agnostic by architecture, v
 
 TRL6— deployed and working on a public testnet, or live in another ecosystem, under realistic conditions. Mishkan Protocol's core workflow — docket, submit, vote, archive, petitions — is live and working today in another ecosystem: EVM, with working deployments on BNB Chain testnet and Ethereum Sepolia, real wallets connecting, real balance checks gating votes, and the docket/archive cycle running end-to-end under realistic conditions.
 
-no Cardano code exists yet; that is precisely the work this grant funds. TRL6 is the accurate description: proven under realistic conditions elsewhere, not yet demonstrated on Cardano at all.
-
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
+Mishkan Protocol separates the app from any chain via a ChainAdapter interface (connectWallet, getBalance, signVote, isEligible), one implementation per chain. An EVM adapter covers BNB Chain and Ethereum today; Cardano gets its own adapter using CIP-30 for wallets and Blockfrost/Koios to read balances.
 
-Mishkan Protocol separates the app from any single chain via a ChainAdapter interface (connectWallet, getBalance, signVote, isEligible), implemented once per chain. An EVM adapter already covers BNB Chain and Ethereum; Cardano gets its own adapter using CIP-30 for wallet connection and Blockfrost/Koios to read CIP-0113 balances.
+How CIP-0113 governs the token: its core framework provides a shared programmable-logic-base custody address, an on-chain registry, and a global validation coordinator, deployed once and shared by all programmable tokens — our token registers here, not custom infrastructure. Actual behavior comes from a substandard: a pluggable transfer-logic script and issuer-logic script, invoked via the withdraw-zero pattern (stake validators triggered by 0-ADA withdrawals).
 
-How CIP-0113 actually produces counted transactions: the governance token is minted once under a declared policy ID at council setup (a mint under the policy — team-paid, excluded from the counted target per §5.2). Each pilot member's "Join Council" self-claim is a **transfer** under that same declared policy — moving the token from a claim/distribution UTXO to the member's own wallet, initiated and fee-paid by the member's wallet, not the team's. This matches the Standard directly: "fees paid by mints, transfers, and rule updates under your declared policy" — our counted fees are transfers under the declared policy ID, run by the member, not the team.
+The transfer-logic script is invoked in every user transaction that spends the token — enforcing our rule (a wallet holds at most the configured balance, checked against the registry before authorization). The issuer-logic script governs permissioned actions only (initial minting; no seizure/clawback used) — not invoked on self-claims.
 
-Voting itself stays a signed message off-chain (gasless, no transaction, no counted fee) — only the self-claim transfer touches the chain and counts toward the target.
+Join Council" is therefore a transfer under our declared substandard: the member's transaction spends from the programmable-logic-base address, the transfer-logic script validates it, and the registry confirms applicable scripts — exactly the transfer-fee category the Standard counts, run by the member's wallet.
 
 ### Fits the timeline
 
@@ -127,17 +127,13 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-100,000 ADA, tied directly to the M1/M2 deliverables already declared:
 
-- Development — Cardano ChainAdapter, CIP-30 wallet connect, CIP-0113 balance reads, self-claim flow: 45,000 ADA (45%)
-- Testing & QA — preprod validation, test evidence bundle, bug log: 15,000 ADA (15%)
-- Mainnet deployment — one-time registry/policy setup transaction, deployment: 5,000 ADA (5%)
-- Infrastructure — Blockfrost/Koios API, hosting across the adoption phase: 10,000 ADA (10%)
-- Documentation — README, release notes, self-deploy guide: 5,000 ADA (5%)
-- Community onboarding & outreach — Poloos/Catalyst outreach, Demo Day prep and video: 15,000 ADA (15%)
-- Reporting & project management across the 4-month program: 5,000 ADA (5%)
-
-Without this funding, none of this happens on a defined timeline.
+- CIP-0113 registry-linked programmable token integration — adapting an existing audited reference substandard, registry registration, wiring the self-claim flow to actually invoke the transfer-logic script via the withdraw-zero pattern: 25,000 ADA (25%)
+- Cardano smart-contract technical review — a named specialist auditing the CIP-0113 script integration specifically: 15,000 ADA (15%)
+- Testing & QA — preprod validation of registry-linked transfer logic, test evidence bundle: 15,000 ADA (15%)
+- Mainnet deployment — registry entry, initial mint under issuer-logic script: 5,000 ADA (5%)
+- Infrastructure — Blockfrost/Koios, hosting across the adoption phase: 10,000 ADA (10% Community onboarding & outreach: 15,000 ADA (15%)
+- Reporting & project management: 10,000 ADA (10%)
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -149,17 +145,15 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-Adoption phase runs as declared: one entry-ramp epoch after M1 mainnet delivery, then six floored 5-day epochs (35 days), within the 4-month program frame. All 150 declared self-claim transactions (150 ADA counted fees) come from external wallets paying their own fee, per the corrected usage model — no team-paid distribution counted.
+Month 1 (evidence: GitHub commits, contractor engagement confirmed): select and integrate an existing audited CIP-113 reference substandard for the governance token; register the token in the CIP-113 on-chain registry; wire the existing self-claim flow to actually invoke the transfer-logic script via the withdraw-zero pattern — this replaces today's placeholder balance check with real programmable-token enforcement.
 
-Entry ramp: seed cohort (10-15 wallets from Poloos Council's community) self-claims on mainnet, validating the flow — roughly 15 transactions.
+Month 2 (evidence: live preprod demo, testnet tx hashes, technical review sign-off): verify on preprod that the transfer-logic script correctly enforces the balance rule, registry lookups resolve correctly, and Blockfrost/Koios reads reflect real programmable-token state; named technical reviewer signs off on the script integration.
 
-Epochs 1-6 (5 days each): rolling weekly onboarding from Catalyst's proposer/voter base and broader outreach, \~22-23 self-claims per epoch, spread across each epoch's 5 days (\~4-5/day), well under the daily cap. Each epoch independently meets its floor; registry setup stays excluded from counted totals.
-
-Extra epochs, if earned by early delivery, extend the same rolling pattern rather than front-loading volume.
+Month 3 (evidence: mainnet tx hashes, live URL, demo video): mint initial supply under the issuer-logic script; deploy the registry entry to mainnet; begin rolling self-claim onboarding (detailed in M2/adoption-phase outputs).
 
 ### How far along is the integration you're proposing, today?
 
-TRL 7 - System prototype demonstrated in operational environment
+TRL 2 - Technology concept formulated
 
 ### Programmable tokens (CIP-0113) - fee target (ADA)
 
@@ -191,6 +185,7 @@ Built for: DAOs, cooperatives, and civic or community groups that need transpare
 
 - https://mishkanprotocol2.lovable.app
 - https://github.com/polooscouncil/mishkan-protocol
+- https://www.linkedin.com/in/leslie-borerwe/
 
 ### Identified dependencies
 
@@ -236,6 +231,4 @@ Yes
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-Cardano support does not exist yet — this is honest starting ground, not understated. What does exist is the architecture that makes adding it a scoped, well-defined task rather than a rebuild: Mishkan Protocol's ChainAdapter interface already separates wallet connection, balance verification, and vote signing from the rest of the app for every chain.
-
-The Cardano-specific concept is formulated: read CIP-0113 programmable-token balances via Blockfrost or Koios to verify voting eligibility, connect via a Cardano wallet (CIP-30 standard), and sign votes off-chain in the same gasless pattern already used for EVM chains. No Cardano code has been written yet — this funding is what moves it from formulated concept to a working, tested adapter on preprod testnet.
+Technology concept formulated.  What exists is the architecture that makes it a scoped task: Mishkan Protocol's ChainAdapter interface already separates wallet connection, balance verification, and vote signing per chain, and the CIP-0113 mechanics this integration depends on (programmable-logic base custody, registry-linked transfer/issuer scripts, withdraw-zero invocation) are understood and specified in the architecture answ
