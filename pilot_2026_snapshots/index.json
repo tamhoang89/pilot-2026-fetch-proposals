@@ -20,5 +20,6 @@
   "09e49b74-16ec-459b-ab4d-20fb9ae792a2": "built-in_rwa_kycaml_rules_for_cip-0113_tokens",
   "c3ff227f-1ab3-41a5-9697-3fc667597358": "advancedsecurity_oracle_multi-sig-attested_exploit_alerts",
   "02a73fce-d510-477f-991f-834566a324a4": "cardano_monthly_reports",
-  "d3cb11f9-e7b6-4672-845a-fd36e1539ce7": "portable_verifiable_skill_credentials_on_cardano_via_keri"
+  "d3cb11f9-e7b6-4672-845a-fd36e1539ce7": "portable_verifiable_skill_credentials_on_cardano_via_keri",
+  "b61946e2-0eb3-44d2-a78a-dccaa6bebe1c": "signed_delivery_attestations_for_restaurant_supply_chains"
 }
