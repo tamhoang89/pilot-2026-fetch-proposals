@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 17
+- **Revision:** 20
 - **Proposer:** `stake1u9mjgumqzg4se5hfq8jpqhajrr8ace4ks499vg3hgwmgdasz4v347`
 - **Funding requested:** ₳120,000
-- **Last finalized:** 2026-08-18T07:48:40.626000+00:00
+- **Last finalized:** 2026-08-18T20:05:21.015000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,16 +16,14 @@ TRL 6 - Technology demonstrated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-**TEAM**
+Darwin is built by a two-person core team.
 
-- Eden Baudin, Co-Founder and CTO. 4+ years in Solidity and DeFi protocol development. He built the entire Darwin protocol stack: the basket vault contracts, the mint and redeem flow, the onchain NAV module, the automated rebalancing engine, the confidential position layer and the front end. He will implement the Cardano stack in Aiken. <https://github.com/edenbd1>
-- Tom David, Co-Founder and CEO. 5+ years in Web3 ecosystem development and BD, previously a VC associate with 15+ investments from pre-seed to Series A, and before that at Google in Dublin. Leads product, partnerships and distribution. <https://www.linkedin.com/in/tom-david1/>
+- Eden Baudin, Co-Founder and CTO. 4+ years building Solidity and Rust DeFi protocols. He built and shipped the entire Darwin stack now live at [app.darwin.market](http://app.darwin.market): vault contracts, mint and redeem logic, the onchain NAV module, the rebalancing engine, oracle and bridge adapters, and the front end. The work is public and auditable at [github.com/darwin-miden](http://github.com/darwin-miden) across ten repositories, tagged at v0.4.0-m3.
+- Tom David, Co-Founder and CEO. 5+ years in Web3 ecosystem development and business development, previously a VC associate with 15+ investments from pre-seed to Series A, and before that at Google in Dublin. Leads product, partnerships and distribution.
 
-**WHY THIS TEAM**
+Eden's production record is in Solidity, Rust and MASM, not Aiken or Plutus. We treat that as the main execution risk and scoped the work around it. The mainnet deliverable rests on permissionless baskets with no unaudited dependencies. The Cardano design was validated against the CIP-113 implementation, the Minswap V2 specification and Charli3's Aiken library before we applied, rather than assumed. A Cardano-experienced developer is being contracted for the validator work, with the Milestone 1 third-party audit as an independent check.
 
-We have already built this product. Darwin runs an end-to-end basket flow on testnet: mint, onchain NAV, rebalancing and redemption. We are not designing a protocol for this pilot, we are reimplementing a validated system natively in Aiken.
-
-On the Cardano gap we are direct: our depth is in the product, not yet in eUTXO. That is why the mainnet deliverable rests on permissionless baskets with no unaudited dependencies, and why we are engaging Cardano developers and the CIP-113 maintainers rather than assuming we can work it out alone.
+What transfers is protocol design, which is chain-independent, and a team that has already shipped this exact product to a live deployment once.
 
 ### Eligible area
 
@@ -79,21 +77,21 @@ Our edge is not features. Compliant baskets of programmable tokens are only poss
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-Darwin is a complete, integrated system demonstrated in a relevant environment: a public testnet, accessible to anyone at [app.darwin.market](http://app.darwin.market).
+Darwin is live at [app.darwin.market](http://app.darwin.market), running on a public testnet. It is a complete, integrated system: a user connects a wallet, is provisioned an account, funds it, mints a basket token, holds diversified exposure as one token, tracks NAV, and redeems into the underlying.
 
-All core components run together rather than in isolation: basket vault contracts, mint and redeem logic, an onchain NAV module, an automated rebalancing engine, and a production front end. The full user journey works end to end, from wallet connection through minting a basket token, holding diversified exposure as a single token, tracking NAV onchain, and redeeming into the underlying assets.
+The implementation has four layers. A Next.js frontend handles wallet connection, basket selection and the mint and redeem flow. Onchain, vault contracts custody the constituents, a NAV module derives value from oracle feeds, and a rebalancing engine detects drift.
 
-This is system-level validation on a public network, against third-party infrastructure including oracles, wallets and explorers, which is what distinguishes it from component-level testing.
+The codebase behind it is public and tagged at [github.com/darwin-miden](http://github.com/darwin-miden), so the implementation is auditable independently of the app.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-Darwin on Cardano is six Aiken validators built around one principle: never put shared mutable state in a single UTxO.
+Darwin runs live today in four layers: a Next.js frontend, an offchain service that builds transactions and indexes state, onchain vault contracts with a NAV module and rebalancing engine, and adapters isolating oracle and bridge dependencies. The Cardano work replaces the onchain layer and the adapters; frontend and offchain service are reused.
 
-Configuration lives in basket_registry, read as a reference input so it is never contended. Assets sit in basket_vault, sharded across UTxOs. Users never touch the vault directly; they post mint and redeem intents to order_validator as individual order UTxOs, which a batcher settles in bulk against the vault and a price feed. basket_token_policy governs supply, rebalance_manager runs drift detection and the swap order lifecycle, nav_module derives NAV. Validators enforce correctness, the batcher only provides liveness, and unfilled orders are user-reclaimable after a deadline.
+On Cardano the onchain layer is six Aiken validators, built around one principle: never put shared mutable state in a single UTxO. basket_registry holds per-basket config as a reference input. basket_vault custodies constituents, sharded across UTxOs. order_validator holds user mint and redeem intents, settled in bulk by a batcher. basket_token_policy governs supply. rebalance_manager runs drift detection and the swap order lifecycle. nav_module derives NAV.
 
-This answers eUTXO directly. A single global vault would serialise every user into one transaction per block, so we shard state and batch intents. In exchange, eUTXO gives deterministic fees and outcomes known before submission, and ledger-level multi-asset accounting, so a basket is a real multi-asset object, not a contract emulating one.
+A single global vault would serialise every user into one transaction per block, so we shard state and batch intents. In exchange, eUTXO gives deterministic fees and ledger-level multi-asset accounting, so an index is a native multi-asset object rather than a contract emulating one.
 
-Integration fit. Oracles: NAV and drift come from Charli3 feeds read as reference inputs via their Aiken library, with a staleness bound halting mints rather than pricing stale data. Stablecoins: baskets are denominated in USDM and USDCx, also the rebalancing base pair. Programmable tokens: the basket token is issued under CIP-113, so eligibility is ledger-enforced on every transfer, and the vault integrates the framework as a compliant holder.
+Integration fit. Oracles: NAV and drift read Charli3 feeds as reference inputs via their Aiken library, with a staleness bound halting mints rather than pricing stale data. Stablecoins: baskets are denominated in USDM and USDCx. Programmable tokens: the index token is issued under CIP-113, so eligibility is ledger-enforced on every transfer, and the vault integrates it as a compliant holder.
 
 ### Fits the timeline
 
