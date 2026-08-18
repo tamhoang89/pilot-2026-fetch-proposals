@@ -5,14 +5,14 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 16
+- **Revision:** 21
 - **Proposer:** `stake1u9k6f967jnq3jn766k8x9jznqd0mx99hsep0yqksupx6jksynrqzt`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-18T11:22:05.130000+00:00
+- **Last finalized:** 2026-08-18T15:06:03.557000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
-TRL 7 - System prototype demonstrated in operational environment
+TRL 6 - Technology demonstrated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
@@ -50,13 +50,15 @@ No deposit, borrowing, transaction or token incentive will be offered.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-LendADA will use a product-led, evidence-first launch. Before mainnet, the team will publish a public Preprod app, transaction evidence, audit report, risk guide and walkthroughs.
+LendADA will use a product-led launch backed by fixed-scope education, not user incentives. I will use my Cardano X account, @jaromirtesar, to publish the audit release, walkthroughs, and launch notice.
 
-Initial users will be recruited through the team’s Cardano DeFi channels, public documentation and fixed-scope educational campaigns with established Cardano creators. Creator work is paid for defined content and distribution, not deposits, borrowing or transaction volume. Named campaigns will be disclosed once agreed.
+₳10,000 of the budget is reserved for at least one, but ideally two or more Cardano creator campaigns. Each delivers a lending walkthrough, X post/thread with tagged landing-page link, and live Q&A or recorded FAQ. Payment is for content and distribution only; never deposits, borrowing or transactions.
 
-Onboarding starts with experienced suppliers. Borrowing opens only after sufficient external USDCx or USDM liquidity and stable monitoring results. Borrowers receive a collateral-risk guide, walkthrough and beta support.
+Week 1: open capped supply and borrowing, run two onboarding sessions, and target 25 external wallets (10 suppliers, 10 borrowers) and 75 eligible transactions.
 
-The target is 100 distinct external wallets, including 30 suppliers, 30 borrowers, 25 borrow–repay cycles and 25 repeat users. Team, related-party and team-funded wallets are excluded.
+Week 2: publish the campaigns, run the public Q&A, onboard a second cohort, and target 50 cumulative external wallets (20 suppliers, 20 borrowers), 10 borrow-repay cycles and 200 eligible transactions.
+
+The full-window target is 100 external wallets. Team, related-party and team-funded wallets are excluded.
 
 ### Is the underlying project open source?
 
@@ -145,15 +147,16 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Without Catalyst funding, LendADA can continue internal Preprod testing but cannot responsibly complete production USDCx/USDM and Pyth integration, an independent security audit, remediation and a monitored mainnet beta in the pilot period. The MVP is not ready for user funds.
+Without Catalyst funding, LendADA can continue internal Preprod testing but cannot responsibly complete production USDCx/USDM and Pyth integration, an independent security audit. The MVP is not ready for user funds.
 
 High-level allocation:
 
 • ₳55,000 — USDCx/USDM integration, Pyth validation, risk controls and contract hardening.\
 • ₳80,000 — independent audit and remediation.\
-• ₳25,000 — batcher, monitoring, indexer/API and infrastructure.\
+• ₳25,000 — batcher, keeper, monitoring, indexer/API and infrastructure.\
 • ₳20,000 — frontend, testing, deployment and release work.\
-• ₳20,000 — documentation, beta support, fixed-scope education and Catalyst reporting.
+• ₳10,000 — documentation, beta support and Catalyst reporting.\
+• ₳10,000 — fixed-scope creator education, launch outreach and public Q&As.
 
 Funding is only for future delivery: no protocol liquidity, loans, token rewards, transaction rebates or incentives.
 

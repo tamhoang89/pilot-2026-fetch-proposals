@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 37
+- **Revision:** 39
 - **Proposer:** `stake1u8x4lqtk6czqrlhjqyqlp8a8y7u0ekcxytg6796nm2xnxxsrvccyp`
 - **Funding requested:** ₳70,000
-- **Last finalized:** 2026-08-18T14:13:25.232000+00:00
+- **Last finalized:** 2026-08-18T15:32:01.891000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -219,14 +219,15 @@ Week 1-2 (Days 1-14):
 - Deploy KERIA agent, establish issuer AID with witnessed KEL
 - Draft ACDC credential schema
 - Begin signify-ts integration and local prototyping
-- Onboard 10+ users via Metac session, X announcement post
-- Target: 5 new completed swaps on mainnet
+- Onboard 20+ users via Metac session, X announcement post
+- Target: 10 new completed swaps on mainnet
 
 Week 3-4:
 
 - signify-ts integrated into SkillSwap backend
 - Credential issuance on swap completion (testnet)
 - SAID computation pipeline working end to end
+- 10-20 new swaps.
 
 Week 5-6:
 

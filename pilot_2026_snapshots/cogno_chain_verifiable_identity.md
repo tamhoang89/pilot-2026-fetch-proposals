@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 48
+- **Revision:** 52
 - **Proposer:** `stake1u87n83zjwny9defgu9527fdyy8gvdfewhmf26a89yx2pvxq3efkzp`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-17T22:19:40.946000+00:00
+- **Last finalized:** 2026-08-18T15:23:20.720000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -40,47 +40,47 @@ N/A
 
 WHO TRANSACTS
 
-Organizations that already publish under a name: organizational DRep and record-stream publishers. Cogno builds the AUTH_BEGIN and ATTEST in the browser. The organization signs, pays, and submits from its own CIP-30 wallet. We submit nothing for anyone and do not sponsor any fees.
+Organizational DRep and record-stream publishers. Cogno builds the AUTH_BEGIN and ATTEST in the browser. The organization signs, pays, and submits from its own CIP-30 wallet. We submit nothing for anyone and do not sponsor any fees.
 
-RATE
+WINDOW
 
-We do not use 34 records per organization per 30 days. Only 22 of 4,230 observed DRep 30-day windows reach it, the 99.5th percentile. Measured rates: pooled median 10, consistently active median 18, top decile 24.
+We will deliver M1 two months after selection, which is a month within the limit. Under 7.3, that stretches the floored window from 6 epochs to 12, and fees count from delivery through a floorless entry ramp. Measurement period about 65 days.
+
+RAMP
+
+Organizations onboard across the first 30 days, not on day one, so average exposure is 50 of the 65 days. Day 14 is 5 wallets and 20 records, as our channels answer states.
 
 COHORT
 
-1 record-stream publisher at 316, its peak observed month at label 1447: 316
-
-10 top-decile publishers at 24: 240
-
-16 consistently active at 18: 288
-
-17 median-cadence at 10: 170
-
-44 organizations, 1,014 attestations, clearing the 10-wallet minimum.
+8 top-decile at 24, 10 consistently active at 18, 12 at the pooled median of 10. Blended 16.4 per organization, so 492 x 50/30 = 820 attestations. Two record-stream publishers add 99 each, under every observed label-1447 month but two.
 
 MATH
 
-1,014 ATTEST at 0.197 ADA plus 44 AUTH_BEGIN at 0.233 ADA is 210 ADA against a declared target of 208, twice the 100 ADA floor.
+1,018 ATTEST at 0.197 plus 32 AUTH_BEGIN at 0.233 is 208.00 ADA across 1,050 transactions from 32 wallets, against a 100 ADA floor and a 10-wallet minimum.
 
-Why not Ambitious: 320 ADA needs about 1,600 attestations, roughly 70 organizations at these rates. We derive 44 and will not declare a number we cannot support with arithmetic.
-
-We have approached no one and have no commitment. SPOs are in our identity population, not our volume model.
+We do not use 34 records per organization per 30 days. Only 22 of 4,230 observed DRep windows reach it.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-We reach this cohort from inside it. LOGIC pool, on mainnet since 2020-12-03, 4,162 blocks. Registered mainnet DRep, 238,852 ADA delegated, voting since 2024-09-08. We have approached no one and have no commitment.
+We reach this cohort from inside it: we run the LOGIC pool and a registered DRep on mainnet. We have approached no one and have no commitment.
 
-CHANNELS
+FUNNEL, and the basis for each step
 
-478 DReps resolve to CIP-119 metadata: 138 an email, 434 references. 46 DReps anchored 34+ rationales each, May to Aug 2026. 825 of 932 ep648 producers publish a homepage; 95 domains carry 2+ producers. Cardano Forum, Intersect, GovTool, our repos.
+Addressable: 478 DReps publish resolvable CIP-119 metadata, 138 an email, and 95 domains carry 2+ producing pools. 233 are directly contactable at an address they published.
 
-FIRST TWO WEEKS AFTER M1 IS LIVE
+Contacted: all 233 in the first 30 days.
 
-Days 1-2: publish the verifier, test vectors, an onboarding guide, and the enumeration counts.
+Onboarded: 32, a 14% conversion. This is an assumption, marked as one. Its basis: 46 DReps already anchor 34+ rationales per quarter, so the behavior exists within the contacted population.
 
-Days 3-7: two recorded onboarding calls. An org creates a KERI identifier, binds its stake credential by feeless CIP-8, and locks 100 ADA of its own.
+Active: those 32 publish at the rates in our usage answer.
 
-Days 8-14: attestations from its own wallet. Day 14 target: first external mainnet attestation, 5 of the 10 required wallets locked, 20 attested records. Counts published weekly.
+FIRST TWO WEEKS
+
+Days 1-2: publish the verifier, test vectors, onboarding guide and footprint.
+
+Days 3-7: two recorded onboarding calls. First, organizations create a KERI identifier, bind it by CIP-8, and lock 100 ADA.
+
+Days 8-14: first attestations from their own wallets. Day 14: 5 of 32 wallets, 20 records. The other 27 were onboarded by day 30.
 
 ### Is the underlying project open source?
 
@@ -106,15 +106,23 @@ Not TRL 7 only because it is preprod. Mainnet is milestone 1.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-Cogno is a Polkadot-SDK appchain with its own Aura and GRANDPA validators. Cardano is observed, not bridged: a consensus-inherent read of Cardano occurs via db-sync on every block. An importer with its own db-sync re-derives that read and rejects the block if it differs. Reads fail closed, so an under-indexed database abstains rather than reporting false emptiness.
+Six layers, all readable at github.com/logical-mechanism/cogno.
 
-CIP-170 puts validation in the indexer: "... chain indexers must query for Key Event Log updates to validate credential chains and metadata transactions ...". Cogno is a deterministic, fail-closed Cardano metadata indexer today, reading tx_metadata at label 867 for Calidus role registrations, pinned by a golden vector. Label 170 is the same kind of read. The missing half is the KEL walk, which this grant builds.
+1\. Cardano L1. contracts/, Aiken Plutus V3. talk_vault, script hash 168a9710e991b768426b58011febec0fa3c5ff6beb49065cc52489c7, 100 ADA minimum. Users lock and exit over CIP-30 from their own wallets.
 
-That walk runs client-side, never in consensus: an ATTEST payload carries no signature, and authority sits in the off-chain KEL, where the digest must match the controller's event at that sequence number.
+2\. Read. cogno-dbsync/, the only path to Cardano. Deterministic SQL over db-sync, fail-closed: a missing table abstains rather than reporting emptiness. Pinned by a golden fixture.
 
-Identity is already key-proven: an account binds to a Cardano stake credential by an on-chain CIP-8 signature. An attestation, therefore, attaches to an account that has already proved key control, yielding two independent claims: key control verified in consensus and legal identity from the credential chain, checked against the KEL.
+3\. Consensus. node/. The inherent data provider seals the observation into every block; pallets/cardano-observer re-derives it and rejects a block that disagrees.
 
-The pointer lands in pallet-profile, feeless and gated on a bound identity. Cost on-chain is one spec bump, no migration.
+4\. State. runtime/ plus nine pallets. talk-stake holds observed weight, cogno-gate holds CIP-8 identity 1:1, profile holds account data.
+
+5\. Read API. runtime/src/apis.rs serves feed and profile reads, so the client needs no indexer.
+
+6\. Client. app/, Next.js with PAPI and CIP-30.
+
+CIP-170 enters at three of the six. The organization publishes AUTH_BEGIN and ATTEST to layer 1 from its own wallet. A new pointer in pallets/profile at layer 4 holds the AID, the ATTEST hash, and an OOBI: one spec bump, no migration, no transaction_version change. The verifier runs at layer 6, walking the key event log from the OOBI.
+
+It cannot run at layer 2 or 3. The payload carries no signature; authority lives in an off-chain KEL, and a KEL is not byte-identical across sources the way settled db-sync history is. In consensus, a witness disagreement forks the chain.
 
 ### Fits the timeline
 
@@ -174,21 +182,21 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Without this, the client-side CIP-170 verifier does not get built. Walking another organization's KERI log and vLEI chain is not work we would self-fund. Mainnet is gated on a full, non-pruned, tx_in-enabled db-sync and its own cardano-node, which we cannot self-fund.
+Without this, the CIP-170 verifier does not get built. Walking another org's KERI log and vLEI chain is not work we would self-fund. Mainnet is gated on a full non-pruned, tx_in-enabled db-sync and its own cardano-node.
 
-200,000 ADA: one engineer at 13,000 a week for 13 weeks, 169,000, plus 31,000 infrastructure. Each line is numbered to the M1 output it pays for.
+200,000 ADA: 13 weeks at 13,000, 169,000, plus 31,000 infrastructure. Each line names the M1 output it pays for. M1 lands at two months on D1-D4 and a minimal D5; D5 polish and D6 run inside the window.
 
 D4 verifier: CESR, Ed25519, Blake3, key event log walk. 5 weeks, 65,000
 
 D5 in-browser builder, organization tag, KEL cache. 3 weeks, 39,000
 
-D3 runtime upgrade and spec bump. 2 weeks, 26,000
+D3 runtime upgrade and spec bump. 2 weeks, 26000
 
-D1, D2 mainnet launch and external loop. 2 weeks, 26,000
+D1, D2 mainnet launch and external loop. 2 weeks, 26000
 
-D6 footprint, reporting, onboarding support. 1 week, 13,000
+D6 footprint, reporting, onboarding support. 1 week, 13000
 
-D1 mainnet node and db-sync host, hardware plus four months. 31,000
+D1 mainnet node and db-sync host, hardware plus four months. 31000
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -200,19 +208,19 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-Six outputs, tagged D1 to D6 in the budget breakdown.
+Six outputs, tagged D1-D6 in the budget breakdown. All six land two months after selection, a month inside the limit.
 
-1\. Cogno live on mainnet, observing through its own full non-pruned DB-sync; talk_vault deployed. (D1, with the 31,000 host line)
+1\. Cogno live on mainnet, observing through its own full non-pruned db-sync; talk_vault deployed. (D1, with the 31000 host line)
 
-2\. The loop proven by a wallet that is not ours: an ADA lock, a CIP-8 bind, a post metered by observed weight. (D2; D1 and D2 share 26,000)
+2\. The loop proven by a wallet that is not ours: an ADA lock, a CIP8 bind, a post metered by observed weight. (D2; D1 and D2 share 26000)
 
-3\. Runtime upgrade live on mainnet: a bound account publishes and clears a pallet-profile attestation pointer. (D3, 26,000)
+3\. Runtime upgrade live on mainnet: a bound account publishes and clears a pallet-profile attestation pointer. (D3, 26000)
 
-4\. Apache-2.0 CIP-170 verifier, test vectors pinned to real mainnet transactions: the Grant Thornton AG and Cardano Foundation declarations decode and check; a fabricated ATTEST is rejected. (D4, 65,000)
+4\. Apache-2.0 CIP170 verifier, test vectors pinned to real mainnet transactions: the Grant Thornton AG and Cardano Foundation declarations decode and check; a fabricated ATTEST is rejected. (D4, 65000)
 
-5\. In-browser builder: Cogno builds the AUTH_BEGIN and ATTEST; the organization signs and pays in its own CIP-30 wallet. (D5, 39,000)
+5\. In-browser builder: Cogno builds the AUTH_BEGIN and ATTEST; the organization signs and pays in its own CIP-30 wallet. (D5, 39000)
 
-6\. Declared footprint: our KERI identifier, our team wallets, and our own application label beside 170; attestations still carry 170. (D6, 13,000)
+6\. Declared footprint: our KERI identifier, our team wallets, and our own application label beside 170; attestations still carry 170. (D6, 13000)
 
 ### How far along is the integration you're proposing, today?
 
