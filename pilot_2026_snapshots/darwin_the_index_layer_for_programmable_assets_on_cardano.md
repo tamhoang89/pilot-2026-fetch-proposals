@@ -5,14 +5,14 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 16
+- **Revision:** 17
 - **Proposer:** `stake1u9mjgumqzg4se5hfq8jpqhajrr8ace4ks499vg3hgwmgdasz4v347`
 - **Funding requested:** ₳120,000
-- **Last finalized:** 2026-08-17T19:52:55.745000+00:00
+- **Last finalized:** 2026-08-18T07:48:40.626000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
-TRL 7 - System prototype demonstrated in operational environment
+TRL 6 - Technology demonstrated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
@@ -79,11 +79,11 @@ Our edge is not features. Compliant baskets of programmable tokens are only poss
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-Darwin is a complete, operating system, publicly accessible at [app.darwin.market](http://app.darwin.market). A user connects a wallet, mints a basket token in one action, holds diversified exposure as a single token, sees NAV tracked onchain, and redeems into the underlying assets at any time. The basket vault contracts, mint and redeem logic, onchain NAV module, automated rebalancing engine and front end are implemented and running.
+Darwin is a complete, integrated system demonstrated in a relevant environment: a public testnet, accessible to anyone at [app.darwin.market](http://app.darwin.market).
 
-We rate this TRL 7: the full system, not a component, is demonstrated in an operational environment on public testnet, with the complete user journey available to anyone. What separates it from TRL 8 is mainnet deployment with real value at risk and a third-party audit.
+All core components run together rather than in isolation: basket vault contracts, mint and redeem logic, an onchain NAV module, an automated rebalancing engine, and a production front end. The full user journey works end to end, from wallet connection through minting a basket token, holding diversified exposure as a single token, tracking NAV onchain, and redeeming into the underlying assets.
 
-[app.darwin.market](http://app.darwin.market)
+This is system-level validation on a public network, against third-party infrastructure including oracles, wallets and explorers, which is what distinguishes it from component-level testing.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
@@ -202,7 +202,7 @@ Deployed on Cardano mainnet and usable at by end of window:
 
 ### How far along is the integration you're proposing, today?
 
-TRL 5 - Technology validated in relevant environment
+TRL 2 - Technology concept formulated
 
 ### Programmable tokens (CIP-0113) - fee target (ADA)
 
@@ -287,6 +287,8 @@ Yes
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-The protocol logic behind this integration is already validated in a relevant environment: Darwin's basket vaults, onchain NAV and rebalancing engine run end to end on public testnet at [app.darwin.market](http://app.darwin.market). What changes on Cardano is the implementation target, not the design.
+The Cardano integration is a formulated technology concept, specified against the target primitives rather than assumed.
 
-The Cardano side has been validated against the primitives rather than assumed. We worked through the CIP-113 implementation and confirmed its constraints (ownership by stake credential at a shared script address, no DEX support for programmable tokens), the Minswap V2 batcher model, and Charli3's Aiken library for reading feeds as reference inputs. Our spec maps each component onto eUTXO, including order-based mint and redeem to avoid contention.
+The specification maps each Darwin component onto eUTXO: an order-based mint and redeem design that avoids UTxO contention, NAV derived from Charli3 feeds consumed as reference inputs through their Aiken library, and rebalancing modelled on the Minswap V2 batcher lifecycle. For CIP-113 it accounts for the implementation as built, including ownership by stake credential at a shared script address, transfer validation through the global validator and registered substandards, and the absence of DEX support for programmable tokens.
+
+Implementation, deployment and testing in a Cardano environment are the work this grant funds.
