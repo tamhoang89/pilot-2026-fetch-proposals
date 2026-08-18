@@ -7,7 +7,7 @@
   "title": "[LAB3] Godot × Cardano: Web3 Game Builder",
   "tagline": "A hands-on builder pathway helping Godot developers learn Cardano, integrate on-chain features, and turn practical skills into working Web3 game prototypes.",
   "requestedAmount": 57000,
-  "updatedAt": 1786965492760,
+  "updatedAt": 1787017173430,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 5 - Technology validated in relevant environment",
@@ -21,7 +21,7 @@
     "openSource": true,
     "competitors": "**Current alternatives:** Developers can combine Godot with general Cardano APIs, SDKs, documentation, and custom backend code, or use blockchain tooling built for other game-development ecosystems.\n\n**Gap:** These approaches require developers to assemble multiple components themselves and provide few complete Godot-focused gameplay references.\n\n**Our advantage:** We combine a playable Cardano-integrated Godot product, reusable open-source components, and practical reference implementations in one ecosystem. Users can experience the integration first, then inspect, modify, and reuse the same code in their own games.",
     "trlEvidence": "Godot × Cardano is at TRL 5.\n\n- Repository: <https://github.com/dmt041104111003/lab3-godot-cardano-testnet>\n\n- Live demo: <https://dmt041104111003.github.io/lab3-godot-cardano-testnet/>\n\n- Public Preprod validation:\n\n  - <https://preprod.cardanoscan.io/transaction/30219e447faf3a89784c73f27916ee15882bdd7575478152a0d01500173e8162>\n\n  - <https://preprod.cardanoscan.io/transaction/4a4b87a9e9b398526308c2c7ba239d0e185f0857bd22935dfae5e6d5bb00e501>\n\n- The prototype demonstrates a repeatable Godot → Cardano public-testnet interaction flow.\n\n- C2VN LMS/Cardano2VN are used only for onboarding/distribution.\n\n- The Pilot extends this validated baseline with CIP-0170 identity/attestations.",
-    "architecture": "- Existing channels: C2VN LMS, Cardano2VN, GitHub, YouTube, and our developer/student community.\n\n- Public active-user counts for the Godot × Cardano product are not available, so we do not rely on unverified existing-user volumes.\n\n- Pilot target: \\~120 real external users.\n\n- Expected share from existing Godot × Cardano users: 0%. Users will be onboarded through our education/community channels and new outreach.\n\n- Week 1: \\~40 users via guided setup, workshops, and community outreach.\n\n- Week 2: \\~40 users via playable challenges and developer testing.\n\n- Remaining \\~40 users will come through GitHub, YouTube, Godot content, and open-source distribution.\n\n- At 4–5 qualifying interactions per user, \\~120 users can support the 500-transaction target.\n\n- Usage will be measured through distinct external wallets and qualifying mainnet transactions.",
+    "architecture": "**Godot layer**\n\n- Handles gameplay, quests, UI, and high-frequency game state.\n\n- Normal gameplay remains off-chain for speed and low cost.\n\n**Cardano integration layer**\n\n- Connects the Godot client with Cardano services.\n\n- Handles wallet interaction, transaction construction/submission, and retrieval of on-chain data.\n\n**CIP-0170 identity/attestation layer**\n\n- Each player connects a Cardano wallet linked to their game profile.\n\n- CIP-0170 is used for selected identity, achievement, and progression attestations.\n\n- A KERI-based AID identifies the attestation issuer.\n\n- When a qualifying gameplay milestone is completed, the game/backend validates the event and prepares the attestation payload.\n\n- The player authorizes the Cardano transaction through their wallet.\n\n- New milestones can create or update the relevant attestation.\n\n- The game retrieves on-chain metadata to verify attestations before showing dependent achievements or progression.\n\n**Why it fits**\n\n- High-frequency gameplay stays off-chain.\n\n- Only meaningful, independently verifiable events are anchored to Cardano.\n\n- This reduces unnecessary transactions and fees while keeping selected achievements verifiable.\n\n**Measurement**\n\n- Qualifying mainnet transactions use the Pilot-required label and declared identifiers for transparent adoption and fee measurement.",
     "eligTimeline": true,
     "integrations": [
       "cip170"
@@ -67,16 +67,16 @@
   },
   "createdAt": 1786605076743,
   "headRevision": {
-    "id": "55a7c69b-3593-4f10-8843-d270f32f75f1",
-    "number": 15,
+    "id": "c1425e0c-1160-41b6-a8b4-ef6525d08088",
+    "number": 16,
     "kind": "saved",
-    "createdAt": 1786965440066
+    "createdAt": 1787017162862
   },
   "latestFinalization": {
-    "id": "75cae277-3106-465f-83ea-00cd8dc8f662",
-    "cycle": 4,
-    "revisionId": "55a7c69b-3593-4f10-8843-d270f32f75f1",
-    "finalizedAt": 1786965492760
+    "id": "e56acf2a-dd69-4b6d-9338-cf7d1af028ca",
+    "cycle": 5,
+    "revisionId": "c1425e0c-1160-41b6-a8b4-ef6525d08088",
+    "finalizedAt": 1787017173430
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",

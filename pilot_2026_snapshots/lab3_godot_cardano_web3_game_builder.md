@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 15
+- **Revision:** 16
 - **Proposer:** `stake1uy02n73u26njqm4lw7xfzavnu2jfpldf7z2e2rwsvtxsa4cvxcfh6`
 - **Funding requested:** ₳57,000
-- **Last finalized:** 2026-08-17T11:18:12.760000+00:00
+- **Last finalized:** 2026-08-18T01:39:33.430000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -168,23 +168,45 @@ Godot × Cardano is at TRL 5.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-- Existing channels: C2VN LMS, Cardano2VN, GitHub, YouTube, and our developer/student community.
+**Godot layer**
 
-- Public active-user counts for the Godot × Cardano product are not available, so we do not rely on unverified existing-user volumes.
+- Handles gameplay, quests, UI, and high-frequency game state.
 
-- Pilot target: \~120 real external users.
+- Normal gameplay remains off-chain for speed and low cost.
 
-- Expected share from existing Godot × Cardano users: 0%. Users will be onboarded through our education/community channels and new outreach.
+**Cardano integration layer**
 
-- Week 1: \~40 users via guided setup, workshops, and community outreach.
+- Connects the Godot client with Cardano services.
 
-- Week 2: \~40 users via playable challenges and developer testing.
+- Handles wallet interaction, transaction construction/submission, and retrieval of on-chain data.
 
-- Remaining \~40 users will come through GitHub, YouTube, Godot content, and open-source distribution.
+**CIP-0170 identity/attestation layer**
 
-- At 4–5 qualifying interactions per user, \~120 users can support the 500-transaction target.
+- Each player connects a Cardano wallet linked to their game profile.
 
-- Usage will be measured through distinct external wallets and qualifying mainnet transactions.
+- CIP-0170 is used for selected identity, achievement, and progression attestations.
+
+- A KERI-based AID identifies the attestation issuer.
+
+- When a qualifying gameplay milestone is completed, the game/backend validates the event and prepares the attestation payload.
+
+- The player authorizes the Cardano transaction through their wallet.
+
+- New milestones can create or update the relevant attestation.
+
+- The game retrieves on-chain metadata to verify attestations before showing dependent achievements or progression.
+
+**Why it fits**
+
+- High-frequency gameplay stays off-chain.
+
+- Only meaningful, independently verifiable events are anchored to Cardano.
+
+- This reduces unnecessary transactions and fees while keeping selected achievements verifiable.
+
+**Measurement**
+
+- Qualifying mainnet transactions use the Pilot-required label and declared identifiers for transparent adoption and fee measurement.
 
 ### Fits the timeline
 
