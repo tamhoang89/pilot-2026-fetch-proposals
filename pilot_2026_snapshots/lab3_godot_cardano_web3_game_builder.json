@@ -7,7 +7,7 @@
   "title": "[LAB3] Godot × Cardano: Web3 Game Builder",
   "tagline": "A hands-on builder pathway helping Godot developers learn Cardano, integrate on-chain features, and turn practical skills into working Web3 game prototypes.",
   "requestedAmount": 57000,
-  "updatedAt": 1787017173430,
+  "updatedAt": 1787023398948,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 5 - Technology validated in relevant environment",
@@ -20,8 +20,8 @@
     "m1Evidence": "These acceptance criteria and evidence apply to your declared integration(s) - at delivery you'll specify where each appears in the product, which user flows depend on it, and the identifier(s) that evidence it:\n\n- On-chain identity (CIP-0170)\n\n**Acceptance Criteria:**\n\n1. At least one full end-to-end mainnet transaction by a real user (please refer to [the Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard)), and the flow repeats without failure - the submitted transaction hashes show independent runs of the declared flow.\n2. The declared footprint is complete and valid: nothing pre-existing declared, and all submitted evidence matches the declared identifiers and flows.\n3. Release notes accurately describe architecture, scope, and limitations.\n4. Live demo and Q&A delivered at Demo Day using the same identifiers and flows (participation is required). Demo Day sign-off admits the project into the entry epoch of its adoption measurement window.\n\n**Evidence:**\n\n1. Live product URL.\n2. At least one transaction hash mapped to flow steps, with explorer links.\n3. The declared footprint as described in the [Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard): script hashes, policy IDs, addresses, token/NFT names (if any), registered message tag, team wallets.\n4. Short technical walkthrough demonstration video.\n5. Release notes.\n6. Repo URL + tag/commit (if project is open source).\n7. Test evidence bundle: checklist, bug log, security note.\n8. Present outputs at Demo Day.",
     "openSource": true,
     "competitors": "**Current alternatives:** Developers can combine Godot with general Cardano APIs, SDKs, documentation, and custom backend code, or use blockchain tooling built for other game-development ecosystems.\n\n**Gap:** These approaches require developers to assemble multiple components themselves and provide few complete Godot-focused gameplay references.\n\n**Our advantage:** We combine a playable Cardano-integrated Godot product, reusable open-source components, and practical reference implementations in one ecosystem. Users can experience the integration first, then inspect, modify, and reuse the same code in their own games.",
-    "trlEvidence": "Godot × Cardano is at TRL 5.\n\n- Repository: <https://github.com/dmt041104111003/lab3-godot-cardano-testnet>\n\n- Live demo: <https://dmt041104111003.github.io/lab3-godot-cardano-testnet/>\n\n- Public Preprod validation:\n\n  - <https://preprod.cardanoscan.io/transaction/30219e447faf3a89784c73f27916ee15882bdd7575478152a0d01500173e8162>\n\n  - <https://preprod.cardanoscan.io/transaction/4a4b87a9e9b398526308c2c7ba239d0e185f0857bd22935dfae5e6d5bb00e501>\n\n- The prototype demonstrates a repeatable Godot → Cardano public-testnet interaction flow.\n\n- C2VN LMS/Cardano2VN are used only for onboarding/distribution.\n\n- The Pilot extends this validated baseline with CIP-0170 identity/attestations.",
-    "architecture": "**Godot layer**\n\n- Handles gameplay, quests, UI, and high-frequency game state.\n\n- Normal gameplay remains off-chain for speed and low cost.\n\n**Cardano integration layer**\n\n- Connects the Godot client with Cardano services.\n\n- Handles wallet interaction, transaction construction/submission, and retrieval of on-chain data.\n\n**CIP-0170 identity/attestation layer**\n\n- Each player connects a Cardano wallet linked to their game profile.\n\n- CIP-0170 is used for selected identity, achievement, and progression attestations.\n\n- A KERI-based AID identifies the attestation issuer.\n\n- When a qualifying gameplay milestone is completed, the game/backend validates the event and prepares the attestation payload.\n\n- The player authorizes the Cardano transaction through their wallet.\n\n- New milestones can create or update the relevant attestation.\n\n- The game retrieves on-chain metadata to verify attestations before showing dependent achievements or progression.\n\n**Why it fits**\n\n- High-frequency gameplay stays off-chain.\n\n- Only meaningful, independently verifiable events are anchored to Cardano.\n\n- This reduces unnecessary transactions and fees while keeping selected achievements verifiable.\n\n**Measurement**\n\n- Qualifying mainnet transactions use the Pilot-required label and declared identifiers for transparent adoption and fee measurement.",
+    "trlEvidence": "Godot × Cardano is at TRL 5.\n\n- Repo: <https://github.com/dmt041104111003/lab3-godot-cardano-testnet>\n\n- Live demo: <https://dmt041104111003.github.io/lab3-godot-cardano-testnet/>\n\n- Validated on Cardano Preprod with repeatable transactions:\n\n  - 30219e447faf3a89784c73f27916ee15882bdd7575478152a0d01500173e8162\n\n  - 4a4b87a9e9b398526308c2c7ba239d0e185f0857bd22935dfae5e6d5bb00e501\n\n  - 4fcd249e079df4487ba9bdca408fddcee7a08a6ea18fe767cd0a1d83e6a1008c\n\n- TX5 validates the current hosted web-demo → bridge → Cardano Preprod flow.\n\n- Current repo architecture and validation evidence are documented publicly.\n\n- The Pilot extends this validated baseline with CIP-0170 identity/attestations.",
+    "architecture": "**Godot layer**\n\n- Handles gameplay, quests, UI, and high-frequency state off-chain.\n\n- The web build is publicly accessible through GitHub Pages.\n\n**Cardano integration**\n\n- Godot initiates Cardano requests through the deployed integration path.\n\n- Desktop flows can query Cardano through Koios; the web build uses a hosted bridge for testnet transaction execution.\n\n- The hosted bridge performs server-side Cardano interaction while private signing material is not exposed to the Godot/browser client.\n\n- Submitted transactions are returned to Godot with transaction hashes and can be independently verified on Cardano Preprod.\n\n**CIP-0170 layer**\n\n- Each player connects a wallet linked to their game profile.\n\n- Selected achievements/progression events trigger CIP-0170 attestations.\n\n- A KERI-based AID identifies the attestation issuer.\n\n- The backend validates qualifying gameplay events, prepares the attestation payload, and submits the authorized Cardano transaction.\n\n- The game retrieves on-chain metadata to verify attestations before displaying dependent achievements or progression.\n\n**Why it fits**\n\n- High-frequency gameplay remains off-chain.\n\n- Only meaningful, independently verifiable events are anchored on Cardano.\n\n- The same Godot → bridge → Cardano architecture is already validated on Preprod and will be extended with CIP-0170.",
     "eligTimeline": true,
     "integrations": [
       "cip170"
@@ -46,11 +46,11 @@
     "eligOneProposal": true,
     "problemSolution": "**Problem:** Godot developers lack a practical, working example for integrating Cardano into real gameplay. Existing learning resources are fragmented and rarely take users from learning to actual on-chain interaction.\n\n**Target users:** Godot developers, indie game builders, students, and Web3 newcomers.\n\n**Solution:** An open-source Godot game where users complete quests, interact with Cardano, and receive verifiable on-chain achievements and progression. Developers can also use the game as a reference implementation for building their own Cardano-enabled games.\n\n**Outcome:** A working product launched on Cardano mainnet that turns learning into real usage, generates measurable on-chain activity, and provides a reusable foundation for future Godot × Cardano games.",
     "supportingLinks": [
-      "https://lab3.io.vn/",
+      "https://lab3.io.vn/; https://lms.cardano2vn.io/; https://www.cardano2vn.io/",
       "https://www.facebook.com/profile.php?id=61581377131422",
       "https://projectcatalyst.io/funds/14/cardano-open-ecosystem/c2vn-hydra-on-cardano-complete-step-by-step-dapp-guide",
-      "https://www.cardano2vn.io/",
-      "https://lms.cardano2vn.io/"
+      "https://dmt041104111003.github.io/lab3-godot-cardano-testnet/",
+      "https://github.com/dmt041104111003/lab3-godot-cardano-testnet"
     ],
     "eligDependencies": true,
     "eligGoodStanding": true,
@@ -67,16 +67,16 @@
   },
   "createdAt": 1786605076743,
   "headRevision": {
-    "id": "c1425e0c-1160-41b6-a8b4-ef6525d08088",
-    "number": 16,
+    "id": "de2e9739-0840-4260-94d3-ad38d4ebb60f",
+    "number": 18,
     "kind": "saved",
-    "createdAt": 1787017162862
+    "createdAt": 1787023389247
   },
   "latestFinalization": {
-    "id": "e56acf2a-dd69-4b6d-9338-cf7d1af028ca",
-    "cycle": 5,
-    "revisionId": "c1425e0c-1160-41b6-a8b4-ef6525d08088",
-    "finalizedAt": 1787017173430
+    "id": "eb572058-5ccb-424c-869c-c3f8f0116742",
+    "cycle": 6,
+    "revisionId": "de2e9739-0840-4260-94d3-ad38d4ebb60f",
+    "finalizedAt": 1787023398948
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",

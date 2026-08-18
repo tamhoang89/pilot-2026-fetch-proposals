@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 16
+- **Revision:** 18
 - **Proposer:** `stake1uy02n73u26njqm4lw7xfzavnu2jfpldf7z2e2rwsvtxsa4cvxcfh6`
 - **Funding requested:** ₳57,000
-- **Last finalized:** 2026-08-18T01:39:33.430000+00:00
+- **Last finalized:** 2026-08-18T03:23:18.948000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -150,19 +150,21 @@ Yes
 
 Godot × Cardano is at TRL 5.
 
-- Repository: <https://github.com/dmt041104111003/lab3-godot-cardano-testnet>
+- Repo: <https://github.com/dmt041104111003/lab3-godot-cardano-testnet>
 
 - Live demo: <https://dmt041104111003.github.io/lab3-godot-cardano-testnet/>
 
-- Public Preprod validation:
+- Validated on Cardano Preprod with repeatable transactions:
 
-  - <https://preprod.cardanoscan.io/transaction/30219e447faf3a89784c73f27916ee15882bdd7575478152a0d01500173e8162>
+  - 30219e447faf3a89784c73f27916ee15882bdd7575478152a0d01500173e8162
 
-  - <https://preprod.cardanoscan.io/transaction/4a4b87a9e9b398526308c2c7ba239d0e185f0857bd22935dfae5e6d5bb00e501>
+  - 4a4b87a9e9b398526308c2c7ba239d0e185f0857bd22935dfae5e6d5bb00e501
 
-- The prototype demonstrates a repeatable Godot → Cardano public-testnet interaction flow.
+  - 4fcd249e079df4487ba9bdca408fddcee7a08a6ea18fe767cd0a1d83e6a1008c
 
-- C2VN LMS/Cardano2VN are used only for onboarding/distribution.
+- TX5 validates the current hosted web-demo → bridge → Cardano Preprod flow.
+
+- Current repo architecture and validation evidence are documented publicly.
 
 - The Pilot extends this validated baseline with CIP-0170 identity/attestations.
 
@@ -170,43 +172,39 @@ Godot × Cardano is at TRL 5.
 
 **Godot layer**
 
-- Handles gameplay, quests, UI, and high-frequency game state.
+- Handles gameplay, quests, UI, and high-frequency state off-chain.
 
-- Normal gameplay remains off-chain for speed and low cost.
+- The web build is publicly accessible through GitHub Pages.
 
-**Cardano integration layer**
+**Cardano integration**
 
-- Connects the Godot client with Cardano services.
+- Godot initiates Cardano requests through the deployed integration path.
 
-- Handles wallet interaction, transaction construction/submission, and retrieval of on-chain data.
+- Desktop flows can query Cardano through Koios; the web build uses a hosted bridge for testnet transaction execution.
 
-**CIP-0170 identity/attestation layer**
+- The hosted bridge performs server-side Cardano interaction while private signing material is not exposed to the Godot/browser client.
 
-- Each player connects a Cardano wallet linked to their game profile.
+- Submitted transactions are returned to Godot with transaction hashes and can be independently verified on Cardano Preprod.
 
-- CIP-0170 is used for selected identity, achievement, and progression attestations.
+**CIP-0170 layer**
+
+- Each player connects a wallet linked to their game profile.
+
+- Selected achievements/progression events trigger CIP-0170 attestations.
 
 - A KERI-based AID identifies the attestation issuer.
 
-- When a qualifying gameplay milestone is completed, the game/backend validates the event and prepares the attestation payload.
+- The backend validates qualifying gameplay events, prepares the attestation payload, and submits the authorized Cardano transaction.
 
-- The player authorizes the Cardano transaction through their wallet.
-
-- New milestones can create or update the relevant attestation.
-
-- The game retrieves on-chain metadata to verify attestations before showing dependent achievements or progression.
+- The game retrieves on-chain metadata to verify attestations before displaying dependent achievements or progression.
 
 **Why it fits**
 
-- High-frequency gameplay stays off-chain.
+- High-frequency gameplay remains off-chain.
 
-- Only meaningful, independently verifiable events are anchored to Cardano.
+- Only meaningful, independently verifiable events are anchored on Cardano.
 
-- This reduces unnecessary transactions and fees while keeping selected achievements verifiable.
-
-**Measurement**
-
-- Qualifying mainnet transactions use the Pilot-required label and declared identifiers for transparent adoption and fee measurement.
+- The same Godot → bridge → Cardano architecture is already validated on Preprod and will be extended with CIP-0170.
 
 ### Fits the timeline
 
@@ -343,11 +341,11 @@ Yes
 
 ### Supporting links (repo, site, demo)
 
-- https://lab3.io.vn/
+- https://lab3.io.vn/; https://lms.cardano2vn.io/; https://www.cardano2vn.io/
 - https://www.facebook.com/profile.php?id=61581377131422
 - https://projectcatalyst.io/funds/14/cardano-open-ecosystem/c2vn-hydra-on-cardano-complete-step-by-step-dapp-guide
-- https://www.cardano2vn.io/
-- https://lms.cardano2vn.io/
+- https://dmt041104111003.github.io/lab3-godot-cardano-testnet/
+- https://github.com/dmt041104111003/lab3-godot-cardano-testnet
 
 ### Identified dependencies
 
