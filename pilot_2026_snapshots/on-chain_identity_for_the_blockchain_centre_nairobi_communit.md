@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 12
+- **Revision:** 13
 - **Proposer:** `stake1u9wcuh0vyw9r6aacuwkufx8gaq7numn8dazx4u0fefyqneslmsep4`
 - **Funding requested:** ₳140,000
-- **Last finalized:** 2026-08-18T09:20:06.137000+00:00
+- **Last finalized:** 2026-08-18T23:02:41.199000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -18,7 +18,17 @@ TRL 5 - Technology validated in relevant environment
 
 Lido Nation Foundation is the team behind Catalyst Explorer (open-sourced by community vote in Fund 12, iterating toward 2.0 with AI tooling and a public API) and [lidonation.com](http://lidonation.com). 
 
-Delivery is led by Darlington Wleh (Lead Developer & Architect), driving IdentiKit's architecture and project delivery, and Titi (Supporting Developer), who leads the Lido Developer team in Nairobi.
+Delivery is led by Darlington Wleh (Lead Developer & Architect), driving the integration's architecture and project delivery
+
+- GitHub: <https://github.com/profd2004> · 
+
+- LinkedIn: <https://www.linkedin.com/in/profd2004/> 
+
+Emmanuel Shikuku Titi (Supporting Developer), who leads the Lido Developer team in Nairobi
+
+- LinkedIn: <https://www.linkedin.com/in/emmanuel-shikuku-titi/>.
+
+Organization references: <https://www.lidonation.com> · <https://www.catalystexplorer.com>
 
 ### Eligible area
 
