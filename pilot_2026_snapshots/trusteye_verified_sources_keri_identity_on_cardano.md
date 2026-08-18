@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 13
+- **Revision:** 19
 - **Proposer:** `stake1u80xxjl5pktq7fyeh46f2mwnzvjhjafmsdzv0hq3hxzc9kq6vwzsx`
 - **Funding requested:** ₳50,000
-- **Last finalized:** 2026-08-17T18:03:39.077000+00:00
+- **Last finalized:** 2026-08-18T13:52:35.527000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -32,11 +32,19 @@ Voluntary pledge: once cumulative TrustEye revenue directly attributable to the 
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Who transacts: organization administrators, from their own wallets. Cadence: a one-time onboarding footprint per organization (identifier inception, operator and device authorizations — 5-10 events), then Verified Source Attestations whenever a real evidence package or inspection batch completes — roughly 4-6 per active organization per week, following case flow, not the target. Model: 6-10 independently funded organizations (program minimum 5 external wallets) averaging 30-50 qualifying transactions each: \~300 transactions producing 99-120 ADA gross at 0.33-0.40 ADA/tx against the declared 100 ADA target (floor 50). Conversion realism: the named channels hold roughly 25-35 outreach starts, so the 6-organization base case needs about one conversion in four to six — worked across the \~9-week pre-M1 runway, not a cold launch. Sensitivity: base case 6 organizations averaging \~50; success case 8-10 averaging 30-40; below 6 active organizations we treat the target as at risk rather than manufacture volume. The target sits deliberately in the Credible band because zero organizations are committed today. Team-paid, sponsored, reimbursed, or incentivized transactions never count.
+Who transacts: organization administrators, from their own wallets. Cadence: a one-time onboarding footprint per organization (AUTH_BEGIN credential-chain publication plus ATTESTed device enrollments — 5-10 transactions), then Verified Source Attestations (CIP-0170 ATTEST) whenever a real evidence package or inspection batch completes — roughly 4-6 per active organization per week, following case flow, not the target. Model: 6-10 independently funded organizations (program minimum 5 external wallets) averaging 30-50 qualifying transactions each: \~300 transactions producing 99-120 ADA gross at 0.33-0.40 ADA/tx against the declared 100 ADA target (floor 50). Conversion realism: the channels hold \~25-35 outreach starts, so the base case needs about one conversion in four to six, at \~1 organization onboarded per week across the \~9-week pre-M1 runway. Sensitivity: base case 6 organizations averaging \~50; success case 8-10 averaging 30-40; below 6 we treat the target as at risk rather than manufacture volume. The target sits deliberately in the Credible band because zero organizations are committed today. Team-paid, sponsored, reimbursed, or incentivized transactions never count.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Named channels, not a generic plan (no commitments claimed): (1) direct contacts at Romanian insurers and banks from the lead applicant's banking/fintech career — 3-5; (2) loss-adjusting and inspection vendors serving those insurers, via warm referrals — 5-8; (3) Flip.ro and eMAG Buy-Back — condition-photo intake workflows; (4) auto trade-in/remarketing dealers in the Autovit/OLX ecosystem — 10-15; (5) equipment-leasing and fleet operators from the same network — 3-5. Roughly 25-35 outreach starts for 6-10 active organizations (one conversion in four to six), worked across the \~9-week pre-M1 runway; written pilot intents are the current top priority. Onboarding: ten-minute administrator flow, wallet setup and self-payment guidance, lifecycle playbooks, public dashboard. First two weeks after M1: onboarding sessions, first attestations from each active workflow, 24-hour review of failed wallet journeys, published transaction list and methodology, one public technical demonstration.
+Named channels, not a generic plan (no commitments claimed): 
+
+1. direct contacts at Romanian insurers and banks from the lead applicant's fintech career — 3-5; 
+2. loss-adjusting and inspection vendors serving those insurers, via warm referrals — 5-8; 
+3. Flip.ro and eMAG Buy-Back — condition-photo intake workflows; 
+4. auto trade-in/remarketing dealers in the Autovit/OLX ecosystem — 10-15; 
+5. equipment-leasing and fleet operators from the same network — 3-5.
+
+ Roughly 25-35 outreach starts for 6-10 active organizations (one conversion in four to six), worked across the \~9-week pre-M1 runway; written pilot intents are the current top priority. Onboarding: ten-minute administrator flow, wallet setup and self-payment guidance, lifecycle playbooks, public dashboard. First two weeks after M1: onboarding sessions, first attestations from each active workflow, 24-hour review of failed wallet journeys, published transaction list and counting methodology, one public technical demonstration.
 
 ### Is the underlying project open source?
 
@@ -57,11 +65,7 @@ The production system combines photo/video capture, SHA-256 content binding, a t
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-One precisely defined transaction carries the whole integration. A Verified Source Attestation is a single CIP-0170 transaction that an external organization signs, submits, and pays from its own wallet, binding: (1) the organization's KERI identifier and current key state; (2) its device-authorization state; (3) the evidence-bundle or batch hash; (4) an issuance timestamp. It is simultaneously the qualifying identity event and the organization's own evidence anchor — the counted integration working as a product feature.
-
-Identity layer: KERI identifiers and events per the CIP-0170 integration guide, in a minimal profile sized to the 3-month window — inception, operator/device authorization, key rotation, revocation, and organization-signed source attestation. Delegated identifiers and multisig are explicitly deferred. Identity authority comes from the KERI key-state chain, not the payment address; device keys remain hardware-backed mobile keys. Privacy rules are fixed: no raw media, no personal data, opaque hash references only.
-
-Components: a CIP-0170/KERI module behind a versioned adapter, a new Cardano indexer for identity-state resolution, wallet-mediated self-submission (one reference wallet at M1), and a public verifier joining organization identity, device authorization at capture time, content integrity, and Cardano timestamp. Telemetry separates counted external identity fees from all other activity; service-paid anchoring is outside funded scope and never counted.
+The integration implements the merged CIP-0170 specification end to end (metadata label 170). Authority first: per organization, an AUTH_BEGIN transaction — signed and paid from its own wallet — publishes the ACDC credential chain establishing why its KERI identifier holds signing authority. Two declared chain profiles: a vLEI chain (GLEIF root → Qualified Issuer → Legal Entity vLEI → metadata signer) where the organization holds one, and a published bootstrap profile for SMEs — an ACDC chain rooted in a TrustEye-published root AID (OOBI and schemas on trusteye.io), issued after KYB checks: the organization's legal name and registry number are bound into the leaf credential and displayed by the verifier, which also shows which root anchors each attestation. Each Verified Source Attestation is a CIP-0170 ATTEST: the evidence-bundle digest anchored in the organization's Key Event Log, valid while AUTH_BEGIN authority stands and ignored after AUTH_END. Key rotation is an ordinary KEL event (anchored attestations stay verifiable); AUTH_END revokes an organization's signing authority (re-AUTH_BEGIN restores it); operator/device lifecycle lives in ATTESTed enrollment/revocation records, so the verifier can confirm a device was authorized at capture time. Off-chain by design: a new indexer (built on signify-ts) validates the ACDC chain, digest anchoring, and authority period, and marks attestations unverified after revocation. External wallets pay every counted transaction.
 
 ### Fits the timeline
 
@@ -97,7 +101,9 @@ Marius Georgescu
 
 ### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
 
-TrustEye already sells consumer sealing capacity and a B2B organization/API service; those remain the sustainability route. The Cardano accountable-source layer becomes part of a paid higher-assurance organizational plan: organizations pay TrustEye for the workflow and pay the Cardano network themselves for their identity and Verified Source Attestation transactions — recurring events driven by their real case flow (new operators and devices, rotations, revocations, evidence publications), not by the grant. We do not claim existing revenue or proven willingness to pay for this feature; that is a stated validation goal of the pilot. Usage persists after the measurement window because attestations track each organization's ongoing field operations — the same reason the post-window kicker pace is credible. The integration stays in production under TrustEye's commercial model after the pilot.
+TrustEye already sells consumer sealing capacity and a B2B organization/API service; those remain the sustainability route. The Cardano accountable-source layer becomes part of a paid higher-assurance organizational plan: organizations pay TrustEye for the workflow and pay the Cardano network themselves for their identity and Verified Source Attestation transactions — recurring events driven by their real case flow (new operators and devices, rotations, revocations, evidence publications), not by the grant. We do not claim existing revenue or proven willingness to pay for this feature; that is a stated validation goal of the pilot. Usage persists after the measurement window because attestations track each organization's ongoing field operations — the same reason the post-window kicker pace is credible. The integration stays in production under TrustEye's commercial model after the pilot. 
+
+The Pilot's own structure prices adoption risk: Adoption/Kicker pay only on real external usage.
 
 ### On-chain identity (CIP-0170) - expected transaction count
 
@@ -125,14 +131,15 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-By end of week 12 (internal target: week 9, earning extra measurement epochs): 
+By end of week 12 (internal target: week 9): 
 
 1. newly deployed Cardano mainnet footprint with declared Pilot identifier and registered message tag; 
-2.  at least one real qualifying CIP-0170 identity attestation signed, submitted, and paid by an external wallet; 
-3.  live TrustEye capture-to-verifier demonstration joining organization identity, device authorization, content integrity, and Cardano timestamp;
-4.  published schemas, transaction identifiers, deterministic test vectors, and verification steps;
-5.  public adoption dashboard separating qualifying identity fees from all other Cardano activity; 
-6. open-source artifact set at [github.com/en7angled/trusteye-cip170](https://github.com/en7angled/trusteye-cip170)  (Apache-2.0): CIP-0170/KERI profile, event and attestation schemas, test vectors, and a standalone verification adapter; 
+2. the complete external-wallet CIP-0170 flow on mainnet: AUTH_BEGIN with a real organization credential chain plus a valid ATTEST over a real evidence bundle, externally paid; 
+3. live TrustEye capture-to-verifier demonstration joining organization identity, device authorization, content integrity, and Cardano timestamp; 
+4. published schemas, transaction identifiers, deterministic test vectors, and verification steps; 
+5. public adoption dashboard separating qualifying identity fees from all other Cardano activity; 
+6. open-source artifact set at github.com/en7angled/trusteye-cip170 (Apache-2.0): CIP-0170/KERI profile, event and attestation schemas, test vectors, and a standalone verification adapter; 
+7. organization onboarding flow, wallet self-payment guidance, and lifecycle playbooks ready for the pilot cohort.
 
 ### How far along is the integration you're proposing, today?
 
