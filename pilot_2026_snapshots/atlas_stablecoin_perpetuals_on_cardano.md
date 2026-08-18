@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 1
+- **Revision:** 5
 - **Proposer:** `stake1u9wrkyze58nzwfs4av8nxrr2lpfk0yd2pwh2ff4yxpvdvsgccegq2`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-18T11:31:28.455000+00:00
+- **Last finalized:** 2026-08-18T19:27:38.859000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -45,21 +45,23 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Atlas generates genuine usage whenever users deposit stablecoins, open or adjust leveraged positions, close trades, settle liquidations or withdraw funds. Trading actions consume oracle pricing and use stablecoins as collateral and settlement assets, creating measurable Cardano transactions and network fees.
+Atlas targets 8,000 qualifying transactions and 2,000 ADA in counted fees for each integration.
 
-These targets are supported by three testnets that attracted 500+ users and processed over $165 million in simulated volume. Reaching 8,000 transactions requires an average of only 16 transactions per existing testnet user, before accounting for new users recruited at Mainnet launch.
+• 5,000 transactions (62.5%) from 200 reactivated users drawn from 500+ former Atlas testers, averaging 25 each.\
+• 1,200 (15%) from 75 additional, non-overlapping users drawn from Atlas’s 152 stakers and House of Titans’ 616 stake-pool delegators, averaging 16 each.\
+• 1,800 (22.5%) from 100 new users reached through non-incentivised tutorials, X Spaces, Discord support and Cardano DeFi/stablecoin communities, averaging 18 each.
 
-At an estimated average network fee of 0.25 ADA per transaction, 8,000 transactions would generate approximately 2,000 ADA in fees. Only genuine, labelled Mainnet activity from external wallets will be counted.
+Total: 375 unique external wallets and 8,000 transactions. Existing communities contribute 77.5% of projected usage and new users 22.5%. Users deposit, trade, settle and withdraw—not to earn rewards. Qualifying trades consume the declared oracle feed and move verified stablecoins. At the program reference average of 0.33 ADA per transaction, 8,000 transactions generate about 2,640 ADA, giving the 2,000 ADA target an execution buffer. Activity will be labelled and deduplicated by stake key.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Atlas will onboard users through three proven channels: its existing X, Discord and staking community; Cardano ecosystem, wallet and stablecoin communities; and product-led campaigns including trading competitions, points, referrals and guided deposits.
+Atlas will rely solely on organic, non-incentivised adoption. No points, rebates, referral rewards, competitions or transaction incentives will operate during the measurement period.
 
-The funnel is simple: educational content and partner promotion → connect a Cardano wallet → deposit USDM/USDCx → place a first trade → return through new markets, points and competitions. Tutorials, demonstrations and Discord support will reduce friction for first-time perpetual traders.
+Days 1–7: announce Mainnet to 500+ former testers through Atlas X and Discord; reach Atlas’s 152 stakers and the House of Titans community, including 616 stake-pool delegators; publish a launch guide and video; and host two onboarding sessions. Target: 125 external wallets, 125 deposits and 625 trading/settlement transactions.
 
-These channels already convert. Atlas testnets attracted 500+ users and produced over $165M in simulated trading volume through community campaigns. 
+Days 8–14: follow up with former testers, publish stablecoin and market tutorials, host two X Spaces and support sessions, and distribute educational content through Cardano DeFi communities. Target: 110 additional wallets, 110 deposits and 1,140 trading/settlement transactions.
 
-At Mainnet launch, we will reactivate testnet users, coordinate campaigns with Cardano and stablecoin communities, and measure distinct wallets, labelled transactions, network fees and repeat usage. Incentives encourage initial trials; useful markets and ongoing trading support retention.
+By day 14, Atlas targets 235 external wallets and 2,000 cumulative transactions. Weekly education, product updates and support will continue without transaction-linked rewards.
 
 ### Is the underlying project open source?
 
@@ -71,7 +73,9 @@ Alternatives include centralised exchanges, external-chain perpetual DEXs such a
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-Atlas is currently at TRL 7. The complete protocol has been demonstrated through three public Cardano testnets, attracting 500+ users and processing over $165 million in simulated trading volume. Core functions—including Cardano smart contracts, wallet connectivity, oracle pricing, stablecoin-based collateral, the unified liquidity vault, leveraged trading, fees, liquidations and withdrawals—have been validated. The internal Mainnet build and initial security review are complete. Remaining findings are being addressed before the formal audit and Public Mainnet release. We are therefore not claiming TRL 8 or 9, as formal qualification and live production deployment remain pending.
+Atlas is currently at TRL 7. The protocol has been demonstrated through three public Cardano testnets, attracting 500+ users and processing over $165 million in simulated trading volume. Validated functions include Aiken smart contracts, wallet connectivity, stablecoin-based collateral, the unified liquidity vault, leveraged trading, pricing, fees, liquidations and withdrawals.
+
+The internal Mainnet build and initial independent security review are complete. Remaining findings are being remediated before the formal audit and Public Mainnet release. Atlas is therefore not claiming TRL 8 or 9, as formal qualification and live production deployment remain pending.
 
 Evidence:\
 <https://www.atlasdefi.org/>\
@@ -79,11 +83,13 @@ Evidence:\
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-Atlas uses Cardano’s eUTxO model with protocol state represented on-chain and enforced by Aiken validators. Whitelisted Cardano-native stablecoins such as USDM and USDCx are deposited into validator-controlled UTxOs within a unified liquidity vault. This shared vault acts as the counterparty across multiple perpetual markets, improving capital efficiency without fragmenting liquidity into separate pools.
+Atlas uses Cardano’s eUTxO model, with protocol state represented on-chain and enforced by Aiken validators. Verified Cardano-native stablecoins, initially USDM and USDCx, are held in validator-controlled UTxOs within a unified liquidity vault. The vault supports multiple perpetual markets without fragmenting liquidity across separate pools.
 
-Positions, collateral, fees, liquidations and settlements are governed by deterministic validator rules. Authenticated oracle prices provide the market data required to open, value, liquidate and settle positions. Market-specific state is separated so trading pairs can process activity independently, reducing contention and supporting future expansion.
+The named oracle dependency is Pyth Pro. Atlas will consume signed Pyth price updates for supported markets, initially including ADA/USD, BTC/USD and ETH/USD. Each qualifying user trade includes the price update through Pyth’s Cardano zero-withdrawal script pattern. Atlas validators verify the feed ID, signature and price freshness before permitting positions to open, close, liquidate or settle.
 
-Off-chain services construct transactions, index blockchain state and provide the user interface, but cannot override validator rules or move protocol funds without satisfying on-chain conditions. This architecture is well suited to stablecoins and oracles because it keeps collateral native to Cardano, makes trading activity verifiable and produces measurable transactions and network fees. The modular design also allows new stablecoins, oracle providers and markets to be added without redesigning the entire protocol.
+Positions, collateral, fees and settlements are governed by deterministic validator rules. Market-specific state is separated so trading pairs can process independently, reducing contention. Off-chain services construct transactions, index state and provide the interface, but cannot override validators or move vault funds without satisfying on-chain conditions.
+
+This architecture keeps collateral native to Cardano and makes stablecoin movement and oracle consumption verifiable. External-user transactions can therefore be labelled and measured through contract identifiers, stablecoin policy IDs and Pyth feed consumption.
 
 ### Fits the timeline
 
@@ -108,15 +114,15 @@ Incorporated entity
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-Atlas targets Cardano users who currently trade perpetuals on centralised exchanges or other blockchains, stablecoin holders seeking productive utility, and liquidity providers seeking stablecoin-denominated fee exposure.
+Atlas targets users who trade perpetuals on centralised exchanges or other blockchains, stablecoin holders seeking productive utility, and liquidity providers seeking stablecoin-denominated fee exposure.
 
-Demand is already established. On-chain perpetual DEXs process close to $1 trillion in 30-day volume, making perpetuals one of DeFi’s largest fee-generating categories. Cardano users have also demonstrated demand for native perpetuals: Strike has approximately $2.5 million in TVL and generated around $32,700 in fees over the past 30 days.
+Demand is established. On-chain perpetual DEXs process hundreds of billions of dollars in monthly volume, making perpetuals one of DeFi’s largest trading and fee-generating categories. Cardano users have also demonstrated demand for native perpetuals: Strike currently has approximately $2.5 million in TVL, generated around $32,700 in fees and processed approximately $117 million in perpetual volume over the past 30 days.
 
-Atlas has demonstrated direct interest through its own testnet, attracting more than 500 users and processing over $165 million in simulated trading volume. Additionally, 4.06 million ATLAS—nearly 80% of its reported circulating supply—is currently staked.
+Atlas has demonstrated direct interest through three public testnets, attracting 500+ users and processing over $165 million in simulated trading volume. Additionally, 4 million ATLAS nearly 80% of its reported circulating supply is currently staked.
 
-Atlas is designed to retain more of this activity on Cardano. Users deposit verified stablecoins into one shared vault, trade multiple markets and settle positions on-chain. Deposits, trades, settlements and withdrawals create measurable Cardano transactions and network fees instead of exporting users and economic activity to other chains.
+Atlas is designed to retain this activity on Cardano. Users deposit verified stablecoins into one shared vault, trade multiple markets and settle positions on-chain. Deposits, trades, settlements and withdrawals create measurable Cardano transactions and network fees rather than exporting users and economic activity to other chains.
 
-The timing is strong: Cardano’s stablecoin infrastructure is growing, but recurring utility remains limited. Atlas converts stablecoin liquidity into trading infrastructure, protocol fees and stablecoin payouts—strengthening stablecoin circulation, Cardano DeFi and the network’s long-term fee economy.
+Cardano’s stablecoin infrastructure is growing, but recurring utility remains limited. Atlas converts stablecoin liquidity into trading infrastructure, protocol fees and stablecoin payouts, strengthening stablecoin circulation, Cardano DeFi and the network’s long-term fee economy.
 
 ### Applicant name
 
@@ -124,13 +130,11 @@ Oliver Radivojevic
 
 ### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
 
-Atlas is targeting Public Mainnet within weeks, subject to the remaining fixes and formal audit. Development has already been financed through completed ATLAS token sales and founder/community capital; Catalyst funding accelerates stablecoin integration and adoption rather than creating dependency.
+Atlas is targeting Public Mainnet within the Pilot’s three-month Milestone 1 window, subject to completing remediation and the formal audit. Core development has already been financed through ATLAS token sales and founder/community capital. Catalyst funding accelerates production integration of USDM, USDCx and Pyth Pro, alongside security, monitoring and organic onboarding, without creating grant dependency.
 
-Traders pay trading and borrowing fees. Revenue grows with trading volume and open positions. A share supports the unified liquidity vault and liquidity providers, while the protocol share funds infrastructure, security, development and stablecoin-denominated payouts.
+Traders pay trading and borrowing fees. A share supports the unified liquidity vault and liquidity providers, while protocol revenue funds infrastructure, security, development and stablecoin-denominated payouts.
 
-Usage continues because perpetuals are 24/7, repeat-use products: traders open, adjust and close positions, while liquidity providers benefit from activity. New markets can also be added without separate liquidity pools.
-
-Atlas does not need a large global market share to be sustainable. Even a small share of existing demand can generate recurring revenue, allowing the protocol to continue after grant funding ends.
+Perpetuals generate recurring usage because traders continually open, adjust and close positions. New markets can be added without separate liquidity pools. Atlas requires only a small share of existing demand to generate sustainable recurring revenue and continue operating after Catalyst funding ends.
 
 ### Named, verifiable team
 
@@ -142,16 +146,16 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Atlas has privately funded the core protocol and internal Mainnet build. Catalyst funding would expand this into a production-grade stablecoin and oracle integration with stronger security, monitoring and measurable Cardano adoption. Without funding, Atlas would still launch, but the integration scope and adoption programme would progress more slowly.
+Atlas has privately funded the core protocol and internal Mainnet build. Catalyst funding would accelerate production integration of verified USDM and USDCx policies with Pyth Pro oracle feeds, while strengthening security and monitoring.
 
 High-level allocation:
 
-• 40% – USDM/USDCx integration, vault engineering and oracle resilience\
-• 25% – independent security audit and integration testing\
+• 40% – USDM/USDCx integration, vault engineering and Pyth Pro implementation\
+• 25% – independent security audit and remediation\
 • 20% – Mainnet infrastructure, monitoring and on-chain analytics\
-• 15% – documentation, user onboarding and adoption campaigns
+• 15% – documentation, user education and organic onboarding
 
-This funding accelerates a secure Public Mainnet launch while creating recurring stablecoin usage, transactions and fees on Cardano.
+Without funding, Atlas would still pursue launch, but the integration scope and onboarding programme would progress more slowly. Funding enables a broader, independently audited deployment that creates recurring stablecoin usage, external transactions and Cardano network fees
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -262,4 +266,8 @@ Yes
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-Atlas’s oracle and stablecoin integrations are at TRL 7. Oracle-driven market pricing and stablecoin-based collateral, trading and settlement logic have been demonstrated across three public Cardano testnets, attracting 500+ users and processing over $165 million in simulated volume. The internal Mainnet system is complete and undergoing security remediation. Catalyst funding will support production integration of verified Cardano stablecoins, strengthen oracle reliability and failover protections, complete the formal audit and deploy the integrations to Public Mainnet. The integrations are therefore operational at testnet level but are not yet being claimed as fully qualified or proven in live production.
+Atlas’s oracle and stablecoin integrations are at TRL 7. Oracle-driven pricing and stablecoin collateral, trading and settlement logic have been demonstrated across three public Cardano testnets, attracting 500+ users and processing over $165 million in simulated volume.
+
+For production, Atlas will integrate verified USDM and USDCx policies and use Pyth Pro as its oracle provider. User trading transactions will consume signed Pyth price updates through its Cardano zero-withdrawal script pattern.
+
+The internal Mainnet system is complete and undergoing security remediation before the formal audit and Public Mainnet deployment. The integrations are operational at testnet level but are not being claimed as fully qualified or proven in live production.

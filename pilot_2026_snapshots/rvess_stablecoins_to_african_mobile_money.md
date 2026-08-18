@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 12
+- **Revision:** 15
 - **Proposer:** `stake1uyqe7s205xndy8l4c32pakhldsmp0wrpj75lzhpfmw79ntck5hhzr`
 - **Funding requested:** ₳75,000
-- **Last finalized:** 2026-08-17T17:28:16.162000+00:00
+- **Last finalized:** 2026-08-18T19:01:23.409000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -36,9 +36,19 @@ N/A. Rvess is prioritizing sustainable operations, regulatory compliance, liquid
 
 Rvess targets 1,150 genuine stablecoin settlement transactions generating 400 ADA in Cardano network fees, from 400 external users completing roughly 3 transactions each during the adoption period.
 
-Users include Ugandan freelancers, remote workers, Cardano contributors, merchants, and families receiving cross-border payments, plus the Bidi Bidi refugee settlement community. They transact to convert verified Cardano stablecoins into UGX through MTN MoMo or Airtel Money via our Relworx and MarzPay integrations. Usage is expected to repeat as users receive earnings, remittances, and payments.
+Current active users: \~30 (existing [rvess.xyz](http://rvess.xyz) beta)
 
-Week 1 focuses on Bidi Bidi field visits and community onboarding. Week 2 expands to Kampala Cardano/freelancer communities and wallet/dApp outreach. Only transactions from independent external users count; Rvess will not use team-controlled wallets, circular transfers, or subsidized self-transactions. Dune Analytics verifies fees, distinct wallets, and retained usage.
+New external users target Week 1-2: 50
+
+Channel breakdown:
+
+\- Week 1: Campus activations (Makerere/Kyambogo): \~50 users
+
+\- Week 2: Cardano community outreach: pending partnership confirmation
+
+Users are Ugandan freelancers, students, remote workers, and Cardano contributors who transact to convert stablecoins into UGX via MarzPay. Only independent external-user transactions count; no team-controlled wallets.
+
+Verification: Dune Analytics dashboard tracks distinct wallets, transaction volume per user, and retention.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -120,12 +130,20 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Rvess's Cardano pilot already has a live Relworx account (RELC479A9A03C): payout, deposit monitoring, ledger, state machine, webhooks, dashboard.\
-This grant does NOT rebuild that.
+Rvess's Cardano pilot already has a live Relworx account (RELC479A9A03C): payout, deposit monitoring, ledger, state machine, webhooks, dashboard.
 
-It funds: (1) stablecoin-specific work - policy allowlisting (USDM/USDCx), quoting, rate locking, ledger extensions, new trigger into existing Relworx payout; (2) new MarzPay integration (251757317597, merchant 323175), a lower-rate Uganda-only gateway not yet wired in.
+It funds: (1) stablecoin-specific work quoting, rate locking, ledger extensions, new trigger into existing Relworx payout; \
+(2) new MarzPay integration (251757317597, merchant 323175), a lower-rate Uganda-only gateway not yet wired in.\
+policy/quoting: 26,000 ADA (35%)\
+Ledger extension: 11,000 ADA (15%)\
+MarzPay integration+routing: 13,000 ADA (17%)\
+Security audit: 7,500 ADA (10%)\
+Compliance & Uganda onboarding: 6,000 ADA (8%)\
+Mobile-money settlement float (fiat reserve for payout timing gaps :  working capital, not crypto/token liquidity): 5,250 ADA (7%)\
+monitoring: 4,750 ADA (6%)\
+Demo Day: 1,500 ADA (2%)
 
-Budget (75,000 ADA): Stablecoin policy/quoting 26,000 (35%); ledger extension 11,000 (15%); MarzPay integration+routing+Dune labeling 13,000 (17%); security audit 7,500 (10%); compliance/onboarding 6,000 (8%); infra/monitoring 4,750 (6%); liquidity 5,250 (7%); docs/Demo Day 1,500 (2%).
+Total: 75,000 ADA
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
