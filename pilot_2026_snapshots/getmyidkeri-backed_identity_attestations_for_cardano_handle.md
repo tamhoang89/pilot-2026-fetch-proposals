@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 17
+- **Revision:** 26
 - **Proposer:** `stake1ux2nq4qau9sfq55e9pv5phstd945s6fe2pjandat67vme2g5q4dqz`
 - **Funding requested:** ₳140,000
-- **Last finalized:** 2026-08-17T22:36:11.254000+00:00
+- **Last finalized:** 2026-08-18T12:19:00.367000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -30,8 +30,7 @@ TRL 7 - System prototype demonstrated in operational environment
 
 - Currently drafting the follow-on provider-registry CIP
 
-
-- Administrator/host of a Cardano/crypto community reach spanning a 5,000+ member Facebook closed group, a 400-member Instagram community with 30,000+ monthly views, a 500-subscriber YouTube channel, and a 200-follower X account
+- Member of a Cardano/crypto community reach spanning a 3,900+ member Facebook closed group, a 400-member Instagram community with 30,000+ monthly views, a 500-subscriber YouTube channel, and a 200-follower X account
 
 - Role: architecture, CIP-0170 integration, provider-registry CIP authorship, mainnet deployment
 
@@ -45,29 +44,37 @@ If this integration reaches sustainable commercial revenue, we pledge 7% of net 
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Target: 180 genuine mainnet attestation transactions, generating at least ₳100 in network fees. Based on a real, evidenced two-week onboarding funnel: \~40–47 users drawn from a 5,000+ member Facebook group (conservative \~0.5% conversion), a 400-member Instagram community (30,000+ monthly views), a 500-subscriber YouTube channel, a 200-follower X account, and our existing \~30 handle holders, each performing roughly 4 qualifying transactions on average.
+Target: 240 genuine mainnet attestation transactions, generating at least ₳120 in network fees, above the ₳84 program floor. Based on a two-week onboarding funnel: \~70 users from a 3,900+ member Facebook group ([facebook.com/share/g/1Ami4Am2HK/](http://facebook.com/share/g/1Ami4Am2HK/), \~1% conversion, \~39 users), a 400-member Instagram ([instagram.com/cr_revolucija](http://instagram.com/cr_revolucija)), a 500-subscriber YouTube (youtube.com/@kingotkingovski), a 200-follower X ([x.com/MakedonKing](http://x.com/MakedonKing)) (\~1% combined, \~11 users), and 24 existing handle holders (5 mainnet, 19 preprod).
 
-Who transacts: existing GetMyID handle holders binding attestations to their handles; new handle holders binding attestations at mint time; members of our Facebook/Instagram/YouTube/X communities acting on direct outreach.
+Who transacts: existing handle holders binding attestations; new holders at mint time; community members from direct outreach.
 
-Why: creating an initial identity attestation, updating/rotating a KERI identifier, and re-verifying an attestation are each separate qualifying transactions.
+Why: initial attestation, identifier rotation, and re-verification are separate qualifying transactions, averaging 3–4 per user.
 
-Integrity: only genuine external-user activity is counted; no users are paid or incentivized for measured transactions; all activity follows the Transaction Integrity Standard. No handles will be self-minted to inflate figures - all counted activity originates from real, independently-acting external wallets.
+Integrity: only genuine external activity counted; no self-minting to inflate figures.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Channels: Facebook closed group 5,000+ members; Instagram community administered, 400 members, 30k+ monthly views; YouTube 500 subscribers; X 200 followers; \~30 existing GetMyID handle holders.
+Channels: 
 
-Day 1–3: announce to Facebook group + outreach to existing handle holders. Week 1 target: \~20–25 users (conservative \~0.5% FB conversion + most existing holders).
+- Facebook group ([facebook.com/share/g/1Ami4Am2HK/](http://facebook.com/share/g/1Ami4Am2HK/)), 3,900+ members
+- Instagram ([instagram.com/cr_revolucija](http://instagram.com/cr_revolucija)), 400 members, 30k+ monthly views
+- YouTube (youtube.com/@kingotkingovski), 500 subscribers
+- X ([x.com/MakedonKing](http://x.com/MakedonKing)), 200 followers
+- existing GetMyID handle holders, 24 (5 mainnet, 19 preprod)
 
-Days 8–14: cross-post to Instagram, publish a walkthrough video on YouTube, post to X; outreach to at least one other identity/handle project. Week 2 target: additional \~18–22 users.
+Day 1–3: announce to Facebook group, reach out to existing holders. 
 
-Cumulative 2-week target: \~40–47 real users at 3–4 qualifying transactions each (binding + rotation/re-verification), supporting 130–170 transactions.
+Week 1 : \~45 users (\~1% Facebook conversion, \~39, plus most existing holders re-engaging)
 
-Usage tracked through distinct external wallets performing qualifying CIP-0170 attestation transactions.
+Days 8–14: cross-post to Instagram, publish a YouTube walkthrough (extending my cyber-hygiene content, how CIP-0170 lets users verify a handle-holder's identity without checking every character of a wallet address), post to X. 
+
+Week 2 : \~25 additional users (\~1% combined IG/YT/X conversion)
+
+Cumulative 2-week: \~70 real users at 3–4 qualifying transactions each, supporting a 220–260 transaction target
 
 ### Is the underlying project open source?
 
-Yes
+No
 
 ### Who else solves this today - competitors/alternatives, and why does your approach win?
 
@@ -77,7 +84,7 @@ Our advantage: We are integrating an existing, Foundation-recognized CIP (0170) 
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-- GetMyID ([getmyid.today](http://getmyid.today)) is live and publicly accessible, with real mainnet handle-minting transactions today (\~30 handles minted to date).
+- GetMyID ([getmyid.today](http://getmyid.today)) is live and publicly accessible, with real mainnet handle-minting transactions today - 24 handles minted to date (5 mainnet, 19 preprod).
 - The Pilot does not fund GetMyID's existing handle-minting platform. It builds a new CIP-0170 attestation layer on top of this operational product.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
@@ -116,13 +123,18 @@ Individual
 
 Target market: Cardano wallet/dApp developers needing identity-verification primitives, and the broader handle/identity-provider ecosystem that benefits from a shared interoperability standard.
 
-Evidence and reach: GetMyID has minted approximately 15 handles to date. Current mint volume is deliberately modest because most Cardano wallets cannot yet resolve a `.did` handle from its name alone - they require the full policy ID rather than a human-readable lookup, a resolution gap our in-progress provider-registry CIP is directly designed to close. We authored and got CPS-0032 "Handle Provider Interoperability" merged into the official Cardano CIP repository- direct evidence the community already recognizes this exact problem as worth solving.
+Evidence and reach: GetMyID has minted 24 handles to date (5 mainnet, 19 preprod). Current mainnet volume is deliberately modest because most Cardano wallets cannot yet resolve a `.did` handle from its name alone, they require the full policy ID rather than a human-readable lookup, a resolution gap our in-progress provider-registry CIP is directly designed to close. We authored and got CPS-0032 "Handle Provider Interoperability" merged into the official Cardano CIP repository - direct evidence the community already recognizes this exact problem as worth solving.
 
-Our reach beyond the existing handle base: a closed, engaged Facebook community group with 5,000+ members; an Instagram crypto/Cardano community we administer with 400 members and 30,000+ monthly views; a YouTube channel with 500 subscribers; an X account with 200 followers. These are the real, current channels the adoption plan below is built from.
+Our reach beyond the existing handle base: 
+
+- a Cardano-focused community Facebook group I am a member of ([facebook.com/share/g/1Ami4Am2HK/](http://facebook.com/share/g/1Ami4Am2HK/)), 3,900+ members; 
+- an Instagram crypto/Cardano community I administer under @cr_revolucija ([instagram.com/cr_revolucija](http://instagram.com/cr_revolucija)), 400 members and 30,000+ monthly views; 
+- a YouTube channel (youtube.com/@kingotkingovski), 500 subscribers, covering Cardano/crypto cyber-hygiene topics; 
+- an X account @MakedonKing ([x.com/MakedonKing](http://x.com/MakedonKing)), 200 followers.
 
 ### Applicant name
 
-Slavcho Andreevski publicly as Slavcho King / Makedon King, channel handle "kingotkingovski")
+Slavcho Andreevski (publicly known as Slavcho King / Makedon King, channel handle "kingotkingovski")
 
 ### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
 
@@ -132,7 +144,7 @@ Why usage continues: Attestations are permanent on-chain records once created; n
 
 ### On-chain identity (CIP-0170) - expected transaction count
 
-180
+240
 
 ### Named, verifiable team
 
@@ -172,10 +184,10 @@ Yes
   - confirmed Cardano mainnet transaction.
 - Provider-registry CIP draft updated to incorporate CIP-0170 attestations.
 - Mainnet deployment with the Pilot-required message tag and declared identifiers.
-- Direct outreach executed per the two-week onboarding plan: Facebook group announcement, existing handle-holder outreach, Instagram/YouTube/X cross-posting (including a short walkthrough video), and at least one other identity/handle project contacted for adoption validation.
+- Direct outreach executed per the two-week onboarding plan: Facebook group announcement, existing handle-holder outreach, Instagram/YouTube/X cross-posting (including a short walkthrough video).
 - Open-source reference implementation, verification library, and integration documentation.
 - Security testing completed (attestation forgery, replay-attack resistance).
-- Live product, tagged repository release, release notes, transaction evidence, and Demo Day demonstration.
+- Live product, tagged repository release, release notes, transaction evidence, and Demo demonstration.
 
 ### How far along is the integration you're proposing, today?
 
@@ -183,7 +195,7 @@ TRL 2 - Technology concept formulated
 
 ### On-chain identity (CIP-0170) - fee target (ADA)
 
-100
+120
 
 ### Clear budget
 
@@ -213,7 +225,7 @@ Outcome: A live, mainnet-verifiable identity-attestation layer for Cardano handl
 - https://github.com/cardano-foundation/CIPs/tree/master/CPS-0032
 - https://linkedin.com/in/slavcho-andreevski-120b3b233
 - https://github.com/kingslavcho
-- https://instagram.com/cr_revolucija
+- https://facebook.com/share/g/1Ami4Am2HK/
 
 ### Identified dependencies
 
@@ -264,7 +276,7 @@ Yes
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
 - CIP-0170 integration is currently at architecture/use-case design stage.
-- Planned flow: 
+- Planned flow:
   - handle holder wallet
   - KERI identifier generation/linking
   - CIP-0170 attestation
