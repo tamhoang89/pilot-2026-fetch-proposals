@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 29
+- **Revision:** 33
 - **Proposer:** `stake1u94sq8k5rjax9vf5eyyzdnmh0d7nmhgf38f4tchdnspyy5qrlwfym`
 - **Funding requested:** ₳145,000
-- **Last finalized:** 2026-08-17T14:59:37.571000+00:00
+- **Last finalized:** 2026-08-18T10:56:41.317000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,7 +16,7 @@ TRL 9 - Actual system proven in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-Our team collectively has several decades of experience providing financial solutions on Cardano, with diverse backgrounds and skills that produce a well-rounded business strategy and product line.
+Several decades of collective experience providing financial solutions on Cardano; diverse backgrounds and skills that produce a well-rounded business strategy & product line.
 
 **Andrew Caldwell - CEO**
 
@@ -28,19 +28,21 @@ Key decision maker and driver of business growth. Oversees budgets & operations 
 
 <https://www.linkedin.com/in/jake-shearman/>
 
-Leads software and infrastructure development. Has a comprehensive understanding of Cardano's protocols (\~6 years experience). FinTech background delivering stock market data at scale.
+<https://x.com/devjshear>
+
+Software and infrastructure development. 6 years of Cardano development experience. FinTech background delivering stock market data at scale. Plutus Pioneer first cohort, and developing on Cardano ever since!
 
 **Stephen Caldwell - Information Security Expert**
 
 <https://www.linkedin.com/in/stephen-caldwell-b882971b/>
 
-Provides critical insights into fund management and associated cybersecurity measures to ensure transparent, efficient, and safe outputs in every project.
+Fund management insight & associated cybersecurity measures to ensure transparent, efficient, & safe outputs in every project.
 
 **Nicholas Fekete - Product Lead**
 
 <https://www.linkedin.com/in/nicholas-fekete/>
 
-Oversees team to ensure modern, reactive, and high quality product launches.
+Oversees team to ensure modern, reactive, & high quality product launches.
 
 **Tyler McVety - UX & DevOps**
 
@@ -64,15 +66,15 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Our RWA platform is built on steady and sustainable portfolio growth, which attracts DCA buyers. With the integration of stablecoins, users will be able to purchase RWAs by moving money from their bank to stablecoins without needing to worry about ADA tax implications; this reduced barrier to entry will encourage more frequent purchases regardless of market activity. With over 1,000 users (400-500 active every month), we anticipate this product to generate several hundred qualifying transactions per month.
+Our RWA platform is built on steady and sustainable portfolio growth, which attracts DCA buyers. The reduced barrier to entry due to stablecoins will encourage frequent purchases regardless of market activity. With over 1,000 users (400-500 active every month), we anticipate this product to generate several hundred qualifying transactions per month.
 
 For our launchpad, stablecoin integrations will enable risk-averse companies to try their hand at fundraising. Due to the nature of a launchpad, these transactions will be less consistent but high impact for each sale; the RWA platform will serve as the transaction backbone to maintain our "rhythm".
 
-We will align the launchpad integration with a high-potential sale that is already committed (not dependent on this proposal). The 2-week sprint after going live will consist of running/promoting this sale and the integrations, a site-wide banner on the RWA platform for awareness, and an X marketing campaign with graphics to showcase the benefits of our stablecoin integrations.
+We currently have a committed sale for Bullish Brands, a client that is bringing Web2 AirBnB opportunities to Cardano. We will align the launchpad integration with this high-potential sale. The 2-week sprint after going live will consist of running/promoting this sale and the integrations, a site-wide banner on the RWA platform for awareness, and an X marketing campaign with graphics to showcase the benefits of our stablecoin integrations.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-We receive a consistent flow of launchpad clients through social media marketing (primarily X) and word of mouth from clients/users that have experienced our product. We frequently scan the ecosystem for companies that may benefit from a fundraise and work with them to plan the best timeline and approach to maximize value for their company and its users.
+We receive approximately 40% of our leads through word of mouth (2-3/mo) and 60% through social media marketing on X (3-4/mo) through @BankFiOfficial and @BankFiPillar, where we have a combined \~20k followers. In addition to ongoing sales, last month we launched new sales for Atlas, Octaverse, MekkaLabs, and Electric Garden.
 
 Our two products work harmoniously, with users of the launchpad having natural exposure to our RWA platform. We find clients that need to raise funds, we introduce their users to our ecosystem through the sale, and we create a win-win situation -- in terms of both awareness and financial opportunities -- for our clients, ourselves, and the users of both.
 
@@ -268,4 +270,4 @@ Our company was bootstrapped for 5 years (no external funding). In early 2026, w
 
 We have not yet begun any planning or development beyond the extent required to ensure that this proposal is accurate, viable, and beneficial to our business operations and applicable related targets.
 
-Note for clarification: we *do* currently allow users to send in USDM and USDCx as payment on our launchpad. They are treated the same as any other Cardano native asset, with no support for their benefits as stablecoins. The integrations in this proposal focus around USD-pegged sale pricing, allow stablecoins to be effectively used as intended and to allow more volatile assets (e.g. ADA) to be pegged to those stablecoin values. Currently, any price fluctuation during a sale leads to inconsistent value across payment options, which has been a major roadblock to stablecoin usage for us.
+Note for clarification: Cardano's UTxO model allows any native asset to be sent and processed through our launchpad, which includes USDM and USDCx. The purpose of stablecoins is to avoid volatility by pegging price to a real-world currency. Our RWA platform has no stablecoin payment suppport, and our launchpad has no pegging mechanism to allow stablecoins and other assets like ADA to be utilized together without volatility, which is what projects launching on Cardano need. We currently have no stablecoin-specific infrastructure; this proposal is not retroactive funding.
