@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 16
+- **Revision:** 18
 - **Proposer:** `stake1u9h0faq043ged3ffnwjfy86hy0awvyxdly5mry4lmtqejvgyglfg2`
 - **Funding requested:** ₳128,000
-- **Last finalized:** 2026-08-17T10:04:54.507000+00:00
+- **Last finalized:** 2026-08-18T18:14:45.233000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -36,19 +36,15 @@ No grant repayment: a pledge tied to revenue the integration generates is one we
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Three counterparties transact, each with their own wallet and reason to sign.
+Split per §3.2 — existing users 45% (\~540 attestations), new users 55% (\~660).
 
-The supplier seals a manifest when the truck departs. That manifest lets it claim payment if the buyer stays silent past the reception window, and lets invoicing proceed on the undisputed part rather than stalling. Suppliers today absorb disputes they cannot disprove.
+Existing users cannot carry the target, and the earlier phrasing was misleading. Our two establishments place \~10 orders a day, but an order only becomes an attestation when its supplier is onboarded too. They buy from 4–12 suppliers each; with two suppliers live at launch, about a third of that flow qualifies. Supplier onboarding, not buyer volume, is the binding constraint.
 
-The establishment attests reception. Today it signs for goods it never counted, and short deliveries get invoiced and paid — our launch establishments put that at 1–3% of €400–500k of annual purchasing. Attesting takes seconds; disputing takes a call.
+Growth is structural, not aspirational: the milestone requires 8 distinct external wallets and no wallet above 35% of counted fees. Two buyers satisfy neither, whatever the fee total.
 
-The driver counter-signs at the dock, binding the handover to an identity.
+Channels and volumes. Two distributors in active discussion, one national, each serving hundreds of restaurants. Our co-founder has 22 years in the trade, 20+ establishments run, and knows their executives personally. Target: 4 new establishments and 3 further suppliers by week 3, \~4 orders a day each.
 
-Three attestations per order, more when disputed. Restaurants receive deliveries every working day, not when a token moves.
-
-Target 360 ADA against a floor of 80. At 0.30 ADA per attestation, the conservative end of our measured execution cost, that is 1,200 attestations or 400 orders. Our two establishments alone run about 10 orders a day.
-
-Our constraint is not fee volume but wallet spread: with two buyers, each carries a third of all fees, near the 35% cap. Growing establishment count is the adoption plan itself.
+First two weeks. Both establishments and both suppliers attest from the day after Demo Day sign-off, no ramp — weeks 1–2 carry \~20% of target. New onboarding starts week 2, first new establishment live by day 14.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -189,7 +185,7 @@ Off-chain TypeScript layer: transaction construction, salted blake2b-256 commitm
 
 Reception app with GS1-128 scanning, live at both establishments, attestation under 30s.
 
-Three independent end-to-end mainnet runs by real users, one on the discrepancy path.
+Three independent end-to-end mainnet runs by real users, one on the discrepancy path
 
 ### How far along is the integration you're proposing, today?
 
