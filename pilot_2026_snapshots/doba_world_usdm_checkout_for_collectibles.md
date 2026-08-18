@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 26
+- **Revision:** 33
 - **Proposer:** `stake1uyjvphj6hg3lf9lgq6af09ayprmdwlet2hm2avfd6vskfpg5l0u28`
 - **Funding requested:** ₳50,000
-- **Last finalized:** 2026-08-18T05:34:49.266000+00:00
+- **Last finalized:** 2026-08-18T16:55:15.864000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,11 +16,27 @@ TRL 7 - System prototype demonstrated in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-[**Ian Njuguna**](https://linkedin.com/in/ianonjuguna), Product & Strategy.
+**Ian Njuguna Chege** (publicly Ian Njuguna) is the liable delivery owner in product, strategy & engineering.\
+\
+*SOCIALS:*
 
-Ian is a blockchain developer and FOSS maintainer who leads product vision, artist partnerships, and ledger integration. He launched doba world on mainnet during the Gimba Labs *Piece of Pie* hackathon and currently spearheads outreach through the Doba DAO community.
+(<https://www.linkedin.com/in/ianonjuguna/>),
 
-Some engineering and marketing tasks will be subcontracted through Andamio and Cardano Bounties to make sure the production build is a work of art.
+(<https://github.com/IanoNjuguna>)          \
+\
+The existing doba world product is the strongest capability evidence. It is live on Cardano mainnet at \[[app.doba.world](http://app.doba.world)\], with wallet connection, native-asset minting (song tokens), and on-chain purchase of song tokens. Ian deployed this product to mainnet during the Gimba Labs Piece of Pie hackathon and has been iterating on it since  
+
+The GitHub repository at [\[github.com/IanoNjuguna/bookish-worm\]](http://github.com/IanoNjuguna/bookish-worm%5D\(https://github.com/IanoNjuguna/bookish-worm\)) is the source for developers and reviewers. It  contains the platform code under an open-source license; production configuration, credentials, and signing material are excluded.
+
+This proposal will build on proven infrastructure. The funded work adds:
+
+- USDM policy allowlisting.
+- Pyth ADA/USD price feed consumption inside the purchase smart contract.
+- multi-asset transaction construction, checkout UX quoting in USDM.
+- in-app USDM acquisition guidance, and
+- Dune Analytics tagging.
+
+Ian will complete Catalyst identity verification and sanctions screening.
 
 ### Eligible area
 
@@ -147,14 +163,13 @@ This funding enables Doba to build, audit, and deploy the USDM checkout integrat
 
 - **₳8,000** - Security review and audits
 
-
 - **₳3,000** - Telemetry & Metadata tagging
 
 - **₳2,000** - Deployment operations
 
 - **₳7,000** - Legal & compliance
 
-- **₳10,000** - Artist acquisition & outreach
+- **₳9,000** - Artist acquisition & outreach
 
 - **₳5,000** - Micro-CAC marketing experiments
 
@@ -279,7 +294,6 @@ The USDM checkout integration architecture is fully designed. Implementation com
 - **Policy Allowlisting:** Integrating the USDM policy ID into the smart contract and frontend filters to validate genuine USDM tokens during checkout.
 
 - **Oracle Consumption:** Integrating the Pyth Network pull-oracle to ingest real-time price feeds and dynamic conversion rates for multi-asset pricing.
-
 
 - **On-Chain Analytics:** Tagging checkout transactions via standardized metadata formats for indexing on Dune Analytics dashboards.
 

@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 27
+- **Revision:** 33
 - **Proposer:** `stake1u94re22pm03854xdln9awhqpmaurqwdmq2kpme0vzq9qcasly7q6p`
 - **Funding requested:** ₳100,000
-- **Last finalized:** 2026-08-17T11:17:35.660000+00:00
+- **Last finalized:** 2026-08-18T17:05:11.953000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -19,7 +19,7 @@ TRL 9 - Actual system proven in operational environment
 Natalia gomez \
 [Natalia Gomes | LinkedIn](https://www.linkedin.com/in/elijah-g-98277873/)\
 \
-As CEO of Nomanini, a Cape Town-based fintech platform, she directs a business that connects informal retailers, financial service providers, and distributors across Africa by integrating digital payments, working capital, and data analytics — unlocking financial access for the continent's MSME and informal retail economy. She brings a Chartered Accountant (CA-SA) qualification and business training from GIBS Business School, giving her the financial rigor to navigate margins, cashflow, and capital strategy alongside the commercial judgment to scale a fintech serving thousands of merchants in low-margin, high-friction markets.\
+As CEO & Owner of Nomanini, a Cape Town-based fintech platform, she directs a business that connects informal retailers, financial service providers, and distributors across Africa by integrating digital payments, working capital, and data analytics — unlocking financial access for the continent's MSME and informal retail economy. She brings a Chartered Accountant (CA-SA) qualification and business training from GIBS Business School, giving her the financial rigor to navigate margins, cashflow, and capital strategy alongside the commercial judgment to scale a fintech serving thousands of merchants in low-margin, high-friction markets.\
 \
 \
 \
@@ -39,17 +39,22 @@ Nomanini's give-back is directed at the merchants this programme is intended to 
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-### Who transacts
+Source A (Loans): Merchants borrow morning float earning more than the fee by closing. Each cycle yields two merchant-signed txs (acceptance creating the UTxO, repayment closing it). Steady-state: \~60% of active merchants borrow daily.
 
-Individual informal merchants, on her own Nomanini terminal or application\
-\
-Why they transact, and at what cadence
+Source B (Ramps): Merchants earn commission converting cash to stablecoins (or vice versa) at existing counters, or buying digital goods with stablecoins.
 
-Two independent activities, with different economic drivers. 
+To address the initial ramp to real merchants before reaching the 60% cadence, we start with 30, scaling to a goal of 300:
 
-**Source A — loan cycles.** She borrows because of float mid-morning earns her more than the fee costs by closing. Each cycle produces **two merchant-signed transactions**: acceptance, creating the loan UTxO, and repayment, closing it. **Cadence: approximately 60% of active merchants borrow on any given trading day** — the float gap opens most days, not occasionally.
+Pre-Launch (Engineering):
 
-**Source B — cash-in / cash-out ramps.** She earns commission on each leg; her customer converts cash to stablecoins or stablecoins to cash at a counter she already operates or stable coin to the digital goods she sells 
+- Finalize Cardano adapter, pool wallets, and wallet logic.
+- Execute Preprod testing and mainnet smoke tests.
+
+Post-Launch (14-Day Onboarding):
+
+- Days 1-3: Reps guide the initial 30 high-volume merchants through new loan/CICO features.
+- Days 4-7: Expand to 60 merchants. Cohort 1 enabled for stablecoin cash-in/out.
+- Days 8-14: Scale to 100+ terminals. Limits auto-widen on clean repayments, clearing Epoch 1 floors before reaching the 300-merchant goal.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -112,7 +117,7 @@ Nomanini PTY
 
 ### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
 
-1. **Loan origination fee** — a flat fee per loan `2%`, apportioned between the capital providers funding the pool and Nomanini as originator and servicer.
+1. **Loan origination fee** — a flat fee per loan `2%`, **Crucially, the initial pilot loan pool is funded 100% from Nomanini’s own balance sheet.** No external capital providers are load-bearing for this pilot.
 2. **Ramp commission** — a spread or flat fee on each cash-in/cash-out, shared with the merchant. This represents new revenue for the merchant on volume already being handled.
 
 ### Named, verifiable team
@@ -137,12 +142,9 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-### A. Product deliverables live on Cardano mainnet
-
-1. **Cardano blockchain adapter**, implemented behind the existing chain interface in the nomanini codebase 
-2. **Merchant wallet layer on the Nomanini terminal** — on-device key generation, self-custody and signing, with no blockchain concepts exposed in the merchant interface. 
-
-**3.Stablecoin ramp flows live on mainnet** — cash-in and cash-out legs with merchant commission split within the same transaction, reconciled against terminal-side receipts.
+1. **Cardano Blockchain Adapter :** A production-ready integration implemented behind the existing chain interface in the Nomanini codebase. This handles native asset construction, min-ADA requirements, deterministic fee computation, and transaction submission (utilizing Lucid Evolution with redundant Blockfrost/Koios providers), requiring no bespoke smart contracts or validator audits.
+2. **Merchant Wallet Layer on Terminal :** A self-custody wallet layer provisioned directly on the Nomanini terminal. This includes secure, on-device key generation and signing capabilities, designed with a "zero-blockchain-knowledge" UI so merchants interact only with plain-language prompts and a single accept action.
+3. **Stablecoin Ramp Flows on Mainnet :** Fully functional, end-to-end cash-in and cash-out (CICO) legs executed on Cardano mainnet. .
 
 ### How far along is the integration you're proposing, today?
 
@@ -214,7 +216,7 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-600
+6000
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 

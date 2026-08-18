@@ -7,11 +7,11 @@
   "title": "doba world USDM Checkout for Collectibles",
   "tagline": "Stablecoin checkout for collectible tokens on Cardano. Payments via USDM. Pricing via Pyth.",
   "requestedAmount": 50000,
-  "updatedAt": 1787031289266,
+  "updatedAt": 1787072115864,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 7 - System prototype demonstrated in operational environment",
-    "team": "[**Ian Njuguna**](https://linkedin.com/in/ianonjuguna), Product & Strategy.\n\nIan is a blockchain developer and FOSS maintainer who leads product vision, artist partnerships, and ledger integration. He launched doba world on mainnet during the Gimba Labs *Piece of Pie* hackathon and currently spearheads outreach through the Doba DAO community.\n\nSome engineering and marketing tasks will be subcontracted through Andamio and Cardano Bounties to make sure the production build is a work of art.",
+    "team": "**Ian Njuguna Chege** (publicly Ian Njuguna) is the liable delivery owner in product, strategy & engineering.\\\n\\\n*SOCIALS:*\n\n(<https://www.linkedin.com/in/ianonjuguna/>),\n\n(<https://github.com/IanoNjuguna>)          \\\n\\\nThe existing doba world product is the strongest capability evidence. It is live on Cardano mainnet at \\[[app.doba.world](http://app.doba.world)\\], with wallet connection, native-asset minting (song tokens), and on-chain purchase of song tokens. Ian deployed this product to mainnet during the Gimba Labs Piece of Pie hackathon and has been iterating on it since  \n\nThe GitHub repository at [\\[github.com/IanoNjuguna/bookish-worm\\]](http://github.com/IanoNjuguna/bookish-worm%5D\\(https://github.com/IanoNjuguna/bookish-worm\\)) is the source for developers and reviewers. It  contains the platform code under an open-source license; production configuration, credentials, and signing material are excluded.\n\nThis proposal will build on proven infrastructure. The funded work adds:\n\n- USDM policy allowlisting.\n- Pyth ADA/USD price feed consumption inside the purchase smart contract.\n- multi-asset transaction construction, checkout UX quoting in USDM.\n- in-app USDM acquisition guidance, and\n- Dune Analytics tagging.\n\nIan will complete Catalyst identity verification and sanctions screening.",
     "eligArea": true,
     "giveBack": "null",
     "m2Target": "**Milestone Outputs:**\n\nCompletion of the Adoption phase and project close using the declared measurement structure: a one-epoch entry ramp from your M1 delivery, then six floored 5-day epochs - with extra epochs earned by delivering early - under the Standard's per-epoch floors and daily cap. The whole project completes within the program's four-month frame.\n\nYour declared adoption targets, restated from your answers. They drive the M2 payout and the Transaction Integrity checks, and are final at submission:\n\n- Stablecoins: 220 transactions expected, 330 ADA in counted fees\n\n**Acceptance criteria**\n\n1. The measurement window ran as declared at M1 delivery: the one-epoch entry ramp plus your floored epochs, including any extra epochs earned by early delivery.\n2. Per-epoch floors observed, with at most the Standard's one free miss.\n3. Counted totals respect the daily cap: a single day may exceed the Standard's share of your measurement-period total, but the excess does not count toward it.\n4. At least the Standard's minimum of distinct external wallets transacted with your integration during the window.\n5. All measured activity derives from the declared identifiers and complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard).\n\n**Evidence of milestone completion**\n\n1. Adoption summary statement: your actuals against each declared target.\n2. Per-epoch table: epoch number, date range, transactions and counted fees, daily cap applied (y/n), floor met (y/n), notes.\n3. Raw explorer and dashboard links for the declared identifiers.\n4. Short methodology note: how counts and fees were derived from the declared identifiers.\n5. A completion video (1-3 mins) is shared via YouTube showcasing the project outputs.\n6. Any additional cross-checks.",
@@ -34,7 +34,7 @@
     "businessModel": "doba world takes a fee on song-token sales. This funds ongoing platform development, artist support and community growth. doba world does not subsidize or reward transactions.\n\nAfter the pilot, artist drops, repeat purchases, and secondary trading will sustain activity on the protocol.",
     "eligNamedTeam": true,
     "eligRealUsers": true,
-    "fundingImpact": "This funding enables Doba to build, audit, and deploy the USDM checkout integration on Cardano mainnet while driving initial artist-led adoption.\n\n**Budget Allocation:**\n\n- **₳9,000** - USDM & Pyth integration\n\n- **₳8,000** - Security review and audits\n\n\n- **₳3,000** - Telemetry & Metadata tagging\n\n- **₳2,000** - Deployment operations\n\n- **₳7,000** - Legal & compliance\n\n- **₳10,000** - Artist acquisition & outreach\n\n- **₳5,000** - Micro-CAC marketing experiments\n\n- **₳2,000** - Project management & Catalyst reporting\n\n- **₳5,000** - Contingency\n\n**Total: ₳50,000**\n\n*Note: Budget explicitly excludes liquidity provision, user rebates, promotional giveaways, and retroactive costs.*",
+    "fundingImpact": "This funding enables Doba to build, audit, and deploy the USDM checkout integration on Cardano mainnet while driving initial artist-led adoption.\n\n**Budget Allocation:**\n\n- **₳9,000** - USDM & Pyth integration\n\n- **₳8,000** - Security review and audits\n\n- **₳3,000** - Telemetry & Metadata tagging\n\n- **₳2,000** - Deployment operations\n\n- **₳7,000** - Legal & compliance\n\n- **₳9,000** - Artist acquisition & outreach\n\n- **₳5,000** - Micro-CAC marketing experiments\n\n- **₳2,000** - Project management & Catalyst reporting\n\n- **₳5,000** - Contingency\n\n**Total: ₳50,000**\n\n*Note: Budget explicitly excludes liquidity provision, user rebates, promotional giveaways, and retroactive costs.*",
     "termsAccepted": true,
     "eligRealTarget": true,
     "m1Deliverables": "A. **USDM & Pyth Integration:** On-chain and off-chain transaction-building logic deployed to mainnet, configured to validate the verified USDM policy ID and consume real-time Pyth Network ADA/USD price feed data.\n\nB. **Frontend Checkout UX & Guidance:** Production UI deployed at the live Doba web domain, to enable USDM at checkout, and real-time conversion.\n\nC. **On-Chain Telemetry & Footprint Registration:** Integration of standardized metadata labels into every checkout transaction per the Proof of Adoption & Standard.\n\nD. **Security Audit & Codebase Documentation:** Completed security audit report covering USDM checkout contracts, accompanied by an open-source GitHub repository.\n\nE. **Demo Day Presentation & Live Testing:** E2E mainnet transaction tests on a live environment, yielding valid transaction hashes across all steps (Pyth price validation, USDM transfer, and song-token mint).",
@@ -63,20 +63,20 @@
     "eligStandardAttested": true,
     "stablecoinsFeeTarget": 330,
     "activeCommitmentsList": "Ian Njuguna is a maintainer for DevEx repository under Intersect's Maintainer Retainer Program. The role is scoped to FOSS developer-experience maintenance and does not overlap with the Doba stablecoin integration build, timeline, or adoption activities. Details of the commitment will be disclosed during Catalyst onboarding. ",
-    "trlIntegrationEvidence": "The USDM checkout integration architecture is fully designed. Implementation comprises six core deliverables:\n\n- **Policy Allowlisting:** Integrating the USDM policy ID into the smart contract and frontend filters to validate genuine USDM tokens during checkout.\n\n- **Oracle Consumption:** Integrating the Pyth Network pull-oracle to ingest real-time price feeds and dynamic conversion rates for multi-asset pricing.\n\n\n- **On-Chain Analytics:** Tagging checkout transactions via standardized metadata formats for indexing on Dune Analytics dashboards.\n\n- **Mainnet Deployment:** Executing testnet end-to-end testing prior to deploying updated smart contracts and off-chain transaction builders."
+    "trlIntegrationEvidence": "The USDM checkout integration architecture is fully designed. Implementation comprises six core deliverables:\n\n- **Policy Allowlisting:** Integrating the USDM policy ID into the smart contract and frontend filters to validate genuine USDM tokens during checkout.\n\n- **Oracle Consumption:** Integrating the Pyth Network pull-oracle to ingest real-time price feeds and dynamic conversion rates for multi-asset pricing.\n\n- **On-Chain Analytics:** Tagging checkout transactions via standardized metadata formats for indexing on Dune Analytics dashboards.\n\n- **Mainnet Deployment:** Executing testnet end-to-end testing prior to deploying updated smart contracts and off-chain transaction builders."
   },
   "createdAt": 1787017483492,
   "headRevision": {
-    "id": "c97dc95c-4106-40a2-bd4e-f0bd9acbb597",
-    "number": 26,
+    "id": "d9286e49-2831-44dc-9f31-91ee1213fd34",
+    "number": 33,
     "kind": "saved",
-    "createdAt": 1787031272244
+    "createdAt": 1787072095140
   },
   "latestFinalization": {
-    "id": "facf0cb5-cb66-4998-814a-e97261da7de5",
-    "cycle": 2,
-    "revisionId": "c97dc95c-4106-40a2-bd4e-f0bd9acbb597",
-    "finalizedAt": 1787031289266
+    "id": "077e3ea6-065f-4513-a161-c2bc445a8df2",
+    "cycle": 4,
+    "revisionId": "d9286e49-2831-44dc-9f31-91ee1213fd34",
+    "finalizedAt": 1787072115864
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",
