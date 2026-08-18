@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 40
+- **Revision:** 43
 - **Proposer:** `stake1uydsltz2939nz2f7nmyeqdmjrkkqd32c37vz7ag2ets3mtsqwpypa`
 - **Funding requested:** ₳115,000
-- **Last finalized:** 2026-08-16T17:55:26.538000+00:00
+- **Last finalized:** 2026-08-18T08:49:35.445000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -38,23 +38,21 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Our only integration is Programmable Tokens (CIP-0113). We target 200 ADA in network fees from 600 expected transactions: 275 artwork registrations, 275 initial ownership assignments and 50 NFC-verified secondary transfers.
+Our only integration is Programmable Tokens (CIP-0113). We target 200 ADA in counted fees from 300 expected transactions: approximately 140 artwork registrations, 140 initial ownership assignments and 20 NFC-verified secondary transfers.
 
-Artists transact when registering NFC-tagged artworks and assigning ownership to buyers after a sale. Collectors transact when an artwork is later sold, gifted or reassigned. Every ownership transfer requires a fresh cryptographic scan of the artwork’s physical NFC tag.
+Artists transact when registering tagged artworks and assigning them to buyers. Owners transact again when an artwork is sold, gifted or reassigned. Every transfer requires a fresh cryptographic scan of the physical NFC tag. The fee target assumes an average of approximately 0.67 ADA per script-based transaction.
 
-We expect approximately 300 transactions from artists who already use TAGBASE Verify and their buyers. Another 300 will come from additional artists reached through direct conversations, demonstrations, customer referrals and art-market outreach.
+We project around half of the usage from existing TAGBASE artist customers and their buyers. The remainder will come from new artists reached through direct demonstrations, referrals and Joshua Maurer’s SOCIA & SOCIUS exhibition on 11 September 2026, where TAGBASE-powered artworks will be presented and we will speak to artists and collectors.
 
-During the first two weeks after launch, we will aim to onboard two artists and connect 50 artworks. Week 1 covers setup, wallets and registrations. Week 2 covers ownership assignments, initial transfers, support and issue resolution.
-
-External users initiate transactions and pay their own network fees. Team-controlled, sponsored, test, failed-scan and artificial activity will not count.
+During the first two weeks after launch, we will aim to onboard two artists. Week 1 covers setup, wallets and registrations; Week 2 covers ownership assignments, first transfers and support. External users pay their own fees. Team-controlled, sponsored, test and artificial activity will not count.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-We will start with existing TAGBASE customers. Artists already use our secure NFC tags to connect physical artworks with digital records, giving us direct access to artists, artworks and buyers. We will invite them to use Cardano ownership transfers when artworks are sold or gifted.
+We will begin with existing TAGBASE artist customers and invite them to activate Cardano ownership transfers for NFC-tagged artworks when pieces are sold or gifted. We cannot yet state an exact number of artists who will participate, so we will not claim unconfirmed commitments.
 
-Additional artists will be reached through direct conversations, demonstrations, customer referrals and existing contacts in the art and authentication sectors.
+A concrete acquisition channel is Joshua Maurer’s SOCIA & SOCIUS exhibition in Vienna on 11 September 2026. His original artworks use TAGBASE NFC verification, and TAGBASE is publicly named in the event listing: <https://luma.com/7uv79lq1>. We will speak at the exhibition, demonstrate the technology directly to artists, collectors and art-sector attendees, and invite interested artists to follow-up onboarding sessions.
 
-For the pilot, we aim to onboard at least two artists. TAGBASE will configure the first tags, support wallet onboarding and guide artists and buyers through the initial ownership assignments and NFC-verified transfers.
+Other artists will be reached through direct demonstrations, existing customer referrals and follow-ups after the event. TAGBASE will provide NFC tags, artist setup, wallet onboarding and guided support for artwork registration, initial ownership assignment and NFC-verified transfers.
 
 ### Is the underlying project open source?
 
@@ -66,8 +64,11 @@ https://www.youtube.com/watch?v=9IXRe19v-8M
 
 ### Who else solves this today - competitors/alternatives, and why does your approach win?
 
-Alternatives include Arianee, Verisart and collectID, as well as paper certificates, centralized ownership databases and standard NFTs. These solutions can record authenticity, provenance or ownership, and some support NFC-based claiming or transfers.\
-TAGBASE combines dynamic cryptographic NFC verification with Cardano programmable tokens. A fresh scan of the authentic physical item generates a short-lived authorization required for the token transfer; copied links, QR codes or previous scans cannot be reused. Unlike a transfer recorded only in a proprietary database, the ownership change follows transparent, verifiable on-chain rules. Brands and marketplaces can integrate this functionality through TAGBASE instead of building NFC security and Cardano infrastructure themselves.
+Alternatives include Arianee, Verisart and collectID, as well as paper certificates, centralized databases and standard NFTs. Some record authenticity or ownership, but the digital record can still be transferred without verifying possession of the physical object.
+
+TAGBASE requires a fresh cryptographic scan of the object’s NFC tag before a short-lived authorization permits the token transfer. Copied links, QR codes and previous scans cannot be reused, while Cardano provides transparent, enforceable ownership rules.
+
+Cardano will be our first and primary chain for this functionality. We plan to add Ethereum later as a secondary option, as outlined at <https://www.tagbase.io/en/platform/blockchain>. This project specifically develops and drives adoption of the Cardano CIP-0113 integration.
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
@@ -135,7 +136,7 @@ Usage continues beyond the pilot because every newly tagged object can create a 
 
 ### Programmable tokens (CIP-0113) - expected transaction count
 
-600
+350
 
 ### Named, verifiable team
 
