@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 39
+- **Revision:** 46
 - **Proposer:** `stake1u996wjw2a9sqjd2k3c7mddv8330xmaan3axy4xst3zk9njsnmcn6e`
 - **Funding requested:** ₳125,000
-- **Last finalized:** 2026-08-17T16:01:19.098000+00:00
+- **Last finalized:** 2026-08-18T16:00:24.181000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,11 +16,15 @@ TRL 7 - System prototype demonstrated in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-SALIS is independently founded and led by Amber Morris, who has directed the project from concept through development of a live Cardano-native Decentralized Care Platform. As a solopreneur, I lead product strategy, platform architecture, user experience, Smart Booking Contract design, provider research, business planning, outreach, and ecosystem development.
+SALIS is independently founded and led by Amber Morris, who has directed the project from concept through development of a live Cardano-native Decentralized Care Platform. 
 
-SALIS has been primarily self-funded and already operates with provider discovery, provider-owned care profiles, onboarding workflows, CIP-30 wallet connectivity, and non-custodial Smart Booking Contract infrastructure configured for Cardano mainnet.
+I am a Software Engineer and Solopreneur—an Entrepreneur who independently owns, operates, and manages a business without a co-founder or permanent team. I personally designed and implemented the existing SALIS platform and Cardano architecture described in this proposal, including its provider platform, CIP-30 wallet integration, Cardano transaction infrastructure, and Aiken/Plutus V3 Smart Booking Contract implementation.
 
-This existing production foundation provides the environment for implementing and validating the proposed CIP-0170 Verifiable Provider Authority integration. I am the sole project team member, developer, project lead, and accountable delivery owner for this proposal. No additional developers, security specialists, or KERI/CIP-0170 contributors are currently part of the proposed team. If specialized technical advice or services are required during implementation, they will be procured after award based on demonstrated project needs and are not represented as existing team members or confirmed contributors in this proposal. I remain responsible for product direction, implementation oversight, provider onboarding, adoption, milestone delivery, and evidence.\
+I will directly implement the proposed CIP-0170/KERI provider-authority workflow, verifier/indexer, credential-chain handling, revocation functionality, frontend/backend and wallet integration, testing, deployment, documentation, and milestone evidence.
+
+My proposal summarizes the experience directly relevant to this implementation rather than reproducing my complete professional history. SALIS itself represents prior experience building and deploying a Cardano application, supported by my GitHub development history and professional LinkedIn profile.
+
+Independent specialist review or consultation may be procured after award if warranted, but implementation and delivery remain my responsibility.\
 \
 GitHub: <https://github.com/ambercodes>\
 LinkedIn: <https://www.linkedin.com/in/amber-m-400365113/>
@@ -35,17 +39,17 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-SALIS currently has approximately 250 seeded, unclaimed provider profiles forming an established acquisition pipeline. These are prospects, not users or counted adoption, and SALIS will continue identifying additional providers during the adoption period.
+**SALIS has approximately 250 seeded provider profiles forming an identifiable outreach pool. They are prospects, not users, guaranteed conversions, or counted Catalyst adoption. CIP-0170 Provider Authority is a new pilot feature and therefore has no historical usage or conversion rate of its own.**
 
-The 500-transaction target is a planning model, not guaranteed user behavior. Across the existing and expanding prospect pool, the model assumes approximately 100 external providers voluntarily become active and average five qualifying CIP-0170 transactions. Activity may include an initial provider-authority attestation plus attestations associated with genuine booking confirmations. Actual participation and frequency depend on independent provider choices and platform use.
+**SALIS is Provider-Sovereign: Providers independently elect whether to claim/create a profile, activate Verifiable Provider Authority, and participate in each care agreement.** The 500-transaction target is a pilot planning target, not a projection from historical CIP-0170 behavior or a forecast that 100 of the existing 250 profiles will convert. **A scenario of about 100 external providers averaging five qualifying transactions is one mathematical path to 500; actual distribution may vary.**
 
-The modeled path is direct outreach → profile claim/create → optional authority activation → normal SALIS booking activity. The corresponding ₳130 fee target is an aggregate target across qualifying activity. Seeded listings, SALIS-controlled wallets, testing, and transactions created solely to increase metrics will not count; only independently initiated external-user activity qualifies.
+**The ₳130 target is Cardano network fees, not SALIS revenue or its 5% platform fee. The external wallet submitting each qualifying Cardano transaction pays the network fee. Existing booking revenue is not relabeled as CIP-0170 adoption. Seeded listings, SALIS wallets, testing, sponsored activity, or metric-only transactions do not count.**
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
 SALIS has approximately 250 seeded, unclaimed provider profiles demonstrating an established provider research and outreach process; these are prospects, not users or Catalyst adoption. During adoption, SALIS will continue researching new providers, conducting direct outreach, and inviting providers to claim or create profiles and optionally establish Verifiable Provider Authority.
 
-Channels include indexed SALIS provider pages, LinkedIn, and Facebook. Cardano and podcast outreach may supplement acquisition but is not included in the baseline. No partner commitments are counted.
+Channels include indexed SALIS provider pages, LinkedIn, and Facebook. Cardano and podcast outreach may supplement provider outreach but is not included in the baseline. No partner commitments are counted.
 
 First 2 weeks after M1: Days 1–3 launch and outreach; Days 4–7 onboard and measure claims, authority activations, external wallets and CIP-0170 activity; Days 8–10 expand outreach; Days 11–14 follow up and refine onboarding.
 
@@ -139,7 +143,7 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Catalyst request: ₳125,000. Preliminary budget uses a $25,500 USD planning basis: $14,000 CIP-0170/KERI architecture, backend/frontend development, wallet/identity integration, testing, deployment, documentation and technical evidence; $8,500 provider outreach, onboarding materials, user education, activation support and external-user validation; $3,000 project management, Catalyst reporting and Demo Day delivery. Existing SALIS infrastructure is excluded from funded work. Amber Morris is the sole project team member and delivery owner.
+Catalyst request: ₳125,000. Allocation: ₳68,627 for CIP-0170/KERI architecture, development, wallet/identity integration, verification, testing, deployment and documentation; ₳41,667 for provider outreach, onboarding, education, activation support and external-user validation; and ₳14,706 for project management, Catalyst reporting and Demo Day delivery. Allocations reflect current real-world project-cost planning; actual USD value varies with ADA/USD. Existing SALIS infrastructure is excluded from funded work.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
