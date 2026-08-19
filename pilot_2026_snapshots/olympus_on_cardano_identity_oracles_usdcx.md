@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 14
+- **Revision:** 17
 - **Proposer:** `stake1uyetkdjk9axd54yafd5n8fww0ufx39yr52c3l9ehrrcw70sr4enfs`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-18T12:06:14.649000+00:00
+- **Last finalized:** 2026-08-19T13:31:24.882000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,21 +16,15 @@ TRL 8 - System complete and qualified
 
 ### Why is your team well-suited to deliver this?
 
-Richard Gaertner leads as CEO, Ian Gaertner drives growth and partnerships, and Joshua Ritz leads engineering as CTO, and that continuity means we move fast without the coordination overhead most teams burn months on. Richard and Ian are brothers as well.\
-\
-Team URLs:\
-Richard Gaertners Linkedin <https://www.linkedin.com/in/richard-gaertner-71b105a2>\
-\
-Company Github: <https://github.com/OmegaNetwork>\
-\
-Ian Gaertners Linkedin: <https://www.linkedin.com/in/ian-gaertner>\
-\
-Josh Ritz: <https://www.linkedin.com/in/joshritz>
+Ian leads Cardano growth and partnerships for Olympus, and is the sole owner of OmegaLabs Protocol OÜ, the legal entity behind the product.
 
-We've already shipped at chain level: a live beta with real users on ClearBook, and confirmed work alongside Aptos, Avalanche, Solana Seeker, and other DeFi teams—not drawer LOIs. Those teams backed the integrations because we shipped. Partnership verification: public posts and DMs on X or Telegram with the named teams (and Olympus @ handles); thread/message links on request. We are not assuming Cardano is the same: its technical character and community expectations are different, and we are here to learn that stack rather than copy-paste another chain.\
-\
-Team intro: [https://youtu.be/\\\_XWKD-u-2Io?feature=shared](https://youtu.be/%5C_XWKD-u-2Io?feature=shared)\
-Team Business: [https://ariregister.rik.ee/eng/company/17418123/OmegaLabs-Protocol-OÜ?search_id=9476b85&pos=1](https://ariregister.rik.ee/eng/company/17418123/OmegaLabs-Protocol-O%C3%9C?search_id=9476b85&pos=1)
+Team URLs:\
+Ian Gaertner LinkedIn: <https://www.linkedin.com/in/ian-gaertner>\
+Project GitHub (open source): <https://github.com/OmegaNetwork-source/Olympus_Cardano>\
+Team intro: <https://www.youtube.com/watch?v=\_XWKD-u-2Io>\
+Business registry: <https://ariregister.rik.ee/eng/company/17418123/OmegaLabs-Protocol-OÜ>
+
+We're proud to have already shipped at chain level, with a live beta serving real users on ClearBook, and we're grateful for the public collaboration we've had with the Aptos and Avalanche teams, shown here rather than offered on request: <https://x.com/Aptos/status/2077749689722487255> and <https://x.com/Team1KOR/status/2084186786679722059>. A few additional partner conversations are underway but aren't public yet, so we've chosen not to claim them until they are. We don't assume Cardano works the same way other chains do; its technical character and community expectations are different, and we're approaching it as a stack worth learning properly rather than something to copy-paste from elsewhere.
 
 ### Eligible area
 
@@ -42,7 +36,17 @@ Voluntary give-back: after the pilot, once Cardano product fees exceed ₳25,000
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Olympus (<https://olympus.omeganetwork.co/cardano>) is the existing product (Standard §3.2): live trading and Predict; Cardano is a new rail (not TRL 9). Genuine usage is Lace users paying their own fees—not scripts or subsidised txs. Budget includes 0 ADA for user incentives; incentivised volume is not counted. Current audience: thousands of monthly connected wallets and hundreds of repeat Predict/swap users; Cardano today is early testers (near-zero txs). Targets: Oracles 2,500 txs / 750 ADA; USDCx 2,000 / 900 ADA; CIP-0170 1,200 / 250 ADA. About two thirds of Cardano usage from existing Olympus users, one third new wallets via Lace and Minswap. CIP-0170: user signs a KERI-backed metadata attestation carrying our declared identifier; Olympus anchors it on mainnet. Oracles price live market/Predict; USDCx is accept/settle on predict/swap. Requested 200,000 ADA, engineering-first: 50,000 CIP-0170, 50,000 oracles, 40,000 USDCx (70%); 40,000 QA/footprint/Demo Day (20%); 20,000 Lace/Minswap docs after hashes (10%). A fraction of the current base over adoption window clears floors vs near-zero Cardano volume. Declared identifiers, external wallets, daily caps; no team wash.
+Olympus (<https://olympus.omeganetwork.co/cardano>) is our live product; Cardano is a new rail, not yet proven at TRL 9. Genuine usage is Lace users paying their own fees, not scripts or subsidised txs. Budget includes 0 ADA for incentives; incentivised volume isn't counted.
+
+Current base: thousands of monthly connected wallets, hundreds of repeat Predict/swap users. Assumption: \~8% of repeat users (roughly 320 wallets) try Cardano during the window, averaging 12 txs each across Oracles/USDCx/CIP-0170, covering about two-thirds of the 5,700 target (\~3,800 txs). Remaining third (\~1,900 txs) comes from Lace/Minswap referrals: \~475 new wallets averaging 4 txs each.
+
+Targets: Oracles 2,500/750 ADA; USDCx 2,000/900 ADA; CIP-0170 1,200/250 ADA.
+
+CIP-0170: user signs a KERI-backed metadata attestation; Olympus anchors it on mainnet. Oracles price live Predict/market; USDCx settles predict/swap.
+
+Requested 200,000 ADA, engineering-first: 50,000 CIP-0170, 50,000 oracles, 40,000 USDCx (70%); 40,000 QA/footprint/Demo Day (20%); 20,000 Lace/Minswap docs post-hashes (10%).
+
+Declared identifiers, external wallets, daily caps enforced; no team wash volume.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -58,7 +62,7 @@ Evidence: Olympus retains users via aggregated swaps, claims, predictions, and p
 
 ### Is the underlying project open source?
 
-No
+Yes
 
 ### Short Video Pitch
 
@@ -222,7 +226,7 @@ Olympus is building a Cardano-native trading and prediction experience where use
 ### Supporting links (repo, site, demo)
 
 - https://olympus.omeganetwork.co/cardano
-- https://github.com/OmegaNetwork-source
+- https://github.com/OmegaNetwork-source/Olympus_Cardano
 - https://docs.google.com/presentation/d/1W9ogG7xV5wYysq7xu80-qn_u12ua2YSWGBo-gDcKq8k/edit?usp=sharing
 
 ### Identified dependencies
@@ -248,6 +252,10 @@ No
 ### Mature product
 
 Yes
+
+### Licensing / IP details
+
+The on-chain Solidity contract sources in /contracts include SPDX-License-Identifier: MIT at the top of each contract file, meaning those contract sources are MIT-licensed. All other third-party dependencies used by the project are subject to their respective upstream licenses.
 
 ### Technical
 

@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 1
+- **Revision:** 5
 - **Proposer:** `stake1u80mnpaqq2jtz9cd64y88zfyx0g3dyhzq4v9c87vptc4yfc0x6rwq`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-17T17:15:03.635000+00:00
+- **Last finalized:** 2026-08-19T13:51:20.543000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -43,23 +43,33 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Who transacts: external holders and buyers, from their own wallets, paying their own fees. Anvil never submits or subsidises on a user's behalf. Team wallets are declared and excluded.
+Who transacts: external holders and buyers, from their own wallets, paying their own fees. Anvil never submits or subsidizes on a user's behalf. Team wallets are declared and excluded.
 
 What counts: transfers under our declared CIP-0113 policies (marketplace purchases and holder-to-holder transfers), holder allowlist enrollment, and issuer rule updates. One-time registry and protocol-parameter setup is team-paid and excluded from the counted target.
 
-Model: 8–12 RWA issuers from Anvil's client base; \~220 distinct external wallets, against an 18-wallet minimum at this award level; one enrolment plus \~3.5 transfers each on average, giving \~1,000 qualifying transactions. At an average ₳0.48 per CIP-0113 transfer, higher than a simple send because each spends programmable_logic_base, runs the global validator, and executes a registry lookup plus transfer script, that is ₳480 against a ₳173 floor.
+Model: 4-8 RWA issuers from Anvil's client base/new clients; \~220 distinct external wallets, against an 18-wallet minimum at this award level; one enrolment plus \~3.5 transfers each on average, giving \~500 qualifying transactions. At an average ₳0.48 per CIP-0113 transfer, higher than a simple send because each spends programmable_logic_base, runs the global validator, and executes a registry lookup plus transfer script, that is ₳240 against a ₳200 floor.
 
-Pace: marketplace volume is bursty and the daily cap is 20% of the period total. We therefore stagger issuer launches roughly one per epoch instead of a single launch event, so enrolment carries the early epochs and recurring trading carries the rising late-epoch floors.
+Pace: marketplace volume is bursty and the daily cap is 20% of the period total. We therefore stagger issuer launches roughly one per epoch instead of a single launch event, so enrolment carries the early epochs and recurring trading carries the rising late-epoch floors. 
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Currently, Wayup is positioned as the top marketplace of NFTs on Cardano. Adding RWAs, especially legally compliant ones, is the next logical step for us and our users.\
-\
-As of today, we see an average of 1,100 new visitors on our site per day. Through our site activity, we will produce marketing content around these RWAs, and publish on Wayup for all of our users to see. This would include banners, carefully placed advertisements, and special emblems to showcase CIP-113 compliance.\
-\
-Additionally, we have 3,600 followers on X, which we post to regularly, outlining new features and updates to our platform. \
-\
-We also have 2700+ email addresses on file, which we will send email notifications to.  
+Named channels, with no commitments claimed that we do not have.
+
+1. [Anvil's](https://x.com/AnvilDevAgency) existing client base, 200+ projects already minting on Cardano through our API across 30 countries. Target: 4-8 live RWA issuers. 
+
+2. Spreading Awareness: Currently there is only 1 project we could find that is using CIP-113 ([X Post](https://x.com/lavanetxyz/status/2085335188712849684?s=20)). 
+
+3. Wayup's existing trader base and our own channels ([Wayup](http://x.com/wayupio), [Discord](https://discord.gg/84P7TteHge)) , the demand side, already holding wallets and already transacting.
+
+**First two weeks after M1:**
+
+Days 1–3: first issuer live, policy verified on Wayup and open for trading. 
+
+Days 4–7: hands-on onboarding for issuers two and three, first external purchases, verify the epoch-1 floor. 
+
+Days 8–12: fix what real users hit , we expect wallet and eligibility edge cases, not protocol failures. 
+
+Days 13–14: publish the per-epoch table and counting methodology.
 
 ### Is the underlying project open source?
 
@@ -133,7 +143,7 @@ Wayup's existing user base of Cardano traders, already transacting on mainnet wi
 
 Evidence of demand. The pattern is proven elsewhere and absent here. On Ethereum, permissioned-token standards for regulated assets (ERC-3643 and peers) underpin a live tokenized-asset market precisely because transfer rules are enforced by the token. Cardano has no equivalent venue. CIP-0113 exists as a standard with a Cardano Foundation reference implementation and, to our knowledge, no production secondary market using it. The gap is infrastructure, not appetite.
 
-What we do not claim: we have no signed issuer commitments at submission. Converting existing Anvil clients into live RWA issuers is the declared principal risk of this proposal, and the usage plan is sized against it rather than around it.
+What we do not claim: we have no signed issuer commitments at submission. Converting existing Anvil clients into live RWA issuers is the declared principal risk of this proposal, and the usage plan is sized against it rather than around it. This is a long term play to accommodate CIP-113 assets and give them a place to safely trade.
 
 ### Applicant name
 
@@ -151,7 +161,7 @@ Usage continues after the pilot because secondary trading is recurring by nature
 
 ### Programmable tokens (CIP-0113) - expected transaction count
 
-1000
+500
 
 ### Named, verifiable team
 
@@ -217,7 +227,7 @@ TRL 2 - Technology concept formulated
 
 ### Programmable tokens (CIP-0113) - fee target (ADA)
 
-480
+240
 
 ### Clear budget
 

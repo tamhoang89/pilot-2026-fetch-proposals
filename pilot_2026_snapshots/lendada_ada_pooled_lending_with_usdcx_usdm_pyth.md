@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 21
+- **Revision:** 25
 - **Proposer:** `stake1u9k6f967jnq3jn766k8x9jznqd0mx99hsep0yqksupx6jksynrqzt`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-18T15:06:03.557000+00:00
+- **Last finalized:** 2026-08-19T13:29:28.367000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -40,13 +40,15 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Counted activity will come only from external wallets using the live mainnet product. Team, related-party, team-funded, relay, batcher and keeper wallets are excluded.
+Counted activity comes only from external wallets. Team, related-party, team-funded, relay, batcher and keeper wallets are excluded.
 
-The forecast is 600 oracle-consuming lending actions and 800 actions moving verified USDCx or USDM. The targets assume approximately 0.83 ADA for a Pyth-consuming risk transaction and 0.75 ADA across stablecoin actions. A user transaction that consumes the declared Pyth feed and moves a declared stablecoin is eligible under each declared integration footprint; it is not artificial activity.
+The ₳200,000 request covers security and delivery costs: independent audit, remediation, Pyth/stablecoin integration and mainnet launch. These costs do not scale with transaction volume.
 
-Initial usage will come from experienced Cardano DeFi suppliers and borrowers reached through public documentation, walkthroughs, team channels and fixed-scope educational campaigns. The target is 100 distinct external wallets, including at least 30 suppliers and 30 borrowers, with repeat supply, borrow, repayment and withdrawal activity. Users continue because suppliers earn variable interest and ADA holders obtain stablecoin liquidity without selling ADA.
+LendADA has no external customers today. The ₳500 Oracle and ₳600 Stablecoin targets are conservative beta-test thresholds above program floors, not a claim of product-market fit or a guarantee of market conditions. The 600 oracle-consuming and 800 stablecoin-moving actions are planning targets for genuine user flows.
 
-No deposit, borrowing, transaction or token incentive will be offered.
+Acquisition combines Jaromír Tesař’s Cardano X channel, audit/risk documentation, onboarding and fixed-scope creator education. James Meidinger will introduce USDM lending to the USDM community; Michal Urbanek will distribute LendADA’s launch and education through Cardanians. They will publish launch content and support community Q&As, providing direct routes to Cardano stablecoin users.
+
+Users are not paid to deposit, borrow or transact. Suppliers return for variable interest; ADA holders return for stablecoin liquidity without selling collateral.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -147,18 +149,16 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Without Catalyst funding, LendADA can continue internal Preprod testing but cannot responsibly complete production USDCx/USDM and Pyth integration, an independent security audit. The MVP is not ready for user funds.
+Funding pays only for defined delivery:
 
-High-level allocation:
+• ₳55k — USDCx/USDM + Pyth validator integration, caps/depeg controls and regression suite; evidence: policy IDs, scripts, tests and testnet/mainnet txs.\
+• ₳80k — independent audit and remediation; evidence: audit scope/report, public findings summary, fixes and retest confirmation.\
+• ₳25k — batcher, indexer/API, monitoring, infrastructure; evidence: live endpoints/dashboard and runbook.\
+• ₳20k — frontend, testing, deployment; evidence: public app/release.\
+• ₳10k — docs, beta support/reporting.\
+• ₳10k — creator content, outreach and Q&As.
 
-• ₳55,000 — USDCx/USDM integration, Pyth validation, risk controls and contract hardening.\
-• ₳80,000 — independent audit and remediation.\
-• ₳25,000 — batcher, keeper, monitoring, indexer/API and infrastructure.\
-• ₳20,000 — frontend, testing, deployment and release work.\
-• ₳10,000 — documentation, beta support and Catalyst reporting.\
-• ₳10,000 — fixed-scope creator education, launch outreach and public Q&As.
-
-Funding is only for future delivery: no protocol liquidity, loans, token rewards, transaction rebates or incentives.
+No funds for liquidity, assets, loans, rewards, or rebates.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
