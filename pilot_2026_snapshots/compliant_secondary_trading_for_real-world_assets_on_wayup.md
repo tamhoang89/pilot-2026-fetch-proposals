@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 5
+- **Revision:** 12
 - **Proposer:** `stake1u80mnpaqq2jtz9cd64y88zfyx0g3dyhzq4v9c87vptc4yfc0x6rwq`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-19T13:51:20.543000+00:00
+- **Last finalized:** 2026-08-19T15:16:23.386000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,18 +16,18 @@ TRL 9 - Actual system proven in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-Anvil is a Cardano development company. We build and operate the infrastructure this integration extends, and Wayup is our own marketplace running on it. Anvil has successfully completed 6 Catalyst proposals over 4 years, most of which are public goods that are actively being used. 
+Anvil is a Cardano development company. We build and operate the infrastructure this integration extends, and Wayup is our own marketplace running on it. Anvil has successfully completed 6 Catalyst proposals over 4 years, most of which are public goods that are actively being used.
 
 Delivery evidence, all public: Wayup, live on Cardano mainnet, built entirely on our own API and indexer. Anvil serves 200 clients across 30 countries, with 457k assets minted and ATH \~₳50M total value staked through our infrastructure. \
 \
-Zachary Soesbee - CEO - Responsible for Catalyst Milestone and processes. \
+Zachary Soesbee - CEO - Responsible for Catalyst Milestone, Marketing, and Partnerships. \
 <https://www.linkedin.com/in/zachary-soesbee-4a5ab317a/>\
 \
 Patrick Bernard - COO - Responsible for employee management, UI/UX decisions, and deliverables on the platform. \
 <https://www.linkedin.com/in/patrick-b-436a3621/>\
 <https://github.com/invalidcredentials>\
 \
-David Desjardins - CTO - Responsible for technical progress, architecture, and development. \
+David Desjardins - CTO - Responsible for technical progress, architecture, and Aiken development. \
 <https://www.linkedin.com/in/david-desjardins-a7b930120/>\
 <https://github.com/tqueri>
 
@@ -47,33 +47,28 @@ Who transacts: external holders and buyers, from their own wallets, paying their
 
 What counts: transfers under our declared CIP-0113 policies (marketplace purchases and holder-to-holder transfers), holder allowlist enrollment, and issuer rule updates. One-time registry and protocol-parameter setup is team-paid and excluded from the counted target.
 
-Model: 4-8 RWA issuers from Anvil's client base/new clients; \~220 distinct external wallets, against an 18-wallet minimum at this award level; one enrolment plus \~3.5 transfers each on average, giving \~500 qualifying transactions. At an average ₳0.48 per CIP-0113 transfer, higher than a simple send because each spends programmable_logic_base, runs the global validator, and executes a registry lookup plus transfer script, that is ₳240 against a ₳200 floor.
+Model: 4–8 RWA issuers from Anvil's client base and new clients; \~110 distinct external wallets, against the 20-wallet minimum at this award level; one enrolment plus \~3.5 transfers each on average, giving \~830 qualifying transactions. At an average ₳0.48 per CIP-0113 transfer, higher than a simple send because each spends programmable_logic_base, runs the global validator, and executes a registry lookup plus transfer script, that is ₳400 against a ₳200 floor.
 
-Pace: marketplace volume is bursty and the daily cap is 20% of the period total. We therefore stagger issuer launches roughly one per epoch instead of a single launch event, so enrolment carries the early epochs and recurring trading carries the rising late-epoch floors. 
+Pace: marketplace volume is bursty and the daily cap is 20% of the period total. We therefore stagger issuer launches roughly one per epoch instead of a single launch event, so enrolment carries the early epochs and recurring trading carries the rising late-epoch floors.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
 Named channels, with no commitments claimed that we do not have.
 
-1. [Anvil's](https://x.com/AnvilDevAgency) existing client base, 200+ projects already minting on Cardano through our API across 30 countries. Target: 4-8 live RWA issuers. 
+[Anvil's](https://x.com/AnvilDevAgency) existing client base, 200+ projects already minting on Cardano through our API across 30 countries. Target: 4-8 live RWA issuers.
 
-2. Spreading Awareness: Currently there is only 1 project we could find that is using CIP-113 ([X Post](https://x.com/lavanetxyz/status/2085335188712849684?s=20)). 
-
-3. Wayup's existing trader base and our own channels ([Wayup](http://x.com/wayupio), [Discord](https://discord.gg/84P7TteHge)) , the demand side, already holding wallets and already transacting.
+Wayup's existing trader base and our own channels ([Wayup](http://x.com/wayupio), [Discord](https://discord.gg/84P7TteHge)) , the demand side, already holding wallets and already transacting.
 
 **First two weeks after M1:**
 
-Days 1–3: first issuer live, policy verified on Wayup and open for trading. 
-
-Days 4–7: hands-on onboarding for issuers two and three, first external purchases, verify the epoch-1 floor. 
-
-Days 8–12: fix what real users hit , we expect wallet and eligibility edge cases, not protocol failures. 
-
-Days 13–14: publish the per-epoch table and counting methodology.
+Days 1–3: issuer 1 live, policy verified on Wayup and open for trading; first external purchases. Target 15 wallets, 20 tx.\
+Days 4–7: onboarding issuers 2–3; enrolment opens. Week 1 close: 3 issuers, 30 wallets, 55 tx.\
+Days 8–12: fix what real users hit - wallet and eligibility edge cases, not protocol failures; issuer 4 live. Target 15 more wallets.\
+Days 13–14: publish the per-epoch table and counting methodology. Week 2 close: 4 issuers, 48 wallets, 115 cumulative tx.
 
 ### Is the underlying project open source?
 
-No
+Yes
 
 ### Short Video Pitch
 
@@ -159,9 +154,11 @@ Users pay their own Cardano network fees. Anvil never pays fees on a user's beha
 
 Usage continues after the pilot because secondary trading is recurring by nature. An issuer tokenizes once, but holders trade, transfer and re-list continuously, and each of those is a real transaction with a real reason to exist. Nothing here depends on grant money continuing.
 
+First 14 days: 3-4 issuers live, 48 distinct external wallets, 115 qualifying transactions (23% of target). Dated plan in go-to-market.
+
 ### Programmable tokens (CIP-0113) - expected transaction count
 
-500
+830
 
 ### Named, verifiable team
 
@@ -213,7 +210,7 @@ Internal target week 9, deadline week 12.
 
 4. Eligibility pre-flight in the UI, showing pass/fail and reason before signing.
 
-5. At least three external issuers onboarded, minting from their own wallets.
+5. At least four external issuers onboarded, minting from their own wallets.
 
 6. Independent security review of the composed transaction path, findings remediated.
 
@@ -227,7 +224,7 @@ TRL 2 - Technology concept formulated
 
 ### Programmable tokens (CIP-0113) - fee target (ADA)
 
-240
+400
 
 ### Clear budget
 
@@ -266,6 +263,7 @@ The result is an asset whose compliance is enforced by Cardano, trading on an op
 - https://ada-anvil.io
 - https://github.com/Cardano-Forge
 - https://dev.ada-anvil.io/
+- https://www.wayup.io/
 
 ### Identified dependencies
 
@@ -286,6 +284,12 @@ No
 ### Mature product
 
 Yes
+
+### Licensing / IP details
+
+The CIP-0113 integration layer , the programmable-token adapter, the registry resolver, the eligibility evaluation library, schemas and test vectors , will be published under Apache-2.0, so any Cardano marketplace or wallet can read and enforce CIP-0113 transfer rules without our stack. Apache-2.0 for the patent grant, since the point is for others to implement it. 
+
+The Wayup marketplace application itself remains proprietary.
 
 ### Technical
 

@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 9
+- **Revision:** 19
 - **Proposer:** `stake1u966rf62ct6pcfgn79wn37gys7xurry962ggr9xcfjntc8sqsy52e`
 - **Funding requested:** ₳150,000
-- **Last finalized:** 2026-08-19T02:41:25.771000+00:00
+- **Last finalized:** 2026-08-19T15:06:21.502000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,21 +16,27 @@ TRL 6 - Technology demonstrated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-**Project Team & Roles:**
+**Abubakari Mahamudu – Chief Product Officer & Project Lead** 
 
-- **Abubakari Mahamudu – Chief Product Officer & Project Lead**
+Role: Oversees product strategy, technical roadmap alignment, user journey mapping, and backend smart contract integration architecture. Brings extensive experience as CEO of Tumahub and Chief Product Officer of [ZaaNet.xyz](http://ZaaNet.xyz).
 
-  - *Role:* Oversees product strategy, technical roadmap alignment, user journey mapping, and backend smart contract integration architecture. Brings extensive experience as CEO of[ Tumahub](https://tumahub.netlify.app/) and Chief Product Officer of[ ](http://zaanet.xyz)[ZaaNet.xyz](http://ZaaNet.xyz).
+- LinkedIn: <https://www.linkedin.com/in/abubakari-mahamudu-a41b94213/>
 
-  - *Profile / References:*[ LinkedIn](https://www.google.com/search?q=https://www.linkedin.com/in/abubakari-mahamudu-a41b94213/) |[ GitHub](https://github.com/abubakarim78) |[ X (Twitter)](https://x.com/abusadickm_78)
+- GitHub: <https://github.com/abubakarim78>
 
-- **Sahabia Yakubu – Lead Developer & CEO**
+- X (Twitter): <https://x.com/abusadickm_78>
 
-  - *Role:* Directs core blockchain development, smart contract logic, DeFi protocol integration (Liqwid pools and Circle xReserve), and technical architecture. Brings deep Web3 leadership as Founder of[ HackerBoost](https://www.youtube.com/watch?v=B0d79Z3UI7M), former MakerDAO African Ambassador (2019–2021), Founder of[ DeFi Africa](https://x.com/defiafrica), and CEO of ZaaNet.
+**Sahabia Yakubu – Lead Developer & CEO** 
 
-  - *Profile / References:*[ LinkedIn](https://www.google.com/search?q=https://www.linkedin.com/in/sahabia-yakubu) |[ GitHub](https://github.com/sahadevgh) |[ X (Twitter)](https://x.com/sahadevgh)
+Role: Directs core blockchain development, smart contract logic, Circle xReserve integration, and technical architecture. Brings deep Web3 leadership as Founder of HackerBoost, former MakerDAO African Ambassador (2019–2021), Founder of DeFi Africa, and CEO of ZaaNet.
 
-**Track Record & Previous Deliverables:** The team has proven execution capability, having successfully built and shipped[ Buna Protocol V1.0 (Arbitrum)](https://www.bunaprotocol.com/) end-to-end, as well as developing decentralized infrastructure projects.
+- LinkedIn: <https://www.linkedin.com/in/realsahabia/>
+
+- GitHub: <https://github.com/sahadevgh>
+
+- X (Twitter): <https://x.com/sahadevgh>
+
+**Track Record & Capability:** The team has proven execution capability, having successfully built and shipped Buna Protocol V1.0 end-to-end (evidenced by our live Arbitrum and Tron contracts); links are shared in the supporting links section of this proposal. To ensure Cardano-native execution matches our product vision, we are using the open-source Lucid framework and have explicitly allocated budget for comprehensive third-party smart contract security audits before mainnet deployment.
 
 ### Eligible area
 
@@ -42,31 +48,29 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-- **Who Transacts:** Underbanked individuals, freelancers, and small merchants across West Africa (anchored through[ HackerBoost hubs in Ghana](https://www.hackerboost.org/)) seeking protection against local currency inflation.
+**Who & Why:** Underbanked individuals, freelancers, and small merchants across West Africa (anchored through HackerBoost hubs in Ghana) transact to bridge external stablecoins or onboard fiat into Cardano-native stablecoins (USDCx) to hedge against local currency inflation securely.
 
-- **Why & What Transactions:** Users transact to bridge external stablecoins or onboard fiat into Cardano-native stablecoins (USDCx/USDM) and allocate capital into Liqwid Earn yield vaults, or execute in-app swaps.
+**Target Justification & Frequency:** We are targeting **1,500 transactions generating 350 ADA in fees** (averaging \~0.23 ADA per standard smart-contract transfer). 350 ADA sits comfortably in the "Ambitious" scoring band above the ₳312 baseline floor for a 150,000 ADA Stablecoin grant.
 
-- **Cadence & Reach:** Users make weekly savings deposits, compound monthly yield, and manage liquidity routinely. We will reach these targets by embedding these workflows inside our familiar conversational Telegram bot interface, eliminating Web3 friction, and driving adoption via community onboarding workshops across HackerBoost hubs.
-
-- **Target Justification:** Our declared target of **450 ADA in fees** (spanning approximately **5,000 transactions**) comfortably clears the program floor of **₳312** for our 150,000 ADA grant. It is ambitious yet realistic, grounded in our active regional developer community and designed to reflect organic, recurring transaction loops without artificial volume.
+Achieving 1,500 transactions across our warm pipeline of \~350 initial users equates to a highly realistic **\~4.2 transactions per user** during the measurement window (e.g., initial onboarding deposits, weekly savings top-ups, and P2P transfers). This grounded, defensible frequency reflects organic monthly savings habits. By scoping down to just the Onboarding feature, we completely resolve concerns about inflated volume while remaining fully compliant with the Transaction Integrity Standard.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-**Buna Pilot Users:** Active savers using our Telegram bot and web app will be guided to migrate funds to native USDCx vaults through a zero-friction in-app campaign.
+- **Buna Pilot Users (\~200):** Active savers using our Telegram bot and web app will be guided to migrate funds to native USDCx through a zero-friction in-app campaign.
 
-[**HackerBoost Hub**](https://www.hackerboost.org/) **(\~150):** Direct onboarding of university students, alumni, and freelance developers in Tamale.
+- [**HackerBoost Hub**](https://www.hackerboost.org/) **(\~150):** Direct onboarding of university students, alumni, and freelance developers in Tamale.
 
-Tamale Offline Hangout Community **(\~500):** Direct onboarding through established coworking spaces and tech meetups in Northern Ghana
+- **Tamale Offline Hangout Community (\~500):** Direct onboarding through established coworking spaces and tech meetups in Northern Ghana.
 
 **First Two Weeks Post-Launch Plan:**
 
-**Days 1–3:** Deploy verified contracts to mainnet; update UI; publish declared footprint and explorer links
+- **Days 1–3:** Deploy the verified integration to mainnet; update the UI; publish the declared footprint.
 
-**Days 4–7:** Activate Cohort 1. Onboard the first 50 pilot savers for live USDCx deposits and Earn allocations
+- **Days 4–7:** Activate Cohort 1. Onboard the first 50-70 pilot savers for live USDCx onboarding.
 
-**Days 8–11:** Host workshops at HackerBoost hub, onboarding 40+ freelancers for P2P escrow and CEX-to-Cardano bridging
+- **Days 8–11:** Host workshops at HackerBoost hub, onboarding 40-50+ freelancers for stablecoin bridging.
 
-**Days 12–14:** Track transaction volume, gather feedback, deploy UX hotfixes, and publish adoption metrics
+- **Days 12–14:** Track transaction volume, gather feedback, and publish adoption metrics.
 
 ### Is the underlying project open source?
 
@@ -82,39 +86,33 @@ https://youtu.be/0uXZDd197hA?si=ofucyuccqFMf3H68
 
 - **CEXs & P2P (Binance P2P, Yellow Card):** Custodial, exposing users to account freeze risks and high KYC friction.
 
-- **Cardano DeFi UIs (Liqwid, Minswap):** Built for power users; steep UTxO and slippage friction for retail savers.
+- **Standard Web3 Bridges:** Built for power users; steep UTxO and bridging friction for retail savers.
 
-- **Mobile Money:** Convenient for payments but offers zero yield against steep fiat inflation.
+- **Mobile Money:** Convenient for payments but offers zero protection against fiat inflation.
 
 **Why Users Switch to Buna Bridge:**
 
-- **Conversational UX:** Manage savings via a Telegram bot or web app with zero blockchain jargon.
+- **Conversational UX:** Manage digital dollars via a Telegram Mini App and mobile/web app with zero blockchain jargon.
 
-- **Self-Custody:** Funds settle on-chain via user-signed transactions without exchange custody risk.
+- **Self-Custody:** Funds settle on-chain via client-side user-signed transactions without exchange custody risk.
 
-- **Stable Yield:** Earn sustainable USDCx yield via Liqwid pools without liquidation risks.
-
-- **Direct Onboarding:** Connects CEX-held USDC to Cardano natively via Circle’s xReserve.
+- **Direct Onboarding:** Connects external USDC seamlessly to Cardano natively via Circle’s open xReserve.
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-Buna Protocol is an active, mature product currently undergoing live pilot testing with real-world users in production. Through our operational deployment, we have successfully validated core architecture components, including our conversational Telegram bot interface, peer-to-peer (P2P) transaction workflows, and a transparent, share-based savings accounting model.
+Buna Protocol is an active, mature product with an Arbitrum pilot testing live with real-world users (accessible via our Telegram bot `@buna_protocol_bot` and web/mobile app). Through our operational deployment, we have successfully validated core architecture components, including our conversational Telegram bot interface and peer-to-peer (P2P) transaction workflows. The existing system has proven reliable and useful in live market conditions.
 
-The existing system has proven its reliability and user-facing utility under live market conditions, confirming that our platform mechanics effectively bridge the gap between underbanked users and digital asset savings. This established foundation provides a robust, tested framework upon which we are ready to expand.
+Our live L2 transaction volume is publicly verifiable on Arbiscan: (0xd117e0fe7aa5f77c8cc00ae133c78727cd4fb830) and Tronscan:(TUTq79xDPgjxmE8V3umpuR4pZULmY5HqAF)
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-Buna Protocol's proposed architecture adopts a hybrid on-chain/off-chain model designed to bring frictionless Web3 access to emerging markets:
+Buna Protocol adopts a hybrid on-chain/off-chain model custom-built for underbanked West African users:
 
-- **Conversational Interface & Backend:** User interactions are handled via a Telegram bot and web interface powered by a secure backend, abstracting complex UTxO management and key handling away from retail users.
+- **Conversational Interface & True Non-Custodial Key Management:** The user experience is handled via a Telegram Mini App/web/mobile friendly interface. **Crucially, the backend only builds unsigned transactions (using Lucid).** Users sign transactions client-side via in-app encrypted local storage or deep-linking to standard CIP-30 mobile wallets. Private keys never touch our servers.
 
-- **Onboarding via Circle xReserve:** The integration design utilizes Circle's xReserve infrastructure to bridge centralized exchange-held stablecoins directly into Cardano-native USDCx.
+- **Permissionless Onboarding:** We bridge external stablecoins natively into Cardano using Circle's open xReserve infrastructure. This is an open, permissionless smart contract and SDK requiring no closed bilateral business agreements to integrate.
 
-- **Yield Generation via Liqwid Finance:** Savings deposits will be programmatically routed into Liqwid Finance lending pools, utilizing our share-based accounting model to distribute decentralized yield.
-
-- **DEX Liquidity & Swaps:** Planned in-app asset swaps between USDCx, USDM, and ADA are architected around Cardano DEX liquidity routers (such as Minswap).
-
-**Why It Is the Right Fit:** This architecture is custom-built for underbanked West African users. By pairing high-performance off-chain chat workflows with Cardano DeFi primitives, our design removes barriers like seed-phrase friction while ensuring complete non-custodial security
+- **Why It Fits:** By pairing high-performance off-chain chat workflows with client-side transaction signing and Circle’s tier-one stablecoin architecture, our design removes barriers like seed-phrase friction without sacrificing non-custodial security.
 
 ### Fits the timeline
 
@@ -138,17 +136,15 @@ Incorporated entity
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-**Our main** market includes retail savers, tech freelancers, and remote workers in Ghana and Sub-Saharan Africa (SSA) seeking inflation-proof, digital-dollar yields. Mobile money, with [23 million](https://www.bog.gov.gh/wp-content/uploads/2024/11/Summary-of-Economic-and-Financial-Data-November-2024.pdf) active accounts in Ghana as of August 2024, is the region's financial backbone. These accounts offer no yield against double-digit fiat inflation, prompting SSA to promote retail crypto adoption. Chainalysis reports [stablecoins account for 43%](https://www.chainalysis.com/blog/subsaharan-africa-crypto-adoption-2024/) of crypto transactions in SSA as residents hedge currency devaluation. The demand for stable, yield-bearing digital dollars is substantial.
+**Who is your target market, and what evidence shows real demand/product-market fit?**
+
+Our main market includes retail savers, tech freelancers, and remote workers in Ghana and Sub-Saharan Africa (SSA) seeking inflation-proof digital dollars. Mobile money, with [23 million](https://www.bog.gov.gh/wp-content/uploads/2024/11/Summary-of-Economic-and-Financial-Data-November-2024.pdf) active accounts in Ghana, is the region's financial backbone but offers no yield against steep inflation. Chainalysis reports [stablecoins account for 43% of crypto transactions](https://www.chainalysis.com/blog/subsaharan-africa-crypto-adoption-2024/) in SSA as residents hedge currency devaluation.
 
 **Evidence of Demand & Product-Market Fit:**
 
-- **Buna Protocol already serves real users on web and Telegram, validating demand for our** mobile-first savings UX.
+Buna Protocol already serves real users on **the** web/mobile and via our Arbitrum-based Telegram bot (`@buna_protocol_bot`), validating demand for our mobile-first UX. In pilot testing, users identified multi-step exchange bridging as the primary barrier to self-custody. We have a live, proven pilot deployed on Arbitrum and Tron, evidenced by our active on-chain transaction logs (see Supporting Links for our Arbiscan and Tronscan contract addresses). With the recent launch of USDCx, Cardano now possesses the native stablecoin liquidity required to serve this market. Buna provides the missing retail-friendly interface to access it.
 
-- In pilot testing, users identified price volatility and multi-step DEX bridging as major barriers. Adding native Cardano stablecoins (USDCx/USDM) directly addresses this validated issue.
-
-- USDCx quickly became Cardano's top stablecoin, with Liqwid Finance absorbing \~3M USDCx in its first week. On-chain liquidity exists; Buna offers the user interface to direct it to African retail savers.
-
-- **Warm Pipeline:** We won't start from zero; we'll onboard \~200 Buna savers and \~150 freelancers from HackerBoost for mainnet adoption.
+**Warm Pipeline:** We will onboard \~200 active Buna savers and \~150 freelancers from HackerBoost for mainnet adoption.
 
 ### Applicant name
 
@@ -156,11 +152,11 @@ Abubakari Mahamudu
 
 ### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
 
-**Revenue Model:** Buna Protocol operates a sustainable, transaction-based model. For peer-to-peer (P2P) escrow settlements and withdrawals to external exchanges, we apply a progressive fee tier ranging from 1% for small transactions down to 0.25% for high-volume transfers (above 20,000 GHS). For our Earn vaults, we charge a flat 1% fee on withdrawals.
+**Revenue Model:** Buna Protocol operates a sustainable, transaction-based model. For peer-to-peer (P2P) escrow settlements and external withdrawals, we apply a progressive fee tier ranging from 1% for small transactions down to 0.25% for high-volume transfers (above 20,000 GHS).
 
-**Who Pays?** External users (savers, freelancers, and remote workers) pay standard Cardano network fees directly from their non-custodial wallets. Buna never takes custody of funds, nor do we subsidize, reimburse, or pay transaction fees on users' behalf.
+**Who Pays?** External users pay standard Cardano network fees directly from their non-custodial wallets. Buna never takes custody of funds, nor do we subsidize or pay transaction fees on users' behalf.
 
-**Post-Pilot Continuity:** Usage persists beyond the grant window because personal saving, yield compounding, and P2P settlement are continuous financial habits. Once users hedge fiat against inflation using digital dollars, their deposits and withdrawals become recurring monthly routines rather than one-time promotional events.
+**Post-Pilot Continuity:** Usage persists beyond the grant window because personal saving and P2P settlement are continuous financial habits. Hedging fiat against inflation using digital dollars becomes a recurring monthly routine rather than a one-time promotional event.
 
 ### Named, verifiable team
 
@@ -172,19 +168,17 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-This grant enables the building of Cardano integration for Buna Protocol, expanding into the ecosystem. Without it, users would be limited to Arbitrum and miss Cardano's liquidity, stablecoins, and yield.
+This grant enables the focused building of Cardano stablecoin onboarding for Buna Protocol, expanding into the ecosystem safely and efficiently. **High-Level Fund Allocation (₳150,000):**
 
-**High-Level Fund Allocation:**
+- **40% (60,000 ADA)** - Core Integration: Circle xReserve SDK bridging adapters, Lucid transaction builders, and Cardano-native USDCx mapping
 
-- **40% (60,000 ADA) - Core Integration & Smart Contracts:** Aiken vault contracts, share accounting logic, and Liqwid/Minswap SDK adapters
+- **20% (30,000 ADA)** - Security & Audits: Third-party smart contract security review for safe mainnet deployment
 
-- **20% (30,000 ADA) - Security & Audits:** Third-party smart contract security review for safe mainnet deployment
+- **20% (30,000 ADA)** - Frontend & UX: Telegram Mini App and web integration for client-side CIP-30 signing and seamless stablecoin flows
 
-- **20% (30,000 ADA) - Frontend & UX:** Telegram Mini App and web integration for CIP-30 signing and xReserve flows
+- **10% (15,000 ADA)** - Infrastructure & Indexing: Cardano nodes, Kupo/Ogmios/Blockfrost services, and data pipelines
 
-- **10% (15,000 ADA) - Infrastructure & Indexing:** Cardano nodes, Kupo/Ogmios/Blockfrost services, and data pipelines
-
-- **10% (15,000 ADA) - Deployment & Onboarding:** Pilot workshops
+- **10% (15,000 ADA)** - Deployment & Onboarding: Pilot workshops and educational outreach
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -196,17 +190,9 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-- **Month 1 (Weeks 1–4): Core Smart Contract Architecture & SDK Setup**
-
-  - *Deliverable:* Develop and test Aiken vault contracts for share-based savings accounting; integrate Liqwid Finance lending SDK and Circle xReserve bridging adapters for Cardano-native USDCx onboarding.
-
-- **Month 2 (Weeks 5–8): Frontend, UX Wiring & DEX Swap Integration**
-
-  - *Deliverable:* Update the Telegram Mini App and web interface to support CIP-30 wallet connectors, guided xReserve fiat-to-stablecoin flows, and Minswap DEX liquidity routers for in-app swaps.
-
-- **Month 3 (Weeks 9–12): Security Audits, Mainnet Deployment & Demo Day**
-
-  - *Deliverable:* Complete third-party smart contract security reviews, deploy final contracts and updated application logic to Cardano mainnet, finalize test evidence bundles, release documentation, and deliver the live Demo Day presentation to enter the M2 adoption window.
+- **Month 1 (Weeks 1–4) - Core Architecture & SDK Setup:** Develop and test Lucid transaction builders; integrate open-source Circle xReserve bridging adapters for frictionless Cardano-native USDCx onboarding.
+- **Month 2 (Weeks 5–8) - Frontend & UX Wiring:** Update the Telegram Mini App and web interface to support client-side, non-custodial wallet signing and guided fiat-to-stablecoin onboarding flows.
+- **Month 3 (Weeks 9–12) - Security Audits, Mainnet Deployment & Demo Day:** Complete third-party security reviews (funded by the 20% budget allocation), deploy final updated application logic to Cardano mainnet, finalize test evidence bundles, release documentation, and deliver the live Demo Day presentation to enter the M2 adoption window.
 
 ### How far along is the integration you're proposing, today?
 
@@ -226,23 +212,19 @@ Yes
 
 ### What solution are you building, and what specific problem does it solve - for whom?
 
-Buna Bridge is a conversational, mobile-first stablecoin integration that solves the critical financial challenges faced by everyday savers, freelancers, and remote workers across West Africa.
+Buna Bridge is a conversational, mobile-first stablecoin onboarding tool designed to solve the fiat depreciation crisis for everyday savers, freelancers, and remote workers across West Africa.
 
 **The Problem**
 
-These individuals face high inflation, fiat currency depreciation, and limited access to interest-bearing financial tools. While decentralized finance (DeFi) on Cardano offers robust infrastructure, it remains inaccessible to non-technical users who struggle with complex exchange interfaces, UTxO management, and seed-phrase maintenance. Traditional savings methods offer zero yield, leaving users vulnerable to economic instability.
+Our users face double-digit fiat inflation and currency depreciation. While Cardano offers tier-one stablecoin infrastructure (such as USDCx), it remains inaccessible to non-technical retail users. The barrier to entry navigating complex centralized exchanges (CEXs), managing UTxOs, and safeguarding seed phrases locks everyday underbanked users out of digital dollar preservation.
 
 **The Solution**
 
-Buna Bridge acts as a simplified, intuitive gateway to the Cardano ecosystem. We are building three unified flows directly into our platform:
+We are building a single, highly optimized workflow: **Frictionless Direct Onboarding**.
 
-- **CEX-to-Cardano Onboarding:** Streamlined conversion of stablecoins from centralized exchanges onto Cardano as native USDCx
+Buna Bridge acts as a simplified gateway to Cardano by bringing Circle’s xReserve infrastructure directly into a familiar Telegram Mini App and web interface. We abstract the blockchain complexity entirely, allowing users to seamlessly move stablecoins from external networks or CEXs onto Cardano as native USDCx with zero Web3 jargon.
 
-- **USDCx Earn Vaults:** Automated personal savings vaults that route deposits into Liqwid Finance lending pools, allowing users to generate stablecoin yield through a simple, share-based model
-
-- **USDCx Swaps:** In-app, seamless stablecoin swaps across USDCx, USDM, and ADA, powered by Minswap liquidity
-
-Buna Bridge simplifies blockchain access for underbanked African users, providing a seamless way to preserve digital dollars and earn decentralized yield. This enables them to protect savings and engage in global finance without needing technical expertise.
+By focusing strictly on creating a frictionless onboarding bridge, we empower underbanked African users to preserve their wealth in stable digital dollars (USDCx) securely, non-custodially, and intuitively.
 
 ### Supporting links (repo, site, demo)
 
@@ -250,6 +232,7 @@ Buna Bridge simplifies blockchain access for underbanked African users, providin
 - https://hackerboost.org
 - https://t.me/buna_protocol_bot 
 - https://github.com/hackerboost 
+- https://arbiscan.io/address/0xd117e0fe7aa5f77c8cc00ae133c78727cd4fb830
 
 ### Identified dependencies
 
@@ -285,7 +268,7 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-5000
+1500
 
 ### Standard read and attested
 
@@ -293,10 +276,10 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-450
+350
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-While Buna Protocol is in pilot testing, this specific Cardano integration is still in the conceptual and architectural planning stage (TRL 2). We have mapped out the system design to connect our conversational Telegram bot and interface to Cardano primitives (native USDCx onboarding via xReserve, Liqwid Earn vaults, and DEX swap (minswap) routing).
+While Buna Protocol is in pilot testing, this specific Cardano USDCx / Circle xReserve integration is still in the conceptual and architectural planning stage (TRL 2). We have mapped out the system design to connect our conversational Telegram Mini App to Cardano primitives using Lucid for native USDCx onboarding via xReserve. 
 
-This grant will fund the hands-on engineering, smart contract wiring, testing, and deployment required to bring this integration from concept to a fully operational mainnet release.
+This grant will fund the hands-on engineering, smart contract wiring, testing, independent auditing, and deployment required to bring this single, focused integration from concept to a fully operational mainnet release.
