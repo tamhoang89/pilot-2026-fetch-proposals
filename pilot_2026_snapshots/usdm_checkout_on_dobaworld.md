@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 65
+- **Revision:** 70
 - **Proposer:** `stake1uyjvphj6hg3lf9lgq6af09ayprmdwlet2hm2avfd6vskfpg5l0u28`
 - **Funding requested:** ₳80,000
-- **Last finalized:** 2026-08-19T17:11:19.726000+00:00
+- **Last finalized:** 2026-08-19T20:53:13.932000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -18,7 +18,7 @@ TRL 7 - System prototype demonstrated in operational environment
 
 **Core Lead & Execution:**
 
-- **Ian Njuguna Chege (Lead Engineer & Project Manager):** Ian brings end-to-end technical execution and dApp architecture capabilities across the Cardano stack. As the sole proposer, Ian is responsible for the smart contract development (eUTxO/Aiken/Plutus), off-chain transaction orchestration, USDM integration, and overall project management and Catalyst milestone reporting.
+- **Ian Njuguna Chege (Lead Engineer & Project Manager):** Ian brings end-to-end technical execution and dApp architecture capabilities across the Cardano stack. As the sole proposer, Ian is responsible for the smart contract development (Aiken), off-chain transaction orchestration, USDM integration, overall project management and Catalyst milestone reporting.
 
   - **LinkedIn:** [linkedin.com/in/ianonjuguna](http://linkedin.com/in/ianonjuguna)
 
@@ -26,9 +26,9 @@ TRL 7 - System prototype demonstrated in operational environment
 
 **Third-Party Security & External Vendor:**
 
-- **TxPipe (Subcontracted Security Auditor):** To ensure protocol safety and mitigate eUTxO-specific vulnerabilities, TxPipe will be contracted as an independent third-party auditor to perform a comprehensive security review and code audit prior to Mainnet launch. TxPipe is a premier Cardano infrastructure provider (creators of Pallas, Oura, and [Demeter.run](http://Demeter.run)) with extensive experience auditing eUTxO smart contract logic.
+- **Subcontracted Security Auditor:** To ensure protocol safety and mitigate eUTxO-specific vulnerabilities prior to Mainnet launch, a security vendor (e.g. TxPipe, MLabs, Anastacia Labs) will be contracted to perform an independent, comprehensive smart contract security review. .
 
-  - *Note on Vendor Status:* TxPipe is engaged strictly as a third-party service provider and is not a co-proposer or core team member.
+  - *Vendor Status Disclaimer:* not a co-proposer, or partner.
 
 ### Eligible area
 
@@ -148,9 +148,9 @@ This funding enables Doba to build, audit, and deploy the USDM checkout integrat
 
 - **₳9,000** - USDM integration
 
-- **₳38,000** - Security review and audits
+- **₳38,000** - Third party Security review and audits
 
-- **₳3,000** - Telemetry & Metadata tagging
+- **₳3,000** - Telemetry and Metadata tracking
 
 - **₳2,000** - Deployment operations
 
@@ -166,7 +166,7 @@ This funding enables Doba to build, audit, and deploy the USDM checkout integrat
 
 **Total: ₳80,000**
 
-*Note: all marketing allocations (₳9,000 artist outreach and ₳5,000 micro-CAC experiments) are dedicated exclusively to top-of-funnel user discovery, artist onboarding, and organic campaign production.* 
+*Note: all marketing allocations (₳9,000 artist outreach and ₳5,000 micro-CAC experiments) are dedicated exclusively to top-of-funnel user discovery, artist onboarding, and organic campaign production.*
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -184,9 +184,7 @@ B. **Frontend Checkout UX & Guidance:** Production UI deployed at the live Doba 
 
 C. **On-Chain Telemetry & Footprint Registration:** Integration of standardized metadata labels into every checkout transaction per the Proof of Adoption & Standard.
 
-D. **Security Audit & Codebase Documentation:** Completion of external smart contract code review and delivery of a public audit report by TxPipe., accompanied by an open-source GitHub repository.
-
-E. **Demo Day Presentation & Live Testing:** E2E mainnet transaction tests on a live environment, yielding valid transaction hashes across all steps (Pyth price validation, USDM transfer, and song-token mint).
+D. **Demo Day Presentation & Live Testing:** E2E mainnet transaction tests on a live environment, yielding valid transaction hashes across all steps.
 
 ### How far along is the integration you're proposing, today?
 

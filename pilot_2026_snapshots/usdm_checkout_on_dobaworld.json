@@ -7,11 +7,11 @@
   "title": "USDM checkout on doba.world",
   "tagline": "An open-source stablecoin settlement rail built for Cardano.",
   "requestedAmount": 80000,
-  "updatedAt": 1787159479726,
+  "updatedAt": 1787172793932,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 7 - System prototype demonstrated in operational environment",
-    "team": "**Core Lead & Execution:**\n\n- **Ian Njuguna Chege (Lead Engineer & Project Manager):** Ian brings end-to-end technical execution and dApp architecture capabilities across the Cardano stack. As the sole proposer, Ian is responsible for the smart contract development (eUTxO/Aiken/Plutus), off-chain transaction orchestration, USDM integration, and overall project management and Catalyst milestone reporting.\n\n  - **LinkedIn:** [linkedin.com/in/ianonjuguna](http://linkedin.com/in/ianonjuguna)\n\n  - **GitHub:** [github.com/IanoNjuguna](http://github.com/IanoNjuguna)\n\n**Third-Party Security & External Vendor:**\n\n- **TxPipe (Subcontracted Security Auditor):** To ensure protocol safety and mitigate eUTxO-specific vulnerabilities, TxPipe will be contracted as an independent third-party auditor to perform a comprehensive security review and code audit prior to Mainnet launch. TxPipe is a premier Cardano infrastructure provider (creators of Pallas, Oura, and [Demeter.run](http://Demeter.run)) with extensive experience auditing eUTxO smart contract logic.\n\n  - *Note on Vendor Status:* TxPipe is engaged strictly as a third-party service provider and is not a co-proposer or core team member.",
+    "team": "**Core Lead & Execution:**\n\n- **Ian Njuguna Chege (Lead Engineer & Project Manager):** Ian brings end-to-end technical execution and dApp architecture capabilities across the Cardano stack. As the sole proposer, Ian is responsible for the smart contract development (Aiken), off-chain transaction orchestration, USDM integration, overall project management and Catalyst milestone reporting.\n\n  - **LinkedIn:** [linkedin.com/in/ianonjuguna](http://linkedin.com/in/ianonjuguna)\n\n  - **GitHub:** [github.com/IanoNjuguna](http://github.com/IanoNjuguna)\n\n**Third-Party Security & External Vendor:**\n\n- **Subcontracted Security Auditor:** To ensure protocol safety and mitigate eUTxO-specific vulnerabilities prior to Mainnet launch, a security vendor (e.g. TxPipe, MLabs, Anastacia Labs) will be contracted to perform an independent, comprehensive smart contract security review. .\n\n  - *Vendor Status Disclaimer:* not a co-proposer, or partner.",
     "eligArea": true,
     "giveBack": "N/A",
     "m2Target": "**Milestone Outputs:**\n\nCompletion of the Adoption phase and project close using the declared measurement structure: a one-epoch entry ramp from your M1 delivery, then six floored 5-day epochs - with extra epochs earned by delivering early - under the Standard's per-epoch floors and daily cap. The whole project completes within the program's four-month frame.\n\nYour declared adoption targets, restated from your answers. They drive the M2 payout and the Transaction Integrity checks, and are final at submission:\n\n- Stablecoins: 1,500 transactions expected, 330 ADA in counted fees\n\n**Acceptance criteria**\n\n1. The measurement window ran as declared at M1 delivery: the one-epoch entry ramp plus your floored epochs, including any extra epochs earned by early delivery.\n2. Per-epoch floors observed, with at most the Standard's one free miss.\n3. Counted totals respect the daily cap: a single day may exceed the Standard's share of your measurement-period total, but the excess does not count toward it.\n4. At least the Standard's minimum of distinct external wallets transacted with your integration during the window.\n5. All measured activity derives from the declared identifiers and complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard).\n\n**Evidence of milestone completion**\n\n1. Adoption summary statement: your actuals against each declared target.\n2. Per-epoch table: epoch number, date range, transactions and counted fees, daily cap applied (y/n), floor met (y/n), notes.\n3. Raw explorer and dashboard links for the declared identifiers.\n4. Short methodology note: how counts and fees were derived from the declared identifiers.\n5. A completion video (1-3 mins) is shared via YouTube showcasing the project outputs.\n6. Any additional cross-checks.",
@@ -34,10 +34,10 @@
     "businessModel": "doba world takes a fee on song-token sales. This funds ongoing platform development, artist support and community growth.\\\n\\\ndoba world does not subsidize or reward transactions.\n\nAfter the pilot, artist drops, repeat purchases, and secondary trading will sustain activity on the protocol.",
     "eligNamedTeam": true,
     "eligRealUsers": true,
-    "fundingImpact": "This funding enables Doba to build, audit, and deploy the USDM checkout integration on Cardano mainnet while driving initial artist-led adoption.\n\n**Budget Allocation:**\n\n- **₳9,000** - USDM integration\n\n- **₳38,000** - Security review and audits\n\n- **₳3,000** - Telemetry & Metadata tagging\n\n- **₳2,000** - Deployment operations\n\n- **₳7,000** - Legal & compliance\n\n- **₳9,000** - Artist acquisition & outreach\n\n- **₳5,000** - Micro-CAC marketing experiments\n\n- **₳2,000** - Project management & Catalyst reporting\n\n- **₳5,000** - Contingency\n\n**Total: ₳80,000**\n\n*Note: all marketing allocations (₳9,000 artist outreach and ₳5,000 micro-CAC experiments) are dedicated exclusively to top-of-funnel user discovery, artist onboarding, and organic campaign production.* ",
+    "fundingImpact": "This funding enables Doba to build, audit, and deploy the USDM checkout integration on Cardano mainnet while driving initial artist-led adoption.\n\n**Budget Allocation:**\n\n- **₳9,000** - USDM integration\n\n- **₳38,000** - Third party Security review and audits\n\n- **₳3,000** - Telemetry and Metadata tracking\n\n- **₳2,000** - Deployment operations\n\n- **₳7,000** - Legal & compliance\n\n- **₳9,000** - Artist acquisition & outreach\n\n- **₳5,000** - Micro-CAC marketing experiments\n\n- **₳2,000** - Project management & Catalyst reporting\n\n- **₳5,000** - Contingency\n\n**Total: ₳80,000**\n\n*Note: all marketing allocations (₳9,000 artist outreach and ₳5,000 micro-CAC experiments) are dedicated exclusively to top-of-funnel user discovery, artist onboarding, and organic campaign production.*",
     "termsAccepted": true,
     "eligRealTarget": true,
-    "m1Deliverables": "A. **USDM Integration:** On-chain and off-chain transaction-building logic deployed to mainnet, configured to validate the verified USDM policy ID.\n\nB. **Frontend Checkout UX & Guidance:** Production UI deployed at the live Doba web domain, to enable USDM at checkout, and real-time conversion.\n\nC. **On-Chain Telemetry & Footprint Registration:** Integration of standardized metadata labels into every checkout transaction per the Proof of Adoption & Standard.\n\nD. **Security Audit & Codebase Documentation:** Completion of external smart contract code review and delivery of a public audit report by TxPipe., accompanied by an open-source GitHub repository.\n\nE. **Demo Day Presentation & Live Testing:** E2E mainnet transaction tests on a live environment, yielding valid transaction hashes across all steps (Pyth price validation, USDM transfer, and song-token mint).",
+    "m1Deliverables": "A. **USDM Integration:** On-chain and off-chain transaction-building logic deployed to mainnet, configured to validate the verified USDM policy ID.\n\nB. **Frontend Checkout UX & Guidance:** Production UI deployed at the live Doba web domain, to enable USDM at checkout, and real-time conversion.\n\nC. **On-Chain Telemetry & Footprint Registration:** Integration of standardized metadata labels into every checkout transaction per the Proof of Adoption & Standard.\n\nD. **Demo Day Presentation & Live Testing:** E2E mainnet transaction tests on a live environment, yielding valid transaction hashes across all steps.",
     "trlIntegration": "TRL 3 - Experimental proof of concept",
     "eligClearBudget": true,
     "eligGenuineWork": true,
@@ -67,16 +67,16 @@
   },
   "createdAt": 1787017483492,
   "headRevision": {
-    "id": "85d36cf5-8f03-4f47-a25e-742f89e081fb",
-    "number": 65,
+    "id": "957419bd-f6d1-42b4-bdfd-9cbe7cd9b2dc",
+    "number": 70,
     "kind": "saved",
-    "createdAt": 1787159444438
+    "createdAt": 1787172768155
   },
   "latestFinalization": {
-    "id": "02b8a931-3a3f-47c2-ac2a-fbb8cc14da0c",
-    "cycle": 6,
-    "revisionId": "85d36cf5-8f03-4f47-a25e-742f89e081fb",
-    "finalizedAt": 1787159479726
+    "id": "d9c8ff93-e4e3-44f0-a7e2-65088a60c2ea",
+    "cycle": 8,
+    "revisionId": "957419bd-f6d1-42b4-bdfd-9cbe7cd9b2dc",
+    "finalizedAt": 1787172793932
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",
