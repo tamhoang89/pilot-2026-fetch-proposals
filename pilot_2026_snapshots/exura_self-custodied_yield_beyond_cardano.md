@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 19
+- **Revision:** 20
 - **Proposer:** `stake1uxqs8hmgwkqza9gp7zqh8sqx5entwhudla5rwc39ufw9anq5set5u`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-19T21:59:14.549000+00:00
+- **Last finalized:** 2026-08-19T23:17:31.886000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -148,13 +148,21 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-An independent review is the largest line in this budget and the reason the ask is the size it is. We will commission as much of it as the funding supports, and will not promise a scope an exchange rate can take away.
+Where the 200K ADA goes:
 
-Three months to mainnet is full-time work, and the infrastructure is not cheap: nodes, indexers and archives on Cardano, provisioning and gas on the EVM side, through the window.
+\- Cardano-leg engineering 53K
 
-The target sits below Ambitious because the meter sees only part of the flow: the deposit burn counts, the mint carrying the value is Circle-paid and counts zero, and the registration every user must sign is outside this track. 375 ADA is what remains at the measured 0.337 per burn.
+\- EVM-side provisioning 30K
 
-The build tranche is sized to deliver M1. Everything beyond, review included, follows the receipts.
+\- Independent security audit 87K - Veridise, quoted 13K USD at $0.15/ADA, late-October slot
+
+\- Operations and infrastructure 25K - Nodes, indexers, EVM gas
+
+\- Documentation and reporting 5K
+
+The audit is the largest line, and why the ask is this size. We commission as much of it as funding supports, and will not promise a scope an exchange rate can take away. The 40% build tranche delivers M1 - three full-time months; everything past it, review included, follows receipts.
+
+The target sits below Ambitious because the meter sees part of the flow: the deposit burn counts, the Circle-paid mint counts zero, the registration each user signs is outside this track. ₳375 is what remains at 0.337 per burn.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
