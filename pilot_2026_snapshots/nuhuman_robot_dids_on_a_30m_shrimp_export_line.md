@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 19
+- **Revision:** 26
 - **Proposer:** `stake1u86sa7qzppfh24sugfdxasm0ye2cqp2f35n82yec06h7xsscfgpd9`
 - **Funding requested:** ₳150,000
-- **Last finalized:** 2026-08-19T15:03:16.425000+00:00
+- **Last finalized:** 2026-08-19T22:38:47.855000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,19 +16,30 @@ TRL 5 - Technology validated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-Sricharan Ganta, Founder and CEO, sole named member: <https://www.linkedin.com/in/sricharangm>. Role: architecture, integration delivery, the Coastal relationship, program compliance. 7+ years in business roles, 4+ in web3, MS Computer Science (University of Central Missouri, USA).
+Sricharan Ganta (Founder & CEO)
 
-Coastal Corporation (NSE: COASTCORP), one of India's largest shrimp processors, is his family's business, where he held business development roles. That is why a robotics startup got a live export line: January pitch, March floor access, June first arm, August a 120+ cell contract. Coastal is named with its written consent (MoU); its sign-offs are its own duties.
+Scope: architecture, integration delivery, the Coastal relationship, program compliance, milestone reporting.
 
-Cardano: 13 funded Catalyst projects, F10-F14, 11 delivered, 2 at final milestone \[proposer page URL\]; 1st place, Midnight Hackathon at Rare Evo 2024; live at [app.nucast.io](http://app.nucast.io); code: <https://github.com/Nucastio>.
+Exp: 7+ yrs business, 4+ web3, MS Computer Science. Prior BD roles at Coastal Corporation (NSE: COASTCORP), his family's business; Coastal is named with written consent (MoU). [Linkedin](http://linkedin.com/in/sricharangm)\
+13 funded Catalyst projects; 1st place, Midnight hack at Rare Evo 2024, Built [Nucast](https://nucast.io)
 
-Physical AI: building since 2025, a year before the first contract: bimanual arm hardware, teleop training, simulation, the DECAP-0 policy, a cell live at Coastal.
+Vinayek S (Software Engineer)
 
-Delivery: the Nucast Labs team (<https://www.linkedin.com/company/nucast/people/>) builds under Charan: on-chain contracts, platform, attester flows; engineers named at KYC/KYB.
+Scope: CIP-0113 BatchPass policy with transfer/burn rules; CIP-0170 AID anchoring (issuer, cells, signers); directory/registry/validator AND-gate; mainnet deployment and declared footprint.
 
-To recruit: a compliance lawyer for the fractionalization legal pathway, the one gap.
+Exp: Cardano in Haskell (Cardano-Loan-Protocol, Hydra-SDK-Node). [Github](http://github.com/Vinawizard) | [Linkedin](http://linkedin.com/in/vinayek-s-b2981827b)
 
-Disclosure: our only submission this round; Charan is on no other proposal in any delivery role. 
+Shubhanshu Saxena (Software Engineer)
+
+Scope: cell registry and batch console; signer onboarding, wallet and key-ceremony tooling; public verifier and QR resolution; MIT SDK.
+
+Exp: full-stack TypeScript; on-chain verification, off-chain proof generation verified on chain. [Github](http://github.com/shubhu2002) | [Linkedin](http://linkedin.com/in/shubhanshu-saxena-902511230)
+
+These three are the full delivery team, all Nucast personnel: [Github](http://github.com/Nucastio)
+
+Open role: compliance counsel for the fractionalization pathway, will be released in M1 with full legal details.
+
+Disclosure: our only submission this round.
 
 ### Eligible area
 
@@ -40,29 +51,27 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Coastal is our existing customer, \~90% of fees. Auditors and importers give the rest. Signers are new to Cardano.
+Coastal is our existing customer, \~90% of fees; auditors & importers the rest. Signers are new to Cardano.
 
-Why 30 days: six epochs is the shortest window, what we get if M1 lands on the deadline. Entry epoch fees are extra.
+20 cells: MoU names 120 cells; we instrument 20 from 3, so 12 average.
 
-Why 20 cells: the MoU names 60 cell pairs. We instrument 20 in the window, starting at 3, so 12 on average.
+3 batches a cell a day: the line runs 20 hours, QC releases one per 7.
 
-Why 3 batches a cell a day: the line runs 20 hours, QC releases one per 7.
+0.42 ADA a tx: attestations run a script with metadata; network average 0.33.
 
-Why 0.42 ADA a tx: an attestation runs a script and carries metadata. Network average is 0.33, scripts cost more.
+CIP-0170: 3 x 12 x 30 = 1,080 QC releases plus 220 from hygiene, maintenance, dispatch, auditors, importers. 1,300 txs, 546 raw. Coastal pays all its signers, so §6.2 makes it one wallet and halves its share over 35%. Counted 387, target 380.
 
-CIP-0170: 3 x 12 x 30 = 1,080 QC releases, plus 220 from hygiene, maintenance, dispatch, auditors and importers. 1,300 txs, 546 raw. Coastal pays all its signers, so 6.2 makes it one wallet and halves its share over 35%. Counted 387, target 380.
+CIP-0113: 650 mints at 0.50, 520 transfers at 0.45, 200 burns at 0.40. 1,370 txs, 639 raw, 471 counted. 650 mints against 1,080 releases: only export-bound lots carry a BatchPass. Both raw numbers are Ambitious; the §6.2 discount, not caution, makes this Credible.
 
-CIP-0113: 650 mints at 0.50, 520 transfers at 0.45, 200 burns at 0.40. 1,370 txs, 639 raw, 471 counted. Both raw numbers are Ambitious. The 6.2 discount, not caution, makes this Credible.
-
-Why 17 importers: Coastal ships to 13 countries already. With Coastal and two audit firms that is 20, over minimums of 18 and 9. All live before M1.
-
-Nobody is paid to transact. Each company pays its own signers. 
+Wallets. Coastal is one under §6.2. Its BAP and BRCGS certifiers are named on public GSA and BRCGS records. Coastal's letter of Aug 2026, signed by a director, onboards 20 importer wallets before M1; identities are confidential, supplied under NDA. That gives 21 wallets for CIP-0113 (auditors take no custody) and 23 for CIP-0170 against min of 18 and 9.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Our users already work at the plant. The robots replaced the hands that dehead shrimp, not the people who approve the work. Those people are salaried staff: QC officers who release each batch, hygiene and maintenance checkers, dispatch staff who confirm shipments. The signed MoU makes them the signers. Outside the plant: auditors who already visit for BAP and BRCGS, and importers who receive Coastal's shipments. Devi Sea Foods becomes the second site once signed.
+Our users already work at the plant. The robots replaced the hands that dehead shrimp, not the people who approve the work: QC officers who release each batch, hygiene and maintenance checkers, dispatch staff. The signed MoU makes them the signers. Outside: Coastal's BAP and BRCGS certifiers, who already audit the line, and the importers who receive its shipments.
 
-Reaching them is simple: our engineers are already inside the plant installing the robots. Setting up a signer is part of installing a cell: a wallet on their phone, keys made on site, one training session, and they sign inside the workflow they follow today. We plan 12 to 20 signer wallets against a minimum of 10, across separate companies, each covering its own signers' costs. First signers go live at Demo Day; auditors and importers join over the window. Most activity will come from our existing customer.
+Our engineers are already inside the plant installing the robots. Signer setup is part of installing a cell: a phone wallet, keys made on site, one training session, and they sign inside their existing workflow.
+
+Evidence: the MoU covers plant signers. We will onboards 20 importer wallets before M1, each receiving about 10 batch transfers over the window. Coastal's 12 to 20 signer wallets count as one under §6.2; certifiers & importers are separate entities, giving 21 external wallets for CIP-0113 and 23 for CIP-0170, against minimums of 18 and 9. First signers go live at M1.
 
 ### Is the underlying project open source?
 
@@ -117,7 +126,7 @@ Incorporated entity
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-The market is shrimp processing. India has 646 registered seafood units, \~420 handling shrimp \[MPEDA registry\]: a $220M serviceable market inside $1.0B of Asian shrimp processing. Of the ten largest Indian shrimp companies, one has signed: Coastal Corporation (NSE: COASTCORP, Rs 639 Cr FY26, 3 Andhra Pradesh plants, 71 MT a day), a 120+ cell contract. Next: Devi Sea Foods (Rs 3,310 Cr FY24, 5x Coastal), in talks.
+The market is shrimp processing. India has 646 registered seafood units, \~420 handling shrimp \[MPEDA registry\]: a $220M serviceable market inside $1.0B of Asian shrimp processing. Of the ten largest Indian shrimp companies, one has signed: Coastal Corporation (NSE: COASTCORP, Rs 639 Cr FY26, 3 Andhra Pradesh plants, 71 MT a day), a 120+ cell contract. 
 
 Why they buy this layer: the robots are already on the line. Coastal bought them to fix labor shortage. Under FSMA 204, deheading is a Critical Tracking Event, transformation, and the machines measure its Key Data Elements every shift: quantity in and out, grade, line, date, lot. Coastal needs it provable to an auditor or importer without opening its books, and buys it as it bought the robots: no capex, per kilo.
 
@@ -183,9 +192,9 @@ Live on Cardano mainnet by M1, demonstrated at Demo Day.
 2. CIP-0113: BatchPass policy deployed. Mint at QC release carrying the batch hash, transfer only to credentialed parties, burn on receipt.
 3. Live product: cell registry, batch console, signer onboarding with key ceremony and credentials. Each batch carries a QR to a free verifier.
 4. Declared footprint published: policy IDs, script hashes, addresses, token names, message tag and our own wallets, all newly deployed.
-5. At least three independent runs of the flow on mainnet: QC release, counter-signature, mint, transfer, and one cycle closed by burn on receipt. Hashes mapped to steps.
-6. At least three signers live outside nuhuman, holding their own keys and paying their own fees.
-7. Release notes, walkthrough video, MIT repo tag, test bundle.
+5. At least 3 independent runs of the flow on mainnet: QC release, counter-signature, mint, transfer, and one cycle closed by burn on receipt. Hashes mapped to steps.
+6. At least three signers live, holding their own keys & paying their own fees.
+7. Fractionalization: counsel engaged, engagement letter & a pathway memo published.
 
 ### How far along is the integration you're proposing, today?
 
@@ -268,14 +277,16 @@ Yes
 
 ### Current funded commitments
 
+Current funded commitments
+
 Yes. Two Catalyst projects are at their final milestone, both under this same proposer account:
 
-1\. IndiaCodeX '26 (project 1400070), India's largest Cardano hackathon: event delivered, final milestone reporting in progress, expected to close \[month\].\
-2. Nucast: Music Video Festival 2026 (project 1400087): final milestone in progress, expected to close \[month\].
+1\. IndiaCodeX '26 (project 1400070), India's largest Cardano hackathon: event delivered, final milestone reporting in progress, expected to close in August 2026.\
+2. Nucast: Music Video Festival 2026 (project 1400087): final milestone in progress, expected to close August 2026.
 
-Eleven earlier Catalyst projects funded to this team are fully delivered \[proposer page\]. No other grant, treasury, accelerator or program commitment is being delivered by the team in any ecosystem.
+Eleven earlier Catalyst projects funded to this team are fully delivered. No other grant, treasury, accelerator or program commitment is being delivered by the team in any ecosystem.
 
-Neither open project overlaps this proposal in scope, budget or deliverables. Both are event and creative programs whose remaining work is reporting, not engineering, so they take no build capacity from this integration. nuhuman's private equity fundraise is separate commercial funding and does not pay for any deliverable in this proposal.
+Neither open project overlaps this proposal in scope, budget or deliverables. Both are event and creative programs whose remaining work is reporting, not engineering, so they take no build capacity from this integration.
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
