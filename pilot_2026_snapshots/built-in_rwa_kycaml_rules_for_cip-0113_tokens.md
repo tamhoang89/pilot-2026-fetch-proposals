@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 15
+- **Revision:** 24
 - **Proposer:** `stake1uyauluwnjuvzkmdgudj30nuxvyarg2zqdspdlluw3286d0cxv8y35`
 - **Funding requested:** ₳115,000
-- **Last finalized:** 2026-08-18T10:42:14.768000+00:00
+- **Last finalized:** 2026-08-19T12:25:31.584000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,11 +16,25 @@ TRL 7 - System prototype demonstrated in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-Daniel Micov (cryptogugi / Gusterov) - Investor & Independent Developer. 
+**Daniel Micov (cryptogugi / Gusterov) — Investor & Independent Developer**
 
-Portfolio/reference: [cryptogugi.com](http://cryptogugi.com). Crypto investor and independent developer; built and operates [mintmytoken.today](http://mintmytoken.today), including its shipped CIP-0113 vesting/streaming feature. Production experience with complex on-chain validator logic and security testing. 
+Portfolio: [cryptogugi.com](http://cryptogugi.com). 
 
-Self-financed, independent builder with a track record of shipping and maintaining production Cardano infrastructure without external funding. Administrator/host of a Cardano/crypto community reach spanning a 9,700+ member Facebook group (Kripto Revolucija), a 2,450-subscriber YouTube channel, a \~2,500-follower Instagram account, and a 1,200+ follower X account. 
+GitHub: [github.com/ggggrand](http://github.com/ggggrand). 
+
+Project repository: [github.com/ggggrand/mintmytoken.today](http://github.com/ggggrand/mintmytoken.today). 
+
+Crypto investor and independent developer; built and operates [mintmytoken.today](http://mintmytoken.today), including its shipped CIP-0113 vesting/streaming feature. Production experience with complex on-chain validator logic and security testing.
+
+Self-financed, independent builder with a track record of shipping and maintaining production Cardano infrastructure without external funding. 
+
+Administrator/owner of a Cardano/crypto community reach spanning a 9,700+ member Facebook group, Kripto Revolucija ([facebook.com/share/g/1C3nV2Yesd/](http://facebook.com/share/g/1C3nV2Yesd/)), 
+
+2,450-subscriber YouTube channel (youtube.com/@Gusterov\_), 
+
+\~2,500-follower Instagram account, 
+
+and a 1,200+ follower X account.
 
 Role: compliance rule-engine design, validator development, mainnet deployment.
 
@@ -38,20 +52,33 @@ Who transacts: RWA issuers configuring and minting compliance-enabled tokens on 
 
 Why: Issuers need enforceable on-chain compliance - eligibility, jurisdiction restrictions, transfer freezes - which today requires custom smart-contract development. This turns it into form-based configuration inside a platform they already use
 
-How often: Each issuer generates a token-creation transaction, periodic eligibility-list updates, and a compliant transfer each time tokens move - realistically 4–5 qualifying transactions per issuer/investor group, not a one-off mint
+How often: each issuer/investor generates a token-creation transaction plus one compliant transfer - 2 qualifying transactions per user, a conservative floor since RWA holdings often see infrequent movement.
 
-Justification: 350 transactions and ₳200 in fees is grounded in concrete channels - Facebook "Kripto Revolucija" (9,700+ members), YouTube @Gusterov\_ (2,450 subscribers), Instagram @crypto.gugi (\~2,500 followers), X @Gusterov\_ (1,200+ followers). \~1% Facebook conversion (\~100 users) plus \~1% across YouTube/Instagram/X (\~60 users) totals \~150–160 real users, each generating 3–4 transactions - consistent with RWA issuance being lower-volume, higher-value than simple minting
+Justification: 318 transactions and ₳200 in fees is grounded in concrete channels - Facebook "Kripto Revolucija" (9,700+ members), YouTube @Gusterov\_ (2,450 subscribers), Instagram @crypto.gugi (\~2,500 followers), X @Gusterov\_ (1,200+ followers). \~1% Facebook conversion (\~97 users) plus \~1% across YouTube/Instagram/X combined, 6,150 (\~62 users) totals \~159 real users, each generating 2 transactions - consistent with RWA holdings seeing infrequent movement rather than frequent trading.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Concrete channel sources: 
+Channels: 
 
-- Facebook "Kripto Revolucija" community group, 9,700+ members; 
-- YouTube (Gusterov\_), 2,450 subscribers; 
-- Instagram (crypto.gugi), \~2,500 followers; 
-- X (Gusterov\_), 1,200+ followers. 
+Facebook "Kripto Revolucija" ([facebook.com/share/g/1C3nV2Yesd/](http://facebook.com/share/g/1C3nV2Yesd/)), 9,700+ members; 
 
-Funnel: \~1% conversion on Facebook (\~100 users) plus \~1% engagement conversion across YouTube/Instagram/X (\~60 users), totaling \~150–160 real users during the adoption window. Usage tracked through distinct wallets minting and transacting compliance-enabled tokens.
+YouTube @Gusterov\_ (youtube.com/@Gusterov\_), 2,450 subscribers; 
+
+Instagram @crypto.gugi, \~2,500 followers; 
+
+X @Gusterov\_, 1,200+ followers.
+
+Day 1–3: announce to the Facebook group and existing users. 
+
+Week 1 target: \~97 users (Facebook × 1% conversion).
+
+Days 8–14: publish a YouTube walkthrough, cross-post to Instagram and X. 
+
+Week 2 target: \~62 additional users (YouTube+Instagram+X combined, 6,150 × 1%). 
+
+Cumulative 2-week: \~159 real users at 2 qualifying transactions each (token creation plus one compliant transfer), supporting a 318-transaction target.
+
+Epoch compliance: adoption is measured across the program's floored 5-day epochs following the entry ramp; the two-week funnel above produces steady week-over-week activity rather than a single burst, keeping daily volume within the Standard's daily-cap share.
 
 ### Is the underlying project open source?
 
@@ -76,7 +103,7 @@ The Pilot does not fund the existing minting or vesting features, it builds a ne
 - **Standard/vesting minting layer** (existing, live): [mintmytoken.today](http://mintmytoken.today)'s shipped minting and CIP-0113 vesting flow, unchanged.
 - **Rule configuration layer** (new): form-based interface for issuers to define eligibility lists, jurisdiction restrictions, and freeze/revocation conditions.
 - **Compliance validator layer** (new): CIP-0113-compliant Plutus/Aiken logic enforcing configured rules at transfer time, rejecting transactions that violate eligibility conditions.
-- **Registry/allowlist layer** (new): on-chain or hybrid on/off-chain eligibility list the validator checks against, updatable by the issuer.
+- Registry/allowlist layer (new): eligibility registry stored on-chain as a datum attached to a reference UTxO, containing verified wallet payment-credential hashes. The compliance validator reads this via a reference input (not consumed, so no re-signing needed per check) and confirms the transacting wallet's credential is present before permitting a compliant transfer. The issuer updates the registry by submitting a signed transaction replacing the reference UTxO's datum; only the issuer's key can authorize updates.
 
 ### Fits the timeline
 
@@ -112,7 +139,7 @@ Revenue: [mintmytoken.today](http://mintmytoken.today)'s existing pure-profit fe
 
 ### Programmable tokens (CIP-0113) - expected transaction count
 
-350
+318
 
 ### Named, verifiable team
 
@@ -186,9 +213,10 @@ Outcome: The first accessible, no-code compliance layer for CIP-0113 tokens on C
 ### Supporting links (repo, site, demo)
 
 - https://mintmytoken.today
-- https://cryptogugi.com
-- https://x.com/Gusterov_
-- https://instagram.com/crypto.gugi
+- https://github.com/ggggrand/mintmytoken.today
+- https://github.com/ggggrand
+- https://www.facebook.com/share/g/1C3nV2Yesd/
+- https://www.youtube.com/@Gusterov_
 
 ### Identified dependencies
 

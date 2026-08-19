@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 22
+- **Revision:** 27
 - **Proposer:** `stake1u8s9hfdektcafcqzgj7pcz2hh57wmpjgrfqsmruj7yf5m3gujfpue`
-- **Funding requested:** ₳80,000
-- **Last finalized:** 2026-08-17T14:44:35.300000+00:00
+- **Funding requested:** ₳50,000
+- **Last finalized:** 2026-08-19T12:52:38.555000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -37,21 +37,23 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-We target 1,500 genuine stablecoin payments during the measurement period. The usage model consists of at least 10 active payment recipients, including three directly onboarded pilot partners. Ten recipients averaging 15 payments per month over six months would generate 900 transactions. Event and community campaigns are expected to contribute approximately 300 payments, with a further 300 coming from organic Cexplorer distribution.
+We target 1,000 genuine stablecoin payments during the 30-day measurement window, excluding the five-day entry ramp. The target is based on external distribution, not team-funded activity.
 
-Cexplorer currently reaches approximately 14,000 - 24.000 monthly active users, including Cardano projects, developers, SPOs and active wallet users. We will convert this reach through targeted product placement, merchant onboarding, payment templates, QR codes and embeddable checkout.
+[Cexplorer.io](http://Cexplorer.io) reaches approximately 15,000 unique users per month. A header banner, in-product placement and practical payment use cases will target 500 payments - equivalent to activating about 1% of visitors and averaging 3.3 payments per activated user or recipient. Our X account (\~10,000 followers) and Telegram/Discord communities (1,000+ members) will target a further 250 payments.
 
-We will separately measure active recipients, unique external wallets, completed payments and repeat usage. 
+The unpromoted baseline of 89 mainnet transactions between April and July 2026 supports an estimate of 25 organic payments. Three partners (confirmation within a week) will each target 75 payments through genuine sales, services or donation flows, contributing 225 in total.
 
-At an estimated average network fee of 0.19 ADA, 1,500 transactions should generate approximately 285 ADA. We therefore declare a 280 ADA fee target, above the required 228 ADA program floor.
+We will measure unique external wallets, active recipients, completed payments and repeat usage. At an estimated average Cardano network fee of 0.20 ADA, 1,000 transactions generate approximately 200 ADA, above the required 180 ADA floor.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-We will not assume that all Cexplorer visitors will become payment users. Distribution will combine targeted placement inside Cexplorer with direct onboarding of projects, creators, merchants and event organizers from our existing network.
+CPay is live but currently receives no structured promotion. It recorded 89 mainnet transactions between April and July 2026, providing an unpromoted baseline.
 
-The pilot will onboard at least three merchant or ecosystem partners and activate one event or community campaign using payment links, QR codes or embedded checkout. Integration documentation and direct setup support will reduce adoption friction.
+At launch, we will run a header banner and in-product placement across [Cexplorer.io](http://Cexplorer.io) (\~15,000 monthly unique users), supported by our X account (\~10,000 followers) and Telegram/Discord communities (1,000+ members). We target 500 payments from Cexplorer, 250 from social channels and 25 from existing organic usage.
 
-The existing baseline is 89 mainnet transactions between April and July 2026. Our working target is 1,500 stablecoin payments from at least 150 external wallets, with merchant activation, completed payments and repeat usage measured separately.
+We will also onboard three ecosystem partners (within a week) using dedicated links, QR codes or embeds, targeting 75 payments each. Days 1–3: launch placements and configure partner flows. Days 4–7: activate the first campaigns. Days 8–10: onboard remaining partners and publish use cases. Days 11–14: resolve friction and repeat promotion.
+
+The 30-day target is 1,000 stablecoin payments from external wallets. Team-funded transactions and conditional Token2049 activity are excluded.
 
 ### Is the underlying project open source?
 
@@ -131,9 +133,9 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-The grant funds a new stablecoin invoicing and merchant-integration layer, not maintenance of the existing ADA payment flow. Without it, the team would continue prioritizing Cexplorer’s core infrastructure and CPay would remain an early ADA-only product.
+The grant funds a new stablecoin invoicing and merchant-integration layer—not maintenance of the existing ADA payment flow. Without it, the team would continue prioritizing Cexplorer’s core infrastructure, leaving CPay as an early ADA-only product.
 
-The 80,000 ADA budget covers the invoice engine, stablecoin transaction builder and indexer integration (28,000); merchant checkout, dashboard and embed (18,000); signed webhooks and integration tooling (12,000); QA, security and mainnet monitoring (10,000); merchant onboarding (7,000); and documentation, reporting and project management (5,000).
+The 50,000 ADA budget covers the invoice engine, stablecoin transaction builder and indexer integration (18,000); merchant checkout, dashboard and embed (10,000); signed webhooks and integration tooling (7,000); QA, security and mainnet monitoring (6,000); merchant onboarding and adoption (5,000); and documentation, reporting and project management (4,000).
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -234,7 +236,7 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-1500
+1000
 
 ### Standard read and attested
 
@@ -242,7 +244,7 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-280
+200
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
