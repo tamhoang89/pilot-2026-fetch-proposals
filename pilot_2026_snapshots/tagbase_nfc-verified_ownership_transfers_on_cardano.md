@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 43
+- **Revision:** 45
 - **Proposer:** `stake1uydsltz2939nz2f7nmyeqdmjrkkqd32c37vz7ag2ets3mtsqwpypa`
 - **Funding requested:** ₳115,000
-- **Last finalized:** 2026-08-18T08:49:35.445000+00:00
+- **Last finalized:** 2026-08-19T18:34:28.080000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -38,13 +38,15 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Our only integration is Programmable Tokens (CIP-0113). We target 200 ADA in counted fees from 300 expected transactions: approximately 140 artwork registrations, 140 initial ownership assignments and 20 NFC-verified secondary transfers.
+Our only integration is Programmable Tokens (CIP-0113). We target 200 ADA in fees from 300 transactions: 140 artwork registrations, 140 initial ownership assignments and 20 NFC-verified secondary transfers.
 
-Artists transact when registering tagged artworks and assigning them to buyers. Owners transact again when an artwork is sold, gifted or reassigned. Every transfer requires a fresh cryptographic scan of the physical NFC tag. The fee target assumes an average of approximately 0.67 ADA per script-based transaction.
+Artists register tagged artworks and assign them to buyers. Owners transact again when an artwork is sold, gifted or reassigned. Each transfer requires a fresh cryptographic NFC scan. The fee target assumes about 0.67 ADA per script-based transaction.
 
-We project around half of the usage from existing TAGBASE artist customers and their buyers. The remainder will come from new artists reached through direct demonstrations, referrals and Joshua Maurer’s SOCIA & SOCIUS exhibition on 11 September 2026, where TAGBASE-powered artworks will be presented and we will speak to artists and collectors.
+Existing customer Joshua Maurer is open to using Cardano ownership transfers and has 27 artworks with TAGBASE. Registering and assigning them would generate 54 transactions, or 18% of our target.
 
-During the first two weeks after launch, we will aim to onboard two artists. Week 1 covers setup, wallets and registrations; Week 2 covers ownership assignments, first transfers and support. External users pay their own fees. Team-controlled, sponsored, test and artificial activity will not count.
+At Joshua’s SOCIA&SOCIUS exhibition on 11 September 2026, we will present TAGBASE to artists and collectors. We aim to onboard up to seven additional artists. At around 20 works each, this could add 140 artworks. Including Joshua’s works, the potential is 167, making our target of 140 conservative.
+
+In the first two weeks after launch, Week 1 covers artist setup, wallets and registrations; Week 2 covers assignments, first transfers and support. External users pay their own fees. Team, sponsored, test and artificial activity is excluded.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -136,7 +138,7 @@ Usage continues beyond the pilot because every newly tagged object can create a 
 
 ### Programmable tokens (CIP-0113) - expected transaction count
 
-350
+300
 
 ### Named, verifiable team
 

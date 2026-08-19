@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 44
+- **Revision:** 53
 - **Proposer:** `stake1u90cjqt5yy4wvhtnu0pudpxgdp7kfnn5e56fqs0qf00znsqh6c3g8`
 - **Funding requested:** ₳50,000
-- **Last finalized:** 2026-08-17T14:59:56.557000+00:00
+- **Last finalized:** 2026-08-19T18:46:25.213000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -58,19 +58,15 @@ Integrity: every attestation resolves to a public git commit and a real script h
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-I need about ten organisations, not thousands of users. That is direct outreach, not marketing.
+Ten organisations, not thousands of users. Direct outreach, not marketing.
 
-Channels:
+Named targets, none committed yet. Anastasia Labs, Cardano audits and Midgard L2, works in Haskell, Aiken and Plutarch. TxPipe, Buenos Aires, Cardano infrastructure behind Tx3 and Demeter. MLabs, UK, production smart contracts across Cardano and EVM. Vacuumlabs, audits Plutus, Plutarch and Aiken.
 
-1\. Cardano audit firms, directly. I compete in audit contests with findings on Sherlock, so I approach them as a peer with a tool that makes their output harder to dispute, not as a vendor.
+Method. Each gets a one-page brief and a Preview transaction they can verify themselves, then a 30-minute call to issue their KERI identifier and add the Action to one repository. Publishing costs them 0.208 ADA and no new infrastructure.
 
-2\. The Aiken ecosystem. The GitHub Action drops into an existing release workflow in about ten lines. No new infrastructure, no wallet setup.
+Channels. Cardano Developer Portal, the Cardano and Aiken developer Discords, and Cardano Buidler Fest Buenos Aires 2026, run by TxPipe, where both CIPs are already discussed.
 
-3\. Cardano developer channels: Developer Portal, Discord, Builder Fest, where both CIPs are already discussed.
-
-4\. Wallets and explorers as consumers rather than publishers. One integration makes every existing attestation visible to their users.
-
-Evidence: I have shipped developer tooling into more than ten ecosystems this way, including Stellar, Starknet, Solana, Aptos, Polkadot and XRPL. Onboarding here is a GitHub Action and a KERI identifier.
+Evidence: I have shipped developer tooling into more than ten ecosystems this way, including Stellar, Starknet, Solana, Aptos, Polkadot and XRPL.
 
 ### Is the underlying project open source?
 
@@ -94,25 +90,13 @@ Why this approach wins: it is the only one where the claim is non-repudiable and
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-Deployed and working on Cardano Preview. Transaction
+Deployed and working on Cardano Preview at <https://attest-v1.vercel.app>.
 
-b796a647356699979383311ecab2273a636f33c9097e32390963cedebf49f254 carries the
+Transaction 795b472ff73c0d04cd2eaa1c863fa321a3787ce4b1cbf200b658c964e0ff357e was published from a browser wallet under identifier EJ5aZI_RBtBaPGwTLS1wYcRhadnLFnDSeNn3fjWdvWVt. It carries the CIP-170 record, the attestation document and the CIP-171 record under labels 170, 1701 and 1984.
 
-CIP-170 record, the attestation document and the CIP-171 record under labels
+Verification returns verified from chain data alone: the document hashes to the identifier the record cites, and the issuer's key event log commits to it at the cited sequence.
 
-170, 1701 and 1984, anchored in the issuer's KERI key event log.
-
-"attest verify &lt;tx&gt;" returns verified from chain data alone: the document
-
-hashes to the identifier the record cites, and the issuer's log commits to it
-
-at the cited sequence. Nothing I operate sits in the verification path.
-
-Anchoring runs against a live KERIA agent, covered by integration tests.
-
-Script hashing reproduces the exact hashes of contracts on mainnet. Six
-
-packages, 207 offline tests, CI green.
+Six packages, 214 tests, CI green. Script hashing reproduces the exact hashes of contracts on mainnet.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
@@ -256,31 +240,23 @@ Yes
 
 Anyone can read a script hash off Cardano. Nobody can find out what it came from.
 
-There is no way to check that a deployed validator was compiled from a particular commit, and no way to check that anyone has audited it. Today this is settled by a link in a Discord message or a PDF on a website. Both can be edited or taken down, and neither is signed by the party making the claim.
+No way to check that a deployed validator was compiled from a particular commit, or that anyone has audited it. Today this is settled by a link in a Discord message or a PDF on a website. Both can be edited or taken down, and neither is signed by the party making the claim.
 
-Attest fixes that. It publishes on-chain records binding a script hash to two things: a reproducible build (repo, commit, compiler and exact version) and the audits performed against it (report digest, scope, findings, outcome).
+Attest fixes that. It publishes on-chain records binding a script hash to a reproducible build (repo, commit, compiler version) and to the audits performed against it (report digest, scope, findings, outcome).
 
-Each record is a JSON document that hashes to its own identifier. That identifier is committed to the issuer's KERI key event log, then published in a CIP-170 transaction citing the exact log position. The document travels in the same transaction, so verification needs the chain and the issuer's log and nothing else. No service I operate sits in the path.
+It is a web application, not a library. Users connect a wallet at [attest-v1.vercel.app](http://attest-v1.vercel.app), review what is being attested, and sign. The CLI and GitHub Action exist for teams who prefer automation, but they are a second way in, not the product.
 
-Who it is for:
+Each record is a JSON document that hashes to its own identifier, committed to the issuer's KERI key event log and published in a CIP-170 transaction citing the exact log position. The document travels in the same transaction, so verification needs the chain and that log, nothing else.
 
-Wallets and explorers, which can show whether a contract a user is about to sign was built from public source and audited, and by whom.
-
-Audit firms, which get a signed, dated, non-repudiable record instead of a PDF someone can swap out.
-
-Protocol teams, which get a way to prove a deployment matches the code that was reviewed.
-
-Users, who currently have to trust a screenshot.
-
-The CLI, GitHub Action and verifier are Apache-2.0.
+Who it is for. Wallets and explorers, which can show whether a contract a user is about to sign was built from public source and audited. Audit firms, which get a signed, dated record instead of a PDF someone can swap out. Protocol teams, which can prove a deployment matches the code that was reviewed.
 
 ### Supporting links (repo, site, demo)
 
+- https://attest-v1.vercel.app
 - https://github.com/soloking1412/Attest
-- https://github.com/soloking1412/greenproof
-- https://github.com/soloking1412/dpm-disclose
 - https://github.com/soloking1412/computelens
 - https://github.com/soloking1412/Stylus-Toolkit
+- https://github.com/soloking1412/dpm-disclose
 
 ### Identified dependencies
 
@@ -324,10 +300,10 @@ Yes
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-Live on Cardano Preview. Transaction b796a647356699979383311ecab2273a636f33c9097e32390963cedebf49f254 carries the CIP-170 ATTEST record, the attestation document and the CIP-171 record under labels 170, 1701 and 1984.
+Live at [attest-v1.vercel.app](http://attest-v1.vercel.app) on Cardano Preview as a web application. A user connects a CIP-30 wallet, submits a blueprint and signs.
 
-The flow runs end to end: the document's identifier is committed to the issuer's key event log on a live KERIA agent, the transaction cites that sequence, and "attest verify" returns verified from chain data alone.
+Transaction 795b472ff73c0d04cd2eaa1c863fa321a3787ce4b1cbf200b658c964e0ff357e was published that way, from a browser wallet which paid its own fee. The server recomputes the script hash from the bytecode and anchors the document in the issuer's key event log; it holds no Cardano key.
 
-Publishing to Preview found a real defect that offline tests could not: the transaction builder rejects the tagged metadata form and needs native values. Fixed and committed.
+Going live found three defects offline tests could not: native metadata values, a silently accepted network mismatch, and an unconfirmed transaction read as missing. All fixed.
 
-Remaining for M1: mainnet, and external issuers publishing from their own wallets.
+Key event logs resolve from a KERIA agent today; production should read them from witnesses, which the resolver allows. Scoped into M1.
