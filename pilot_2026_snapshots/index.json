@@ -28,7 +28,7 @@
   "86fe3d78-e40f-4b03-877d-b3bcf3729280": "compliant_secondary_trading_for_real-world_assets_on_wayup",
   "08b8653b-5a1d-4b0f-bc01-6413d82d5f5c": "onchain_graveyard_-_soulbound_crypto_memorials_cip-0113",
   "c39afd9a-c480-49e3-8536-50b4e3a02c81": "doba_world_usdm_checkout_for_collectibles",
-  "790db18b-cac5-4e69-9040-2ebad0a64224": "on-chain_identity_for_the_blockchain_centre_nairobi_communit",
+  "790db18b-cac5-4e69-9040-2ebad0a64224": "cardano_wallet_check-in_for_the_bcn_nbo_event_platform",
   "d73d4c5e-db48-4ea7-b679-264c7f31ab6f": "atlas_stablecoin_perpetuals_on_cardano",
   "1f361bdc-6759-4766-80c7-d918574955cb": "procureflow_verified_quote_rail",
   "0381b8dd-5221-435b-977d-21c61afcbf55": "lendada_ada_pooled_lending_with_usdcx_usdm_pyth",
@@ -47,5 +47,6 @@
   "e85d1fcf-4a85-4dd7-83b6-20b2ba72396a": "uzima_health_data_anchoring_and_consent_protocol_on_cardano",
   "7c370a8f-dbe9-4ced-97fb-3d78b54b47ff": "usdm_-_settled_synthetic_asset_pools_on_cardano",
   "88fe48c2-a40f-479d-9164-d5d77032d2e9": "exura_self-custodied_yield_beyond_cardano",
-  "861a2951-2ed5-4891-a33a-5a76554ef169": "kaltic_verifiable_agricultural_traceability_with_cip-0170"
+  "861a2951-2ed5-4891-a33a-5a76554ef169": "kaltic_verifiable_agricultural_traceability_with_cip-0170",
+  "e814dac5-59f4-417a-a9fe-190612502ba9": "mesh_-_programmable_tokens_with_utxos_sdk"
 }

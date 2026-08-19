@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 22
+- **Revision:** 24
 - **Proposer:** `stake1uxd9qla44kaftahx8r8z4q5lgyn0lcd8n7uytpjntdcph3qlgneay`
 - **Funding requested:** ₳100,000
-- **Last finalized:** 2026-08-18T09:45:24.094000+00:00
+- **Last finalized:** 2026-08-19T10:11:45.526000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -36,11 +36,11 @@ If Mishkan Protocol generates hosted-instance revenue post-pilot (core voting/go
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
- ₳2.00 fee target (script-heavy CIP-0113 transfers cost more than a plain transfer, given withdraw-zero, transfer-logic, and registry-lookup validators all run per transaction).
+Week 1 (entry-ramp epoch): Poloos Council crossover only. Direct outreach to the 50-wallet Poloos community via existing Discord/Telegram, target 9 self-claims (matches the entry-ramp allocation). Action: pinned announcement in Poloos Council's channels with a direct "Join Council" link; founder personally messages the first 10-15 most active members.
 
-Five named, checkable channels: Poloos Council's existing 50 wallets at a conservative 30% Cardano-wallet-setup conversion (15); Rahat Sayyed's own Cardano/Catalyst builder network, including the Talendro community (20); direct outreach in Cardano Catalyst's own Discord/forum plus Demo Day visibility (20); Mishkan Protocol's own social channels (15); word-of-mouth referral from early self-claimers (5). Total: 75.
+Week 2 (Epoch 1 begins): target 11 self-claims across three channels running in parallel — Rahat Sayyed posts to his Cardano/Catalyst builder network including the Talendro community (target 5); a post in Cardano Catalyst's own Discord and forum, timed with initial Demo Day visibility (target 4); Mishkan Protocol's Twitter/Farcaster accounts publish the live demo link (target 2). Daily self-claim count tracked against the 20% daily cap; if any channel underperforms, the founder reallocates outreach effort mid-week rather than waiting for the epoch to close.
 
-We are not citing Catalyst's full voter base as a source — that number is not ours to claim, and doing so is what drew the original "calibrated to the floor" concern. This is a smaller, honest number built from channels we can actually name and stand behind, not a large addressable market discounted down to match a minimum.
+By end of Week 2: 20 of the 75 declared transactions complete, verifiable via Cardanoscan, published as an interim update.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -64,7 +64,7 @@ Mishkan Protocol wins on two fronts: (1) it is chain-agnostic by architecture, v
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-TRL4— deployed and working on a public testnet, or live in another ecosystem, under realistic conditions. Mishkan Protocol's core workflow — docket, submit, vote, archive, petitions — is live and working today in another ecosystem: EVM, with working deployments on BNB Chain testnet and Ethereum Sepolia, real wallets connecting, real balance checks gating votes, and the docket/archive cycle running end-to-end under realistic conditions.
+TRL5— deployed and working on a public testnet, or live in another ecosystem, under realistic conditions. Mishkan Protocol's core workflow — docket, submit, vote, archive, petitions — is live and working today in another ecosystem: EVM, with working deployments on BNB Chain testnet and Ethereum Sepolia, real wallets connecting, real balance checks gating votes, and the docket/archive cycle running end-to-end under realistic conditions.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
@@ -153,7 +153,7 @@ Month 3 (mainnet tx hashes, live URL, demo video): mint initial supply under the
 
 ### How far along is the integration you're proposing, today?
 
-TRL 4 - Technology validated in lab
+TRL 5 - Technology validated in relevant environment
 
 ### Programmable tokens (CIP-0113) - fee target (ADA)
 
