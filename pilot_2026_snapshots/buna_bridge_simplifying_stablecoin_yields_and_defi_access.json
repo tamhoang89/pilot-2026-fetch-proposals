@@ -1,0 +1,2865 @@
+{
+  "$schema": "https://phoenix-origin.prod.projectcatalyst.io/schemas/ProposalDTO.json",
+  "id": "289a3bfa-56ec-4efd-9e8a-1d7f81098f7b",
+  "campaignId": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",
+  "proposer": "stake1u966rf62ct6pcfgn79wn37gys7xurry962ggr9xcfjntc8sqsy52e",
+  "state": "finalized",
+  "title": "Buna Bridge: Simplifying Stablecoin Yields and DeFi Access",
+  "tagline": "Empowering underbanked users to protect savings against inflation via intuitive, non-custodial USDCx vaults and seamless stablecoin swaps on the Cardano network",
+  "requestedAmount": 150000,
+  "updatedAt": 1787107285771,
+  "returnedForRework": false,
+  "formData": {
+    "trl": "TRL 6 - Technology demonstrated in relevant environment",
+    "team": "**Project Team & Roles:**\n\n- **Abubakari Mahamudu – Chief Product Officer & Project Lead**\n\n  - *Role:* Oversees product strategy, technical roadmap alignment, user journey mapping, and backend smart contract integration architecture. Brings extensive experience as CEO of[ Tumahub](https://tumahub.netlify.app/) and Chief Product Officer of[ ](http://zaanet.xyz)[ZaaNet.xyz](http://ZaaNet.xyz).\n\n  - *Profile / References:*[ LinkedIn](https://www.google.com/search?q=https://www.linkedin.com/in/abubakari-mahamudu-a41b94213/) |[ GitHub](https://github.com/abubakarim78) |[ X (Twitter)](https://x.com/abusadickm_78)\n\n- **Sahabia Yakubu – Lead Developer & CEO**\n\n  - *Role:* Directs core blockchain development, smart contract logic, DeFi protocol integration (Liqwid pools and Circle xReserve), and technical architecture. Brings deep Web3 leadership as Founder of[ HackerBoost](https://www.youtube.com/watch?v=B0d79Z3UI7M), former MakerDAO African Ambassador (2019–2021), Founder of[ DeFi Africa](https://x.com/defiafrica), and CEO of ZaaNet.\n\n  - *Profile / References:*[ LinkedIn](https://www.google.com/search?q=https://www.linkedin.com/in/sahabia-yakubu) |[ GitHub](https://github.com/sahadevgh) |[ X (Twitter)](https://x.com/sahadevgh)\n\n**Track Record & Previous Deliverables:** The team has proven execution capability, having successfully built and shipped[ Buna Protocol V1.0 (Arbitrum)](https://www.bunaprotocol.com/) end-to-end, as well as developing decentralized infrastructure projects.",
+    "eligArea": true,
+    "giveBack": "N/A",
+    "m2Target": "**Milestone Outputs:**\n\nCompletion of the Adoption phase and project close using the declared measurement structure: a one-epoch entry ramp from your M1 delivery, then six floored 5-day epochs - with extra epochs earned by delivering early - under the Standard's per-epoch floors and daily cap. The whole project completes within the program's four-month frame.\n\nYour declared adoption targets, restated from your answers. They drive the M2 payout and the Transaction Integrity checks, and are final at submission:\n\n- Stablecoins: 5,000 transactions expected, 450 ADA in counted fees\n\n**Acceptance criteria**\n\n1. The measurement window ran as declared at M1 delivery: the one-epoch entry ramp plus your floored epochs, including any extra epochs earned by early delivery.\n2. Per-epoch floors observed, with at most the Standard's one free miss.\n3. Counted totals respect the daily cap: a single day may exceed the Standard's share of your measurement-period total, but the excess does not count toward it.\n4. At least the Standard's minimum of distinct external wallets transacted with your integration during the window.\n5. All measured activity derives from the declared identifiers and complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard).\n\n**Evidence of milestone completion**\n\n1. Adoption summary statement: your actuals against each declared target.\n2. Per-epoch table: epoch number, date range, transactions and counted fees, daily cap applied (y/n), floor met (y/n), notes.\n3. Raw explorer and dashboard links for the declared identifiers.\n4. Short methodology note: how counts and fees were derived from the declared identifiers.\n5. A completion video (1-3 mins) is shared via YouTube showcasing the project outputs.\n6. Any additional cross-checks.",
+    "usagePlan": "- **Who Transacts:** Underbanked individuals, freelancers, and small merchants across West Africa (anchored through[ HackerBoost hubs in Ghana](https://www.hackerboost.org/)) seeking protection against local currency inflation.\n\n- **Why & What Transactions:** Users transact to bridge external stablecoins or onboard fiat into Cardano-native stablecoins (USDCx/USDM) and allocate capital into Liqwid Earn yield vaults, or execute in-app swaps.\n\n- **Cadence & Reach:** Users make weekly savings deposits, compound monthly yield, and manage liquidity routinely. We will reach these targets by embedding these workflows inside our familiar conversational Telegram bot interface, eliminating Web3 friction, and driving adoption via community onboarding workshops across HackerBoost hubs.\n\n- **Target Justification:** Our declared target of **450 ADA in fees** (spanning approximately **5,000 transactions**) comfortably clears the program floor of **₳312** for our 150,000 ADA grant. It is ambitious yet realistic, grounded in our active regional developer community and designed to reflect organic, recurring transaction loops without artificial volume.",
+    "goToMarket": "**Buna Pilot Users:** Active savers using our Telegram bot and web app will be guided to migrate funds to native USDCx vaults through a zero-friction in-app campaign.\n\n[**HackerBoost Hub**](https://www.hackerboost.org/) **(\\~150):** Direct onboarding of university students, alumni, and freelance developers in Tamale.\n\nTamale Offline Hangout Community **(\\~500):** Direct onboarding through established coworking spaces and tech meetups in Northern Ghana\n\n**First Two Weeks Post-Launch Plan:**\n\n**Days 1–3:** Deploy verified contracts to mainnet; update UI; publish declared footprint and explorer links\n\n**Days 4–7:** Activate Cohort 1. Onboard the first 50 pilot savers for live USDCx deposits and Earn allocations\n\n**Days 8–11:** Host workshops at HackerBoost hub, onboarding 40+ freelancers for P2P escrow and CEX-to-Cardano bridging\n\n**Days 12–14:** Track transaction volume, gather feedback, deploy UX hotfixes, and publish adoption metrics",
+    "m1Evidence": "These acceptance criteria and evidence apply to your declared integration(s) - at delivery you'll specify where each appears in the product, which user flows depend on it, and the identifier(s) that evidence it:\n\n- Stablecoins\n\n**Acceptance Criteria:**\n\n1. At least one full end-to-end mainnet transaction by a real user (please refer to [the Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard)), and the flow repeats without failure - the submitted transaction hashes show independent runs of the declared flow.\n2. The declared footprint is complete and valid: nothing pre-existing declared, and all submitted evidence matches the declared identifiers and flows.\n3. Release notes accurately describe architecture, scope, and limitations.\n4. Live demo and Q&A delivered at Demo Day using the same identifiers and flows (participation is required). Demo Day sign-off admits the project into the entry epoch of its adoption measurement window.\n\n**Evidence:**\n\n1. Live product URL.\n2. At least one transaction hash mapped to flow steps, with explorer links.\n3. The declared footprint as described in the [Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard): script hashes, policy IDs, addresses, token/NFT names (if any), registered message tag, team wallets.\n4. Short technical walkthrough demonstration video.\n5. Release notes.\n6. Repo URL + tag/commit (if project is open source).\n7. Test evidence bundle: checklist, bug log, security note.\n8. Present outputs at Demo Day.",
+    "openSource": false,
+    "pitchVideo": "https://youtu.be/0uXZDd197hA?si=ofucyuccqFMf3H68",
+    "competitors": "**Existing Alternatives:**\n\n- **CEXs & P2P (Binance P2P, Yellow Card):** Custodial, exposing users to account freeze risks and high KYC friction.\n\n- **Cardano DeFi UIs (Liqwid, Minswap):** Built for power users; steep UTxO and slippage friction for retail savers.\n\n- **Mobile Money:** Convenient for payments but offers zero yield against steep fiat inflation.\n\n**Why Users Switch to Buna Bridge:**\n\n- **Conversational UX:** Manage savings via a Telegram bot or web app with zero blockchain jargon.\n\n- **Self-Custody:** Funds settle on-chain via user-signed transactions without exchange custody risk.\n\n- **Stable Yield:** Earn sustainable USDCx yield via Liqwid pools without liquidation risks.\n\n- **Direct Onboarding:** Connects CEX-held USDC to Cardano natively via Circle’s xReserve.",
+    "trlEvidence": "Buna Protocol is an active, mature product currently undergoing live pilot testing with real-world users in production. Through our operational deployment, we have successfully validated core architecture components, including our conversational Telegram bot interface, peer-to-peer (P2P) transaction workflows, and a transparent, share-based savings accounting model.\n\nThe existing system has proven its reliability and user-facing utility under live market conditions, confirming that our platform mechanics effectively bridge the gap between underbanked users and digital asset savings. This established foundation provides a robust, tested framework upon which we are ready to expand.",
+    "architecture": "Buna Protocol's proposed architecture adopts a hybrid on-chain/off-chain model designed to bring frictionless Web3 access to emerging markets:\n\n- **Conversational Interface & Backend:** User interactions are handled via a Telegram bot and web interface powered by a secure backend, abstracting complex UTxO management and key handling away from retail users.\n\n- **Onboarding via Circle xReserve:** The integration design utilizes Circle's xReserve infrastructure to bridge centralized exchange-held stablecoins directly into Cardano-native USDCx.\n\n- **Yield Generation via Liqwid Finance:** Savings deposits will be programmatically routed into Liqwid Finance lending pools, utilizing our share-based accounting model to distribute decentralized yield.\n\n- **DEX Liquidity & Swaps:** Planned in-app asset swaps between USDCx, USDM, and ADA are architected around Cardano DEX liquidity routers (such as Minswap).\n\n**Why It Is the Right Fit:** This architecture is custom-built for underbanked West African users. By pairing high-performance off-chain chat workflows with Cardano DeFi primitives, our design removes barriers like seed-phrase friction while ensuring complete non-custodial security",
+    "eligTimeline": true,
+    "integrations": [
+      "stablecoins"
+    ],
+    "otherFunding": false,
+    "standOutTeam": true,
+    "submittingAs": "Incorporated entity",
+    "targetMarket": "**Our main** market includes retail savers, tech freelancers, and remote workers in Ghana and Sub-Saharan Africa (SSA) seeking inflation-proof, digital-dollar yields. Mobile money, with [23 million](https://www.bog.gov.gh/wp-content/uploads/2024/11/Summary-of-Economic-and-Financial-Data-November-2024.pdf) active accounts in Ghana as of August 2024, is the region's financial backbone. These accounts offer no yield against double-digit fiat inflation, prompting SSA to promote retail crypto adoption. Chainalysis reports [stablecoins account for 43%](https://www.chainalysis.com/blog/subsaharan-africa-crypto-adoption-2024/) of crypto transactions in SSA as residents hedge currency devaluation. The demand for stable, yield-bearing digital dollars is substantial.\n\n**Evidence of Demand & Product-Market Fit:**\n\n- **Buna Protocol already serves real users on web and Telegram, validating demand for our** mobile-first savings UX.\n\n- In pilot testing, users identified price volatility and multi-step DEX bridging as major barriers. Adding native Cardano stablecoins (USDCx/USDM) directly addresses this validated issue.\n\n- USDCx quickly became Cardano's top stablecoin, with Liqwid Finance absorbing \\~3M USDCx in its first week. On-chain liquidity exists; Buna offers the user interface to direct it to African retail savers.\n\n- **Warm Pipeline:** We won't start from zero; we'll onboard \\~200 Buna savers and \\~150 freelancers from HackerBoost for mainnet adoption.",
+    "applicantName": "Abubakari Mahamudu",
+    "businessModel": "**Revenue Model:** Buna Protocol operates a sustainable, transaction-based model. For peer-to-peer (P2P) escrow settlements and withdrawals to external exchanges, we apply a progressive fee tier ranging from 1% for small transactions down to 0.25% for high-volume transfers (above 20,000 GHS). For our Earn vaults, we charge a flat 1% fee on withdrawals.\n\n**Who Pays?** External users (savers, freelancers, and remote workers) pay standard Cardano network fees directly from their non-custodial wallets. Buna never takes custody of funds, nor do we subsidize, reimburse, or pay transaction fees on users' behalf.\n\n**Post-Pilot Continuity:** Usage persists beyond the grant window because personal saving, yield compounding, and P2P settlement are continuous financial habits. Once users hedge fiat against inflation using digital dollars, their deposits and withdrawals become recurring monthly routines rather than one-time promotional events.",
+    "eligNamedTeam": true,
+    "eligRealUsers": true,
+    "fundingImpact": "This grant enables the building of Cardano integration for Buna Protocol, expanding into the ecosystem. Without it, users would be limited to Arbitrum and miss Cardano's liquidity, stablecoins, and yield.\n\n**High-Level Fund Allocation:**\n\n- **40% (60,000 ADA) - Core Integration & Smart Contracts:** Aiken vault contracts, share accounting logic, and Liqwid/Minswap SDK adapters\n\n- **20% (30,000 ADA) - Security & Audits:** Third-party smart contract security review for safe mainnet deployment\n\n- **20% (30,000 ADA) - Frontend & UX:** Telegram Mini App and web integration for CIP-30 signing and xReserve flows\n\n- **10% (15,000 ADA) - Infrastructure & Indexing:** Cardano nodes, Kupo/Ogmios/Blockfrost services, and data pipelines\n\n- **10% (15,000 ADA) - Deployment & Onboarding:** Pilot workshops",
+    "termsAccepted": true,
+    "eligRealTarget": true,
+    "m1Deliverables": "- **Month 1 (Weeks 1–4): Core Smart Contract Architecture & SDK Setup**\n\n  - *Deliverable:* Develop and test Aiken vault contracts for share-based savings accounting; integrate Liqwid Finance lending SDK and Circle xReserve bridging adapters for Cardano-native USDCx onboarding.\n\n- **Month 2 (Weeks 5–8): Frontend, UX Wiring & DEX Swap Integration**\n\n  - *Deliverable:* Update the Telegram Mini App and web interface to support CIP-30 wallet connectors, guided xReserve fiat-to-stablecoin flows, and Minswap DEX liquidity routers for in-app swaps.\n\n- **Month 3 (Weeks 9–12): Security Audits, Mainnet Deployment & Demo Day**\n\n  - *Deliverable:* Complete third-party smart contract security reviews, deploy final contracts and updated application logic to Cardano mainnet, finalize test evidence bundles, release documentation, and deliver the live Demo Day presentation to enter the M2 adoption window.",
+    "trlIntegration": "TRL 2 - Technology concept formulated",
+    "eligClearBudget": true,
+    "eligGenuineWork": true,
+    "eligOneProposal": true,
+    "problemSolution": "Buna Bridge is a conversational, mobile-first stablecoin integration that solves the critical financial challenges faced by everyday savers, freelancers, and remote workers across West Africa.\n\n**The Problem**\n\nThese individuals face high inflation, fiat currency depreciation, and limited access to interest-bearing financial tools. While decentralized finance (DeFi) on Cardano offers robust infrastructure, it remains inaccessible to non-technical users who struggle with complex exchange interfaces, UTxO management, and seed-phrase maintenance. Traditional savings methods offer zero yield, leaving users vulnerable to economic instability.\n\n**The Solution**\n\nBuna Bridge acts as a simplified, intuitive gateway to the Cardano ecosystem. We are building three unified flows directly into our platform:\n\n- **CEX-to-Cardano Onboarding:** Streamlined conversion of stablecoins from centralized exchanges onto Cardano as native USDCx\n\n- **USDCx Earn Vaults:** Automated personal savings vaults that route deposits into Liqwid Finance lending pools, allowing users to generate stablecoin yield through a simple, share-based model\n\n- **USDCx Swaps:** In-app, seamless stablecoin swaps across USDCx, USDM, and ADA, powered by Minswap liquidity\n\nBuna Bridge simplifies blockchain access for underbanked African users, providing a seamless way to preserve digital dollars and earn decentralized yield. This enables them to protect savings and engage in global finance without needing technical expertise.",
+    "supportingLinks": [
+      "https://bunaprotocol.com",
+      "https://hackerboost.org",
+      "https://t.me/buna_protocol_bot ",
+      "https://github.com/hackerboost "
+    ],
+    "eligDependencies": true,
+    "eligGoodStanding": true,
+    "standOutBusiness": true,
+    "activeCommitments": false,
+    "eligMatureProduct": true,
+    "standOutTechnical": true,
+    "eligPublicProposal": true,
+    "integrityConfirmed": true,
+    "stablecoinsTxCount": 5000,
+    "eligStandardAttested": true,
+    "stablecoinsFeeTarget": 450,
+    "trlIntegrationEvidence": "While Buna Protocol is in pilot testing, this specific Cardano integration is still in the conceptual and architectural planning stage (TRL 2). We have mapped out the system design to connect our conversational Telegram bot and interface to Cardano primitives (native USDCx onboarding via xReserve, Liqwid Earn vaults, and DEX swap (minswap) routing).\n\nThis grant will fund the hands-on engineering, smart contract wiring, testing, and deployment required to bring this integration from concept to a fully operational mainnet release."
+  },
+  "createdAt": 1787079020280,
+  "headRevision": {
+    "id": "0d13b9b4-fe2e-4bd6-9d74-1a459ace76ee",
+    "number": 9,
+    "kind": "saved",
+    "createdAt": 1787107263517
+  },
+  "latestFinalization": {
+    "id": "4d946cca-79c9-4b7c-a3d5-111f3393709c",
+    "cycle": 1,
+    "revisionId": "0d13b9b4-fe2e-4bd6-9d74-1a459ace76ee",
+    "finalizedAt": 1787107285771
+  },
+  "campaign": {
+    "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",
+    "title": "Catalyst Pilot",
+    "brief": "Build. Launch. Get Paid. Catalyst Pilot backs teams bringing their next innovation to Cardano: 50,000 to 200,000 ADA to take a new mainnet integration from development to deployment and long-term use, building on at least one of four areas - oracles, stablecoins, programmable tokens, or on-chain identity - with pay that grows as real users adopt it.",
+    "budget": 2000000,
+    "proposalCapPerProposer": 1,
+    "status": "active",
+    "type": "pilot",
+    "startsAt": 1785996000000,
+    "endsAt": 1789556400000,
+    "stages": [
+      {
+        "key": "submission",
+        "window": {
+          "startsAt": 1785996000000,
+          "endsAt": 1787205600000
+        },
+        "functions": [
+          {
+            "key": "create_draft",
+            "window": {
+              "startsAt": 1785996000000,
+              "endsAt": 1787205600000
+            }
+          },
+          {
+            "key": "finalize",
+            "window": {
+              "startsAt": 1785996000000,
+              "endsAt": 1787205600000
+            }
+          },
+          {
+            "key": "withdraw",
+            "window": {
+              "startsAt": 1785996000000,
+              "endsAt": 1787205600000
+            }
+          }
+        ]
+      },
+      {
+        "key": "curation",
+        "window": {
+          "startsAt": 1785996000000,
+          "endsAt": 1787914800000
+        },
+        "functions": [
+          {
+            "key": "flag",
+            "window": {
+              "startsAt": 1785996000000,
+              "endsAt": 1787551200000
+            },
+            "config": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "q01": {
+                    "type": "object",
+                    "title": "One proposal",
+                    "required": [
+                      "answer"
+                    ],
+                    "properties": {
+                      "answer": {
+                        "type": "boolean"
+                      },
+                      "comment": {
+                        "type": "string",
+                        "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+                      }
+                    },
+                    "x-curation": {
+                      "flagWhen": true
+                    },
+                    "description": "Each applicant may submit only one proposal. Cross-check the applicant name, entity, and declared team members against other submissions. _Does the same applicant, any member of the team, or entity appear on more than one proposal?_"
+                  },
+                  "q02": {
+                    "type": "object",
+                    "title": "Cardano Standing",
+                    "required": [
+                      "answer"
+                    ],
+                    "properties": {
+                      "answer": {
+                        "type": "boolean"
+                      },
+                      "comment": {
+                        "type": "string",
+                        "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+                      }
+                    },
+                    "x-curation": {
+                      "flagWhen": true
+                    },
+                    "description": "Check the proposal's funding disclosures (Acknowledgements) against the declared project IDs, the project website, the Milestone Module, and other sources. _Has the team failed to disclose an active funded commitment (theirs or any member's, in any ecosystem), or failed to disclose funding, past or present, for the same or substantially similar work as this proposal? Or does the team have an active Catalyst-funded project more than 90 days behind schedule or in delivery over 12 months and still incomplete (for example, overdue milestones or a proof-of-achievement past its deadline), or more than three active Catalyst projects at submission?_"
+                  },
+                  "q03": {
+                    "type": "object",
+                    "title": "Team & Credentials",
+                    "required": [
+                      "answer"
+                    ],
+                    "properties": {
+                      "answer": {
+                        "type": "boolean"
+                      },
+                      "comment": {
+                        "type": "string",
+                        "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+                      }
+                    },
+                    "x-curation": {
+                      "flagWhen": true
+                    },
+                    "description": "_Is the team not properly identified (members or key contributors unnamed, or roles not stated), or are key references (LinkedIn/portfolio/GitHub) missing or unverifiable (e.g. empty or newly created profiles)?_ Judge whether the team is identified and verifiable; whether the experience is strong is the panel's to score."
+                  },
+                  "q04": {
+                    "type": "object",
+                    "title": "Scope Mismatch",
+                    "required": [
+                      "answer"
+                    ],
+                    "properties": {
+                      "answer": {
+                        "type": "boolean"
+                      },
+                      "comment": {
+                        "type": "string",
+                        "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+                      }
+                    },
+                    "x-curation": {
+                      "flagWhen": true
+                    },
+                    "description": "_Is the proposal marketing-only, dev-tooling, or otherwise outside the category scope?_"
+                  },
+                  "q05": {
+                    "type": "object",
+                    "title": "Integration Eligibility",
+                    "required": [
+                      "answer"
+                    ],
+                    "properties": {
+                      "answer": {
+                        "type": "boolean"
+                      },
+                      "comment": {
+                        "type": "string",
+                        "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+                      }
+                    },
+                    "x-curation": {
+                      "flagWhen": true
+                    },
+                    "description": "_Does the proposed integration fail to target an eligible standard / area of interest (Oracles, Stablecoins, CIP-0113, or CIP-0170), or is it built on the wrong standard?_"
+                  },
+                  "q06": {
+                    "type": "object",
+                    "title": "Product Maturity",
+                    "required": [
+                      "answer"
+                    ],
+                    "properties": {
+                      "answer": {
+                        "type": "boolean"
+                      },
+                      "comment": {
+                        "type": "string",
+                        "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+                      }
+                    },
+                    "x-curation": {
+                      "flagWhen": true
+                    },
+                    "description": "_Is the team's existing product below TRL 5, or is its maturity not evidenced?_"
+                  },
+                  "q07": {
+                    "type": "object",
+                    "title": "Timeline",
+                    "required": [
+                      "answer"
+                    ],
+                    "properties": {
+                      "answer": {
+                        "type": "boolean"
+                      },
+                      "comment": {
+                        "type": "string",
+                        "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+                      }
+                    },
+                    "x-curation": {
+                      "flagWhen": true
+                    },
+                    "description": "_Does the timeline exceed 4 months, or is it unrealistic for the proposed work?_"
+                  },
+                  "q08": {
+                    "type": "object",
+                    "title": "Retroactive Funding",
+                    "required": [
+                      "answer"
+                    ],
+                    "properties": {
+                      "answer": {
+                        "type": "boolean"
+                      },
+                      "comment": {
+                        "type": "string",
+                        "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+                      }
+                    },
+                    "x-curation": {
+                      "flagWhen": true
+                    },
+                    "description": "_Do the requested funds cover already-completed work rather than future activities, or include a prohibited use - paying or incentivising users to transact (ADA giveaways, airdrops, transact-to-earn), speculation, or re-granting?_"
+                  },
+                  "q09": {
+                    "type": "object",
+                    "title": "Budget",
+                    "required": [
+                      "answer"
+                    ],
+                    "properties": {
+                      "answer": {
+                        "type": "boolean"
+                      },
+                      "comment": {
+                        "type": "string",
+                        "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+                      }
+                    },
+                    "x-curation": {
+                      "flagWhen": true
+                    },
+                    "description": "The form does not collect a line-item budget, so flag missing or incoherent spend-to-deliverable logic, not the absence of a detailed breakdown. _Is the requested amount unjustified by the milestone outputs - e.g. do the M1 deliverables or the high-level use of funds fail to account for the funding requested?_"
+                  },
+                  "q10": {
+                    "type": "object",
+                    "title": "Target Credibility",
+                    "required": [
+                      "answer"
+                    ],
+                    "properties": {
+                      "answer": {
+                        "type": "boolean"
+                      },
+                      "comment": {
+                        "type": "string",
+                        "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+                      }
+                    },
+                    "x-curation": {
+                      "flagWhen": true
+                    },
+                    "description": "The declared adoption target should be defensible as ambitious-but-realistic against the proposal's own usage plan; the attestation is a proposer claim this flag disputes with evidence. _Is the target indefensible - either sandbagged artificially low to guarantee an easy clear, or inflated beyond what the team, traction, and go-to-market evidence support?_"
+                  },
+                  "q11": {
+                    "type": "object",
+                    "title": "Genuine Usage",
+                    "required": [
+                      "answer"
+                    ],
+                    "properties": {
+                      "answer": {
+                        "type": "boolean"
+                      },
+                      "comment": {
+                        "type": "string",
+                        "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+                      }
+                    },
+                    "x-curation": {
+                      "flagWhen": true
+                    },
+                    "description": "The usage model should be built on real external users. _Does it lack concrete sources of usage (named channels, existing users, or partners with rough volumes), give no first-two-weeks post-launch plan, or rely on usage from the team's own or sponsored wallets?_"
+                  },
+                  "q12": {
+                    "type": "object",
+                    "title": "Partner ID",
+                    "required": [
+                      "answer"
+                    ],
+                    "properties": {
+                      "answer": {
+                        "type": "boolean"
+                      },
+                      "comment": {
+                        "type": "string",
+                        "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+                      }
+                    },
+                    "x-curation": {
+                      "flagWhen": true
+                    },
+                    "description": "_Are the named partners, enterprises, or third parties the proposal depends on unidentified, or referenced without verifiable evidence the partnership exists? (The standard providers proposers integrate, an oracle or a stablecoin, are not partners and need no proof.)_"
+                  },
+                  "q13": {
+                    "type": "object",
+                    "title": "Technical Approach",
+                    "required": [
+                      "answer"
+                    ],
+                    "properties": {
+                      "answer": {
+                        "type": "boolean"
+                      },
+                      "comment": {
+                        "type": "string",
+                        "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+                      }
+                    },
+                    "x-curation": {
+                      "flagWhen": true
+                    },
+                    "description": "_Are the technical plan and architecture unclear, missing, or not credible?_"
+                  },
+                  "q14": {
+                    "type": "object",
+                    "title": "Insufficient Information",
+                    "required": [
+                      "answer"
+                    ],
+                    "properties": {
+                      "answer": {
+                        "type": "boolean"
+                      },
+                      "comment": {
+                        "type": "string",
+                        "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+                      }
+                    },
+                    "x-curation": {
+                      "flagWhen": true
+                    },
+                    "description": "_Does the submission lack the information the decision panel needs to evaluate capability or legitimacy (empty claims fulfilling requirements pro forma)?_"
+                  },
+                  "q15": {
+                    "type": "object",
+                    "title": "Other",
+                    "required": [
+                      "answer"
+                    ],
+                    "properties": {
+                      "answer": {
+                        "type": "boolean"
+                      },
+                      "comment": {
+                        "type": "string",
+                        "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+                      }
+                    },
+                    "x-curation": {
+                      "flagWhen": true
+                    },
+                    "description": "A clear breach of the Category Brief or Fund Rules that none of the types above captures; only use it when you can name the specific rule. _Does the proposal breach a specific Category Brief or Fund Rules item not covered above?_"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "key": "decision",
+        "window": {
+          "startsAt": 1787914800000,
+          "endsAt": 1788760800000
+        },
+        "functions": [
+          {
+            "key": "rate",
+            "window": {
+              "startsAt": 1787914800000,
+              "endsAt": 1788760800000
+            },
+            "config": {
+              "business": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "b01",
+                    "b02",
+                    "b03",
+                    "b04",
+                    "b05",
+                    "b06",
+                    "b07",
+                    "b08",
+                    "b09",
+                    "b10",
+                    "b11"
+                  ],
+                  "properties": {
+                    "b01": {
+                      "type": "object",
+                      "title": "Is the problem clearly described?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 5
+                      },
+                      "description": "Check whether the proposal explains the problem in plain language, identifies who experiences it, and shows how the solution addresses that exact pain point. Strong proposals stay consistent across the whole proposal and avoid vague claims, jargon, or shifting definitions of the user or use case."
+                    },
+                    "b02": {
+                      "type": "object",
+                      "title": "Is the proposed solution clearly described?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 5
+                      },
+                      "description": "Assess whether the proposal explains what will be built, how it works, and the main features or scope in a way that is easy to understand and consistent with the problem being solved."
+                    },
+                    "b03": {
+                      "type": "object",
+                      "title": "Are the target users clearly defined?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 5
+                      },
+                      "description": "Assess whether the proposal identifies a specific user group, explains why they need the solution, and shows that the users are realistic, relevant, and clearly connected to the problem."
+                    },
+                    "b04": {
+                      "type": "object",
+                      "title": "Is the evidence of real demand and ecosystem needs clearly defined?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 10
+                      },
+                      "description": "Provide proof that the problem is real and worth solving. This can include user interviews, waitlists, prior adoption, ecosystem gaps, community requests, operational pain points, or other concrete signals that the need is not hypothetical."
+                    },
+                    "b05": {
+                      "type": "object",
+                      "title": "Is the declared fee target well-calibrated: defensible against the usage plan, and appropriately ambitious for the award requested?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 10
+                      },
+                      "description": "Compare the declared target with the proposal's own usage model and the published guidance ranges (Proof of Adoption & Standard §3.1, §3.3). Both directions lose points: a target hugging the floor to guarantee an easy clear, and a target the team, traction, and channels cannot plausibly carry."
+                    },
+                    "b06": {
+                      "type": "object",
+                      "title": "Does the proposal demonstrate real adoption capability?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 5
+                      },
+                      "description": "Assess whether the team has gone beyond an idea and shown learning from real users or market feedback. Strong evidence includes prototypes, pilot results, user testing, iteration based on feedback, and a clear plan for refining the product toward a market that will actually use it."
+                    },
+                    "b07": {
+                      "type": "object",
+                      "title": "How well do the team's capabilities give you confidence that they can deliver what they propose within the time allowed?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 5
+                      },
+                      "description": "Check whether the team has the right operational and domain capability to deliver."
+                    },
+                    "b08": {
+                      "type": "object",
+                      "title": "Is the delivery plan clearly defined with verifiable outputs and exact evidence sources?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 10
+                      },
+                      "description": "Assess whether the proposal's delivery plan describes specific outputs (e.g. deployed contracts, releases, transaction counts, user numbers) and links each to clear evidence sources (explorer URLs, repos, demos, analytics). A strong answer lets you trace progress to concrete, independently verifiable proof, not just narrative statements or vague intentions."
+                    },
+                    "b09": {
+                      "type": "object",
+                      "title": "Is the route to market clearly defined and is the plan to reach actual users credible?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 10
+                      },
+                      "description": "Look for a real distribution strategy, not just broad claims about awareness. Good proposals identify specific channels, partners, communities, or workflows they will use to acquire users and explain why those routes are plausible for this product."
+                    },
+                    "b10": {
+                      "type": "object",
+                      "title": "Is the path for the project to continue operating beyond the grant credible?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 5
+                      },
+                      "description": "The proposal should explain how the product can sustain itself after the grant ends through revenue, usage, treasury support, or another durable model."
+                    },
+                    "b11": {
+                      "type": "object",
+                      "title": "How strongly would you support funding this proposal?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 0
+                      },
+                      "description": "Evaluate the proposal in its entirety by assessing its significance, credibility, feasibility, and potential to generate meaningful value for the Cardano ecosystem. *Please note: this question is excluded from the numeric score and does not affect it. Final outcomes are determined by the numeric totals; this answer is used only to break ties between proposals with equal totals, where the higher average answer to this question prevails.*"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "uischema": {
+                  "type": "VerticalLayout",
+                  "elements": [
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/b01",
+                      "options": {
+                        "guidance": [
+                          "The problem is unclear or inconsistent.",
+                          "Some explanation is given, but it is vague or internally inconsistent.",
+                          "The core idea is understandable, but not fully sharp or complete.",
+                          "Clear and consistent throughout, with only minor ambiguity.",
+                          "Very clear, specific and consistently described."
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/b02",
+                      "options": {
+                        "guidance": [
+                          "The solution is very unclear or generic. Reviewers cannot confidently determine what is being built or how it addresses the problem.",
+                          "The solution is weakly described. Reviewers can identify the general idea, but the actual deliverable or approach is unclear.",
+                          "The solution is partially clear, but some important details are vague, broad, or require reviewer inference.",
+                          "The solution is mostly clear, with only minor omissions or small areas that need interpretation.",
+                          "The solution is clearly and specifically described. Reviewers can easily understand what will be built, how it works, its main features, and its scope, with no major gaps or ambiguity."
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/b03",
+                      "options": {
+                        "guidance": [
+                          "The target users are unclear, generic, or missing entirely. Reviewers cannot tell who the solution is for.",
+                          "The target users are poorly defined. Reviewers can guess who they may be for, but the user group is not precise.",
+                          "The target users are somewhat identified, but the description is still general or incomplete.",
+                          "The target users are mostly clear, with only minor ambiguity or broadness.",
+                          "The target users are clearly and specifically defined, realistic, and directly linked to the problem and solution."
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/b04",
+                      "options": {
+                        "guidance": [
+                          "No real evidence; demand is asserted, not demonstrated.",
+                          "Thin or indirect evidence; mostly assumptions.",
+                          "Some meaningful signals, but not enough to be convincing.",
+                          "Good evidence from relevant users or ecosystem activity.",
+                          "Strong, direct evidence that the need is real and pressing."
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/b05",
+                      "options": {
+                        "guidance": [
+                          "Set at the minimum purely to reduce risk, or a fantasy number with no supporting plan.",
+                          "Weakly justified in either direction.",
+                          "Defensible but conservative, or ambitious with thin evidence.",
+                          "Sits in the credible-to-ambitious range with a plan that supports it.",
+                          "Ambitious for the award size and convincingly evidenced by traction, channels, and the usage model."
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/b06",
+                      "options": {
+                        "guidance": [
+                          "Still only a concept; little or no validation.",
+                          "Early thinking exists, but there is little evidence of learning.",
+                          "Some validation or testing, but the product-market-fit path is still fragile.",
+                          "Credible progress toward product-market fit, with useful feedback loops.",
+                          "Strong evidence of learning, iteration, and realistic product-market-fit progress."
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/b07",
+                      "options": {
+                        "guidance": [
+                          "Team capability is unclear or mismatched.",
+                          "Partial fit: some relevant experience, but serious delivery gaps remain.",
+                          "Adequate: reasonable plan, but evidence and precision are limited.",
+                          "Strong fit: team capability looks very plausible.",
+                          "Excellent fit: the team and plan together inspire high delivery confidence."
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/b08",
+                      "options": {
+                        "guidance": [
+                          "Delivery plan is mostly narrative. Outputs are vague or missing, and evidence sources are not specified or are unusable (e.g. missing URLs, broken links, unverifiable data).",
+                          "Some outputs are named, but they are broad and only loosely connected to evidence. Links or identifiers are incomplete or unclear.",
+                          "Delivery plan lists several concrete outputs, and some evidence sources are given, but coverage is patchy.",
+                          "The delivery plan has clear, specific outputs with matching evidence sources. A reviewer can easily verify progress.",
+                          "The delivery plan has precise, measurable outputs and explicit evidence sources. The plan forms a coherent chain of verifiable proofs from start to completion, with no reliance on uncheckable narrative."
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/b09",
+                      "options": {
+                        "guidance": [
+                          "No credible go-to-user plan.",
+                          "Generic outreach ideas with little specificity.",
+                          "A plausible plan exists, but it is not well grounded.",
+                          "Clear channels and likely user routes are identified.",
+                          "Specific, credible, and well matched channels with a realistic acquisition plan."
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/b10",
+                      "options": {
+                        "guidance": [
+                          "No credible plan for operating after the grant. Sustained usage, revenue, or support are not explained, or rely on vague hopes rather than defined mechanisms.",
+                          "Some ideas are mentioned, but there is no concrete model or evidence that the project can realistically continue.",
+                          "A plausible path exists, but details are thin, assumptions are high, and sustainability still feels uncertain.",
+                          "Clear, realistic plan for ongoing operation: defined revenue or funding sources, continuing usage, or institutional backing. The path beyond the grant is coherent and reasonably evidenced.",
+                          "Highly credible long-term path: strong business or sustainability model, clear metrics and tracking, and convincing mechanisms showing the project can thrive without further grants."
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/b11",
+                      "options": {
+                        "guidance": [
+                          "Would not fund.",
+                          "Significant reservations; lean against.",
+                          "Could go either way.",
+                          "Supportive, with minor reservations.",
+                          "Strong support; fund this!"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "technical": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "t01",
+                    "t02",
+                    "t03",
+                    "t04",
+                    "t05",
+                    "t06",
+                    "t07"
+                  ],
+                  "properties": {
+                    "t01": {
+                      "type": "object",
+                      "title": "How well do the team's technical capabilities give you confidence that they can deliver what they propose within the time allowed?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 5
+                      },
+                      "description": "Assess whether the team's skills, track record, and current commitments give you realistic confidence that they can build, test, and ship the proposed technical work within the stated timeline. Look at prior mainnet/testnet deliveries, repos, demos, TRL, and how well their plan matches their demonstrated capability and available capacity."
+                    },
+                    "t02": {
+                      "type": "object",
+                      "title": "Is the proposed on-chain architecture technically sound and well-suited to the declared integration?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 8
+                      },
+                      "description": "Assess whether the architecture matches the use case and the Cardano integration being proposed, including how the design handles key management and user funds, and whether the plan accounts for security review or audit appropriate to what the integration will handle."
+                    },
+                    "t03": {
+                      "type": "object",
+                      "title": "Is there a public repository, testnet deployment, or working demo evidencing real technical capability?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 3
+                      },
+                      "description": "Check whether there is something tangible you can inspect. A public repo, live testnet deployment, or working demo reduces uncertainty and shows the team has actually built relevant functionality rather than only describing it."
+                    },
+                    "t04": {
+                      "type": "object",
+                      "title": "Does the plan account for known constraints of the underlying infrastructure, such as rate limits, mainnet-readiness, or pricing caps?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 2
+                      },
+                      "description": "Assess whether the team has thought through the platform's practical limits. Good proposals acknowledge throughput limits, transaction constraints, external service limits, fee assumptions, and any operational dependencies that could affect delivery."
+                    },
+                    "t05": {
+                      "type": "object",
+                      "title": "Can the design plausibly sustain the declared transaction-volume target without hitting on-chain constraints?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 5
+                      },
+                      "description": "Check whether the proposal's stated usage targets are compatible with the architecture. The answer should be supported by expected throughput, batching or scaling strategy if needed, and a convincing explanation of why the design can handle the planned on-chain volume."
+                    },
+                    "t06": {
+                      "type": "object",
+                      "title": "How important is this solution from a purely technical point of view?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 7
+                      },
+                      "description": "Assess the technical significance of the solution, ignoring business and narrative appeal. Consider whether it advances Cardano's technical capabilities, uses primitives in an important way, enables new classes of applications, improves security or performance, or creates reusable infrastructure that other builders can depend on."
+                    },
+                    "t07": {
+                      "type": "object",
+                      "title": "How strongly would you support funding this proposal?",
+                      "required": [
+                        "score",
+                        "comment"
+                      ],
+                      "properties": {
+                        "score": {
+                          "type": "integer",
+                          "maximum": 5,
+                          "minimum": 1
+                        },
+                        "comment": {
+                          "type": "string",
+                          "maxLength": 500,
+                          "description": "Required - a few words (up to about 60) explaining your score."
+                        }
+                      },
+                      "x-decision": {
+                        "scale": {
+                          "max": 5,
+                          "min": 1,
+                          "step": 1
+                        },
+                        "weight": 0
+                      },
+                      "description": "Evaluate the proposal in its entirety by assessing its significance, credibility, feasibility, and potential to generate meaningful value for the Cardano ecosystem. *Please note: this question is excluded from the numeric score and does not affect it. Final outcomes are determined by the numeric totals; this answer is used only to break ties between proposals with equal totals, where the higher average answer to this question prevails.*"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "uischema": {
+                  "type": "VerticalLayout",
+                  "elements": [
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/t01",
+                      "options": {
+                        "guidance": [
+                          "Team capability is unclear or mismatched. There is little or no evidence of relevant technical delivery, and the timeline looks unrealistic for their skills and capacity.",
+                          "Some relevant skills or experience are present, but there are major gaps. Significant doubt remains about delivery on time.",
+                          "The team appears broadly capable, and the plan is plausible, but evidence is limited or patchy. Delivery is possible but uncertain.",
+                          "The team has clear, relevant technical experience, visible artifacts, and a well-scoped plan that fits the timeline. Confidence in delivery is high.",
+                          "The team has a strong track record of similar work, robust technical artifacts, and a realistic, well-structured plan. Their capability and capacity give very high confidence in on-schedule delivery."
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/t02",
+                      "options": {
+                        "guidance": [
+                          "Architecture is unclear, unsuitable, or technically flawed.",
+                          "Partial fit, but there are obvious design mismatches.",
+                          "Acceptable, though some choices feel weak or underexplained.",
+                          "Strong fit; the design matches the use case well.",
+                          "Excellent fit; architecture is elegant, appropriate, and well justified."
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/t03",
+                      "options": {
+                        "guidance": [
+                          "No inspectable evidence of real technical capability.",
+                          "Very limited evidence, or evidence that is not convincing.",
+                          "Some tangible material exists, but it is incomplete or hard to verify.",
+                          "Good evidence of capability through working artifacts.",
+                          "Strong, direct evidence of real building ability and progress."
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/t04",
+                      "options": {
+                        "guidance": [
+                          "No meaningful awareness of infrastructure constraints.",
+                          "Basic awareness, but important constraints are missed.",
+                          "Reasonable acknowledgement of some constraints, but gaps remain.",
+                          "Good understanding of likely limits and dependencies.",
+                          "Excellent awareness, with clear mitigation for practical constraints."
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/t05",
+                      "options": {
+                        "guidance": [
+                          "The target volume is clearly incompatible with the design.",
+                          "Major doubts about throughput or on-chain feasibility.",
+                          "Plausible in principle, but not well demonstrated.",
+                          "Credible scaling approach and reasonable volume support.",
+                          "Very strong case that the design can sustain the target volume."
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/t06",
+                      "options": {
+                        "guidance": [
+                          "Technically minor. Adds little or no new capability, is trivial glue or convenience, or duplicates existing solutions without meaningful improvement.",
+                          "Some technical value, but largely incremental or narrow. The impact is modest and mainly limited to this single use case.",
+                          "Offers a useful technical improvement or integration that clearly helps some builders or users, but is not foundational or widely enabling.",
+                          "Clearly expands what can be built on Cardano: important integration, protocol use, or tooling that many projects could rely on or that materially improves robustness or performance.",
+                          "Technically pivotal. Unlocks new capabilities, classes of applications, or critical infrastructure that could significantly shape the ecosystem's future building surface."
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/t07",
+                      "options": {
+                        "guidance": [
+                          "Would not fund.",
+                          "Significant reservations; lean against.",
+                          "Could go either way.",
+                          "Supportive, with minor reservations.",
+                          "Strong support; fund this!"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "briefFull": "## **Overview**\n\nCatalyst Pilot pays teams in ADA for real, verified usage on Cardano. Grants run from **50,000 to 200,000 ADA**, paid **40% to build** your integration, up to **40% on the adoption it earns**, and **20% for holding that usage** afterwards. Top performers also share a **separate bonus pool**. Adoption is measured in real network fees from real users, not self-reported metrics, so the money follows genuine usage, not vanity numbers.\n\nIt is a fast, focused round with one job: get a new Cardano integration live on mainnet and earning real fees. The grant is an enabler to kickstart that, not to cover end-to-end costs. Marketing-only proposals cannot be funded, the first milestone is a working integration, but marketing matters enormously afterwards, because it drives the usage that earns the adoption payment.\n\nTeams that show real mainnet adoption are well positioned for what comes next, including potential support from the Cardano Foundation's [Venture Hub](https://cardanofoundation.org/venture-hub) and other specialised tracks in the wider ecosystem such as the [Draper Dragon](https://www.draperdragon.com/)-managed [Orion Fund](https://orion.draperdragon.com/) and associated instruments (e.g. [Cometa Labs](https://www.cometalabs.com/), [Draper U](https://draperuniversity.com/)).\n\n---\n\n## **Who can apply**\n\nThis pilot is for **teams with a mature product** who want to add a Cardano area of interest to it.\n\n* **You have a real, working product**, validated on a public testnet or already live, on Cardano or another chain (roughly **TRL 5 or above**; [the TRL Guide](https://docs.projectcatalyst.io/open-funding/funding-basics/integration-guides) explains the concept of Technology Readiness Levels).\n* **The integration is new work.** The grant funds you to build it, from the ground up to mainnet, and drive real usage. It must be live with real transactions by pilot end.\n* It must be **genuine, incremental development**, not retroactive funding or research alone. Open source is preferred, not required.\n\n**Submission limits.** One proposal per applicant, whether an individual, organisation, or consortium, and you cannot split into multiple entities to get around it. No individual may be named on more than one proposal in any delivery role, so a shared contributor cannot be spread across teams. This counts your project team, not the providers you integrate: many teams can build on the same oracle or stablecoin. Submit more than one and only the first counts; every participant's role must be disclosed. Read [Fund Rules](https://docs.projectcatalyst.io/open-funding/funding-basics/fund-rules) to learn more.\n\n**Good standing.** Newcomers from other ecosystems are unaffected by this. But if you already deliver Catalyst-funded work, you cannot apply if any active project is more than 90 days behind, or over 12 months old and still incomplete (unless the Fund Operator has accepted a valid reason), or if you run more than three active Catalyst projects. Applicants must be 18 or over and complete identity verification (KYC/KYB). Read [Fund Rules](https://docs.projectcatalyst.io/open-funding/funding-basics/fund-rules) to learn more.\n\n---\n\n## **Areas of Interest**\n\nYour proposal must leverage **at least one**:\n\n* **Oracles**: real-time price feeds (for example, Pyth).\n* **Stablecoins**: building with or accepting verified stablecoin policies (for example, USDM, USDCx), especially paths that move stablecoins from centralised exchanges onto Cardano.\n* **Programmable tokens (CIP-0113)**: tokens with embedded logic, for example real-world-asset tokenisation with compliance rules.\n* **On-chain identity (CIP-0170)**: wallet and stake-key-based identity.\n\n[The Integration Guides](https://docs.projectcatalyst.io/open-funding/funding-basics/integration-guides) cover each one, with docs and starting points. Every project must clear its category's **program floor**, a minimum level of counted network fees; floors and target guidance are in [the Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard).\n\n**Dune Analytics** is a mandatory tracking add-on, not an integration in itself: every funded project tags its transactions with a standardised label, so its activity feeds a central \"Catalyst Impact\" dashboard and the [public leaderboard](https://cardano.org/apps/leaderboard/).\n\n---\n\n## **Funding and milestones**\n\nYour grant (50,000 to 200,000 ADA) is paid in three parts, and top performers earn a bonus on top:\n\n| Part | Share | Paid when |\n| ----- | ----- | ----- |\n| Build | 40% | At onboarding |\n| Adoption | up to 40% | After your measurement window, on the usage you earned |\n| Kicker | 20% | About two months later, if your usage holds |\n| Bonus | up to 50% of your grant | Top adoption performers only, from a separate pool |\n\n* **Total pool: 2,500,000 ADA**, 2,000,000 in base grants, a 400,000 bonus pool for top performers, and 100,000 for ecosystem-supporting activities (separate from the bonus).\n* **Cohort: about 10 to 15 teams, subject to proposal quality**.\n* Your requested amount sets your **adoption floor** and your **external-wallet minimum**, both shown to you when you declare your target.\n\nThe three steps:\n\n1. **Onboarding (KYC/KYB)** unlocks the 40% build payment. Complete it, with an approved Statement of Milestones, within **two weeks** of award, or the grant may be withdrawn, so come ready to move.\n2. **Milestone 1, technical delivery (within 3 months).** Your integration is live on Cardano mainnet, proven by a real on-chain transaction. No payment attaches; this is your Demo Day, where you lock your adoption target and declare what counts ([Standard §4](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard)). Mainnet by this point is required whatever readiness you started from.\n3. **Milestone 2, adoption.** Your measurement period runs from Milestone 1 to the program's end at **month 4**, the same for everyone, so delivering early gives you a longer window against the same target. Reach your target and the full 40% adoption payment pays; land between the floor and your target and it pays proportionally; finish below the floor and it doesn't pay. The full mechanics, floors, pace, and timing, are in the Standard ([§7, §8, §10](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard)).\n\n---\n\n## **What your proposal must include**\n\n1. **Product and problem**: what you're building and why it matters.\n2. **Market and business case**: the landscape, and why now.\n3. **Team and traction**: why you're positioned to deliver, with verifiable profiles and roles.\n4. **Build plan**: a concrete route to Milestone 1 within three months.\n5. **Integration selection**: which area(s), and how you'll use them.\n6. **Fee target and usage model**: your self-declared target per area (above the floor, final at submission), your expected transaction count, and where the usage comes from, named channels, existing users, and partner commitments, with rough volumes.\n7. **Pace awareness**: that you understand usage has to hold a steady rhythm through the window ([Standard §7](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard)), and your plan for the first two weeks after going live.\n8. **Recommended**: a three-minute pitch video.\n\n---\n\n## **How proposals are selected**\n\nEvery proposal passes an eligibility check during curation, then a scoring pass on two fronts: a **technical review** (is the integration sound and buildable to mainnet?) and a **business review** (is there real demand, a credible route to users, and usage that lasts?). Funding decisions are made by a **decision panel** of institutional and community members, whose assessments are merged into a single outcome; the top-ranked eligible proposals that fit the budget and cohort are then selected. Targets are scored both ways: too timid loses points, and too aggressive without evidence loses points too. The funding pool is a ceiling, not a quota: if too few proposals meet the bar, the program funds fewer teams than the target cohort and may reallocate the remainder to future rounds. Applying does not guarantee funding. Learn more about [Curation](https://docs.projectcatalyst.io/open-funding/curation) and [Decision](https://docs.projectcatalyst.io/open-funding/decision) stages.\n\n---\n\n## **Playing it straight**\n\nThis pilot pays for authentic utility, not vanity metrics. **The golden rule: if a simple script across a handful of your own wallets could reproduce your volume, it doesn't count.** Anyone can confidentially flag suspected misconduct; unproven flags are never published, and confirmed reports earn a reward. A confirmed case removes the activity and recalculates payments; a confirmed case of paying for or faking transactions forfeits every unpaid amount, with consequences that attach to the named individuals. Full detail is in [the Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard).\n\n---\n\n## **Anything else?**\n\nYour proposal, progress reports, and proofs of achievement are published publicly. Before applying, read the [**Fund Rules**](https://docs.projectcatalyst.io/open-funding/funding-basics/fund-rules) and [**Terms and Conditions**](https://docs.projectcatalyst.io/open-funding/fine-print/terms-and-conditions), which govern funding, payment, and termination and prevail in any conflict. For this round, the payment and milestone structure set out in this Brief and the [**Proof of Adoption & Standard**](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard) is what applies.\n\nGo deeper:\n\n* [**Integration Guides**](https://docs.projectcatalyst.io/open-funding/funding-basics/integration-guides): what to build in each area, with docs and the TRL guide.\n* [**Proof of Adoption & Standard**](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard): the floors, targets, and every counting rule.\n* [**Pre-Submission Checklist**](https://docs.projectcatalyst.io/open-funding/funding-basics/pre-submission-checklist): run it before you submit.",
+    "submissionForm": {
+      "schema": {
+        "type": "object",
+        "allOf": [
+          {
+            "if": {
+              "required": [
+                "integrations"
+              ],
+              "properties": {
+                "integrations": {
+                  "contains": {
+                    "const": "oracles"
+                  }
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "oraclesTxCount",
+                "oraclesFeeTarget"
+              ]
+            }
+          },
+          {
+            "if": {
+              "required": [
+                "integrations"
+              ],
+              "properties": {
+                "integrations": {
+                  "contains": {
+                    "const": "stablecoins"
+                  }
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "stablecoinsTxCount",
+                "stablecoinsFeeTarget"
+              ]
+            }
+          },
+          {
+            "if": {
+              "required": [
+                "integrations"
+              ],
+              "properties": {
+                "integrations": {
+                  "contains": {
+                    "const": "cip113"
+                  }
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "cip113TxCount",
+                "cip113FeeTarget"
+              ]
+            }
+          },
+          {
+            "if": {
+              "required": [
+                "integrations"
+              ],
+              "properties": {
+                "integrations": {
+                  "contains": {
+                    "const": "cip170"
+                  }
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "cip170TxCount",
+                "cip170FeeTarget"
+              ]
+            }
+          },
+          {
+            "if": {
+              "required": [
+                "otherFunding"
+              ],
+              "properties": {
+                "otherFunding": {
+                  "const": true
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "otherFundingDetails"
+              ]
+            }
+          },
+          {
+            "if": {
+              "required": [
+                "activeCommitments"
+              ],
+              "properties": {
+                "activeCommitments": {
+                  "const": true
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "activeCommitmentsList"
+              ]
+            }
+          }
+        ],
+        "title": "Pilot 2026 application",
+        "required": [
+          "applicantName",
+          "submittingAs",
+          "openSource",
+          "problemSolution",
+          "targetMarket",
+          "competitors",
+          "businessModel",
+          "goToMarket",
+          "team",
+          "integrations",
+          "trl",
+          "trlEvidence",
+          "trlIntegration",
+          "trlIntegrationEvidence",
+          "architecture",
+          "fundingImpact",
+          "usagePlan",
+          "integrityConfirmed",
+          "m1Deliverables",
+          "eligOneProposal",
+          "eligMatureProduct",
+          "eligTimeline",
+          "eligArea",
+          "eligDependencies",
+          "eligRealTarget",
+          "eligRealUsers",
+          "eligGoodStanding",
+          "eligNamedTeam",
+          "eligGenuineWork",
+          "eligClearBudget",
+          "eligStandardAttested",
+          "eligPublicProposal",
+          "standOutTeam",
+          "standOutTechnical",
+          "standOutBusiness",
+          "otherFunding",
+          "activeCommitments",
+          "termsAccepted"
+        ],
+        "properties": {
+          "trl": {
+            "enum": [
+              "TRL 5 - Technology validated in relevant environment",
+              "TRL 6 - Technology demonstrated in relevant environment",
+              "TRL 7 - System prototype demonstrated in operational environment",
+              "TRL 8 - System complete and qualified",
+              "TRL 9 - Actual system proven in operational environment"
+            ],
+            "type": "string",
+            "title": "What is the current status and Technology Readiness Level of your existing product? Learn more about TRL levels [here](https://docs.projectcatalyst.io/open-funding/funding-basics/technology-readiness-levels)."
+          },
+          "team": {
+            "type": "string",
+            "title": "Why is your team well-suited to deliver this?",
+            "maxLength": 1500,
+            "minLength": 200
+          },
+          "eligArea": {
+            "type": "boolean",
+            "const": true,
+            "title": "Eligible area"
+          },
+          "giveBack": {
+            "type": "string",
+            "title": "Optional: Voluntary give-back pledge: grant repayment terms and/or treasury revenue share, with your own thresholds/terms and/or %. If no such relevant offer exists, please write 'N/A'.",
+            "maxLength": 400
+          },
+          "m2Target": {
+            "type": "string",
+            "title": "Adoption target at Completion/M2. Note: This section is auto-populated based on submission input in a previous question.",
+            "default": "**Milestone Outputs:**\n\nCompletion of the Adoption phase and project close using the declared measurement structure: a one-epoch entry ramp from your M1 delivery, then six floored 5-day epochs - with extra epochs earned by delivering early - under the Standard's per-epoch floors and daily cap. The whole project completes within the program's four-month frame.\n\nYour declared adoption targets, restated from your answers. They drive the M2 payout and the Transaction Integrity checks, and are final at submission:\n\n{integrations|- [label]: [TxCount] transactions expected, [FeeTarget] ADA in counted fees}\n\n**Acceptance criteria**\n\n1. The measurement window ran as declared at M1 delivery: the one-epoch entry ramp plus your floored epochs, including any extra epochs earned by early delivery.\n2. Per-epoch floors observed, with at most the Standard's one free miss.\n3. Counted totals respect the daily cap: a single day may exceed the Standard's share of your measurement-period total, but the excess does not count toward it.\n4. At least the Standard's minimum of distinct external wallets transacted with your integration during the window.\n5. All measured activity derives from the declared identifiers and complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard).\n\n**Evidence of milestone completion**\n\n1. Adoption summary statement: your actuals against each declared target.\n2. Per-epoch table: epoch number, date range, transactions and counted fees, daily cap applied (y/n), floor met (y/n), notes.\n3. Raw explorer and dashboard links for the declared identifiers.\n4. Short methodology note: how counts and fees were derived from the declared identifiers.\n5. A completion video (1-3 mins) is shared via YouTube showcasing the project outputs.\n6. Any additional cross-checks.",
+            "readOnly": true,
+            "description": "Precompiled from the program template and your declared targets - nothing to enter."
+          },
+          "usagePlan": {
+            "type": "string",
+            "title": "How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.",
+            "maxLength": 1200,
+            "minLength": 200
+          },
+          "goToMarket": {
+            "type": "string",
+            "title": "How will you reach and onboard real users - and what evidence backs your channels?",
+            "maxLength": 1000,
+            "minLength": 100
+          },
+          "m1Evidence": {
+            "type": "string",
+            "title": "M1 acceptance evidence: the verified mainnet transaction(s) and what you'll demo at Demo Day. Note: This section is auto-populated based on submission input in a previous question.",
+            "default": "These acceptance criteria and evidence apply to your declared integration(s) - at delivery you'll specify where each appears in the product, which user flows depend on it, and the identifier(s) that evidence it:\n\n{integrations}\n\n**Acceptance Criteria:**\n\n1. At least one full end-to-end mainnet transaction by a real user (please refer to [the Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard)), and the flow repeats without failure - the submitted transaction hashes show independent runs of the declared flow.\n2. The declared footprint is complete and valid: nothing pre-existing declared, and all submitted evidence matches the declared identifiers and flows.\n3. Release notes accurately describe architecture, scope, and limitations.\n4. Live demo and Q&A delivered at Demo Day using the same identifiers and flows (participation is required). Demo Day sign-off admits the project into the entry epoch of its adoption measurement window.\n\n**Evidence:**\n\n1. Live product URL.\n2. At least one transaction hash mapped to flow steps, with explorer links.\n3. The declared footprint as described in the [Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard): script hashes, policy IDs, addresses, token/NFT names (if any), registered message tag, team wallets.\n4. Short technical walkthrough demonstration video.\n5. Release notes.\n6. Repo URL + tag/commit (if project is open source).\n7. Test evidence bundle: checklist, bug log, security note.\n8. Present outputs at Demo Day.",
+            "readOnly": true,
+            "description": "Precompiled from the program template and your selected integrations - nothing to enter."
+          },
+          "openSource": {
+            "type": "boolean",
+            "title": "Is the underlying project open source?"
+          },
+          "pitchVideo": {
+            "type": "string",
+            "title": "Short Video Pitch",
+            "pattern": "^https?://.+",
+            "description": "Up to 3-minute, YouTube or Vimeo only."
+          },
+          "competitors": {
+            "type": "string",
+            "title": "Who else solves this today - competitors/alternatives, and why does your approach win?",
+            "maxLength": 800,
+            "minLength": 100
+          },
+          "trlEvidence": {
+            "type": "string",
+            "title": "Please provide details about the Technology Readiness Level selected for your existing product",
+            "maxLength": 800,
+            "minLength": 100
+          },
+          "architecture": {
+            "type": "string",
+            "title": "What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?",
+            "maxLength": 1500,
+            "minLength": 200
+          },
+          "eligTimeline": {
+            "type": "boolean",
+            "const": true,
+            "title": "Fits the timeline"
+          },
+          "integrations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "oneOf": [
+                {
+                  "const": "oracles",
+                  "title": "Oracles",
+                  "description": "Real-time oracle price feeds (e.g. Pyth)"
+                },
+                {
+                  "const": "stablecoins",
+                  "title": "Stablecoins",
+                  "description": "Verified stablecoin asset policies (e.g. USDM, USDCx)"
+                },
+                {
+                  "const": "cip113",
+                  "title": "Programmable tokens (CIP-0113)",
+                  "description": "Tokens with embedded logic (e.g. RWA tokenization with compliance rules)"
+                },
+                {
+                  "const": "cip170",
+                  "title": "On-chain identity (CIP-0170)",
+                  "description": "Wallet identity"
+                }
+              ]
+            },
+            "title": "Which integration(s) will you leverage? Learn more about integrations [here](https://docs.projectcatalyst.io/open-funding/funding-basics/integration-guides).",
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "otherFunding": {
+            "type": "boolean",
+            "title": "Is the work in this proposal, or substantially similar work, currently funded, previously funded, or under active consideration by any other program?",
+            "description": "This includes Project Catalyst, the Cardano treasury and Intersect budget programs, other Cardano ecosystem grant or funding programs (e.g. Builder DAO), accelerators, public or institutional funders, and programs on other chains."
+          },
+          "standOutTeam": {
+            "type": "boolean",
+            "const": true,
+            "title": "Team"
+          },
+          "submittingAs": {
+            "enum": [
+              "Individual",
+              "Incorporated entity",
+              "Consortium"
+            ],
+            "type": "string",
+            "title": "Submitting as"
+          },
+          "targetMarket": {
+            "type": "string",
+            "title": "Who is your target market, and what evidence shows real demand/product-market fit?",
+            "maxLength": 1500,
+            "minLength": 200
+          },
+          "applicantName": {
+            "type": "string",
+            "title": "Applicant name",
+            "maxLength": 100,
+            "minLength": 1,
+            "description": "Legal name of the person or entity."
+          },
+          "businessModel": {
+            "type": "string",
+            "title": "What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?",
+            "maxLength": 1000,
+            "minLength": 200
+          },
+          "cip113TxCount": {
+            "type": "integer",
+            "title": "Programmable tokens (CIP-0113) - expected transaction count",
+            "minimum": 1
+          },
+          "cip170TxCount": {
+            "type": "integer",
+            "title": "On-chain identity (CIP-0170) - expected transaction count",
+            "minimum": 1
+          },
+          "eligNamedTeam": {
+            "type": "boolean",
+            "const": true,
+            "title": "Named, verifiable team"
+          },
+          "eligRealUsers": {
+            "type": "boolean",
+            "const": true,
+            "title": "Real users"
+          },
+          "fundingImpact": {
+            "type": "string",
+            "title": "What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?",
+            "maxLength": 800,
+            "minLength": 100
+          },
+          "termsAccepted": {
+            "type": "boolean",
+            "const": true,
+            "title": "I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund."
+          },
+          "eligRealTarget": {
+            "type": "boolean",
+            "const": true,
+            "title": "Real target"
+          },
+          "m1Deliverables": {
+            "type": "string",
+            "title": "M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?",
+            "maxLength": 1000,
+            "minLength": 200
+          },
+          "oraclesTxCount": {
+            "type": "integer",
+            "title": "Oracles - expected transaction count",
+            "minimum": 1
+          },
+          "trlIntegration": {
+            "enum": [
+              "TRL 1 - Basic principles observed",
+              "TRL 2 - Technology concept formulated",
+              "TRL 3 - Experimental proof of concept",
+              "TRL 4 - Technology validated in lab",
+              "TRL 5 - Technology validated in relevant environment",
+              "TRL 6 - Technology demonstrated in relevant environment",
+              "TRL 7 - System prototype demonstrated in operational environment",
+              "TRL 8 - System complete and qualified",
+              "TRL 9 - Actual system proven in operational environment"
+            ],
+            "type": "string",
+            "title": "How far along is the integration you're proposing, today?"
+          },
+          "cip113FeeTarget": {
+            "type": "integer",
+            "title": "Programmable tokens (CIP-0113) - fee target (ADA)",
+            "minimum": 1,
+            "x-floor": {
+              "base": 100,
+              "baseline": 50000
+            }
+          },
+          "cip170FeeTarget": {
+            "type": "integer",
+            "title": "On-chain identity (CIP-0170) - fee target (ADA)",
+            "minimum": 1,
+            "x-floor": {
+              "base": 50,
+              "baseline": 50000
+            }
+          },
+          "eligClearBudget": {
+            "type": "boolean",
+            "const": true,
+            "title": "Clear budget"
+          },
+          "eligGenuineWork": {
+            "type": "boolean",
+            "const": true,
+            "title": "Genuine new work"
+          },
+          "eligOneProposal": {
+            "type": "boolean",
+            "const": true,
+            "title": "One proposal"
+          },
+          "problemSolution": {
+            "type": "string",
+            "title": "What solution are you building, and what specific problem does it solve - for whom?",
+            "maxLength": 1500,
+            "minLength": 200
+          },
+          "supportingLinks": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^https://.+"
+            },
+            "title": "Supporting links (repo, site, demo)",
+            "maxItems": 5,
+            "description": "Up to five HTTPS links showing your team's relevant work.",
+            "uniqueItems": true
+          },
+          "eligDependencies": {
+            "type": "boolean",
+            "const": true,
+            "title": "Identified dependencies"
+          },
+          "eligGoodStanding": {
+            "type": "boolean",
+            "const": true,
+            "title": "Good standing"
+          },
+          "oraclesFeeTarget": {
+            "type": "integer",
+            "title": "Oracles - fee target (ADA)",
+            "minimum": 1,
+            "x-floor": {
+              "base": 150,
+              "baseline": 50000
+            }
+          },
+          "standOutBusiness": {
+            "type": "boolean",
+            "const": true,
+            "title": "Business"
+          },
+          "activeCommitments": {
+            "type": "boolean",
+            "title": "Is your team (or any members of) currently delivering any funded commitment, in any ecosystem or program?",
+            "description": "This includes Project Catalyst, Cardano treasury and Intersect budget programs, other ecosystems' grant/funding programs (e.g. Builder DAO), accelerators, public or institutional funders, and programs on other chains."
+          },
+          "eligMatureProduct": {
+            "type": "boolean",
+            "const": true,
+            "title": "Mature product"
+          },
+          "openSourceDetails": {
+            "type": "string",
+            "title": "Licensing / IP details",
+            "maxLength": 500
+          },
+          "standOutTechnical": {
+            "type": "boolean",
+            "const": true,
+            "title": "Technical"
+          },
+          "eligPublicProposal": {
+            "type": "boolean",
+            "const": true,
+            "title": "Public proposal"
+          },
+          "integrityConfirmed": {
+            "type": "boolean",
+            "const": true,
+            "title": "Confirmation: our plan complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard)"
+          },
+          "stablecoinsTxCount": {
+            "type": "integer",
+            "title": "Stablecoins - expected transaction count",
+            "minimum": 1
+          },
+          "otherFundingDetails": {
+            "type": "string",
+            "title": "Funder, status, and what it covers",
+            "maxLength": 1000,
+            "description": "For each: funder, status (applied / awarded / delivering / completed), and what that funding covers versus what this grant would fund."
+          },
+          "eligStandardAttested": {
+            "type": "boolean",
+            "const": true,
+            "title": "Standard read and attested"
+          },
+          "stablecoinsFeeTarget": {
+            "type": "integer",
+            "title": "Stablecoins - fee target (ADA)",
+            "minimum": 1,
+            "x-floor": {
+              "base": 180,
+              "baseline": 50000
+            }
+          },
+          "activeCommitmentsList": {
+            "type": "string",
+            "title": "Current funded commitments",
+            "maxLength": 1000,
+            "description": "List each: funder or program · project name and ID or link · your role · expected completion."
+          },
+          "trlIntegrationEvidence": {
+            "type": "string",
+            "title": "Please provide details about the Technology Readiness Level selected for the integration you're proposing",
+            "maxLength": 800,
+            "minLength": 100
+          }
+        }
+      },
+      "uischema": {
+        "type": "VerticalLayout",
+        "options": {
+          "essentialsSupport": [
+            {
+              "title": "Requested amount (ADA)",
+              "content": "The amount you are requesting for the delivery of your project, between 50,000 and 200,000 ADA. Your amount sets your adoption floors and external-wallet minimum - you'll see both where you declare your targets later on."
+            }
+          ]
+        },
+        "elements": [
+          {
+            "type": "Group",
+            "label": "Setup",
+            "options": {
+              "support": [
+                {
+                  "title": "Submitting as",
+                  "content": "Determines the counter-party and the due-diligence format (KYC/KYB, AML)."
+                },
+                {
+                  "title": "Supporting links",
+                  "content": "Up to five HTTPS links (repository, website, demo) that show your team's relevant work. Only link what you have the rights to share."
+                },
+                {
+                  "title": "Open source",
+                  "content": "Open-sourcing is **not required** and doesn't affect eligibility - but you need to make your case in any scenario. If open sourcing, declare relevant lifetime licensing."
+                }
+              ]
+            },
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/applicantName"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/submittingAs"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/supportingLinks",
+                "options": {
+                  "format": "links"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/openSource"
+              },
+              {
+                "rule": {
+                  "effect": "SHOW",
+                  "condition": {
+                    "scope": "#/properties/openSource",
+                    "schema": {
+                      "const": true
+                    }
+                  }
+                },
+                "type": "Control",
+                "scope": "#/properties/openSourceDetails",
+                "options": {
+                  "format": "richtext"
+                }
+              }
+            ]
+          },
+          {
+            "type": "Group",
+            "label": "Product & problem",
+            "options": {
+              "support": [
+                {
+                  "title": "Problem & solution",
+                  "content": "State the problem plainly and name who has it. This appears in public listings, so write for someone seeing your project for the first time. Save proof of demand for the next section."
+                },
+                {
+                  "title": "Pitch video",
+                  "content": "Optional but recommended. Three minutes covering the problem, the product, the business logic, and your target. A simple piece-to-camera works - production quality isn't scored."
+                }
+              ]
+            },
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/problemSolution",
+                "options": {
+                  "format": "richtext"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/pitchVideo",
+                "options": {
+                  "format": "video"
+                }
+              }
+            ]
+          },
+          {
+            "type": "Group",
+            "label": "Business case",
+            "options": {
+              "support": [
+                {
+                  "title": "Target market",
+                  "content": "Who needs this, how many of them are there, and how do you know? Demonstrate size/commercial significance. Evidence beats adjectives - link relevant data/references."
+                },
+                {
+                  "title": "Competitors",
+                  "content": "Every real problem has existing answers, even if that's a spreadsheet or an off-chain service. Name yours and explain why users would switch. It's not impossible to have no competitors - but \"we have no competitors\" usually reads as not knowing the market yet."
+                },
+                {
+                  "title": "Business model",
+                  "content": "This program funds integrations that make business sense: over time, your integration should sustain genuine, growing usage on Cardano; it is measured in network fees because they cannot be quietly faked. Show the logic that gets you there - who pays, your revenue model, and why usage persists after the measurement period closes. Teams whose activity holds up after the window also earn a larger share of the bonus."
+                },
+                {
+                  "title": "Go-to-market",
+                  "content": "Name your channels: existing audiences, pilot customers, partnerships, letters of intent - not a generic marketing plan. Your milestone requires a minimum number of distinct real users, so show how you'll reach them."
+                }
+              ]
+            },
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/targetMarket",
+                "options": {
+                  "format": "richtext"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/competitors",
+                "options": {
+                  "format": "richtext"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/businessModel",
+                "options": {
+                  "format": "richtext"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/goToMarket",
+                "options": {
+                  "format": "richtext"
+                }
+              }
+            ]
+          },
+          {
+            "type": "Group",
+            "label": "Team",
+            "options": {
+              "support": [
+                {
+                  "title": "Team & references",
+                  "content": "List your team and collaborators, include links to their up to date and verifiable Linkedin, GitHub profiles, portfolio, past/present references (or similar) and state what aspect of the project each participant will undertake.\n\nIf additional team members need to be recruited, please state what skills gaps you are looking to fill so readers understand what other roles will be needed to complete the project.\n\nYou are expected to have already engaged the relevant members of the organizations referenced so you have their commitment and capacity to support the project. If you have not taken any steps to this effect, it is likely that the resources will not be available if you are approved for funding, which can jeopardize the project before it has even begun.\n\nYour proposal will be publicly available, so make sure to obtain any consent required before including confidential or third party information.\n\nAll applicants must disclose their project team's roles and scope of services across all submitted proposals. Failure to disclose this information may lead to disqualification from the current fund round."
+                }
+              ]
+            },
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/team",
+                "options": {
+                  "format": "richtext"
+                }
+              }
+            ]
+          },
+          {
+            "type": "Group",
+            "label": "Integration",
+            "options": {
+              "support": [
+                {
+                  "title": "Integrations",
+                  "content": "Choose at least one. Each selected integration is measured against its own adoption bar, and your milestone clears on the average across them. The [Integration Guides](https://docs.projectcatalyst.io/open-funding/funding-basics/integration-guides) explain what each involves."
+                },
+                {
+                  "title": "Product Technology readiness",
+                  "content": "This grant is for teams with a mature product. Your existing product must be validated on a public testnet or live, in the Cardano ecosystem or another, TRL 5 or above. Rate it and link the evidence. Read [the full TRL guide here](https://docs.projectcatalyst.io/open-funding/funding-basics/technology-readiness-levels)."
+                },
+                {
+                  "title": "Integration Technology readiness",
+                  "content": "Most teams are at or near zero here when they apply, that's expected; this grant funds building the integration. Tell us where it stands now and what exists (design, prototype, testnet work), so we understand how much ground the grant covers. This does not gate your application; your build plan (following questions) is what's assessed."
+                },
+                {
+                  "title": "Architecture",
+                  "content": "This is about design and suitability. Provide some technical context that shows your technical architecture is ready and suited for your solution."
+                },
+                {
+                  "title": "What the funding changes",
+                  "content": "Be specific about what this money changes: what gets built or accelerated that otherwise wouldn't, and roughly where the funds go. Grants don't fund already-completed work."
+                }
+              ]
+            },
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/integrations",
+                "options": {
+                  "format": "expanded-multiselect"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/trl",
+                "options": {
+                  "fieldSpan": "full"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/trlEvidence",
+                "options": {
+                  "format": "richtext"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/trlIntegration",
+                "options": {
+                  "fieldSpan": "full"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/trlIntegrationEvidence",
+                "options": {
+                  "format": "richtext"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/architecture",
+                "options": {
+                  "format": "richtext"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/fundingImpact",
+                "options": {
+                  "format": "richtext"
+                }
+              }
+            ]
+          },
+          {
+            "type": "Group",
+            "label": "Adoption & fee target",
+            "options": {
+              "support": [
+                {
+                  "title": "Declaring targets",
+                  "content": "You declare two numbers per integration: 1. how many transactions you expect in the adoption phase of your project, and 2. your fee target - the total network fees, in ADA, those transactions will generate. Your program floor and wallet minimum are shown [here](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard); your target must exceed the floor. Targets are frozen at submission, published, and scored for ambition.",
+                  "subtitle": "Per selected integration: expected transaction count + fee target (ADA)"
+                },
+                {
+                  "title": "Genuine usage",
+                  "content": "Describe the real usage: who transacts, why, at what cadence, and how you'll reach the projected transaction/fee targets you declared in your previous answers. Proposals with artificially low or otherwise unrealistic targets will be filtered out during the selection process."
+                },
+                {
+                  "title": "Transaction Integrity Standard",
+                  "content": "Read the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard) before ticking - it defines what counts, what doesn't, and the one rule that matters most. Ticking is a formal attestation. Part of M1 output where this will be formalized - in form of wallets/scripts/policy footprints, etc."
+                }
+              ]
+            },
+            "elements": [
+              {
+                "rule": {
+                  "effect": "SHOW",
+                  "condition": {
+                    "scope": "#/properties/integrations",
+                    "schema": {
+                      "type": "array",
+                      "contains": {
+                        "const": "oracles"
+                      }
+                    }
+                  }
+                },
+                "type": "Control",
+                "scope": "#/properties/oraclesTxCount"
+              },
+              {
+                "rule": {
+                  "effect": "SHOW",
+                  "condition": {
+                    "scope": "#/properties/integrations",
+                    "schema": {
+                      "type": "array",
+                      "contains": {
+                        "const": "oracles"
+                      }
+                    }
+                  }
+                },
+                "type": "Control",
+                "scope": "#/properties/oraclesFeeTarget",
+                "options": {
+                  "currency": "ADA"
+                }
+              },
+              {
+                "rule": {
+                  "effect": "SHOW",
+                  "condition": {
+                    "scope": "#/properties/integrations",
+                    "schema": {
+                      "type": "array",
+                      "contains": {
+                        "const": "stablecoins"
+                      }
+                    }
+                  }
+                },
+                "type": "Control",
+                "scope": "#/properties/stablecoinsTxCount"
+              },
+              {
+                "rule": {
+                  "effect": "SHOW",
+                  "condition": {
+                    "scope": "#/properties/integrations",
+                    "schema": {
+                      "type": "array",
+                      "contains": {
+                        "const": "stablecoins"
+                      }
+                    }
+                  }
+                },
+                "type": "Control",
+                "scope": "#/properties/stablecoinsFeeTarget",
+                "options": {
+                  "currency": "ADA"
+                }
+              },
+              {
+                "rule": {
+                  "effect": "SHOW",
+                  "condition": {
+                    "scope": "#/properties/integrations",
+                    "schema": {
+                      "type": "array",
+                      "contains": {
+                        "const": "cip113"
+                      }
+                    }
+                  }
+                },
+                "type": "Control",
+                "scope": "#/properties/cip113TxCount"
+              },
+              {
+                "rule": {
+                  "effect": "SHOW",
+                  "condition": {
+                    "scope": "#/properties/integrations",
+                    "schema": {
+                      "type": "array",
+                      "contains": {
+                        "const": "cip113"
+                      }
+                    }
+                  }
+                },
+                "type": "Control",
+                "scope": "#/properties/cip113FeeTarget",
+                "options": {
+                  "currency": "ADA"
+                }
+              },
+              {
+                "rule": {
+                  "effect": "SHOW",
+                  "condition": {
+                    "scope": "#/properties/integrations",
+                    "schema": {
+                      "type": "array",
+                      "contains": {
+                        "const": "cip170"
+                      }
+                    }
+                  }
+                },
+                "type": "Control",
+                "scope": "#/properties/cip170TxCount"
+              },
+              {
+                "rule": {
+                  "effect": "SHOW",
+                  "condition": {
+                    "scope": "#/properties/integrations",
+                    "schema": {
+                      "type": "array",
+                      "contains": {
+                        "const": "cip170"
+                      }
+                    }
+                  }
+                },
+                "type": "Control",
+                "scope": "#/properties/cip170FeeTarget",
+                "options": {
+                  "currency": "ADA"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/usagePlan",
+                "options": {
+                  "format": "richtext"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/integrityConfirmed",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "Our plan complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard)"
+                }
+              }
+            ]
+          },
+          {
+            "type": "Group",
+            "label": "Milestones",
+            "options": {
+              "support": [
+                {
+                  "title": "M1 outputs",
+                  "content": "Non-negotiable: by the end of this window you must have a product deployed on mainnet, producing transactions, that real users can use. List concrete, measurable deliverables. This becomes your formal milestone statement verbatim at onboarding - scope can be added later, never reduced."
+                },
+                {
+                  "title": "M1 acceptance evidence",
+                  "content": "This section is auto-populated. Evidence must be on-chain verifiable. At delivery you'll declare your on-chain identifiers, message tag, and team wallets - and your public daily chart starts counting from that moment. Demo Day doubles as the end of your development phase and the start of your Adoption phase - an important checkpoint to demonstrate what you have built before the final stage. Learn more about this in [Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard)."
+                },
+                {
+                  "title": "Adoption target at M2",
+                  "content": "This section is auto-populated - this combines your declared targets with the fixed measurement period: six 5-day floored epochs, beginning after a one-epoch entry ramp from your M1 delivery; with per-epoch floors, a daily cap, and extra epochs earned by delivering early. Confirm it reads as you intend. You have up to three months to deliver the technical part of your project. If you finish sooner, you benefit from a longer adoption window during M2. The whole project must complete within a four month time frame."
+                }
+              ]
+            },
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/m1Deliverables",
+                "options": {
+                  "format": "richtext"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/m1Evidence",
+                "options": {
+                  "format": "richtext"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/m2Target",
+                "options": {
+                  "format": "richtext"
+                }
+              }
+            ]
+          },
+          {
+            "type": "Group",
+            "label": "Beyond the pilot",
+            "options": {
+              "support": [
+                {
+                  "title": "Give-back pledge",
+                  "content": "Entirely voluntary. If your product wins, you can pledge to return part of the grant, or share revenue with the Cardano treasury, once thresholds you set are hit. Pledges are viewed favorably and published if you're funded."
+                }
+              ]
+            },
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/giveBack",
+                "options": {
+                  "format": "richtext"
+                }
+              }
+            ]
+          },
+          {
+            "type": "Group",
+            "label": "Acknowledgements",
+            "options": {
+              "support": [
+                {
+                  "title": "Before you submit",
+                  "content": "Run this before you submit. At this stage you have a product, a plan, and a declared target, you haven't built the integration or generated any usage yet, and that's expected. So this checklist doesn't ask what you've delivered. It asks the two things review will judge from your proposal: **are you eligible, and is your proposal strong enough to fund?**\n\nAnswer honestly. If you can't tick a box, that's the thing to fix before you submit.\n\n**How this connects to review.** The items in Section A are exactly what curators flag against at the compliance stage; if you can tick them, you clear the gate. Section B is what makes an eligible proposal a strong one, which the Decision panel scores."
+                },
+                {
+                  "title": "B. Will it stand out?",
+                  "content": "Eligibility gets you considered; these get you funded. The Decision panel scores a **technical review** and a **business review**, and your team runs through both."
+                },
+                {
+                  "title": "Other funding",
+                  "content": "Co-funding is not disqualifying, but the same deliverables cannot be funded twice, and work already delivered cannot be funded in this program. Tell us where the lines are."
+                },
+                {
+                  "title": "Current commitments",
+                  "content": "Answering \"No\" is itself a declaration that no such commitments exist. Good standing on everything you list is required; standing on Catalyst-side projects is verified against program records."
+                },
+                {
+                  "title": "Terms",
+                  "content": "Read, familiarize yourself with, and accept these terms."
+                }
+              ],
+              "collapsible": true
+            },
+            "elements": [
+              {
+                "text": "A. Eligibility gate",
+                "type": "Label"
+              },
+              {
+                "text": "Who you are",
+                "type": "Label",
+                "options": {
+                  "variant": "minor"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/eligOneProposal",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "**One proposal.** This is our only proposal, and no individual on our team, in any role (lead, member, subcontractor, or service provider), is named on another. We're not splitting across entities to get around the limit."
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/eligGoodStanding",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "**Good standing.** Either we've never had Catalyst funding, or our record is clean: nothing more than 90 days behind or over 12 months incomplete (unless the Fund Operator has accepted a valid reason), and no more than three active Catalyst projects. Either way, we've disclosed all our active funding commitments, and any funding, past or present, for the same or substantially similar work."
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/eligNamedTeam",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "**Named, verifiable team.** Every team member and key contributor is named, with their role on the project stated; their profiles (LinkedIn, GitHub, portfolio, references) are real and checkable; and we've disclosed each member's involvement across every proposal this round."
+                }
+              },
+              {
+                "text": "What you propose",
+                "type": "Label",
+                "options": {
+                  "variant": "minor"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/eligArea",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "**Eligible area.** We use at least one: Oracles, Stablecoins, CIP-0113, or CIP-0170."
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/eligMatureProduct",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "**Mature product.** Our existing product is at **TRL 5 or above**, validated on a public testnet or live, and the evidence is linkable. We're not relying on the integration's maturity; that's the new work the grant funds."
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/eligTimeline",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "**Fits the timeline.** Our plan reaches mainnet within a credible 3-month build window and completes within the 4-month pilot."
+                }
+              },
+              {
+                "text": "The money",
+                "type": "Label",
+                "options": {
+                  "variant": "minor"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/eligGenuineWork",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "**Genuine new work.** The budget is for future activities only, not retroactive funding, and we're not planning a prohibited use: paying or incentivising users to transact (ada giveaways, airdrops, transact-to-earn), speculation, or re-granting."
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/eligClearBudget",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "**Clear budget.** Our budget has a real breakdown tied to deliverables."
+                }
+              },
+              {
+                "text": "Your adoption plan",
+                "type": "Label",
+                "options": {
+                  "variant": "minor"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/eligRealTarget",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "**Real target.** Our declared target can be defended as ambitious but realistic (the form enforces the floor; ambition is scored both ways), and we understand it is **final at submission** and published next to what we deliver."
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/eligRealUsers",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "**Real users.** We've named **where usage will come from**, channels, existing users, partners, with rough volumes, including our plan for the first two weeks after going live. Our usage model is built on real external users; we understand fees from our own or sponsored wallets won't count."
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/eligDependencies",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "**Identified dependencies.** Any third parties we depend on are named with evidence the relationship exists. (The standard providers we integrate, an oracle or a stablecoin, are not partners and need no proof.)"
+                }
+              },
+              {
+                "text": "The paperwork",
+                "type": "Label",
+                "options": {
+                  "variant": "minor"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/eligStandardAttested",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "**Standard read and attested.** We've read the **Proof of Adoption & Standard** and can honestly attest our plan complies."
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/eligPublicProposal",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "**Public proposal.** We understand our proposal and all its contents are published publicly, along with our progress reports and results, and we've obtained any consent needed before including third-party or confidential information."
+                }
+              },
+              {
+                "text": "B. Will it stand out?",
+                "type": "Label"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/standOutTeam",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "**Team.** We've evidenced why this team can deliver this specific work: relevant track record, prior shipped products, named roles, not just titles or a list of names."
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/standOutTechnical",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "**Technical.** Our architecture is sound and buildable to mainnet within three months, and we've shown it, not just described it."
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/standOutBusiness",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "**Business.** We've shown real demand with evidence, named our competitors and why users switch or activate, and explained durable usage. Our business case shows why usage **persists after the grant**, not just during the measurement period."
+                }
+              },
+              {
+                "text": "C. Past and present commitments",
+                "type": "Label"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/otherFunding"
+              },
+              {
+                "rule": {
+                  "effect": "SHOW",
+                  "condition": {
+                    "scope": "#/properties/otherFunding",
+                    "schema": {
+                      "const": true
+                    }
+                  }
+                },
+                "type": "Control",
+                "scope": "#/properties/otherFundingDetails",
+                "options": {
+                  "format": "richtext"
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/activeCommitments"
+              },
+              {
+                "rule": {
+                  "effect": "SHOW",
+                  "condition": {
+                    "scope": "#/properties/activeCommitments",
+                    "schema": {
+                      "const": true
+                    }
+                  }
+                },
+                "type": "Control",
+                "scope": "#/properties/activeCommitmentsList",
+                "options": {
+                  "format": "richtext"
+                }
+              },
+              {
+                "text": "D. Terms and Conditions",
+                "type": "Label"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/termsAccepted",
+                "options": {
+                  "format": "consent",
+                  "checkboxLabel": "I confirm that I have read, understood and shall adhere to the [Terms & Conditions](https://docs.projectcatalyst.io/open-funding/fine-print/terms-and-conditions), [Fund Rules](https://docs.projectcatalyst.io/open-funding/funding-basics/fund-rules), [Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard), and [Privacy Policy](https://docs.projectcatalyst.io/open-funding/fine-print/privacy-policy). I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "curationForm": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "q01": {
+            "type": "object",
+            "title": "One proposal",
+            "required": [
+              "answer"
+            ],
+            "properties": {
+              "answer": {
+                "type": "boolean"
+              },
+              "comment": {
+                "type": "string",
+                "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+              }
+            },
+            "x-curation": {
+              "flagWhen": true
+            },
+            "description": "Each applicant may submit only one proposal. Cross-check the applicant name, entity, and declared team members against other submissions. _Does the same applicant, any member of the team, or entity appear on more than one proposal?_"
+          },
+          "q02": {
+            "type": "object",
+            "title": "Cardano Standing",
+            "required": [
+              "answer"
+            ],
+            "properties": {
+              "answer": {
+                "type": "boolean"
+              },
+              "comment": {
+                "type": "string",
+                "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+              }
+            },
+            "x-curation": {
+              "flagWhen": true
+            },
+            "description": "Check the proposal's funding disclosures (Acknowledgements) against the declared project IDs, the project website, the Milestone Module, and other sources. _Has the team failed to disclose an active funded commitment (theirs or any member's, in any ecosystem), or failed to disclose funding, past or present, for the same or substantially similar work as this proposal? Or does the team have an active Catalyst-funded project more than 90 days behind schedule or in delivery over 12 months and still incomplete (for example, overdue milestones or a proof-of-achievement past its deadline), or more than three active Catalyst projects at submission?_"
+          },
+          "q03": {
+            "type": "object",
+            "title": "Team & Credentials",
+            "required": [
+              "answer"
+            ],
+            "properties": {
+              "answer": {
+                "type": "boolean"
+              },
+              "comment": {
+                "type": "string",
+                "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+              }
+            },
+            "x-curation": {
+              "flagWhen": true
+            },
+            "description": "_Is the team not properly identified (members or key contributors unnamed, or roles not stated), or are key references (LinkedIn/portfolio/GitHub) missing or unverifiable (e.g. empty or newly created profiles)?_ Judge whether the team is identified and verifiable; whether the experience is strong is the panel's to score."
+          },
+          "q04": {
+            "type": "object",
+            "title": "Scope Mismatch",
+            "required": [
+              "answer"
+            ],
+            "properties": {
+              "answer": {
+                "type": "boolean"
+              },
+              "comment": {
+                "type": "string",
+                "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+              }
+            },
+            "x-curation": {
+              "flagWhen": true
+            },
+            "description": "_Is the proposal marketing-only, dev-tooling, or otherwise outside the category scope?_"
+          },
+          "q05": {
+            "type": "object",
+            "title": "Integration Eligibility",
+            "required": [
+              "answer"
+            ],
+            "properties": {
+              "answer": {
+                "type": "boolean"
+              },
+              "comment": {
+                "type": "string",
+                "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+              }
+            },
+            "x-curation": {
+              "flagWhen": true
+            },
+            "description": "_Does the proposed integration fail to target an eligible standard / area of interest (Oracles, Stablecoins, CIP-0113, or CIP-0170), or is it built on the wrong standard?_"
+          },
+          "q06": {
+            "type": "object",
+            "title": "Product Maturity",
+            "required": [
+              "answer"
+            ],
+            "properties": {
+              "answer": {
+                "type": "boolean"
+              },
+              "comment": {
+                "type": "string",
+                "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+              }
+            },
+            "x-curation": {
+              "flagWhen": true
+            },
+            "description": "_Is the team's existing product below TRL 5, or is its maturity not evidenced?_"
+          },
+          "q07": {
+            "type": "object",
+            "title": "Timeline",
+            "required": [
+              "answer"
+            ],
+            "properties": {
+              "answer": {
+                "type": "boolean"
+              },
+              "comment": {
+                "type": "string",
+                "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+              }
+            },
+            "x-curation": {
+              "flagWhen": true
+            },
+            "description": "_Does the timeline exceed 4 months, or is it unrealistic for the proposed work?_"
+          },
+          "q08": {
+            "type": "object",
+            "title": "Retroactive Funding",
+            "required": [
+              "answer"
+            ],
+            "properties": {
+              "answer": {
+                "type": "boolean"
+              },
+              "comment": {
+                "type": "string",
+                "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+              }
+            },
+            "x-curation": {
+              "flagWhen": true
+            },
+            "description": "_Do the requested funds cover already-completed work rather than future activities, or include a prohibited use - paying or incentivising users to transact (ADA giveaways, airdrops, transact-to-earn), speculation, or re-granting?_"
+          },
+          "q09": {
+            "type": "object",
+            "title": "Budget",
+            "required": [
+              "answer"
+            ],
+            "properties": {
+              "answer": {
+                "type": "boolean"
+              },
+              "comment": {
+                "type": "string",
+                "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+              }
+            },
+            "x-curation": {
+              "flagWhen": true
+            },
+            "description": "The form does not collect a line-item budget, so flag missing or incoherent spend-to-deliverable logic, not the absence of a detailed breakdown. _Is the requested amount unjustified by the milestone outputs - e.g. do the M1 deliverables or the high-level use of funds fail to account for the funding requested?_"
+          },
+          "q10": {
+            "type": "object",
+            "title": "Target Credibility",
+            "required": [
+              "answer"
+            ],
+            "properties": {
+              "answer": {
+                "type": "boolean"
+              },
+              "comment": {
+                "type": "string",
+                "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+              }
+            },
+            "x-curation": {
+              "flagWhen": true
+            },
+            "description": "The declared adoption target should be defensible as ambitious-but-realistic against the proposal's own usage plan; the attestation is a proposer claim this flag disputes with evidence. _Is the target indefensible - either sandbagged artificially low to guarantee an easy clear, or inflated beyond what the team, traction, and go-to-market evidence support?_"
+          },
+          "q11": {
+            "type": "object",
+            "title": "Genuine Usage",
+            "required": [
+              "answer"
+            ],
+            "properties": {
+              "answer": {
+                "type": "boolean"
+              },
+              "comment": {
+                "type": "string",
+                "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+              }
+            },
+            "x-curation": {
+              "flagWhen": true
+            },
+            "description": "The usage model should be built on real external users. _Does it lack concrete sources of usage (named channels, existing users, or partners with rough volumes), give no first-two-weeks post-launch plan, or rely on usage from the team's own or sponsored wallets?_"
+          },
+          "q12": {
+            "type": "object",
+            "title": "Partner ID",
+            "required": [
+              "answer"
+            ],
+            "properties": {
+              "answer": {
+                "type": "boolean"
+              },
+              "comment": {
+                "type": "string",
+                "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+              }
+            },
+            "x-curation": {
+              "flagWhen": true
+            },
+            "description": "_Are the named partners, enterprises, or third parties the proposal depends on unidentified, or referenced without verifiable evidence the partnership exists? (The standard providers proposers integrate, an oracle or a stablecoin, are not partners and need no proof.)_"
+          },
+          "q13": {
+            "type": "object",
+            "title": "Technical Approach",
+            "required": [
+              "answer"
+            ],
+            "properties": {
+              "answer": {
+                "type": "boolean"
+              },
+              "comment": {
+                "type": "string",
+                "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+              }
+            },
+            "x-curation": {
+              "flagWhen": true
+            },
+            "description": "_Are the technical plan and architecture unclear, missing, or not credible?_"
+          },
+          "q14": {
+            "type": "object",
+            "title": "Insufficient Information",
+            "required": [
+              "answer"
+            ],
+            "properties": {
+              "answer": {
+                "type": "boolean"
+              },
+              "comment": {
+                "type": "string",
+                "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+              }
+            },
+            "x-curation": {
+              "flagWhen": true
+            },
+            "description": "_Does the submission lack the information the decision panel needs to evaluate capability or legitimacy (empty claims fulfilling requirements pro forma)?_"
+          },
+          "q15": {
+            "type": "object",
+            "title": "Other",
+            "required": [
+              "answer"
+            ],
+            "properties": {
+              "answer": {
+                "type": "boolean"
+              },
+              "comment": {
+                "type": "string",
+                "description": "**Mandatory rationale field:** Free-text evidence pointing to the exact submission field (section, character block, or link) that triggered the violation, referencing the specific Category Brief or Fund Rules item. The quality bar applies directly:\n\n* *Rejected:* \"This proposal's budget is vague. Feels non-compliant.\"\n* *Accepted:* \"Violates Item XYZ of the Category Brief, which requires a detailed 3-month milestone plan. The Roadmap section only lists 'Q1 - Launch' with no details.\"\n* Clear, concise, verifiable - no essay required. Blind box-ticking without rationale is prohibited."
+              }
+            },
+            "x-curation": {
+              "flagWhen": true
+            },
+            "description": "A clear breach of the Category Brief or Fund Rules that none of the types above captures; only use it when you can name the specific rule. _Does the proposal breach a specific Category Brief or Fund Rules item not covered above?_"
+          }
+        }
+      }
+    },
+    "params": {
+      "title": {
+        "maxLength": 60
+      },
+      "tagline": {
+        "maxLength": 200
+      },
+      "requestedAmount": {
+        "max": 200000,
+        "min": 50000
+      }
+    }
+  }
+}
