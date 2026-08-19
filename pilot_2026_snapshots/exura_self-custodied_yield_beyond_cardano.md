@@ -5,14 +5,14 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 13
+- **Revision:** 19
 - **Proposer:** `stake1uxqs8hmgwkqza9gp7zqh8sqx5entwhudla5rwc39ufw9anq5set5u`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-19T16:19:26.014000+00:00
+- **Last finalized:** 2026-08-19T21:59:14.549000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
-TRL 7 - System prototype demonstrated in operational environment
+TRL 6 - Technology demonstrated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
@@ -38,29 +38,29 @@ No repayment terms or revenue share. We give back the primitive: the verifier [c
 
 Who transacts: the depositor, from their own wallet. The binding attestation moves no USDCx, so we do not count it. What counts is the deposit, a USDCx burn we construct and the user signs, one per deposit. Exits and later instructions are signed messages, not transactions, and an EVM-side arrival produces no Cardano activity.
 
-How often: this is a savings position, and people add to savings. We assume three to five deposits per user across the window, and each vault we list adds another occasion to deposit rather than another way to split one.
+How often: this is a savings position, and people add to savings. We assume five deposits per user across the window.
 
-The declared ₳375 is 1,113 burns at the measured 0.337 ADA. At four deposits per user that is about 280 depositors, at five about 225, from a launch cohort we expect in the low hundreds through our own announcement and word of mouth. For scale, 134 distinct wallets ran this corridor unprompted in the last 60 days with no product asking them to.
+The declared ₳375 is 1,113 burns at the measured 0.337 ADA, putting the cohort at about 223 depositors. The window is 35 days - one entry epoch and six floored epochs - so it straddles two monthly cycles rather than sitting inside one, and a position added to on any regular rhythm contributes more than once.
 
-No user will be paid, reimbursed or fee-subsidised to generate counted activity, our own wallets are declared and excluded, and we onboard in waves so the count comes from steady use rather than a launch-day spike the daily cap would discard.
+The audience is measurable, not editorial: 134 distinct wallets burned USDCx through xReserve in the last 60 days, unprompted. That flow already happens, by hand, ending in a second wallet on another chain. Here the key controlling it stays on Cardano. Our cohort is roughly 1.7 times that population - a floor on demonstrated appetite, not a ceiling.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Onboarding is three steps: connect the wallet they have, sign to bind, sign the deposit.
+Onboarding is 3 steps: connect the wallet they have, sign to bind, sign the deposit.
 
-The first fourteen days after go-live:
+The first 14 days after go-live:
 
-Days 1-2. Announce the dashboard on our channels and in the Cardano venues its audience reads, with the walkthrough video.
+Days 1-2. Announce on our channels and the Cardano venues its audience reads, with the walkthrough video.
 
 Days 3-5. Deposit flow open to a first wave, office hours, mainnet activity published as it lands.
 
-Days 6-10. Second wave, with whatever the first stumbled on fixed.
+Days 6-10. 2nd wave, with whatever the first stumbled on fixed.
 
-Days 11-14. Third wave, first numbers published, same material into Catalyst's calls.
+Days 11-14. 3rd wave, first numbers published, same material into Catalyst's calls.
 
-Waves are deliberate: the daily cap discards a launch-day spike while per-epoch floors reward steady cadence, so onboarding is paced to the measurement structure.
+Waves are deliberate: the daily cap discards a launch spike, per-epoch floors reward cadence.
 
-Reach we can show: our own account peaks at 600-800 impressions on a single day and about 2K in a month, on rare and mostly technical posts. The audience is checkable on-chain: 134 distinct wallets burned USDCx through xReserve in the last 60 days, unprompted by any product.
+Reach, both directions. Editorial: our X account peaks at 600-800 impressions a day, \~2K a month, on rare technical posts - the Cardano audience is largely on X, so that is the honest size of our broadcast. On-chain: 134 distinct wallets burned USDCx in the last 60 days, unprompted, checkable by anyone. The plan leans on the second: being the interface on a rail people already use without one.
 
 ### Is the underlying project open source?
 
@@ -80,7 +80,7 @@ Doing it yourself keeps the keys, at the cost of a second wallet, a seed phrase,
 
 Exura runs in production on full Cardano mainnet history: an indexer that reconstructs and tracks DeFi positions, nine protocol integrations, a chain-derived price oracle, and the API and dashboard above it. None of it is simulated.
 
-  What it is not yet is announced. The dashboard is live but tracks a limited set of accounts while we finish the surface, so a strict reader could call it 6, and we would not argue. The engine has been running on real chain data for a long time; the public front is what remains.
+  What it is not yet is announced. The dashboard is live but tracks a limited set of accounts while we finish the surface. The engine has been running on real chain data for a long time; the public front is what remains.
 
   Nothing here depends on that being finished first. The integration lands on the same indexer, pricing and dashboard, which is why one person can deliver it in three months: the hard part that usually eats a pilot, tracking and valuing positions across a whole chain, already runs.
 
@@ -148,13 +148,13 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Without funding it still gets built, slower and between other work, and reaches users with no external review of the contracts holding their permissions. That is the version we would rather not ship.
+An independent review is the largest line in this budget and the reason the ask is the size it is. We will commission as much of it as the funding supports, and will not promise a scope an exchange rate can take away.
 
-An independent review is the largest line in this budget and the reason the ask is the size it is. We will commission as much of it as the funding supports, and we will not promise a scope that an exchange rate can take away.
+Three months to mainnet is full-time work, and the infrastructure is not cheap: nodes, indexers and archives on Cardano, provisioning and gas on the EVM side, through the window.
 
-Three months to mainnet is full-time work, and the infrastructure is not cheap either: chain followers, indexes and archives on Cardano, provisioning and gas on the EVM side, through the measurement window.
+The target sits below Ambitious because the meter sees only part of the flow: the deposit burn counts, the mint carrying the value is Circle-paid and counts zero, and the registration every user must sign is outside this track. 375 ADA is what remains at the measured 0.337 per burn.
 
-The build tranche is sized to deliver M1. Everything beyond that, review included, follows the receipts.
+The build tranche is sized to deliver M1. Everything beyond, review included, follows the receipts.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 

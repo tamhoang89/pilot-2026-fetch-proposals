@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 39
+- **Revision:** 49
 - **Proposer:** `stake1u8x4lqtk6czqrlhjqyqlp8a8y7u0ekcxytg6796nm2xnxxsrvccyp`
 - **Funding requested:** ₳70,000
-- **Last finalized:** 2026-08-18T15:32:01.891000+00:00
+- **Last finalized:** 2026-08-19T21:42:10.177000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -18,18 +18,18 @@ TRL 7 - System prototype demonstrated in operational environment
 
 I'm Daniel Olanrewaju, solo founder.
 
-Links: LinkedIn ([linkedin.com/in/devfreeguy](http://linkedin.com/in/devfreeguy)), GitHub ([github.com/devfreeguy](http://github.com/devfreeguy)), X ([@devfreeguy](https://x.com/devfreeguy))
+Links: [LinkedIn](https://www.linkedin.com/in/devfreeguy/), [GitHub](https://github.com/devfreeguy), X (@devfreeguy)
 
 Shipped projects:
 
-- SkillSwap: zero to Cardano mainnet in 12 weeks. Awarded Cardano Pie by Gimbalabs and the Cardano Foundation. Live: [myskillswap.xyz](http://myskillswap.xyz). Repo: [github.com/devfreeguy/skill-swap](http://github.com/devfreeguy/skill-swap)
-- Tagwise: Solana identity protocol mapping @handles to wallets. On-chain program, published SDK, docs site. Site: [tagwise.me](http://tagwise.me). SDK: [npmjs.com/package/@tagwise/tip-sdk](http://npmjs.com/package/@tagwise/tip-sdk)
+- SkillSwap: zero to Cardano mainnet in 12 weeks. Awarded Cardano Pie by Gimbalabs and the Cardano Foundation. Live: [myskillswap.xyz](http://myskillswap.xyz). Repo: [github](https://github.com/devfreeguy/skill-swap). X: @myskillswap
+- Tagwise: Solana identity protocol mapping @handles to wallets. On-chain program, published SDK, docs. Site: [tagwise.me](http://tagwise.me). SDK: [tip-sdk](https://www.npmjs.com/package/@tagwise/tip-sdk)
 
-I will implement KERI integration myself, using the CF Reeve reference implementation (cf-reeve-platform) as the blueprint. My identity protocol work on Tagwise (AID-like resolution, wallet-derived identity, on-chain state) directly maps to the KERI/ACDC path. If specialized consultation is needed, grant funds allow engaging short-term advisors.
+I will implement KERI integration myself, using the CF Reeve reference implementation ([cf-reeve-platform](https://github.com/cardano-foundation/cf-reeve-platform)) as the blueprint. My identity protocol work on Tagwise (AID-like resolution, wallet-derived identity, on-chain state) directly maps to the KERI/ACDC path. If specialized consultation is needed, grant funds allow engaging short-term advisors.
 
-Community partner: Metac ([metacc.online](http://metacc.online)), a tech education nonprofit in Nigeria where I volunteer as instructor. Proof: [instagram.com/p/DUOcKTRjOj3](http://instagram.com/p/DUOcKTRjOj3/?img_index=6)
+Community partner: Metac ([metacc.online](http://metacc.online)), a tech education nonprofit in Nigeria where I volunteer as instructor. [LOI](https://drive.google.com/file/d/1SJnFSiznZ5LSBzEDNDPmLXHghy2QvnVe/view?usp=sharing)
 
-Confirmed team member: Akindipe Emmanuel George, UI/UX Designer ([linkedin.com/in/akindipe-emmanuel-george](http://linkedin.com/in/akindipe-emmanuel-george-5591702a6)), joining for the pilot.
+Confirmed team member: Akindipe Emmanuel George, UI/UX Designer ([LinkedIn](https://www.linkedin.com/in/akindipe-emmanuel-george-5591702a6)), joining for the pilot.
 
 ### Eligible area
 
@@ -41,35 +41,29 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Genuine usage generation is baked into SkillSwap's core loop, not bolted on.
+Who: Metac students in our Controlled Pilot, Cardano/IOG/Catalyst Discord members, and users from 2 nonprofit partners. Reach: 50 students, 1,200 Discord members, and 115 existing users for referrals.
 
-Who transacts: users completing peer-to-peer skill swaps. Every completed swap generates one credential issuance and one on-chain anchor. Revocations and updates add more on-chain activity.
+Why: SkillSwap’s core loop requires a swap to issue a verifiable KERI credential. Users exchange skills to learn and teach, while each completed swap creates on-chain proof of skill attainment through 1 anchor transaction. Credentials build reputation and unlock future opportunities.
 
-Why they transact: users pay the 2 ADA commitment fee because it unlocks a skill exchange they want. The credential issued at completion is a permanent, portable proof of that exchange, creating an incentive loop where credential value grows with each swap.
+How often: 145 swaps in 90 days, growing from 0.23/day to \~1.6/day. Month 1: 30 swaps from the Metac pilot and X launch. Month 2: 55 from community Discords. Month 3: 60 from referrals, network effects, and 2nd nonprofit onboarding.
 
-How often: baseline is 7 completed mainnet swaps and 50+ users since going live July 19th. Realistic 3-month projection:
+Justification: The target is reasonable but ambitious, based on audience, conversion, and frequency by channel. It is \~2x our current run-rate. Month 3 contributes only 41%, reducing single-point risk. Stretch goal: 250 swaps with 2 additional nonprofit partners.
 
-- Month 1: 20-40 swaps (KERI setup + growth push begins)
-- Month 2: 80-150 swaps (credential feature live + paid promotion)
-- Month 3: 200-350 swaps (network effects from portable credentials)
-
-Fee math: \~600 CIP-0170 anchor transactions × \~0.3 ADA average network fee = \~180 ADA. Committed target of 200 ADA in Cardano network fees provides a small buffer.
-
-Note: the 2 ADA commitment fee goes to SkillSwap treasury, not the Cardano network. It is NOT counted in this target.
+Fee target: 145 swaps generate \~350 transactions including swaps, anchors, and refunds. At 0.3 ADA average, this is \~105 ADA. Our Catalyst target is 110 ADA. The 2 ADA commitment fee is treasury revenue.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Current channels driving 50+ users and 7 mainnet swaps organically since going live July 19th:
+Current channels driving 50+ users and 7 mainnet swaps organically since July 19th:
 
-1. X/Twitter (@myskillswap, @devfreeguy) — 12 weekly build-in-public posts under #gimbalabs #pieceofpie #hackathon drove community awareness and testnet users
-2. Gimbalabs Discord and Cardano developer channels
-3. Metac nonprofit partnership (<https://www.metacc.online/>) — I volunteer as an instructor, onboarding students directly. Proof: <https://www.instagram.com/p/DYhHzufM5wo/> and <https://www.instagram.com/p/DR7lVPJDBww/>
+1. X/Twitter (@myskillswap, @devfreeguy) - 12 weekly build-in-public posts under #gimbalabs #pieceofpie #hackathon
+2. Cardano developer communities and Discord channels
+3. Metac nonprofit partnership ([metacc.online](http://metacc.online)) - I volunteer as instructor. Proof: [post 1](https://www.instagram.com/p/DYhHzufM5wo/) and [post 2](https://www.instagram.com/p/DR7lVPJDBww/)
 
 Post-grant growth plan:
 
-1. Coordinated growth push aligned with the credential feature going live
-2. Paid promotion on X and LinkedIn targeting emerging market developers and career switchers
-3. Content marketing: build-in-public case studies, credential portability guides, success stories
+1. Launch announcement on X when credentials go live
+2. Community education in Cardano Community Discord, IOG Technical Discord, and Catalyst Discord via showcase posts, CIP-0170 content, and demo sessions
+3. Content marketing: credential portability guides, success stories, demo videos
 4. Additional tech education nonprofit partnerships following the Metac template
 5. Cardano ecosystem cross-promotion via Veridian and Cardano Foundation channels
 
@@ -91,7 +85,7 @@ SkillSwap wins on three axes: 1) money-free exchange lowers the barrier for emer
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-SkillSwap is operational on Cardano mainnet at <https://myskillswap.xyz> with real users and real ADA transactions. Core systems validated:
+SkillSwap is operational on Cardano mainnet at [myskillswap.xyz](https://myskillswap.xyz) with real users and real ADA transactions. Core systems validated:
 
 - CIP-8 wallet authentication with cryptographic signature verification
 - 2 ADA commitment fee payments and automatic on-chain refunds on decline
@@ -111,8 +105,8 @@ Current architecture (live on mainnet):
 1. Wallet auth via CIP-8 signature verification using @cardano-foundation/cardano-verify-datasignature
 2. CIP-30 transaction signing in user wallets (Eternl, Nami, Lace) for 2 ADA commitment fees
 3. Multi-provider tx submission via Blockfrost (primary), Koios, Maestro (fallback) for redundancy
-4. Proof anchoring via Cardano metadata transactions under a registered metadata label (5757)
-5. Automatic refund path via a platform hot wallet with signed CBOR verification before dispatch
+4. Proof anchoring via Cardano metadata transactions under registered metadata label (5757)
+5. Automatic refund path via platform hot wallet with signed CBOR verification before dispatch
 6. Public explorer aggregating completed swaps with anchor tx links
 
 CIP-0170 addition:
@@ -121,10 +115,10 @@ CIP-0170 addition:
 2. ACDC credential schema for skill attestations (subject: user wallet/AID; claim: skill; evidence: swap ID + counterparty confirmation)
 3. SAID computation per credential
 4. SAID anchored in Cardano tx metadata riding the existing anchoring path
-5. Public verifier endpoint resolving the anchor, checking issuer KEL, verifying ACDC signature, and confirming on-chain timestamp
-6. Optional export to Veridian for user-owned credential portability
+5. Public verifier endpoint resolving anchor, checking issuer KEL, verifying ACDC signature, confirming on-chain timestamp
+6. Optional export to Veridian (pending Veridian API availability) for user-owned credential portability
 
-Why this fits: KERI is ledger-independent by design. Cardano provides the tamper-evident, censorship-resistant, publicly verifiable timestamp no off-chain notary can offer. The chain is the notary; KERI is the identity layer.
+Why this fits: KERI is ledger-independent by design. Cardano provides the tamper-evident, censorship-resistant, publicly verifiable timestamp no off-chain notary can offer.
 
 ### Fits the timeline
 
@@ -160,10 +154,7 @@ Evidence of demand:
 - Went live on Cardano mainnet July 19th
 - 50+ registered users across multiple countries
 - 7 completed mainnet swaps, all anchored on-chain and publicly verifiable at [myskillswap.xyz/explorer](http://myskillswap.xyz/explorer)
-- Real user acquisition from Metac (<https://www.metacc.online/>), a tech education nonprofit in Nigeria where I volunteer as an instructor. Proof: <https://www.instagram.com/p/DUOcKTRjOj3/?img_index=6>
-- Testnet phase generated 18 additional completed swaps
-
-Every user and swap so far is entirely organic, driven by build-in-public content without any paid marketing. This is early real-world traction, and grant funding is the leverage point that turns organic growth into scale.
+- Metac pilot cohort (<https://www.metacc.online/>) — a tech education nonprofit in Nigeria where I volunteer as instructor. LOI: <https://drive.google.com/file/d/1SJnFSiznZ5LSBzEDNDPmLXHghy2QvnVe/view?usp=sharing> Every user and swap so far is entirely organic, driven by build-in-public content without any paid marketing. Grant funding is the leverage point that turns this traction into scale.
 
 Market signal: platforms like Simbi, Barterchain, and Barter Bloc show demand for money-free skill exchange. None offer portable, on-chain verifiable credentials. SkillSwap is the only platform integrating Cardano-anchored verifiable identity.
 
@@ -186,7 +177,7 @@ Why usage continues post-grant: the commitment fee alone covers infrastructure a
 
 ### On-chain identity (CIP-0170) - expected transaction count
 
-600
+350
 
 ### Named, verifiable team
 
@@ -198,11 +189,23 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Funding enables three things that would not happen otherwise:
+Without this grant, the CIP-0170 integration cannot happen. SkillSwap is bootstrapped alongside contract work. Grant funding enables full-time delivery within the pilot window.
 
-1. Full-time build focus. SkillSwap is currently bootstrapped alongside contract work. Grant funding removes that constraint, enabling dedicated delivery of the CIP-0170 integration within the pilot window.
-2. Infrastructure investment: dedicated KERIA agent hosting, witness node participation, and security review of the KERI integration before mainnet credential issuance begins.
-3. User acquisition and growth: paid promotion budget to drive real swap volume during the measurement window. All growth spending targets organic user actions (skill exchanges), not transaction incentives. No ADA giveaways, airdrops, or transact-to-earn schemes.
+High-level spend:
+
+Development (Daniel, 3 months): 28,000 ADA KERIA integration, ACDC schema, Veridian export, verifier endpoint
+
+Security Review (MLabs Group Ltd): 10,500 ADA KERI integration audit report
+
+Infrastructure: 7,000 ADA KERIA agent hosting, witness nodes, Blockfrost/Koios
+
+Design (Akindipe Emmanuel George, 3 months): 8,400 ADA Credential flow UX, verifier UI
+
+Community Education: 10,500 ADA 1 Lagos workshop, 1 Abuja workshop, 1 online workshop. No paid ads, no token incentives, no airdrops. Fund Rules Section 3 compliant.
+
+Ops + Contingency: 5,600 ADA
+
+Total: 70,000 ADA
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -214,43 +217,41 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-Week 1-2 (Days 1-14):
+**Week 1-2: Pilot Launch**
 
-- Deploy KERIA agent, establish issuer AID with witnessed KEL
-- Draft ACDC credential schema
-- Begin signify-ts integration and local prototyping
-- Onboard 20+ users via Metac session, X announcement post
-- Target: 10 new completed swaps on mainnet
+Deliverables: KERIA agent deployed to staging. Metac onboarding for 50 students. X launch + demo video.
 
-Week 3-4:
+Measurable: 20 wallets created, 5 swaps completed.
 
-- signify-ts integrated into SkillSwap backend
-- Credential issuance on swap completion (testnet)
-- SAID computation pipeline working end to end
-- 10-20 new swaps.
+**Week 3-4: KERI Backend**
 
-Week 5-6:
+Deliverables: signify-ts integrated. SAID pipeline operational. Test suite passes.
 
-- Metadata anchoring integrated into existing proof path
-- Public verifier endpoint at /verify/\[said\]
-- Verified credential badges on reputation pages
+Measurable: 100% test credentials generate valid SAID.
 
-Week 7-8:
+**Week 5-6: Testnet**
 
-- Mainnet deployment of credential issuance
-- Growth push with credential feature live
+Deliverables: Credential issuance on swap. Metadata anchoring live. Public verifier at /verify/\[said\].
 
-Week 9-10:
+Measurable: 10 testnet credentials issued and verifiable.
 
-- Veridian export live (credential portability)
-- Security review of KERI integration
-- Public developer guide for CIP-0170 verification
+**Week 7-8: Security Audit**
 
-Week 11-12:
+Deliverables: Audit by MLabs Group Ltd. All critical issues resolved.
 
-- Marketing push targeting emerging market users
-- Documentation finalized
-- Minimum 200 credentials issued on mainnet
+Measurable: Audit report with 0 criticals.
+
+**Week 9-10: Mainnet**
+
+Deliverables: Audited credential issuance deployed to Cardano mainnet. Public launch.
+
+Measurable: 10 mainnet credentials issued.
+
+Week 11-12: Adoption
+
+Deliverables: 3 workshops: Lagos, Abuja, Online. CIP-0170 docs published.  
+
+Measurable: 20 mainnet credentials. 90-day total: 145 swaps.
 
 ### How far along is the integration you're proposing, today?
 
@@ -258,7 +259,7 @@ TRL 3 - Experimental proof of concept
 
 ### On-chain identity (CIP-0170) - fee target (ADA)
 
-200
+110
 
 ### Clear budget
 
@@ -334,6 +335,6 @@ Yes
 
 CIP-0170 integration is at experimental proof-of-concept stage. Rationale:
 
-The core anchoring path SkillSwap already uses (metadata transactions via Blockfrost/Koios/Maestro fallback) is the same path CIP-0170 will ride on. This is proven and mainnet-live at TRL 9.
+The core anchoring path SkillSwap already uses (metadata transactions via Blockfrost/Koios/Maestro fallback) is the same path CIP-0170 will ride on. This is proven and mainnet-live.
 
-However, the KERI-specific layer (issuer AID setup, KERIA agent configuration, ACDC credential schema, SAID computation, signify-ts integration on the edge, and public verifier endpoint) has not yet been implemented. The Cardano Foundation's Reeve platform (cardano-foundation/cf-reeve-platform) provides the reference implementation to build against. Concept is fully formulated and architecturally scoped. First working prototype is the primary milestone deliverable.
+However, the KERI-specific layer (issuer AID setup, KERIA agent configuration, ACDC credential schema, SAID computation, signify-ts integration, and public verifier endpoint) has not yet been implemented. The Cardano Foundation's Reeve platform ([cf-reeve-platform](https://github.com/cardano-foundation/cf-reeve-platform)) provides the reference implementation I will build against. Concept is fully formulated and architecturally scoped.

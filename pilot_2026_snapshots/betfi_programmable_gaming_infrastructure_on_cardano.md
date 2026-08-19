@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 15
+- **Revision:** 16
 - **Proposer:** `stake1u8wlhvams7vckmfrrff7j7lyc9eaqwezx9cym5ln6pzxm3gta7m74`
 - **Funding requested:** ₳50,000
-- **Last finalized:** 2026-08-13T17:57:39.223000+00:00
+- **Last finalized:** 2026-08-19T21:50:52.032000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,15 +16,13 @@ TRL 9 - Actual system proven in operational environment
 
 ### Why is your team well-suited to deliver this?
 
+**TO CATAYLYST TEAM: WE’VE MADE NUMEROUS REVISIONS TO THIS PROPOSAL BASED ON THE FEEDBACK PROVIDED.**
+
+At this point, would it be possible to schedule a video call so we can walk you through the BetFi platform and the proposal directly? The application has been returned multiple times, even after addressing the requested revisions, and we want to make sure we fully understand exactly what is still missing.
+
+We’re happy to demonstrate the live platform, show our existing usage, and answer any questions in real time. We want to get this right, but the repeated back-and-forth has become frustrating, and a short call may be the most effective way to resolve any remaining concerns.
+
 Johnny Tran, Founder of Risk Gaming Co. and BetFi, is the sole proposer and key contributor responsible for delivering this Catalyst project. I have been active within the Cardano ecosystem since 2018, working across gaming, blockchain products and community development.
-
-I previously led U.S. operations for Abhiwan Technology, working closely with their development team and Cardano projects on the delivery of gaming products including Walkers Fit, Ultimate Domination, Diamond Hooves horse racing game and the BankFi Monopoly game. This experience gave me direct involvement in taking blockchain gaming concepts from planning through development and launch.
-
-I later founded Risk Gaming and BetFi, a live Cardano gaming platform offering Poker, Multi Table Tournaments and Sportsbook. BetFi’s initial development was also supported by the experienced development team at Abhiwan Technology.
-
-As BetFi has evolved, I have become increasingly hands on with product development and now use AI development agents alongside my own work to accelerate development, testing and iteration.
-
-For this Catalyst project, I will lead the CIP 0113 integration, testing, mainnet deployment, adoption and ongoing operation.
 
 **Verifiable references:**
 
