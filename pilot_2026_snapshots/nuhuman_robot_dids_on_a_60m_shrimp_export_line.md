@@ -1,14 +1,14 @@
-# nuhuman: Robot DIDs on a $30M Shrimp Export Line
+# nuhuman: Robot DIDs on a $60M Shrimp Export Line
 
 > Every nuhuman robot at Coastal Corporation (NSE: COASTCORP) carries a DID. Every batch of shrimp is stamped on Cardano, QR verifiable by the buyer. Pilot signed for 120+ robotic cells.
 
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 26
+- **Revision:** 31
 - **Proposer:** `stake1u86sa7qzppfh24sugfdxasm0ye2cqp2f35n82yec06h7xsscfgpd9`
 - **Funding requested:** ₳150,000
-- **Last finalized:** 2026-08-19T22:38:47.855000+00:00
+- **Last finalized:** 2026-08-19T23:01:31.936000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -20,7 +20,7 @@ Sricharan Ganta (Founder & CEO)
 
 Scope: architecture, integration delivery, the Coastal relationship, program compliance, milestone reporting.
 
-Exp: 7+ yrs business, 4+ web3, MS Computer Science. Prior BD roles at Coastal Corporation (NSE: COASTCORP), his family's business; Coastal is named with written consent (MoU). [Linkedin](http://linkedin.com/in/sricharangm)\
+Exp: 7+ yrs business, 4+ web3, MS Computer Science. Prior BD roles at Coastal Corporation (NSE: COASTCORP); Coastal is named with written consent (MoU). [Linkedin](http://linkedin.com/in/sricharangm)\
 13 funded Catalyst projects; 1st place, Midnight hack at Rare Evo 2024, Built [Nucast](https://nucast.io)
 
 Vinayek S (Software Engineer)
@@ -172,9 +172,9 @@ CIP-0113 BatchPass policy, transfer and burn rules: 35,000\
 Signer onboarding, wallets, key ceremonies: 25,000\
 Public verifier, QR resolution, MIT SDK: 20,000\
 Mainnet deployment, security review, Demo Day: 15,000\
-Counsel on the fractionalization pathway: 10,000
+Beta fractionalization pathway for mainnet: 10,000
 
-The Preprod build was unfunded. 
+The Preprod build was unfunded.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -194,7 +194,7 @@ Live on Cardano mainnet by M1, demonstrated at Demo Day.
 4. Declared footprint published: policy IDs, script hashes, addresses, token names, message tag and our own wallets, all newly deployed.
 5. At least 3 independent runs of the flow on mainnet: QC release, counter-signature, mint, transfer, and one cycle closed by burn on receipt. Hashes mapped to steps.
 6. At least three signers live, holding their own keys & paying their own fees.
-7. Fractionalization: counsel engaged, engagement letter & a pathway memo published.
+7. Fractionalization: Complete technical pilot deployed on mainnet
 
 ### How far along is the integration you're proposing, today?
 
@@ -290,7 +290,7 @@ Neither open project overlaps this proposal in scope, budget or deliverables. Bo
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-Preprod only today. The counter-signature triangle exists there as AIDs, Issuer, QC Coastal and Auditor 01, CIP-170 authority complete. Nothing declared is on mainnet.
+Preprod only today. The counter-signature triangle exists there as AIDs, Issuer, QC Coastal and Auditor 01, CIP0170 authority complete. Nothing declared is on mainnet.
 
 What the grant adds:\
 Mainnet policy IDs and AIDs, newly deployed and declared at M1.\
@@ -299,4 +299,4 @@ Real signers in place of test AIDs, holding their own keys & paying their own fe
 The gate: a batch closes only when an independent signer countersigns the cell's claim.\
 BatchPass, a custody token minting on QC release, moving only to a credentialed importer, burning on receipt.\
 A free public verifier behind a QR on every batch.\
-Fractions stay gated tests, pending counsel.
+Fractionalization deployed for mainnet pilot

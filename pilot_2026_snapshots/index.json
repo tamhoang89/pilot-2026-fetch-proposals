@@ -51,7 +51,7 @@
   "e814dac5-59f4-417a-a9fe-190612502ba9": "mesh_-_programmable_tokens_with_utxos_sdk",
   "24adac50-786d-4507-8094-ae56f2faf578": "acespeak_speaking_passport",
   "0d74a1fe-a6f6-476c-ad92-a4371a385fcb": "urbanlink_cardano-powered_smart_mobility_network",
-  "2a025ec1-554d-415c-9245-2121dcc59956": "nuhuman_robot_dids_on_a_30m_shrimp_export_line",
+  "2a025ec1-554d-415c-9245-2121dcc59956": "nuhuman_robot_dids_on_a_60m_shrimp_export_line",
   "9a43bff1-3c78-4770-bace-01a62f15dada": "adabridge_cex-to-cardano_onramp_for_usdcx_eurcx_usycx",
   "44461169-ea16-44bb-8b56-f216196de608": "buy_me_cofee_support_ada",
   "1240e4ef-be3e-4a0a-8344-77fd638a6bc3": "cip-0170_identity_rails_for_global_medical_travel",
@@ -63,5 +63,7 @@
   "21418aa2-ff87-4fc7-a8f0-9fc4c226c058": "selkie_stablecoin_payments_to_any_social_handle",
   "f769ec6c-dc37-4e10-b428-399aa9c68e58": "stablecoin_microcredit_rails_for_micro-entrepreneurs",
   "928aaeb7-0137-43cb-bc8c-32144d343943": "unified_autonomous_finance_interface",
-  "45e3557c-757d-4507-8822-ba23514cc000": "d-appstore_utxostore"
+  "45e3557c-757d-4507-8822-ba23514cc000": "d-appstore_utxostore",
+  "6b3ab33f-b062-45e5-815c-d05d535b77ab": "oli_bringing_150000_learners_on-chain_with_cardano",
+  "82e8a622-bf9c-410b-89cd-4efee7f17a8e": "apex_digital_opportunities_talent_engagement_platform"
 }

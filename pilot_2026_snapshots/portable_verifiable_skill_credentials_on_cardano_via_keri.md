@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 49
+- **Revision:** 51
 - **Proposer:** `stake1u8x4lqtk6czqrlhjqyqlp8a8y7u0ekcxytg6796nm2xnxxsrvccyp`
 - **Funding requested:** ₳70,000
-- **Last finalized:** 2026-08-19T21:42:10.177000+00:00
+- **Last finalized:** 2026-08-19T22:59:04.862000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -41,15 +41,17 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Who: Metac students in our Controlled Pilot, Cardano/IOG/Catalyst Discord members, and users from 2 nonprofit partners. Reach: 50 students, 1,200 Discord members, and 115 existing users for referrals.
+**Who:** Metac controlled pilot 50 students, Cardano, IOG, Catalyst Discord members, 50 existing users. Reach: 50 Metac, 1200 Discord, 50 existing.
 
-Why: SkillSwap’s core loop requires a swap to issue a verifiable KERI credential. Users exchange skills to learn and teach, while each completed swap creates on-chain proof of skill attainment through 1 anchor transaction. Credentials build reputation and unlock future opportunities.
+**Why:** Core loop requires a completed swap to issue KERI credential. Each swap creates one anchor tx. Credentials build portable reputation.
 
-How often: 145 swaps in 90 days, growing from 0.23/day to \~1.6/day. Month 1: 30 swaps from the Metac pilot and X launch. Month 2: 55 from community Discords. Month 3: 60 from referrals, network effects, and 2nd nonprofit onboarding.
+**How often:** 145 swaps in 90 days, 0.23/day to 1.6/day. M1 30: Metac 22 plus X launch and re engagement 8. M2 55: Discord 35 plus Metac retention 20. M3 60: workshops 40 plus Metac 20.
 
-Justification: The target is reasonable but ambitious, based on audience, conversion, and frequency by channel. It is \~2x our current run-rate. Month 3 contributes only 41%, reducing single-point risk. Stretch goal: 250 swaps with 2 additional nonprofit partners.
+**Justification:** Audience x conversion x frequency. Base 7 swaps since July 19 equals 0.23/day. M1 1.0/day is 4.3x with Metac activation 60 percent and existing 20 percent. M3 is 41 percent of total, reducing single point risk. No ADA incentives funded by grant or counted.
 
-Fee target: 145 swaps generate \~350 transactions including swaps, anchors, and refunds. At 0.3 ADA average, this is \~105 ADA. Our Catalyst target is 110 ADA. The 2 ADA commitment fee is treasury revenue.
+**Stretch:** 250 swaps if 2 extra nonprofits confirmed in M2, excluded from base.
+
+**Fee target:** 145 swaps equals about 350 labeled txs with commitment, anchors, refunds. At 0.3 ADA avg, about 105 ADA. Target 110 ADA, 5 percent buffer. 2 ADA commitment fee is treasury revenue, excluded.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -189,23 +191,19 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Without this grant, the CIP-0170 integration cannot happen. SkillSwap is bootstrapped alongside contract work. Grant funding enables full-time delivery within the pilot window.
+Without grant CIP-0170 cannot ship. Bootstrapped alongside contract work. Grant enables full time delivery in pilot window.
 
-High-level spend:
+\
+High level spend tied to deliverables:\
+**Development** Daniel 3mo 28,000 ADA KERIA, ACDC, Veridian export, verifier delivers creds.\
+**Security MLabs** 10,500 ADA audit zero criticals delivers audited deploy.\
+**Infrastructure** 7,000 ADA 3mo only KERIA hosting, witnesses, Blockfrost Koios delivers uptime.\
+**Design** Akindipe 3mo 8,400 ADA credential flow UX and verifier UI.\
+**Community Education** 10,500 ADA 1 Lagos workshop co hosted with Metac plus 1 online plus guides. No paid ads, no token incentives, no airdrops. Fund Rules Sec 3 compliant.\
+**Ops** 5,600 ADA reporting and contingency.
 
-Development (Daniel, 3 months): 28,000 ADA KERIA integration, ACDC schema, Veridian export, verifier endpoint
-
-Security Review (MLabs Group Ltd): 10,500 ADA KERI integration audit report
-
-Infrastructure: 7,000 ADA KERIA agent hosting, witness nodes, Blockfrost/Koios
-
-Design (Akindipe Emmanuel George, 3 months): 8,400 ADA Credential flow UX, verifier UI
-
-Community Education: 10,500 ADA 1 Lagos workshop, 1 Abuja workshop, 1 online workshop. No paid ads, no token incentives, no airdrops. Fund Rules Section 3 compliant.
-
-Ops + Contingency: 5,600 ADA
-
-Total: 70,000 ADA
+\
+Total **70,000 ADA**.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
