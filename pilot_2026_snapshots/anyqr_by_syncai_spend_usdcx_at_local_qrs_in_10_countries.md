@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 33
+- **Revision:** 39
 - **Proposer:** `stake1u9mzuqyq7c0arwx9knnfccalzydln4mxcvzl6d83y8jn49q6wz2wf`
 - **Funding requested:** ₳140,000
-- **Last finalized:** 2026-08-19T02:30:48.982000+00:00
+- **Last finalized:** 2026-08-19T17:33:30.592000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,21 +16,26 @@ TRL 6 - Technology demonstrated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-Adnan has 4+ years of Web3 experience as a product architect across multiple startups. He previously served as a Research Partner at Levitate Labs, a Web3 venture capital firm and accelerator, and was a core contributor to UX research at Fetcch, a Web3 fintech research venture. He holds a degree in Data Science & Machine Learning and is now Founder and CEO of SyncAI Network 
+Delivery team:
 
-Adnan is also a two-time hackathon winner:
+Mohammed Adnan Khan: Lead Dev & Founder, SyncAI Network\
+[Linkedin](https://linkedin.com/in/adnan-khan-x/) | [Github](http://github.com/skepx) | [X](http://x.com/skepticus_x)\
+Work: Aiken validators, SDK, identity layer, multi-country deployment, milestone reporting.\
+4+ yrs Web3 product architect. Technical Lead at Gravity X Capital and Levitate Labs (Web3 VC/accelerator). Core contributor, UX research, Fetcch.
 
-→ AI Track — Cardano Hackathon, IBW Edition
+Jefferson Rohith Fernando — Marketing & BD Strategist\
+[Linkedin](http://linkedin.com/in/jeffersonrohithfernando/) | [He runs the social account of SyncAI ](http://x.com/SyncAI_Network)\
+Work: wallet/dApp integration outreach, marketing, user onboarding, multi-country partners. He led the BD that put SyncGovHub's DRep tooling live inside Begin Wallet.
 
-→ Best Oracle Tooling — Charli3 Oracles Hackathon
+Track record:\
+Adnan built [SyncGovHub](https://syncgovhub.com), A production Cardano governance tooling: | [Docs](https://docs.syncgovhub.com), live in Begin Wallet (governance tab, DRep explorer).\
+[Code for this proposal](https://github.com/SkepX/anyqr)\
+AI Track win, Cardano Hackathon IBW: [Code](https://github.com/SkepX/syncai-candi-server) | [Proof](http://x.com/emurgo_io/status/1996847152275116073)\
+Best Oracle Tooling, Charli3: [Code](http://github.com/SkepX/charli3-js) | [Proof](http://x.com/Oraclecharli3/status/2048119131447382294)
 
-These wins demonstrate his ability to rapidly design and deliver working blockchain solutions across AI and oracle tooling.
+Recruitment: none required
 
-SyncAI Network — [syncai.network](http://syncai.network)
-
-SyncAI is a blockchain development company with 11+ developers specializing in Web3 and AI. The team has worked with established projects including Biconomy, 0G, Nillion, NMKR, Iagon, IAMX and Nucast, contributing to products and infrastructure across the ecosystem.
-
-SyncAI has also built production-ready Cardano governance tooling designed for integration by wallets and dApps, with an existing integration in Begin Wallet. This experience building embeddable infrastructure is directly relevant to delivering utility that can be adopted across the Cardano ecosystem.
+One Proposal: Adnan's other Catalyst records are prior-fund submissions. In this round Adnan has submitted only this proposal
 
 ### Eligible area
 
@@ -42,15 +47,15 @@ anyqr pledges 5% of all protocol fee revenue to the Cardano treasury from our fi
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Every anyqr order is three onchain transactions, and users sign all three. The buyer signs twice: once to lock USDCx in escrow, once to confirm the shop was paid, and that second signature is the release itself, paying the merchant in the same transaction. The merchant signs once to accept. Every fee comes from a user's own wallet. No server keys, no sponsored fees (§5.2, §12.3).
+Every anyqr order is three onchain transactions, all signed and paid from users' own wallets: the buyer locks USDCx, the merchant accepts, the buyer confirms and that signature releases the funds. No server keys, no sponsored fees (§5.2, §12.3). Mainnet at week 10, ahead of the limit, gives a \~10 epoch window.
 
-Mainnet at month 1.5, not the three-month limit, gives a \~14 epoch window and lowers every epoch floor.
+STABLECOINS. The 76 Preprod transactions calibrate unit cost, not demand: 0.31 ADA per transaction, 0.91 per order. 700 orders is 2,100 transactions and \~640 ADA on a 301 floor: 14 orders a day across 15 merchants, under one each per day.
 
-WHO TRANSACTS. Buyers are Cardano holders in ten QR-first countries who want to spend, not sell. Merchants are P2P traders on Cardano, plus [p2p.me](http://p2p.me)'s network via dual routing. Buyers repeat because paying a shop is a habit, not a one-off conversion; merchants recycle capital several times a day for a 2% spread.
+IDENTITY, DERIVED. 15 merchants x (1 DID mint + 1 zkTLS proof) = 30. 120 buyers x 1 credential anchor at first order = 120. 700 orders x 1 reputation attestation at close = 700. Total 850. We declared 550, since orders opened late in the window close after it.
 
-ARITHMETIC. Preprod fees average 0.31 ADA per transaction, so an order costs about 0.91 ADA. 700 orders over 14 epochs is 2,100 transactions and \~640 ADA against a 301 floor: 10 orders a day from about 120 buyers and 12 merchants.
+REACHING IT. Conversion is our own GTM, merchants recruited off Binance P2P leaderboards, pay-to-QR embedded in Cardano wallets via our SDK, concierge onboarding, regional launches. The target assumes zero [p2p.me](http://p2p.me) fills which is a open smart contract, no LOI needed.
 
-WHY IT HOLDS. Twelve merchants keeps each wallet under the 35% cap, 70 days of volume clears the 20% daily cap, and we pay nobody to transact.
+CAPS. Fifteen merchants keeps each wallet near 2% of fees, 50 days clears the daily cap,.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -158,13 +163,25 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Without it, anyqr stays a Preprod demo. The contract works; what we cannot do on our own time is carry it to mainnet with everything above.
+Without it, anyqr stays a Preprod demo. The contract works; what we cannot fund on our own time is mainnet with everything above. Nothing here is retroactive.
 
-Build (\~60%): mainnet on USDCx/USDM; updated validator (merchant DID, fee split, QR onchain); dispute flow; merchant order book & onboarding (Reclaim proof, DID mint, reputation); parsers for the 9 QR standards beyond live UPI through VietQR and Yape; dual routing to [p2p.me](http://p2p.me); an npm SDK with wallet plugins; client-side signing, no server keys.
+BUILD 84,000ADA
 
-Grow (\~25%): recruiting first merchants in India, Brazil, Indonesia and Vietnam through outreach, education and support, never payment for transacting; concierge onboarding; a public dashboard day one.
+19,600 validator update: merged release, merchant DID in datum, fee split, QR onchain\
+19,600 CIP-0170 service: DID mint, Reclaim zkTLS, reputation attestation\
+14,000 merchant order book, onboarding, dispute path\
+14,000 nine QR parsers beyond live UPI\
+7,000 dual routing to [p2p.me](http://p2p.me)\
+9,800 npm SDK, wallet plugins, client-side signing
 
-Marketing (\~15%): local-language content and dev relations so wallets embed it.
+GROW 35,000ADA
+
+21,000 merchant recruitment in India, Brazil, Indonesia, Vietnam; never payment for transacting\
+14,000 concierge onboarding, public indexer and dashboard day one
+
+MARKET 21,000
+
+local-language content and dev relations so wallets embed the flow
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -176,7 +193,7 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-By week 6, anyqr is live on mainnet, real users completing USDCx orders.
+By week 10, anyqr will be live on mainnet, real users completing USDCx orders
 
 ESCROW. Updated Aiken validator on mainnet: release merged into the buyer's confirmation (three txs per order); a merchant timeout claim; merchant DID in the datum; a fee split at release; the QR address on chain, encrypted to the merchant
 
@@ -194,7 +211,7 @@ PROOF. 20+ orders from 10+ non-team wallets, 5+ DIDs
 
 ### How far along is the integration you're proposing, today?
 
-TRL 9 - Actual system proven in operational environment
+TRL 6 - Technology demonstrated in relevant environment
 
 ### On-chain identity (CIP-0170) - fee target (ADA)
 
@@ -288,12 +305,12 @@ LIVE:
 
 An escrow contract and MVP app on Preprod. Settlement is in tUSDM, a real Cardano native stablecoin, and a trade runs end to end: buyer locks, merchant accepts, buyer confirms, escrow releases with no merchant signature.
 
-WHAT THE GRANT BUILDS:
+WHAT THE GRANT BUILDS FOR A TRL 9:
 
-Merchant DID onboarding. Each mints a CIP-0170 DID and uses Reclaim Protocol for zkTLS social proofs. The proofs attach to the DID, completed orders write back which increases reputation score.
+Merchant DID onboard. Each mints a CIP0170 DID & uses ReclaimProtocol for zkTLS social proofs. The proofs attach to DID, completed orders write back which increases reputation score.
 
 \-updated validator: merchant DID in the datum, a fee split on Complete, the QR address on chain, encrypted\
--mainnet deployment with USDCx and USDM\
+-mainnet deployment with USDCx & USDM\
 -the dispute resolution flow\
 -dual routing, so an order reaches our book and [p2p.me](http://p2p.me) merchants\
 -nine countries beyond live UPI: PIX, QRIS, VietQR\

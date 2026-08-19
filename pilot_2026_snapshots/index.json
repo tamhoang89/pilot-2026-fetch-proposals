@@ -27,7 +27,7 @@
   "f0ea1b4c-12c1-42b9-8fde-cc80bf9942dd": "pay_by_cexplorer_stablecoin_checkout_for_any_business",
   "86fe3d78-e40f-4b03-877d-b3bcf3729280": "compliant_secondary_trading_for_real-world_assets_on_wayup",
   "08b8653b-5a1d-4b0f-bc01-6413d82d5f5c": "onchain_graveyard_-_soulbound_crypto_memorials_cip-0113",
-  "c39afd9a-c480-49e3-8536-50b4e3a02c81": "doba_world_usdm_checkout_for_collectibles",
+  "c39afd9a-c480-49e3-8536-50b4e3a02c81": "usdm_checkout_on_dobaworld",
   "790db18b-cac5-4e69-9040-2ebad0a64224": "cardano_wallet_check-in_for_the_bcn_nbo_event_platform",
   "d73d4c5e-db48-4ea7-b679-264c7f31ab6f": "atlas_stablecoin_perpetuals_on_cardano",
   "1f361bdc-6759-4766-80c7-d918574955cb": "procureflow_verified_quote_rail",
@@ -53,5 +53,10 @@
   "0d74a1fe-a6f6-476c-ad92-a4371a385fcb": "urbanlink_cardano-powered_smart_mobility_network",
   "2a025ec1-554d-415c-9245-2121dcc59956": "nuhuman_robot_dids_on_a_30m_shrimp_export_line",
   "9a43bff1-3c78-4770-bace-01a62f15dada": "adabridge_cex-to-cardano_onramp_for_usdcx_eurcx_usycx",
-  "44461169-ea16-44bb-8b56-f216196de608": "buy_me_cofee_support_ada"
+  "44461169-ea16-44bb-8b56-f216196de608": "buy_me_cofee_support_ada",
+  "1240e4ef-be3e-4a0a-8344-77fd638a6bc3": "cip-0170_identity_rails_for_global_medical_travel",
+  "86e09254-a48a-46e0-be74-1cb2e038f3da": "l-ada_deeper_stablecoin_dex_liquidity_on_cardano",
+  "d20f8dba-44b4-430c-a49f-928d5a8284ea": "regulated_brl_settlement_on_cardano",
+  "80db045b-f43d-4eeb-8858-ea400e884838": "minute_markets_integration_of_pyth_for_market_resolution",
+  "3dc276ab-446c-4ab2-b669-4eb57e1134c7": "adalink_stablecoin_tiplinks_live_broadcast_chat"
 }

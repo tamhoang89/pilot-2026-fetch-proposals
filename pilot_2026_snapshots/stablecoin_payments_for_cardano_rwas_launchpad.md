@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 33
+- **Revision:** 36
 - **Proposer:** `stake1u94sq8k5rjax9vf5eyyzdnmh0d7nmhgf38f4tchdnspyy5qrlwfym`
 - **Funding requested:** ₳145,000
-- **Last finalized:** 2026-08-18T10:56:41.317000+00:00
+- **Last finalized:** 2026-08-19T17:17:26.992000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -66,11 +66,11 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Our RWA platform is built on steady and sustainable portfolio growth, which attracts DCA buyers. The reduced barrier to entry due to stablecoins will encourage frequent purchases regardless of market activity. With over 1,000 users (400-500 active every month), we anticipate this product to generate several hundred qualifying transactions per month.
+Our RWA platform is built on steady & sustainable portfolio growth, which attracts DCA buyers. We will target 3 transactions per user/month for our active \~450 monthly users, yielding 1,350 transactions per month. We target a 40% stablecoin usage rate for our RWA platform due to the strong fit. This will facilitate 1,620 transactions in the target period. This will serve as the transaction backbone to maintain our "rhythm".
 
-For our launchpad, stablecoin integrations will enable risk-averse companies to try their hand at fundraising. Due to the nature of a launchpad, these transactions will be less consistent but high impact for each sale; the RWA platform will serve as the transaction backbone to maintain our "rhythm".
+The launchpad integrations will enable risk-averse companies to fundraise. We are targeting an average of 4k/mo with a 25-40% stablecoin usage rate. These rates yield 1,000-1,600 stablecoin transactions/mo. We intend to operate for 2-3 months in the target window based on development projections.
 
-We currently have a committed sale for Bullish Brands, a client that is bringing Web2 AirBnB opportunities to Cardano. We will align the launchpad integration with this high-potential sale. The 2-week sprint after going live will consist of running/promoting this sale and the integrations, a site-wide banner on the RWA platform for awareness, and an X marketing campaign with graphics to showcase the benefits of our stablecoin integrations.
+We have several sales each month; our launch is not dependent on any single partnership. A [notable upcoming sale is for Bullish Brands](https://x.com/BankFiOfficial/status/2090123996855443673), a client bringing Web2 Airbnb opportunities to Cardano. The 2-week sprint after going live will consist of promoting this sale and the integrations, a site-wide banner on the RWA platform for awareness, and an X campaign with graphics to showcase the benefits of stablecoins.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -83,6 +83,10 @@ The evidence lies in our history and reputation, having provided launchpad servi
 ### Is the underlying project open source?
 
 No
+
+### Short Video Pitch
+
+https://youtu.be/pgSpo1wLuM4
 
 ### Who else solves this today - competitors/alternatives, and why does your approach win?
 

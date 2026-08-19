@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 18
+- **Revision:** 20
 - **Proposer:** `stake1uyhp5yphtclaane5rvgfgml0yp8luy49f6mld848a32ff5qvs3l0x`
 - **Funding requested:** ₳118,000
-- **Last finalized:** 2026-08-18T02:20:54.429000+00:00
+- **Last finalized:** 2026-08-19T16:55:11.193000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -36,31 +36,17 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Who transacts and why: individual crypto users memorialising a personal loss. Each memorial is one mainnet transaction signed from the user's own wallet, paying 1–200 ADA by tier. The second type is a tier rise - one step, same owner, paying the difference - turning a one-shot action into a progression loop, and the main reason users return.
+Individuals memorialise real crypto losses. Not everyone who loses money will pay. Our hypothesis is that a subset will pay for closure, humour and a lasting story-not to recover the loss-much as people pay for a rage room. Unlike a rage room, the deed remains as a shareable, permanent, non-transferable memorial. Entry starts at 1 ADA; users sign and pay from their own wallets and may return for another memorial or one-step tier rise.
 
-The numbers: 1,000–1,150 memorials from \~800 distinct external wallets, plus \~700–750 tier rises, totalling  1,800 transactions. Against \~1,500 plots that is 67–77% occupancy - populated, with room for later arrivals.
+First 14 days: Days (1–3) five LOI partners launch posts/banners; Vtechcom provides bilingual wallet help. Days (4–7) follow-ups, Q&A, stories and funnel fixes; target 130–170 external wallets/240–320 transactions. Days (8–14)second partner wave, creator stories, “Depegs” collection and public dashboard; target 280–340 wallets/600–720 transactions. Afterward: one theme plus two community/creator activations weekly. Details: <https://drive.google.com/file/d/1FwSm-pIjydlot3h4MoUhSiV7BXf7DYvl/view>
 
-Fee target 510 ADA derives from measured fees, not estimates. We measured 0.398 ADA per engrave and 0.320 per tier rise on a ledger running L1 rules, and plan on the conservative 0.28 ADA case from moving both validators to reference scripts - an optimisation that lowers user fees, so we target the lower number, not the flattering one.
-
-Cadence across the six 5-day epochs: \~60 transactions per day, held by weekly collection drops rather than a launch spike, since the daily cap makes concentration worthless.
-
-No airdrops, rebates or team wallets: fees from our own wallets do not count.
+Total: 1,000–1,150 mints from \~800 distinct external wallets plus \~700–750 tier rises = \~1,800 transactions and 510 ADA fees \~0.283 each. No airdrops, rebates, sponsored transactions; every counted user independently chooses, signs and pays.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Channels, in order of expected contribution:
+Five signed LOIs anchor launch: FIMI; VCC/Cardano ADA Viet Nam; SKY3; DCOne; and Midnight Explorer. LOIs schedule launch posts on Days 1–3, follow-ups on Days 4–7, and reminders/onboarding on Days 8–14. Minimum stated reach is 14,900 views/impressions. [Click to view details of the planned operational commitments from signed partners.](https://drive.google.com/drive/folders/1KlNQdc-9Scqkn0biAojtcJMIjrjeUgQR)
 
-1. Vietnamese Cardano community partners, where we are actively engaged. LOIs are confirmed and being finalised, making this our anchor acquisition channel.
-
-2. Creator-led burial rituals: creators publish a real memorial and share its OG card. Each memorial is a crawlable /g/ page with a server-rendered share card.
-
-3. Global Cardano communities via X, Cardano Forum, Discord, and active project communities where we already have strong relationships.
-
-4. Weekly curated campaigns such as “Depegs”, “Lost Exchanges” and “Bear Market 2026” to sustain engagement beyond launch.
-
-5. Cross-ecosystem pull: Ethereum and Solana users can memorialise losses on Cardano, making this their first Cardano transaction. Eternl and Lace guides support onboarding.
-
-The Hydra core team and several Hydra developers have expressed interest and can provide informed feedback and amplification after launch.
+Full-window sources: 300 external wallets from LOI partners; 160 from Vtechcom's Cardano/Hydra network; 130 from global Cardano channels; 120 from creators and weekly “Depegs/Lost Exchanges/Bear Market 2026” collections; 90 from share pages/cross-chain reach = 800. We provide bilingual wallet guides, two live Q&As and daily signing support, tracking source -&gt; visit -&gt; wallet connect -&gt; confirmed L1 transaction. [Click to view our plan.](https://drive.google.com/file/d/1FwSm-pIjydlot3h4MoUhSiV7BXf7DYvl/view)
 
 ### Is the underlying project open source?
 
