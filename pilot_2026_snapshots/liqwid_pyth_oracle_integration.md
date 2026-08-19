@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 13
+- **Revision:** 17
 - **Proposer:** `stake1u880z6jcpa0ed2u87ruez7s4cavpqdh7d5x4qyffnzpmessqsd2ce`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-18T16:52:19.415000+00:00
+- **Last finalized:** 2026-08-19T14:09:10.437000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -42,11 +42,11 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Genuine usage is defined as user lending activity: Supplies, Withdrawals, CreateLoan transactions, LoanModifications that change collateral or debt, and Liquidations. These are actions initiated by actual protocol users or liquidators for an economic purpose; oracle-update and batch transactions are not counted toward the target.
+Genuine usage is real ADA/NIGHT lending activity: supplies, withdrawals, loan creations, loan modifications and liquidations; oracle, batch and scripted transactions are excluded. Measurement is reproducible from Cardano db-sync using our published `queries.js` methodology, which classifies qToken mints/burns and borrow/liquidation activity and deduplicates transactions.
 
-Pyth will be integrated into Liqwid’s ADA and NIGHT markets, so usage is generated naturally whenever users open, modify or close lending positions that depend on those prices (whether through ADA/NIGHT debt or collateral usage). We are therefore not relying on incentives, scripted wallets or transactions created solely to meet the target.
+Recent results validate feasibility, not the target: 6,993 tx/₳4,519.89 fees over 90 days, 3,549/₳2,342.88 over 60D and 1,777/₳1,149.81 over 30D. We attribute the recent contraction to lower DeFi activity and volumes amid broader market conditions.
 
-Liqwid is already a live protocol with approximately $12.4M TVL and $5.27M in active loans. The transaction target of 2,000 represents continued production activity during the adoption measurement period, with usage verifiable directly on-chain by classifying qualifying Liqwid transactions - this number alongside the fee target are based on conservative interpolation based on recent historical figures. We target ₳1,000+ in network fees from this genuine activity.
+Our 610-tx growth target represents a significant uplift over the current 30D baseline. We believe independently verified pricing will materially strengthen user trust and contribute to adoption alongside these initiatives. For the first 14 days post-launch, we will market Pyth adoption across Liqwid channels and track ADA/NIGHT txs, fees and new wallets daily against baseline and epoch pace, increasing outreach if below target without incentives or sponsored activity.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -130,10 +130,10 @@ Seeing that this is contract-level work on one of the protocol’s most safety-c
 
 This funding will be spent on paying:
 
-- Aiken contracts engineering to add the Pyth verification path to validators
-- Off-chain rework of transaction building and update subscription
-- A migration plan that switches live mainnet markets over without downtime or disruption to open loans
-- An independent security audit of the new validator path
+- Aiken contracts engineering to add the Pyth verification path to validators + QA and extensive testing in Devnet: ₳90,000
+- Off-chain rework of transaction building and update subscription (includes E2E testing on Preview Testnet): ₳30,000
+- A migration plan that switches live mainnet markets over without downtime or disruption to open loans: ₳20,000
+- An independent security audit of the new validator path: ₳60,000
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -155,7 +155,7 @@ By the end of the 3-month window we will have Pyth price verification live on Ca
 
 ### Oracles - expected transaction count
 
-2000
+610
 
 ### How far along is the integration you're proposing, today?
 
@@ -199,7 +199,7 @@ Yes
 
 ### Oracles - fee target (ADA)
 
-1000
+305
 
 ### Business
 

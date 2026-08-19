@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 1
+- **Revision:** 5
 - **Proposer:** `stake1uy46yvqwywwvsr5ak3wmszg5ps4zl3cyxcyjde5kq05qg9cpcmepk`
 - **Funding requested:** ₳50,000
-- **Last finalized:** 2026-08-19T07:56:20.471000+00:00
+- **Last finalized:** 2026-08-19T14:10:52.855000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -17,18 +17,17 @@ TRL 6 - Technology demonstrated in relevant environment
 ### Why is your team well-suited to deliver this?
 
 Cristian Rojas — Founder & Technical Lead\
-X: @CrisRo0787 \
-Cardano Forum: @Cristian_Jair_Rojas
+LinkedIn: <https://www.linkedin.com/in/cristian-rojas-cardano-community/>\
+GitHub: <https://github.com/Crisro0787>\
+X: @CrisRo0787 | Cardano Forum: @Cristian_Jair_Rojas | [Kaltic.app](http://Kaltic.app)
 
-Kaltic is founder-led. Cristian designed and developed the current MVP, including the product architecture, agricultural traceability workflows, Cardano integration, Digital Product Passports and supporting backend components. He will lead the CIP-0170 integration, deployment and overall technical delivery.
+Cristian designed and developed Kaltic’s current TRL 6 MVP, including product architecture, agricultural traceability workflows, Cardano testnet integration, Digital Product Passports and backend components. Public technical documentation and evidence are available through GitHub. He will lead the CIP-0170 architecture, implementation, testing and mainnet deployment.
 
-Cristian has been active in the Cardano ecosystem since 2021 and is a Cardano Ambassador. He is an Industrial Engineer specialized in supply-chain processes, with experience in compliance and management standards such as ISO 9001. This allows blockchain implementation, traceability logic and regulatory workflows to remain under one technical and domain lead.
+Cristian has been active in Cardano since 2021 and is a Cardano Ambassador. He is an Industrial Engineer specialized in supply-chain processes, with experience in compliance and management standards such as ISO 9001, combining technical, supply-chain and compliance expertise under one project lead.
 
-To increase delivery capacity, Kaltic plans to recruit a junior web developer for frontend, UI, APIs, testing and other non-blockchain components. The candidate pool includes university programming students previously onboarded to Cardano by Cristian, including CBCA-certified students.
+Kaltic plans to recruit a junior web developer for frontend, UI, APIs, testing and other non-blockchain work. Candidates include university programming students previously onboarded to Cardano by Cristian, including CBCA-certified students.
 
-A pilot/user operations support role may also be contracted for onboarding, training, coordination and feedback collection with participating farms and packers.
-
-The core capabilities needed to deliver the integration are already held by the founder; additional roles increase execution capacity rather than replace core expertise.
+Pilot/user operations support may also be contracted for onboarding, training, coordination and feedback with farms and packers. These roles add execution capacity; core delivery remains founder-led.
 
 ### Eligible area
 
@@ -40,24 +39,29 @@ If Kaltic reaches **USD 50,000 in cumulative commercial revenue**, we pledge to 
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Kaltic targets **450 real transactions and 160 ADA in counted network fees** during the adoption period.
+Kaltic targets 450 real transactions and 160 ADA in counted fees during the adoption period.
 
-Usage will come from farms, packers and other agricultural operators using Kaltic as part of their normal traceability workflows. Each participating organization will use its own external wallet and CIP-0170 identity. When an organization records an eligible supply-chain event, such as a harvest, receipt or transfer, it can create a signed CIP-0170 attestation linking that record to the organization responsible for it.
+Usage comes from farms, packers and other agricultural operators using Kaltic in normal traceability workflows. Each organization uses its own external wallet and CIP-0170 identity. Events such as harvest, receipt and transfer can generate signed attestations linking each record to the responsible organization.
 
-Our initial distribution strategy is based on pilot organizations and producer networks in Puebla, including blueberry producers in Zacatlán and packing/export operators in Aquixtla. This allows one organizational relationship to onboard multiple independent users rather than acquiring farms individually.
+Initial users will come from the Zacatlán and Aquixtla pilot channels, where anchor organizations can introduce multiple independent users.
 
-The 160 ADA target is deliberately set at the beginning of the program’s Ambitious range for a 50,000 ADA On-chain Identity grant. Usage is generated by recurring agricultural operations, not rewards or transaction incentives, and participating organizations pay their own network fees.
+For the minimum six-epoch window, the 160 ADA target requires 13.33 ADA in each of the first three floored epochs and 26.67 ADA in each of the final three. We will use the floorless entry epoch to ramp users, plan above every epoch floor, and target roughly 15 transactions/day toward 450 total. We will maintain more than the required 5 external wallets and monitor activity daily so no day is relied upon for more than the Standard’s 20% cap. We do not plan to rely on the one-miss allowance.
+
+Usage comes from recurring operations, not rewards or transaction incentives; participants pay their own network fees.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Our go-to-market starts with agricultural organizations that already aggregate producers, rather than acquiring farms one by one.
+Our go-to-market starts with agricultural organizations that aggregate producers rather than acquiring farms one by one.
 
-Our first pilot channel is **Finca La Concordia / Berries Club in Zacatlán, Puebla**, a 42-hectare blueberry operation connected to a broader producer network. Berries Club has previously reported a network of 65 producers, providing a path from one pilot site to multiple agricultural users.
+Our first channel is Finca La Concordia / Berries Club in Zacatlán. Our second is the greenhouse and packing cluster in Aquixtla, where packers/exporters can introduce Kaltic across supplier networks.
 
-Our second channel is the greenhouse and packing cluster in **Aquixtla, Puebla**, where producers and packers already serve export markets. We are onboarding local packing/export operators that can introduce Kaltic across their supplier networks. Aquixtla has documented tomato exports to the U.S., while companies such as Huerta Fértil combine production, packing and commercialization across groups of local producers.
+The confirmations cover Kaltic’s current testnet pilots, not pre-committed CIP-0170 mainnet users. They evidence existing relationships and an onboarding channel. They are being signed on 19 August 2026 and will be uploaded before the deadline.
 
-Signed pilot participation confirmations:\
-<https://drive.google.com/drive/folders/17mUh6nB6Xs9cWbKb6fjWMVVOhgSz2jD2?usp=sharing>
+If funded, these networks will be first invited to onboard independent KERI identities and external wallets.
+
+Days 1–3: onboarding and first attestations; Days 4–7: partner-introduced users and repeat use; Days 8–10: resolve issues and verify independent use; Days 11–14: expand active users and establish recurring activity.
+
+Confirmations: <https://drive.google.com/drive/folders/17mUh6nB6Xs9cWbKb6fjWMVVOhgSz2jD2?usp=sharing>
 
 ### Is the underlying project open source?
 
@@ -183,7 +187,7 @@ Within 3 months, Kaltic will deliver its CIP-0170 integration on Cardano mainnet
 
 ### How far along is the integration you're proposing, today?
 
-TRL 2 - Technology concept formulated
+TRL 1 - Basic principles observed
 
 ### On-chain identity (CIP-0170) - fee target (ADA)
 

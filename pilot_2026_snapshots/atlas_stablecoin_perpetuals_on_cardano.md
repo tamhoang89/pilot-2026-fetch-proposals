@@ -1,14 +1,14 @@
 # ATLAS: Stablecoin Perpetuals on Cardano
 
-> Launching Cardano’s fully on-chain perpetuals DEX with verified USDCx and USDM collateral, unified liquidity and transparent on-chain usage.
+> A measured mainnet Pilot of verified USDM/USDCx collateral and Pyth Pro pricing for on-chain perpetuals.
 
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 5
+- **Revision:** 14
 - **Proposer:** `stake1u9wrkyze58nzwfs4av8nxrr2lpfk0yd2pwh2ff4yxpvdvsgccegq2`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-18T19:27:38.859000+00:00
+- **Last finalized:** 2026-08-19T14:06:07.947000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,24 +16,24 @@ TRL 7 - System prototype demonstrated in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-Atlas is led by Oliver “Apex” Radivojevic, a veteran Cardano-native founder and hands-on operator who has been building in the ecosystem since 2021. He founded House of Titans and developed it from an idea into a revenue-generating Web3 and DePIN organisation, deploying and managing infrastructure across BTC mining, Cardano staking, enterprise nodes, treasury investments and recurring community distributions.
+Atlas is led by Oliver “Apex” Radivojevic, a Cardano-native founder and hands-on operator building in the ecosystem since 2021. He founded House of Titans and has led treasury operations, infrastructure deployment, contractor coordination, product launches and community growth across Cardano staking, enterprise nodes and Web3 infrastructure.
 
-Apex has raised and allocated capital, launched products, negotiated ecosystem partnerships, assembled international contractor teams, managed infrastructure and built active communities. He has continued executing through multiple bear markets, demonstrating resilience, commercial judgement and long-term commitment to Cardano.
+For this Pilot, Apex is responsible for strategy, delivery coordination, treasury oversight, ecosystem communication, reporting and operations.
 
 LinkedIn: <https://www.linkedin.com/in/o-r-893341136/>\
 X: <https://x.com/Apex_333>
 
-Vata is Atlas’s contracted CTO, a Korea-based blockchain engineer experienced in DEX architecture, blockchain infrastructure, node operations and production deployment. 
+Jinhyeong “Vata” Lee is Atlas’s contracted technical lead for the existing codebase, handover and remediation of technical findings. His experience includes DEX architecture, blockchain infrastructure, node operations and production deployment.
 
 X: <https://x.com/vataops>\
 GitHub: <https://github.com/vataops>
 
-Alexandru “Sic” Campurean is Atlas’s Marketing Manager and a Web3 operator since 2019. His experience includes marketing leadership, community management and business development.
+Alexandru “Sic” Campurean leads marketing, community operations, educational content and organic onboarding. He has worked in Web3 marketing, community management and business development since 2019.
 
 X: <https://x.com/Sic2336>\
 Professional links: <https://linktr.ee/sic236>
 
- Together, we have delivered three testnets, attracted 500+ users, processed over $165M in simulated volume and completed the internal Mainnet build.
+The team has delivered three public testnets involving 500+ users and more than $165 million in simulated volume. The Pilot funds post-award integration hardening, independent security validation, monitoring and reporting.
 
 ### Eligible area
 
@@ -45,23 +45,23 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Atlas targets 8,000 qualifying transactions and 2,000 ADA in counted fees for each integration.
+Atlas targets 1,200 qualifying transactions across 180 unique funded wallets. Each transaction uses both Pyth Pro price data and verified USDM or USDCx collateral, and is counted once within each applicable integration metric.
 
-• 5,000 transactions (62.5%) from 200 reactivated users drawn from 500+ former Atlas testers, averaging 25 each.\
-• 1,200 (15%) from 75 additional, non-overlapping users drawn from Atlas’s 152 stakers and House of Titans’ 616 stake-pool delegators, averaging 16 each.\
-• 1,800 (22.5%) from 100 new users reached through non-incentivised tutorials, X Spaces, Discord support and Cardano DeFi/stablecoin communities, averaging 18 each.
+480 transactions will come from 60 reactivated users drawn from 500+ former Atlas testers, averaging eight each. 360 will come from 60 additional, non-overlapping users reached through Atlas’s 300 token holders and House of Titans’ community of 1,200+ TITAN token holders, NFT investors and stake-pool participants, averaging six each. The remaining 360 will come from 60 new users reached through tutorials, X Spaces, Discord support and organic Cardano outreach, averaging six each.
 
-Total: 375 unique external wallets and 8,000 transactions. Existing communities contribute 77.5% of projected usage and new users 22.5%. Users deposit, trade, settle and withdraw—not to earn rewards. Qualifying trades consume the declared oracle feed and move verified stablecoins. At the program reference average of 0.33 ADA per transaction, 8,000 transactions generate about 2,640 ADA, giving the 2,000 ADA target an execution buffer. Activity will be labelled and deduplicated by stake key.
+House of Titans is an applicant-operated community channel, not an external adoption partner. All audiences will be deduplicated by stake key.
+
+Users transact to deposit, trade, settle and withdraw—not to obtain rewards. No incentives, referrals or transaction subsidies will be offered. At the programme reference average of ₳0.33, 1,200 transactions generate approximately ₳396, exceeding the ₳350 oracle and ₳370 stablecoin targets.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Atlas will rely solely on organic, non-incentivised adoption. No points, rebates, referral rewards, competitions or transaction incentives will operate during the measurement period.
+Atlas will use organic, non-incentivised adoption only. No points, rebates, referral rewards, competitions or transaction incentives will operate during the measurement period.
 
-Days 1–7: announce Mainnet to 500+ former testers through Atlas X and Discord; reach Atlas’s 152 stakers and the House of Titans community, including 616 stake-pool delegators; publish a launch guide and video; and host two onboarding sessions. Target: 125 external wallets, 125 deposits and 625 trading/settlement transactions.
+Days 1–7: Atlas will contact 500+ former testers through X and Discord, reach Atlas stakers and House of Titans’ existing 1,500+ holder and investor community, publish a launch guide and video, and host two onboarding sessions. Target: 40 funded wallets and 120 trading or settlement transactions.
 
-Days 8–14: follow up with former testers, publish stablecoin and market tutorials, host two X Spaces and support sessions, and distribute educational content through Cardano DeFi communities. Target: 110 additional wallets, 110 deposits and 1,140 trading/settlement transactions.
+Days 8–14: Atlas will follow up with users, publish stablecoin and market tutorials, host two X Spaces and support sessions, and share educational content through Cardano DeFi communities. Target: 30 additional funded wallets and 180 additional transactions.
 
-By day 14, Atlas targets 235 external wallets and 2,000 cumulative transactions. Weekly education, product updates and support will continue without transaction-linked rewards.
+By Day 14, Atlas targets 70 unique funded wallets and 300 cumulative transactions. House of Titans is an applicant-operated communication channel, not an external adoption partner, and no third-party commitments are assumed.
 
 ### Is the underlying project open source?
 
@@ -69,13 +69,15 @@ No
 
 ### Who else solves this today - competitors/alternatives, and why does your approach win?
 
-Alternatives include centralised exchanges, external-chain perpetual DEXs such as Hyperliquid and GMX, and Cardano protocol Strike. Atlas differentiates through a stablecoin-first unified vault: one shared pool supports every market, improving capital efficiency and enabling new markets without fragmenting liquidity. Collateral, trading and settlement remain on Cardano, while fees and payouts are denominated in stablecoins. This creates recurring utility for USDM and USDCx alongside measurable Cardano transactions. Atlas also has a working testnet, an existing user and staking community, and an internally completed mainnet build, reducing delivery risk compared with an early-stage concept.
+Alternatives include centralised exchanges, external-chain perpetual DEXs such as Hyperliquid and GMX, and Cardano protocol Strike.
+
+Atlas differentiates through a stablecoin-first unified vault: one shared pool supports multiple markets, improving capital efficiency and allowing new markets to be added without fragmenting liquidity across separate pools. Collateral, trading and settlement remain on Cardano, while fees and payouts are denominated in stablecoins. This creates recurring utility for USDM and USDCx alongside measurable Cardano transactions.
+
+Atlas also has a working testnet and an existing user and staking community, reducing delivery risk compared with an early-stage concept.
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-Atlas is currently at TRL 7. The protocol has been demonstrated through three public Cardano testnets, attracting 500+ users and processing over $165 million in simulated trading volume. Validated functions include Aiken smart contracts, wallet connectivity, stablecoin-based collateral, the unified liquidity vault, leveraged trading, pricing, fees, liquidations and withdrawals.
-
-The internal Mainnet build and initial independent security review are complete. Remaining findings are being remediated before the formal audit and Public Mainnet release. Atlas is therefore not claiming TRL 8 or 9, as formal qualification and live production deployment remain pending.
+Atlas’s privately funded core protocol is assessed at TRL 7. Three public Cardano testnets demonstrated Aiken smart contracts, wallet connectivity, the unified vault, leveraged trading, pricing, fees, liquidations and withdrawals with 500+ users and over $165 million in simulated volume. An internal mainnet candidate has been developed but review findings are being remediated before formal audit and public deployment, so Atlas does not claim TRL 8 or 9. This assessment covers only the core protocol. The proposed USDM/USDCx and Pyth Pro production integration is separately assessed at TRL 6. Catalyst will not reimburse completed work.
 
 Evidence:\
 <https://www.atlasdefi.org/>\
@@ -83,13 +85,13 @@ Evidence:\
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-Atlas uses Cardano’s eUTxO model, with protocol state represented on-chain and enforced by Aiken validators. Verified Cardano-native stablecoins, initially USDM and USDCx, are held in validator-controlled UTxOs within a unified liquidity vault. The vault supports multiple perpetual markets without fragmenting liquidity across separate pools.
+Atlas uses Cardano’s eUTxO model, with protocol state represented on-chain and enforced through Aiken validators. Verified USDM and USDCx policy IDs will ensure that only authentic stablecoins can be accepted as collateral. Collateral is held in validator-controlled UTxOs within a unified liquidity vault, allowing multiple perpetual markets to share liquidity without separate, fragmented pools.
 
-The named oracle dependency is Pyth Pro. Atlas will consume signed Pyth price updates for supported markets, initially including ADA/USD, BTC/USD and ETH/USD. Each qualifying user trade includes the price update through Pyth’s Cardano zero-withdrawal script pattern. Atlas validators verify the feed ID, signature and price freshness before permitting positions to open, close, liquidate or settle.
+The production oracle dependency is Pyth Pro. State-changing trades will consume signed Pyth price updates through Cardano’s zero-withdrawal script pattern. Atlas validators will verify the feed ID, signature, price freshness and applicable market before permitting positions to open, close, liquidate or settle.
 
-Positions, collateral, fees and settlements are governed by deterministic validator rules. Market-specific state is separated so trading pairs can process independently, reducing contention. Off-chain services construct transactions, index state and provide the interface, but cannot override validators or move vault funds without satisfying on-chain conditions.
+Positions, collateral, fees and settlements are controlled by deterministic validator rules. Market-specific state is separated so trading pairs can process independently and reduce eUTxO contention. Off-chain services may construct transactions, relay data and provide analytics, but cannot independently alter balances, positions or settlement outcomes.
 
-This architecture keeps collateral native to Cardano and makes stablecoin movement and oracle consumption verifiable. External-user transactions can therefore be labelled and measured through contract identifiers, stablecoin policy IDs and Pyth feed consumption.
+This architecture is appropriate because stablecoin custody, trading logic and settlement remain verifiable on Cardano, while Pyth supplies authenticated external prices at transaction execution. Production hardening, monitoring, external security validation and the measured mainnet Pilot remain outstanding.
 
 ### Fits the timeline
 
@@ -114,15 +116,15 @@ Incorporated entity
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-Atlas targets users who trade perpetuals on centralised exchanges or other blockchains, stablecoin holders seeking productive utility, and liquidity providers seeking stablecoin-denominated fee exposure.
+Atlas targets users who trade perpetuals on centralised exchanges or other blockchains, stablecoin holders seeking productive on-chain utility, and liquidity providers seeking stablecoin-denominated fee exposure.
 
-Demand is established. On-chain perpetual DEXs process hundreds of billions of dollars in monthly volume, making perpetuals one of DeFi’s largest trading and fee-generating categories. Cardano users have also demonstrated demand for native perpetuals: Strike currently has approximately $2.5 million in TVL, generated around $32,700 in fees and processed approximately $117 million in perpetual volume over the past 30 days.
+Demand for perpetual trading is well established: on-chain perpetual DEXs process hundreds of billions of dollars in monthly volume, making perpetuals one of DeFi’s largest trading and fee-generating categories. Cardano users have also demonstrated demand for native perpetuals. Strike has approximately $2.5 million in TVL, generated around $32,700 in fees and processed approximately $117 million in perpetual volume over the previous 30 days.
 
-Atlas has demonstrated direct interest through three public testnets, attracting 500+ users and processing over $165 million in simulated trading volume. Additionally, 4 million ATLAS nearly 80% of its reported circulating supply is currently staked.
+Atlas has demonstrated direct testnet interest through three public testnets involving 500+ users and over $165 million in simulated trading volume. More than 4 million ATLAS, over 80% of reported circulating supply, is staked. These are testnet and community indicators rather than claims of guaranteed mainnet conversion.
 
-Atlas is designed to retain this activity on Cardano. Users deposit verified stablecoins into one shared vault, trade multiple markets and settle positions on-chain. Deposits, trades, settlements and withdrawals create measurable Cardano transactions and network fees rather than exporting users and economic activity to other chains.
+Atlas enables users to deposit verified stablecoins into a shared vault, trade multiple markets and settle on-chain. Deposits, trades, settlements and withdrawals create measurable Cardano transactions and network fees rather than exporting activity to other chains.
 
-Cardano’s stablecoin infrastructure is growing, but recurring utility remains limited. Atlas converts stablecoin liquidity into trading infrastructure, protocol fees and stablecoin payouts, strengthening stablecoin circulation, Cardano DeFi and the network’s long-term fee economy.
+Cardano’s stablecoin infrastructure is growing, but recurring utility remains limited. Atlas converts stablecoin liquidity into trading infrastructure, protocol fees and stablecoin payouts, supporting stablecoin circulation and Cardano DeFi.
 
 ### Applicant name
 
@@ -130,7 +132,7 @@ Oliver Radivojevic
 
 ### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
 
-Atlas is targeting Public Mainnet within the Pilot’s three-month Milestone 1 window, subject to completing remediation and the formal audit. Core development has already been financed through ATLAS token sales and founder/community capital. Catalyst funding accelerates production integration of USDM, USDCx and Pyth Pro, alongside security, monitoring and organic onboarding, without creating grant dependency.
+Atlas targets Public Mainnet within the Pilot’s three-month Milestone 1 window, subject to remediation and formal audit. Core development has already been privately financed. Catalyst funding will support only post-award USDM, USDCx and Pyth Pro integration hardening, independent validation, monitoring and organic onboarding; it will not reimburse completed work.
 
 Traders pay trading and borrowing fees. A share supports the unified liquidity vault and liquidity providers, while protocol revenue funds infrastructure, security, development and stablecoin-denominated payouts.
 
@@ -146,16 +148,7 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Atlas has privately funded the core protocol and internal Mainnet build. Catalyst funding would accelerate production integration of verified USDM and USDCx policies with Pyth Pro oracle feeds, while strengthening security and monitoring.
-
-High-level allocation:
-
-• 40% – USDM/USDCx integration, vault engineering and Pyth Pro implementation\
-• 25% – independent security audit and remediation\
-• 20% – Mainnet infrastructure, monitoring and on-chain analytics\
-• 15% – documentation, user education and organic onboarding
-
-Without funding, Atlas would still pursue launch, but the integration scope and onboarding programme would progress more slowly. Funding enables a broader, independently audited deployment that creates recurring stablecoin usage, external transactions and Cardano network fees
+Atlas privately funded the core protocol; Catalyst will not reimburse completed or pre-award work. The ₳200,000 funds a distinct post-award USDM/USDCx and Pyth Pro mainnet Pilot: ₳60,000 for production integration, hardening and testing; ₳75,000 for independent security review, remediation and verification; ₳30,000 for three months of infrastructure, monitoring and operational support; ₳20,000 for on-chain analytics and public milestone reporting; and ₳15,000 for technical documentation, user support and final reporting. Without funding, Atlas will continue its core launch, but the dedicated Pilot, external validation and public measurement will be delayed or reduced. No funds will cover historical costs, liquidity, incentives, trading rewards or referrals.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -167,25 +160,19 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-Within three months, Atlas will deliver:
+Within three months, Atlas will deliver a post-award mainnet Pilot of verified USDM and USDCx collateral with Pyth Pro oracle flows for initial markets. Deliverables include stablecoin policy validation, signed price-update verification, freshness and failure protections, integration hardening, automated testing, independent security validation and remediation verification.
 
-• Production USDM and USDCx integration within the unified liquidity vault.\
-• Production oracle feeds for the initial markets, including price validation, freshness checks and failure protections.\
-• Completion of remaining smart-contract fixes, an independent security audit and remediation of material findings.\
-• Public Mainnet deployment of the protocol, frontend and supporting infrastructure.\
-• End-to-end functionality covering deposits, trades, liquidations, settlements and withdrawals.\
-• On-chain labelling and analytics to measure distinct wallets, transactions and network fees.\
-• Public documentation covering trading, collateral, vault participation, fees and risks.
+The Pilot will support end-to-end deposits, trades, position closure, liquidation where applicable, settlement and withdrawals. Atlas will provide monitoring, on-chain analytics for wallets, transactions, fees and network activity, plus public documentation, risk guidance, release notes and Pilot reporting.
 
-Delivery will be evidenced by the live application, contract addresses, Mainnet transaction IDs, audit report and public documentation.
+Evidence will include the live product, contract addresses, policy IDs, mainnet transaction hashes, security evidence, analytics outputs and a Demo Day walkthrough. Catalyst funds only these post-award Pilot deliverables, not prior testnets, historical development or the pre-existing core protocol.
 
 ### Oracles - expected transaction count
 
-8000
+1200
 
 ### How far along is the integration you're proposing, today?
 
-TRL 7 - System prototype demonstrated in operational environment
+TRL 6 - Technology demonstrated in relevant environment
 
 ### Clear budget
 
@@ -226,7 +213,7 @@ Yes
 
 ### Oracles - fee target (ADA)
 
-2000
+350
 
 ### Business
 
@@ -254,7 +241,7 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-8000
+1200
 
 ### Standard read and attested
 
@@ -262,12 +249,12 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-2000
+370
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-Atlas’s oracle and stablecoin integrations are at TRL 7. Oracle-driven pricing and stablecoin collateral, trading and settlement logic have been demonstrated across three public Cardano testnets, attracting 500+ users and processing over $165 million in simulated volume.
+Atlas’s proposed USDM/USDCx collateral and Pyth Pro oracle integration is assessed at TRL 6. Oracle-driven pricing, stablecoin collateral, trading and settlement have been demonstrated across three public Cardano testnets involving 500+ users and over $165 million in simulated volume.
 
-For production, Atlas will integrate verified USDM and USDCx policies and use Pyth Pro as its oracle provider. User trading transactions will consume signed Pyth price updates through its Cardano zero-withdrawal script pattern.
+The production integration will use verified USDM and USDCx policy IDs and signed Pyth Pro price updates through Cardano’s zero-withdrawal script pattern. However, it has not yet completed production hardening, external security validation, monitoring or a measured mainnet pilot.
 
-The internal Mainnet system is complete and undergoing security remediation before the formal audit and Public Mainnet deployment. The integrations are operational at testnet level but are not being claimed as fully qualified or proven in live production.
+Catalyst will fund only this outstanding post-award integration work. The privately funded core protocol and previous testnets are excluded. This is why the integration is not claimed as TRL 7 or higher.
