@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 31
+- **Revision:** 33
 - **Proposer:** `stake1u86sa7qzppfh24sugfdxasm0ye2cqp2f35n82yec06h7xsscfgpd9`
 - **Funding requested:** ₳150,000
-- **Last finalized:** 2026-08-19T23:01:31.936000+00:00
+- **Last finalized:** 2026-08-19T23:36:55.418000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -37,8 +37,6 @@ Exp: full-stack TypeScript; on-chain verification, off-chain proof generation ve
 
 These three are the full delivery team, all Nucast personnel: [Github](http://github.com/Nucastio)
 
-Open role: compliance counsel for the fractionalization pathway, will be released in M1 with full legal details.
-
 Disclosure: our only submission this round.
 
 ### Eligible area
@@ -51,19 +49,21 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Coastal is our existing customer, \~90% of fees; auditors & importers the rest. Signers are new to Cardano.
+Coastal is our customer, \~90% of fees; auditors & importers the rest.
 
-20 cells: MoU names 120 cells; we instrument 20 from 3, so 12 average.
+16 cells: MoU names 120; we instrument 16 from 8, so 12 average.
 
-3 batches a cell a day: the line runs 20 hours, QC releases one per 7.
+3 batches a cell a day: line runs 20 hrs, QC releases one per 7.
 
-0.42 ADA a tx: attestations run a script with metadata; network average 0.33.
+0.42 ADA/tx: attestations run a script with metadata; net avg 0.33.
 
-CIP-0170: 3 x 12 x 30 = 1,080 QC releases plus 220 from hygiene, maintenance, dispatch, auditors, importers. 1,300 txs, 546 raw. Coastal pays all its signers, so §6.2 makes it one wallet and halves its share over 35%. Counted 387, target 380.
+CIP-0170: 3 x 12 x 30 = 1,080 QC releases plus 220 from hygiene, maintenance, dispatch, auditors, importers. 1,300 txs, 546 raw. Coastal pays its signers, so §6.2 makes it one wallet, halving its share over 35%. Counted 387, target 380.
 
-CIP-0113: 650 mints at 0.50, 520 transfers at 0.45, 200 burns at 0.40. 1,370 txs, 639 raw, 471 counted. 650 mints against 1,080 releases: only export-bound lots carry a BatchPass. Both raw numbers are Ambitious; the §6.2 discount, not caution, makes this Credible.
+CIP-0113: 650 mints at 0.50, 520 transfers at 0.45, 200 burns at 0.40. 1,370 txs, 639 raw, 471 counted. 650 mints vs 1,080 releases: only export lots carry a BatchPass. Both raw numbers are Ambitious; the §6.2 discount, not caution, makes this Credible.
 
-Wallets. Coastal is one under §6.2. Its BAP and BRCGS certifiers are named on public GSA and BRCGS records. Coastal's letter of Aug 2026, signed by a director, onboards 20 importer wallets before M1; identities are confidential, supplied under NDA. That gives 21 wallets for CIP-0113 (auditors take no custody) and 23 for CIP-0170 against min of 18 and 9.
+Pace: floors are 1/12 of target for 3 epochs then 1/6, one miss allowed. 8 cells and all wallets live at M1 clear epoch 1; early M1 stretches the window (§7.3).
+
+Wallets. Coastal counts as one. BAP/BRCGS certifiers are on public GSA/BRCGS records. Coastal's Aug 2026 director-signed letter onboards 20 importer wallets before M1; identities under NDA. 21 wallets for CIP-0113 (auditors take no custody), 23 for CIP-0170, vs min 18 & 9
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
