@@ -44,12 +44,14 @@
   "ebf7e07d-ff9d-4953-aea0-90befcb272e8": "accordiax_trust_infrastructure_for_commerce",
   "13a5fb19-1c08-478b-9e85-4b307477dce2": "multi-source_oracle_aggregation_for_cardano",
   "536aa430-76dc-42f1-bb0d-420e0ee81fae": "smartstarter_tokenised_crowdfunding_with_backer_governance",
-  "e85d1fcf-4a85-4dd7-83b6-20b2ba72396a": "uzima_health_data_anchoring_and_consent_protocol_on_cardano",
+  "e85d1fcf-4a85-4dd7-83b6-20b2ba72396a": "uzima_clinic-signed_health_attestations_on_cardano_cip-0170",
   "7c370a8f-dbe9-4ced-97fb-3d78b54b47ff": "usdm_-_settled_synthetic_asset_pools_on_cardano",
   "88fe48c2-a40f-479d-9164-d5d77032d2e9": "exura_self-custodied_yield_beyond_cardano",
   "861a2951-2ed5-4891-a33a-5a76554ef169": "kaltic_verifiable_agricultural_traceability_with_cip-0170",
   "e814dac5-59f4-417a-a9fe-190612502ba9": "mesh_-_programmable_tokens_with_utxos_sdk",
   "24adac50-786d-4507-8094-ae56f2faf578": "acespeak_speaking_passport",
   "0d74a1fe-a6f6-476c-ad92-a4371a385fcb": "urbanlink_cardano-powered_smart_mobility_network",
-  "2a025ec1-554d-415c-9245-2121dcc59956": "nuhuman_robot_dids_on_a_30m_shrimp_export_line"
+  "2a025ec1-554d-415c-9245-2121dcc59956": "nuhuman_robot_dids_on_a_30m_shrimp_export_line",
+  "9a43bff1-3c78-4770-bace-01a62f15dada": "adabridge_cex-to-cardano_onramp_for_usdcx_eurcx_usycx",
+  "44461169-ea16-44bb-8b56-f216196de608": "buy_me_cofee_support_ada"
 }

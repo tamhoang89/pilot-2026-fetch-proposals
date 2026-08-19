@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 1
+- **Revision:** 8
 - **Proposer:** `stake1uy285ltjnjpumfvxlju8kww2wa633rmdpqy5t26ddf85w3s00k2n4`
 - **Funding requested:** ₳120,000
-- **Last finalized:** 2026-08-18T20:41:50.349000+00:00
+- **Last finalized:** 2026-08-19T16:07:18.922000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,19 +16,7 @@ TRL 7 - System prototype demonstrated in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-Malama Labs is three co-founders, not a hired team.
-
-Dominick Garey, CTO - owns protocol direction end to end: sensor and pipeline architecture, and the on-chain contract build for this integration. [linkedin.com/in/dominick-garey-878a65117](http://linkedin.com/in/dominick-garey-878a65117), [github.com/dgarey](http://github.com/dgarey)
-
-Tyler Malin, CEO - leads business direction and partnerships, including outreach to FiDa, a Catalyst-funded parametric-insurance project already live on Cardano. [linkedin.com/in/tylermalin](http://linkedin.com/in/tylermalin), [github.com/tylermalin](http://github.com/tylermalin)
-
-Jeffrey Wise - leads the land and operator side, owning the sensor deployment network. [linkedin.com/in/jeffrey-wise-4036a639](http://linkedin.com/in/jeffrey-wise-4036a639)
-
-Org: [github.com/MalamaLabs](http://github.com/MalamaLabs)
-
-Track record: the team won Catalyst Fund 12 in 2024 to build the original u-dMRV MVP, now running in controlled pilots ahead of what was originally scoped. The Cardano delivery record is public and checkable: a Merkle root has anchored to mainnet every day, without a miss, since 10 July 2026, independently recomputable by anyone at [api.dagwelldev.com/ops](http://api.dagwelldev.com/ops).
-
-Skill gap: CIP-0113 and CIP-0170 are both new standards for the team. If Month 1 testnet work shows either behind pace, a short-term on-chain contract specialist is already budgeted, keeping Dominick focused on the oracle and x402 path.
+Dominick Garey, CTO - owns protocol direction end to end: sensor and pipeline architecture, and the on-chain contract build for this integration. [linkedin.com/in/dominick-garey-878a65117](http://linkedin.com/in/dominick-garey-878a65117), [github.com/dgarey](http://github.com/dgarey). Tyler Malin, CEO - leads business direction and partnerships, including outreach to FiDa, a Catalyst-funded parametric-insurance project already live on Cardano. [linkedin.com/in/tylermalin](http://linkedin.com/in/tylermalin), [github.com/tylermalin](http://github.com/tylermalin). Jeffrey Wise - leads the land and operator side, owning the sensor deployment network. [linkedin.com/in/jeffrey-wise-4036a639](http://linkedin.com/in/jeffrey-wise-4036a639). Org: [github.com/MalamaLabs](http://github.com/MalamaLabs). The team won Catalyst Fund 12 in 2024 to build the original u-dMRV MVP, now running in controlled pilots ahead of what was originally scoped. The Cardano delivery record is public and checkable: a Merkle root has anchored to mainnet every day, without a miss, since 10 July 2026, independently recomputable by anyone at [api.dagwelldev.com/ops](http://api.dagwelldev.com/ops). Dominick already owns the sensor pipeline, identifier scheme, and Merkle-anchor system this proposal ports onto Cardano. CIP-0113 and CIP-0170 are new standards, not new skills. This grant funds full-time, dedicated engineering hours on the build for the three-month window.
 
 ### Eligible area
 
@@ -36,15 +24,15 @@ Yes
 
 ### Optional: Voluntary give-back pledge: grant repayment terms and/or treasury revenue share, with your own thresholds/terms and/or %. If no such relevant offer exists, please write 'N/A'.
 
-If Malama Labs closes a priced equity or token financing round of $1,000,000 USD or more within 24 months of grant disbursement, we pledge to repay 100% of the grant's value at time of disbursement, not its future or appreciated value, to the Catalyst treasury within 90 days of that round closing.
+Voluntary give-back pledge (optional): If Malama Labs closes a priced equity or token financing round of $1,000,000 USD or more within 24 months of grant disbursement, we pledge to repay 100% of the grant's value at time of disbursement, not its future or appreciated value, to the Catalyst treasury within 90 days of that round closing.
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Three different user types transact, for three different reasons. Oracles: agents and developers pay per call through the x402 gateway for verified environmental data, priced at the low end of Ambitious because our five-week, unbroken mainnet anchor cadence already proves we can sustain that volume — expect near-daily calls once the gateway is live, seeded by a fixed-prize bounty (not a per-transaction reward) for the first three external integrations, then direct outreach to FiDa and other Cardano-native parametric-insurance and event-settlement projects from Month 2. CIP-0113: independent sensor-site operators mint or transfer site-rights tokens as new sites onboard, roughly weekly. CIP-0170: attestations issue alongside each new site or operator onboarding, a similar weekly cadence. Both sit mid-Credible, deliberately conservative given both standards are still pre-production. All targets assume genuinely independent, unfunded wallets under the Standard's own-wallet exclusion — our existing anchor activity doesn't count toward them, and we're not presenting it as if it does.
+Our oracle system already runs on Cardano mainnet: five weeks of unbroken, daily, hardware-signed anchors, independently verifiable at [api.dagwelldev.com/ops](http://api.dagwelldev.com/ops). Malama is a data attestation company, not a weather-data company - CIP-0170 lets any organization create a DID and get its own sensor data validated, not just consume our environmental feed. Oracles/x402 sells the one dataset we have live today (weather) to agents and developers, seeded by a bounty and direct FiDa/insurance outreach from Week 1 - roughly 30 unique wallets, \~1,150 transactions. CIP-0113/CIP-0170's \~25-wallet cohort (76/43 transactions) is independent sensor-site operators attesting their own data through our identity layer, a second, distinct customer type from day one. We're deliberately conservative on all three: without prior external usage data to calibrate against, every target sits near the low end of Credible rather than assumed at Ambitious.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Three named channels, not a generic plan. (1) The x402 gateway itself is the funnel: any AI agent or Cardano dApp starts paying per call with no signup, live infrastructure Malama is plugging into, not building. (2) A fixed-prize developer bounty for the first three third-party oracle integrations, paid on delivered integration work, not transaction volume, compliant with the Standard's anti-gaming rules. (3) Direct outreach to FiDa, a Catalyst-funded Cardano parametric-insurance project already live with weather-triggered payouts, a concrete, warm conversation starting Month 2, timed so integrators are ready to transact at mainnet launch rather than cold. Milestone 1's minimum of three external organizations, each transacting from its own wallet, is targeted directly by these three channels combined, not assumed.
+(1) The x402 gateway itself is the funnel: any AI agent or Cardano dApp starts paying per call with no signup, promoted across Cardano developer channels (forum, Discord, x402 developer directory) from Week 1. (2) A fixed-prize developer bounty for the first three third-party oracle integrations, posted Week 1 (three 2,000 ADA slots), targeting a first claim by Week 6 and all three by Week 10, paid on delivered integration work, not transaction volume. (3) Direct outreach to FiDa, a Catalyst-funded Cardano parametric-insurance project already live with weather-triggered payouts - an active conversation starting Week 1, not yet a signed commitment, giving integrators the full three-month window to be ready to transact at mainnet launch rather than cold. Milestone 1's minimum of three external organizations, each transacting from its own wallet, is what these three channels are built to deliver.
 
 ### Is the underlying project open source?
 
@@ -52,7 +40,7 @@ No
 
 ### Who else solves this today - competitors/alternatives, and why does your approach win?
 
-Pyth Pro solves price data on Cardano - nothing solves real-world-event data with a hardware-attested source. Charli3 and similar oracle relays move external feeds, but without the ATECC hardware-signature chain, cross-validation, and Merkle/mainnet-anchor audit trail underneath, independently recomputable rather than just trusted. Off-chain alternatives (a spreadsheet, a centralized weather API, a PDF report) exist for every use case here, but none are on-chain verifiable or smart-contract consumable. Users switch because this is the only source that's hardware-attested, cross-validated, and natively payable per-call via x402 - auditability plus compliance is the actual product, not a claim about one.
+Pyth Pro solves price data on Cardano - nothing solves real-world-event data with a hardware-attested source. Charli3 and similar oracle relays move external feeds, but without the ATECC hardware-signature chain, cross-validation, and Merkle/mainnet-anchor audit trail underneath, independently recomputable rather than just trusted. Off-chain alternatives (a spreadsheet, a centralized weather API, a PDF report) exist for every use case here, but none are on-chain verifiable or smart-contract consumable. Teams switch to us because we're the only source that's hardware-attested, cross-validated, and natively payable per-call via x402 - auditability plus compliance is the product.
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
@@ -60,7 +48,7 @@ A Merkle root has been anchored to Cardano mainnet once a day, every day, since 
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-A new on-chain contract publishes Malama's live, hardware-signed environmental readings in the same consumption pattern Pyth Pro already proved on Cardano: a signed data update that a consuming contract includes in its own transaction, paying its own fee. An x402 gateway sits in front of the same data for off-chain and agent consumers: an HTTP 402 challenge, a signed payment, ADA settlement on Cardano, then data delivery. Every paid call is a real, countable network-fee transaction, whatever the size of the underlying payment. Raw reading payloads are stored on Arweave, permanent and content-addressed; Cardano carries only the compact daily Merkle roots and the oracle consumption pattern, keeping on-chain cost low while the underlying data stays permanently retrievable and independently verifiable. A minimal reference consumer contract and an open-source SDK ship alongside both paths, so a third-party Cardano developer can integrate without reverse-engineering our internal data model. This is the right fit because it reuses a pattern the ecosystem has already validated (Pyth) rather than inventing a new consumption model, and it puts the hardware-attestation chain we already run into a form another Cardano application can actually read and pay to consume.
+Oracles + x402: a new on-chain contract publishes Malama's live, hardware-signed environmental readings in the same pattern Pyth Pro already proved on Cardano - a signed update a consuming contract includes in its own transaction, paying its own fee. An x402 gateway sits in front of the same data for off-chain/agent consumers: HTTP 402 challenge, signed payment, ADA settlement, data delivery - every paid call is a real, countable transaction regardless of size. Raw readings live on Arweave; Cardano carries only the compact daily Merkle roots, keeping on-chain cost low. A reference consumer contract and SDK ship alongside both paths. CIP-0113: one token policy, two use cases - a site-rights instrument (a verified sensor site's data rights) and a data-credit instrument (a prepaid unit metering x402 access). Compliance rule: only CIP-0170-attested wallets may mint, hold, or transfer either token. Built on the closest existing reference substandard rather than a new one. CIP-0170: KERI-backed attestations anchored on mainnet for verified sensor operators and verified token counterparties, anchored by the party being verified, not by us, so fees count as genuine usage. This is the standards-compliant, KERI-backed form of the attributable, signed-claim pattern our product already runs on, and the piece that makes the CIP-0113 compliance rule check something real.
 
 ### Fits the timeline
 
@@ -74,7 +62,7 @@ Yes
 
 ### Is the work in this proposal, or substantially similar work, currently funded, previously funded, or under active consideration by any other program?
 
-No
+Yes
 
 ### Team
 
@@ -86,9 +74,7 @@ Incorporated entity
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-Real-world-event data consumers on Cardano: parametric-insurance products needing a weather trigger to settle payouts, prediction/event-settlement contracts needing a real-world outcome, and RWA/agricultural products needing field-condition verification. This category exists today, not hypothetically: FiDa, a Catalyst-funded parametric-insurance project, is already building weather-triggered payouts on Cardano via Charli3/WolframBlockchainLabs oracle data. A second, larger market: AI agents and dApps paying per API call via x402, live on Cardano since October 2025, with the Cardano Foundation now a formal member of the x402 Foundation alongside Google, Visa, and AWS - a real, growing category of machine-to-machine payment volume Malama's oracle plugs directly into.
-
-Evidence of Malama's own reach: a hardware-signed sensor network (2 physical field nodes plus 6 cross-validated third-party weather-API streams) has anchored to Cardano mainnet daily, unbroken, for 5+ weeks, generating 9,000+ verifiable readings per day. That's production-scale data, ready to be consumed the moment the oracle contract ships. The dMRV pipeline underneath was proved out and funded once already, in Catalyst Fund 12.
+Real-world-event data consumers on Cardano: parametric-insurance products needing a weather trigger to settle payouts, prediction/event-settlement contracts needing a real-world outcome, and RWA/agricultural products needing field-condition verification. This category exists today: FiDa, a Catalyst-funded parametric-insurance project, is already building weather-triggered payouts on Cardano via Charli3/WolframBlockchainLabs oracle data. A second, larger market: AI agents and dApps paying per API call via x402, live on Cardano since October 2025, with the Cardano Foundation now a formal member of the x402 Foundation alongside Google, Visa, and AWS - a real, growing category of machine-to-machine payment volume our oracle plugs directly into. Evidence of our own reach: our hardware-signed sensor network (2 physical field nodes plus 6 cross-validated third-party weather-API streams) has anchored to Cardano mainnet daily, unbroken, for 5+ weeks, generating 9,000+ verifiable readings per day. That's production-scale data, ready to be consumed the moment the oracle contract ships. We proved out and funded the dMRV pipeline underneath once already, in Catalyst Fund 12.
 
 ### Applicant name
 
@@ -96,15 +82,15 @@ Evidence of Malama's own reach: a hardware-signed sensor network (2 physical fie
 
 ### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
 
-Consumers pay their own transaction fees, via direct oracle-contract consumption (Pyth pattern) or x402 pay-per-call, to read Malama's live data; Malama never subsidizes usage. The underlying sensor/attestation network is core infrastructure, already operating and already commercialized elsewhere (proved out under Catalyst Fund 12); it doesn't depend on this grant to keep running. x402 turns the API into a standing, no-subscription revenue channel - every metered call is real income independent of the measurement window. CIP-0113 token holders (site-rights, data-credits) pay their own mint/transfer fees. Because the revenue model has zero marginal cost to Malama beyond what's already running, usage has no reason to drop once the kicker period starts - exactly the sustained-pace signal this program rewards with a larger bonus share.
+Consumers pay their own transaction fees, via direct oracle-contract consumption (Pyth pattern) or x402 pay-per-call, to read our live data; we never subsidize usage. Our sensor and attestation network is core infrastructure, already operating and already commercialized elsewhere (proved out under Catalyst Fund 12); it doesn't depend on this grant to keep running. x402 turns the API into a standing, no-subscription revenue channel - every metered call is real income independent of the measurement window. CIP-0113 token holders (site-rights, data-credits) pay their own mint/transfer fees. Because the revenue model has zero marginal cost to us beyond what's already running, usage has no reason to drop once the kicker period starts - exactly the sustained-pace signal this program rewards with a larger bonus share.
 
 ### Programmable tokens (CIP-0113) - expected transaction count
 
-860
+290
 
 ### On-chain identity (CIP-0170) - expected transaction count
 
-620
+43
 
 ### Named, verifiable team
 
@@ -116,7 +102,7 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Without this grant, our attestation layer stays an internal integrity tool: real and verifiable, but not something another Cardano application can read, pay to consume, or hold a compliant claim against. This grant builds the three pieces that change that: the on-chain oracle contract and x402 gateway, the CIP-0113 token policy and its compliance wiring, and the CIP-0170 attestation flow. Spend: engineering time on the oracle contract, gateway, and token/identity build (most of the build budget); documentation and a reference consumer so third parties can integrate without reverse-engineering our data model; a fixed-prize bounty paid only on delivered integrations; and a budgeted contractor contingency for CIP-0113/CIP-0170 if Month 1 testnet work runs behind pace.
+Build tranche (48,000 ADA, guaranteed on milestone delivery) breaks down: 40,000 ADA in-house engineering (Dominick, full-time across all three integrations - oracle contract, x402 gateway, CIP-0113 policy, CIP-0170 attestation flow); 6,000 ADA across three fixed-prize bounties (2,000 ADA each), paid only on delivered third-party oracle integrations; 2,000 ADA for testnet/mainnet deployment costs, KERI tooling integration, and an external security review. Adoption (up to 48,000 ADA) and Kicker (24,000 ADA) aren't spent up front - they're earned directly against the 2,450 transactions and 1,360 ADA in fees targeted across all three integrations, per the blended formula.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -128,15 +114,11 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-Month 1 - Oracle contract + x402 gateway to testnet (priority path). CIP-0113/CIP-0170 design and testnet spikes in parallel. Benchmark real per-transaction fees. Go/no-go checkpoint on CIP-0113/0170 scope at month end.\
-\
-Month 2 - Reference oracle consumer + docs + bounty live. If CIP-0113/0170 stayed in scope: compliance-rule wiring to testnet. Direct outreach to FiDa and other named conversations begins.\
-\
-Month 3 - Mainnet deployment of everything still in scope. Footprint declaration per integration. Milestone 1 demo.
+Oracle contract live on Cardano mainnet, publishing our declared feed in a third-party-consumable pattern, evidenced by a transaction from a wallet that isn't ours. x402 gateway live, with at least one real paid call. CIP-0113 token policy live, with compliance enforced against CIP-0170 attestations, evidenced by an external mint or transfer. CIP-0170 attestation issuance live, with at least one attestation anchored by a wallet that isn't ours. Reference consumer contract and SDK published. Documentation covering hexes, data types, token mechanics, and the identity flow. Declared footprint published per integration: script hashes, policy IDs, registered tag, our own wallets. At least three external organizations onboarded across the three integrations combined. Demo Day walkthrough covering all three. Funded by the 48,000 ADA Build tranche: 40,000 ADA engineering (all three integrations), 6,000 ADA bounty (delivered integrations only), 2,000 ADA deployment/tooling/security.
 
 ### Oracles - expected transaction count
 
-2290
+1150
 
 ### How far along is the integration you're proposing, today?
 
@@ -144,11 +126,11 @@ TRL 2 - Technology concept formulated
 
 ### Programmable tokens (CIP-0113) - fee target (ADA)
 
-380
+160
 
 ### On-chain identity (CIP-0170) - fee target (ADA)
 
-180
+130
 
 ### Clear budget
 
@@ -187,7 +169,7 @@ Yes
 
 ### Oracles - fee target (ADA)
 
-800
+400
 
 ### Business
 
@@ -212,6 +194,10 @@ Yes
 ### Confirmation: our plan complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard)
 
 Yes
+
+### Funder, status, and what it covers
+
+Project Catalyst - Fund 12 (2024). Status: completed, successfully, in full. Funder covered: the original u-dMRV MVP, focused on on-chain carbon credits (Distributed Hawaii Carbon Credits on Cardano) - the sensor-and-attestation infrastructure this proposal builds on. What this grant covers instead: data attestation for that same information, moved beyond carbon-credit tokenization specifically - a new oracle contract, x402 gateway, and CIP-0113/CIP-0170 conversion. New, additional work, not a continuation of Fund 12's deliverables.
 
 ### Standard read and attested
 

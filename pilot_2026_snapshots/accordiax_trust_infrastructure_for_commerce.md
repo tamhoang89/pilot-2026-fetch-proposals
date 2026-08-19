@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 2
+- **Revision:** 10
 - **Proposer:** `stake1u9l3zn3f46hs2rfzgzer9khesfsfe0cfgren2nsqy0hys6c5pydtz`
-- **Funding requested:** ₳150,000
-- **Last finalized:** 2026-08-19T06:59:49.306000+00:00
+- **Funding requested:** ₳60,000
+- **Last finalized:** 2026-08-19T16:41:23.237000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -20,11 +20,11 @@ TRL 5 - Technology validated in relevant environment
 
 **Abdulbasit Abdulrahman Adigun: Project Lead & Lead Software Architect/Developer:** leads system architecture, Cardano integration, engineering, and internal technical contributors. [GitHub](https://github.com/devbasrahtop) · [LinkedIn](https://www.linkedin.com/in/devbasrahtop/) · [Portfolio](https://devbasrahtop.com)
 
-**Aanuoluwapo Ayomide Osemene: Growth & Adoption Lead:** owns the 500-user acquisition strategy, adoption channels, and transaction-growth plan. [LinkedIn](https://linkedin.com/in/ayomishuga) · [X](https://x.com/shugaayomicontruct)
+**Aanuoluwapo Ayomide Osemene: Growth & Adoption Lead:** owns the 100-user acquisition strategy, adoption channels, and transaction-growth plan. [LinkedIn](https://linkedin.com/in/ayomishuga) · [X](https://x.com/shugaayomicontruct)
 
 **Kamarudeen Fad: Project Manager:** coordinates sprints, milestones, blockers, documentation, and delivery; he has already managed Accordiax development. [LinkedIn](https://www.linkedin.com/in/fad-kamarudeen) · [X](https://x.com/kamarudeen22205)
 
-**Yuguda Muhammad: Cardano Software Developer/Integration Engineer, contributes** to Aiken/Plutus smart contract development, transaction engineering, testing, and evidence. He has contributed to Nextrium’s Zivana Protocol Validation project. [LinkedIn](https://linkedin.com/in/yuguda) · [GitHub](https://github.com/Yuguda999)
+Yuguda Muhammad: Software Developer/Integration Engineer: contributes to Aiken/Plutus smart-contract development, transaction engineering, testing, and evidence. He has contributed to Nextrium's Zivana Protocol stacks validation project, an internal Nextrium project that is not Catalyst-funded or ecosystem-funded. [LinkedIn](https://linkedin.com/in/yuguda) · [GitHub](https://github.com/Yuguda999)
 
 **Nextrium’s wider internal technology and community teams provide additional execution capacity as required.**
 
@@ -38,11 +38,11 @@ N/A — Accordiax is an early-stage commercial product entering its first Cardan
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-We target 500 distinct external users, acquired through Nextrium's existing community, UNILAG student-association outreach, referrals, targeted word-of-mouth, and later, Nigerian TikTok/Instagram creators. We expect roughly half to become recurring agreement initiators, with repeat use from service providers and customers. Stablecoin usage comes from genuine commerce: users fund protected agreements and settle completed or refunded engagements through verified stablecoins on Cardano. Our target of 3,000 transactions is based on approximately 1,500 protected settlement cycles, with funding and settlement creating multiple genuine on-chain actions per cycle. CIP-0170 usage comes from participants establishing and using verifiable Cardano-linked identity/attestations throughout real agreements, targeting 1,200 genuine attestations. Activity will be distributed across the measurement window rather than concentrated in spikes. We will not pay, rebate, or otherwise incentivize users to transact; sponsored-fee UX may be used for accessibility, but those fees will not count toward adoption.
+We target 100 distinct external users through four channels: Nextrium's existing community (31), University of Lagos student-community outreach, including our previous Sciences Students’ Association Cardano-onboarding channel (31), referrals (25), and targeted word-of-mouth (13). We expect about 50 users to become recurring agreement initiators. Based on our validated MVP workflow, we model approximately 300 completed agreements during the measurement period. A completed agreement can generate at least two relevant settlement transactions: the initiator funds escrow, followed by a release or refund transaction, potentially producing about 600 stablecoin transactions. CIP-0170 usage will come from genuine identity attestations associated with participating users and agreements, with a target of 200 transactions. The first 14 days will target 60 users: Days 1–2: 8; Days 3–4: 10; Days 5–7: 12; Days 8–10: 15; Days 11–14: 15. Activity will be paced across the measurement window and will comply with the standard's daily cap and epoch rhythm. We will not pay or rebate users to transact; sponsored fees, when used for UX, will not count.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-We will onboard at least 500 external users through a combination of existing communities and scalable acquisition channels. Initial outreach will leverage Nextrium's existing community and our previous work with the [University of Lagos Sciences Students’ Association on Cardano onboarding](https://x.com/nextriumglobal/status/1882727364968550609?s=20), while we explore additional student associations within UNILAG and other universities. A referral program and targeted word-of-mouth outreach will support early adoption. After initial validation, we will expand through Nigerian TikTok and Instagram creators whose audiences include students, freelancers, professionals, and small businesses. We will track users by acquisition source and target at least 500 distinct external users.
+We will target 100 distinct external users through four channels: Nextrium's existing community (31), [our previous University of Lagos Sciences Students' Association Cardano-onboarding channel](https://x.com/nextriumglobal/status/1882727364968550609?s=20) and additional UNILAG student-community outreach (31), a referral program (25), and targeted word-of-mouth outreach (13). The first 14 days will have a defined launch cadence: Days 1–2, Nextrium community onboarding (8 users); Days 3–4, UNILAG outreach (10); Days 5–7, referrals and direct word-of-mouth (12); Days 8–10, additional student-community outreach (15); Days 11–14, continued activation across the four channels (15). This gives a Day-14 target of 60 users. We will track acquisition source, external-wallet participation, and genuine agreement activity while respecting the program's epoch rhythm and daily activity cap.
 
 ### Is the underlying project open source?
 
@@ -109,7 +109,7 @@ See our [Accordiax Business Model Spreadsheet](https://docs.google.com/spreadshe
 
 ### On-chain identity (CIP-0170) - expected transaction count
 
-1200
+200
 
 ### Named, verifiable team
 
@@ -121,7 +121,7 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-The funding enables Accordiax to connect Cardano to an already substantial African stablecoin market through real commerce use cases. Nigeria accounts for roughly 60% of Sub-Saharan Africa’s stablecoin inflows, and stablecoins represented over 65% of Nigeria’s crypto inflows in 2024. Cardano’s USDCx infrastructure only became available on mainnet in 2026. The grant will fund engineering, stablecoin integration, wallet and fee abstraction, transaction-resource sponsorship pilots, security auditing, compliance work, partner integration, mainnet deployment, monitoring, and user acquisition. Our goal is to make Cardano settlement accessible to users who need commerce protection without requiring prior blockchain expertise.
+The funding enables Accordiax to connect Cardano to an already substantial African stablecoin market through real commerce use cases. The grant funds would be used accordingly: ₳16,000 (26.7%) for Cardano escrow and verified stablecoin integration; ₳7,000 (11.7%) for CIP-0170 identity integration; ₳8,000 (13.3%) for wallet, fee, and transaction-resource abstraction; ₳15,625 (26.0%) for independent security review and QA; ₳5,375 (9.0%) for mainnet deployment, monitoring, and evidence; ₳5,000 (8.3%) for user onboarding and adoption activities; and ₳3,000 (5.0%) for project management, documentation, and compliance. At our planning rate of ₳1 = $0.16, this is $9,600. The spend is tied directly to the M1 integration and M2 adoption deliverables.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -141,7 +141,7 @@ Yes
 
 **4. Security & operations:** Complete production testing, security review, monitoring, error handling, and release documentation.
 
-**5. Mainnet evidence:** Declare scripts, policies, addresses, message tag, and team wallets; provide real-user transaction hashes, explorer links, technical walkthrough, release notes, test/security evidence, and a tagged open-source release.
+**5. Mainnet evidence:** Declare scripts, policies, addresses, message tag, and team wallets; provide real-user transaction hashes, explorer links, technical walkthroughs, release notes, test/security evidence, and a tagged open-source release.
 
 ### How far along is the integration you're proposing, today?
 
@@ -149,7 +149,7 @@ TRL 5 - Technology validated in relevant environment
 
 ### On-chain identity (CIP-0170) - fee target (ADA)
 
-400
+60
 
 ### Clear budget
 
@@ -217,7 +217,7 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-3000
+600
 
 ### Standard read and attested
 
@@ -225,23 +225,11 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-1000
+200
 
 ### Current funded commitments
 
-**Programme:** Intersect MBO, Cardano Product Committee, Product Research Grants (RFP 07)\
-**Project:** L2 Adoption and Interoperability Demand in African Emerging Markets: A Builder-Embedded Research Study\
-**Project number:** CPC-26-0015\
-**Statement of Work:** SOW 2, Product Research, ER-0004b-25\
-**Grantee:** Nextrium Global Innovations Ltd\
-**Value:** 25,000 ADA across four milestones, paid on delivery\
-**Period:** 27 July 2026 to 19 October 2026\
-**Status:** Active. Milestone 1 delivered. Milestone 2 is in progress, due 4 September 2026.\
-**Named Project Lead:** Abdulbasit Adigun Abdulrahman
-
-**Team members engaged:** Abdulbasit Adigun Abdulrahman (Lead researcher), Yuguda Muhammad (research coordinator), and Samir Idris (independent technical reviewer, engaged for a defined scope).
-
-**Deliverables:** Sixteen across four milestones, all licensed to Intersect and the Cardano ecosystem under CC BY 4.0.
+Abdulbasit Abdulrahman Adigun and Yuguda Muhammad are currently contributing to a separate funded research project: Intersect MBO, Cardano Product Committee, Product Research Grants (RFP 07), “L2 Adoption and Interoperability Demand in African Emerging Markets: A Builder-Embedded Research Study” (Project CPC-26-0015; SOW 2, ER-0004b-25). The grantee is NexTrium Global Innovations Ltd; value is 25,000 ADA across four milestones; the active period is 27 July–19 October 2026. Milestone 1 has been delivered, and Milestone 2 is in progress. This research project is separate from Accordiax and does not fund, deliver, or claim any Accordiax Cardano integration work.
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 

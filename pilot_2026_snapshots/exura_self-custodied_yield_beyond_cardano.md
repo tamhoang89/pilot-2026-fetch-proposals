@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 10
+- **Revision:** 13
 - **Proposer:** `stake1uxqs8hmgwkqza9gp7zqh8sqx5entwhudla5rwc39ufw9anq5set5u`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-19T07:18:47.413000+00:00
+- **Last finalized:** 2026-08-19T16:19:26.014000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -36,25 +36,31 @@ No repayment terms or revenue share. We give back the primitive: the verifier [c
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Who transacts: the depositor, from their own wallet. A first deposit is two Cardano transactions the user pays for, the binding attestation and the USDCx burn; each later deposit adds one. Exits and other instructions are signed messages, not transactions, so we count none of them, and an EVM-side arrival produces no Cardano activity.
+Who transacts: the depositor, from their own wallet. The binding attestation moves no USDCx, so we do not count it. What counts is the deposit, a USDCx burn we construct and the user signs, one per deposit. Exits and later instructions are signed messages, not transactions, and an EVM-side arrival produces no Cardano activity.
 
-Why: to earn on stablecoins they already hold without handing them to anyone, and to get them back on demand.
+How often: this is a savings position, and people add to savings. We assume three to five deposits per user across the window, and each vault we list adds another occasion to deposit rather than another way to split one.
 
-How often: deposits are episodic. We assume one to one and a half per user across the window, so counted volume follows how many people deposit, not how much anyone trades.
+The declared ₳375 is 1,113 burns at the measured 0.337 ADA. At four deposits per user that is about 280 depositors, at five about 225, from a launch cohort we expect in the low hundreds through our own announcement and word of mouth. For scale, 134 distinct wallets ran this corridor unprompted in the last 60 days with no product asking them to.
 
-The declared ₳375 across 1,113 burns is what the program floor requires at this ask, and we would rather show our arithmetic than pin a number we do not believe. Our projection is 80 to 120 depositors, some 80 to 180 counted transactions and ₳27 to ₳61 in fees. The declared target needs about a thousand depositors, some four times the entire xReserve corridor's current 60-day burn volume. Ambitious is the honest word for it.
-
-No user will be paid, reimbursed or fee-subsidised to generate counted activity, and our own wallets are declared and excluded.
+No user will be paid, reimbursed or fee-subsidised to generate counted activity, our own wallets are declared and excluded, and we onboard in waves so the count comes from steady use rather than a launch-day spike the daily cap would discard.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Onboarding is three steps, no new software: users connect the wallet they already have, sign once to bind the account, sign the deposit. USDCx comes from wherever they already get it, including any Cardano DEX.
+Onboarding is three steps: connect the wallet they have, sign to bind, sign the deposit.
 
-Our own surface comes first. The dashboard is live but unannounced, tracking a limited set of accounts while we finish it, so the honest position is that we have no users yet. Announcing it is the first step of this plan, and the deposit flow lands there shortly after. Anyone connecting a wallet to see what they hold is then one signature away from putting it to work.
+The first fourteen days after go-live:
 
-The rest is where we live. We are based in Argentina, which hosts a large share of the region's crypto and Cardano events, and IOG keeps an office here along with the Lace and Midnight teams. In-person is the cheapest credible channel a small team has, and we are where it happens. We also post from our own X account.
+Days 1-2. Announce the dashboard on our channels and in the Cardano venues its audience reads, with the walkthrough video.
 
-We run no paid acquisition or geo-targeted advertising: a legal constraint before a preference.
+Days 3-5. Deposit flow open to a first wave, office hours, mainnet activity published as it lands.
+
+Days 6-10. Second wave, with whatever the first stumbled on fixed.
+
+Days 11-14. Third wave, first numbers published, same material into Catalyst's calls.
+
+Waves are deliberate: the daily cap discards a launch-day spike while per-epoch floors reward steady cadence, so onboarding is paced to the measurement structure.
+
+Reach we can show: our own account peaks at 600-800 impressions on a single day and about 2K in a month, on rare and mostly technical posts. The audience is checkable on-chain: 134 distinct wallets burned USDCx through xReserve in the last 60 days, unprompted by any product.
 
 ### Is the underlying project open source?
 

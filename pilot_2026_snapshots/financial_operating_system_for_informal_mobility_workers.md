@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 15
+- **Revision:** 19
 - **Proposer:** `stake1uxdspy5nvpfw8pushhkhr5eytlrka7t5dsapws7cc45ezzsdgy2zn`
 - **Funding requested:** ₳185,000
-- **Last finalized:** 2026-08-18T13:14:23.604000+00:00
+- **Last finalized:** 2026-08-19T16:22:36.836000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -17,14 +17,22 @@ TRL 6 - Technology demonstrated in relevant environment
 ### Why is your team well-suited to deliver this?
 
 - **Ndukwe Winnifred — COO:** Is a Petroleum engineer final year student Leads operations and execution, with experience across operational systems, logistics, and mobility.
-- **Andrew David — CTO:**  \` is a Senior Backend Engineer with over 5 years of experience building distributed systems and fintech infrastructure. He works primarily in Python and Go, with deep expertise in payments —from NUBAN provisioning and SafeHaven API integrations to event-driven architectures using Kafka and Redis. His career has taken him through companies like Clear Codes, KAEDCO, DMPSIMPS, and Federal Medical Centre Abuja, where he built everything from ERP modules to HR systems and payslip platforms, giving him a rare mix of enterprise reliability and startup speed.
 
-  His blockchain work spans multiple ecosystems: 
+- <https://x.com/real_winni3>
+
+- **Andrew David — CTO:** \` is a Senior Backend Engineer with over 5 years of experience building distributed systems and fintech infrastructure. He works primarily in Python and Go, with deep expertise in payments —from NUBAN provisioning and SafeHaven API integrations to event-driven architectures using Kafka and Redis. His career has taken him through companies like Clear Codes, KAEDCO, DMPSIMPS, and Federal Medical Centre Abuja, where he built everything from ERP modules to HR systems and payslip platforms, giving him a rare mix of enterprise reliability and startup speed.
+
+  <https://github.com/emperorsixpacks>
+
+- <https://ng.linkedin.com/in/andrewoluwatomiwo>
+
 - **Martin Machiebe — Blockchain / Full-Stack Developer:** \`\`\`
 
   Martin is a talented Full Stack Blockchain Developer with strong expertise in Rust, Solidity, and TypeScript. He leads technical architecture and development, specializing in building intuitive user interfaces, secure non-custodial wallet systems, and seamless integrations between modern frontends and blockchain backends.
 
-  \`\`
+  \`<https://github.com/martinvibes>
+
+- <https://www.linkedin.com/in/martinvibes/>
 
 ### Eligible area
 
@@ -46,19 +54,11 @@ Every transaction is a real PlutusV3 or stablecoin settlement transaction with a
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-**Answer (100 words):**
-
----
-
 We reach and onboard users primarily through direct field engagement and driver networks. After buying bikes and placing them with operators, we built trust by working closely with drivers on the ground. We continue this approach through local driver associations, existing fleet partners, and referrals from early users.
 
-We also leverage structured programs  we began product testing during the 12-week Piece of Pie program by Gimpa Labs, which gave us direct access to users and continuous feedback.
+We also leverage structured programs we began product testing during the 12-week Piece of Pie program by Gimpa Labs, which gave us direct access to users and continuous feedback.
 
 Evidence comes from strong driver interest during vehicle placements, willingness to engage with our financing model, and positive responses in the Gimpa Labs testing period. These hands-on channels have already proven effective for reaching real informal operators.
-
----
-
-(Word count: 99)
 
 ### Is the underlying project open source?
 
@@ -70,17 +70,9 @@ https://www.youtube.com/shorts/K4hQVdER5aU?si=SXbOfgFEX7bozolJ
 
 ### Who else solves this today - competitors/alternatives, and why does your approach win?
 
-**Here’s a tight 100-word version:**
-
----
-
 Current players include **Moove**, **M-Kopa**, and **Enviable Motors**. Moove focuses on vehicle financing for ride-hailing drivers, M-Kopa on pay-as-you-go asset financing, and Enviable Motors on electric mobility. While strong in specific areas, most separate financing from vehicles or rely on traditional structures that under-serve informal KEKE and last-mile drivers.
 
 3rike integrates near-factory pricing, on-chain financial identity from real payment behavior, AI credit scoring, and Battery-as-a-Service. We prioritize faster ownership and driver empowerment over prolonged dependency, making our approach purpose-built for informal African mobility operators.
-
----
-
-(Word count: 98)
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
@@ -119,7 +111,9 @@ Incorporated entity
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-Our target market is informal mobility operators across Africa KEKE drivers, commercial motorcycle riders, and electric taxi operators  along with users tired of local currency devaluation and no capital to purchase it .We validated demand by buying bikes and placing them with drivers after a teammate’s driver had his vehicle seized. This hands-on testing revealed strong interest in faster ownership and transparent financing. Significant profits currently exist off-chain through opaque informal systems, which is why we are bringing the solution on-chain: to create formal financial identities, verifiable payment histories, and scalable credit access.We further tested the product during the 12-week Piece of Pie program hosted by Gimpa Labs, where continuous driver feedback confirmed real willingness to adopt a fairer, technology-enabled model. These direct market interactions provide clear evidence of product-market fit.
+Our target market is **motorcycle and three-wheeler mobility workers, mobility operators, and everyday users seeking fractional access to productive assets**. Our broader TAM is the **$5.5B two- and three-wheeler opportunity** identified in our market analysis. Our initial SAM is the mobility-worker segment we can reach through our first markets, while our initial SOM targets **100 drivers**, scaling to **500 and 2,000+ drivers** as we validate the model. Our sales model currently targets 10,000 drivers reached, converting to 100 deployed vehicles initially.
+
+We have already deployed **4 bikes and generated $8,000 in revenue**, providing early evidence of willingness to pay.
 
 ### Applicant name
 
@@ -145,17 +139,7 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-3riKE already works. A driver in Lagos owns his tricycle via TricycleNFT, an investor holds a fractional share and has claimed real yield  the full loop is live and verifiable on Cardano Preprod.
-
-This grant takes the product to mainnet with real Cardano native stablecoin settlement. It funds security audits of all contracts, mainnet deployment, and replacing our testnet USDC bridge with USDM/USDCx so driver repayments and investor payouts move real money.
-
-**Budget (Total: ₳ 150,000)**
-
-- Core Engineering & Mainnet Deployment: ₳ 40,000
-- Security Auditing & QA: ₳ 35,000
-- Native Stablecoin Integration: ₳ 35,000
-- Driver & Investor Onboarding: ₳ 25,000
-- Project Management & Reporting: ₳ 15,000
+3riKE already works. A Lagos driver owns his tricycle through TricycleNFT, a global investor holds a fractional share, and real yield has already been claimed. The loop is built, tested, and verifiable on Cardano Preprod. This grant moves 3riKE from testnet to mainnet with real Cardano native stablecoin settlement. Funding covers mainnet deployment (₳40,000), independent security audits and QA (₳35,000), and USDM/USDCx integration (₳35,000) to enable real driver repayments and investor payouts. ₳25,000 supports driver and investor onboarding through cooperatives in Lagos, Ibadan, and Accra, while ₳15,000 covers project management, Catalyst reporting, Dune analytics, compliance documentation, and Demo Day. Total requested: **₳150,000**.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 

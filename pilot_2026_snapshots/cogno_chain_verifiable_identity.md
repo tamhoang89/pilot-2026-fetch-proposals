@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 52
+- **Revision:** 57
 - **Proposer:** `stake1u87n83zjwny9defgu9527fdyy8gvdfewhmf26a89yx2pvxq3efkzp`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-18T15:23:20.720000+00:00
+- **Last finalized:** 2026-08-19T16:01:08.431000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,17 +16,17 @@ TRL 6 - Technology demonstrated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-Logical Mechanism LLC is the applicant. Quinn Parkinson is the sole engineer and operator, the only person on this grant: runtime and pallets, the CESR and key event log verifier, the frontend, and node and db-sync operations. No subcontractors.
+Logical Mechanism LLC is the applicant. Quinn Parkinson is the sole engineer and operator and the only person on this grant: runtime and pallets, the verifier, the frontend, node, and db-sync operations. No subcontractors.
 
 Cardano Foundation, 06 Jan 2025, bylined Denicio Bute: "we highlight activities of the Logical Mechanism \[LOGIC\] pool operated by Quinn Parkinson". cardanofoundation.org/blog/spotlight-stake-pools-logic
 
-Catalyst Fund 14, project 1400046: 100,000 ADA, four milestones, all approved, funds fully distributed. One substantive resubmission on milestone 1 (PoA 7274 rejected 2026-01-01, PoA 7356 approved 2026-01-04).
+Prior Catalyst funding, declared: Fund 14 project 1400046, 100,000 ADA, four milestones approved and fully distributed after one M1 resubmission. It delivered Peace-Protocol, a separate product. Cogno has never been Catalyst-funded.
 
-Milestone 1 here is Cogno on mainnet against a full non-pruned db-sync and our own cardano-node. The LOGIC pool registered on 2020-12-03 and has remained registered since, with 4,162 blocks minted. That is the qualification for milestone 1.
+Milestone 1 of this proposal is Cogno on mainnet against a full non-pruned db-sync and our own Cardano node. The LOGIC pool registered on 2020-12-03 and has remained registered since, with 4,162 blocks minted. That is the qualification for milestone 1.
 
 Live, with runtime, pallets, node, and contracts public at github.com/logical-mechanism/cogno.
 
-Background: building on Cardano in public since January 2021. I built contracts for Tokhun, DripDropz, Cornucopias, NEWM, Fraction Estate, and Iagon, and from our work account github.com/logicalmechanism (43 repos), merged 14 pull requests into core Cardano tooling: 8 into aiken-lang/stdlib, including the BLS12-381 wrappers and Miller loops, 1 into aiken-lang/aiken, 5 into txpipe/pallas. Current work: github.com/logical-mechanism. This is our only Catalyst proposal this round.
+Background: building on Cardano in public since January 2021. I built contracts for Tokhun, DripDropz, Cornucopias, NEWM, Fraction Estate, and Iagon, and from our work account github.com/logicalmechanism (43 repos) merged 14 pull requests into core Cardano tooling: 8 into aiken-lang/stdlib, including the BLS12-381 wrappers and Miller loops, 1 into aiken-lang/aiken, 5 into txpipe/pallas. Current work: github.com/logical-mechanism. This is our only Catalyst proposal this round.
 
 ### Eligible area
 
@@ -40,25 +40,29 @@ N/A
 
 WHO TRANSACTS
 
-Organizational DRep and record-stream publishers. Cogno builds the AUTH_BEGIN and ATTEST in the browser. The organization signs, pays, and submits from its own CIP-30 wallet. We submit nothing for anyone and do not sponsor any fees.
+Organizational DReps and record-stream publishers. The organization signs, pays and submits from its own wallet. We submit nothing for anyone and sponsor no fee.
 
 WINDOW
 
-We will deliver M1 two months after selection, which is a month within the limit. Under 7.3, that stretches the floored window from 6 epochs to 12, and fees count from delivery through a floorless entry ramp. Measurement period about 65 days.
+We deliver M1 at week 9, four weeks inside the limit. Under 7.3 that earns 5 epochs, stretching the floored window from 6 to 11, and fees count from delivery through a floorless entry ramp.
 
 RAMP
 
-Organizations onboard across the first 30 days, not on day one, so average exposure is 50 of the 65 days. Day 14 is 5 wallets and 20 records, as our channels answer states.
+Organizations onboard across the first 30 days, so average exposure is 45 of 60. Day 14 is 5 wallets and 20 records, as our channels answer says.
 
-COHORT
+COHORT, at measured 30-day rates
 
-8 top-decile at 24, 10 consistently active at 18, 12 at the pooled median of 10. Blended 16.4 per organization, so 492 x 50/30 = 820 attestations. Two record-stream publishers add 99 each, under every observed label-1447 month but two.
+8 top-decile at 24, 10 consistently active at 18, 12 at the pooled median of 10. Blended 16.4, so 492 x 45/30 = 738 attestations. Two record-stream publishers add 140 each, under three observed 1447 months.
 
 MATH
 
 1,018 ATTEST at 0.197 plus 32 AUTH_BEGIN at 0.233 is 208.00 ADA across 1,050 transactions from 32 wallets, against a 100 ADA floor and a 10-wallet minimum.
 
-We do not use 34 records per organization per 30 days. Only 22 of 4,230 observed DRep windows reach it.
+Not the 34-per-30-days rate: only 22 of 4,230 DRep windows reach it.
+
+BAND
+
+208 is in Credible, 160 to 320 here. Ambitious starts at 320: about 1,600 attestations, roughly 50 organizations at these rates. Signed commitments are 3.3's bar for Aggressive, above 900.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -142,7 +146,7 @@ Yes
 
 ### Submitting as
 
-Individual
+Incorporated entity
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
@@ -156,7 +160,7 @@ Two tiers. Persistent identity for anyone running a KERI identifier: addressable
 
 ### Applicant name
 
-Quinn Parkinson
+Logical Mechanism LLC
 
 ### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
 
@@ -184,19 +188,23 @@ Yes
 
 Without this, the CIP-170 verifier does not get built. Walking another org's KERI log and vLEI chain is not work we would self-fund. Mainnet is gated on a full non-pruned, tx_in-enabled db-sync and its own cardano-node.
 
-200,000 ADA: 13 weeks at 13,000, 169,000, plus 31,000 infrastructure. Each line names the M1 output it pays for. M1 lands at two months on D1-D4 and a minimal D5; D5 polish and D6 run inside the window.
+200,000 ADA: 13 engineer-weeks at 13,000 plus 31,000 infrastructure, split at Milestone 1.
+
+TO M1, 9 weeks, 117,000
+
+D1, D2 mainnet launch and external loop. 2 weeks, 26,000
+
+D3 runtime upgrade and spec bump. 2 weeks, 26,000
 
 D4 verifier: CESR, Ed25519, Blake3, key event log walk. 5 weeks, 65,000
 
+AFTER M1, inside the measurement window, 4 weeks, 52,000
+
 D5 in-browser builder, organization tag, KEL cache. 3 weeks, 39,000
 
-D3 runtime upgrade and spec bump. 2 weeks, 26000
+D6 reporting and onboarding support. 1 week, 13,000
 
-D1, D2 mainnet launch and external loop. 2 weeks, 26000
-
-D6 footprint, reporting, onboarding support. 1 week, 13000
-
-D1 mainnet node and db-sync host, hardware plus four months. 31000
+Mainnet node and non-pruned DB-sync host, hardware plus four months. 31,000
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -208,19 +216,25 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-Six outputs, tagged D1-D6 in the budget breakdown. All six land two months after selection, a month inside the limit.
+All six are completed inside the three-month window. M1 is reached at week 9 for outputs 1 to 4; outputs 5 and 6 follow by week 13, within the measurement window. The budget splits the same way.
 
-1\. Cogno live on mainnet, observing through its own full non-pruned db-sync; talk_vault deployed. (D1, with the 31000 host line)
+AT M1, WEEK 9
 
-2\. The loop proven by a wallet that is not ours: an ADA lock, a CIP8 bind, a post metered by observed weight. (D2; D1 and D2 share 26000)
+1\. Cogno live on mainnet through its own db-sync; talk_vault deployed. (D1, plus 31000 hosts)
 
-3\. Runtime upgrade live on mainnet: a bound account publishes and clears a pallet-profile attestation pointer. (D3, 26000)
+2\. The loop proven by a wallet not ours: a lock, a CIP-8 bind, a metered post. (D2)
 
-4\. Apache-2.0 CIP170 verifier, test vectors pinned to real mainnet transactions: the Grant Thornton AG and Cardano Foundation declarations decode and check; a fabricated ATTEST is rejected. (D4, 65000)
+3\. Runtime upgrade live: a bound account publishes and clears a pallet-profile attestation pointer. (D3, 26000)
 
-5\. In-browser builder: Cogno builds the AUTH_BEGIN and ATTEST; the organization signs and pays in its own CIP-30 wallet. (D5, 39000)
+4\. CIP-170 verifier, demonstrated live against attestations already on mainnet: the Grant Thornton AG and Cardano Foundation declarations check, a fabricated ATTEST is rejected. No third party needs to act for us to demo M1. (D4, 65000)
 
-6\. Declared footprint: our KERI identifier, our team wallets, and our own application label beside 170; attestations still carry 170. (D6, 13000)
+Footprint declared the same day: KERI identifier, team wallets, our own label beside 170.
+
+BY WEEK 13
+
+5\. In-browser builder: the organization signs and pays in its own CIP-30 wallet. (D5, 39000)
+
+6\. Weekly reporting and onboarding support. (D6, 13000)
 
 ### How far along is the integration you're proposing, today?
 

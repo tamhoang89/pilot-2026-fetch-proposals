@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 46
+- **Revision:** 50
 - **Proposer:** `stake1u996wjw2a9sqjd2k3c7mddv8330xmaan3axy4xst3zk9njsnmcn6e`
 - **Funding requested:** ₳125,000
-- **Last finalized:** 2026-08-18T16:00:24.181000+00:00
+- **Last finalized:** 2026-08-19T16:10:38.834000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -39,11 +39,11 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-**SALIS has approximately 250 seeded provider profiles forming an identifiable outreach pool. They are prospects, not users, guaranteed conversions, or counted Catalyst adoption. CIP-0170 Provider Authority is a new pilot feature and therefore has no historical usage or conversion rate of its own.**
+**SALIS has approximately 250 seeded provider profiles forming an identifiable outreach pool. They are prospects, not users, guaranteed conversions, or counted Catalyst adoption. CIP-0170 Provider Authority is a new pilot integration and therefore has no historical SALIS conversion rate of its own.**
 
-**SALIS is Provider-Sovereign: Providers independently elect whether to claim/create a profile, activate Verifiable Provider Authority, and participate in each care agreement.** The 500-transaction target is a pilot planning target, not a projection from historical CIP-0170 behavior or a forecast that 100 of the existing 250 profiles will convert. **A scenario of about 100 external providers averaging five qualifying transactions is one mathematical path to 500; actual distribution may vary.**
+**The 500-transaction figure is the aggregate pilot adoption target, not a provider-conversion forecast derived from the seeded directory. CIP-0170 supports an authority lifecycle in which authority is established and subsequent ATTEST transactions create verifiable records while that authority remains valid. In SALIS, qualifying activity can therefore arise from provider-authority establishment and genuine provider-authorized care-agreement attestations. Actual volume depends on voluntary external-user adoption and real platform activity.**
 
-**The ₳130 target is Cardano network fees, not SALIS revenue or its 5% platform fee. The external wallet submitting each qualifying Cardano transaction pays the network fee. Existing booking revenue is not relabeled as CIP-0170 adoption. Seeded listings, SALIS wallets, testing, sponsored activity, or metric-only transactions do not count.**
+**The ₳130 target represents Cardano network fees, not SALIS revenue or its 5% platform fee. SALIS wallets, testing, sponsored activity, seeded listings, and metric-only transactions do not count.**
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -157,7 +157,7 @@ Yes
 
 Within the 3-month M1 window, SALIS will deliver a limited, optional CIP-0170 Provider Authority pilot on Cardano mainnet behind production feature flags.
 
-Deliverables include provider KERI AID association and proof of control, privacy-safe profile manifests, CIP-0170 profile authority attestations, off-chain KERI verification, authority/revocation status, audit receipts, and an “Authority Attested” profile status. A second vertical slice will add optional provider-authority attestations to existing booking-confirmation transactions without modifying the escrow validator.
+Deliverables include provider KERI AID association and proof of control, privacy-safe profile manifests, CIP-0170 profile authority attestations, off-chain KERI verification, authority/revocation status, audit receipts, and an “Authority Attested” profile status. A second vertical slice will add optional CIP-0170 ATTEST records to provider-authorized care-agreement confirmation transactions without modifying the escrow validator.
 
 The integration will remain nonblocking so identity-service failure cannot trap or prevent ADA settlement. M1 includes Preview validation, privacy/security review, documentation, monitoring, and kill-switch procedures.
 
