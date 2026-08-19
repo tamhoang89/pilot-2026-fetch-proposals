@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 19
+- **Revision:** 23
 - **Proposer:** `stake1uxlrwkwcyese8dh5nxar7mwr4yy90gdfmaat7ysdshxtqwcvp4qhk`
 - **Funding requested:** ₳125,000
-- **Last finalized:** 2026-08-18T14:48:44.050000+00:00
+- **Last finalized:** 2026-08-19T19:30:29.480000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,13 +16,16 @@ TRL 7 - System prototype demonstrated in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-I am the sole delivery owner. I work as a Senior Software Engineer in enterprise technology innovation; my employer is not a participant and no employer resources are claimed. I designed Vendano and led it through Cardano mainnet operation, Store Mode, Apple review and App Store release.
+I am Jeffrey Berthiaume, the sole delivery owner. My identity and delivery history are publicly verifiable through the links below. LinkedIn identifies my technology work at Southwest Airlines; GitHub shows my public development identity; the prior official Catalyst proposal names me, describes 15+ years shipping production mobile applications, and assigns me responsibility for Vendano's iOS codebase, UX, analytics, documentation and milestone reporting. Apple's listing verifies that Vendano LLC distributes the production iPhone/iPad app.
 
-The existing product is the strongest capability evidence. Apple's listing distributes a signed production iPhone/iPad app with wallet creation/import, local self-custody keys, ADA transfers, contact payments, history and Store Mode. Customers install that binary directly.
+LinkedIn: <https://www.linkedin.com/in/jeffreality/>\
+GitHub: <https://github.com/jeffreality/>\
+Prior Catalyst record: <https://projectcatalyst.io/funds/14/cardano-use-cases-concepts/vendano-contactbased-cardano-wallet-ios-android>\
+Production app: <https://apps.apple.com/us/app/vendano-cardano-wallet/id6751762014>
 
-The GitHub repository is source for developers and reviewers. It intentionally excludes production Firebase configuration, Blockfrost credentials, signing material and Apple entitlements. Developers compiling a fork supply their own configuration; App Store users do not.
+I designed Vendano and led it through Cardano mainnet operation, Store Mode, Apple review and App Store release. Vendano already provides self-custody keys, addresses, UTxO/native-asset discovery, ADA transaction construction/signing/submission, history and production deployment.
 
-This proposal requires no custom Cardano smart contract. USDCx is an existing native asset. The funded Swift/iOS work constructs, signs, submits and displays standard multi-asset transfers. Vendano already provides keys, addresses, UTxO/native-asset discovery, ADA transaction construction/signing/submission, history, Store Mode and App Store deployment. Remaining work is USDCx values, coin selection, minimum ADA/change, checkout UX, testing, localized UI/onboarding/help, App Store metadata/screenshots and release. Much of the scope is user documentation and explanation. No additional developer or uncommitted partner is required.
+No custom Cardano smart contract is required. USDCx is an existing native asset. The funded Swift/iOS work will completely redesign Vendano around merchant payments and focus on USDCx values, multi-asset coin selection and change, minimum ADA handling, checkout UX, testing, localized guidance, App Store assets and release.
 
 ### Eligible area
 
@@ -34,15 +37,13 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Target: 800 genuine USDCx payments and 475 ADA in counted fees, the scaled floor for a 125,000-ADA request. The provable acquisition baseline is 11 App Store units in 30 days, with zero USDCx transactions and no committed merchants.
+Target: 800 genuine USDCx payments and 475 ADA in counted fees, the editor's scaled minimum for a 125,000-ADA request. This is a performance-gated target, not existing volume. The current measurable baseline is 11 App Store units in 30 days, zero USDCx transactions and no committed merchants.
 
-External customers use self-custody wallets to pay independent merchants for real goods/services, supplying their own ADA, USDCx and fees.
+Independent customers will use self-custody wallets and their own funds to pay independent merchants for real goods or services. Before Demo Day, I will contact at least 30 Cardano-community merchants, hold at least 6 substantive conversations, obtain 3 explicit pilot acceptances and activate at least 2 merchant wallets. M1 also requires at least 5 external customers and 10 genuine mainnet payments.
 
-Acquisition: publish localized App Store metadata/screenshots in Spanish, French, German, Korean, Japanese, Simplified Chinese and Traditional Chinese; contact at least 30 Cardano-community merchants; seek 6 substantive conversations, 3 pilot acceptances, 2 active merchants before Demo Day and 4-6 during adoption. Public content is supplemental, not committed demand.
+After release, the first 14 days target 2-3 active merchants, 20-30 customer wallets and 50 cumulative payments. The full 35-day model is 4-6 merchants, 50-75 customer wallets and 800 payments. Localized App Store metadata/screenshots and public channels support acquisition but are not counted as committed demand.
 
-First 14 days: target 2-3 merchants, 20-30 customer wallets and 50 genuine payments. Full model: 4-6 merchants and 50-75 wallets. Across 35 days, 800 payments average 22.9/day; this is aggressive from zero volume and is the main risk.
-
-Team wallets, tests, circular or metric-only payments, subsidies, rewards, refunds and reimbursed fees are excluded.
+Only independently funded external purchases count. Team wallets, tests, circular or metric-only transfers, subsidies, rewards, refunds and reimbursed fees are excluded.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -63,6 +64,10 @@ Only external purchases for real goods/services count. Team wallets, tests, circ
 ### Is the underlying project open source?
 
 Yes
+
+### Short Video Pitch
+
+https://youtu.be/b3G6GJPCles
 
 ### Who else solves this today - competitors/alternatives, and why does your approach win?
 

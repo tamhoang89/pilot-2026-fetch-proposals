@@ -60,5 +60,8 @@
   "80db045b-f43d-4eeb-8858-ea400e884838": "minute_markets_integration_of_pyth_for_market_resolution",
   "3dc276ab-446c-4ab2-b669-4eb57e1134c7": "adalink_stablecoin_tiplinks_live_broadcast_chat",
   "5889c31a-af42-4c82-a111-b4a9b665dd87": "cardano_intelligence_layer_cil",
-  "21418aa2-ff87-4fc7-a8f0-9fc4c226c058": "selkie_stablecoin_payments_to_any_social_handle"
+  "21418aa2-ff87-4fc7-a8f0-9fc4c226c058": "selkie_stablecoin_payments_to_any_social_handle",
+  "f769ec6c-dc37-4e10-b428-399aa9c68e58": "stablecoin_microcredit_rails_for_micro-entrepreneurs",
+  "928aaeb7-0137-43cb-bc8c-32144d343943": "unified_autonomous_finance_interface",
+  "45e3557c-757d-4507-8822-ba23514cc000": "d-appstore_utxostore"
 }
