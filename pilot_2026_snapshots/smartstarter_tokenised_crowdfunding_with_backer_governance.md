@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 19
+- **Revision:** 22
 - **Proposer:** `stake1u9r7ydxxctwmkj2scwtwhdk32anhr4zgz9329ehsjt55t8quv9pvf`
 - **Funding requested:** ₳125,000
-- **Last finalized:** 2026-08-19T06:19:47.705000+00:00
+- **Last finalized:** 2026-08-19T11:57:31.570000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -38,19 +38,19 @@ We pledge to share 10 per cent of net platform fee revenue with the Cardano trea
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Backers and campaigns generate the fees. A backer contributes and later redeems or is refunded: two counted transactions, at 0.45 ADA each measured on preprod. Votes add transactions only when backers object to a release, so we count none of them. Campaigns add the creator's collection and each tranche release. Identity fees come from attestations, one by the creator at launch and one by each appointed reviewer at each tranche gate. Each anchoring transaction also mints a non-transferable identity beacon, taking its fee to about 0.4 ADA.
+Backers and campaigns generate the fees. A backer contributes and later redeems or is refunded: two counted transactions, at 0.45 ADA each measured on preprod. Votes add transactions only when backers object to a release, so we count none of them. Campaigns add the creator's collection and each tranche release. Identity fees come from attestations, one by the creator at launch and one by each campaign-appointed reviewer at each tranche gate. Each anchoring transaction also mints a non-transferable identity beacon, taking its fee to about 0.4 ADA.
 
-Our declared stablecoin target of 520 ADA is about 1,150 transactions at the measured fee. At two counted transactions per backer that is roughly 575 backers across the adoption phase, drawn from the two channels in our go-to-market. The identity target of 126 ADA is about 315 attestations. Both sit inside the programme's Credible band, above the displayed floors: targets for an initial adoption phase, for a platform reaching mainnet inside this same window. The longer ambition is activity at the scale of the established platforms, carried by the same fee that sustains us.
+Our declared stablecoin target of 520 ADA is about 1,150 transactions at the measured fee. At two counted transactions per backer that is 575 backers, from the two channels in our go-to-market. The identity target of 126 ADA is about 315 attestations. Both sit inside the Credible band: targets for an initial adoption phase. Fees must land in every epoch, so the launch calendar is built for pace: staggered campaign starts, tranche gates mid-window, no day carrying over a fifth of period fees, and the per-epoch floors (a twelfth of target in each of the first three epochs, a sixth in each of the last three) deciding when each cohort opens.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-An organic coffee business in Kerala is lined up as one of our first campaigns: a group ready to raise, execute and fulfil rewards. We reach creators through two channels.
+We begin in Wayanad with organic coffee growers we know individually; campaigns are self-created, our work is onboarding, the pipeline beyond them built by outreach.
 
-RealFi campaigns: grower groups, self-help groups and cooperatives ready to run initiatives, reached through direct grassroots outreach. The evidence for this channel is presence in those networks. This on-the-ground programme starts in South India and expands after the pilot.
+RealFi campaigns: grower collectives, local initiatives and creators. Wayanad has 60,000 smallholder coffee holdings (Coffee Board); its growers organise in federations, the Wayanad Social Service Society, 19,774 farmers in its organic programme, and Fair Trade Alliance Kerala, 1,800 coffee producers.
 
-Cardano ecosystem raises: content creators, tooling builders, small projects and meetup organisers operating under constrained funding and steadily losing the means to continue. They raise tranche-gated funding, reached online through the Cardano community, its forums and its events.
+Cardano ecosystem raises: builders and creators raising tranche-gated funding, reached online through the Cardano community, its forums and events, and our social channels from day one. Backers come from this crypto-native side and each campaign's own following, about 11 a campaign toward the 575 in our model; wallets and fees are the users' own.
 
-The product is permissionless and open to anyone anywhere from day one. Both channels are amplified through the app and our social channels. Onboarding runs in cohorts: the first weeks after go-live go to the first campaigns, with our team on the road.
+Days 1 to 7 after go-live: first cohort opens with creator attestations, team on the ground in Wayanad. Days 8 to 14: second cohort, launches staggered.
 
 ### Is the underlying project open source?
 
@@ -141,9 +141,9 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-This grant takes SmartStarter from public testnet to mainnet launch, on a timeline we could not otherwise fund. The release sequence is fixed because the contract holds backers' funds for the life of a project: hardening from testnet feedback, our own adversarial test suite, an internal frontier-AI-assisted security review with its findings published, then a staged rollout.
+This grant takes SmartStarter from testnet to mainnet, on a timeline we could not fund alone. The sequence is fixed because the contract holds backers' funds: hardening from testnet feedback, adversarial testing, an internal frontier-AI-assisted security review with findings published, then staged rollout.
 
-Of the 125,000 ADA, about 60,000 builds the upgrade: tranche release, the backer veto, attestation flows and hardening. About 40,000 covers pre-launch costs: the security review, infrastructure and mainnet deployment. A commercial audit sits out of proportion to this grant; the published findings and open-sourced contracts keep the review checkable. About 25,000 goes to outreach and contingency.
+Engineering, 60,000: tranche release and backer veto 25,000; CIP-0170 attestation flows 15,000; hardening and the regression suite 15,000; extending settlement to mainnet stablecoins 5,000. Pre-launch, 40,000: security review 10,000; mainnet deployment and staged rollout 15,000; a year of infrastructure and monitoring 15,000. Outreach and contingency, 25,000: travel and events, Wayanad to ecosystem venues, 15,000; contingency 10,000. No line subsidises campaigns or users.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
