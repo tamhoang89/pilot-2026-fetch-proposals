@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 15
+- **Revision:** 19
 - **Proposer:** `stake1uxps8zkp98wtp77cnzl0g6eya50qf4svjn03l78klhvyfts46n73h`
 - **Funding requested:** ₳120,000
-- **Last finalized:** 2026-08-19T06:43:26.111000+00:00
+- **Last finalized:** 2026-08-19T07:42:16.979000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,15 +16,17 @@ TRL 7 - System prototype demonstrated in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-Our team combines the smart-contract, off-chain infrastructure, and Oracle/data-integration experience required to deliver the Multi-Source Oracle Aggregation.\
-\
-Phan Phung Hai - <https://www.linkedin.com/in/hairphan/>\
-\
-Truong Quang Chu -<https://www.linkedin.com/in/truongquangchu/>\
-\
-Nguyen Thi Kim Chi - [www.linkedin.com/in/chi-nguyen-773871288](http://www.linkedin.com/in/chi-nguyen-773871288)\
-\
-The team has experience with Plutus and Aiken, testnet and mainnet deployments, off-chain code, indexers, backend services, external price feeds, and aggregation logic.
+Our team has hands-on experience building Cardano DeFi infrastructure, including smart contracts, off-chain services, indexers, backend systems and Oracle integrations. We have already implemented and tested the Oracle architecture on Cardano Preprod, with real transactions covering lending flows such as loan creation, repayment and liquidation.
+
+Phan Phung Hai previously served as Project Lead for Nio, a Cardano DeFi investment tracking application funded in Fund12 and successfully completed. His work included on-chain transaction monitoring, DeFi protocol integration and analysis of assets locked in Cardano smart contracts.
+
+This gives the team both the technical capability to deliver the multi-source Oracle integration and practical experience taking a Cardano product from development through testing and delivery.
+
+- Phan Phung Hai: <https://www.linkedin.com/in/hairphan/>
+- Truong Quang Chu: <https://www.linkedin.com/in/truongquangchu/>
+- Nguyen Thi Kim Chi: <https://www.linkedin.com/in/chi-nguyen-773871288>
+
+The team has experience with Plutus and Aiken, testnet and mainnet deployments, off-chain code, indexers, backend services, external price feeds and aggregation logic.
 
 ### Eligible area
 
@@ -238,6 +240,12 @@ Instead of operating a centralized price publisher, aggregation happens directly
 This means there is no trusted publisher or privileged party controlling the final price. Protocols can run and verify the open-source validator directly on-chain.
 
 The solution is designed for lending protocols, perpetuals and derivatives, DEX aggregators, stablecoins, synthetic assets, and other Cardano applications that need reliable and manipulation-resistant price data.
+
+### Supporting links (repo, site, demo)
+
+- https://github.com/hairphan/Multi-Source-Oracle
+- https://drive.google.com/file/d/1kLrdMQxS_8lVz1g1kwHBRIAYHCduhXfZ/view
+- https://nioapp.io/
 
 ### Identified dependencies
 
