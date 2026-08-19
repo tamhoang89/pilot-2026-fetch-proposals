@@ -5,9 +5,9 @@
   "proposer": "stake1uxy8uagayul3nmm7qmzl4tu9g7z37vdrdwmmrr8cv7fdn5gzyjywq",
   "state": "finalized",
   "title": "Uzima Clinic-Signed Health Attestations on Cardano: CIP-0170",
-  "tagline": "A Cardano trust layer for African health data: 2,581 record hashes anchored on preprod, sensitive data off chain. This grant has clinics generate their own CIP-0170 keys, sign and pay on mainnet.",
+  "tagline": "A Cardano trust layer for African health data: 2,581 record hashes anchored on preprod, sensitive data off chain. All clinics in the network generate their own CIP-0170 keys, sign and pay on mainnet.",
   "requestedAmount": 200000,
-  "updatedAt": 1787156403393,
+  "updatedAt": 1787171495491,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 7 - System prototype demonstrated in operational environment",
@@ -66,16 +66,16 @@
   },
   "createdAt": 1787049534224,
   "headRevision": {
-    "id": "448a0da3-7956-45b8-a264-530bbb4ad644",
-    "number": 44,
+    "id": "7f370357-d0b2-4fcb-a568-0e9954eda3cc",
+    "number": 45,
     "kind": "saved",
-    "createdAt": 1787156303953
+    "createdAt": 1787171468549
   },
   "latestFinalization": {
-    "id": "beb6b311-7943-4e7b-9578-dda608298c57",
-    "cycle": 3,
-    "revisionId": "448a0da3-7956-45b8-a264-530bbb4ad644",
-    "finalizedAt": 1787156403393
+    "id": "da89f21c-c298-4148-ab70-456fca8278c5",
+    "cycle": 4,
+    "revisionId": "7f370357-d0b2-4fcb-a568-0e9954eda3cc",
+    "finalizedAt": 1787171495491
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",

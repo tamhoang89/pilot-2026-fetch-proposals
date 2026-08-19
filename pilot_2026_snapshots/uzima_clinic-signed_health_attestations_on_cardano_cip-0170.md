@@ -1,14 +1,14 @@
 # Uzima Clinic-Signed Health Attestations on Cardano: CIP-0170
 
-> A Cardano trust layer for African health data: 2,581 record hashes anchored on preprod, sensitive data off chain. This grant has clinics generate their own CIP-0170 keys, sign and pay on mainnet.
+> A Cardano trust layer for African health data: 2,581 record hashes anchored on preprod, sensitive data off chain. All clinics in the network generate their own CIP-0170 keys, sign and pay on mainnet.
 
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 44
+- **Revision:** 45
 - **Proposer:** `stake1uxy8uagayul3nmm7qmzl4tu9g7z37vdrdwmmrr8cv7fdn5gzyjywq`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-19T16:20:03.393000+00:00
+- **Last finalized:** 2026-08-19T20:31:35.491000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
