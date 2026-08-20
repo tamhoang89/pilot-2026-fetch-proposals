@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 3
+- **Revision:** 8
 - **Proposer:** `stake1uy6kdahcjvxgfx6p03xzaf2p83286dvz4ufeyjymdd5h5lgg9cwgk`
 - **Funding requested:** ₳140,000
-- **Last finalized:** 2026-08-20T03:59:43.077000+00:00
+- **Last finalized:** 2026-08-20T04:39:33.456000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -20,13 +20,15 @@ This work extends a product we already operate. Dano Finance V2 runs lending, bo
 
 Mai Thanh Binh - Project Manager: <https://www.linkedin.com/in/binh-mai-6b572493/>
 
-Pham Tung Giang - Smart Contract Lead.  Built the Dano Finance Lending Validators.
+Pham Tung Giang - Smart Contract Lead. Built the Dano Finance Lending Validators: <https://github.com/vnc4g>
 
 Nguyen Thac Dan Thanh - Protocol Engineer.
 
-Nguyen Minh Hoang - Backend / Indexer.
+Bui Hoang Minh - Backend / Indexer: <https://github.com/minhnix>
 
 Nguyen Thi Minh Thu - Frontend.
+
+Smart contracts reviewed by NoWithness Lab.
 
 ### Eligible area
 
@@ -38,13 +40,13 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-The wallets paying those fees belong to borrowers opening and servicing USDM debt, borrowers defending positions during drawdowns, the same borrowers reversing swaps afterwards, and independent liquidators. None are ours, and we sponsor nothing.
+All fees come from **external users**: borrowers opening, managing and repaying stablecoin debt, users swapping to defend and restore positions, and independent liquidators. **We sponsor no transactions.**
 
-The rhythm holds because a defended position keeps transacting: a swap on the way down, a swap back on the way up, and continued borrowing afterwards - whereas a liquidated position produces one event and goes quiet. Turning terminal events into recurring ones is the point, and it happens to be what a floored six-epoch window rewards.
+We project **\~1,550 external transactions** across supply, withdraw, borrow, repay, swaps and liquidations on newly deployed contracts. Composed lending, pool and swap validators put the estimated average fee at **\~0.71 ADA**, versus the 0.33 ADA network average. We target **65 external wallets**, above the 31-wallet minimum.
 
-Arithmetic: roughly 1,550 external transactions across withdraw, supply, borrows, repayments, swaps, reversals and liquidations, all on newly deployed contracts. Composing a lending validator, pool validators and the swap validator in one transaction puts the average fee near 0.71 ADA, above the 0.33 ADA network average. We commit 65 external wallets against a 31-wallet minimum.
+**First 14 days:** contracts and position feed live (days 1–3); borrower migration and first swaps (4–7); public liquidator bot and external liquidator onboarding (8–12); per-epoch reporting (13–14).
 
-1,100 ADA is in the Ambitious band, 3.7x the floor.
+We plan against floors of **91.7 ADA/epoch for epochs 1–3** and **183.3 ADA for epochs 4–6**, with activity distributed rather than concentrated at launch.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -153,10 +155,10 @@ This composes two systems we already run into a primitive neither provides alone
 Allocation of the 140,000 ADA request:
 
 - Collateral swap validator and health-factor invariant, tests: 36,000
-- Permissionless liquidation validator and bounty mechanics: 20,000
+- Permissionless liquidation validator and bounty mechanics: 24,000
 - Transaction builder, quote engine and integration library: 20,000
-- Position monitoring, liquidatable-position feed, dashboard: 12,000
-- External security audit and remediation: 34,000\\
+- Position monitoring, liquidatable-position feed, dashboard: 16,000
+- External security audit and remediation: 34,000
 - Documentation, liquidator tooling, launch: 10,000\
   \
   The audit is not optional: this validator moves collateral inside live debt positions.
@@ -214,6 +216,7 @@ Alongside it we open liquidations to anyone. Today liquidation depends on keeper
 ### Supporting links (repo, site, demo)
 
 - https://dano.finance
+- https://github.com/vnc4g/flexible-col-swap
 
 ### Identified dependencies
 

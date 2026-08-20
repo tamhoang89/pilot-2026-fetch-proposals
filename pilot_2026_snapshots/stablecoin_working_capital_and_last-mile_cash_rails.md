@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 33
+- **Revision:** 40
 - **Proposer:** `stake1u94re22pm03854xdln9awhqpmaurqwdmq2kpme0vzq9qcasly7q6p`
-- **Funding requested:** ₳100,000
-- **Last finalized:** 2026-08-18T17:05:11.953000+00:00
+- **Funding requested:** ₳75,000
+- **Last finalized:** 2026-08-20T04:13:47.867000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -17,7 +17,7 @@ TRL 9 - Actual system proven in operational environment
 ### Why is your team well-suited to deliver this?
 
 Natalia gomez \
-[Natalia Gomes | LinkedIn](https://www.linkedin.com/in/elijah-g-98277873/)\
+[Natalia Gomes | LinkedIn](https://www.linkedin.com/in/natalia-gomes-sa/)\
 \
 As CEO & Owner of Nomanini, a Cape Town-based fintech platform, she directs a business that connects informal retailers, financial service providers, and distributors across Africa by integrating digital payments, working capital, and data analytics — unlocking financial access for the continent's MSME and informal retail economy. She brings a Chartered Accountant (CA-SA) qualification and business training from GIBS Business School, giving her the financial rigor to navigate margins, cashflow, and capital strategy alongside the commercial judgment to scale a fintech serving thousands of merchants in low-margin, high-friction markets.\
 \
@@ -35,26 +35,33 @@ Yes
 
 ### Optional: Voluntary give-back pledge: grant repayment terms and/or treasury revenue share, with your own thresholds/terms and/or %. If no such relevant offer exists, please write 'N/A'.
 
-Nomanini's give-back is directed at the merchants this programme is intended to serve, in the form of reduced borrowing costs for those under demonstrable financial pressure.
+None for now
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Source A (Loans): Merchants borrow morning float earning more than the fee by closing. Each cycle yields two merchant-signed txs (acceptance creating the UTxO, repayment closing it). Steady-state: \~60% of active merchants borrow daily.
+**Source A — Loan Cycles (Primary Driver)**
 
-Source B (Ramps): Merchants earn commission converting cash to stablecoins (or vice versa) at existing counters, or buying digital goods with stablecoins.
+Each loan cycle creates 2 merchant signed transactions: 1 to open and 1 to close the loan UTxO. Nomanini data shows 65% of active merchants need daily float top ups, as working capital often runs out before day end.
 
-To address the initial ramp to real merchants before reaching the 60% cadence, we start with 30, scaling to a goal of 300:
+Target: 15,000 transactions ÷ 2 = 7,500 loan cycles over 90 days, or 83 cycles/day. At 60% participation, only about 138 merchants need to borrow daily.
 
-Pre-Launch (Engineering):
+**Scaling Timeline**
 
-- Finalize Cardano adapter, pool wallets, and wallet logic.
-- Execute Preprod testing and mainnet smoke tests.
+Month 1: 100 merchants, with 60 borrowing daily, producing 120 tx/day × 30 = 3,600.
 
-Post-Launch (14-Day Onboarding):
+Month 2: 200 merchants, with 120 borrowing daily, producing 240 tx/day × 30 = 7,200.
 
-- Days 1-3: Reps guide the initial 30 high-volume merchants through new loan/CICO features.
-- Days 4-7: Expand to 60 merchants. Cohort 1 enabled for stablecoin cash-in/out.
-- Days 8-14: Scale to 100+ terminals. Limits auto-widen on clean repayments, clearing Epoch 1 floors before reaching the 300-merchant goal.
+Month 3: 300 merchants, with 180 borrowing daily, producing 360 tx/day × 30 = 10,800.
+
+Total: 21,600 transactions, about 30% above the 15,000 target, providing safety margin.
+
+**Source B — CICO Upside**
+
+CICO demand is unproven and excluded from the 15,000 target. Any activity adds upside beyond the loan baseline.
+
+**Post Launch**
+
+Days 1 to 3: onboard 30 high volume merchants. Days 4 to 7: expand to 60 and enable stablecoin CICO. Days 8 to 14: scale to 100+ terminals, auto widen limits on clean repayments, and clear Epoch 1 floors ahead of 300 merchants.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -106,10 +113,13 @@ Incorporated entity
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-Nomanini serves informal retail merchants across sub-Saharan Africa. The typical merchant sells airtime, data, electricity and insurance, operates as a mobile money agent, and performs cash-in/cash-out for her community. She is the last-mile financial rail for her area, financing both her own retail stock and the agent float her customers draw on from a single pool of working capital.\
-\
-For the loans the embedded day to day financing model has been winning over the  cash handouts . \
-<https://www.m-kopa.com/newsroom/m-kopa-reaches-10-million-customers-across-5-markets>
+**Who.** Informal retail merchants across sub-Saharan Africa (Ghana, Kenya, Mozambique, Namibia, SA) selling airtime, data, and acting as mobile money agents.
+
+**The Problem.** She finances retail stock and customer agent float from one working capital pool, which is exhausted daily. Depleted float means lost margin and customers switching to competitors.
+
+**The Constraint.** The constraint is liquidity, not settlement speed. Mobile money float loading works, but lacks daily credit. Banks' origination costs exceed single-day loan interest, requiring collateral and credit files merchants lack. Microfinance tenors are too long. Informal lenders fill this gap at predatory rates that consume the float's intended margin.
+
+**The Solution (Compliance-Focused).** This grant strictly funds **software engineering** to build a native Cardano stablecoin settlement adapter and self-custody wallet layer atop our existing production platform. **Crucially, no grant funds are used for lending capital, liquidity provision, or network fee subsidies.** The pilot loan pool is funded 100% from Nomanini’s corporate balance sheet, and merchants bear their own Cardano network fees (deducted from platform earnings at cost). This on-chain rail enables near-zero-cost origination and self-liquidating repayments, making daily working capital viable
 
 ### Applicant name
 
@@ -148,7 +158,7 @@ Yes
 
 ### How far along is the integration you're proposing, today?
 
-TRL 6 - Technology demonstrated in relevant environment
+TRL 5 - Technology validated in relevant environment
 
 ### Clear budget
 
@@ -216,7 +226,7 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-6000
+4500
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 

@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 1
+- **Revision:** 5
 - **Proposer:** `stake1uy52mnl5eqqqg6h8jpk34xzvwf2afq3uwzzehmcdzhuv95qt77z5w`
 - **Funding requested:** ₳100,000
-- **Last finalized:** 2026-08-20T03:51:27.909000+00:00
+- **Last finalized:** 2026-08-20T04:40:06.643000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -23,7 +23,7 @@ TRL 7 - System prototype demonstrated in operational environment
 2. Truong Quang Hung
    - Responsibilities: APIs, indexer/chain sync, database, integrations, DevOps
    - LinkedIn: [https://www.linkedin.com/in/quang-hùng-trương-1377a2235](https://www.linkedin.com/in/quang-h%C3%B9ng-tr%C6%B0%C6%A1ng-1377a2235)
-   - Github: <https://github.com/HoangNguyen219>
+   - Github: <https://github.com/TruongQuangHung>
 3. Nguyen Thi Hoang
    - Responsibilities: On-chain logic, Aiken/Plutus validators, tests, audit prep
    - LinkedIn: <https://www.linkedin.com/in/hoangnt219/>\
@@ -159,13 +159,14 @@ Yes
 
 Concentrated liquidity without a management layer under-delivers for everyone not watching it full-time. Building that layer trustlessly - strategy enforced in the validator rather than by an operator - is more work than building it with a keeper, and it needs an audit before it can hold LP capital.\
 \
-Allocation of the 100,000 ADA request:\
-- Vault validator, share accounting and deposit/withdraw: 26,000\
-- Permissionless rebalance validator and bounty mechanics: 22,000\
-- Strategy research, backtesting and calibration: 12,000\
-- Transaction builder, strategy engine and library: 13,000\
-- Eligible-vault feed, reference keeper and dashboard: 10,000\
-- External security audit and remediation: 14,000\
+Allocation of the 100,000 ADA request:
+
+- Vault validator, share accounting and deposit/withdraw: 25,000
+- Permissionless rebalance validator and bounty mechanics: 22,000
+- Strategy research, backtesting and calibration: 10,000
+- Transaction builder, strategy engine and library: 13,000
+- Eligible-vault feed, reference keeper and dashboard: 10,000
+- External security audit and remediation: 18,000
 - Documentation, launch and measurement: 4,000
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
@@ -221,6 +222,7 @@ That inverts the usual trust model. In a managed vault, depositors trust the man
 ### Supporting links (repo, site, demo)
 
 - https://github.com/tempovote/clmm-vault
+- https://github.com/tempovote/tempo-vote-v2
 
 ### Identified dependencies
 

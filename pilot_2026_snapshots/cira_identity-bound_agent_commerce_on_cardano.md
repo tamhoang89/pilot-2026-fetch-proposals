@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 13
+- **Revision:** 15
 - **Proposer:** `stake1u8raqfwgfrkteqzffrtm83lnhrrc50z65jwy8lv8kg6yh8qjph2y0`
 - **Funding requested:** ₳150,000
-- **Last finalized:** 2026-08-19T07:04:03.444000+00:00
+- **Last finalized:** 2026-08-20T04:30:37.065000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -93,7 +93,19 @@ Incorporated entity
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-CIRA targets SMEs, enterprises and organisations that use automated workflows to manage procurement, logistics, compliance, operations and payments. These businesses already have processes that can be automated, but financial execution often remains separated from the workflow. CIRA has been developing and deploying its workflow automation platform with users, with product improvements shaped by direct feedback. Recent additions include Agent Nodes, autonomous workflow execution, Webhooks and data analysis capabilities. This provides an existing environment in which agents already operate and creates a clear next requirement: allowing authorised agents to participate in governed commerce. The Cardano pilot therefore extends an existing product and user workflow rather than introducing an untested standalone application. Demand is driven by the operational need to reduce manual intervention while maintaining identity, approval controls, accountability and transaction records.
+We will use four measurable channels.
+
+**1. AAWC pipeline:** CIRA’s Agent Automation Wednesday programme provides a recurring channel to businesses and professionals already engaging with practical AI automation workflows.
+
+**2. Founders Live Nairobi and JHUB Africa:** CIRA has established partnerships with both communities, providing direct access to founders and SMEs for pilots based on real business workflows.
+
+**3. Existing CIRA users:** CIRA currently has **240 users, 100+ active workflows and 92.5% workflow retention** as of end-July. Suitable users will be invited into the Cardano pilot based on relevant commerce workflows.
+
+**4. Owned audience:** CIRA has **329 LinkedIn followers** and an email list of **200+ subscribers** interested in the product, providing additional recruitment and onboarding reach.
+
+**First two weeks after Milestone 1:** Days 1–3: onboard the first external business and complete the first transaction. Days 4–7: onboard additional businesses through partner communities and the CIRA pipeline. Days 8–12: resolve real-user onboarding issues and optimise flows. Days 13–14: publish the first-epoch results and counting methodology.
+
+Only genuine external activity will count; team wallets, sponsored transactions, duplicates and artificial usage will be excluded.
 
 ### Applicant name
 

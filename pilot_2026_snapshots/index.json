@@ -79,5 +79,12 @@
   "4c7dd565-7430-40dd-a2d3-bf59535182fe": "agent-ready_trading_api_stablecoin_peg_bots",
   "2e12eb83-1fd3-4bae-acc4-8941e271387a": "permissionless_auto-rebalancing_clmm_vaults",
   "20ebcc83-e568-4b17-912c-60ba5402cad4": "better_web3",
-  "21847cf8-10e9-48ad-b38c-4d26f730cb0c": "vow_on-chain_identity_for_a_live_commitment_social_network"
+  "21847cf8-10e9-48ad-b38c-4d26f730cb0c": "vow_on-chain_identity_for_a_live_commitment_social_network",
+  "87841c48-d7a8-400b-941b-2d917389d2d2": "fixed_rate_lending",
+  "dedaca3b-8f58-44fa-a17c-09493fc39f1b": "crossrate_non-custodial_cex_to_cardano_stablecoin_onramp",
+  "0e604797-05c5-4ecc-9fa0-b90d599f93e1": "open_corridor_-_open_cross-border_payment_system_for_africa",
+  "0d3c7ef7-1a30-4d11-839a-2b411dae893a": "kolo_hub_cardano_stablecoin_credit_layer_for_ai_toolsagent",
+  "5b66b669-6cf2-421c-83fb-48df9ea76881": "agentpay",
+  "964fc201-ffb9-4ec8-b62d-c5510db1493f": "l4va_ai-managed_rwa_vaults_with_pyth_and_usdcx_on_cardano",
+  "9917e097-4c2e-4566-9799-e9bdca3e0cc7": "proofchains_diplômes_vérifiables_sur_cardano"
 }

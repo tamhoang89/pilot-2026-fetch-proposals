@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 37
+- **Revision:** 39
 - **Proposer:** `stake1uyjnt8h5kesf7hzxtvg2cmd4ltk27q8v4hzjxa0mf06xrtcjng4ck`
 - **Funding requested:** ₳120,000
-- **Last finalized:** 2026-08-20T02:00:29.666000+00:00
+- **Last finalized:** 2026-08-20T04:30:17.042000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -25,8 +25,6 @@ LinkedIn: <https://www.linkedin.com/in/viet-nv/> \
 \
 Nguyen Thi An - Product\
 <https://www.linkedin.com/in/nguyen-thi-an-4a586171/>\
-\
-Security: contracts will be reviewed by NoWithness Lab before the pilot cap is raised.\
 \
 Scope discipline: this proposal is deliberately narrowed to one production pool, a reusable pool factory, an oracle path registry, a USDM settlement layer, an SDK, a UI and a public evidence bundle. Additional pools, uncapped limits and governance decentralisation are explicitly outside the pilot scope.
 
@@ -47,7 +45,7 @@ The projection assumes:
 - \~1,560 external transactions, averaging \~0.64 ADA in network fees.
 - 50 distinct external wallets, above the 28-wallet minimum.
 - Activity distributed across the measurement window, with no single day above 20% or wallet above 35%.
-- Approximately 40 external transactions per day after M1 delivery in month two.
+- Approximately 50 external transactions per day after M1 delivery in month two.
 
 Activity will come from users entering and exiting USDM/sGOLD positions, treasury rotations, aggregator routing, and DeFi integrations. This is a round trip, not one transaction.
 
@@ -264,7 +262,7 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-1526
+1560
 
 ### Standard read and attested
 
