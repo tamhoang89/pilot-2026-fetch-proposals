@@ -7,7 +7,7 @@
   "title": "Exura: self-custodied yield beyond Cardano",
   "tagline": "Deposit USDCx from your own Cardano wallet, earn yield on curated stablecoin vaults without the EVM hassle, receive USDCx back in minutes.",
   "requestedAmount": 200000,
-  "updatedAt": 1787181451886,
+  "updatedAt": 1787184108609,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 6 - Technology demonstrated in relevant environment",
@@ -34,7 +34,7 @@
     "businessModel": "Users pay 0.5% per year on what sits in their account. **No entry fee, no exit fee, no performance fee.** We collect it through one narrow permission, capped and pointed at a fixed address, readable on-chain before anyone deposits.\n\nAt pilot scale that revenue is small, and we would rather say so. This is the simplest product on the menu, with the simplest fee: one stablecoin position, one flat rate. More involved strategies follow with their own schedules, and the rail carries vaults other than ours. The pilot's job is demand and capability; the model earns on the menu that follows.\n\n**Nothing here depends on grant money.** The account and vault sit on public infrastructure and keep paying whether we are funded or not, the user can exit or fire us without our cooperation, and our side runs on infrastructure we already operate for Cardano DeFi, so one more account costs almost nothing.\n\nUsage continues for the ordinary reason: the position pays, and leaving costs one signature.",
     "eligNamedTeam": true,
     "eligRealUsers": true,
-    "fundingImpact": "Where the 200K ADA goes:\n\n\\- Cardano-leg engineering 53K\n\n\\- EVM-side provisioning 30K\n\n\\- Independent security audit 87K - Veridise, quoted 13K USD at $0.15/ADA, late-October slot\n\n\\- Operations and infrastructure 25K - Nodes, indexers, EVM gas\n\n\\- Documentation and reporting 5K\n\nThe audit is the largest line, and why the ask is this size. We commission as much of it as funding supports, and will not promise a scope an exchange rate can take away. The 40% build tranche delivers M1 - three full-time months; everything past it, review included, follows receipts.\n\nThe target sits below Ambitious because the meter sees part of the flow: the deposit burn counts, the Circle-paid mint counts zero, the registration each user signs is outside this track. ₳375 is what remains at 0.337 per burn.",
+    "fundingImpact": "Where the 200K ADA goes:\n\n\\- Cardano-leg engineering 50K\n\n\\- EVM-side provisioning 30K\n\n\\- Independent security audit 87K - Veridise, quoted 13K USD at $0.15/ADA, late-October slot\n\n\\- Operations and infrastructure 28K - Nodes, indexers, EVM gas\n\n\\- Documentation and reporting 5K\n\nThe audit is the largest line, and why the ask is this size. We commission as much of it as funding supports, and will not promise a scope an exchange rate can take away. The 40% build tranche delivers M1 - three full-time months; everything past it, review included, follows receipts.\n\nThe target sits below Ambitious because the meter sees part of the flow: the deposit burn counts, the Circle-paid mint counts zero, the registration each user signs is outside this track. ₳375 is what remains at 0.337 per burn.",
     "termsAccepted": true,
     "eligRealTarget": true,
     "m1Deliverables": "1. Verification contracts deployed to ethereum mainnet, source verified against a tagged commit in the public repository.\n2. The binding live on Cardano mainnet: registered message tag, published attestation format, declared footprint.\n3. Deposit and exit shipped in the product: bind, burn, the vault position, and the return to the Cardano address fixed at setup.\n4. Mainnet transaction hashes from real users' own wallets rather than ours: one complete run of that flow, plus independent repeats by other users.",
@@ -62,16 +62,16 @@
   },
   "createdAt": 1787107708590,
   "headRevision": {
-    "id": "d1b1cf34-9892-43dc-b6fc-ab1214de9a51",
-    "number": 20,
+    "id": "ee0b58f6-3b7f-4d6b-b7ef-20d14fb16856",
+    "number": 21,
     "kind": "saved",
-    "createdAt": 1787181276554
+    "createdAt": 1787184064499
   },
   "latestFinalization": {
-    "id": "d07d124f-c968-4e03-998f-c655f74f1ed7",
-    "cycle": 4,
-    "revisionId": "d1b1cf34-9892-43dc-b6fc-ab1214de9a51",
-    "finalizedAt": 1787181451886
+    "id": "f14c77cb-7255-4d2e-9522-93b3fac35eda",
+    "cycle": 5,
+    "revisionId": "ee0b58f6-3b7f-4d6b-b7ef-20d14fb16856",
+    "finalizedAt": 1787184108609
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",

@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 20
+- **Revision:** 21
 - **Proposer:** `stake1uxqs8hmgwkqza9gp7zqh8sqx5entwhudla5rwc39ufw9anq5set5u`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-19T23:17:31.886000+00:00
+- **Last finalized:** 2026-08-20T00:01:48.609000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -150,13 +150,13 @@ Yes
 
 Where the 200K ADA goes:
 
-\- Cardano-leg engineering 53K
+\- Cardano-leg engineering 50K
 
 \- EVM-side provisioning 30K
 
 \- Independent security audit 87K - Veridise, quoted 13K USD at $0.15/ADA, late-October slot
 
-\- Operations and infrastructure 25K - Nodes, indexers, EVM gas
+\- Operations and infrastructure 28K - Nodes, indexers, EVM gas
 
 \- Documentation and reporting 5K
 

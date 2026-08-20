@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 16
+- **Revision:** 19
 - **Proposer:** `stake1u8hw2us3hg84nacemj64870vkasq5trj8puaznzr6rkaqeqm66q7e`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-19T15:16:55.016000+00:00
+- **Last finalized:** 2026-08-20T00:25:03.789000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -43,6 +43,8 @@ The three tallies overlap by construction: one settlement transaction consumes t
 Who transacts: traders and institutions, every action submitted and paid from their own wallet, unbatched. Opening posts full stablecoin collateral with a Pyth update consumed in the same transaction. Settlement executes at the attested price and the payout is claimed by the user, carrying their attestation. Users self-anchor credentials at onboarding; the gateway runs from M1.
 
 Derived from \~320 active wallets at 1.6 settlement-class transactions per wallet per epoch. No rebates, yield or paid market making.
+
+Our plan for the first two weeks after going live: floors bind per epoch, so we ramp rather than spike. Waitlisting, jurisdiction pre-screening and institutional KYB run pre-launch. The unfloored entry epoch is onboarding, two markets open so matching concentrates. Epochs 1-3 run 12/14/16% of target against 8.33% floors; steady state from epoch 4. Session-spread flow, no day near the cap.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -244,13 +246,13 @@ Yes
 
 ### Funder, status, and what it covers
 
-Ascend raised capital to build an institutional-grade perpetuals venue on Midnight. We disclose it here for completeness: it is a private raise, not a grant, treasury or accelerator program, and no public, ecosystem or institutional grant funder is involved.
+Ascend raised public capital for $ASCEND token to build an institutional-grade perpetuals venue on Midnight. We disclose it here for completeness: it is a private raise, not a grant, treasury or accelerator program, and no institutional grant funder is involved.
 
 Status: raised and deployed. The Midnight venue is live on public mainnet beta with 485 registered users and over 1M transactions.
 
 What it covers: the Midnight implementation only, matching, risk, settlement and the trading front end on Midnight's stack. It funded no Cardano work, and none of the integrations declared here.
 
-What this grant would fund: Pyth Pro consumption via the documented withdraw-script pattern, settlement in verified USDM and USDCx, the CIP-0170 identity and gating layer, liquidity pool and gateway contracts, third-party audit and mainnet deployment. No deliverable overlaps and no cost is billed twice.
+What this grant would fund: Pyth Pro consumption via the documented withdraw-script pattern, settlement in verified USDM and USDCx, the CIP-0170 identity and gating layer, and gateway contracts, third-party audit and mainnet deployment. No deliverable overlaps and no cost is billed twice.
 
 ### Standard read and attested
 
@@ -266,7 +268,7 @@ No member of the team is delivering a milestone for Project Catalyst, the Cardan
 
 The one commitment worth naming: Ascend's investors backed the institutional-grade perpetuals venue on Midnight. Role: Uzair as founder and CEO, with the five in-house engineers. That product is built and live on public mainnet beta, so what remains is operation and iteration, not milestone delivery against a funder's schedule, and it carries no external reporting obligations competing with this grant.
 
-Expected completion: the Midnight venue is delivered and in live operation. The same five engineers are assigned to the Cardano build funded here, which is separate, new work on newly deployed identifiers, with no shared deliverables and no double-billed cost.
+Expected completion: the Midnight venue is delivered and in live operation. Engineers from same team are assigned to the Cardano build funded here, which is separate, new work on newly deployed identifiers, with no shared deliverables and no double-billed cost.
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 

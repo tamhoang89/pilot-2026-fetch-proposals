@@ -1,14 +1,14 @@
 # anyqr (By SyncAI): spend USDCx at local QRs in 10 countries
 
-> Spend stablecoins from your Cardano wallet at any local payment QR across 10 countries, non-custodial. Global liquidity from p2p.foundation: $31.4M vol, 341,200+ orders since inception.
+> Spend stablecoins from your Cardano wallet at any local payment QR in 10 countries, non-custodial. Built on a proven model of $31.4M and 341,200 orders on other chains (p2p.foundation and zkp2p)
 
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 39
+- **Revision:** 50
 - **Proposer:** `stake1u9mzuqyq7c0arwx9knnfccalzydln4mxcvzl6d83y8jn49q6wz2wf`
 - **Funding requested:** ₳140,000
-- **Last finalized:** 2026-08-19T17:33:30.592000+00:00
+- **Last finalized:** 2026-08-20T01:35:03.411000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -33,9 +33,7 @@ Adnan built [SyncGovHub](https://syncgovhub.com), A production Cardano governanc
 AI Track win, Cardano Hackathon IBW: [Code](https://github.com/SkepX/syncai-candi-server) | [Proof](http://x.com/emurgo_io/status/1996847152275116073)\
 Best Oracle Tooling, Charli3: [Code](http://github.com/SkepX/charli3-js) | [Proof](http://x.com/Oraclecharli3/status/2048119131447382294)
 
-Recruitment: none required
-
-One Proposal: Adnan's other Catalyst records are prior-fund submissions. In this round Adnan has submitted only this proposal
+One Proposal: Adnan's other Catalyst records are prior-fund submissions. In this round Adnan has submitted only this proposal.
 
 ### Eligible area
 
@@ -47,21 +45,21 @@ anyqr pledges 5% of all protocol fee revenue to the Cardano treasury from our fi
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Every anyqr order is three onchain transactions, all signed and paid from users' own wallets: the buyer locks USDCx, the merchant accepts, the buyer confirms and that signature releases the funds. No server keys, no sponsored fees (§5.2, §12.3). Mainnet at week 10, ahead of the limit, gives a \~10 epoch window.
+Every order is three onchain txs, all paid from users' own wallets. No server keys, no sponsored fees. Mainnet wk10 gives us \~10 epoch.
 
-STABLECOINS. The 76 Preprod transactions calibrate unit cost, not demand: 0.31 ADA per transaction, 0.91 per order. 700 orders is 2,100 transactions and \~640 ADA on a 301 floor: 14 orders a day across 15 merchants, under one each per day.
+STABLECOINS. 76 Preprod txs calibrate unit cost, not demand: 0.31 ADA/tx, 0.91/order. 700 orders = 2,100 txs, \~640 ADA on a 301 floor; we declare 600.
 
-IDENTITY, DERIVED. 15 merchants x (1 DID mint + 1 zkTLS proof) = 30. 120 buyers x 1 credential anchor at first order = 120. 700 orders x 1 reputation attestation at close = 700. Total 850. We declared 550, since orders opened late in the window close after it.
+IDENTITY. 15 merchants x (DID mint + zkTLS proof) = 30, 120 buyers x 1 anchor = 120, 700 attestations at close; 850 total, we declare 550 as late orders close after.
 
-REACHING IT. Conversion is our own GTM, merchants recruited off Binance P2P leaderboards, pay-to-QR embedded in Cardano wallets via our SDK, concierge onboarding, regional launches. The target assumes zero [p2p.me](http://p2p.me) fills which is a open smart contract, no LOI needed.
+FIRST 14 DAYS. All in the floorless entry epoch (§1.1). Pre-launch: 15 merchants off P2P leaderboards, DIDs minted, merchants fund their own floats - no team capital in any merchant wallet (§5.2). D1-3: 5 concierge merchants on UPI, PIX, QRIS, \~5 orders/day. D4-7: open signup, Cardano regional communities, \~10/day. D8-14: all 10 corridors, SDK on npm, 16/day and 40+ external wallets, past the 31 min before floors start. **Wallet embeds & p2p.me fills are upside, not assumed: their contract is public.**
 
-CAPS. Fifteen merchants keeps each wallet near 2% of fees, 50 days clears the daily cap,.
+PACE. Floors bind before the target: on 600 across \~9 floored epochs §7.3 sets \~33 ADA/epoch for five then \~67 for four, so 14/day (\~64) misses and we run 16/day, \~73/epoch. Steady, not bursts; 15 merchants keeps \~2% fees.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
 Neither side of this market has to be invented. Both already exist.\
 \
-SUPPLY. Two channels, both already populated. First, [p2p.me](http://p2p.me): integrating their book gives Cardano orders live liquidity from day one, 1,000+ merchants and $4.7M settled a month, instead of a cold start. Second, direct recruitment of traders already doing this on Binance P2P, visible on public leaderboards and Telegram groups across India, Vietnam, Brazil and Indonesia, where up to 90% of P2P listings are stablecoin (TRM Labs). \
+SUPPLY. Direct recruitment of traders already doing this on Binance P2P, visible on public leaderboards and Telegram groups across India, Vietnam, Brazil and Indonesia, where up to 90% of P2P listings are stablecoin (TRM Labs) and by integrating p2pdotme's open source SDK to connect with their smart contracts.\
 Pitch: same business, non-custodial, no freeze risk, rates they set. We pay nothing; they earn the user-paid spread. [p2p.me](http://p2p.me) proved this path to 341k orders.
 
 DEMAND. USDCx holders get a fully functional app on day one, not a waitlist. We reach them through Cardano regional communities and X content marketing. Then marketing the open SDK: so any Cardano wallet can embed pay-to-QR, this one integration reaches a whole userbase instead of one user at a time.
@@ -78,7 +76,7 @@ https://www.youtube.com/watch?v=VjpIu8M0ZWc
 
 Today it is a centralised P2P desk. Binance P2P or OTC: account, KYC, custodial deposit, find a counterparty, trade, withdraw, then buy. MoonPay and Transak end at a bank too, never the shop's QR.
 
-The onchain model is proven: [p2p.me](http://p2p.me) on Base ($31.4M, 341,200+ orders, Coinbase-backed) and ZKP2P ($1M+ a month). But that is a few 100k orders against 23bn UPI payments a month in just one country, and none on Cardano. We do not compete with [p2p.me](http://p2p.me), we route to their liquidity alongside a Cardano-native book so orders fill faster.
+The onchain model is proven: [p2p.me](http://p2p.me) on Base ($31.4M, 341,200+ orders, Coinbase-backed) and ZKP2P ($1M+ a month). But that is a few 100k orders against 23bn UPI payments a month in just one country, and none on Cardano. We do not compete with [p2p.me](http://p2p.me), it is an open protocol where we can route to their liquidity with a Cardano-native book.
 
 Users switch because nothing is ever held: scan, sign, & your payment is done facilitated via an Aiken validator.
 
@@ -143,11 +141,11 @@ Mohammed Adnan Khan
 
 Bob is visiting Vietnam and wants to buy a $10 item. The shop only takes VietQR. He has no Dongs, but he holds USDCx on Cardano.
 
-He scans the shop's QR in anyqr and signs once. About $10.25 of USDCx locks: $10 for the shop, \~2% to the merchant, a small anyqr fee, all quoted before he signs. A merchant, from our book or [p2p.me](http://p2p.me)'s network, accepts and pays the shop in Dongs from their bank app. Charles confirms the money arrived and the escrow releases the money.
+He scans the shop's QR in anyqr and signs once. About $10.25 of USDCx locks: $10 for the shop, \~2% to the merchant, a small anyqr fee, all quoted before he signs. A merchant, from our book or [p2p.me](http://p2p.me) 's open network, accepts through their public smart contract and pays the shop in Dongs from their bank app. Charles confirms the money arrived and the escrow releases the money.
 
 **WHO PAYS.** Bob, once, at settlement. Merchants set their own spread and compete on rate in an open book. anyqr never touches fiat, so we are not a money transmitter, only a fee on settled volume.
 
-**WHY IT RUNS.** Merchants earn real yield on capital they recycle several times a day, and a purchase repeats where a conversion does not. Completed orders build reputation in their DIDs, reputation raises limits, limits pull more Cardano mainnet volume. 
+**WHY IT RUNS.** Merchants earn real yield on capital they recycle several times a day, and a purchase repeats where a conversion does not. Completed orders build reputation in their DIDs, reputation raises limits, limits pull more Cardano mainnet volume.
 
 ### On-chain identity (CIP-0170) - expected transaction count
 
@@ -171,7 +169,7 @@ BUILD 84,000ADA
 19,600 CIP-0170 service: DID mint, Reclaim zkTLS, reputation attestation\
 14,000 merchant order book, onboarding, dispute path\
 14,000 nine QR parsers beyond live UPI\
-7,000 dual routing to [p2p.me](http://p2p.me)\
+7,000 dual routing \
 9,800 npm SDK, wallet plugins, client-side signing
 
 GROW 35,000ADA
@@ -199,9 +197,9 @@ ESCROW. Updated Aiken validator on mainnet: release merged into the buyer's conf
 
 SIGNING. Non-custodial CIP-30: users sign & pay every tx, no server keys (§5.2)
 
-ORDER BOOK. Merchants post their own rates onchain, orders route by reputation. Dual routing: orders reach our book and [p2p.me](http://p2p.me)'s merchants
+ORDER BOOK. Merchants post their own rates onchain, orders route by reputation. Dual routing: orders reach our book & [p2p.me](https://p2p.me) smart contracts
 
-IDENTITY. CIP-0170 live: merchant DID mint, Reclaim zkTLS verification, buyer credential anchor at signup, reputation stamped at close. Disputes with a resolution path
+IDENTITY. CIP-0170 live: merchant DID, Reclaim zkTLS verification, buyer credential anchor at signup, reputation stamped at close. Disputes with a resolution path
 
 CORRIDORS. UPI, QRIS, PIX, VietQR, PromptPay, QR Ph, Yape, Nequi, DeUna, MercadoPago. SDK on npm
 
@@ -239,7 +237,7 @@ Yet those same people pay by QR every single day. UPI in India, PIX in Brazil, Q
 
 The rails exist. The dollars exist. Nothing connects them.
 
-anyqr is that connection. You scan any shop's QR code & sign one Cardano transaction that locks your USDCx in an on-chain escrow. A local merchant takes the order, from our Cardano book or from [p2p.foundation](http://p2p.foundation)'s network ($4M+ vol/month), pays the shop in local currency over the QR rail, and claims the USDCx once you confirm the money arrived in just 90 seconds.
+anyqr is that connection. You scan any shop's QR code & sign one Cardano transaction that locks your USDCx in an on-chain escrow. A local merchant takes the order, from our Cardano book or from open source SDK of [p2p.me](http://p2p.foundation) network ($4M+ vol/month), pays the shop in local currency over the QR rail, & claims the USDCx once you confirm the money arrived in just 90 seconds.
 
 The shopkeeper never touches crypto. No custodian ever holds the funds, only an Aiken validator on Cardano.
 
@@ -312,6 +310,6 @@ Merchant DID onboard. Each mints a CIP0170 DID & uses ReclaimProtocol for zkTLS 
 \-updated validator: merchant DID in the datum, a fee split on Complete, the QR address on chain, encrypted\
 -mainnet deployment with USDCx & USDM\
 -the dispute resolution flow\
--dual routing, so an order reaches our book and [p2p.me](http://p2p.me) merchants\
--nine countries beyond live UPI: PIX, QRIS, VietQR\
+-dual routing, so an order reaches our book & [p2p.me](http://p2p.me)'s public contract\
+-nine countries beyond live UPI\
 -a public npm SDK with wallet plugins

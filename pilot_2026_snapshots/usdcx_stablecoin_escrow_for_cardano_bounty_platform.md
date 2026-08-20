@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 1
+- **Revision:** 17
 - **Proposer:** `stake1u8x5mm8k4dcvl0ayp4ax4r2h2ymnkg538nrcqdr2xh3yq8cvx9t0v`
 - **Funding requested:** ₳50,000
-- **Last finalized:** 2026-08-18T21:59:04.487000+00:00
+- **Last finalized:** 2026-08-20T01:04:53.796000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,15 +16,15 @@ TRL 8 - System complete and qualified
 
 ### Why is your team well-suited to deliver this?
 
-I am Opakunle Micheal, a solo full-stack developer building on Cardano. LinkedIn: <https://www.linkedin.com/in/opakunle-omotayo-055358184/>
+I am Opakunle Micheal, solo full-stack developer building on Cardano. LinkedIn: <https://www.linkedin.com/in/opakunle-omotayo-055358184/>
 
-<https://github.com/opa1>
+Earlier this year I built TrustBCH, a peer to peer escrow on Bitcoin Cash with full state machine Pending, Awaiting Funding, Funded, In Progress, Submitted, Verified, Released. TrustBCH won Runner Up in Application Track at BCH-1 Hackcelerator. Proof: <https://trust-bch.vercel.app> <https://x.com/bch_1_official/status/2029927755270529102>
 
-Earlier this year I built TrustBCH, a peer-to-peer escrow platform on Bitcoin Cash with a full escrow state machine: Pending, Awaiting Funding, Funded, In Progress, Submitted, Verified, Released. TrustBCH won Runner Up in the Application Track at the BCH-1 Hackcelerator. This is directly relevant experience: I have designed, built, and shipped a working escrow product from scratch. Proof: <https://trust-bch.vercel.app> <https://x.com/bch_1_official/status/2029927755270529102> <https://x.com/BitcoinCashOG/status/2026839636476109025>
+I built The Quest solo in 12 weeks: Next.js frontend, Supabase with row level security, CIP-8 wallet auth, isolated signing microservice on [Fly.io](http://Fly.io), Groq AI difficulty detection, multi claimer up to 100 hunters, deadline auto refunds, public on chain ledger. The Quest won Cardano Pie track at Gimbalabs Piece of Pie Hackathon, rewards paid by Cardano Foundation. Live: <https://thequesters.fun> GitHub: <https://github.com/opa1/the-quest> X: <https://x.com/the_questgg>
 
-I then built The Quest solo over 12 weeks: Next.js frontend, Supabase backend with row-level security, CIP-8 wallet authentication, an isolated Cardano signing microservice on [Fly.io](http://Fly.io), Groq AI difficulty detection, multi-claimer missions up to 100 hunters, deadline-based automatic refunds, and a public on-chain ledger. The Quest won the Cardano Pie track at the Gimbalabs Piece of Pie Hackathon, with rewards paid by the Cardano Foundation. Live: <https://thequesters.fun> <https://github.com/opa1/the-quest> <https://x.com/the_questgg>
+Aiken escrow is the next step from both projects. I have escrow design from TrustBCH and live Cardano infra from The Quest.
 
-The Aiken escrow contract is the next logical step from both projects. I have the escrow design experience from TrustBCH and the Cardano infrastructure already running from The Quest.
+Prior funding: Gimbalabs Piece of Pie winner reward paid by Cardano Foundation. No overlapping scope, TrustBCH Runner Up BCH-1 Bitcoin Cash not Cardano, Skypie DAO commercial poster no funding, no other Catalyst funding. USDCx escrow is new work not funded elsewhere.
 
 ### Eligible area
 
@@ -36,15 +36,20 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Who transacts: bounty posters funding missions and hunters receiving payouts. Every completed mission generates a minimum of 4 on-chain transactions under the smart contract model (deposit, Accept, Submit, Approve). USDCx missions where the poster holds ADA add one DEX swap via DexHunter.
+Every mission is 4 base tx: deposit, Accept, Submit, Approve with payout. About half the posters hold ADA and need DexHunter swap, add one tx. Average 4.5 per mission. Network fee for Aiken escrow with USDCx asset and min ADA buffer is about 0.35 ADA on preview testnet. Only network fees. Platform fee 2.5 percent capped at 25 ADA goes to treasury and is excluded.
 
-Why they transact: posters need stablecoin-denominated work agreements with price certainty. Hunters need predictable payment. Both parties have strong incentives to complete the full mission cycle, generating all 4 transactions.
+Note: Previous targets of 700 tx and 250 missions were forecasting errors and have been removed. All numbers below are corrected and aligned.
 
-How often: targeting 250 completed missions in 3 months equals approximately 83 per month. In the 30-35 day measurement window approximately 140 missions are expected, accounting for growth momentum from the marketing push. At 4.5 average transactions each: 700 total transactions.
+Target 120 missions in 90 days. 120 x 4.5 = 540 transactions. 540 x 0.35 = 189 ADA, clears program floor 180.
 
-Fee math: 700 transactions x 0.3 ADA average Cardano network fee = 210 ADA. Target declared at 200 ADA.
-
-Platform fees of 2.5% per mission capped at 25 ADA are explicitly excluded. Those fees go to the project treasury, not the Cardano network.
+Base 4 missions, 30 users, 13 hunters paid, 3 posters:\
+13 existing hunters, 80 percent stay = 10 x 3 = 30\
+Skypie DAO 30 active, 20 percent convert = 6 x 3 = 18\
+Gimbalabs 150 builders, 5 percent as posters = 8 x 2 = 16\
+X drove 30 users in 12 weeks, next 12 weeks expect 60 new, 30 percent as hunters = 18 x 2 = 36\
+Discord 40 active, 25 percent activation = 10 x 2 = 20\
+Total 30+18+16+36+20 = 120\
+No paid promotion, no ADA incentives.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -58,7 +63,7 @@ Skypie DAO partnership: funded live bounties on the platform. Proof: <https://th
 
 Gimbalabs community: winning the Cardano Pie track put The Quest in front of active Cardano builders and project teams. We are leveraging this directly to onboard new posters and hunters.
 
-Post-grant: paid promotion on X targeting Cardano developers and DAOs. All promotion drives users to the platform. No Cardano-native asset incentives, no referral rewards, no transact-to-earn schemes.
+Post-grant: community onboarding via AMAs, 1:1 outreach to existing hunters, and mission drops through verified Cardano DAO channels. No Cardano-native asset incentives, no referral rewards, no transact-to-earn schemes.
 
 ### Is the underlying project open source?
 
@@ -78,7 +83,7 @@ Upwork / Fiverr: centralised, fiat-only, reputation disappears if account is ban
 
 Discord/spreadsheet bounties: no escrow, no on-chain proof, manual payment coordination.
 
-The Quest wins on three specifics: Cardano-native with real mainnet transactions, on-chain proof of every completion creating a portable reputation the user owns, and (with this proposal) stablecoin settlement removing the ADA volatility tax that competitors on Cardano cannot address.
+The Quest wins on three specifics: Cardano-native with real mainnet transactions, on-chain proof of every completion creating a portable reputation the user owns, and stablecoin settlement removing the ADA volatility tax that competitors on Cardano cannot address.
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
@@ -148,11 +153,11 @@ Opakunle Michael
 
 The platform charges a 2.5% fee per mission, capped at 25 ADA or the USDCx equivalent, denominated in the bounty asset. The fee is collected from the escrow at the moment of approval, not charged to users upfront. This positions the fee as a completion signal: no fee unless work is actually delivered and approved.
 
-At 250 completed missions per month at an average bounty of 20 ADA equivalent each: 250 x 0.5 ADA average fee = 125 ADA equivalent monthly. At scale this covers infrastructure costs and funds ongoing development. The fee model scales with usage. No flat subscription that discourages low-value missions.
+At 120 completed missions per 90-day window at an average bounty of 20 ADA equivalent each: 120 x 0.5 ADA average fee = 60 ADA equivalent per cycle. At scale this covers infrastructure costs and funds ongoing development. The fee model scales with usage with no flat subscription that discourages low-value missions.
 
 Post-grant sustainability: platform fee revenue is the only revenue source. No external funding dependency. The fee applies identically to ADA and USDCx bounties, so the stablecoin integration expands the fee-generating transaction base rather than requiring a new model.
 
-No referral incentives, airdrops, or transact-to-earn schemes are part of the business model.
+No referral incentives, airdrops, or transact-to-earn schemes are part of the business model
 
 ### Named, verifiable team
 
@@ -164,15 +169,19 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Without this grant, the stablecoin escrow contract cannot be built on this timeline. The Quest has no external revenue yet. The funding covers:
+Without this grant the stablecoin escrow cannot be built on this timeline. The Quest has no external revenue yet.
 
-1. Aiken escrow contract development (built by me).
-2. Independent third-party security audit before mainnet deployment.
-3. Supabase and [Fly.io](http://Fly.io) infrastructure for 12 months.
-4. DexHunter integration and DEX liquidity testing.
-5. Paid promotion to reach DAOs needing stablecoin bounties.
+50,000 ADA breakdown:
 
-No ADA giveaways, airdrops, referral incentives paid in Cardano-native assets, or transact-to-earn schemes are included in this budget.
+- Smart contract dev Aiken 8 transitions plus DexHunter: 30% 15k ADA, M1-M2 W1-8
+- Frontend USDCx flow and hunter dashboard: 20% 10k ADA, M2 W4-8
+- Security review internal audit plus Anastasia Labs quote obtained for pilot: 15% 7.5k ADA, M3 W7-8
+- Infra Supabase and [Fly.io](http://Fly.io) 3 months only: 10% 5k ADA
+- Community launch 3 AMAs no paid ads: 15% 7.5k ADA, M1-M3
+- PM and contingency 10% buffer: 10% 5k ADA\
+  Total 50k ADA
+
+No ADA giveaways, no airdrops, no referral incentives paid in Cardano native assets, no transact to earn.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -184,19 +193,25 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-Week 1 (Days 1-7): USDCx funding option live on Cardano testnet. Post mission form updated to show USDCx alongside ADA. DexHunter swap integrated for ADA-to-USDCx conversion before funding. Target: 5 real users fund a testnet mission in USDCx.
+W1 D1-7: USDCx funding live on preview testnet, form shows USDCx plus ADA, DexHunter swap live. Target 5 users fund testnet.
 
-Week 2 (Days 8-14): Full claim, submit, approve cycle live on testnet. Onboarding: direct outreach to 10 Gimbalabs and Skypie DAO members to complete a full USDCx mission cycle. Target: 5 complete testnet cycles from fund to payout.
+W2 D8-14: Full claim submit approve cycle live, outreach to 13 hunters. Target 5 cycles.
 
-Week 3-4: Timeout paths (ClaimTimeout, ReclaimExpired) tested on-chain. Aiken validator finalised. Internal testing complete. Security audit submitted.
+W3-4: Timeout paths ClaimTimeout ReclaimExpired tested, validator finalised, UI complete.
 
-Week 5-8: Audit remediation. Mainnet deployment of audited contract.
+W5-6: Internal testing, property tests, Lucid builder complete.
 
-Week 9-12: First mainnet USDCx mission funded and completed. Target: 10 mainnet USDCx missions active or completed. Public evidence at <https://thequesters.fun/ledger>
+W7-8: Internal security review and fixes, mainnet deploy with one real USDCx mission. Anastasia Labs quote obtained for pilot.
+
+Weeks 9-10 Mainnet Launch Execution:\
+W9 D1-7 post mainnet: Announce on X Discord Gimbalabs. Onboard 13 hunters. First 3 USDCx missions posted. Target 5 funded.\
+W10 D8-14 post mainnet: Skypie DAO AMA and 4 bounty drop, outreach to Gimbalabs alumni. Target 18 missions active or completed, 81 tx labeled. Evidence at <https://thequesters.fun/ledger>
+
+W11-12: Scale to 120 missions via 8 target DAO partners avg 12 each, pipeline in Appendix A, 540 tx 189 fees, testimonials, final report and video.
 
 ### How far along is the integration you're proposing, today?
 
-TRL 2 - Technology concept formulated
+TRL 3 - Experimental proof of concept
 
 ### Clear budget
 
@@ -226,6 +241,7 @@ The primary beneficiaries are freelancers, DAOs, and community organisations nee
 - https://x.com/the_questgg
 - https://thequesters.fun/ledger
 - https://github.com/opa1/the-quest
+- https://github.com/opa1/the-quest/blob/main/docs/Appendix-A.md
 
 ### Identified dependencies
 
@@ -265,7 +281,7 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-700
+540
 
 ### Standard read and attested
 
@@ -273,10 +289,10 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-200
+189
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-The USDCx stablecoin escrow integration has a fully specified design: Aiken datum and redeemer types, eight state transitions (Cancel, Accept, Submit, Approve, Reject, ResolveDispute, ClaimTimeout, ReclaimExpired), asset-parameterised validator, min-ADA buffer handling for token UTXOs, and DexHunter routing for in-app ADA-to-USDCx swaps. The architecture is documented. The Aiken toolchain and Lucid Evolution off-chain builder are already part of the project infrastructure.
+The USDCx stablecoin escrow integration has a fully specified design: Aiken datum and redeemer types, eight state transitions (Cancel, Accept, Submit, Approve, Reject, ResolveDispute, ClaimTimeout, ReclaimExpired), asset-parameterised validator, min-ADA buffer handling for token UTXOs, and DexHunter routing for in-app ADA-to-USDCx swaps. The architecture is documented and the core contract logic has been validated in pseudocode. The Aiken toolchain and Lucid Evolution off-chain builder are already part of the project infrastructure.
 
-No code has been written for the contract yet. Existing escrow experience (TrustBCH on Bitcoin Cash) and the running Cardano infrastructure (The Quest signing service) mean the implementation path is clear and low-risk, not exploratory.
+No production Aiken code has been written yet. Existing escrow experience from TrustBCH on Bitcoin Cash and the running Cardano infrastructure from The Quest mean the implementation path is clear and low-risk, not exploratory.
