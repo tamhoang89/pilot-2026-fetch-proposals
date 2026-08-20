@@ -1,14 +1,14 @@
-# Multi-Source Oracle Aggregation for Cardano
+# Multi-Source Chorus Aggregation for Cardano
 
-> One standard interface, many oracle sources verified on-chain, per transaction.
+> One standard interface, many chorus sources verified on-chain, per transaction.
 
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 19
+- **Revision:** 26
 - **Proposer:** `stake1uxps8zkp98wtp77cnzl0g6eya50qf4svjn03l78klhvyfts46n73h`
 - **Funding requested:** ₳120,000
-- **Last finalized:** 2026-08-19T07:42:16.979000+00:00
+- **Last finalized:** 2026-08-20T02:35:56.487000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,17 +16,23 @@ TRL 7 - System prototype demonstrated in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-Our team has hands-on experience building Cardano DeFi infrastructure, including smart contracts, off-chain services, indexers, backend systems and Oracle integrations. We have already implemented and tested the Oracle architecture on Cardano Preprod, with real transactions covering lending flows such as loan creation, repayment and liquidation.
+Our team has hands-on experience building Cardano DeFi infrastructure, including smart contracts, off-chain services, indexers, backend systems and Oracle integrations. We have already implemented and tested the Oracle architecture on Cardano Preprod, with real transactions covering loan creation, repayment and liquidation.
 
-Phan Phung Hai previously served as Project Lead for Nio, a Cardano DeFi investment tracking application funded in Fund12 and successfully completed. His work included on-chain transaction monitoring, DeFi protocol integration and analysis of assets locked in Cardano smart contracts.
+Phan Phung Hai previously served as Project Lead for Nio, a Fund12-funded Cardano DeFi investment tracking application that was successfully completed. His work included on-chain transaction monitoring, DeFi protocol integration and analysis of assets locked in Cardano smart contracts.
 
-This gives the team both the technical capability to deliver the multi-source Oracle integration and practical experience taking a Cardano product from development through testing and delivery.
+Team roles:
 
-- Phan Phung Hai: <https://www.linkedin.com/in/hairphan/>
-- Truong Quang Chu: <https://www.linkedin.com/in/truongquangchu/>
-- Nguyen Thi Kim Chi: <https://www.linkedin.com/in/chi-nguyen-773871288>
+- **Phan Phung Hai — Project Lead / Product & Integration**\
+  Responsible for project delivery, Oracle architecture coordination, protocol integration, adoption tracking and developer outreach.\
+  <https://www.linkedin.com/in/hairphan/>
+- **Truong Quang Chu — Smart Contract Engineer**\
+  Responsible for Aiken and Plutus smart contracts, aggregation validator implementation, source integration, on-chain testing and deployment.\
+  <https://www.linkedin.com/in/truongquangchu/>
+- **Nguyen Thi Kim Chi — Backend & Off-chain Engineer**\
+  Responsible for indexers, backend services, source adapters, monitoring, SDK support and off-chain integration.\
+  <https://www.linkedin.com/in/chi-nguyen-773871288>
 
-The team has experience with Plutus and Aiken, testnet and mainnet deployments, off-chain code, indexers, backend services, external price feeds and aggregation logic.
+The team has experience with Plutus and Aiken, testnet and mainnet deployments, external price feeds, aggregation logic, indexers and production backend systems.
 
 ### Eligible area
 
@@ -38,30 +44,34 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-**Declared fee target: 900 ADA** in counted Cardano network fees under the Oracles category, above the 232 ADA programme floor for a 120,000 ADA award.
+900 ADA in counted Cardano network fees under the Oracles category, above the 232 ADA programme floor for a 120,000 ADA award.
 
-Fees are paid by end users of integrated protocols. Borrowing, repayment, liquidation or other price-dependent actions execute the aggregation validator inside the user’s transaction. We neither sponsor nor receive these fees.
+Fees are paid by end users of integrated protocols. Borrowing, repayment, liquidation and other price-dependent actions execute the aggregation validator inside the user’s transaction. We neither sponsor nor receive these fees.
 
-The target assumes:
+Usage is recurring because the aggregator is called whenever an integrated protocol performs a price-dependent action.
+
+Target assumptions:
 
 - 1 protocol live by M1
-- About 1,125 external transactions
-- About 0.80 ADA average network fee
-- 45 distinct external wallets
+- \~1,125 external transactions
+- \~0.80 ADA average network fee
+- 45 distinct external wallets - above the 24-wallet minimum.
 
-Usage is recurring because the aggregator is called whenever an integrated protocol performs a price-dependent action. At a lower 0.65 ADA average fee, around 1,385 transactions would still reach the 900 ADA target.
+At a lower 0.65 ADA average fee, around 1,385 transactions would be needed to reach 900 ADA.
 
-The 900 ADA target is about 3.9x the programme minimum, making it ambitious while still tied to real protocol activity.
+The target is ambitious but grounded in real protocol activity. At 900 ADA, it is about 3.9x the programme floor.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Our users are protocols, not retail wallets, so onboarding focuses on business development and developer experience before Milestone 1.
+Our users are protocols, not retail wallets, so onboarding focuses on developer experience and direct protocol integration.
 
-Dano Finance is the anchor integration and will integrate the aggregator into its Lending Smart Contract V2 within M1. Lending is a strong first use case because prices are needed continuously for borrowing, repayment, collateral checks and liquidations. Network fees are paid by end users; we do not sponsor or receive them.
+Dano Finance is the anchor integration. Dano has publicly committed that Lending Smart Contract V2 will use Chorus for all collateral valuation and liquidation checks from launch, with initial adapters for Liqwid, Minswap, SundaeSwap and Splash: <https://docs.dano.finance/news/lending-v2-will-price-your-collateral-from-many-sources-not-one>
 
-Integration is designed to be lightweight: an Aiken library, TypeScript SDK, examples, deterministic error codes and test vectors for stale sources, quorum failures, deviation handling and fallback. The Dano integration will also serve as the reference implementation.
+Integration will be supported through an Aiken library, examples, test vectors and technical documentation. Dano will also serve as the reference implementation.
 
-Adoption will be supported through Cardano developer channels, direct outreach and published methodology documentation. Retention depends on reliability, source coverage and responsive support once the aggregator becomes part of a protocol’s core transaction flow.
+In Week 1 after mainnet launch, we will monitor usage, transaction success, source health and counted fees, resolve issues and publish verified transactions. In Week 2, we will use the live integration for direct outreach and support to additional Cardano DeFi teams.
+
+Usage will be tracked against per-epoch floors and the daily cap throughout the measurement window
 
 ### Is the underlying project open source?
 
@@ -244,7 +254,6 @@ The solution is designed for lending protocols, perpetuals and derivatives, DEX 
 ### Supporting links (repo, site, demo)
 
 - https://github.com/hairphan/Multi-Source-Oracle
-- https://drive.google.com/file/d/1kLrdMQxS_8lVz1g1kwHBRIAYHCduhXfZ/view
 - https://nioapp.io/
 
 ### Identified dependencies
