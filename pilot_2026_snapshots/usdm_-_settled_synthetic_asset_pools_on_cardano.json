@@ -7,7 +7,7 @@
   "title": "USDM - Settled Synthetic Asset Pools on Cardano",
   "tagline": "Gold exposure on Cardano, settled in USDM : no CEX, no bridge, no CDP.",
   "requestedAmount": 120000,
-  "updatedAt": 1787200217042,
+  "updatedAt": 1787203636091,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 5 - Technology validated in relevant environment",
@@ -21,7 +21,7 @@
     "openSource": true,
     "competitors": "There are four relevant alternatives on Cardano, but none offers USDM-settled commodity exposure.\\\nDJED proves reserve backed issuance works, but is limited to one stablecoin, one reserve coin, and an ADA reserve. We extend that into isolated pools with per pool oracle paths, caps, fees, and stablecoin settlement.\\\nIndigo proves demand for synthetics, but its CDP flow requires collateral management, liquidation checks and position upkeep. Our flow is quote driven: review quote, fee, pool health and output, then sign.\\\nUSDM, USDCx and USDA are complements: we give holders a productive destination. DEXs and aggregators can only swap existing assets, so they become distribution partners.\\\nWe win by filling the gap: repeatable, USDM settled, oracle-priced issuance with public verification.",
     "trlEvidence": "Our existing product, BTCGrow, has been live at <https://btcgrow.io/> since September 2025 and is deployed on Cardano mainnet.\\\nThe Cardano synthetic pool integration proposed here is new work, but it is being built by the same team on top of that prior mainnet delivery experience.",
-    "architecture": "The design uses Cardano's eUTxO model, with one isolated pool per synthetic asset and each reserve in USDM.\\\nEach pool has two onchain components. The Pool Validator guards the ReservePool UTxO holding the USDM reserve; its datum tracks supply, reserve ratio, fees, oracle path ID, config version and admin key hashes. The Minting Policy issues or burns the synthetic token only when the matching ReservePool transition is valid.\\\nPool parameters live in a separate AssetConfig UTxO: asset name, accepted stablecoin policy ID, fee model, supply cap, reserve ratio limits, oracle paths, price freshness window and admin permissions. Changes are timelocked and multisig-gated, with every version traceable.\\\nOn entry, the user sends USDM into the ReservePool and receives the synthetic token. On exit, the token is burned and USDM is returned. The validator checks that the stablecoin matches the declared policy ID; the Pyth Pro price comes from an approved path within freshness and deviation bands; reserve ratio stays within limits; fees and caps are respected; and quantities match the state transition.\\\nThis fits the Stablecoins area because no position can open or close without moving the declared verified stablecoin policy, so counted-fee evidence is intrinsic. Everything resolves to script hashes, policy IDs, pool addresses, datums, redeemers and the registered message tag.\\\nDiagram: <https://github.com/Mavis2103/demo-stablecoin/blob/master/onchain_architecture_flow_final.jpg>",
+    "architecture": "The design uses Cardano's eUTxO model, with 1 isolated pool per synthetic asset and each reserve in USDM.\\\nEach pool has 2 onchain components. The Pool Validator guards the ReservePool UTxO holding the USDM reserve; its datum tracks supply, reservecoin supply, reserve ratio, fees, oracle path ID,config version and admin key hashes. The Minting Policy issues or burns the synthetic token only when the matching ReservePool transition is valid.\\\nPool parameters live in a separate AssetConfig UTxO: asset name, accepted stablecoin policy ID, fee model, supply cap, reserve ratio limits, oracle paths, price freshness window and admin permissions. Changes are timelocked and multisig-gated, with every version traceable.\\\nOn entry, the user sends USDM into the ReservePool and receives the synthetic token. On exit,the token is burned and USDM is returned. The validator checks that the stablecoin matches the declared policy ID;the Pyth Pro price comes from an approved path within freshness and deviation bands; reserve ratio stays within limits; fees and caps are respected; and quantities match the state transition.\\\nThis fits the Stablecoins area because no position can open or close without moving the declared verified stablecoin policy,so counted-fee evidence is intrinsic. Everything resolves to script hashes, policy IDs,pool addresses,datums,redeemers and the registered message tag.\\\nDiagram: <https://github.com/Mavis2103/demo-stablecoin/blob/master/onchain_architecture_flow_final.jpg>",
     "eligTimeline": true,
     "integrations": [
       "stablecoins"
@@ -65,16 +65,16 @@
   },
   "createdAt": 1787115434000,
   "headRevision": {
-    "id": "49b42b7d-0e54-4bc8-9af8-fc1dc005fa1d",
-    "number": 39,
+    "id": "8ba15c6b-b3b3-4967-8003-d99a404ea943",
+    "number": 41,
     "kind": "saved",
-    "createdAt": 1787200096277
+    "createdAt": 1787203621470
   },
   "latestFinalization": {
-    "id": "d88aba88-c5cd-4103-94c9-ee135a0bfdd2",
-    "cycle": 5,
-    "revisionId": "49b42b7d-0e54-4bc8-9af8-fc1dc005fa1d",
-    "finalizedAt": 1787200217042
+    "id": "c1e92646-ae3b-4b0e-b0f8-b2426842a0e8",
+    "cycle": 7,
+    "revisionId": "8ba15c6b-b3b3-4967-8003-d99a404ea943",
+    "finalizedAt": 1787203636091
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",

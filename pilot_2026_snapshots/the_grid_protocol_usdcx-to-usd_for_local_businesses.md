@@ -1,0 +1,215 @@
+# The Grid Protocol: USDCx-to-USD for Local Businesses
+
+> A licensed USDCx-to-USD conversion pipeline letting Atlanta's ADA and stablecoin holders pay real local businesses on The Grid Protocol — 50 live sign-ups, no wallet required for the business.
+
+## Proposal Metadata
+
+- **Status:** finalized
+- **Revision:** 12
+- **Proposer:** `stake1u9pql8dvjfvym2zjhnm5x7fk2sv9l4zfv8xhmjkx444q80qkqty7f`
+- **Funding requested:** ₳100,000
+- **Last finalized:** 2026-08-20T04:59:07.941000+00:00
+
+### What is the current status and Technology Readiness Level of your existing product?
+
+TRL 9 - Actual system proven in operational environment
+
+### Why is your team well-suited to deliver this?
+
+Alonzo G., founder and operator, brings 20 years as an L3 Support Analyst and IT infrastructure consultant, plus 4 years of Azure/Microsoft 365 cloud solutions experience — the same systems-reliability discipline this integration depends on, since a payout pipeline touching real business funds needs to be built and monitored like production infrastructure. Alonzo has also been an active Cardano community member for 6 years, and is an active member of the ABC Atlanta Black Chambers, connecting this work directly to the local business community it's designed to reach.
+
+More importantly, this isn't a team proposing to build from a standing start: we already operate The Grid Protocol as a live product — registration and moderation pipeline, KYB verification via Didit, Stripe-based booking and payments with real refund handling, and an owner-facing dashboard with CSV/PDF export — all shipped and running with 50 real business sign-ups. This proposal adds Cardano-specific integration on top of infrastructure we've already proven we can build and operate reliably.
+
+For the parts outside our core expertise, we're not overreaching: a contracted developer with blockchain/payments experience builds the Transak integration, and an independent third-party firm audits it before launch — keeping build and audit separate to preserve real oversight.
+
+### Eligible area
+
+Yes
+
+### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
+
+Real customers are local Cardano/stablecoin holders in Atlanta paying for actual goods and services at Grid Protocol businesses they discover on the platform — not speculative or wash transactions. We're widening the pilot cohort to 20 of 50 businesses, each seeing roughly 5-7 real transactions per week over the \~5-week floored measurement window, driven by the ABC Atlanta Black Chambers network and Cardano community channels in our onboarding plan.
+
+At \~590 transactions and a \~0.85 ADA fee per USDCx transaction (xReserve interaction, above a simple transfer), that's roughly 500 ADA in counted fees — inside the Credible band at this award size, with margin above the 255 ADA floor, and clearing the 26-distinct-wallet minimum given real, separate customers per transaction.
+
+### How will you reach and onboard real users - and what evidence backs your channels?
+
+We're not starting from zero — reach and onboarding channels are already proven, not hypothetical. Our existing 50-business cohort is the first-wave pilot group: they're already signed up, already KYB-verified, and already using the platform, so onboarding them to a new payout option is a feature announcement to an existing user base, not cold outreach.
+
+For business-side growth, the ABC Atlanta Black Chambers network — where our operator is an active member — gives direct, warm access to member businesses, the same relationship-based channel that helped reach the first 50 sign-ups organically.
+
+For consumer/holder-side awareness, we'll use Cardano's own community channels (Cardano Forum, Discord, local Atlanta meetups) where crypto holders already gather looking for ways to use their holdings — a more targeted channel than general advertising, reaching people who already hold the exact asset this integration accepts. Evidence backing these channels: the 50 existing sign-ups themselves
+
+### Is the underlying project open source?
+
+Yes
+
+### Who else solves this today - competitors/alternatives, and why does your approach win?
+
+Crypto debit cards (Coinbase Card, [Crypto.com](http://Crypto.com)) let holders spend crypto via Visa rails, but offer no local discovery and no Cardano-specific focus. Crypto-payment processors (BitPay, Strike) let individual businesses accept crypto, but each must integrate and market it separately — no existing audience already browsing to find them.
+
+The Grid Protocol combines both: a live, already-used local directory (50 sign-ups, real bookings) plus built-in USDCx acceptance with zero setup burden — no wallet, no integration, funds arrive as USD automatically. Businesses get discovery and payment together; customers get a map of real, KYB-verified businesses that accept what they hold. No competitor pairs Cardano-native stablecoin acceptance with an active local discovery platform.
+
+### Please provide details about the Technology Readiness Level selected for your existing product
+
+The Grid Protocol itself is TRL 9 — an actual system proven in an operational environment, not a lab result or pilot claim. It is live in production at [thegridprotocol.com](http://thegridprotocol.com) with 50 real business sign-ups, a working registration and moderation pipeline, KYB verification via Didit processing real approvals, a live Stripe-based booking and payments system handling real transactions and refunds, and an owner-facing sales/payments dashboard with CSV/PDF export already in daily use. This proposal does not build a new product; it adds a Cardano-specific payment integration onto infrastructure that has already been operating since July 2026.
+
+### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
+
+Our on-chain architecture deliberately avoids building or deploying any new smart contracts on Cardano. Each participating business receives a standard Cardano wallet address (UTXO-based, generated via standard Cardano tooling), displayed on their Grid Protocol profile. Incoming USDCx transactions to that address are monitored off-chain via a Cardano data provider (Blockfrost or Koios), triggering our dashboard to reflect activity in near-real time.
+
+Conversion itself happens through Circle's existing xReserve smart contract system, which redeems USDCx 1:1 for USDC non-custodially — we do not write or operate any conversion logic on-chain ourselves. The final USDC-to-USD off-ramp is handled by Transak, an already-licensed money-services provider, via their Stream flow.
+
+This architecture is the right fit for a stablecoin-integration pilot because it composes already-audited, already-live Cardano and cross-chain infrastructure rather than introducing new on-chain code and its associated security surface. Our engineering effort goes entirely into integration and UX — the off-chain dashboard, monitoring, and business onboarding — which matches both our team's actual expertise and the pilot's preference for low-risk, real-world integrations onto existing working products rather than novel protocol development.
+
+### Fits the timeline
+
+Yes
+
+### Which integration(s) will you leverage?
+
+- Stablecoins
+
+### Is the work in this proposal, or substantially similar work, currently funded, previously funded, or under active consideration by any other program?
+
+No
+
+### Team
+
+Yes
+
+### Submitting as
+
+Incorporated entity
+
+### Who is your target market, and what evidence shows real demand/product-market fit?
+
+Our target market has two sides. Businesses: local, community-facing businesses in Atlanta, with an initial focus on Black-owned businesses through the ABC Atlanta Black Chambers network our operator is an active member of. Customers: Atlanta's ADA and stablecoin holders who want to spend crypto locally instead of only trading or holding it.
+
+Evidence of demand splits similarly. On the business side, we have direct, measurable traction: 50 real business sign-ups on a live platform, a working KYB verification pipeline, and an operating Stripe-based booking and payments system — not projections, an operating product. On the consumer side, we're relying on strong proxy evidence rather than pilot data, since the USDCx flow itself hasn't launched yet: roughly one in four American adults now own cryptocurrency nationally, Atlanta has an active, established Cardano and broader crypto community, and 87% of crypto holders report active usage (up from 80% the prior year), with 40% already using crypto to pay for goods and services.
+
+We see this pilot's usage-tracked disbursement structure as the actual product-market-fit test: real conversion volume and payout activity from our existing 50-business base will be the first hard evidence, not a survey.
+
+### Applicant name
+
+TheGridProtocol LLC
+
+### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
+
+The Grid Protocol already runs as a real business independent of this grant: revenue comes from paid Spotlight/Sponsor placements, booking fees on Stripe transactions, and business subscriptions — all live today, funding hosting, KYB, and operations regardless of Catalyst funding.
+
+The USDCx integration adds a small transaction-based revenue stream: a modest platform margin on converted volume, similar to the fee already applied to Stripe bookings, so it's self-sustaining rather than a permanent cost center.
+
+Who pays and why it continues: businesses pay for visibility and payment infrastructure they already value enough to sign up for (50 have, before any crypto feature existed); customers pay for goods and services as normal, just with crypto now usable locally. Once live, no ongoing Catalyst funding is needed — maintenance is a founder-led, low-cost task on infrastructure already paid for by the existing business.
+
+### Named, verifiable team
+
+Yes
+
+### Real users
+
+Yes
+
+### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
+
+Without this funding, the integration doesn't happen on any near-term timeline — it requires two things a bootstrapped local platform can't self-fund: a contracted developer with real blockchain/payments experience, and an independent security review before any live business funds move through the pipeline. Skipping either means an indefinitely delayed or under-tested integration.
+
+At a high level: contracted developer (\~42%) builds the Transak Stream integration and payout dashboard; security review (\~40%) covers the integration and dashboard, not custodial handling; contingency (\~8%) covers scope/timing risk; education and reporting (\~10%) covers documentation and the public case study. Founder-led work — dashboard wiring, onboarding — is contributed, not funded.
+
+### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
+
+Yes
+
+### Real target
+
+Yes
+
+### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
+
+Within the 3-month window: Transak Stream integration built and connected to a licensed off-ramp account; per-business USDCx receiving addresses provisioned for the pilot cohort; dashboard integration live, surfacing payout status alongside existing Stripe history; footprint declared (per-business receiving addresses, registered message tag on Stream-triggered transactions, no team-controlled wallets counted); at least one verified end-to-end mainnet transaction completed by a real user, with the flow repeating without failure across independent runs; release notes documenting architecture, scope, and limitations; independent security review completed on the integration and dashboard display; live demo delivered at Demo Day using the declared identifiers and flows.
+
+### How far along is the integration you're proposing, today?
+
+TRL 2 - Technology concept formulated
+
+### Clear budget
+
+Yes
+
+### Genuine new work
+
+Yes
+
+### One proposal
+
+Yes
+
+### What solution are you building, and what specific problem does it solve - for whom?
+
+The Grid Protocol is a live directory platform ([thegridprotocol.com](http://thegridprotocol.com)) connecting Atlanta businesses with customers via an interactive map — 50 business sign-ups, a working KYB pipeline, and a live Stripe-based booking and payments system.
+
+We're building a licensed USDCx-to-USD conversion and payout pipeline, integrated into our existing business dashboard, so local ADA and stablecoin holders can pay for real goods and services at Grid Protocol businesses, while the business receives predictable US dollars in their bank account — no wallet or crypto literacy required.
+
+The problem: roughly one in four American adults now own cryptocurrency, and Atlanta has an active Cardano and crypto community, but holders currently have no way to spend it at local businesses they already support. Meanwhile, local businesses — particularly Black-owned businesses, a meaningful share of our sign-ups — have limited low-friction ways to reach new customers or get paid without cash handling or middleman fees.
+
+USDCx is dollar-pegged and backed 1:1 by USDC, removing price volatility for the business. Conversion and custody are handled by a licensed third-party off-ramp provider (Transak), not The Grid Protocol, so businesses never touch a wallet and no money-transmitter burden falls on our platform.
+
+This gives Cardano a real, documented example of a stablecoin becoming spendable money in the local physical economy — built on infrastructure that already exists.
+
+### Supporting links (repo, site, demo)
+
+- https://thegridprotocol.com
+
+### Identified dependencies
+
+Yes
+
+### Good standing
+
+Yes
+
+### Business
+
+Yes
+
+### Is your team (or any members of) currently delivering any funded commitment, in any ecosystem or program?
+
+No
+
+### Mature product
+
+Yes
+
+### Licensing / IP details
+
+The USDCx-to-USD conversion and payout integration module built under this grant will be released under the MIT License and made publicly available on GitHub. The core Grid Protocol platform (directory, KYB pipeline, booking and payments system) is proprietary to TheGridProtocol LLC and is not part of the open-source release.
+
+### Technical
+
+Yes
+
+### Public proposal
+
+Yes
+
+### Confirmation: our plan complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard)
+
+Yes
+
+### Stablecoins - expected transaction count
+
+590
+
+### Standard read and attested
+
+Yes
+
+### Stablecoins - fee target (ADA)
+
+500
+
+### Please provide details about the Technology Readiness Level selected for the integration you're proposing
+
+The proposed USDCx-to-USD integration is at TRL 2 — concept formulated but not yet built or tested in our environment. We have a defined architecture: a per-business receiving address, USDCx redeemed to USDC via Circle's xReserve smart contract, off-ramp to USD via Transak Stream, surfaced in our existing dashboard. No integration code exists yet, and Transak's formal support for USDCx specifically on Cardano (a February 2026 launch) still needs confirming during Tranche 1.
+
+The underlying building blocks are each already mature, live technologies (xReserve, Transak's off-ramp, Cardano wallet infrastructure) — this proposal integrates proven components rather than inventing new on-chain mechanisms, meaningfully lowering technical risk relative to a from-scratch build.

@@ -86,5 +86,13 @@
   "0d3c7ef7-1a30-4d11-839a-2b411dae893a": "kolo_hub_cardano_stablecoin_credit_layer_for_ai_toolsagent",
   "5b66b669-6cf2-421c-83fb-48df9ea76881": "agentpay",
   "964fc201-ffb9-4ec8-b62d-c5510db1493f": "l4va_ai-managed_rwa_vaults_with_pyth_and_usdcx_on_cardano",
-  "9917e097-4c2e-4566-9799-e9bdca3e0cc7": "proofchains_diplômes_vérifiables_sur_cardano"
+  "9917e097-4c2e-4566-9799-e9bdca3e0cc7": "proofchains_diplômes_vérifiables_sur_cardano",
+  "7b11f662-0086-4d1b-91bf-838f1b50119b": "verifiable_provenance_authorship_via_on-chain_attestations",
+  "1f4644eb-505e-4dad-b221-032d30f6960f": "programmable_loyalty_and_membership_tokens_on_cardano",
+  "febe5296-66cc-4a1f-8fb3-08f5e36be7de": "marketmarkets_cardano_marketplace_for_real-world_utility",
+  "3ae91a82-5b72-45ce-8bbc-93860f183fde": "portoray_provably_better_stablecoin_swaps_on_cardano",
+  "224ce4c8-fd0f-4cb1-a08c-9d04908c4f88": "anytoany_bridge_swap_and_route_into_any_cardano_token",
+  "a988b9f6-0cab-4c3e-8057-6bb045b960fd": "veridict_verifiable_settlement_for_human_and_agent_work",
+  "306fe9b2-4332-4c64-8101-efefa07186a6": "zerochord_verified_best-execution_stablecoin_routing",
+  "2253d4f1-bcf8-45ff-a088-0baf8d6ecfb3": "the_grid_protocol_usdcx-to-usd_for_local_businesses"
 }

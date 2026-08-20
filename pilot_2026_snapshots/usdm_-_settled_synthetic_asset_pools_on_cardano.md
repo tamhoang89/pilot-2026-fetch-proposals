@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 39
+- **Revision:** 41
 - **Proposer:** `stake1uyjnt8h5kesf7hzxtvg2cmd4ltk27q8v4hzjxa0mf06xrtcjng4ck`
 - **Funding requested:** ₳120,000
-- **Last finalized:** 2026-08-20T04:30:17.042000+00:00
+- **Last finalized:** 2026-08-20T05:27:16.091000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -85,11 +85,11 @@ The Cardano synthetic pool integration proposed here is new work, but it is bein
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-The design uses Cardano's eUTxO model, with one isolated pool per synthetic asset and each reserve in USDM.\
-Each pool has two onchain components. The Pool Validator guards the ReservePool UTxO holding the USDM reserve; its datum tracks supply, reserve ratio, fees, oracle path ID, config version and admin key hashes. The Minting Policy issues or burns the synthetic token only when the matching ReservePool transition is valid.\
+The design uses Cardano's eUTxO model, with 1 isolated pool per synthetic asset and each reserve in USDM.\
+Each pool has 2 onchain components. The Pool Validator guards the ReservePool UTxO holding the USDM reserve; its datum tracks supply, reservecoin supply, reserve ratio, fees, oracle path ID,config version and admin key hashes. The Minting Policy issues or burns the synthetic token only when the matching ReservePool transition is valid.\
 Pool parameters live in a separate AssetConfig UTxO: asset name, accepted stablecoin policy ID, fee model, supply cap, reserve ratio limits, oracle paths, price freshness window and admin permissions. Changes are timelocked and multisig-gated, with every version traceable.\
-On entry, the user sends USDM into the ReservePool and receives the synthetic token. On exit, the token is burned and USDM is returned. The validator checks that the stablecoin matches the declared policy ID; the Pyth Pro price comes from an approved path within freshness and deviation bands; reserve ratio stays within limits; fees and caps are respected; and quantities match the state transition.\
-This fits the Stablecoins area because no position can open or close without moving the declared verified stablecoin policy, so counted-fee evidence is intrinsic. Everything resolves to script hashes, policy IDs, pool addresses, datums, redeemers and the registered message tag.\
+On entry, the user sends USDM into the ReservePool and receives the synthetic token. On exit,the token is burned and USDM is returned. The validator checks that the stablecoin matches the declared policy ID;the Pyth Pro price comes from an approved path within freshness and deviation bands; reserve ratio stays within limits; fees and caps are respected; and quantities match the state transition.\
+This fits the Stablecoins area because no position can open or close without moving the declared verified stablecoin policy,so counted-fee evidence is intrinsic. Everything resolves to script hashes, policy IDs,pool addresses,datums,redeemers and the registered message tag.\
 Diagram: <https://github.com/Mavis2103/demo-stablecoin/blob/master/onchain_architecture_flow_final.jpg>
 
 ### Fits the timeline

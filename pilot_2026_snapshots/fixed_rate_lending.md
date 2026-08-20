@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 13
+- **Revision:** 14
 - **Proposer:** `stake1uxvmpvst6rycjplpel59uv83kevs32xwux7mpz42xy6d5ccqqy5y8`
 - **Funding requested:** ₳120,000
-- **Last finalized:** 2026-08-20T04:49:53.938000+00:00
+- **Last finalized:** 2026-08-20T04:57:25.452000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -192,7 +192,17 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Funding enables the incremental CIP-0113 integration that is not part of Dano's existing Fixed Term Deposit deployment. It will fund smart-contract engineering for programmable pT/yT minting, transfer and issuer logic, off-chain transaction building and wallet integration, testnet and mainnet deployment, QA, security review/audit/, documentation, monitoring, and adoption measurement. Existing Dano lending infrastructure is reused, so the grant is focused on the new integration rather than rebuilding already-live functionality.
+This budget reflects the full cost of taking the CIP-0113 integration from architecture (current TRL 2) through smart-contract implementation
+
+Budget breakdown:
+
+- Smart-contract engineering (pT/yT programmable-token minting, transfer, issuer logic): ₳54,000 (45%)
+- Off-chain transaction building & wallet integration: ₳18,000 (15%)
+- Third-party security audit of the programmable-token integration: ₳21,600 (18%)
+- QA & test planning (unit tests, integration tests, preprod validation): ₳9,600 (8%)
+- Testnet & mainnet deployment, infrastructure and monitoring: ₳7,200 (6%)
+- Documentation & release notes: ₳4,800 (4%)
+- Adoption measurement tooling, onboarding campaigns and community engagement (AMAs, testnet campaign, dashboard integration): ₳4,800 (4%)
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 

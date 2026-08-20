@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 8
+- **Revision:** 12
 - **Proposer:** `stake1uy6kdahcjvxgfx6p03xzaf2p83286dvz4ufeyjymdd5h5lgg9cwgk`
 - **Funding requested:** ₳140,000
-- **Last finalized:** 2026-08-20T04:39:33.456000+00:00
+- **Last finalized:** 2026-08-20T05:40:01.607000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -50,9 +50,9 @@ We plan against floors of **91.7 ADA/epoch for epochs 1–3** and **183.3 ADA fo
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-We do not have to find these users. They already borrow on Dano Finance, and the feature appears inside positions they hold - no new wallet, no new deposit, no onboarding.\
+We do not have to find these users: 220 borrowers hold 2,360 positions on Dano Finance. This proposal does not need acquisition.\
 \
-What we do have to do is reach them at the right moment, because nobody thinks about de-risking until the health factor moves. So the option surfaces contextually: when a position crosses a warning threshold, the interface offers a collateral swap beside the top-up and repay buttons already there, with the resulting health factor shown before signing. \
+What it does need is migration, and we would rather be precise than claim there is none. The Standard counts only newly deployed contracts, so a borrower is counted once their position sits in the new stable coin market. That is one transaction, started from the position view they already use, in the wallet they already hold - no new account, no new deposit, no bridge. Migration is not friction ahead of the value; it is the first counted transaction, and it opens the position to the swap feature the moment it lands.\
 \
 Permissionless liquidation needs a different audience. We publish a liquidator guide, a reference bot and a feed of liquidatable positions, and point at the 226 liquidations our market produced recently - the revenue we open to whoever runs one.
 
@@ -116,7 +116,7 @@ The market is borrowers on Cardano lending markets, and we already serve it: Dan
 \
 Evidence from our own production data:
 
-- 220 borrowers and 2.360 positions
+- 220 borrowers and 2,360 positions
 - 226 liquidation events over the last 12 months
 - 693 collateral top-ups during drawdowns\
   \
@@ -130,15 +130,13 @@ Pham Tung Giang
 
 ### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
 
-Transaction-based, aligned with the activity the programme measures.\
-\
-Four revenue lines: a swap fee on each collateral swap, shown in the quote before signing; the existing lending spread, which continues on positions that survive drawdowns instead of being liquidated; CLMM pool fees on routed volume; and a protocol share of liquidation bounties.\
-\
-Borrowers pay because the alternative costs more: five transactions instead of one, market exposure in the gap, or a liquidation penalty larger than any swap fee we would charge.\
-\
-There is a second-order effect that matters more than the fee. A borrower who survives a drawdown keeps paying interest. One who is liquidated stops. Every position this saves is recurring revenue preserved, so the feature pays for itself before its own fee is counted.\
-\
-Costs are fixed: contract maintenance, monitoring, support, review. Revenue scales with borrowing volume and volatility. We reward nobody for transacting.
+Borrowers pay us.
+
+We charge a swap fee on each collateral swap, shown in the quote before signing. We also earn the existing lending spread, and CLMM pool fees on the volume a swap routes.
+
+There is a fourth line we treat differently: a protocol share of liquidation bounties. It moves the opposite way to the others. If collateral swaps work, fewer positions get liquidated and this line shrinks. That is the outcome we want. Permissionless liquidation is in this proposal to remove a keeper as a point of failure for lenders, not to earn money.
+
+The main reason this pays for itself is retention. A borrower who survives a drawdown keeps paying interest. A borrower who is liquidated stops. Saving a position preserves months of spread, so the swap fee can stay low enough that people actually use it.
 
 ### Named, verifiable team
 

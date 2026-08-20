@@ -7,11 +7,11 @@
   "title": "nuhuman: Robot DIDs on a $60M Shrimp Export Line",
   "tagline": "Every nuhuman robot at Coastal Corporation (NSE: COASTCORP) carries a DID. Every batch of shrimp is stamped on Cardano, QR verifiable by the buyer. Pilot signed for 120+ robotic cells.",
   "requestedAmount": 150000,
-  "updatedAt": 1787182615418,
+  "updatedAt": 1787203077056,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 5 - Technology validated in relevant environment",
-    "team": "Sricharan Ganta (Founder & CEO)\n\nScope: architecture, integration delivery, the Coastal relationship, program compliance, milestone reporting.\n\nExp: 7+ yrs business, 4+ web3, MS Computer Science. Prior BD roles at Coastal Corporation (NSE: COASTCORP); Coastal is named with written consent (MoU). [Linkedin](http://linkedin.com/in/sricharangm)\\\n13 funded Catalyst projects; 1st place, Midnight hack at Rare Evo 2024, Built [Nucast](https://nucast.io)\n\nVinayek S (Software Engineer)\n\nScope: CIP-0113 BatchPass policy with transfer/burn rules; CIP-0170 AID anchoring (issuer, cells, signers); directory/registry/validator AND-gate; mainnet deployment and declared footprint.\n\nExp: Cardano in Haskell (Cardano-Loan-Protocol, Hydra-SDK-Node). [Github](http://github.com/Vinawizard) | [Linkedin](http://linkedin.com/in/vinayek-s-b2981827b)\n\nShubhanshu Saxena (Software Engineer)\n\nScope: cell registry and batch console; signer onboarding, wallet and key-ceremony tooling; public verifier and QR resolution; MIT SDK.\n\nExp: full-stack TypeScript; on-chain verification, off-chain proof generation verified on chain. [Github](http://github.com/shubhu2002) | [Linkedin](http://linkedin.com/in/shubhanshu-saxena-902511230)\n\nThese three are the full delivery team, all Nucast personnel: [Github](http://github.com/Nucastio)\n\nDisclosure: our only submission this round.",
+    "team": "Sricharan Ganta (Founder & CEO)\n\nScope: architecture, integration delivery, the Coastal relationship, program compliance, milestone reporting.\n\nExp: 7+ yrs business, 4+ web3, MS Computer Science. Prior BD roles at Coastal Corporation (NSE: COASTCORP); Coastal is named with written consent (MoU). [Linkedin](http://linkedin.com/in/sricharangm)\\\n13 funded Catalyst projects; 1st place, Midnight hack at Rare Evo 2024, Built [Nucast](https://nucast.io)\n\nVinayek S (Software Engineer)\n\nScope: CIP-0113 BatchPass policy with transfer/burn rules; CIP-0170 AID anchoring (issuer, cells, signers); directory/registry/validator AND-gate; mainnet deployment and declared footprint.\n\nExp: Cardano in Haskell (Cardano-Loan-Protocol, Hydra-SDK-Node). [Github](http://github.com/Vinawizard) | [Linkedin](http://linkedin.com/in/vinayek-s-b2981827b)\n\nShubhanshu Saxena (Software Engineer)\n\nScope: cell registry and batch console; signer onboarding, wallet, fractionalization, web app and key-ceremony tooling; public verifier and QR resolution; MIT SDK.\n\nExp: full-stack TypeScript; on-chain verification, off-chain proof generation verified on chain. [Github](http://github.com/shubhu2002) | [Linkedin](http://linkedin.com/in/shubhanshu-saxena-902511230)\n\nThese three are the full delivery team, all Nucast personnel: [Github](http://github.com/Nucastio)\n\nDisclosure: our only submission this round.",
     "eligArea": true,
     "giveBack": "N/A",
     "m2Target": "**Milestone Outputs:**\n\nCompletion of the Adoption phase and project close using the declared measurement structure: a one-epoch entry ramp from your M1 delivery, then six floored 5-day epochs - with extra epochs earned by delivering early - under the Standard's per-epoch floors and daily cap. The whole project completes within the program's four-month frame.\n\nYour declared adoption targets, restated from your answers. They drive the M2 payout and the Transaction Integrity checks, and are final at submission:\n\n- Programmable tokens (CIP-0113): 1,370 transactions expected, 470 ADA in counted fees\n- On-chain identity (CIP-0170): 1,300 transactions expected, 380 ADA in counted fees\n\n**Acceptance criteria**\n\n1. The measurement window ran as declared at M1 delivery: the one-epoch entry ramp plus your floored epochs, including any extra epochs earned by early delivery.\n2. Per-epoch floors observed, with at most the Standard's one free miss.\n3. Counted totals respect the daily cap: a single day may exceed the Standard's share of your measurement-period total, but the excess does not count toward it.\n4. At least the Standard's minimum of distinct external wallets transacted with your integration during the window.\n5. All measured activity derives from the declared identifiers and complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard).\n\n**Evidence of milestone completion**\n\n1. Adoption summary statement: your actuals against each declared target.\n2. Per-epoch table: epoch number, date range, transactions and counted fees, daily cap applied (y/n), floor met (y/n), notes.\n3. Raw explorer and dashboard links for the declared identifiers.\n4. Short methodology note: how counts and fees were derived from the declared identifiers.\n5. A completion video (1-3 mins) is shared via YouTube showcasing the project outputs.\n6. Any additional cross-checks.",
@@ -69,16 +69,16 @@
   },
   "createdAt": 1787135714346,
   "headRevision": {
-    "id": "2bd3a041-f954-488c-b604-7ccfe499a7a0",
-    "number": 33,
+    "id": "a9b1ac84-fe16-4121-907e-1ec3d65a85ee",
+    "number": 34,
     "kind": "saved",
-    "createdAt": 1787182419056
+    "createdAt": 1787203067140
   },
   "latestFinalization": {
-    "id": "d8bb979a-e62e-45bf-8d83-24f58e07e040",
-    "cycle": 6,
-    "revisionId": "2bd3a041-f954-488c-b604-7ccfe499a7a0",
-    "finalizedAt": 1787182615418
+    "id": "a307edf1-e259-4271-ad62-6d973d1d69a7",
+    "cycle": 7,
+    "revisionId": "a9b1ac84-fe16-4121-907e-1ec3d65a85ee",
+    "finalizedAt": 1787203077056
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",
@@ -95,7 +95,7 @@
         "key": "submission",
         "window": {
           "startsAt": 1785996000000,
-          "endsAt": 1787205600000
+          "endsAt": 1787227200000
         },
         "functions": [
           {

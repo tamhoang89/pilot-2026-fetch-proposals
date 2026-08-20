@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 33
+- **Revision:** 34
 - **Proposer:** `stake1u86sa7qzppfh24sugfdxasm0ye2cqp2f35n82yec06h7xsscfgpd9`
 - **Funding requested:** ₳150,000
-- **Last finalized:** 2026-08-19T23:36:55.418000+00:00
+- **Last finalized:** 2026-08-20T05:17:57.056000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -31,7 +31,7 @@ Exp: Cardano in Haskell (Cardano-Loan-Protocol, Hydra-SDK-Node). [Github](http:/
 
 Shubhanshu Saxena (Software Engineer)
 
-Scope: cell registry and batch console; signer onboarding, wallet and key-ceremony tooling; public verifier and QR resolution; MIT SDK.
+Scope: cell registry and batch console; signer onboarding, wallet, fractionalization, web app and key-ceremony tooling; public verifier and QR resolution; MIT SDK.
 
 Exp: full-stack TypeScript; on-chain verification, off-chain proof generation verified on chain. [Github](http://github.com/shubhu2002) | [Linkedin](http://linkedin.com/in/shubhanshu-saxena-902511230)
 
