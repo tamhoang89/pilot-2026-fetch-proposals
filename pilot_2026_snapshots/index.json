@@ -94,5 +94,8 @@
   "224ce4c8-fd0f-4cb1-a08c-9d04908c4f88": "anytoany_bridge_swap_and_route_into_any_cardano_token",
   "a988b9f6-0cab-4c3e-8057-6bb045b960fd": "veridict_verifiable_settlement_for_human_and_agent_work",
   "306fe9b2-4332-4c64-8101-efefa07186a6": "zerochord_verified_best-execution_stablecoin_routing",
-  "2253d4f1-bcf8-45ff-a088-0baf8d6ecfb3": "the_grid_protocol_usdcx-to-usd_for_local_businesses"
+  "2253d4f1-bcf8-45ff-a088-0baf8d6ecfb3": "the_grid_protocol_usdcx-to-usd_for_local_businesses",
+  "313ba5cf-e60e-4af4-b55c-83d847b617c2": "orilife-tokenised_produce_owned_by_growers_and_consumers",
+  "6ae31947-0afc-41f7-970e-296689265f06": "boardman_humans_agents_play_on_cardano",
+  "38ba300f-b7bf-4f39-9775-9350b4d26711": "carbon_private_ai_device_identity"
 }
