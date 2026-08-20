@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 51
+- **Revision:** 55
 - **Proposer:** `stake1u8x4lqtk6czqrlhjqyqlp8a8y7u0ekcxytg6796nm2xnxxsrvccyp`
 - **Funding requested:** ₳70,000
-- **Last finalized:** 2026-08-19T22:59:04.862000+00:00
+- **Last finalized:** 2026-08-20T03:32:42.806000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -18,16 +18,16 @@ TRL 7 - System prototype demonstrated in operational environment
 
 I'm Daniel Olanrewaju, solo founder.
 
-Links: [LinkedIn](https://www.linkedin.com/in/devfreeguy/), [GitHub](https://github.com/devfreeguy), X (@devfreeguy)
+Links: <https://www.linkedin.com/in/devfreeguy/>, <https://github.com/devfreeguy>, X (@devfreeguy)
 
 Shipped projects:
 
-- SkillSwap: zero to Cardano mainnet in 12 weeks. Awarded Cardano Pie by Gimbalabs and the Cardano Foundation. Live: [myskillswap.xyz](http://myskillswap.xyz). Repo: [github](https://github.com/devfreeguy/skill-swap). X: @myskillswap
-- Tagwise: Solana identity protocol mapping @handles to wallets. On-chain program, published SDK, docs. Site: [tagwise.me](http://tagwise.me). SDK: [tip-sdk](https://www.npmjs.com/package/@tagwise/tip-sdk)
+- SkillSwap: zero to Cardano mainnet in 12 weeks. Awarded Cardano Pie by Gimbalabs and the Cardano Foundation. Live: [myskillswap.xyz](http://myskillswap.xyz). Repo: <https://github.com/devfreeguy/skill-swap>. X: @myskillswap
+- Tagwise: Solana identity protocol mapping @handles to wallets. On-chain program, published SDK, docs. Site: [tagwise.me](http://tagwise.me). SDK: <https://www.npmjs.com/package/@tagwise/tip-sdk>
 
-I will implement KERI integration myself, using the CF Reeve reference implementation ([cf-reeve-platform](https://github.com/cardano-foundation/cf-reeve-platform)) as the blueprint. My identity protocol work on Tagwise (AID-like resolution, wallet-derived identity, on-chain state) directly maps to the KERI/ACDC path. If specialized consultation is needed, grant funds allow engaging short-term advisors.
+I will implement KERI integration myself, using the CF Reeve reference implementation (<https://github.com/cardano-foundation/cf-reeve-platform>) as the blueprint. My identity protocol work on Tagwise (AID-like resolution, wallet-derived identity, on-chain state) directly maps to the KERI/ACDC path. If specialized consultation is needed, grant funds allow engaging short-term advisors.
 
-Community partner: Metac ([metacc.online](http://metacc.online)), a tech education nonprofit in Nigeria where I volunteer as instructor. [LOI](https://drive.google.com/file/d/1SJnFSiznZ5LSBzEDNDPmLXHghy2QvnVe/view?usp=sharing)
+Community partner: Metac ([metacc.online](http://metacc.online)), a tech education nonprofit in Nigeria where I volunteer as instructor. LOI: <https://drive.google.com/file/d/1E417D47rLuCHAGyzoV0atlKTKpkU7zUT/view?usp=sharing>
 
 Confirmed team member: Akindipe Emmanuel George, UI/UX Designer ([LinkedIn](https://www.linkedin.com/in/akindipe-emmanuel-george-5591702a6)), joining for the pilot.
 
@@ -41,17 +41,17 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-**Who:** Metac controlled pilot 50 students, Cardano, IOG, Catalyst Discord members, 50 existing users. Reach: 50 Metac, 1200 Discord, 50 existing.
+Who: Metac controlled pilot 50 students, Cardano, IOG, Catalyst Discord members, 50 existing users. Reach: 50 Metac, 1200 Discord, 50 existing.
 
-**Why:** Core loop requires a completed swap to issue KERI credential. Each swap creates one anchor tx. Credentials build portable reputation.
+Why: Core loop requires a completed swap to issue KERI credential. Each swap creates one anchor tx. Credentials build portable reputation.
 
-**How often:** 145 swaps in 90 days, 0.23/day to 1.6/day. M1 30: Metac 22 plus X launch and re engagement 8. M2 55: Discord 35 plus Metac retention 20. M3 60: workshops 40 plus Metac 20.
+How often: 145 swaps in 90 days, 0.23/day to 1.6/day. Base rate 0.23/day derived from 7 swaps since July 19th mainnet launch. M1 30: Metac 22 plus X launch and re engagement 8. M2 55: Discord 35 plus Metac retention 20. M3 60: workshops 40 plus Metac 20.
 
-**Justification:** Audience x conversion x frequency. Base 7 swaps since July 19 equals 0.23/day. M1 1.0/day is 4.3x with Metac activation 60 percent and existing 20 percent. M3 is 41 percent of total, reducing single point risk. No ADA incentives funded by grant or counted.
+Justification: Audience x conversion x frequency. Base 7 swaps since July 19 equals 0.23/day. M1 1.0/day is 4.3x with Metac activation 60 percent and existing 20 percent. M3 is 41 percent of total, reducing single point risk. No ADA incentives funded by grant or counted.
 
-**Stretch:** 250 swaps if 2 extra nonprofits confirmed in M2, excluded from base.
+Stretch: 250 swaps if 2 extra nonprofits confirmed in M2, excluded from base.
 
-**Fee target:** 145 swaps equals about 350 labeled txs with commitment, anchors, refunds. At 0.3 ADA avg, about 105 ADA. Target 110 ADA, 5 percent buffer. 2 ADA commitment fee is treasury revenue, excluded.
+Fee target: 145 swaps equals about 350 labeled txs with commitment, anchors, refunds. At 0.3 ADA avg, about 105 ADA. Target 110 ADA, 5 percent buffer. 2 ADA commitment fee is treasury revenue, excluded.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -215,41 +215,29 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-**Week 1-2: Pilot Launch**
+Week 1-2: Pilot Launch\
+Deliverables: KERIA agent to staging. Metac onboarding 50 students. X launch plus demo video.\
+Measurable: 20 wallets, 10 swaps. M1 progress 10 of 30.
 
-Deliverables: KERIA agent deployed to staging. Metac onboarding for 50 students. X launch + demo video.
+Week 3-4: KERI Backend\
+Deliverables: signify-ts integrated. SAID pipeline live. Test suite passes.\
+KPI: 100 percent test creds valid SAID. M1 total 30 swaps.
 
-Measurable: 20 wallets created, 5 swaps completed.
+Week 5-6: Testnet\
+Deliverables: Credential issuance on swap. Anchoring live. Verifier at /verify/\[said\].\
+KPI: 10 testnet creds verifiable. Cumulative 55 swaps.
 
-**Week 3-4: KERI Backend**
+Week 7-8: Security Audit\
+Deliverables: Audit by MLabs. All criticals resolved.\
+KPI: Report 0 criticals. Cumulative 85 swaps M2 total 55.
 
-Deliverables: signify-ts integrated. SAID pipeline operational. Test suite passes.
+Week 9-10: Mainnet\
+Deliverables: Audited issuance to mainnet. Public launch.\
+KPI: 10 mainnet creds. Cumulative 110 swaps.
 
-Measurable: 100% test credentials generate valid SAID.
-
-**Week 5-6: Testnet**
-
-Deliverables: Credential issuance on swap. Metadata anchoring live. Public verifier at /verify/\[said\].
-
-Measurable: 10 testnet credentials issued and verifiable.
-
-**Week 7-8: Security Audit**
-
-Deliverables: Audit by MLabs Group Ltd. All critical issues resolved.
-
-Measurable: Audit report with 0 criticals.
-
-**Week 9-10: Mainnet**
-
-Deliverables: Audited credential issuance deployed to Cardano mainnet. Public launch.
-
-Measurable: 10 mainnet credentials issued.
-
-Week 11-12: Adoption
-
-Deliverables: 3 workshops: Lagos, Abuja, Online. CIP-0170 docs published.  
-
-Measurable: 20 mainnet credentials. 90-day total: 145 swaps.
+Week 11-12: Adoption\
+Deliverables: 1 Lagos workshop co-hosted with Metac + 1 online. Workshop recordings + CIP-0170 guides published.\
+KPI: 20 mainnet creds. 90 day total 145 swaps equals 350 txs equals 110 ADA.
 
 ### How far along is the integration you're proposing, today?
 

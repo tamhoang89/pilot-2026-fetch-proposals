@@ -1,14 +1,14 @@
-# SeerBOT
+# SeerBOT: Trading platform integrating Oracle & Stablecoin
 
 > A non-custodial, AI-powered trading and analytics platform on Cardano, integrating real-time Oracles and verified Stablecoins.
 
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 6
+- **Revision:** 10
 - **Proposer:** `stake1uy9evuj2y30jrwf5pa0mey50wfmm7u4fmhv3k4lshnfz55gndm0gn`
 - **Funding requested:** ₳198,000
-- **Last finalized:** 2026-08-20T01:43:05.531000+00:00
+- **Last finalized:** 2026-08-20T03:48:15.046000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -34,11 +34,17 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Genuine on-chain usage is driven by active Cardano DeFi traders, retail investors, and AI enthusiasts. Retail users execute 2-3 rebalancing swaps per week, while advanced traders utilizing SeerBOT’s automated DCA, Limit Order, and Stop-Loss strategy vaults execute 1-5 transactions daily.
+**Compliance & Genuine Usage:** All tracked network fees will strictly originate from independent user wallets interacting on-chain. Internal team or sponsored transactions are explicitly excluded to ensure full compliance with Catalyst Pilot rules.
 
-**User Motivation (Why):** Users transact to access low-slippage, non-custodial swaps secured by real-time Pyth Oracles and settled in verified stablecoins (USDM/USDCx) without compromising private keys. SeerBOT’s AI Assistant simplifies complex technical analysis into actionable conversational execution, encouraging higher transactional frequency.
+**Fee Generation Mechanisms (Target: 1,000 ADA in 40 days):**
 
-- **Realistic:** Achieving a cumulative 2,000 ADA in L1 fees requires \~120 daily transactions over the 40-day measurement window. This is fully achievable by converting our active community and launching co-marketing integrations with major Cardano wallets (Lace, Eternl, Vespr) during the first two weeks post-launch. No sponsored or internal team wallets will be counted, ensuring 100% genuine, external user activity.
+- **Stablecoin Swaps:** Users execute non-custodial swaps and rebalancing (USDM, USDCx). Averaging \~0.35 ADA in L1 fees per transaction, SeerBOT requires \~2,800 genuine user swaps to hit the target.
+
+- **Oracle Queries:** Automated conditional trades (e.g., Limit Orders, DCA, Stop-Loss) call the Pyth Oracle consumer contract. These computationally heavier scripts average \~0.45 ADA per transaction, requiring \~2,300 automated executions to meet our fee goal.
+
+**Platform Sustainability:** Beyond generating L1 fees, SeerBOT implements a 0.1% platform fee on all successful user swaps. This commercial model ensures independent operational revenue for continuous development and hosting long after the grant concludes
+
+Details: <https://docs.google.com/spreadsheets/d/1oXZJfE_QJxJ2ObvPSPVmXUDf2NkHjOuf/edit?usp=sharing&ouid=113364882239312587968&rtpof=true&sd=true>
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -65,7 +71,7 @@ https://youtu.be/IvYyb7PGAxk
 **Competitors/Alternatives:** Centralized Telegram trading bots (prevalent on EVM and Solana) and standard decentralized exchanges (DEXs) on Cardano.
 
 - **Why SeerBOT Wins:**
-  1. **Cardano Focus:** ....
+  1. **Cardano Focus:** We aim to build tools that serve the ecosystem's needs and foster sustainable growth alongside the Cardano ecosystem.
   2. **Conversational AI Analysis:** SeerBOT is not just a routing engine; it acts as an active, 24/7 personal on-chain data analyst that explains market dynamics and suggests technical set-ups in natural language.
   3. **Deep Oracle & Stablecoin Alignment:** By natively integrating real-time feed updates and verified stablecoins, we eliminate price delays and slip-page, outperforming basic DEX router interfaces.
 

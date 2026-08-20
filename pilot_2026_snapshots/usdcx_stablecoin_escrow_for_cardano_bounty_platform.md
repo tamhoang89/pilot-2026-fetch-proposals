@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 17
+- **Revision:** 19
 - **Proposer:** `stake1u8x5mm8k4dcvl0ayp4ax4r2h2ymnkg538nrcqdr2xh3yq8cvx9t0v`
 - **Funding requested:** ₳50,000
-- **Last finalized:** 2026-08-20T01:04:53.796000+00:00
+- **Last finalized:** 2026-08-20T03:37:39.512000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -193,21 +193,25 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-W1 D1-7: USDCx funding live on preview testnet, form shows USDCx plus ADA, DexHunter swap live. Target 5 users fund testnet.
+W1-2 Preview testnet:
 
-W2 D8-14: Full claim submit approve cycle live, outreach to 13 hunters. Target 5 cycles.
+W1 D1-7 USDCx deposit live, form shows USDCx+ADA, DexHunter live. Target 5 users fund.
 
-W3-4: Timeout paths ClaimTimeout ReclaimExpired tested, validator finalised, UI complete.
+W2 D8-14 Full flow: claim, submit, approve live. Outreach to 13 hunters. Target 5 cycles.
 
-W5-6: Internal testing, property tests, Lucid builder complete.
+W3-4 Validator hardening: ClaimTimeout and ReclaimExpired tested, validator final, UI done.
 
-W7-8: Internal security review and fixes, mainnet deploy with one real USDCx mission. Anastasia Labs quote obtained for pilot.
+W5-6 Quality: internal tests, property tests, Lucid builder done.
 
-Weeks 9-10 Mainnet Launch Execution:\
-W9 D1-7 post mainnet: Announce on X Discord Gimbalabs. Onboard 13 hunters. First 3 USDCx missions posted. Target 5 funded.\
-W10 D8-14 post mainnet: Skypie DAO AMA and 4 bounty drop, outreach to Gimbalabs alumni. Target 18 missions active or completed, 81 tx labeled. Evidence at <https://thequesters.fun/ledger>
+W7-8 Launch prep: security review and fixes, mainnet deploy with 1 real USDCx mission. Anastasia Labs quote obtained for pilot.
 
-W11-12: Scale to 120 missions via 8 target DAO partners avg 12 each, pipeline in Appendix A, 540 tx 189 fees, testimonials, final report and video.
+W9-10 Mainnet Launch Execution:
+
+W9 D1-7 Post-mainnet: announce on X, Discord, Gimbalabs. Onboard 13 hunters. Post first 3 USDCx missions. Target 5 funded.
+
+W10 D8-14 Post-mainnet: Skypie DAO AMA + 4 bounties, outreach to Gimbalabs. Target 18 missions active or done, 81 tx. Evidence at [thequesters.fun/ledger](http://thequesters.fun/ledger) with tx hashes
+
+W11-12 Scale: 120 missions via 8 target DAOs avg 12 each, pipeline in Appendix A, 540 tx, 189 fees, final report and video.
 
 ### How far along is the integration you're proposing, today?
 
@@ -241,7 +245,7 @@ The primary beneficiaries are freelancers, DAOs, and community organisations nee
 - https://x.com/the_questgg
 - https://thequesters.fun/ledger
 - https://github.com/opa1/the-quest
-- https://github.com/opa1/the-quest/blob/main/docs/Appendix-A.md
+- https://github.com/opa1/the-quest/blob/main/docs/Appendix-A-Pipeline.md
 
 ### Identified dependencies
 
