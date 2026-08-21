@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 5
+- **Revision:** 9
 - **Proposer:** `stake1u9zkjnsdmkway764336rl8gj2kacdnwnz0g6scp3nn847vga6a5kc`
 - **Funding requested:** ₳190,000
-- **Last finalized:** 2026-08-21T15:34:12.704000+00:00
+- **Last finalized:** 2026-08-21T23:10:58.139000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,11 +16,18 @@ TRL 5 - Technology validated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-3rd Man is built and led solo by me, Paul Kaberere I'm the project lead and sole developer across the whole stack. That covers the Rust/Axum backend (auth, KYC, agreements, negotiation, collateral, escrow, disputes, points, ledger), the React/Vite/TypeScript frontend (wallet integration, agreement wizard, milestone delivery, arbiter console, governance panel), and the on-chain Aiken (Plutus V3) validator, including the Pallas-based Rust transaction builder wired to Cardano Preprod testnet.
+3rd Man is independently founded and led by me, Paul Ngigi Kaberere, taking it from concept to a live Cardano-native peer-to-peer escrow platform.
 
-We've already budgeted for a third-party smart contract security audit ahead of mainnet deployment this is a precondition for the M1 milestone, since the validator will be holding real user funds. I've reached out to Invariant0, the Cardano audit team with a scoping email covering the validator's architecture, its current Preprod-tested status, and our 3-month mainnet timeline. I'm now waiting on their reply about availability and cost before we can lock in a schedule. I'll also bring on a legal/compliance advisor for Kenyan financial regulation on the escrow/custody model, on the same near-term timeline, once I've identified specific candidates.
+I am a Rust Developer. I designed and built the platform: backend, frontend, CIP-30 wallet integration, and the Aiken/Plutus V3 escrow validator, tested end-to-end on Cardano Preprod. I will implement all milestones: dispute resolution, KYC/identity, wallet integration, testing, deployment, and documentation.
 
-Links: Paul Kaberere — [github.com/paloxmah0](http://github.com/paloxmah0)
+3rd Man reflects prior Cardano experience, backed by my GitHub history and LinkedIn profile. I'm a Cardano Academy student studying Aiken, and a technical volunteer with Prisma Network/Collective, with an open pull request to their repository as a verifiable contribution.
+
+I've allocated budget for a third-party audit before mainnet, a precondition for M1, and contacted Invariant0, a Cardano/Aiken security firm, targeting engagement within the grant's first two weeks. A legal/compliance advisor for Kenyan financial regulation will be engaged on the same timeline once candidates are identified. I am accountable for delivery throughout.
+
+GitHub: [github.com/paloxmah0](http://github.com/paloxmah0)\
+LinkedIn: [linkedin.com/in/paul-ngigi-6b2b483b0](http://linkedin.com/in/paul-ngigi-6b2b483b0)\
+Prisma PR: [github.com/prisma-collective/dids/pull/15](http://github.com/prisma-collective/dids/pull/15)\
+Cardano Academy: [learn.academy.cardanofoundation.org](http://learn.academy.cardanofoundation.org)
 
 ### Eligible area
 
