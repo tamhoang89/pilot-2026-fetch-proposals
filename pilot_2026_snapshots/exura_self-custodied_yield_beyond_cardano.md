@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 21
+- **Revision:** 26
 - **Proposer:** `stake1uxqs8hmgwkqza9gp7zqh8sqx5entwhudla5rwc39ufw9anq5set5u`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-20T00:01:48.609000+00:00
+- **Last finalized:** 2026-08-21T19:46:22.856000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -50,17 +50,17 @@ Onboarding is 3 steps: connect the wallet they have, sign to bind, sign the depo
 
 The first 14 days after go-live:
 
-Days 1-2. Announce on our channels and the Cardano venues its audience reads, with the walkthrough video.
+- Days 1-2. Announce on our channels and the Cardano venues its audience reads, with the walkthrough video.
+- Days 3-5. Deposit flow open to a first wave, office hours, mainnet activity published as it lands.
+- Days 6-10. 2nd wave, with what the first stumbled on fixed.
+- Days 11-14. 3rd wave, first numbers published, same material into Catalyst calls.
 
-Days 3-5. Deposit flow open to a first wave, office hours, mainnet activity published as it lands.
+Waves are deliberate: the cap discards launch spikes, per-epoch floors reward cadence.
 
-Days 6-10. 2nd wave, with whatever the first stumbled on fixed.
+---
 
-Days 11-14. 3rd wave, first numbers published, same material into Catalyst's calls.
-
-Waves are deliberate: the daily cap discards a launch spike, per-epoch floors reward cadence.
-
-Reach, both directions. Editorial: our X account peaks at 600-800 impressions a day, \~2K a month, on rare technical posts - the Cardano audience is largely on X, so that is the honest size of our broadcast. On-chain: 134 distinct wallets burned USDCx in the last 60 days, unprompted, checkable by anyone. The plan leans on the second: being the interface on a rail people already use without one.
+- Editorial: our X account peaks at 600-800 impressions a day, \~2K a month on rare technical posts; the honest size of our broadcast, not what the plan rests on.
+- On-chain: 134 distinct wallets burned USDCx in the last 60 days, unprompted: a countable population, not an impressions funnel, already performing the transaction we count. Today the burn only takes value out; we give it a destination whose key stays on Cardano.
 
 ### Is the underlying project open source?
 
@@ -78,11 +78,11 @@ Doing it yourself keeps the keys, at the cost of a second wallet, a seed phrase,
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-Exura runs in production on full Cardano mainnet history: an indexer that reconstructs and tracks DeFi positions, nine protocol integrations, a chain-derived price oracle, and the API and dashboard above it. None of it is simulated.
+Exura runs in production on full Cardano mainnet history. An indexer reconstructs and tracks DeFi positions, a chain-derived oracle prices them, and the API and dashboard sit above that. None of it is simulated. The live protocol integrations are listed at [exura.org](http://exura.org); Minswap, Liqwid and SundaeSwap are among them. They read positions. Building transactions for users is what this grant funds.
 
-  What it is not yet is announced. The dashboard is live but tracks a limited set of accounts while we finish the surface. The engine has been running on real chain data for a long time; the public front is what remains.
+The dashboard is live but not yet announced, and tracks a limited set of accounts while we finish the public surface.
 
-  Nothing here depends on that being finished first. The integration lands on the same indexer, pricing and dashboard, which is why one person can deliver it in three months: the hard part that usually eats a pilot, tracking and valuing positions across a whole chain, already runs.
+The new integration lands on the same indexer, pricing and dashboard. The part that usually eats a pilot, tracking and valuing positions across a whole chain, already runs, so three months of one person's work only has to cover the integration itself.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
@@ -118,11 +118,11 @@ Individual
 
 The market we can measure is the smaller one. About $44M of USDCx circulates on Cardano with little to do here: Liqwid's USDCx market is roughly $161k, free stablecoin liquidity chain-wide about $2.6M, so a serious deposit becomes most of the pool.
 
-The larger market is the dollars that are not here yet. Billions of ADA are held, on exchanges and in wallets, by people who keep money in dollars somewhere too, and none of it has a reason to arrive here. Someone who trusts this chain enough to hold serious value in its asset would keep dollars here too, if that did anything. Dollars that come arrive as **newly minted USDCx**, not as ADA sold into stablecoins. We cannot size that group and would rather name it than pad it: demand with nowhere to go leaves no trace. It goes where it is met, which so far means a custodial exchange or another chain.
+The larger market is the dollars that are not here yet. Billions of ADA are held, on exchanges and in wallets, by people who keep money in dollars somewhere too, and none of it has a reason to arrive here. Someone who trusts this chain enough to hold serious value in its asset would keep dollars here too, if that did anything. Dollars that come arrive as **newly minted USDCx**, not as ADA sold into stablecoins, the position controlled by a Cardano key and exiting to a Cardano address. We cannot size that group and would rather name it than pad it: demand with nowhere to go leaves no trace. It goes where it is met, which so far means a custodial exchange or another chain.
 
-The circumstantial case is the ratio: Cardano DeFi holds around $62M against an asset worth about $6B, **roughly one dollar in a hundred**. Either ADA holders do not want their money working, or what is on offer does not fit what they hold. Dollar savings products elsewhere hold billions, which makes the second likelier.
+The circumstantial case is the ratio: Cardano DeFi holds around $60M against an asset worth over $8B, **less than one dollar in a hundred**. Either ADA holders do not want their money working, or what is on offer does not fit what they hold. Dollar savings products elsewhere hold billions, which makes the second likelier.
 
-**We do not claim product-market fit yet.** The pilot is the test; deposits settle it. What exists is the machinery and the audience: contracts deployed and exercised on testnet, and a portfolio dashboard live across Cardano mainnet history, where these users already arrive.
+We do not claim product-market fit yet. The pilot is the test; deposits settle it. What exists is the machinery and the audience: contracts deployed and exercised on testnet, and a dashboard live across Cardano mainnet history.
 
 ### Applicant name
 
