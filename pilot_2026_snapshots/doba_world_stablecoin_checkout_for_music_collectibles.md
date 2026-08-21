@@ -1,14 +1,14 @@
-# USDM checkout on doba.world
+# Doba World: Stablecoin Checkout for Music Collectibles
 
-> An open-source stablecoin settlement rail built for Cardano.
+> Doba World lets superfans buy song-tokens with USDM. This turns Cardano into a settlement layer for independent music and generates mainnet fees.
 
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 70
+- **Revision:** 86
 - **Proposer:** `stake1uyjvphj6hg3lf9lgq6af09ayprmdwlet2hm2avfd6vskfpg5l0u28`
-- **Funding requested:** ₳80,000
-- **Last finalized:** 2026-08-19T20:53:13.932000+00:00
+- **Funding requested:** ₳50,000
+- **Last finalized:** 2026-08-21T22:16:46.608000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,19 +16,12 @@ TRL 7 - System prototype demonstrated in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-**Core Lead & Execution:**
-
-- **Ian Njuguna Chege (Lead Engineer & Project Manager):** Ian brings end-to-end technical execution and dApp architecture capabilities across the Cardano stack. As the sole proposer, Ian is responsible for the smart contract development (Aiken), off-chain transaction orchestration, USDM integration, overall project management and Catalyst milestone reporting.
-
-  - **LinkedIn:** [linkedin.com/in/ianonjuguna](http://linkedin.com/in/ianonjuguna)
-
-  - **GitHub:** [github.com/IanoNjuguna](http://github.com/IanoNjuguna)
-
-**Third-Party Security & External Vendor:**
-
-- **Subcontracted Security Auditor:** To ensure protocol safety and mitigate eUTxO-specific vulnerabilities prior to Mainnet launch, a security vendor (e.g. TxPipe, MLabs, Anastacia Labs) will be contracted to perform an independent, comprehensive smart contract security review. .
-
-  - *Vendor Status Disclaimer:* not a co-proposer, or partner.
+Ian Njuguna is Lead Engineer & Project Manager. Responsible for end-to-end integrations, and Catalyst reporting. Doba World is live on mainnet.\
+\
+LinkedIn: [https://linkedin.com/in/ianonjuguna](https://linkedin.com/in/ianonjuguna%5C)\
+GitHub: [https://github.com/IanoNjuguna](https://github.com/IanoNjuguna%5C)\
+\
+No third-party security audit is budgeted or contracted. Review will be internal, plus preprod/mainnet testing and a test-evidence bundle.
 
 ### Eligible area
 
@@ -42,21 +35,37 @@ N/A
 
 **Who:** Super fans purchasing song-tokens from independent artists.
 
-**Why:** Fans gain early access, exclusive collectibles, and a direct relationship with artists devoid of price action FUD.
+**Why:** Early access, exclusive collectibles, and a direct relationship with artists.
 
-**How Often:** A target of &gt;500 monthly average users during the adoption window. This is a requisite deliverable for doba world to hit the fee target. Artist drops will be staggered to maintain continuous transaction velocity without single-day spikes exceeding standard limits.
+**How Often:** Each purchase contains generates fees in two ways: USDM transfer, and song-token mint. The conservative baseline needs doba to get 110 users to make 4 transactions each, and assuming the average network fee is ₳0.30 to ₳0.45, doba will generate network fees &gt;₳330.
 
-**Target Metrics:** This target sits above the ₳180 minimum threshold and within the guidance band (₳300–550).
+```markdown
+| Source                           |Wallets|
+|----------------------------------|-------|
+| Artist drops (3 or more)         | 40–60 |
+| Micro-CAC + Gimba Labs community | 35–50 |
+| Organic                          | 20–35 |
+| **Total**                        | ~110**|
+```
 
-**USDM Acquisition:** Doba world will need external support through Moneta Global's on-ramp APIs so artists and super fans can mint USDM from fiat in the app.
+**Funnel:** 1,000 artists contacted → 100 replies → 10 drops → 2,000 fans reached → 200 wallet connects → 110 buyers → 220 transactions.
 
-**Integrity Guarantee:** Only authentic, non-custodial external user activity will be counted. Doba will explicitly declare all team-controlled wallets, will not subsidize transaction fees, and will not issue financial rewards for user activity, ensuring full compliance with the Transaction Integrity Standard.
+**USDM acquisition:** Via Mehen, Minswap/WingRiders, or P2P.
+
+**Rhythm:** one entry-epoch ramp plus six floored 5-day epochs. Epoch floors \~₳27.50 in the first three epochs, \~₳55 in the final three. First drop within the first epoch.
+
+**Integrity:** Team wallets declared; no fee subsidies or rewards.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
 1. **The Gimba Labs community.** The connection made with builders during the Piece of Pie hackathon provides a native audience of pioneer adopters who can test the flow and provide feedback during the build phase.
-2. **Artist outreach.** Target &gt;1000 phonk and EDM artists via Reddit, cold email, and direct messages in the first month to get &gt;100 to drop during the adoption window. Super fans in tech-forward genres are a fit in crypto culture even when not native to it.
+2. **Artist outreach.** Target &gt;1000 phonk and EDM artists via Reddit, cold email, and direct messages in the first month to get &gt;100 to drop during the adoption window. Super fans in tech-forward genres are a fit for crypto culture.
 3. **Kick streams + clipped content.** Biweekly live streams with artist drops and Q&A, clipped into YouTube Shorts, Instagram Reels, and TikTok. This builds organic reach that compounds conversion in the long term.
+
+**First two weeks:**
+
+***Week 1:*** Contact 200 artists; post in 5 communities; 2 livestreams | 40 replies, 4 calls, 100 new community members.\
+***Week 2:*** Follow up; finalize first drop; launch micro-CAC | 1 committed drop, 150 page visits, 30 wallet connections.
 
 ### Is the underlying project open source?
 
@@ -64,17 +73,17 @@ Yes
 
 ### Who else solves this today - competitors/alternatives, and why does your approach win?
 
-Artists use streaming, Bandcamp, Patreon, Kickstarter, and various other centralized platforms. Each takes a meaningful cut and none of the decentralized alternatives settle on Cardano.
-
-doba world is the first to apply a federated approach to music token collectibles. This is a consumer vertical with built-in viral distribution and all integrations done in this pilot will be open-sourced under the AGPL v3 license.
+Streaming, Bandcamp, Patreon, Kickstarter, and music-NFT platforms take meaningful cuts and none settles on Cardano. Doba is the first federated music-token-collectible protocol; integrations are open-sourced under AGPL v3.
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-**doba world** is a live platform deployed on the Cardano mainnet to facilitate music pre-drops. The platform enables fans to connect and discover upcoming music drops, and purchase tokenized song assets directly on-chain. So far, doba world has an organic user base spanning three continents.
+**Doba** is a live platform deployed on the Cardano mainnet to facilitate music pre-drops. The platform enables fans to connect and discover upcoming music drops, and purchase tokenized song assets directly on-chain. So far, doba has an organic user base spanning three continents.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-Doba is a self-custody music checkout. The architecture:
+Doba is building an Open Source self-custody music checkout.\
+\
+The architecture:
 
 ```
 Super Fan (with USDM balance)
@@ -89,8 +98,6 @@ Each purchase contains generates fees in two ways: USDM transfer, and song-token
 The smart contract only accepts the verified USDM policy from [cardano.org](http://cardano.org): `c48cbb3d5e57ed56e276bc45f99ab39abe94e6cd7ac39fb402da47ad` (asset name hex `0014df105553444d`).
 
 Every counted transaction will carry the standardized Catalyst metadata label.
-
-This fits the Stablecoins Area of Interest because it moves verified stablecoin policies on mainnet through real, user-paid transactions.
 
 ### Fits the timeline
 
@@ -114,11 +121,11 @@ Individual
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-Direct-to-fan research shows the top 5–10% of an creative's audience generate the majority of creator income on platforms like Patreon and Bandcamp.
+Independent phonk, and EDM artists and their superfans. Direct-to-fan research shows the top 5–10% of an creative's audience generate the majority of creator income on platforms like Patreon and Bandcamp.
 
-A pre-drop is a music token collectible minted on doba world smart contracts. This is a [research-backed](https://doba.world/research) strategy shift in direct artist-to-fan engagement that moves toward selling *scarce digital collectibles with early access & community status* upfront to super fans.
+A pre-drop is a music token collectible minted using doba world smart contracts. It is a [research-backed](https://doba.world/research) strategy shift in direct artist-to-fan engagement that moves toward selling *scarce digital collectibles with early access & community status* upfront to super fans.
 
-One hundred superfans buying a $5 song token generate $500 immediately, you would need roughly 125,000 Spotify streams to match this motion. For an independent musician releasing records every few weeks, cash flow and income from royalties is a life-and-death matter.
+One hundred superfans buying a $5 song token generate $500 immediately, you would need roughly 125,000 Spotify streams to match this motion.
 
 ### Applicant name
 
@@ -126,9 +133,7 @@ Ian Njuguna
 
 ### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
 
-doba world takes a fee on song-token sales. This funds ongoing platform development, artist support and community growth.\
-\
-doba world does not subsidize or reward transactions.
+Doba takes a fee on song-token sales. This funds ongoing platform development, artist support and community growth.
 
 After the pilot, artist drops, repeat purchases, and secondary trading will sustain activity on the protocol.
 
@@ -146,9 +151,9 @@ This funding enables Doba to build, audit, and deploy the USDM checkout integrat
 
 **Budget Allocation:**
 
-- **₳9,000** - USDM integration
+- **₳9,000** - onchain USDM integration
 
-- **₳38,000** - Third party Security review and audits
+- **₳8,000** - check-out and USDM acquisition UX
 
 - **₳3,000** - Telemetry and Metadata tracking
 
@@ -164,7 +169,7 @@ This funding enables Doba to build, audit, and deploy the USDM checkout integrat
 
 - **₳5,000** - Contingency
 
-**Total: ₳80,000**
+**Total: ₳50,000**
 
 *Note: all marketing allocations (₳9,000 artist outreach and ₳5,000 micro-CAC experiments) are dedicated exclusively to top-of-funnel user discovery, artist onboarding, and organic campaign production.*
 
@@ -188,7 +193,7 @@ D. **Demo Day Presentation & Live Testing:** E2E mainnet transaction tests on a 
 
 ### How far along is the integration you're proposing, today?
 
-TRL 3 - Experimental proof of concept
+TRL 2 - Technology concept formulated
 
 ### Clear budget
 
@@ -204,11 +209,9 @@ Yes
 
 ### What solution are you building, and what specific problem does it solve - for whom?
 
-Independent musicians release music into a system that pays them last and least. Streaming platforms can take long to approve a track, then return fractions of a cent per stream after months because of outdated bureaucratic processes. And not all artists qualify for these payouts :(
+Independent musicians get paid last and least by streaming platforms. On Cardano, asking a non crypto-native superfan to buy a song-token means asking them to think in ADA and absorb volatility. This friction kills the sale.
 
-All settlement on doba world is finalized on Cardano, but requiring a non-crypto native super fan to collect these tokens means *asking them to think in ADA, and price action volatility*. **Friction kills the sale**. Stablecoin settlements feel more natural in this regard.
-
-With a USDM checkout released under the AGPL v3 license. Super fans will see a $5 song-token price in USDM, pay from their wallet, and receive a song-token that unlocks community perks.
+With USDM checkout, a fan sees a $5 song-token price, pays from their wallet, and receives a collectible that unlocks early access and community perks. Cardano gains a consumer use case that brings real people to mainnet.
 
 ### Supporting links (repo, site, demo)
 
@@ -258,7 +261,7 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-1500
+220
 
 ### Standard read and attested
 
@@ -274,10 +277,4 @@ Ian Njuguna is a maintainer for DevEx repository under Intersect's Maintainer Re
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-Implementation comprises the following deliverables:
-
-- **Policy Allowlisting:** Integrating the USDM policy ID into the smart contract and frontend filters to validate genuine USDM tokens during checkout.
-
-- **On-Chain Analytics:** Tagging checkout transactions via standardized metadata formats for indexing on Dune Analytics dashboards.
-
-- **Mainnet Deployment:** Executing testnet end-to-end testing prior to deploying updated smart contracts and off-chain transaction builders.
+The USDM checkout integration has been designed and its feasibility is confirmed by Doba's existing minting, dapp connector, and on-chain transaction infrastructure. No USDM-specific experimental proof of concept has been completed at submission. The funded work will build the TRL 3 to 4 proof of concept on preprod, and deliver the TRL 5+ mainnet integration. Declaring TRL 2 reflects this honest status and avoids claiming validation that does not yet exist.
