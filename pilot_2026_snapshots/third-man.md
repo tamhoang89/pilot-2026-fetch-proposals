@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 3
+- **Revision:** 5
 - **Proposer:** `stake1u9zkjnsdmkway764336rl8gj2kacdnwnz0g6scp3nn847vga6a5kc`
 - **Funding requested:** ₳190,000
-- **Last finalized:** 2026-08-15T09:00:05.115000+00:00
+- **Last finalized:** 2026-08-21T15:34:12.704000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,7 +16,11 @@ TRL 5 - Technology validated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-3rd Man is led by Paul Kaberere, who acts as project lead and sole developer across the full stack: the Rust/Axum backend (auth, KYC, agreements, negotiation, collateral, escrow, disputes, points, ledger), the React/Vite/TypeScript frontend (wallet integration, agreement wizard, milestone delivery, arbiter console, governance panel), and the Aiken on-chain validator, including the Lucid Evolution + Koios transaction builder already wired to Cardano Preprod testnet. Natasha Mwangi supports the project as assistant, maintaining project structure. Skills gaps to be filled: a smart contract security auditor to review the Aiken validator before mainnet deployment, and a legal/compliance advisor familiar with Kenyan financial regulation for the escrow/custody model. Links: Paul Kaberere — [github.com/paloxmah0](http://github.com/paloxmah0)
+3rd Man is built and led solo by me, Paul Kaberere I'm the project lead and sole developer across the whole stack. That covers the Rust/Axum backend (auth, KYC, agreements, negotiation, collateral, escrow, disputes, points, ledger), the React/Vite/TypeScript frontend (wallet integration, agreement wizard, milestone delivery, arbiter console, governance panel), and the on-chain Aiken (Plutus V3) validator, including the Pallas-based Rust transaction builder wired to Cardano Preprod testnet.
+
+We've already budgeted for a third-party smart contract security audit ahead of mainnet deployment this is a precondition for the M1 milestone, since the validator will be holding real user funds. I've reached out to Invariant0, the Cardano audit team with a scoping email covering the validator's architecture, its current Preprod-tested status, and our 3-month mainnet timeline. I'm now waiting on their reply about availability and cost before we can lock in a schedule. I'll also bring on a legal/compliance advisor for Kenyan financial regulation on the escrow/custody model, on the same near-term timeline, once I've identified specific candidates.
+
+Links: Paul Kaberere — [github.com/paloxmah0](http://github.com/paloxmah0)
 
 ### Eligible area
 
