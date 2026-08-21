@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 34
+- **Revision:** 40
 - **Proposer:** `stake1u86sa7qzppfh24sugfdxasm0ye2cqp2f35n82yec06h7xsscfgpd9`
 - **Funding requested:** ₳150,000
-- **Last finalized:** 2026-08-20T05:17:57.056000+00:00
+- **Last finalized:** 2026-08-21T19:24:00.143000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -49,29 +49,23 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Coastal is our customer, \~90% of fees; auditors & importers the rest.
-
-16 cells: MoU names 120; we instrument 16 from 8, so 12 average.
-
-3 batches a cell a day: line runs 20 hrs, QC releases one per 7.
-
-0.42 ADA/tx: attestations run a script with metadata; net avg 0.33.
-
-CIP-0170: 3 x 12 x 30 = 1,080 QC releases plus 220 from hygiene, maintenance, dispatch, auditors, importers. 1,300 txs, 546 raw. Coastal pays its signers, so §6.2 makes it one wallet, halving its share over 35%. Counted 387, target 380.
-
-CIP-0113: 650 mints at 0.50, 520 transfers at 0.45, 200 burns at 0.40. 1,370 txs, 639 raw, 471 counted. 650 mints vs 1,080 releases: only export lots carry a BatchPass. Both raw numbers are Ambitious; the §6.2 discount, not caution, makes this Credible.
-
-Pace: floors are 1/12 of target for 3 epochs then 1/6, one miss allowed. 8 cells and all wallets live at M1 clear epoch 1; early M1 stretches the window (§7.3).
-
-Wallets. Coastal counts as one. BAP/BRCGS certifiers are on public GSA/BRCGS records. Coastal's Aug 2026 director-signed letter onboards 20 importer wallets before M1; identities under NDA. 21 wallets for CIP-0113 (auditors take no custody), 23 for CIP-0170, vs min 18 & 9
+Coastal is just our first out of 400+ potential customers (MoU in links), \~90% of fees; auditors & importers are rest.\
+12 cells avg: 8 at M1 to 16; MoU names 120. 3 batches a cell a day (20-hr line, one release per 7 hrs). 0.42 ADA/tx: script + metadata; net avg 0.33.\
+CIP-0170: 3x12x30 = 1,080 QC releases + 220 from hygiene, maintenance, dispatch, auditors, importers. 1,300 txs, 546 raw. Coastal signer wallets are Coastal-funded, not ours, so §6.2 treats them as one; share over 35% counts at half. 387 counted, target 380.\
+CIP-0113: 650 mints at 0.50, 520 transfers at 0.45, 200 burns at 0.40. 1,370 txs, 639 raw, 471 counted. Only export lots carry BatchPass.\
+First 2 weeks:\
+D1-3: 8 cells, 6 QC + 1 auditor signing, keys made on site. \~10 releases/day, 12 ADA.\
+D4-7: all Coastal roles live; first mint-transfer-burn cycle with 5 importers. \~35 ADA cum.\
+D8-14: 12 cells, 15 importers receiving, \~20 releases + 6 mints/day. \~110 ADA cum vs 32 ADA epoch-1 floor.\
+Wallets: Coastal = 1. BAP/BRCGS certifiers on public registers. Coastal will add their 20 importers before M1;. full list on NDA as it is Coastal's confidential data. 21 wallets CIP-0113, 23 CIP-0170 vs min 18 & 9.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Our users already work at the plant. The robots replaced the hands that dehead shrimp, not the people who approve the work: QC officers who release each batch, hygiene and maintenance checkers, dispatch staff. The signed MoU makes them the signers. Outside: Coastal's BAP and BRCGS certifiers, who already audit the line, and the importers who receive its shipments.
+Our users already work at the plant. The robots replaced the hands that dehead shrimp, not the people who approve the work: QC officers who release each batch, hygiene and maintenance checkers, dispatch staff. The signed MoU makes them the signers. Outside: Coastal's BAP and BRCGS certifiers, who already audit the Coastal, & the importers who receive its shipments.
 
 Our engineers are already inside the plant installing the robots. Signer setup is part of installing a cell: a phone wallet, keys made on site, one training session, and they sign inside their existing workflow.
 
-Evidence: the MoU covers plant signers. We will onboards 20 importer wallets before M1, each receiving about 10 batch transfers over the window. Coastal's 12 to 20 signer wallets count as one under §6.2; certifiers & importers are separate entities, giving 21 external wallets for CIP-0113 and 23 for CIP-0170, against minimums of 18 and 9. First signers go live at M1.
+Evidence: the MoU covers plant signers. We will onboards 20 importer wallets before M1 (coastal's confidential data/available on NDA), each receiving about 10 batch transfers over the window. Coastal's 12 to 20 signer wallets count as one under §6.2; certifiers & importers are separate entities, giving 21 external wallets for CIP-0113 and 23 for CIP-0170, against minimums of 18 and 9. First signers go live at M1.
 
 ### Is the underlying project open source?
 
@@ -126,7 +120,7 @@ Incorporated entity
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-The market is shrimp processing. India has 646 registered seafood units, \~420 handling shrimp \[MPEDA registry\]: a $220M serviceable market inside $1.0B of Asian shrimp processing. Of the ten largest Indian shrimp companies, one has signed: Coastal Corporation (NSE: COASTCORP, Rs 639 Cr FY26, 3 Andhra Pradesh plants, 71 MT a day), a 120+ cell contract. 
+The market is shrimp processing. India has 646 registered seafood units, \~420 handling shrimp \[MPEDA registry\]: a $220M serviceable market inside $1.0B of Asian shrimp processing. Of the ten largest Indian shrimp companies, one has signed: Coastal Corporation (NSE: COASTCORP, Rs 639 Cr FY26, 3 Andhra Pradesh plants, 71 MT a day), a 120+ cell contract.
 
 Why they buy this layer: the robots are already on the line. Coastal bought them to fix labor shortage. Under FSMA 204, deheading is a Critical Tracking Event, transformation, and the machines measure its Key Data Elements every shift: quantity in and out, grade, line, date, lot. Coastal needs it provable to an auditor or importer without opening its books, and buys it as it bought the robots: no capex, per kilo.
 
