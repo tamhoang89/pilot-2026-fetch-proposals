@@ -5,14 +5,14 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 50
+- **Revision:** 56
 - **Proposer:** `stake1u9mzuqyq7c0arwx9knnfccalzydln4mxcvzl6d83y8jn49q6wz2wf`
 - **Funding requested:** ₳140,000
-- **Last finalized:** 2026-08-20T01:35:03.411000+00:00
+- **Last finalized:** 2026-08-21T20:49:04.466000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
-TRL 6 - Technology demonstrated in relevant environment
+TRL 5 - Technology validated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
@@ -45,15 +45,14 @@ anyqr pledges 5% of all protocol fee revenue to the Cardano treasury from our fi
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Every order is three onchain txs, all paid from users' own wallets. No server keys, no sponsored fees. Mainnet wk10 gives us \~10 epoch.
-
-STABLECOINS. 76 Preprod txs calibrate unit cost, not demand: 0.31 ADA/tx, 0.91/order. 700 orders = 2,100 txs, \~640 ADA on a 301 floor; we declare 600.
-
-IDENTITY. 15 merchants x (DID mint + zkTLS proof) = 30, 120 buyers x 1 anchor = 120, 700 attestations at close; 850 total, we declare 550 as late orders close after.
-
-FIRST 14 DAYS. All in the floorless entry epoch (§1.1). Pre-launch: 15 merchants off P2P leaderboards, DIDs minted, merchants fund their own floats - no team capital in any merchant wallet (§5.2). D1-3: 5 concierge merchants on UPI, PIX, QRIS, \~5 orders/day. D4-7: open signup, Cardano regional communities, \~10/day. D8-14: all 10 corridors, SDK on npm, 16/day and 40+ external wallets, past the 31 min before floors start. **Wallet embeds & p2p.me fills are upside, not assumed: their contract is public.**
-
-PACE. Floors bind before the target: on 600 across \~9 floored epochs §7.3 sets \~33 ADA/epoch for five then \~67 for four, so 14/day (\~64) misses and we run 16/day, \~73/epoch. Steady, not bursts; 15 merchants keeps \~2% fees.
+Every order is 3 txs from users' wallets; no server keys,  no sponsored fees. Mainnet wk10 gives \~10 epochs.\
+STABLECOINS. 76 Preprod txs calibrate unit cost, not demand: 0.31 ADA/tx. Every order emits 3 txs: matched open, fund, close; unmatched open, fund, buyer claims back on timeout. 700 orders = 2,100 txs, \~650 ADA on a 301 floor; we declare 600.\
+\
+IDENTITY. 1 attestation per closed order: \~550 of 700 close, \~150 time out unmatched (refund, no attestation). Plus 15 merchant DID+zkTLS mints (30) and 120 buyer anchors = 700 total.\
+\
+FIRST 14 DAYS. All in the floorless entry epoch (§1.1). Pre-launch: 15 merchants off P2P leaderboards, DIDs minted, merchants fund own floats, no team capital (§5.2). D1-3: 5 concierge merchants on UPI/PIX/QRIS, \~5 orders/day. D4-7: open signup, regional communities, \~10/day. D8-14: all 10 corridors, SDK on npm, 16/day, 40+ external wallets, past the 31 min. Wallet embeds & [p2p.me](http://p2p.me) fills are upside, not assumed.\
+\
+PACE. Floors bind first: §7.3 sets \~33 ADA/epoch for five, \~67 for four, so 14/day (\~64) misses; we run 16/day, \~73/epoch. Steady, not bursts; 15 merchants keeps \~2% fees.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -86,19 +85,19 @@ USDCx is Cardano’s largest stablecoin, funded by a 70M ADA vote. anyqr gives u
 
 anyqr runs end to end on Cardano Preprod today. A buyer scans a shop QR, locks tUSDM in escrow, a merchant accepts and pays the shop in fiat, the buyer confirms, and the escrow releases to the merchant. 76 transactions at the escrow address so far.
 
-Underneath: one Aiken Plutus V3 validator carries each order as its own UTxO through Placed, Accepted, Paid and Disputed, with 9 property tests over every redeemer, deadline and failure path. @qrpay/sdk on Lucid Evolution gives every action a prepare that returns an unsigned tx and an execute that submits it. CIP-30 connect ships for Lace, Eternl and Vespr. Release is automatic: no merchant signature, no claim button.
+Underneath: one Aiken Plutus V3 validator carries each order as its own UTxO through Placed, Accepted, Paid and Disputed, with 9 property tests over every redeemer, deadline and failure path. @qrpay/sdk on Lucid Evolution gives every action a prepare and an execute. CIP-30 connect ships for Lace, Eternl and Vespr. Release is automatic: no merchant signature, no claim button, and no server key: a keyless relayer pushes it, proven on chain.
 
-[Escrow Link](https://preprod.cardanoscan.io/address/addr_test1wrultc2jal2y5ql8m5ant6u4xkn79zgpr8d590tav7fyjcqng2vfq)
+CIP-0170 identity anchors for buyers and merchants are live on Preprod too in codebase.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-Three parts: a contract that holds the money, an identity layer that makes merchants trustworthy, and an app tying both.
+Three parts: a contract holding the money, an identity layer making merchants trustworthy, and an app tying both.
 
 THE CONTRACT. One Plutus V3 Aiken validator, one UTXO per order, like SundaeSwap and Minswap. State (Placed, Accepted, Paid, Disputed) sits in an inline datum, the redeemer picks the action, and no two buyers touch one UTXO. The datum holds the trade: both amounts, deadlines, and the policy id, so one validator settles USDCx today and USDM later. The QR address moves in two steps: the merchant publishes an ECIES pubkey on Accept, the buyer pushes the address encrypted to it, and only that merchant can decrypt and pay. Never public. USDCx is native, so escrow and payout are plain onchain moves. Release needs no merchant signature: Complete checks status Paid, a validity interval past the dispute deadline, and full payment out, fired by the validity range, not a server. CancelUnaccepted, Refund, RaiseDispute and a Resolve that only pays buyer or merchant cover the rest: worst case is delay, not loss.
 
-IDENTITY. A merchant is only a key hash today. Each will anchor a CIP-0170 DID from their own wallet with Reclaim zkTLS social proofs; completed orders write back to it, and reputation also.
+IDENTITY. Live: each party anchors a CIP-0170 DID from their own wallet, an ATTEST envelope at label 170 beside our record at 1170 carrying corridors, ECIES pubkey and Reclaim zkTLS claims. Completed orders write back, setting limits.
 
-THE APP. The order book is the escrow's open UTXO set: merchants read it and self-select, no matching backend. It ships as an npm SDK any wallet can embed. Route two uses [p2p.me](http://p2p.me)'s SDK, bridging USDCx to their contract where it fills faster.
+THE APP. The order book is the escrow's open UTXO set: merchants read it and self-select, no backend. It ships as an npm SDK any wallet embeds. Route 2 uses [p2p.me](http://p2p.me)'s SDK, bridging USDCx to their contract for faster fill
 
 ### Fits the timeline
 
@@ -149,7 +148,7 @@ He scans the shop's QR in anyqr and signs once. About $10.25 of USDCx locks: $10
 
 ### On-chain identity (CIP-0170) - expected transaction count
 
-550
+700
 
 ### Named, verifiable team
 
@@ -209,11 +208,11 @@ PROOF. 20+ orders from 10+ non-team wallets, 5+ DIDs
 
 ### How far along is the integration you're proposing, today?
 
-TRL 6 - Technology demonstrated in relevant environment
+TRL 5 - Technology validated in relevant environment
 
 ### On-chain identity (CIP-0170) - fee target (ADA)
 
-160
+203
 
 ### Clear budget
 
@@ -299,17 +298,18 @@ Yes
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-LIVE:
+LIVE ON PREPROD:
 
-An escrow contract and MVP app on Preprod. Settlement is in tUSDM, a real Cardano native stablecoin, and a trade runs end to end: buyer locks, merchant accepts, buyer confirms, escrow releases with no merchant signature.
+Escrow contract and MVP app. Settlement is in tUSDM, a real Cardano native stablecoin, and a trade runs end to end: buyer locks, merchant accepts, buyer confirms, escrow releases with no merchant signature.
 
-WHAT THE GRANT BUILDS FOR A TRL 9:
+CIP-0170 DID onboarding for merchants/buyers in sdk: an ATTEST envelope at label 170 beside our record at 1170, written and read back off chain. A merchant's record carries schema for reputation, ECIES pubkey and Reclaim zkTLS claims.
 
-Merchant DID onboard. Each mints a CIP0170 DID & uses ReclaimProtocol for zkTLS social proofs. The proofs attach to DID, completed orders write back which increases reputation score.
+WHAT THE GRANT BUILDS FOR TRL 9:
 
-\-updated validator: merchant DID in the datum, a fee split on Complete, the QR address on chain, encrypted\
--mainnet deployment with USDCx & USDM\
+\-KERI AIDs, Reclaim proof verification, reputation into merchant limits\
+-updated validator: DID in datum, fee split, QR onchain\
+-mainnet on USDCx and USDM\
 -the dispute resolution flow\
--dual routing, so an order reaches our book & [p2p.me](http://p2p.me)'s public contract\
+-dual routing to [p2p.me](http://p2p.me)\
 -nine countries beyond live UPI\
 -a public npm SDK with wallet plugins
