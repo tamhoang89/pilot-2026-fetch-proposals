@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 19
+- **Revision:** 21
 - **Proposer:** `stake1u80xxjl5pktq7fyeh46f2mwnzvjhjafmsdzv0hq3hxzc9kq6vwzsx`
 - **Funding requested:** ₳50,000
-- **Last finalized:** 2026-08-18T13:52:35.527000+00:00
+- **Last finalized:** 2026-08-21T21:25:37.889000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -32,7 +32,7 @@ Voluntary pledge: once cumulative TrustEye revenue directly attributable to the 
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Who transacts: organization administrators, from their own wallets. Cadence: a one-time onboarding footprint per organization (AUTH_BEGIN credential-chain publication plus ATTESTed device enrollments — 5-10 transactions), then Verified Source Attestations (CIP-0170 ATTEST) whenever a real evidence package or inspection batch completes — roughly 4-6 per active organization per week, following case flow, not the target. Model: 6-10 independently funded organizations (program minimum 5 external wallets) averaging 30-50 qualifying transactions each: \~300 transactions producing 99-120 ADA gross at 0.33-0.40 ADA/tx against the declared 100 ADA target (floor 50). Conversion realism: the channels hold \~25-35 outreach starts, so the base case needs about one conversion in four to six, at \~1 organization onboarded per week across the \~9-week pre-M1 runway. Sensitivity: base case 6 organizations averaging \~50; success case 8-10 averaging 30-40; below 6 we treat the target as at risk rather than manufacture volume. The target sits deliberately in the Credible band because zero organizations are committed today. Team-paid, sponsored, reimbursed, or incentivized transactions never count.
+Who transacts: organization administrators, from their own wallets. Cadence: a one-time onboarding footprint per organization (AUTH_BEGIN plus ATTESTed device enrollments - 5-10 tx), then one ATTEST per completed evidence package or inspection batch - roughly 4-6 per active organization per week, following case flow. Scale check (ASF, H1 2025): Romanian RCA insurers paid 2.8bn lei at \~11,172 lei per file - \~250,000 claim files in six months, \~1,000 per working day; 4-6 per week per organization is a sliver of a small adjuster's caseload. Model: 6-10 independent organizations (program minimum 5 wallets) averaging 30-50 qualifying tx each: \~300 transactions producing 99-120 ADA gross at 0.33-0.40 ADA/tx against the declared 100 ADA target (floor 50). Conversion: \~25-35 outreach starts, base case needs one in four to six, \~1 organization onboarded per week across the \~9-week pre-M1 runway. Sensitivity: base 6 organizations × \~50; success 8-10 × 30-40; below 6 we treat the target as at risk rather than manufacture volume. The target sits deliberately in the Credible band; zero organizations are committed today. Team-paid, sponsored, or incentivized transactions never count.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -89,11 +89,14 @@ Individual
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-Initial target: small and medium field-evidence organizations (inspection firms, independent adjusters, field-audit and delivery teams) that manage several operators or capture devices and must let third parties verify where evidence came from. The buyer is an organization administrator or compliance lead.
+Initial target: small and medium field-evidence organizations (inspection firms, adjusters, field-audit teams) with several operators or devices whose evidence third parties must verify; the buyer is an administrator or compliance lead.
 
-Demand evidence, stated candidly: TrustEye is a live product with an operational B2B organization/API layer (org records, API keys, reporting) — a real integration surface. Enterprises already pay for capture-integrity workflows: Truepic Vision sells authenticated remote inspection to insurers. What we do NOT claim: no committed pilot organization or signed distribution commitment exists at submission; no existing TrustEye app user is assumed to become a Cardano user; zero of the declared target is attributed to named partners. Conversion is the declared principal risk of this proposal.
+Demand evidence, stated candidly: TrustEye is live with an operational B2B organization/API layer, and enterprises already pay for capture-integrity workflows (e.g. Truepic Vision, sold to insurers). Not claimed: no committed pilot organization or distribution commitment exists at submission; no existing app user is assumed to become a Cardano user; zero of the target is attributed to named partners. Conversion is the declared principal risk.
 
-Reachable market we will work first: direct contacts at Romanian insurers and banks from the lead applicant's 10+ years in banking/fintech (3-5); independent loss-adjusting and inspection vendors serving those insurers, via warm referrals (5-8); Flip.ro and eMAG Buy-Back (condition-photo intake); auto trade-in/remarketing dealers in the Autovit/OLX ecosystem (10-15); equipment-leasing and fleet operators from the same network (3-5) — roughly 25-35 outreach starts for the 6-10 active organizations required: a one-in-four to one-in-six conversion, worked across the \~9-week pre-M1 runway.
+Reachable market, worked first: direct contacts at Romanian insurers and banks from the lead applicant's career (3-5); loss-adjusting and inspection vendors serving them, via warm referrals (5-8); Flip.ro and eMAG Buy-Back (condition-photo intake); Autovit/OLX-ecosystem trade-in dealers (10-15); leasing and fleet operators from the same network (3-5) — \~25-35 outreach starts for the 6-10 active organizations required: one conversion in four to six across the \~9-week pre-M1 runway.
+
+Responding to curation: cadence is grounded in public ASF claim volumes (see usage model); the conversion asked is ordinary for warm B2B channels; Demo Day evidence will list every onboarded organization and any signed intents — if fewer than six are active, we will say so there rather than defend the target.
+
 
 ### Applicant name
 

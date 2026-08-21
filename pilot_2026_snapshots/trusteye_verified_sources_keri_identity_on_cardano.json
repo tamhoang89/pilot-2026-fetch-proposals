@@ -7,7 +7,7 @@
   "title": "TrustEye Verified Sources: KERI Identity on Cardano",
   "tagline": "Hardware-signed camera evidence gets an accountable source: organizations publish wallet-paid CIP-0170 attestations on Cardano so anyone can verify who authorized a capture, on which device, and when.",
   "requestedAmount": 50000,
-  "updatedAt": 1787061155527,
+  "updatedAt": 1787347537889,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 8 - System complete and qualified",
@@ -15,7 +15,7 @@
     "eligArea": true,
     "giveBack": "Voluntary pledge: once cumulative TrustEye revenue directly attributable to the Cardano higher-assurance organizational plan (subscriptions that include the CIP-0170 accountable-source feature) exceeds 50k ADA-equivalent, we will share 10% of further attributable revenue with the Cardano treasury, paid annually for three years from M1, up to a cumulative cap equal to the full 50k ADA grant. ",
     "m2Target": "**Milestone Outputs:**\n\nCompletion of the Adoption phase and project close using the declared measurement structure: a one-epoch entry ramp from your M1 delivery, then six floored 5-day epochs - with extra epochs earned by delivering early - under the Standard's per-epoch floors and daily cap. The whole project completes within the program's four-month frame.\n\nYour declared adoption targets, restated from your answers. They drive the M2 payout and the Transaction Integrity checks, and are final at submission:\n\n- On-chain identity (CIP-0170): 300 transactions expected, 100 ADA in counted fees\n\n**Acceptance criteria**\n\n1. The measurement window ran as declared at M1 delivery: the one-epoch entry ramp plus your floored epochs, including any extra epochs earned by early delivery.\n2. Per-epoch floors observed, with at most the Standard's one free miss.\n3. Counted totals respect the daily cap: a single day may exceed the Standard's share of your measurement-period total, but the excess does not count toward it.\n4. At least the Standard's minimum of distinct external wallets transacted with your integration during the window.\n5. All measured activity derives from the declared identifiers and complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard).\n\n**Evidence of milestone completion**\n\n1. Adoption summary statement: your actuals against each declared target.\n2. Per-epoch table: epoch number, date range, transactions and counted fees, daily cap applied (y/n), floor met (y/n), notes.\n3. Raw explorer and dashboard links for the declared identifiers.\n4. Short methodology note: how counts and fees were derived from the declared identifiers.\n5. A completion video (1-3 mins) is shared via YouTube showcasing the project outputs.\n6. Any additional cross-checks.",
-    "usagePlan": "Who transacts: organization administrators, from their own wallets. Cadence: a one-time onboarding footprint per organization (AUTH_BEGIN credential-chain publication plus ATTESTed device enrollments — 5-10 transactions), then Verified Source Attestations (CIP-0170 ATTEST) whenever a real evidence package or inspection batch completes — roughly 4-6 per active organization per week, following case flow, not the target. Model: 6-10 independently funded organizations (program minimum 5 external wallets) averaging 30-50 qualifying transactions each: \\~300 transactions producing 99-120 ADA gross at 0.33-0.40 ADA/tx against the declared 100 ADA target (floor 50). Conversion realism: the channels hold \\~25-35 outreach starts, so the base case needs about one conversion in four to six, at \\~1 organization onboarded per week across the \\~9-week pre-M1 runway. Sensitivity: base case 6 organizations averaging \\~50; success case 8-10 averaging 30-40; below 6 we treat the target as at risk rather than manufacture volume. The target sits deliberately in the Credible band because zero organizations are committed today. Team-paid, sponsored, reimbursed, or incentivized transactions never count.",
+    "usagePlan": "Who transacts: organization administrators, from their own wallets. Cadence: a one-time onboarding footprint per organization (AUTH_BEGIN plus ATTESTed device enrollments - 5-10 tx), then one ATTEST per completed evidence package or inspection batch - roughly 4-6 per active organization per week, following case flow. Scale check (ASF, H1 2025): Romanian RCA insurers paid 2.8bn lei at \\~11,172 lei per file - \\~250,000 claim files in six months, \\~1,000 per working day; 4-6 per week per organization is a sliver of a small adjuster's caseload. Model: 6-10 independent organizations (program minimum 5 wallets) averaging 30-50 qualifying tx each: \\~300 transactions producing 99-120 ADA gross at 0.33-0.40 ADA/tx against the declared 100 ADA target (floor 50). Conversion: \\~25-35 outreach starts, base case needs one in four to six, \\~1 organization onboarded per week across the \\~9-week pre-M1 runway. Sensitivity: base 6 organizations × \\~50; success 8-10 × 30-40; below 6 we treat the target as at risk rather than manufacture volume. The target sits deliberately in the Credible band; zero organizations are committed today. Team-paid, sponsored, or incentivized transactions never count.",
     "goToMarket": "Named channels, not a generic plan (no commitments claimed): \n\n1. direct contacts at Romanian insurers and banks from the lead applicant's fintech career — 3-5; \n2. loss-adjusting and inspection vendors serving those insurers, via warm referrals — 5-8; \n3. Flip.ro and eMAG Buy-Back — condition-photo intake workflows; \n4. auto trade-in/remarketing dealers in the Autovit/OLX ecosystem — 10-15; \n5. equipment-leasing and fleet operators from the same network — 3-5.\n\n Roughly 25-35 outreach starts for 6-10 active organizations (one conversion in four to six), worked across the \\~9-week pre-M1 runway; written pilot intents are the current top priority. Onboarding: ten-minute administrator flow, wallet setup and self-payment guidance, lifecycle playbooks, public dashboard. First two weeks after M1: onboarding sessions, first attestations from each active workflow, 24-hour review of failed wallet journeys, published transaction list and counting methodology, one public technical demonstration.",
     "m1Evidence": "These acceptance criteria and evidence apply to your declared integration(s) - at delivery you'll specify where each appears in the product, which user flows depend on it, and the identifier(s) that evidence it:\n\n- On-chain identity (CIP-0170)\n\n**Acceptance Criteria:**\n\n1. At least one full end-to-end mainnet transaction by a real user (please refer to [the Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard)), and the flow repeats without failure - the submitted transaction hashes show independent runs of the declared flow.\n2. The declared footprint is complete and valid: nothing pre-existing declared, and all submitted evidence matches the declared identifiers and flows.\n3. Release notes accurately describe architecture, scope, and limitations.\n4. Live demo and Q&A delivered at Demo Day using the same identifiers and flows (participation is required). Demo Day sign-off admits the project into the entry epoch of its adoption measurement window.\n\n**Evidence:**\n\n1. Live product URL.\n2. At least one transaction hash mapped to flow steps, with explorer links.\n3. The declared footprint as described in the [Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard): script hashes, policy IDs, addresses, token/NFT names (if any), registered message tag, team wallets.\n4. Short technical walkthrough demonstration video.\n5. Release notes.\n6. Repo URL + tag/commit (if project is open source).\n7. Test evidence bundle: checklist, bug log, security note.\n8. Present outputs at Demo Day.",
     "openSource": false,
@@ -30,7 +30,7 @@
     "otherFunding": false,
     "standOutTeam": true,
     "submittingAs": "Individual",
-    "targetMarket": "Initial target: small and medium field-evidence organizations (inspection firms, independent adjusters, field-audit and delivery teams) that manage several operators or capture devices and must let third parties verify where evidence came from. The buyer is an organization administrator or compliance lead.\n\nDemand evidence, stated candidly: TrustEye is a live product with an operational B2B organization/API layer (org records, API keys, reporting) — a real integration surface. Enterprises already pay for capture-integrity workflows: Truepic Vision sells authenticated remote inspection to insurers. What we do NOT claim: no committed pilot organization or signed distribution commitment exists at submission; no existing TrustEye app user is assumed to become a Cardano user; zero of the declared target is attributed to named partners. Conversion is the declared principal risk of this proposal.\n\nReachable market we will work first: direct contacts at Romanian insurers and banks from the lead applicant's 10+ years in banking/fintech (3-5); independent loss-adjusting and inspection vendors serving those insurers, via warm referrals (5-8); Flip.ro and eMAG Buy-Back (condition-photo intake); auto trade-in/remarketing dealers in the Autovit/OLX ecosystem (10-15); equipment-leasing and fleet operators from the same network (3-5) — roughly 25-35 outreach starts for the 6-10 active organizations required: a one-in-four to one-in-six conversion, worked across the \\~9-week pre-M1 runway.",
+    "targetMarket": "Initial target: small and medium field-evidence organizations (inspection firms, adjusters, field-audit teams) with several operators or devices whose evidence third parties must verify; the buyer is an administrator or compliance lead.\n\nDemand evidence, stated candidly: TrustEye is live with an operational B2B organization/API layer, and enterprises already pay for capture-integrity workflows (e.g. Truepic Vision, sold to insurers). Not claimed: no committed pilot organization or distribution commitment exists at submission; no existing app user is assumed to become a Cardano user; zero of the target is attributed to named partners. Conversion is the declared principal risk.\n\nReachable market, worked first: direct contacts at Romanian insurers and banks from the lead applicant's career (3-5); loss-adjusting and inspection vendors serving them, via warm referrals (5-8); Flip.ro and eMAG Buy-Back (condition-photo intake); Autovit/OLX-ecosystem trade-in dealers (10-15); leasing and fleet operators from the same network (3-5) — \\~25-35 outreach starts for the 6-10 active organizations required: one conversion in four to six across the \\~9-week pre-M1 runway.\n\nResponding to curation: cadence is grounded in public ASF claim volumes (see usage model); the conversion asked is ordinary for warm B2B channels; Demo Day evidence will list every onboarded organization and any signed intents — if fewer than six are active, we will say so there rather than defend the target.\n",
     "applicantName": "Marius Georgescu",
     "businessModel": "TrustEye already sells consumer sealing capacity and a B2B organization/API service; those remain the sustainability route. The Cardano accountable-source layer becomes part of a paid higher-assurance organizational plan: organizations pay TrustEye for the workflow and pay the Cardano network themselves for their identity and Verified Source Attestation transactions — recurring events driven by their real case flow (new operators and devices, rotations, revocations, evidence publications), not by the grant. We do not claim existing revenue or proven willingness to pay for this feature; that is a stated validation goal of the pilot. Usage persists after the measurement window because attestations track each organization's ongoing field operations — the same reason the post-window kicker pace is credible. The integration stays in production under TrustEye's commercial model after the pilot. \n\nThe Pilot's own structure prices adoption risk: Adoption/Kicker pay only on real external usage.",
     "cip170TxCount": 300,
@@ -66,16 +66,16 @@
   },
   "createdAt": 1786376415955,
   "headRevision": {
-    "id": "1ea01b2f-58a9-45a2-b577-216006564ba5",
-    "number": 19,
+    "id": "59a5a6af-c183-4be8-8234-a57a57856de0",
+    "number": 21,
     "kind": "saved",
-    "createdAt": 1787061127634
+    "createdAt": 1787347493970
   },
   "latestFinalization": {
-    "id": "abc10e1c-2399-423a-b3ad-98cdcbb9465c",
-    "cycle": 3,
-    "revisionId": "1ea01b2f-58a9-45a2-b577-216006564ba5",
-    "finalizedAt": 1787061155527
+    "id": "70fdb7f0-70c7-4200-9d5a-1c90757b6232",
+    "cycle": 4,
+    "revisionId": "59a5a6af-c183-4be8-8234-a57a57856de0",
+    "finalizedAt": 1787347537889
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",
@@ -92,7 +92,7 @@
         "key": "submission",
         "window": {
           "startsAt": 1785996000000,
-          "endsAt": 1787205600000
+          "endsAt": 1787572800000
         },
         "functions": [
           {
@@ -106,14 +106,14 @@
             "key": "finalize",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787205600000
+              "endsAt": 1787572800000
             }
           },
           {
             "key": "withdraw",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787205600000
+              "endsAt": 1787572800000
             }
           }
         ]
@@ -129,7 +129,7 @@
             "key": "flag",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787551200000
+              "endsAt": 1787659200000
             },
             "config": {
               "schema": {
