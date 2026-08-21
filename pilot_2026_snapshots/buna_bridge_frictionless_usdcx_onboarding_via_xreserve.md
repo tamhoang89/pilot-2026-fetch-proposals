@@ -1,14 +1,14 @@
-# Buna Bridge: Simplifying Stablecoin Yields and DeFi Access
+# Buna Bridge: Frictionless USDCx Onboarding via xReserve
 
-> Empowering underbanked users to protect savings against inflation via intuitive, non-custodial USDCx vaults and seamless stablecoin swaps on the Cardano network
+> Empowering emerging markets with frictionless, mobile-first USDCx onboarding directly to Cardano via Circle xReserve
 
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 19
+- **Revision:** 20
 - **Proposer:** `stake1u966rf62ct6pcfgn79wn37gys7xurry962ggr9xcfjntc8sqsy52e`
 - **Funding requested:** ₳150,000
-- **Last finalized:** 2026-08-19T15:06:21.502000+00:00
+- **Last finalized:** 2026-08-21T17:12:02.942000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 

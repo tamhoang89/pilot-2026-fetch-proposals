@@ -4,10 +4,10 @@
   "campaignId": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",
   "proposer": "stake1u966rf62ct6pcfgn79wn37gys7xurry962ggr9xcfjntc8sqsy52e",
   "state": "finalized",
-  "title": "Buna Bridge: Simplifying Stablecoin Yields and DeFi Access",
-  "tagline": "Empowering underbanked users to protect savings against inflation via intuitive, non-custodial USDCx vaults and seamless stablecoin swaps on the Cardano network",
+  "title": "Buna Bridge: Frictionless USDCx Onboarding via xReserve",
+  "tagline": "Empowering emerging markets with frictionless, mobile-first USDCx onboarding directly to Cardano via Circle xReserve",
   "requestedAmount": 150000,
-  "updatedAt": 1787151981502,
+  "updatedAt": 1787332322942,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 6 - Technology demonstrated in relevant environment",
@@ -66,16 +66,16 @@
   },
   "createdAt": 1787079020280,
   "headRevision": {
-    "id": "291323aa-ddd2-4916-82b4-68d557a5aed6",
-    "number": 19,
+    "id": "92268c37-1ff7-4d16-ae59-9e2c07f238dd",
+    "number": 20,
     "kind": "saved",
-    "createdAt": 1787150087630
+    "createdAt": 1787332292822
   },
   "latestFinalization": {
-    "id": "ab6014bf-90a9-4b97-9d8a-25e2c130f768",
-    "cycle": 2,
-    "revisionId": "291323aa-ddd2-4916-82b4-68d557a5aed6",
-    "finalizedAt": 1787151981502
+    "id": "909c6be2-0e98-47c9-9620-0d48c8a54629",
+    "cycle": 3,
+    "revisionId": "92268c37-1ff7-4d16-ae59-9e2c07f238dd",
+    "finalizedAt": 1787332322942
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",
@@ -92,7 +92,7 @@
         "key": "submission",
         "window": {
           "startsAt": 1785996000000,
-          "endsAt": 1787205600000
+          "endsAt": 1787572800000
         },
         "functions": [
           {
@@ -106,14 +106,14 @@
             "key": "finalize",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787205600000
+              "endsAt": 1787572800000
             }
           },
           {
             "key": "withdraw",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787205600000
+              "endsAt": 1787572800000
             }
           }
         ]
@@ -129,7 +129,7 @@
             "key": "flag",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787551200000
+              "endsAt": 1787659200000
             },
             "config": {
               "schema": {
