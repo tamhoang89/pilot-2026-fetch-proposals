@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 19
+- **Revision:** 21
 - **Proposer:** `stake1u8x5mm8k4dcvl0ayp4ax4r2h2ymnkg538nrcqdr2xh3yq8cvx9t0v`
 - **Funding requested:** ₳50,000
-- **Last finalized:** 2026-08-20T03:37:39.512000+00:00
+- **Last finalized:** 2026-08-21T18:43:19.410000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -40,7 +40,7 @@ Every mission is 4 base tx: deposit, Accept, Submit, Approve with payout. About 
 
 Note: Previous targets of 700 tx and 250 missions were forecasting errors and have been removed. All numbers below are corrected and aligned.
 
-Target 120 missions in 90 days. 120 x 4.5 = 540 transactions. 540 x 0.35 = 189 ADA, clears program floor 180.
+Target 120 missions in 90-day pilot window (W1-W12 = 84 days). 120 x 4.5 = 540 transactions. 540 x 0.35 = 189 ADA, clears floor 180. Pilot timeline: W1-W8 build, W9-W10 first 18 missions (81 tx), W11-W12 Day 77-84 completes 90-day target to 120.
 
 Base 4 missions, 30 users, 13 hunters paid, 3 posters:\
 13 existing hunters, 80 percent stay = 10 x 3 = 30\
@@ -193,25 +193,25 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-W1-2 Preview testnet:
+W1-2 Preview:
 
-W1 D1-7 USDCx deposit live, form shows USDCx+ADA, DexHunter live. Target 5 users fund.
+W1 D1-7 USDCx deposit live, form USDCx+ADA, DexHunter live. Target 5 fund.
 
-W2 D8-14 Full flow: claim, submit, approve live. Outreach to 13 hunters. Target 5 cycles.
+W2 D8-14 Full flow claim submit approve live. Outreach 13 hunters. Target 5 cycles.
 
-W3-4 Validator hardening: ClaimTimeout and ReclaimExpired tested, validator final, UI done.
+W3-4 Validator hardening: ClaimTimeout ReclaimExpired tested, validator final, UI done.
 
 W5-6 Quality: internal tests, property tests, Lucid builder done.
 
-W7-8 Launch prep: security review and fixes, mainnet deploy with 1 real USDCx mission. Anastasia Labs quote obtained for pilot.
+W7-8 Launch prep: security review and fixes, mainnet deploy 1 real USDCx mission. Anastasia Labs quote obtained.
 
-W9-10 Mainnet Launch Execution:
+W9-10 Launch start 90-day target:
 
-W9 D1-7 Post-mainnet: announce on X, Discord, Gimbalabs. Onboard 13 hunters. Post first 3 USDCx missions. Target 5 funded.
+W9 D57-63: announce X Discord Gimbalabs. Onboard 13 hunters. Post 3 missions. Target 5 funded.
 
-W10 D8-14 Post-mainnet: Skypie DAO AMA + 4 bounties, outreach to Gimbalabs. Target 18 missions active or done, 81 tx. Evidence at [thequesters.fun/ledger](http://thequesters.fun/ledger) with tx hashes
+W10 D64-70: Skypie DAO AMA + 4 bounties, outreach Gimbalabs. Target 18 missions active or done, 81 tx. Evidence [thequesters.fun/ledger](http://thequesters.fun/ledger) with tx hashes
 
-W11-12 Scale: 120 missions via 8 target DAOs avg 12 each, pipeline in Appendix A, 540 tx, 189 fees, final report and video.
+W11-12 D77-84 complete 90-day target: Scale to 120 missions via 8 DAOs avg 12 each, pipeline Appendix A, 540 tx 189 fees, final report and video.
 
 ### How far along is the integration you're proposing, today?
 

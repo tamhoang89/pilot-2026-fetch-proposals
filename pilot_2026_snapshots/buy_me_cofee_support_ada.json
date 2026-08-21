@@ -6,18 +6,18 @@
   "state": "finalized",
   "title": "Buy me Cofee | Support Ada",
   "tagline": "Support Ada is a non-custodial creator funding platform on Cardano. A supporter sends value straight to a creator's wallet in one transaction, and that same transaction mints an on-chain receipt.",
-  "requestedAmount": 60000,
-  "updatedAt": 1787155132084,
+  "requestedAmount": 120000,
+  "updatedAt": 1787336590347,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 5 - Technology validated in relevant environment",
     "team": "Jethro Adebisi: UX Designer, Project Lead.\\\n<https://github.com/adebisijethro>\\\nResponsible for project Management and flow and overall Frontend implementation, and User experience. \\\n\\\nAsaolu Emmanuel: Co-Lead and Blockchain Developer.\\\n<https://github.com/Temasar1>\\\nResponsible for Aiken protocol work, transaction building and implementation.\\\n\\\nThe rest of the team at \\\n<https://blockprint.team/contributors> \n\nWe have worked with Gimbalabs on several occasion, Asaolu has also worked with Meshjs and Uxtos. ",
     "eligArea": true,
     "giveBack": "We pledge to return 10% of net platform fee revenue to the Cardano treasury, beginning in the first full quarter in which cumulative platform fee revenue exceeds the grant amount of 60,000 ADA, and continuing for eight consecutive quarters. Reported quarterly against the same on-chain identifiers declared for adoption measurement, so the figure is independently checkable.",
-    "m2Target": "**Milestone Outputs:**\n\nCompletion of the Adoption phase and project close using the declared measurement structure: a one-epoch entry ramp from your M1 delivery, then six floored 5-day epochs - with extra epochs earned by delivering early - under the Standard's per-epoch floors and daily cap. The whole project completes within the program's four-month frame.\n\nYour declared adoption targets, restated from your answers. They drive the M2 payout and the Transaction Integrity checks, and are final at submission:\n\n- Stablecoins: 1,400 transactions expected, 490 ADA in counted fees\n- On-chain identity (CIP-0170): 300 transactions expected, 90 ADA in counted fees\n\n**Acceptance criteria**\n\n1. The measurement window ran as declared at M1 delivery: the one-epoch entry ramp plus your floored epochs, including any extra epochs earned by early delivery.\n2. Per-epoch floors observed, with at most the Standard's one free miss.\n3. Counted totals respect the daily cap: a single day may exceed the Standard's share of your measurement-period total, but the excess does not count toward it.\n4. At least the Standard's minimum of distinct external wallets transacted with your integration during the window.\n5. All measured activity derives from the declared identifiers and complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard).\n\n**Evidence of milestone completion**\n\n1. Adoption summary statement: your actuals against each declared target.\n2. Per-epoch table: epoch number, date range, transactions and counted fees, daily cap applied (y/n), floor met (y/n), notes.\n3. Raw explorer and dashboard links for the declared identifiers.\n4. Short methodology note: how counts and fees were derived from the declared identifiers.\n5. A completion video (1-3 mins) is shared via YouTube showcasing the project outputs.\n6. Any additional cross-checks.",
+    "m2Target": "**Milestone Outputs:**\n\nCompletion of the Adoption phase and project close using the declared measurement structure: a one-epoch entry ramp from your M1 delivery, then six floored 5-day epochs - with extra epochs earned by delivering early - under the Standard's per-epoch floors and daily cap. The whole project completes within the program's four-month frame.\n\nYour declared adoption targets, restated from your answers. They drive the M2 payout and the Transaction Integrity checks, and are final at submission:\n\n- Stablecoins: 400 transactions expected, 400 ADA in counted fees\n\n**Acceptance criteria**\n\n1. The measurement window ran as declared at M1 delivery: the one-epoch entry ramp plus your floored epochs, including any extra epochs earned by early delivery.\n2. Per-epoch floors observed, with at most the Standard's one free miss.\n3. Counted totals respect the daily cap: a single day may exceed the Standard's share of your measurement-period total, but the excess does not count toward it.\n4. At least the Standard's minimum of distinct external wallets transacted with your integration during the window.\n5. All measured activity derives from the declared identifiers and complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard).\n\n**Evidence of milestone completion**\n\n1. Adoption summary statement: your actuals against each declared target.\n2. Per-epoch table: epoch number, date range, transactions and counted fees, daily cap applied (y/n), floor met (y/n), notes.\n3. Raw explorer and dashboard links for the declared identifiers.\n4. Short methodology note: how counts and fees were derived from the declared identifiers.\n5. A completion video (1-3 mins) is shared via YouTube showcasing the project outputs.\n6. Any additional cross-checks.",
     "usagePlan": "one transaction, settling straight to the creator's wallet and minting a receipt. Creators transact too, because a membership is a prepaid balance they draw down one period at a time, so each period produces a claim transaction the creator signs.\n\nCadence is what holds the target across six epochs instead of spiking at launch. A tip happens once; a membership keeps producing claims while it runs. Period length is a datum field in the existing validator, so weekly and monthly tiers are configuration, not new work, and weekly pays the creator sooner.\n\nBuild-up to 1,400 stablecoin transactions from \\~90 live creators:\n\n- 1,000 one-off supports, about 11 per creator\n- 175 memberships started\n- 225 claims, allowing for start dates spread across the window\n\nRoughly 47 a day, from about 590 distinct external wallets.\n\nCIP-0170: 300 attestations. Creators bind more than one handle (repo, social, site): \\~90 creators at 3 bindings, plus re-attestation when one changes.\n\nBoth targets sit above the floors, 2.5x and 1.6x, without assuming viral growth. Nothing is funded by us; fees from our own wallets are excluded under the Standard.",
     "goToMarket": "Channels, in the order we will use them:\n\n1. Direct creator recruitment in the Cardano developer and SPO community, where the first cohort already holds wallets.\n\n2. Popular cardano creators on X like: ayomishuga\n\n3. Partnership with the DEX used for stablecoin routing, which is a distribution channel as well as a technical dependency. \n\n4. Demo Day and Catalyst channels themselves.\n\nFirst two weeks after going live: onboard the named creator cohort, publish each page, and have each creator announce to their own audience. The audience already exists; we are not building one.",
-    "m1Evidence": "These acceptance criteria and evidence apply to your declared integration(s) - at delivery you'll specify where each appears in the product, which user flows depend on it, and the identifier(s) that evidence it:\n\n- Stablecoins\n- On-chain identity (CIP-0170)\n\n**Acceptance Criteria:**\n\n1. At least one full end-to-end mainnet transaction by a real user (please refer to [the Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard)), and the flow repeats without failure - the submitted transaction hashes show independent runs of the declared flow.\n2. The declared footprint is complete and valid: nothing pre-existing declared, and all submitted evidence matches the declared identifiers and flows.\n3. Release notes accurately describe architecture, scope, and limitations.\n4. Live demo and Q&A delivered at Demo Day using the same identifiers and flows (participation is required). Demo Day sign-off admits the project into the entry epoch of its adoption measurement window.\n\n**Evidence:**\n\n1. Live product URL.\n2. At least one transaction hash mapped to flow steps, with explorer links.\n3. The declared footprint as described in the [Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard): script hashes, policy IDs, addresses, token/NFT names (if any), registered message tag, team wallets.\n4. Short technical walkthrough demonstration video.\n5. Release notes.\n6. Repo URL + tag/commit (if project is open source).\n7. Test evidence bundle: checklist, bug log, security note.\n8. Present outputs at Demo Day.",
+    "m1Evidence": "These acceptance criteria and evidence apply to your declared integration(s) - at delivery you'll specify where each appears in the product, which user flows depend on it, and the identifier(s) that evidence it:\n\n- Stablecoins\n\n**Acceptance Criteria:**\n\n1. At least one full end-to-end mainnet transaction by a real user (please refer to [the Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard)), and the flow repeats without failure - the submitted transaction hashes show independent runs of the declared flow.\n2. The declared footprint is complete and valid: nothing pre-existing declared, and all submitted evidence matches the declared identifiers and flows.\n3. Release notes accurately describe architecture, scope, and limitations.\n4. Live demo and Q&A delivered at Demo Day using the same identifiers and flows (participation is required). Demo Day sign-off admits the project into the entry epoch of its adoption measurement window.\n\n**Evidence:**\n\n1. Live product URL.\n2. At least one transaction hash mapped to flow steps, with explorer links.\n3. The declared footprint as described in the [Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard): script hashes, policy IDs, addresses, token/NFT names (if any), registered message tag, team wallets.\n4. Short technical walkthrough demonstration video.\n5. Release notes.\n6. Repo URL + tag/commit (if project is open source).\n7. Test evidence bundle: checklist, bug log, security note.\n8. Present outputs at Demo Day.",
     "openSource": true,
     "pitchVideo": "https://youtu.be/XdRFdhZ8sLU",
     "competitors": "Web2 incumbents: Patreon, Ko-fi, Buy Me a Coffee. They own the category and work for creators with bank access. Their weaknesses are structural, not fixable by a better interface: a cut the creator cannot audit, custody of funds in transit, deplatforming risk, and payouts that are unreliable or unavailable across much of the world.\n\nThe default alternative on Cardano is sending ADA to an address. Free and non-custodial, but it leaves no receipt, no membership and no proof of the split.",
@@ -25,8 +25,7 @@
     "architecture": "Two Aiken validators, Plutus V3, compiled and tested.\n\n1. Receipt minting policy. Parameterised at compile time by platform payment credential, fee rate in basis points, and the minimum fee worth paying as its own output. It mints exactly one receipt and refuses unless the creator receives at least the declared amount and the platform receives exactly the fee due. Because parameters apply at build time, the policy ID is itself a commitment to one set of terms.\n\n2. Membership script. A prepaid balance drawn down one period at a time. The creator cannot claim early (validity-range lower bound), take two periods at once, keep the remainder out of the script, or alter the terms in the continuing output. The supporter cannot cancel out from under an earned period: reclaiming the balance needs an upper bound proving the transaction runs before the next claim date.\n\nFunds never sit at a script address in the support flow; ADA moves supporter to creator directly, which is what makes it non-custodial.\n\nFit for stablecoins: the split is already enforced by a value check inside the policy, so extending from lovelace to a native asset changes a predicate, not the architecture. The fee-waiver rule lives in one function shared by validator and client.\n\nFit for CIP-0170: the receipt is already an attestation-shaped artefact bound to a creator credential.",
     "eligTimeline": true,
     "integrations": [
-      "stablecoins",
-      "cip170"
+      "stablecoins"
     ],
     "otherFunding": false,
     "standOutTeam": true,
@@ -34,7 +33,6 @@
     "targetMarket": "Primary market: creators who already hold a Cardano wallet and publish to a global audience. Open-source developers and tool maintainers, technical educators, digital artists, and stake pool operators who publish transparency reports and want delegators to fund that work directly. Cardano has roughly 3,000 active stake pools and over 70% of circulating supply staked, so this cohort is large enough to launch into and reachable without paid acquisition.\n\nCategory size, as evidence the demand exists rather than needs creating: Patreon alone has paid creators over $10bn since 2013, more than $2bn a year, across roughly 300,000 creators and 25m paid memberships (Axios, 5 Aug 2025).\n\nWhy those creators would move: Patreon's standard plan charges a 10% platform fee plus roughly 2.9% + $0.30 processing, an effective 12-15%, with about 2.5% more on foreign-currency pledges (Patreon Creator fees FAQ). We charge 2.5%, waived entirely below \\~40 ADA, and never take custody.\n\nPayout access is also more fragile than it looks: PayPal restored inbound payments to Nigeria only in January 2026, through a local partner, after 22 years closed. Chain settlement removes that dependency entirely.",
     "applicantName": "Jethro Adebisi",
     "businessModel": "Revenue: 2.5% of support, waived entirely below roughly 40 ADA because a percentage cut of a small tip falls under Cardano's min-UTxO deposit and cannot exist as an output at all. So the model earns nothing on coffee-sized tips by design and earns on larger support and on memberships.\n\nWhy usage persists after the measurement window: memberships, not tips. A one-off tip is a single transaction. A membership is a prepaid balance the creator draws down one period at a time, so it produces a claim transaction every period for as long as it runs. Usage therefore compounds with the number of active memberships rather than depending on repeated marketing pushes.\n\nHonest limitation: at low volume 2.5% with a sub-40 ADA waiver is not yet a business. The pilot funds reaching the volume where it becomes one.",
-    "cip170TxCount": 300,
     "eligNamedTeam": true,
     "eligRealUsers": true,
     "fundingImpact": "The payment layer exists because it could be built without external dependencies. The two integrations cannot. Stablecoin settlement means reworking the validator's value predicate and re-deriving min-UTxO behaviour for token-carrying outputs, then an independent security review before it touches real money. CIP-0170 means implementing against a standard new to this ecosystem. Shipping either to mainnet unreviewed would be irresponsible.\n\nWhere the money goes:\n\n- Protocol and product engineering, 55%: stablecoin settlement, CIP-0170, client work\n- Independent security review, 15%: both validators, before mainnet\n- Infrastructure, 5%: chain provider, hosting, monitoring\n- Creator onboarding and launch, 20%\n- Contingency, 5%",
@@ -61,23 +59,23 @@
     "standOutTechnical": true,
     "eligPublicProposal": true,
     "integrityConfirmed": true,
-    "stablecoinsTxCount": 1400,
+    "stablecoinsTxCount": 400,
     "eligStandardAttested": true,
-    "stablecoinsFeeTarget": 490,
+    "stablecoinsFeeTarget": 400,
     "trlIntegrationEvidence": "What exists is the design and the extension point. The receipt policy enforces the split in lovelace only, through a paid_to(creator) &gt;= amount check. The stablecoin version replaces that with a check on a specific asset policy ID and quantity, and re-derives the fee-waiver threshold, because min-UTxO behaves differently once an output carries a token. That boundary is already isolated, so the change is localised rather than a rewrite.\n\nFor CIP-0170, the product carries a creator \"verified\" flag that is a boolean guaranteeing nothing. The integration replaces it with an attestation a supporter checks independently. The data model and UI surface exist; the attestation does not."
   },
   "createdAt": 1787153600601,
   "headRevision": {
-    "id": "3fc77461-d3d4-4518-929f-7135a16e31a9",
-    "number": 12,
+    "id": "b0da8a71-f326-4ee8-a3ca-dfaccb08a289",
+    "number": 17,
     "kind": "saved",
-    "createdAt": 1787155109040
+    "createdAt": 1787335831344
   },
   "latestFinalization": {
-    "id": "61676c5c-dfbe-4c4f-9453-38fd7c998e57",
-    "cycle": 1,
-    "revisionId": "3fc77461-d3d4-4518-929f-7135a16e31a9",
-    "finalizedAt": 1787155132084
+    "id": "127372bc-44f2-4593-a4b5-e49c9b2f5495",
+    "cycle": 2,
+    "revisionId": "b0da8a71-f326-4ee8-a3ca-dfaccb08a289",
+    "finalizedAt": 1787336590347
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",
@@ -94,7 +92,7 @@
         "key": "submission",
         "window": {
           "startsAt": 1785996000000,
-          "endsAt": 1787205600000
+          "endsAt": 1787572800000
         },
         "functions": [
           {
@@ -108,14 +106,14 @@
             "key": "finalize",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787205600000
+              "endsAt": 1787572800000
             }
           },
           {
             "key": "withdraw",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787205600000
+              "endsAt": 1787572800000
             }
           }
         ]
@@ -131,7 +129,7 @@
             "key": "flag",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787551200000
+              "endsAt": 1787659200000
             },
             "config": {
               "schema": {

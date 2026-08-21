@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 12
+- **Revision:** 17
 - **Proposer:** `stake1u9rgdnznvl7grnrpg4zd0f20mgds0pfg205ej206esw03vq8g8msa`
-- **Funding requested:** ₳60,000
-- **Last finalized:** 2026-08-19T15:58:52.084000+00:00
+- **Funding requested:** ₳120,000
+- **Last finalized:** 2026-08-21T18:23:10.347000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -118,7 +118,6 @@ Yes
 ### Which integration(s) will you leverage?
 
 - Stablecoins
-- On-chain identity (CIP-0170)
 
 ### Is the work in this proposal, or substantially similar work, currently funded, previously funded, or under active consideration by any other program?
 
@@ -153,10 +152,6 @@ Revenue: 2.5% of support, waived entirely below roughly 40 ADA because a percent
 Why usage persists after the measurement window: memberships, not tips. A one-off tip is a single transaction. A membership is a prepaid balance the creator draws down one period at a time, so it produces a claim transaction every period for as long as it runs. Usage therefore compounds with the number of active memberships rather than depending on repeated marketing pushes.
 
 Honest limitation: at low volume 2.5% with a sub-40 ADA waiver is not yet a business. The pilot funds reaching the volume where it becomes one.
-
-### On-chain identity (CIP-0170) - expected transaction count
-
-300
 
 ### Named, verifiable team
 
@@ -274,7 +269,7 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-1400
+400
 
 ### Standard read and attested
 
@@ -282,7 +277,7 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-490
+400
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
