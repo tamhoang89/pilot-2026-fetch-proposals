@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 23
+- **Revision:** 36
 - **Proposer:** `stake1uxlrwkwcyese8dh5nxar7mwr4yy90gdfmaat7ysdshxtqwcvp4qhk`
-- **Funding requested:** ₳125,000
-- **Last finalized:** 2026-08-19T19:30:29.480000+00:00
+- **Funding requested:** ₳75,000
+- **Last finalized:** 2026-08-21T20:11:21.902000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -25,7 +25,7 @@ Production app: <https://apps.apple.com/us/app/vendano-cardano-wallet/id67517620
 
 I designed Vendano and led it through Cardano mainnet operation, Store Mode, Apple review and App Store release. Vendano already provides self-custody keys, addresses, UTxO/native-asset discovery, ADA transaction construction/signing/submission, history and production deployment.
 
-No custom Cardano smart contract is required. USDCx is an existing native asset. The funded Swift/iOS work will completely redesign Vendano around merchant payments and focus on USDCx values, multi-asset coin selection and change, minimum ADA handling, checkout UX, testing, localized guidance, App Store assets and release.
+No custom Cardano smart contract is required. USDCx is an existing native asset. The funded Swift/iOS work will redesign Vendano's UI, changing the primary focus to merchant payments and USDCx values, multi-asset coin selection and change, minimum ADA handling, checkout UX, testing, localized guidance, App Store assets and release.
 
 ### Eligible area
 
@@ -37,29 +37,27 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Target: 800 genuine USDCx payments and 475 ADA in counted fees, the editor's scaled minimum for a 125,000-ADA request. This is a performance-gated target, not existing volume. The current measurable baseline is 11 App Store units in 30 days, zero USDCx transactions and no committed merchants.
+**Target**: 750 genuine USDCx payments and 275 ADA in counted fees for a 75,000-ADA request. The linkage is 275/750 = 0.367 ADA per standard multi-asset payment, within the Standard's 0.33-0.40 range. No unusual transaction design is assumed. The fee target is about 25% above the 220-ADA floor and remains a stretch from zero.
 
-Independent customers will use self-custody wallets and their own funds to pay independent merchants for real goods or services. Before Demo Day, I will contact at least 30 Cardano-community merchants, hold at least 6 substantive conversations, obtain 3 explicit pilot acceptances and activate at least 2 merchant wallets. M1 also requires at least 5 external customers and 10 genuine mainnet payments.
+**Baseline**: 11 App Store units in 30 days, zero USDCx payments and no committed merchants. The model requires 8 active merchants and 120-160 distinct customer wallets, above the 22-wallet minimum. That is about 94 per merchant and 4.7-6.3 per customer over 35 days - roughly weekly. At the modeled 0.367 average, all six floored blocks clear their fee floors.
 
-After release, the first 14 days target 2-3 active merchants, 20-30 customer wallets and 50 cumulative payments. The full 35-day model is 4-6 merchants, 50-75 customer wallets and 800 payments. Localized App Store metadata/screenshots and public channels support acquisition but are not counted as committed demand.
+**Before Demo Day**: 4 external merchants, 15 customers and 25 mainnet payments. The 35-day schedule after M1 by 5-day block is 25 entry-ramp payments, then 70, 80, 90, 150, 160 and 175. This totals 750. Daily pace rises from 5 to 35 as merchants grow from 4 to 8 and wallets from 15 to 160, rather than through an unexplained late jump.
 
-Only independently funded external purchases count. Team wallets, tests, circular or metric-only transfers, subsidies, rewards, refunds and reimbursed fees are excluded.
+Only independent purchases using customer funds count. Tests, team wallets, circular/metric transfers, subsidies, rewards, refunds and reimbursed fees are excluded.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Vendano recorded 11 App Store units in 30 days, the only acquisition volume claimed. If that rate continues, it would add roughly 30 units before M1; I assume only 5-10 become active USDCx users.
+Vendano recorded 11 App Store units in 30 days. At that rate, about 30 more arrive before M1; I assume 5-10 become active USDCx users.
 
-I will screen Rare Evo's exhibitor directory and other Cardano businesses and contact at least 30 merchants selling online or at recurring events. Targets: 6 substantive conversations, 3 pilot acceptances, 2 active merchant wallets before Demo Day and 4-6 during adoption. None is committed today.
+I will contact 50 recurring-use Cardano merchants via Rare Evo's exhibitor list. Targets: 15 conversations, 8 pilot acceptances, 4 active by Demo Day and 8 during adoption. None is committed. Eight merchants are forecast to refer 100-125 wallets (about 13-16 each); 5-10 pre-M1 conversions and 15-25 additional launch-channel wallets bring the total to 120-160.
 
-The App Store, X, YouTube, Medium/Coinmonks, r/Cardano and Cardano Forum will share the release; no conversion is assumed.
+The App Store, X, YouTube, Medium/Coinmonks, r/Cardano and Cardano Forum will share the release. Partnerships and Android add no forecast usage.
 
-Days 1-3: activate M1 merchants, verify requests and publish the walkthrough. 
+Post-M1 days 1-5: 4 merchants, 15 wallets and 25 payments.\
+Days 6-10: 4-5 merchants, 35-50 wallets and 95 cumulative payments.\
+Days 11-14: 5-6 merchants, 60-80 wallets and 155 cumulative payments.
 
-Days 4-7: target 15-20 customer wallets and 25 genuine payments. 
-
-Days 8-14: target 2-3 merchants, 20-30 wallets and 50 cumulative payments.
-
-Only external purchases for real goods/services count. Team wallets, tests, circular transfers, subsidies, rewards and reimbursed fees are excluded.
+Only real external purchases count. Team wallets, tests, circular transfers, subsidies, rewards and reimbursed fees are excluded.
 
 ### Is the underlying project open source?
 
@@ -85,7 +83,7 @@ Vendano is TRL 7 because it is packaged, publicly distributed by Apple and opera
 
 GitHub is source for developers, not customer distribution. Production configuration, secrets and Apple signing material are intentionally excluded. Customers install the App Store binary; they do not clone the repository, open Xcode or provide keys.
 
-USDCx is new work and is separately declared TRL 3.
+USDCx is new work and is separately declared TRL 2.
 
 Evidence:\
 <https://apps.apple.com/us/app/vendano-cardano-wallet/id6751762014>\
@@ -164,18 +162,19 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Vendano has already been substantially self-funded; this request funds new USDCx work, not reimbursement.
+Vendano is substantially self-funded; this 75,000-ADA request funds future USDCx work, not reimbursement.
 
-The primary deliverable is a production Vendano release in Apple's App Store with working USDCx balances, transfers, and merchant checkout. Approximate 125,000 ADA allocation:
+Deliverable: a production iOS App Store release with USDCx balances, transfers and merchant checkout.
 
-35,000 - USDCx/multi-asset engineering: balances, transactions, coin selection, minimum-ADA and history.\
-25,000 - merchant/customer checkout UX.\
-15,000 - funding/cash-out research, onboarding, fees/minimums, help and FAQ.\
-20,000 - QA and production App Store release.\
-10,000 - Catalyst tagging, evidence and technical documentation.\
-20,000 - merchant recruitment, launch support and adoption.
+Allocation:\
+22,000 - multi-asset engineering: balances, transactions, coin selection, minimum ADA and history.\
+13,000 - merchant/customer checkout UX.\
+8,000 - funding/cash-out onboarding, fees/minimums, help and FAQ.\
+12,000 - QA and App Store release.\
+7,000 - Catalyst tagging, evidence and technical documentation.\
+13,000 - merchant outreach, onboarding and launch support.
 
-The UI/UX work is essential: USDCx must feel like understandable digital cash, not merely another token.
+Android is outside the funded milestone and contributes no assumed usage. USDCx must feel like understandable digital cash, not merely another token.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -205,9 +204,9 @@ Within three months Vendano will deliver:
 
  8. Reproducible policy/address/team-wallet footprint.
 
- 9. At least 2 external merchant wallets active before Demo Day.
+ 9. At least 4 external merchant wallets active by Demo Day.
 
-10. At least 5 external customers completing 10 genuine mainnet USDCx payments without subsidy or reimbursed fees.
+10. At least 15 external customers completing 25 genuine mainnet USDCx payments without subsidy or reimbursed fees.
 
 11. Release notes, no-smart-contract architecture, QA evidence, bug log and security note.
 
@@ -215,7 +214,7 @@ Within three months Vendano will deliver:
 
 ### How far along is the integration you're proposing, today?
 
-TRL 3 - Experimental proof of concept
+TRL 2 - Technology concept formulated
 
 ### Clear budget
 
@@ -246,7 +245,7 @@ These steps are technically manageable. The product opportunity is making them u
 - https://apps.apple.com/us/app/vendano-cardano-wallet/id6751762014
 - https://vendano.net/
 - https://github.com/vendano/vendano-ios
-- https://www.youtube.com/watch?v=XtmH3UH9N2g
+- https://www.youtube.com/watch?v=sg9nyvCmUQ4
 - https://linkedin.com/in/jeffreality
 
 ### Identified dependencies
@@ -287,7 +286,7 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-800
+750
 
 ### Standard read and attested
 
@@ -295,14 +294,12 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-475
+275
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-The funded USDCx integration has not been implemented, and no retroactive work is being requested.
+The funded USDCx integration is TRL 2: the concept and implementation path are defined, but Vendano has not generated or submitted a USDCx payment transaction. No retroactive work is requested.
 
-Technical feasibility has been evaluated against Vendano's existing architecture. Vendano already reads Cardano native assets from UTxOs, and its underlying Cardano transaction library supports multi-asset values and multi-asset coin selection.
+Feasibility is supported by Vendano's mainnet wallet and Cardano.swift. Vendano identifies and displays HOSKY, the same ledger asset type as USDCx, and preserves tokens in change during ADA sends, but does not create a native-asset payment output. This is enabling architecture, not a USDCx proof of concept.
 
-Vendano itself has not yet generated or submitted a USDCx payment transaction.
-
-The remaining work includes USDCx-specific balance and decimal handling, multi-asset transaction construction, fee/minimum-ADA handling, merchant and customer UX, funding/cash-out guidance, transaction status and error states, Catalyst transaction tagging, testing, documentation, and production release.
+Funded work covers verified USDCx identifiers/decimals; balances; multi-asset outputs, selection and change; fees/minimum ADA; merchant/customer UX; funding/cash-out guidance; transaction status/errors; Catalyst tagging; tests, documentation and App Store release.
