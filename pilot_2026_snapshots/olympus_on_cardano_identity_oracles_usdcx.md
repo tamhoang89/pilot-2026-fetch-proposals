@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 17
+- **Revision:** 20
 - **Proposer:** `stake1uyetkdjk9axd54yafd5n8fww0ufx39yr52c3l9ehrrcw70sr4enfs`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-19T13:31:24.882000+00:00
+- **Last finalized:** 2026-08-21T14:38:06.990000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,15 +16,17 @@ TRL 8 - System complete and qualified
 
 ### Why is your team well-suited to deliver this?
 
-Ian leads Cardano growth and partnerships for Olympus, and is the sole owner of OmegaLabs Protocol OÜ, the legal entity behind the product.
+Richard (CEO) and Josh lead engineering together, Cardano-specific engineering delivered on the repo below, with Ian leading growth and partnerships. Ian is sole owner of OmegaLabs Protocol OÜ, the legal entity behind the product.
 
-Team URLs:\
+Team:\
+Richard Gaertner: X @Richard4Roy, Telegram RichardCEOOfficial (no LinkedIn)\
 Ian Gaertner LinkedIn: <https://www.linkedin.com/in/ian-gaertner>\
+Josh Ritz LinkedIn: <https://www.linkedin.com/in/joshritz>\
 Project GitHub (open source): <https://github.com/OmegaNetwork-source/Olympus_Cardano>\
 Team intro: <https://www.youtube.com/watch?v=\_XWKD-u-2Io>\
 Business registry: <https://ariregister.rik.ee/eng/company/17418123/OmegaLabs-Protocol-OÜ>
 
-We're proud to have already shipped at chain level, with a live beta serving real users on ClearBook, and we're grateful for the public collaboration we've had with the Aptos and Avalanche teams, shown here rather than offered on request: <https://x.com/Aptos/status/2077749689722487255> and <https://x.com/Team1KOR/status/2084186786679722059>. A few additional partner conversations are underway but aren't public yet, so we've chosen not to claim them until they are. We don't assume Cardano works the same way other chains do; its technical character and community expectations are different, and we're approaching it as a stack worth learning properly rather than something to copy-paste from elsewhere.
+We've already shipped at chain level, with a live beta serving real users on ClearBook, and public collaboration with the Aptos and Avalanche teams, shown directly rather than offered on request: <https://x.com/Aptos/status/2077749689722487255> and <https://x.com/Team1KOR/status/2084186786679722059>. A few additional partner conversations are underway but not yet public, so we haven't claimed them here. We don't assume Cardano works like other chains; its technical character and community expectations differ, and we're approaching it as a stack worth learning properly, not copying elsewhere.
 
 ### Eligible area
 
@@ -36,17 +38,15 @@ Voluntary give-back: after the pilot, once Cardano product fees exceed ₳25,000
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Olympus (<https://olympus.omeganetwork.co/cardano>) is our live product; Cardano is a new rail, not yet proven at TRL 9. Genuine usage is Lace users paying their own fees, not scripts or subsidised txs. Budget includes 0 ADA for incentives; incentivised volume isn't counted.
+Olympus (<https://olympus.omeganetwork.co/cardano>) is live on other chains, now advancing to Cardano mainnet. Genuine usage is Lace users paying their own fees, not scripts or subsidised txs. 0 ADA budgeted for incentives; incentivised volume isn't counted.
 
-Current base: thousands of monthly connected wallets, hundreds of repeat Predict/swap users. Assumption: \~8% of repeat users (roughly 320 wallets) try Cardano during the window, averaging 12 txs each across Oracles/USDCx/CIP-0170, covering about two-thirds of the 5,700 target (\~3,800 txs). Remaining third (\~1,900 txs) comes from Lace/Minswap referrals: \~475 new wallets averaging 4 txs each.
+Base: \~1,000 unique users in our first month live, with a repeat Predict/swap subset. Assumption: \~320 of those wallets try Cardano during the window, averaging 12 txs across Oracles/USDCx/CIP-0170, covering \~two-thirds of the 5,700 target (\~3,800 txs). Remaining third (\~1,900) is a planning target via Lace/Minswap as discovery channels: \~475 new wallets averaging 4 txs. These are forecasts, not confirmed partnerships.
 
 Targets: Oracles 2,500/750 ADA; USDCx 2,000/900 ADA; CIP-0170 1,200/250 ADA.
 
-CIP-0170: user signs a KERI-backed metadata attestation; Olympus anchors it on mainnet. Oracles price live Predict/market; USDCx settles predict/swap.
+CIP-0170: KERI-backed attestation anchored on mainnet. Oracles: evaluating Charli3/Orcfax, final pick at M1. USDCx: settles via the existing audited policy.
 
-Requested 200,000 ADA, engineering-first: 50,000 CIP-0170, 50,000 oracles, 40,000 USDCx (70%); 40,000 QA/footprint/Demo Day (20%); 20,000 Lace/Minswap docs post-hashes (10%).
-
-Declared identifiers, external wallets, daily caps enforced; no team wash volume.
+Requested 200,000 ADA, engineering-first: 50,000 CIP-0170, 50,000 oracles, 40,000 USDCx (70%); 40,000 QA/footprint/Demo Day (20%); 20,000 Lace/Minswap docs post-hashes (10%). Declared identifiers, external wallets, daily caps enforced; no team wash.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -78,23 +78,17 @@ Today users stitch **Lace/Eternl + DexHunter/Minswap + oracle dashboards + separ
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-Olympus is a live production product in operational use today. Real users already connect wallets, complete swaps/claims/predictions, and return through our dApp aggregator UX. Partner integrations and fee-paying flows run in a real environment—not a lab prototype.
-
-What is proven: production app, wallet connect, market/oracle-style price tooling, identity-linked product surfaces, and partnership-driven onboarding. What this grant funds is new Cardano mainnet work (CIP-0170 identity, oracle-backed markets, USDCx rails)—incremental integration on a TRL 9 base, not research from scratch. Milestone 1 takes that proven stack to Cardano mainnet with verified, repeatable user transactions.
+Olympus is a live production product in operational use today. Real users connect wallets, complete swaps, claims, and predictions, and return through our dApp aggregator UX on existing chains. Partner integrations and fee-paying flows run in a real environment, not a lab prototype. What is proven: production app, wallet connect, market and price tooling, identity-linked product surfaces, and partnership-driven onboarding, all demonstrated on live chains prior to Cardano. This grant funds new Cardano mainnet work: bringing that same proven product pattern to a new chain, not building it from scratch.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-Olympus is a dApp aggregator using CIP-30 (Lace/Eternl). On-chain pieces stay minimal, auditable, and mapped to our three integrations:
+Olympus is a dApp aggregator using CIP-30 for wallet connection (Lace, Eternl). On-chain pieces stay minimal, auditable, and mapped directly to our three integrations.
 
-1. Identity (CIP-0170): stake-key attestations/registrations bind product identity to Cardano credentials—verifiable “who transacts” for integrity and partner access, not a custodial DB.
+Identity (CIP-0170): the user signs a KERI-backed metadata attestation carrying our declared identifier; Olympus submits that attestation on-chain via a registration transaction, binding a stake key to a verifiable product identity. This gives partners and the protocol a way to confirm "who transacted" without a custodial database on our side.
 
-2. Oracles: Cardano-ready feeds (e.g. Pyth-class) drive market/predict UX; fee-paying actions that depend on those prices settle on mainnet so counted fees = real oracle-backed usage.
+Oracles: we are evaluating Charli3 and Orcfax, the two established Cardano-native oracle providers, and will finalize selection based on feed latency and update frequency against our Predict and market flows. Price data is read on-chain at the moment a fee-paying transaction executes. If a feed's last update falls outside an acceptable staleness window, the transaction fails closed rather than settling against outdated data, so counted fees always reflect a live, verified price.
 
-3. Stablecoins: policy-verified USDCx for accept/settle; predict/swap settlement deepens as adoption rises. We integrate approved policies—we don’t launch a new stablecoin—so activity is standard and countable.
-
-4. Aggregator: one CIP-30 session coordinates identity, oracle-priced actions, USDCx, and partner hooks. Catalyst txs use a registered message tag + declared footprint (scripts, policies, addresses, team wallets) for Dune / Proof of Adoption.
-
-Fit: CIP-0170 → identity AoI; oracles → price AoI; USDCx → stablecoin AoI. Compose Cardano primitives for a fast Milestone 1 path, clear fee identifiers, and partnership-friendly design—no wash-volume architecture.
+Stablecoins: USDCx accept and settle runs against the existing, audited USDCx policy on Cardano rather than any new token logic we control, so settlement activity is standard, non-custodial, and independently verifiable on-chain through the policy ID and transaction history.
 
 ### Fits the timeline
 
@@ -159,11 +153,7 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-This funding lets us bring Olympus to Cardano with the speed and care the ecosystem deserves—pairing a focused mainnet integration with a real growth engine.
-
-It enables: (1) Milestone 1 delivery of identity, oracles, and USDCx rails so ADA users have something excellent to use; (2) primary spend on marketing and partnerships—wallet co-promotion, project integrations, ambassadors, Demo Day, and post-launch campaigns that welcome users into fee-paying flows; (3) discovery and partner BD so predict/swaps deepen as traction grows.
-
-Spend (high level): Cardano marketing & partnerships first, plus targeted engineering to ship mainnet and Dune-tagged usage. The grant accelerates a Cardano launch and adoption push we’re excited to make—turning integration into lasting, genuine network activity.
+Funding lets us bring Olympus to mainnet with a focused, engineering-first build. It enables Milestone 1 delivery of identity, oracle, and USDCx rails so ADA users have a working, verified product to use, then supports the adoption that follows once mainnet flows are live. Spend is engineering-first: roughly 70% goes directly to building the 3 integrations, CIP-0170 identity, oracle feeds, and USDCx settlement; 20% goes to QA, security testing, footprint declaration, and Demo Day preparation; and 10% goes to Lace and Minswap integration documentation once mainnet transaction hashes exist to document. No portion of this budget funds marketing, paid promotion, or ambassador programs. Adoption-phase growth comes from the product itself and existing partner relationships, not paid acquisition.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -193,7 +183,7 @@ Exit: product URL + explorer proofs for all three + Demo Day sign-off → adopti
 
 ### How far along is the integration you're proposing, today?
 
-TRL 9 - Actual system proven in operational environment
+TRL 6 - Technology demonstrated in relevant environment
 
 ### Programmable tokens (CIP-0113) - fee target (ADA)
 
@@ -283,6 +273,4 @@ Yes
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-Cardano work is new mainnet delivery on a proven Olympus base. Architecture is defined: CIP-30 (Lace/Eternl), CIP-0170 identity, oracle price feeds into market/predict UX, then USDCx rails. Components are validated in our live product patterns; Cardano-specific scripts, policies, and fee flows are not yet proven on Cardano mainnet (that is Milestone 1).
-
-Relevant environment: staging/test paths and existing aggregator UX ready to host the module. Operational proof = first real-user, repeatable mainnet txs + declared footprint (identifiers, Dune tags) by Demo Day. Grant funds that jump from validated design to mainnet adoption—not retroactive work.
+Cardano work is new mainnet delivery on a proven Olympus base. Architecture is defined: CIP-30 wallet connection (Lace/Eternl), CIP-0170 identity, oracle price feeds into market and predict UX, then USDCx rails. These patterns are demonstrated and validated in our live product on other chains, a relevant but not identical environment; Cardano-specific scripts, policies, and fee flows are not yet proven on Cardano mainnet. Milestone 1 delivers that proof directly: first real-user, repeatable mainnet transactions across all three integrations, with a declared footprint, by Demo Day.
