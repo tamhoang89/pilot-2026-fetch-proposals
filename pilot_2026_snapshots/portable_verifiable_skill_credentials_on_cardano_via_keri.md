@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 55
+- **Revision:** 58
 - **Proposer:** `stake1u8x4lqtk6czqrlhjqyqlp8a8y7u0ekcxytg6796nm2xnxxsrvccyp`
 - **Funding requested:** ₳70,000
-- **Last finalized:** 2026-08-20T03:32:42.806000+00:00
+- **Last finalized:** 2026-08-22T11:36:27.903000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -41,17 +41,20 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Who: Metac controlled pilot 50 students, Cardano, IOG, Catalyst Discord members, 50 existing users. Reach: 50 Metac, 1200 Discord, 50 existing.
+Base rate: 0.23 swaps per day derived from 7 mainnet swaps since July 19th launch. 50 registered users.
 
-Why: Core loop requires a completed swap to issue KERI credential. Each swap creates one anchor tx. Credentials build portable reputation.
+Adoption window: 35 days post M1 delivery. Curators count usage only after CIP-0170 mainnet at W9-10.
 
-How often: 145 swaps in 90 days, 0.23/day to 1.6/day. Base rate 0.23/day derived from 7 swaps since July 19th mainnet launch. M1 30: Metac 22 plus X launch and re engagement 8. M2 55: Discord 35 plus Metac retention 20. M3 60: workshops 40 plus Metac 20.
+Post mainnet target: 87 swaps in 35 days equals 2.5 swaps per day. 10.8x lift vs baseline.\
+Sources: Metac LOI for integration plus co hosted Lagos workshop, 1 online workshop, pipeline of 8 DAOs for skill bounties.
 
-Justification: Audience x conversion x frequency. Base 7 swaps since July 19 equals 0.23/day. M1 1.0/day is 4.3x with Metac activation 60 percent and existing 20 percent. M3 is 41 percent of total, reducing single point risk. No ADA incentives funded by grant or counted.
+Counting scope: Only CIP-0170 identity transactions. Each swap generates 2 identity tx: 1 anchor tx plus 1 credential issue tx. Payment commitment refund tx are pre existing flow and excluded.
 
-Stretch: 250 swaps if 2 extra nonprofits confirmed in M2, excluded from base.
+Math: 87 swaps x 2 identity tx equals 174 identity tx.\
+Average network fee 0.35 ADA per tx.\
+174 x 0.35 equals 60.9 ADA in network fees over the 35 day measured period.
 
-Fee target: 145 swaps equals about 350 labeled txs with commitment, anchors, refunds. At 0.3 ADA avg, about 105 ADA. Target 110 ADA, 5 percent buffer. 2 ADA commitment fee is treasury revenue, excluded.
+All usage organic. No incentives, airdrops, or sponsored wallets. All swaps verifiable on public explorer.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -179,7 +182,7 @@ Why usage continues post-grant: the commitment fee alone covers infrastructure a
 
 ### On-chain identity (CIP-0170) - expected transaction count
 
-350
+174
 
 ### Named, verifiable team
 
@@ -191,19 +194,17 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Without grant CIP-0170 cannot ship. Bootstrapped alongside contract work. Grant enables full time delivery in pilot window.
+Without grant CIP-0170 cannot ship. Bootstrapped plus contract work. Grant enables full time delivery.
 
-\
-High level spend tied to deliverables:\
-**Development** Daniel 3mo 28,000 ADA KERIA, ACDC, Veridian export, verifier delivers creds.\
-**Security MLabs** 10,500 ADA audit zero criticals delivers audited deploy.\
-**Infrastructure** 7,000 ADA 3mo only KERIA hosting, witnesses, Blockfrost Koios delivers uptime.\
-**Design** Akindipe 3mo 8,400 ADA credential flow UX and verifier UI.\
-**Community Education** 10,500 ADA 1 Lagos workshop co hosted with Metac plus 1 online plus guides. No paid ads, no token incentives, no airdrops. Fund Rules Sec 3 compliant.\
-**Ops** 5,600 ADA reporting and contingency.
-
-\
-Total **70,000 ADA**.
+Spend tied to deliverables:\
+Dev Daniel 3mo 28,000 ADA KERIA ACDC Veridian verifier delivers creds.\
+Security MLabs 10,500 ADA audit zero criticals delivers audited deploy.\
+Infra 7,000 ADA 3mo only KERIA hosting witnesses Blockfrost Koios delivers uptime.\
+Design Akindipe 3mo 8,400 ADA credential flow UX and verifier UI.\
+Community 10,500 ADA 1 Lagos workshop co hosted with Metac plus 1 online plus guides. No paid ads no token incentives no airdrops. Fund Rules Sec 3 compliant.\
+Ops 5,600 ADA reporting contingency.\
+Total 70,000 ADA.\
+Projected fees: 174 identity tx x 0.35 ADA equals 60.9 ADA. Only CIP-0170 identity tx in 35 day post mainnet window. Payment tx excluded.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -216,28 +217,28 @@ Yes
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
 Week 1-2: Pilot Launch\
-Deliverables: KERIA agent to staging. Metac onboarding 50 students. X launch plus demo video.\
-Measurable: 20 wallets, 10 swaps. M1 progress 10 of 30.
+Deliverables: KERIA agent to staging. Metac prep 50. X assets.\
+KPI: Staging live. No counted swaps.
 
 Week 3-4: KERI Backend\
-Deliverables: signify-ts integrated. SAID pipeline live. Test suite passes.\
-KPI: 100 percent test creds valid SAID. M1 total 30 swaps.
+Deliverables: signify-ts integrated. SAID pipeline live. Test suite.\
+KPI: 100 percent test creds valid SAID.
 
 Week 5-6: Testnet\
-Deliverables: Credential issuance on swap. Anchoring live. Verifier at /verify/\[said\].\
-KPI: 10 testnet creds verifiable. Cumulative 55 swaps.
+Deliverables: Credential issuance on testnet. Anchoring live. Verifier at /verify/\[said\].\
+KPI: 10 testnet creds not counted.
 
-Week 7-8: Security Audit\
-Deliverables: Audit by MLabs. All criticals resolved.\
-KPI: Report 0 criticals. Cumulative 85 swaps M2 total 55.
+Week 7-8: Audit\
+Deliverables: MLabs 3 day review CIP-0170 contracts. Fix findings. Finalize mainnet scripts.\
+KPI: Report 0 criticals.
 
-Week 9-10: Mainnet\
-Deliverables: Audited issuance to mainnet. Public launch.\
-KPI: 10 mainnet creds. Cumulative 110 swaps.
+Week 9-10: Mainnet plus Metac\
+Deliverables: Deploy CIP-0170 mainnet. Metac integration live. Onboard first 20 swaps. Explorer live.\
+KPI: 20 swaps equals 40 identity tx.
 
-Week 11-12: Adoption\
-Deliverables: 1 Lagos workshop co-hosted with Metac + 1 online. Workshop recordings + CIP-0170 guides published.\
-KPI: 20 mainnet creds. 90 day total 145 swaps equals 350 txs equals 110 ADA.
+Week 11-12: Scale 35 day target\
+Deliverables: 1 Lagos workshop co hosted with Metac plus 1 online. Recordings plus guides. Drive 67 swaps via 8 DAOs.\
+KPI: Total 87 swaps equals 174 identity tx equals 60.9 ADA in 35 day post mainnet window.
 
 ### How far along is the integration you're proposing, today?
 
@@ -245,7 +246,7 @@ TRL 3 - Experimental proof of concept
 
 ### On-chain identity (CIP-0170) - fee target (ADA)
 
-110
+61
 
 ### Clear budget
 
