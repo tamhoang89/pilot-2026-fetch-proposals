@@ -7,7 +7,7 @@
   "title": "Exura: self-custodied yield beyond Cardano",
   "tagline": "Deposit USDCx from your own Cardano wallet, earn yield on curated stablecoin vaults without the EVM hassle, receive USDCx back in minutes.",
   "requestedAmount": 200000,
-  "updatedAt": 1787341582856,
+  "updatedAt": 1787419997910,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 6 - Technology demonstrated in relevant environment",
@@ -42,7 +42,7 @@
     "eligClearBudget": true,
     "eligGenuineWork": true,
     "eligOneProposal": true,
-    "problemSolution": "Over $40M of USDCx circulates on Cardano, with little for it to do. Cardano DeFi is real, but ADA-denominated at heart, so dollar savings is thin here. Mature stablecoin products (sUSDS, sGHO, sUSDe) live on other chains, behind an EVM wallet, a seed phrase, gas, and a bridge decision most Cardano users will never make alone. Stablecoin capital here either sits idle or leaves through a custodial exchange.\n\nExura builds the leg in between: a Cardano-native route from wallet to stablecoin yield and back, where the user keeps their own keys and never creates an EVM wallet.\n\n1\\. One CIP-30 signature binds their wallet to a smart account **only they own**. A contract verifies that Cardano signature on-chain, natively. Our permission over the account is narrow, and the user can revoke it alone.\n\n2\\. One ordinary Cardano transaction, a USDCx burn through Circle's xReserve that we build and they sign, moves the USDCx in. We run no bridge and never hold the funds.\n\n3\\. The USDCx earns yield in curated stablecoin vaults, tracked in Exura's live dashboard next to their Cardano positions.\n\n4\\. Exit takes one more signature. The USDCx returns to their own Cardano address, fixed at setup and unchangeable by us, in 15 to 25 minutes.\n\nIt is for Cardano holders who own USDCx and want it earning without handing it to anyone, and for ADA holders who want a dollar-denominated position instead of more ADA exposure. A stablecoin vault is the first listing on this rail, not the whole of it.",
+    "problemSolution": "Over $40M of USDCx circulates on Cardano, with little for it to do. Cardano DeFi is real, but ADA-denominated at heart, so dollar savings is thin here. Mature stablecoin products (sUSDS, sGHO, sUSDe) live on other chains, behind an EVM wallet, a seed phrase, gas, and a bridge decision most Cardano users will never make alone. Stablecoin capital here mostly sits idle, and what leaves burns back to Ethereum.\n\nExura builds the leg in between: a Cardano-native route from wallet to stablecoin yield and back, where the user keeps their own keys and never creates an EVM wallet.\n\n1\\. One CIP-30 signature binds their wallet to a smart account **only they own**. A contract verifies that Cardano signature on-chain, natively. Our permission over the account is narrow, and the user can revoke it alone.\n\n2\\. One ordinary Cardano transaction, a USDCx burn through Circle's xReserve that we build and they sign, moves the USDCx in. We run no bridge and never hold the funds.\n\n3\\. The USDCx earns yield in curated stablecoin vaults, tracked in Exura's live dashboard next to their Cardano positions.\n\n4\\. Exit takes one more signature. The USDCx returns to their own Cardano address, fixed at setup and unchangeable by us, in 15 to 25 minutes.\n\nIt is for Cardano holders who own USDCx and want it earning without handing it to anyone, and for ADA holders who want a dollar-denominated position instead of more ADA exposure. A stablecoin vault is the first listing on this rail, not the whole of it.",
     "supportingLinks": [
       "https://exura.org",
       "https://github.com/ExuraLabs"
@@ -62,16 +62,16 @@
   },
   "createdAt": 1787107708590,
   "headRevision": {
-    "id": "419408a1-6a2d-4aaa-956c-a8d236ac6626",
-    "number": 26,
+    "id": "40c0810a-0a1a-4ada-8ae4-f7b0de079d1e",
+    "number": 27,
     "kind": "saved",
-    "createdAt": 1787341465181
+    "createdAt": 1787419880431
   },
   "latestFinalization": {
-    "id": "5ed54863-9d03-4954-8ecc-2a5495bc2284",
-    "cycle": 6,
-    "revisionId": "419408a1-6a2d-4aaa-956c-a8d236ac6626",
-    "finalizedAt": 1787341582856
+    "id": "f3a8b8ad-cfd2-43e4-b106-9ee9722005f2",
+    "cycle": 7,
+    "revisionId": "40c0810a-0a1a-4ada-8ae4-f7b0de079d1e",
+    "finalizedAt": 1787419997910
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",

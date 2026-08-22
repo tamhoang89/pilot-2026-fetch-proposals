@@ -1,14 +1,14 @@
-# Rvess: Stablecoins to African Mobile Money
+# Rvess: Stablecoins to African Mobile Mone
 
 > A new Cardano mainnet integration converting verified stablecoins into local mobile-money payouts, starting in Uganda and expanding across Africa.
 
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 15
+- **Revision:** 23
 - **Proposer:** `stake1uyqe7s205xndy8l4c32pakhldsmp0wrpj75lzhpfmw79ntck5hhzr`
 - **Funding requested:** ₳75,000
-- **Last finalized:** 2026-08-18T19:01:23.409000+00:00
+- **Last finalized:** 2026-08-22T17:14:39.857000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -34,19 +34,23 @@ N/A. Rvess is prioritizing sustainable operations, regulatory compliance, liquid
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Rvess targets 1,150 genuine stablecoin settlement transactions generating 400 ADA in Cardano network fees, from 400 external users completing roughly 3 transactions each during the adoption period.
+Target: 80 users, 240 transactions, 60 ADA fees. 
 
-Current active users: \~30 (existing [rvess.xyz](http://rvess.xyz) beta)
+Current active users: \~30 from [rvess.xyz](http://rvess.xyz) beta
 
-New external users target Week 1-2: 50
+New external users: \~50 from Week 1 campus activations
 
-Channel breakdown:
+Week 1: Campus partnerships with:
 
-\- Week 1: Campus activations (Makerere/Kyambogo): \~50 users
+\- Mukasa Web3 (@web3_muk) — Makerere/Kyambogo campus activation
 
-\- Week 2: Cardano community outreach: pending partnership confirmation
+Week 2: DevFest Uganda
 
-Users are Ugandan freelancers, students, remote workers, and Cardano contributors who transact to convert stablecoins into UGX via MarzPay. Only independent external-user transactions count; no team-controlled wallets.
+\- Blockchain Dev Fest Uganda (@BChainDevFest) — developer community outreach
+
+Each user expected \~3 transactions = 240 total transactions
+
+Dune Analytics verification: distinct wallets, fee tracking, retentionUsers are Ugandan freelancers, students, remote workers, and Cardano contributors who transact to convert stablecoins into UGX via MarzPay. Only independent external-user transactions count; no team-controlled wallets.
 
 Verification: Dune Analytics dashboard tracks distinct wallets, transaction volume per user, and retention.
 
@@ -70,7 +74,7 @@ Rvess provides a Cardano-native workflow with verified stablecoin checks, transp
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-Rvess Pay is live at <https://rvess.xyz> as a working Cardano payment product for African markets. The deployed system includes Cardano wallet connectivity, live exchange-rate quoting, country and mobile-money provider selection, transaction creation, deposit monitoring, payout routing, status tracking, receipts, and an operations dashboard. The architecture supports Uganda, Kenya, and Tanzania, with integrations for MTN MoMo, Airtel Money, and M-Pesa. The product has been demonstrated in its intended web environment. The proposed stablecoin settlement capability is new work and is assessed separately below.
+Rvess Pay is **live** at <https://rvess.xyz> as a working Cardano payment product for African markets. The deployed system includes Cardano wallet connectivity, live exchange-rate quoting, country and mobile-money provider selection, transaction creation, deposit monitoring, payout routing, status tracking, receipts, and an operations dashboard. The architecture supports Uganda, Kenya, and Tanzania, with integrations for MTN MoMo, Airtel Money, and M-Pesa. The product has been demonstrated in its intended web environment. The proposed stablecoin settlement capability is new work and is assessed separately below.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
@@ -104,7 +108,7 @@ Individual
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-Our initial users are Ugandan freelancers, remote workers, Cardano contributors, merchants, and families receiving cross-border payments through mobile money. Rvess will first convert verified Cardano stablecoins into UGX payouts through MTN MoMo and Airtel Money, then expand to Kenya and Tanzania.
+Our initial users are Ugandan freelancers, remote workers, Cardano contributors, merchants, and families receiving cross-border payments through mobile money. Rvess will first convert verified Cardano stablecoins into UGX payouts through Relworx (which handles MTN MoMo and Airtel Money on our behalf), then expand to Kenya and Tanzania.
 
 GSMA reports over one billion registered mobile-money accounts in Sub-Saharan Africa, demonstrating the importance of these payment rails. Rvess has a public beta at <https://rvess.xyz> but has not processed production payouts, so we do not yet claim product-market fit. Pilot registrations, interviews, and partner commitments will provide direct validation.
 
@@ -138,12 +142,12 @@ policy/quoting: 26,000 ADA (35%)\
 Ledger extension: 11,000 ADA (15%)\
 MarzPay integration+routing: 13,000 ADA (17%)\
 Security audit: 7,500 ADA (10%)\
-Compliance & Uganda onboarding: 6,000 ADA (8%)\
-Mobile-money settlement float (fiat reserve for payout timing gaps :  working capital, not crypto/token liquidity): 5,250 ADA (7%)\
+Compliance & Uganda onboarding: **11,250 ADA** (15%)\
 monitoring: 4,750 ADA (6%)\
 Demo Day: 1,500 ADA (2%)
 
-Total: 75,000 ADA
+Total: 75,000 ADA\
+Mobile-money settlement (fiat reserve for payout timing gaps) is funded separately by team and is not included in this grant request.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -169,7 +173,7 @@ Yes
 
 ### How far along is the integration you're proposing, today?
 
-TRL 5 - Technology validated in relevant environment
+TRL 4 - Technology validated in lab
 
 ### Clear budget
 

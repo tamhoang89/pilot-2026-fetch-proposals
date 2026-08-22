@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 26
+- **Revision:** 27
 - **Proposer:** `stake1uxqs8hmgwkqza9gp7zqh8sqx5entwhudla5rwc39ufw9anq5set5u`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-21T19:46:22.856000+00:00
+- **Last finalized:** 2026-08-22T17:33:17.910000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -197,7 +197,7 @@ Yes
 
 ### What solution are you building, and what specific problem does it solve - for whom?
 
-Over $40M of USDCx circulates on Cardano, with little for it to do. Cardano DeFi is real, but ADA-denominated at heart, so dollar savings is thin here. Mature stablecoin products (sUSDS, sGHO, sUSDe) live on other chains, behind an EVM wallet, a seed phrase, gas, and a bridge decision most Cardano users will never make alone. Stablecoin capital here either sits idle or leaves through a custodial exchange.
+Over $40M of USDCx circulates on Cardano, with little for it to do. Cardano DeFi is real, but ADA-denominated at heart, so dollar savings is thin here. Mature stablecoin products (sUSDS, sGHO, sUSDe) live on other chains, behind an EVM wallet, a seed phrase, gas, and a bridge decision most Cardano users will never make alone. Stablecoin capital here mostly sits idle, and what leaves burns back to Ethereum.
 
 Exura builds the leg in between: a Cardano-native route from wallet to stablecoin yield and back, where the user keeps their own keys and never creates an EVM wallet.
 
