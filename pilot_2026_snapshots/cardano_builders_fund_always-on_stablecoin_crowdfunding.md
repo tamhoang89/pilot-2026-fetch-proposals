@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 25
+- **Revision:** 45
 - **Proposer:** `stake1u84rzt9g539r3jd0m7tgd5ankpsldks4qmj23pykcglsp5ce7uar4`
 - **Funding requested:** ₳130,000
-- **Last finalized:** 2026-08-20T01:15:38.959000+00:00
+- **Last finalized:** 2026-08-22T08:34:23.074000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,7 +16,13 @@ TRL 5 - Technology validated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-> I am already building Cardano Builders Fund, so this Pilot does not start from a blank page. I have worked across Cardano applications, wallets, infrastructure and chain-level engineering. I also built TSUNAGI, an independent Cardano follower focused on ChainSync, BlockFetch, rollbacks and reliable chain observation. That experience is directly relevant to confirming and reconciling crowdfunding transactions. I work in both Japanese and English, which matters for our first market. I have also deliberately kept the financial side of Cardano Builders Fund disabled until it could be tested properly. The Preprod contribution completed before submission is a good example of how I intend to build this: isolate it, test it, verify it independently, then move forward.
+Mallen Chiyari is my Catalyst and legal applicant name. I work internationally as Chris Ciari, and 9rissc is my long-standing public handle. I am the founder and lead developer of Cardano Builders Fund, responsible for product architecture, wallet and transaction integration, backend development, chain observation, testing and mainnet delivery.
+
+I also built TSUNAGI, a from-scratch Cardano node project with public Preview evidence, and I maintain public Cardano data tooling on GitHub. Cardano Builders Fund itself has completed a real end-to-end Preprod contribution flow.
+
+Public references include TSUNAGI: <https://www.tsunagi.tech/> , Cardano data tooling: <https://github.com/cryptoleo79/cardano-data-layer> , LinkedIn / 9rissc: <https://jp.linkedin.com/in/9rissc> , and my previous Catalyst record under Mallen Chiyari / 9rissc: <https://projectcatalyst.io/funds/14/cardano-open-ecosystem/empowering-real-world-ada-adoption-with-ashiya-pool>
+
+I work in both Japanese and English. No unnamed developer or technical subcontractor is being relied on for M1.
 
 ### Eligible area
 
@@ -28,15 +34,19 @@ Yes
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Cardano Builders Fund generates usage when real supporters fund real campaigns. Contributors choose a stablecoin amount, review the transaction and sign it in their own Cardano wallet. They pay the normal network fee because they want to support the campaign, not because we reward them for creating transactions.
+Every counted transaction comes from a real supporter funding a campaign from their own Cardano wallet. We do not sponsor fees, reward transactions or count team wallets.
 
-We are targeting 3,000 stablecoin contributions across the Pilot measurement period. That is ambitious for a first launch, so we will not depend on one campaign to carry it. We will start with 3 to 5 reviewed campaigns, bring more campaigns on as the flow proves itself, and work through each campaign's own supporter network. Our Preprod contribution paid 0.172189 ADA in network fees, so the 320 ADA target leaves room for normal mainnet fee variation rather than assuming every transaction will cost exactly the same.
+Our 520 ADA target comes from the flow we already measured. The real Preprod contribution used for our TRL 5 proof paid 0.172189 ADA in network fees. At the same fee level, 3,000 contributions would generate about 516.6 ADA, so 520 ADA is based on our own evidence rather than the program floor.
 
-Team wallets, recycled funds, giveaways, fee sponsorship and artificial activity will not count. Usage continues as new campaigns launch, supporters return, and successful builders come back to fund later work.
+We will start with 3 campaigns, 100 external wallets and 300 contributions in the first two weeks. The working ramp is 5 to 7 campaigns and 800 cumulative contributions, then 8 to 10 campaigns and 1,400, then 10 to 15 campaigns and 2,100. Additional campaigns and repeat supporters take the total toward 3,000.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-We already have a live builder application channel, with applications stored privately and reviewed manually. We will recruit the first campaigns through that pipeline, direct outreach to Cardano builders and Cardano Radio. For the first two weeks after mainnet launch, we will focus on the first 3 campaigns, personally onboard each owner, verify wallet control and support their launches, targeting the first 100 external wallets and 300 genuine stablecoin contributions. We will then add campaigns and expand through each campaign's own community toward our 3,000-transaction Pilot target. No team wallets, sponsored fees or artificial activity will count.
+We already have a live builder application channel with two real applications received. For the first launch we also have two concrete campaign candidates already being built: YAMORI Wallet and[ TSUNAGI Node.](https://www.tsunagi.tech/) We will combine that pipeline with direct outreach to Cardano builders and Cardano Radio.
+
+Our first two-week target is 3 campaigns, 100 external wallets and 300 contributions. We then plan to grow to 5 to 7 campaigns and 800 cumulative contributions, 8 to 10 campaigns and 1,400, then 10 to 15 campaigns and 2,100. Additional campaigns and repeat supporters take the total toward 3,000.
+
+The first 100 external wallets will come from supporters around the two existing builder applicants, YAMORI Wallet, TSUNAGI Node, Cardano Radio and direct Cardano outreach. Team wallets, fee sponsorship and artificial activity will not count.
 
 ### Is the underlying project open source?
 
@@ -46,9 +56,9 @@ No
 
 Today, people can use Catalyst or another grant program, a platform such as CAMPFIRE or Kickstarter, a crypto platform such as Giveth, or simply share a wallet address.
 
-Each option has value, but none is built for our exact use case. Grant programs run in rounds and require selection. Traditional platforms do not connect campaign progress to Cardano transactions. A wallet address is easy to share, but it offers little help with attribution, milestones or reporting.
+Grant programs are valuable but run in rounds. Traditional crowdfunding platforms are familiar, but they are not built around Cardano wallets or public on-chain campaign records. A wallet address is simple, but offers little help with attribution, milestones or reporting.
 
-Cardano Builders Fund combines Cardano wallets, ADA and stablecoin funding, Japanese and English onboarding, verified campaign owners, public transaction evidence and milestone updates. We will begin with reviewed campaigns so supporters know who is raising funds and what the money is for.
+Cardano Builders Fund is built specifically for Cardano, combining ADA and stablecoin funding, Japanese and English onboarding, verified campaign owners, public transaction evidence and milestone updates. We start with reviewed campaigns so supporters know who is raising funds and why.
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
@@ -84,11 +94,11 @@ Individual
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-Our first users are Cardano builders, creators, community organizers, events and public good teams that need to raise smaller amounts without waiting for another grant round. We will start in Japan, where we can support users directly in Japanese, then expand to the wider English-speaking Cardano community.
+Our first users are Cardano builders, creators, community organizers, events and public-good teams that need to raise smaller amounts without waiting for another grant round. We will start in Japan, where we can support users directly in Japanese, then expand to the wider English-speaking Cardano community.
 
-There is clear demand for this type of funding. Project Catalyst reports 11,233 proposals, 2,221 funded proposals and more than 84,900 members. In Japan, CAMPFIRE reports about ¥116 billion raised across around 120,000 projects and 14 million cumulative supporters by March 2026. Crypto-native giving is also established: Giveth lists about 8,300 projects, 29,280 givers and more than $7 million donated.
+The wider market is already proven. Project Catalyst reports more than 11,000 proposals and 84,000 members. In Japan, CAMPFIRE reports about ¥116 billion raised across roughly 120,000 projects and 14 million cumulative supporters. Crypto-native crowdfunding and giving platforms such as Giveth also show that people will fund projects directly with digital assets.
 
-Those figures prove the market, not our product-market fit. We will not pretend otherwise. What we have today is a public Cardano Builders Fund prototype, working builder application intake, campaign and wallet previews, and a documented stablecoin direction. The Pilot will prove our own fit with 3 to 5 curated campaigns and real external contributors.
+Those figures prove the market, not our own product-market fit. Cardano Builders Fund already has a live builder application channel with two real applications received, a working public product, wallet and campaign flows, and a real Cardano Preprod contribution proof. The Pilot will test our own demand through reviewed campaigns, external wallets and measurable stablecoin contributions.
 
 ### Applicant name
 
@@ -96,7 +106,11 @@ Mallen Chiyari
 
 ### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
 
-The Pilot helps us complete the integration and launch. After that, the platform will earn a success fee paid by the campaign owner only when a campaign reaches its goal. Our current standard fee model is 8 percent. Five percent supports operations, 2 percent goes to the Builder Reserve, and 1 percent covers infrastructure and settlement. Final terms will be confirmed before real funding opens. Campaign owners pay for review, a clear campaign page, wallet based contributions, public transaction records, milestone updates, and launch support. Projects can raise funds throughout the year, so usage does not depend on another grant round. We will not rely on a new token, advertising, selling user data, or artificial transactions.
+The Pilot helps us complete the stablecoin integration and mainnet launch. After launch, Cardano Builders Fund earns a success fee from the campaign owner only when a campaign reaches its goal.
+
+Our current standard fee model is 8 percent: 5 percent for platform operations, 2 percent for the Builder Reserve and 1 percent for infrastructure and settlement. Final legal, tax and accounting terms will be confirmed before real funding opens.
+
+Campaign owners pay for campaign review, wallet-based contributions, public transaction records, milestone tracking and launch support. The platform runs all year, so projects can raise before Catalyst, between rounds, after a grant or without entering governance at all. We do not rely on a new token, ads, selling user data or artificial transaction activity.
 
 ### Named, verifiable team
 
@@ -159,10 +173,10 @@ The Pilot will take today's working product to a controlled mainnet launch with 
 ### Supporting links (repo, site, demo)
 
 - https://cardano.builders/
-- https://cardano.builders/infrastructure-readiness
-- https://cardano.builders/contribution-preview
 - https://preprod.cardanoscan.io/transaction/af89cde4c0ab8da3f540d72ed11512bd6cdbcde2de49a49fe6cf8afaa2380cad
-- https://github.com/cryptoleo79
+- https://www.tsunagi.tech/
+- https://github.com/cryptoleo79/cardano-data-layer
+- https://jp.linkedin.com/in/9rissc
 
 ### Identified dependencies
 
@@ -206,7 +220,7 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-320
+520
 
 ### Current funded commitments
 

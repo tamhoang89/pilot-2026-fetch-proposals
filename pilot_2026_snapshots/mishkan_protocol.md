@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 24
+- **Revision:** 27
 - **Proposer:** `stake1uxd9qla44kaftahx8r8z4q5lgyn0lcd8n7uytpjntdcph3qlgneay`
 - **Funding requested:** ₳100,000
-- **Last finalized:** 2026-08-19T10:11:45.526000+00:00
+- **Last finalized:** 2026-08-22T07:56:15.136000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -36,11 +36,13 @@ If Mishkan Protocol generates hosted-instance revenue post-pilot (core voting/go
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Week 1 (entry-ramp epoch): Poloos Council crossover only. Direct outreach to the 50-wallet Poloos community via existing Discord/Telegram, target 9 self-claims (matches the entry-ramp allocation). Action: pinned announcement in Poloos Council's channels with a direct "Join Council" link; founder personally messages the first 10-15 most active members.
+**Technical basis:**
 
-Week 2 (Epoch 1 begins): target 11 self-claims across three channels running in parallel — Rahat Sayyed posts to his Cardano/Catalyst builder network including the Talendro community (target 5); a post in Cardano Catalyst's own Discord and forum, timed with initial Demo Day visibility (target 4); Mishkan Protocol's Twitter/Farcaster accounts publish the live demo link (target 2). Daily self-claim count tracked against the 20% daily cap; if any channel underperforms, the founder reallocates outreach effort mid-week rather than waiting for the epoch to close.
+Cardano's fee is a linear component (a + b×size) plus Plutus script execution cost. A minimal transfer costs \~₳0.17. IOG's own published Plutus fee estimator shows a single script execution can run up to \~₳2.17 at higher complexity, and reference-script-byte fees add cost specifically for transactions that read reference inputs — exactly our pattern.
 
-By end of Week 2: 20 of the 75 declared transactions complete, verifiable via Cardanoscan, published as an interim update.
+Our self-claim is not a simple transfer or a single swap-style script call: in one atomic transaction it (1) invokes the transfer-logic script via the withdraw-zero pattern (a stake-script execution), and (2) resolves the applicable script via a reference input to the CIP-0113 registry, adding reference-input byte overhead on top of standard execution cost. Combining a stake-script invocation with registry resolution in a single transaction sits toward the upper part of IOG's published single-script range, not the low end.
+
+₳2.00 is a technically grounded estimate, not a live measurement. Once Rahat Sayyed's integration work begins (Month 1), we will run real preprod transactions and report the actual measured average fee before the adoption phase begins, updating this figure if it differs materially.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
