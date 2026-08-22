@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 2
+- **Revision:** 28
 - **Proposer:** `stake1uyq8ykytm6mhp4aqtk9350nuu6stj0hswrqg90y7prh3mvcqxjk3d`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-20T05:10:07.870000+00:00
+- **Last finalized:** 2026-08-22T06:48:48.328000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -23,10 +23,12 @@ For this specific proposal, VIA will lead the EVM and product work and contract 
 **Team**
 
 - **Robert “Cletus” Pilat, CEO** — Program lead, partners, and compliance. [linkedin.com/in/robert-pilat](http://linkedin.com/in/robert-pilat) · [x.com/Cletus_VIA](http://x.com/Cletus_VIA)
-- **Andrea “Druuu” Verri, CTO** — EVM routers, EVM forwarding and fill contracts, relayer + executors, CCTP v2. [github.com/DruuuCLT](http://github.com/DruuuCLT)
+- **Andrea “Druuu” Verri, CTO** — EVM router, CCTP v2 and xReserve integration, relayers + executors. [github.com/DruuuCLT](http://github.com/DruuuCLT)
 - **Brad “Bert” Simon, Engineer** — Web app, wallet and dApp SDK, integrations. [github.com/brad-za](http://github.com/brad-za)
-- **Jake Salthouse, CBO**— BD onboarding. [x.com/JakeSalthouse97](http://x.com/JakeSalthouse97)
-- **Anastasia Labs (led by Philip DiSarro)** — Philip was instrumental in building VIA’s Cardano infrastructure and also built the IOG USDCx bridge. He’s a strong fit to work with us again on this project. [anastasialabs.com](http://anastasialabs.com) · [github.com/colll78](http://github.com/colll78)
+- **Jake Salthouse, CBO** — Business development and onboarding. [x.com/JakeSalthouse97](http://x.com/JakeSalthouse97)
+- **Anastasia Labs (Philip DiSarro)** — Cardano router, validator, and datum-builder support. Philip audited VIA’s Cardano infrastructure and also built the IOG USDCx bridge. He’s a strong fit to work with us again.
+  - Signed LOI of project commitment: <https://drive.google.com/file/d/148RhuyMb_wjTZPhwJWeqi3VTjc9on-Gc/view?usp=drive_link>
+  - Company links: [anastasialabs.com](http://anastasialabs.com) · [github.com/colll78](http://github.com/colll78)
 
 The external auditor has not been selected yet. Audit costs sit outside this budget.
 
@@ -40,23 +42,29 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Who transacts: people moving money. Someone with USDC on an exchange or an EVM chain sends it to Cardano and receives ADA, USDM, or another token. Someone on Cardano cashes a token out to USDC. Each trip produces one or two Cardano transactions.
+Who transacts: external users moving their own funds. They send USDC from an exchange or EVM wallet into a supported Cardano token, or move a Cardano token out to USDC. Each route creates one or two Cardano transactions.
 
-Why: today there is no direct path from an exchange into a Cardano token, and the only exit takes about nine hours. AnyToAny removes both problems.
+Qualifying use: count only mainnet transactions initiated by an external user who signs the route and pays the gas fee. VIA, team, contractor, operator, and test transactions do not count. Duplicate retries do not count.
 
-How often: the target is 1,500 transactions and 600 ADA in fees — about 32 a day at a typical fee of 0.40 ADA.
+Target: 1,545 qualifying Cardano transactions and 618 ADA in fees. At 0.40 ADA each, 1,545 × 0.40 = 618 ADA. We assume early delivery of M1 to extend the Measurement window to 9 epochs. The first 14 days target 150 txns. The remaining 1,395 require 31 txns per week for for 7 epochs (45 days).
 
-Is that realistic? The official USDCx bridge moves about 16 transfers a day. Its exchange path only delivers plain USDCx. Its swap path (DEX Direct) is seldomly used. Our target is about double USDCx. It's ambitious, but plausible. VIA is not a single app — wallets, DEXs, and aggregators can build AnyToAny into their own products, so their users become our volume.
+Why plausible: the official USDCx bridge averages about 16 transfers/day. AnyToAny adds supported output tokens and faster exits. The plan ramps from 150 in the first two weeks to 31 txns / day (217 / week) after day 14. Our [scan site](https://scan.vialabs.tech/) will be configured to report qualifying transactions including external wallets, direction, and fees.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-BD efforts are already underway. VIA Labs recently went live on Cardano mainnet, so conversations with potential partners have already started. We focus on B2B first — every integration also brings that partner’s existing users.
+Real users consist of both existing dApps/companies and the general public. We plan to reach them by:
 
-Wallets such as Eternl, Lace, and Vespr can add fund-from-exchange and cash-out flows through the SDK. DEXs and aggregators (Minswap, SundaeSwap, DexHunter) can add a buy-with-USDC route. DexHunter has already asked publicly for more USDCx flow.
+Pre-Launch: VIA pursues B2B integration commitments prior to launching AnyToAny.
 
-USDM was the first asset moved over VIA’s Cardano-to-Midnight mainnet on August 13, 2026. That live transfer, plus the separate Midnight grant, shows VIA delivers on schedule.
+**Previous BD & Marketing work evidenced [here.](https://docs.google.com/document/d/1A1zUOz-tLx9zrbfRybFmU7XKC7q8Ljhk1cU8q7-WuFk/edit?usp=sharing)**
 
-We launched as the first cross-chain messaging network on both Cardano and Midnight. Explorer is at [scan.vialabs.tech](http://scan.vialabs.tech) and developer docs are at [developer.vialabs.tech](http://developer.vialabs.tech)
+Days 1–7: Launch AnyToAny mainnet and provide developer documentation for parties in the integration queue. Target one external dApp/company onboarded, including usage from 20 ***external*** wallets and ≥50 Cardano txns.
+
+Days 8–14: Target one additional dApp/company onboarded, including usage from 50+ ***external*** wallets and ≥150 total Cardano txns. (Estimated: 100 txns from USDCx users and 50 from integrations)
+
+Day 14+: Target 31 transactions/day through demos, outreach, and integration support. Assuming early delivery of M1 - 9 epoch measurement window.
+
+Marketing includes demo days, hackathons, and speaking engagements both online and in person.
 
 ### Is the underlying project open source?
 
@@ -78,7 +86,7 @@ VIA wins by building on USDCx instead of competing with it. AnyToAny aggregates 
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-VIA’s cross-chain network has been live for more than four years and has carried over 20 million messages across 150+ networks. Cardano and Midnight mainnet support launched on August 13, 2026.
+VIA’s cross-chain network has been live for more than four years and has carried over 20 million messages across 150+ networks. Cardano mainnet support launched on August 13, 2026.
 
 The explorer at [scan.vialabs.tech](http://scan.vialabs.tech) shows reliable delivery of cross-chain messages consistently between several networks.
 
@@ -123,14 +131,16 @@ AnyToAny serves two main groups:
 - People moving funds between exchanges, EVM chains, and Cardano.
 - Cardano products looking to build this into their own interfaces.
 
-Specific examples include:
+The organizations below are uncommitted distribution targets, not delivery dependencies. Specific examples include:
 
-- Wallets such as Eternl, Lace, and Vespr. They can offer exchange funding and cash-out directly. A user receives an address on a CCTP-supported EVM chain, withdraws USDC there, and converts it into ADA or USDM. Eternl already has a USDCx Bridges page, showing existing interest.
+- Wallets such as Eternl, Lace, and Gero. They can offer exchange funding and cash-out directly. Eternl already has a USDCx Bridges page, showing an existing integration surface.
 - DEXs such as Minswap and SundaeSwap. Users can deposit from an exchange or EVM chain and receive the desired Cardano asset directly in the DEX for trading, liquidity, or other activity.
-- Aggregators such as DexHunter, which can quote supported EVM-to-Cardano routes. The team has publicly asked when USDCx liquidity will grow.
-- Lending, trading, and perpetual markets such as Liqwid or Indigo which can receive the selected Cardano asset as collateral or margin.
+- Aggregators such as DexHunter, which can quote supported EVM-to-Cardano routes. DexHunter has publicly asked when USDCx liquidity will grow.
+- Lending, trading, and perpetual markets such as Liqwid or Indigo, which can receive the selected Cardano asset as collateral or margin.
 
-Demand already shows in USDCx activity. Supply is 44 million after 2,237 mints and 914 burns since the February launch. Our count from public [xReserve logs](https://etherscan.io/address/0x8888888199b2Df864bf678259607d6D5EBb4e3Ce) shows about 800 exchange forwards from roughly 280 wallets, and around 35 DEX Direct transactions. Transfers out average four a day. That proves users want a direct way into Cardano. AnyToAny adds asset choice, support for CCTP-connected EVM chains, and exits in minutes.
+Demand already shows in USDCx activity. Supply is 44 million after 2,237 mints and 914 burns since the February launch. Our count from public [xReserve logs](https://etherscan.io/address/0x8888888199b2Df864bf678259607d6D5EBb4e3Ce) shows about 800 exchange forwards from roughly 280 wallets, and around 35 DEX Direct transactions. (Counts observed from public logs in August 2026).
+
+Users want a direct way into Cardano. AnyToAny adds asset choice, support for CCTP-connected EVM chains, and exits in minutes.
 
 ### Applicant name
 
@@ -154,15 +164,13 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-This funding enables AnyToAny on Cardano. Without it, the work would wait behind VIA’s paid client projects. We want to build it now because VIA is already live on Cardano, the business case is clear, and we want to keep expanding in the ecosystem.
+Funding enables AnyToAny on Cardano now; without it, the work waits behind paid client work. Planned allocation of all 200,000 ADA:
 
-Funds go to development:
+- **80,000 ADA (40%):** Cardano router and escrow validators, DEX-order datum builders, VIA message-layer integration, and Cardano mainnet tests. Supports M1 items 1–3.
+- **80,000 ADA (40%):** EVM swap router, CCTP v2/xReserve integration, contract tests, and EVM mainnet deployment. Supports M1 items 1–3.
+- **40,000 ADA (20%):** web app, SDK, end-to-end testing, documentation, deployment, and launch monitoring. This supports M1 item 4 and acceptance evidence.
 
-- **Cardano** — router and fast-exit escrow validators (Aiken), DEX-order datum builders, and registration with VIA’s message layer.
-- **EVM** — swap router (any listed token to USDC), CCTP v2 + xReserve path, Base forwarding contracts, and the fill contract for fast exits.
-- **Both** — web app, SDK, testing, and mainnet deployment.
-
-An external audit of the new validators is not covered; VIA will arrange it separately.
+The grant funds development only. VIA separately funds fast-route liquidity and the external audit. Users pay their own transaction costs.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -178,6 +186,7 @@ Yes
 - Inbound live for real users: USDC from an exchange or an EVM wallet arrives on Cardano and swaps into ADA, USDM, or another supported token on one Cardano DEX. Mainnet transaction hashes published.
 - Fast routes live with launch caps: one fast entry and one fast exit completed on mainnet, with completion times published.
 - Public front-end at [anytoany.xyz](http://anytoany.xyz) and integration documentation with the SDK at [developer.vialabs.tech](http://developer.vialabs.tech).
+- [Scan site](https://scan.vialabs.tech/) updated to show usage data. Including all qualified transactions (external wallets, direction, and fees).
 
 ### How far along is the integration you're proposing, today?
 
@@ -215,7 +224,7 @@ AnyToAny is built for both B2B and B2C applications. Existing dApps and companie
 - https://scan.vialabs.tech/
 - https://midnight.anytoany.xyz/
 - https://developer.vialabs.tech/docs/examples/cardano/overview
-- https://developer.vialabs.tech/docs/examples/guides/usdm-cardano-midnight
+- https://drive.google.com/file/d/1SDxHkFBE7oJ6gNBDQJxHMx8ujv-2UxQc/view?usp=sharing
 
 ### Identified dependencies
 
@@ -251,7 +260,7 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-1500
+1545
 
 ### Standard read and attested
 
@@ -259,7 +268,7 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-600
+618
 
 ### Current funded commitments
 
