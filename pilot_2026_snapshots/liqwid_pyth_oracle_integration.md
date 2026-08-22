@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 17
+- **Revision:** 18
 - **Proposer:** `stake1u880z6jcpa0ed2u87ruez7s4cavpqdh7d5x4qyffnzpmessqsd2ce`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-19T14:09:10.437000+00:00
+- **Last finalized:** 2026-08-22T05:19:52.807000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -46,7 +46,7 @@ Genuine usage is real ADA/NIGHT lending activity: supplies, withdrawals, loan cr
 
 Recent results validate feasibility, not the target: 6,993 tx/₳4,519.89 fees over 90 days, 3,549/₳2,342.88 over 60D and 1,777/₳1,149.81 over 30D. We attribute the recent contraction to lower DeFi activity and volumes amid broader market conditions.
 
-Our 610-tx growth target represents a significant uplift over the current 30D baseline. We believe independently verified pricing will materially strengthen user trust and contribute to adoption alongside these initiatives. For the first 14 days post-launch, we will market Pyth adoption across Liqwid channels and track ADA/NIGHT txs, fees and new wallets daily against baseline and epoch pace, increasing outreach if below target without incentives or sponsored activity.
+Our 500 ADA (1,650 ADA @ 2,600 txs versus previous 1,149.81 ADA @ 1,777 txs at an estimated 0.635 ADA/tx) growth target represents a significant uplift over the current 30D baseline. We believe independently verified pricing will materially strengthen user trust and contribute to adoption alongside these initiatives. For the first 14 days post-launch, we will market Pyth adoption across Liqwid channels and track ADA/NIGHT txs, fees and new wallets daily against baseline and epoch pace, increasing outreach if below target without incentives or sponsored activity.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -155,7 +155,7 @@ By the end of the 3-month window we will have Pyth price verification live on Ca
 
 ### Oracles - expected transaction count
 
-610
+2600
 
 ### How far along is the integration you're proposing, today?
 
@@ -199,7 +199,7 @@ Yes
 
 ### Oracles - fee target (ADA)
 
-305
+1650
 
 ### Business
 
