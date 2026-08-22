@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 10
+- **Revision:** 12
 - **Proposer:** `stake1u8dnzvdayse8gguanmmyt83dulfg33y9sv0ts35tsrwlnjs5hgrgu`
 - **Funding requested:** ₳112,500
-- **Last finalized:** 2026-08-19T22:59:41.365000+00:00
+- **Last finalized:** 2026-08-22T07:26:49.151000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -20,11 +20,19 @@ Olympus Insights combines education, technology, execution and distribution in o
 
 Nathan Barkell, Co-Founder & CEO, is an educator, founder and commercial lead with 10+ years in education and years of blockchain education and Cardano ecosystem involvement. He has represented Australia at Cardano’s Constitutional Convention in Argentina, built blockchain education through Olympus Academy, hosted educational X Spaces and led OLi from concept to 150,000+ registered learners.
 
+<https://www.linkedin.com/in/nathan-barkell>
+
 Mark Elliott, Co-Founder, brings 20+ years of software and telecommunications experience and leads the technology, infrastructure and scalability required to deliver globally.
+
+<https://www.linkedin.com/in/markelliott10>
 
 Alex Burton, COO, leads operations, product delivery and execution, turning strategy into shipped products and ensuring milestones move from concept to implementation.
 
+<https://www.linkedin.com/in/alexjburton>
+
 Sev Mozhaev, CMO, is a former teacher and creator with 1.6M+ TikTok followers, bringing exceptional education communication, community growth and global distribution capability.
+
+<https://www.linkedin.com/in/sevamozhaev>
 
 Together, we already built the products, audience and delivery engine. Catalyst is not backing an untested team or an idea on paper; it is enabling an experienced team with live products and real users to add an open-source Cardano layer and scale measurable adoption.
 
@@ -180,18 +188,16 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-Within 3 months we will deliver a live, open-source Cardano integration connecting Olympus Academy and OLi AI Tutor to on-chain identity and learning achievement flows.
+**Total budget: 112,500 ADA.** Within 3 months we will deliver:
 
-M1 deliverables:
+**1. Identity & wallet integration: 25,000 ADA** - deploy Cardano wallet and CIP-0170 learner identity infrastructure.\
+**2. Verifiable credentials: 22,500 ADA** - enable learning achievements and OLi outcomes to generate blockchain-verifiable credentials linked to learner identity.\
+**3. XP & $OLi rewards: 20,000 ADA** - integrate learning progression, XP and on-chain $OLi reward functionality.\
+**4. Platform/backend integration: 20,000 ADA** - integrate Cardano functionality across OLi, Olympus Academy and progression systems.\
+**5. Testing & mainnet deployment: 15,000 ADA** - security testing, bug resolution, deployment and repeatable end-to-end mainnet transactions.\
+**6. Open-source & documentation: 10,000 ADA** - publish proposal-funded Cardano components, documentation, evidence and Demo Day materials.
 
-1. CIP-0170 identity integration deployed to Cardano mainnet.
-2. Cardano wallet provisioning/linking integrated into the learner experience.
-3. End-to-end flow connecting a learner’s identity, eligible learning achievement and verifiable credential/proof.
-4. XP-to-$OLi reward infrastructure integrated, with rewards triggered by learning achievement, never by transaction activity.
-5. Integration operational within Olympus Academy and/or OLi AI Tutor for real-user testing.
-6. Multiple successful independent mainnet transactions demonstrating the declared flow.
-7. Public open-source repository containing Catalyst-funded Cardano code and documentation.
-8. Published architecture, footprint, release notes, security/testing evidence and technical walkthrough.
+**Total: 112,500 ADA. M1 ends with a working integration on Cardano mainnet available to real users.**
 
 ### How far along is the integration you're proposing, today?
 
