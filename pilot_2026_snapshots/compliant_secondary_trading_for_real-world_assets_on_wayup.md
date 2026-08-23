@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 12
+- **Revision:** 15
 - **Proposer:** `stake1u80mnpaqq2jtz9cd64y88zfyx0g3dyhzq4v9c87vptc4yfc0x6rwq`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-19T15:16:23.386000+00:00
+- **Last finalized:** 2026-08-23T23:52:19.058000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -47,7 +47,7 @@ Who transacts: external holders and buyers, from their own wallets, paying their
 
 What counts: transfers under our declared CIP-0113 policies (marketplace purchases and holder-to-holder transfers), holder allowlist enrollment, and issuer rule updates. One-time registry and protocol-parameter setup is team-paid and excluded from the counted target.
 
-Model: 4–8 RWA issuers from Anvil's client base and new clients; \~110 distinct external wallets, against the 20-wallet minimum at this award level; one enrolment plus \~3.5 transfers each on average, giving \~830 qualifying transactions. At an average ₳0.48 per CIP-0113 transfer, higher than a simple send because each spends programmable_logic_base, runs the global validator, and executes a registry lookup plus transfer script, that is ₳400 against a ₳200 floor.
+Model: 4–8 RWA issuers from Anvil's client base and new clients; \~185 distinct external wallets, against the 20-wallet minimum at this award level; one enrolment plus \~4.5 transfers each on average, giving \~830 qualifying transactions. At an average ₳0.48 per CIP-0113 transfer, higher than a simple send because each spends programmable_logic_base, runs the global validator, and executes a registry lookup plus transfer script, that is ₳400 against a ₳200 floor.
 
 Pace: marketplace volume is bursty and the daily cap is 20% of the period total. We therefore stagger issuer launches roughly one per epoch instead of a single launch event, so enrolment carries the early epochs and recurring trading carries the rising late-epoch floors.
 
@@ -158,7 +158,7 @@ First 14 days: 3-4 issuers live, 48 distinct external wallets, 115 qualifying tr
 
 ### Programmable tokens (CIP-0113) - expected transaction count
 
-830
+833
 
 ### Named, verifiable team
 
@@ -212,7 +212,7 @@ Internal target week 9, deadline week 12.
 
 5. At least four external issuers onboarded, minting from their own wallets.
 
-6. Independent security review of the composed transaction path, findings remediated.
+6. Independent security review of the composed transaction path, findings remediated (Sundae Labs).
 
 7. Declared footprint published: policy IDs, script hashes, addresses, message tag, team wallets; Dune tagging live.
 

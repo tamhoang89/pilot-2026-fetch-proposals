@@ -7,15 +7,15 @@
   "title": "Compliant Secondary Trading for Real-World Assets on Wayup",
   "tagline": "Anyone can tokenise an asset. Almost nobody can legally trade it. Wayup is building the venue where the rules travel with the token.",
   "requestedAmount": 200000,
-  "updatedAt": 1787152583386,
+  "updatedAt": 1787529139058,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 9 - Actual system proven in operational environment",
     "team": "Anvil is a Cardano development company. We build and operate the infrastructure this integration extends, and Wayup is our own marketplace running on it. Anvil has successfully completed 6 Catalyst proposals over 4 years, most of which are public goods that are actively being used.\n\nDelivery evidence, all public: Wayup, live on Cardano mainnet, built entirely on our own API and indexer. Anvil serves 200 clients across 30 countries, with 457k assets minted and ATH \\~₳50M total value staked through our infrastructure. \\\n\\\nZachary Soesbee - CEO - Responsible for Catalyst Milestone, Marketing, and Partnerships. \\\n<https://www.linkedin.com/in/zachary-soesbee-4a5ab317a/>\\\n\\\nPatrick Bernard - COO - Responsible for employee management, UI/UX decisions, and deliverables on the platform. \\\n<https://www.linkedin.com/in/patrick-b-436a3621/>\\\n<https://github.com/invalidcredentials>\\\n\\\nDavid Desjardins - CTO - Responsible for technical progress, architecture, and Aiken development. \\\n<https://www.linkedin.com/in/david-desjardins-a7b930120/>\\\n<https://github.com/tqueri>\n\nEvery named participant's role is disclosed above, and no individual on this team is named on any other proposal in this round.",
     "eligArea": true,
     "giveBack": "N/A",
-    "m2Target": "**Milestone Outputs:**\n\nCompletion of the Adoption phase and project close using the declared measurement structure: a one-epoch entry ramp from your M1 delivery, then six floored 5-day epochs - with extra epochs earned by delivering early - under the Standard's per-epoch floors and daily cap. The whole project completes within the program's four-month frame.\n\nYour declared adoption targets, restated from your answers. They drive the M2 payout and the Transaction Integrity checks, and are final at submission:\n\n- Programmable tokens (CIP-0113): 830 transactions expected, 400 ADA in counted fees\n\n**Acceptance criteria**\n\n1. The measurement window ran as declared at M1 delivery: the one-epoch entry ramp plus your floored epochs, including any extra epochs earned by early delivery.\n2. Per-epoch floors observed, with at most the Standard's one free miss.\n3. Counted totals respect the daily cap: a single day may exceed the Standard's share of your measurement-period total, but the excess does not count toward it.\n4. At least the Standard's minimum of distinct external wallets transacted with your integration during the window.\n5. All measured activity derives from the declared identifiers and complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard).\n\n**Evidence of milestone completion**\n\n1. Adoption summary statement: your actuals against each declared target.\n2. Per-epoch table: epoch number, date range, transactions and counted fees, daily cap applied (y/n), floor met (y/n), notes.\n3. Raw explorer and dashboard links for the declared identifiers.\n4. Short methodology note: how counts and fees were derived from the declared identifiers.\n5. A completion video (1-3 mins) is shared via YouTube showcasing the project outputs.\n6. Any additional cross-checks.",
-    "usagePlan": "Who transacts: external holders and buyers, from their own wallets, paying their own fees. Anvil never submits or subsidizes on a user's behalf. Team wallets are declared and excluded.\n\nWhat counts: transfers under our declared CIP-0113 policies (marketplace purchases and holder-to-holder transfers), holder allowlist enrollment, and issuer rule updates. One-time registry and protocol-parameter setup is team-paid and excluded from the counted target.\n\nModel: 4–8 RWA issuers from Anvil's client base and new clients; \\~110 distinct external wallets, against the 20-wallet minimum at this award level; one enrolment plus \\~3.5 transfers each on average, giving \\~830 qualifying transactions. At an average ₳0.48 per CIP-0113 transfer, higher than a simple send because each spends programmable_logic_base, runs the global validator, and executes a registry lookup plus transfer script, that is ₳400 against a ₳200 floor.\n\nPace: marketplace volume is bursty and the daily cap is 20% of the period total. We therefore stagger issuer launches roughly one per epoch instead of a single launch event, so enrolment carries the early epochs and recurring trading carries the rising late-epoch floors.",
+    "m2Target": "**Milestone Outputs:**\n\nCompletion of the Adoption phase and project close using the declared measurement structure: a one-epoch entry ramp from your M1 delivery, then six floored 5-day epochs - with extra epochs earned by delivering early - under the Standard's per-epoch floors and daily cap. The whole project completes within the program's four-month frame.\n\nYour declared adoption targets, restated from your answers. They drive the M2 payout and the Transaction Integrity checks, and are final at submission:\n\n- Programmable tokens (CIP-0113): 833 transactions expected, 400 ADA in counted fees\n\n**Acceptance criteria**\n\n1. The measurement window ran as declared at M1 delivery: the one-epoch entry ramp plus your floored epochs, including any extra epochs earned by early delivery.\n2. Per-epoch floors observed, with at most the Standard's one free miss.\n3. Counted totals respect the daily cap: a single day may exceed the Standard's share of your measurement-period total, but the excess does not count toward it.\n4. At least the Standard's minimum of distinct external wallets transacted with your integration during the window.\n5. All measured activity derives from the declared identifiers and complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard).\n\n**Evidence of milestone completion**\n\n1. Adoption summary statement: your actuals against each declared target.\n2. Per-epoch table: epoch number, date range, transactions and counted fees, daily cap applied (y/n), floor met (y/n), notes.\n3. Raw explorer and dashboard links for the declared identifiers.\n4. Short methodology note: how counts and fees were derived from the declared identifiers.\n5. A completion video (1-3 mins) is shared via YouTube showcasing the project outputs.\n6. Any additional cross-checks.",
+    "usagePlan": "Who transacts: external holders and buyers, from their own wallets, paying their own fees. Anvil never submits or subsidizes on a user's behalf. Team wallets are declared and excluded.\n\nWhat counts: transfers under our declared CIP-0113 policies (marketplace purchases and holder-to-holder transfers), holder allowlist enrollment, and issuer rule updates. One-time registry and protocol-parameter setup is team-paid and excluded from the counted target.\n\nModel: 4–8 RWA issuers from Anvil's client base and new clients; \\~185 distinct external wallets, against the 20-wallet minimum at this award level; one enrolment plus \\~4.5 transfers each on average, giving \\~830 qualifying transactions. At an average ₳0.48 per CIP-0113 transfer, higher than a simple send because each spends programmable_logic_base, runs the global validator, and executes a registry lookup plus transfer script, that is ₳400 against a ₳200 floor.\n\nPace: marketplace volume is bursty and the daily cap is 20% of the period total. We therefore stagger issuer launches roughly one per epoch instead of a single launch event, so enrolment carries the early epochs and recurring trading carries the rising late-epoch floors.",
     "goToMarket": "Named channels, with no commitments claimed that we do not have.\n\n[Anvil's](https://x.com/AnvilDevAgency) existing client base, 200+ projects already minting on Cardano through our API across 30 countries. Target: 4-8 live RWA issuers.\n\nWayup's existing trader base and our own channels ([Wayup](http://x.com/wayupio), [Discord](https://discord.gg/84P7TteHge)) , the demand side, already holding wallets and already transacting.\n\n**First two weeks after M1:**\n\nDays 1–3: issuer 1 live, policy verified on Wayup and open for trading; first external purchases. Target 15 wallets, 20 tx.\\\nDays 4–7: onboarding issuers 2–3; enrolment opens. Week 1 close: 3 issuers, 30 wallets, 55 tx.\\\nDays 8–12: fix what real users hit - wallet and eligibility edge cases, not protocol failures; issuer 4 live. Target 15 more wallets.\\\nDays 13–14: publish the per-epoch table and counting methodology. Week 2 close: 4 issuers, 48 wallets, 115 cumulative tx.",
     "m1Evidence": "These acceptance criteria and evidence apply to your declared integration(s) - at delivery you'll specify where each appears in the product, which user flows depend on it, and the identifier(s) that evidence it:\n\n- Programmable tokens (CIP-0113)\n\n**Acceptance Criteria:**\n\n1. At least one full end-to-end mainnet transaction by a real user (please refer to [the Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard)), and the flow repeats without failure - the submitted transaction hashes show independent runs of the declared flow.\n2. The declared footprint is complete and valid: nothing pre-existing declared, and all submitted evidence matches the declared identifiers and flows.\n3. Release notes accurately describe architecture, scope, and limitations.\n4. Live demo and Q&A delivered at Demo Day using the same identifiers and flows (participation is required). Demo Day sign-off admits the project into the entry epoch of its adoption measurement window.\n\n**Evidence:**\n\n1. Live product URL.\n2. At least one transaction hash mapped to flow steps, with explorer links.\n3. The declared footprint as described in the [Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard): script hashes, policy IDs, addresses, token/NFT names (if any), registered message tag, team wallets.\n4. Short technical walkthrough demonstration video.\n5. Release notes.\n6. Repo URL + tag/commit (if project is open source).\n7. Test evidence bundle: checklist, bug log, security note.\n8. Present outputs at Demo Day.",
     "openSource": true,
@@ -33,13 +33,13 @@
     "targetMarket": "Two sides, and we already touch both.\n\nSupply , issuers. Organizations that want to tokenize an asset carrying real transfer restrictions: fractional property, revenue shares, private credit, regulated collectibles, and membership or access rights with resale limits. Anvil's existing client base of 200+ projects across 30 countries is our direct pipeline. These are organizations already paying us to put assets on Cardano who today have no compliant route to a secondary market.\n\nWayup's existing user base of Cardano traders, already transacting on mainnet with connected wallets and real fee-paying behavior.\n\nEvidence of demand. The pattern is proven elsewhere and absent here. On Ethereum, permissioned-token standards for regulated assets (ERC-3643 and peers) underpin a live tokenized-asset market precisely because transfer rules are enforced by the token. Cardano has no equivalent venue. CIP-0113 exists as a standard with a Cardano Foundation reference implementation and, to our knowledge, no production secondary market using it. The gap is infrastructure, not appetite.\n\nWhat we do not claim: we have no signed issuer commitments at submission. Converting existing Anvil clients into live RWA issuers is the declared principal risk of this proposal, and the usage plan is sized against it rather than around it. This is a long term play to accommodate CIP-113 assets and give them a place to safely trade.",
     "applicantName": "Anvil Development Agency, Inc.",
     "businessModel": "Wayup already charges a 2% trading fee on native listings. RWA trades settle through that same fee path, so the venue side is revenue-generating from the first trade and no new business model is required.\n\nOn the issuer side, Anvil's existing commercial relationship covers minting and API access. CIP-0113 issuance with configurable transfer rules becomes part of that paid offering.\n\nUsers pay their own Cardano network fees. Anvil never pays fees on a user's behalf, never takes custody of assets, and is never counterparty to a trade. There is no token and no protocol fee.\n\nUsage continues after the pilot because secondary trading is recurring by nature. An issuer tokenizes once, but holders trade, transfer and re-list continuously, and each of those is a real transaction with a real reason to exist. Nothing here depends on grant money continuing.\n\nFirst 14 days: 3-4 issuers live, 48 distinct external wallets, 115 qualifying transactions (23% of target). Dated plan in go-to-market.",
-    "cip113TxCount": 830,
+    "cip113TxCount": 833,
     "eligNamedTeam": true,
     "eligRealUsers": true,
     "fundingImpact": "Without this grant, CIP-0113 stays a roadmap item: a programmable-token settlement path is a substantial build with no revenue until issuers exist, so it loses to marketplace features for existing collectors. The grant makes it a funded, dated deliverable.\n\n₳200,000, tied to M1 deliverables:\n\n- ₳60,000, CIP-0113 issuance service in Anvil API (validators, registry, substandards)\n\n- ₳50,000, composed marketplace settlement path\n\n- ₳32,000, indexer: registry awareness, UTxO and stake-credential tracking\n\n- ₳18,000, eligibility pre-flight and compliance UX\n\n- ₳15,000, independent security review of the transaction path\n\n- ₳10,000, preprod validation, QA, test evidence\n\n- ₳15,000, issuer onboarding, docs, Dune tagging, measurement\n\nNo user subsidies, fee reimbursement or transaction rewards.",
     "termsAccepted": true,
     "eligRealTarget": true,
-    "m1Deliverables": "Internal target week 9, deadline week 12.\n\n1. CIP-0113 issuance service live in Anvil API: issuance_mint under the issuer's credential, registry entry, and two transfer substandards (allowlist/KYC-gated and lockup).\n\n2. Wayup indexer registry-aware: resolves registered policies to transfer logic, tracks programmable-token UTxOs by stake credential.\n\n3. Composed settlement path live on mainnet , a CIP-0113 asset bought and settled through Wayup by a wallet not ours.\n\n4. Eligibility pre-flight in the UI, showing pass/fail and reason before signing.\n\n5. At least four external issuers onboarded, minting from their own wallets.\n\n6. Independent security review of the composed transaction path, findings remediated.\n\n7. Declared footprint published: policy IDs, script hashes, addresses, message tag, team wallets; Dune tagging live.\n\n8. Open-source CIP-0113 adapter and eligibility library (Apache-2.0), release notes, test evidence bundle, walkthrough video, Demo Day.",
+    "m1Deliverables": "Internal target week 9, deadline week 12.\n\n1. CIP-0113 issuance service live in Anvil API: issuance_mint under the issuer's credential, registry entry, and two transfer substandards (allowlist/KYC-gated and lockup).\n\n2. Wayup indexer registry-aware: resolves registered policies to transfer logic, tracks programmable-token UTxOs by stake credential.\n\n3. Composed settlement path live on mainnet , a CIP-0113 asset bought and settled through Wayup by a wallet not ours.\n\n4. Eligibility pre-flight in the UI, showing pass/fail and reason before signing.\n\n5. At least four external issuers onboarded, minting from their own wallets.\n\n6. Independent security review of the composed transaction path, findings remediated (Sundae Labs).\n\n7. Declared footprint published: policy IDs, script hashes, addresses, message tag, team wallets; Dune tagging live.\n\n8. Open-source CIP-0113 adapter and eligibility library (Apache-2.0), release notes, test evidence bundle, walkthrough video, Demo Day.",
     "trlIntegration": "TRL 2 - Technology concept formulated",
     "cip113FeeTarget": 400,
     "eligClearBudget": true,
@@ -66,16 +66,16 @@
   },
   "createdAt": 1786986799217,
   "headRevision": {
-    "id": "35731efc-850a-4541-8713-d1d24b770876",
-    "number": 12,
+    "id": "f18079bb-bcb5-4206-b342-137b0a623f37",
+    "number": 15,
     "kind": "saved",
-    "createdAt": 1787152218521
+    "createdAt": 1787529125677
   },
   "latestFinalization": {
-    "id": "d5a982a3-8c49-4e6e-b580-3286c53a94bf",
-    "cycle": 3,
-    "revisionId": "35731efc-850a-4541-8713-d1d24b770876",
-    "finalizedAt": 1787152583386
+    "id": "3f1c4d09-4e41-4df9-94bd-2c997de1311c",
+    "cycle": 4,
+    "revisionId": "f18079bb-bcb5-4206-b342-137b0a623f37",
+    "finalizedAt": 1787529139058
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",
@@ -92,7 +92,7 @@
         "key": "submission",
         "window": {
           "startsAt": 1785996000000,
-          "endsAt": 1787205600000
+          "endsAt": 1787572800000
         },
         "functions": [
           {
@@ -106,14 +106,14 @@
             "key": "finalize",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787205600000
+              "endsAt": 1787572800000
             }
           },
           {
             "key": "withdraw",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787205600000
+              "endsAt": 1787572800000
             }
           }
         ]
@@ -129,7 +129,7 @@
             "key": "flag",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787551200000
+              "endsAt": 1787659200000
             },
             "config": {
               "schema": {
