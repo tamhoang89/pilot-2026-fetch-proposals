@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 2
+- **Revision:** 10
 - **Proposer:** `stake1u8aa69fce89s9hwrhl7rqk3xuvlag0ntruwvw2kp347z0squyrl2m`
 - **Funding requested:** ₳185,000
-- **Last finalized:** 2026-08-19T17:19:17.742000+00:00
+- **Last finalized:** 2026-08-23T20:42:23.095000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -17,10 +17,15 @@ TRL 9 - Actual system proven in operational environment
 ### Why is your team well-suited to deliver this?
 
 Andre Straube, Founder & CEO: developer with 20+ years of experience. Former Tech Lead and Partner at Mottu, where he also served the Fintech Division and scaled the company from pre-seed to Series C. Ex-Siemens, also founded iDooh Media, with a successful exit.\
+Linkedin: <https://www.linkedin.com/in/andre-straube/>\
+GitHub: <https://github.com/astraube>\
 \
 Alexandre Bencz, Partner & CTO: deep experience building scalable technology major financial institutions. Ex-Google and Ex-Mottu, Alexandre developed critical systems for banks including Itaú, Bradesco and Santander, operating in highly regulated environments and working closely with regulatory authorities.\
+Linkedin: <https://www.linkedin.com/in/alexandre-bencz/>\
+GitHub: <https://github.com/bencz>\
 \
-Matheus Almeida, Co-founder & CTO: Six years of experience across financial governance and regulatory compliance, with a strong track record of working directly with leading ecosystems such as Polygon, Canton Network and Ripple, driving ecosystem expansion.
+Matheus Almeida, Co-founder & CTO: Six years of experience across financial governance and regulatory compliance, with a strong track record of working directly with leading ecosystems such as Polygon, Canton Network and Ripple, driving ecosystem expansion.\
+Linkedin: <https://www.linkedin.com/in/matheus-almeida-313b7a150/>
 
 ### Eligible area
 
@@ -32,17 +37,23 @@ Yes
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Usage is organic because users and businesses have an ongoing need to convert digital assets into BRL and settle locally via PIX. \
-\
-300 transactions averages roughly 10 per day, and we want to be transparent: Cardano's stablecoin capitalisation is still small and we have no historical data of our own on this network. We set targets we can defend under the daily cap rather than targets that only look better on paper.\
-\
+Usage is organic because users and businesses have an ongoing need to convert digital assets into BRL and settle locally via PIX.
+
+3,400 transactions averages roughly 45 per day across a measurement period we intend to lengthen by delivering Milestone 1 early. At approximately 0.17 ADA per standard transfer, since our architecture uses no custom validator, that gives a fee target of 580 ADA. We want to be transparent: Cardano's stablecoin capitalisation is still small and we have no historical data of our own on this network. We set targets derived from transaction volume we can defend rather than targets that only look better on paper.
+
 We will not incentivise transactions with giveaways or airdrops, consistent with programme rules. Growth comes from direct onboarding of the two recurring segments, documentation, and our existing distribution: web, mobile, and Partner API.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-We will acquire users through the Cardano community, ecosystem partners, direct B2B integrations and also retail marketing. Projects can embed BRL payouts through our B2B Partner API, creating a distribution channel directly to their existing users.
+Most volume comes through our retail app: roughly 2000+ transactions. These are existing PagFinance users already converting digital assets to BRL. Cardano is a new chain in the stack.
 
-PagFinance already operates crypto-to-BRL settlement infrastructure in Brazil, with live partners and clients that can port their transactions over to Cardano. This gives us an existing distribution base and a clear path to real transaction volume from launch.
+The remaining comes from existing B2B clients and Partner API integrations, where projects embed BRL payouts and reach their own users.
+
+An integration with Vendano, for example, could be a great way for us to boost our native Cardano crypto-to-fiat settlement flow. We're already in touch with the team.
+
+First two weeks: existing users are onboarded during the build phase and transact from delivery. Week 1 targets 250 transactions, week 2 targets 350.\
+\
+The evidence is our traction: more than US$ 5M processed across more than 40,000 settled transactions.
 
 ### Is the underlying project open source?
 
@@ -70,7 +81,7 @@ PagFinance is a revenue-generating payment business processing live customer mon
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-**Flow:** Users connect a CIP-30 wallet (Lace, Eternl, Vespr, Typhon, Yoroi) or our mobile app and sign one transaction sending ADA/USDCx to a per-user CIP-1852 deposit address with a registered metadata payment reference. Our indexer validates the asset via CIP-26, applies value-tier confirmation rules, and releases BRL via PIX through our regulated banking partner.
+**Flow:** Users connect a CIP-30 wallet (Lace, Eternl, Vespr, Typhon, Yoroi) or our mobile app and sign one transaction sending ADA/USDCx to a per-user CIP-1852 deposit address with a registered metadata payment reference. Our indexer validates the asset via CIP-26, applies value-tier confirmation rules, and releases BRL via PIX through our regulated banking partner (Woovi Instituição de Pagamento LTDA).
 
 **Data layer:** A managed provider is backed by an independent community provider behind one internal interface. This allows migration to Ogmios/Kupo or Dolos without application changes. Reconciliation checks block hash and slot against the last known tip.
 
@@ -90,7 +101,7 @@ Yes
 
 ### Is the work in this proposal, or substantially similar work, currently funded, previously funded, or under active consideration by any other program?
 
-No
+Yes
 
 ### Team
 
@@ -136,13 +147,11 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-We are profitable and self-funding; this grant accelerates sequencing. Without it, Cardano would be a 2027 integration. With it, we ship it this quarter.
+Pre-grant at our own cost: architecture spec, testnet validation, provider evaluation, risk design.
 
-The larger impact is shared infrastructure: an embedded BRL payout rail, abstracting the Brazilian regulatory and banking complexity. With USDCx now live on Cardano, the ecosystem has the stablecoin liquidity needed for this use case, while PagFinance provides the missing local settlement layer.
+This grant funds work not yet started: production treasury (denominated UTXO pool, atomic reservation, bounded chaining under real concurrency); isolated offline signing service and independent security review; mainnet deployment and provider failover; integration into our live PIX settlement, reconciliation and compliance pipelines. Testnet components are not a mainnet product moving real customer funds. Without this grant, Cardano is a 2027 roadmap item.
 
-**Budget:** 60% engineering, 15% security, 10% infrastructure, 10% compliance, 5% documentation/ecosystem.
-
-Granted ADA will be converted to operating currency on receipt, consistent with our treasury policy for non-BRL inflows.
+Budget: 60% engineering, 15% security, 10% infrastructure, 10% compliance, 5% docs/ecosystem. Funds are ring-fenced to this integration as a separate cost centre, reportable per milestone; ADA conversion is an FX step, not a reallocation
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -228,7 +237,11 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-250
+3400
+
+### Funder, status, and what it covers
+
+We're currently shipping a funded BRL settlement layer on Stellar as well. However, despite a few shared similarities, the scope is different, because it revolves around Stellar's SEP-31.
 
 ### Standard read and attested
 
@@ -236,7 +249,7 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-347
+580
 
 ### Current funded commitments
 
