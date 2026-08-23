@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 1
+- **Revision:** 5
 - **Proposer:** `stake1uxps2qmn404pnne875tjr6zjzf6d7ys4c4md434m3w3mm3gh3adnj`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-20T03:54:33.927000+00:00
+- **Last finalized:** 2026-08-23T15:50:58.064000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -26,13 +26,14 @@ Team:
 
 - Majd Mourad Agha (Software engineer) ([LinkedIn](https://www.linkedin.com/in/majd-mourad-agha/), [GitHub](https://github.com/Majd-Murad))
 
-- Dominic (Community manager)
 
-- Tyson (Frontend Developer)
+- Tyson (Frontend Developer)\
+  LinkedIn: <https://www.linkedin.com/in/mohammad-tello> \
+  GitHub: <https://github.com/TaiseerT>
 
-- Edmund (Frontend developer)
-
-Disclosure: no team member is named on any other proposal this round, and no member is currently delivering a funded commitment in any ecosystem or program.
+- Edmund (Frontend developer)\
+  GitHub: <https://github.com/Brave-source> \
+  LinkedIn: <https://www.linkedin.com/in/edmund-ebiyenrin-305196192?utm_source=share_via&utm_content=profile&utm_medium=member_ios>
 
 ### Eligible area
 
@@ -44,11 +45,11 @@ We pledge ecosystem value: continued operation of the stablecoin peg bots at our
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Declared target: \[700\] ADA in counted network fees over the measurement window, with at least 36 distinct external wallets (the program minimum at this award size; floor 360 ADA).
+Declared target: 700 ADA in counted network fees over the measurement window, with at least 36 distinct external wallets.
 
 Who transacts: external users on the Surge platform, which migrates onto the funded API at launch; retail users trading through spend-limited agents; developers integrating the API; and RealFi, with whom we are in discussions to stabilize USDr at its mainnet launch. Surge is non-custodial: all customer activity is signed by the customer's own wallet. Team and bot wallets are declared and excluded; targets cover external activity only.
 
-Why ambitious but defensible: the target equals roughly 2,000 external transactions across the window, about 4x our measured baseline (25 external monthly actives, 693 transactions, 601K ADA volume in 30 days) before the API, SDK, or agent layer exist. Growth is carried by recurring strategies, which transact daily by design and satisfy per-epoch floors and the daily cap; the platform migration onto declared identifiers; and agent onboarding across 36+ wallets, keeping concentration below the discount threshold.
+Why ambitious but defensible: the target equals roughly 2,000 external transactions across the window. Surge is in beta: live on mainnet with 601K ADA of 30-day volume and 397 registered users, but a small set of active external traders today. The target is a launch commitment, not an extrapolation: converting the signup base at public launch, recurring strategies that transact daily by design (satisfying per-epoch floors and the daily cap), agent onboarding across 36+ wallets below the concentration threshold, and RealFi's USDr launch.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -228,7 +229,7 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-700
+2000
 
 ### Standard read and attested
 
@@ -236,7 +237,7 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-2000
+700
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
