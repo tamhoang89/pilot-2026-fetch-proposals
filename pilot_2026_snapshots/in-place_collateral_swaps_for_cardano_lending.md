@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 12
+- **Revision:** 24
 - **Proposer:** `stake1uy6kdahcjvxgfx6p03xzaf2p83286dvz4ufeyjymdd5h5lgg9cwgk`
-- **Funding requested:** ₳140,000
-- **Last finalized:** 2026-08-20T05:40:01.607000+00:00
+- **Funding requested:** ₳95,000
+- **Last finalized:** 2026-08-23T10:08:06.978000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -20,13 +20,11 @@ This work extends a product we already operate. Dano Finance V2 runs lending, bo
 
 Mai Thanh Binh - Project Manager: <https://www.linkedin.com/in/binh-mai-6b572493/>
 
-Pham Tung Giang - Smart Contract Lead. Built the Dano Finance Lending Validators: <https://github.com/vnc4g>
+Ho Trung Dung - Smart contract Engineer: <https://github.com/hotrdung>
 
-Nguyen Thac Dan Thanh - Protocol Engineer.
+Gia Duong Duc Minh - Backend: <https://www.linkedin.com/in/ducminhgd/>
 
-Bui Hoang Minh - Backend / Indexer: <https://github.com/minhnix>
-
-Nguyen Thi Minh Thu - Frontend.
+Bui Hoang Minh - Frontend: <https://github.com/minhnix>
 
 Smart contracts reviewed by NoWithness Lab.
 
@@ -42,11 +40,11 @@ N/A
 
 All fees come from **external users**: borrowers opening, managing and repaying stablecoin debt, users swapping to defend and restore positions, and independent liquidators. **We sponsor no transactions.**
 
-We project **\~1,550 external transactions** across supply, withdraw, borrow, repay, swaps and liquidations on newly deployed contracts. Composed lending, pool and swap validators put the estimated average fee at **\~0.71 ADA**, versus the 0.33 ADA network average. We target **65 external wallets**, above the 31-wallet minimum.
+We project **\~850 external transactions** across supply, withdraw, borrow, repay, swaps and liquidations on newly deployed contracts. Composed lending, pool and swap validators put the estimated average fee at **\~0.95 ADA**, versus the 0.33 ADA network average. We target **50 external wallets**, above the 25-wallet minimum.
 
 **First 14 days:** contracts and position feed live (days 1–3); borrower migration and first swaps (4–7); public liquidator bot and external liquidator onboarding (8–12); per-epoch reporting (13–14).
 
-We plan against floors of **91.7 ADA/epoch for epochs 1–3** and **183.3 ADA for epochs 4–6**, with activity distributed rather than concentrated at launch.
+We plan against floors of 66.7 **ADA/epoch for epochs 1–3** and 133.3 **ADA for epochs 4–6**, with activity distributed rather than concentrated at launch.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -112,21 +110,29 @@ Individual
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-The market is borrowers on Cardano lending markets, and we already serve it: Dano Finance runs lending, borrowing in production at <https://dano.finance>.\
-\
-Evidence from our own production data:
+Our target market is **borrowers across Cardano lending markets**. Dano Finance already serves this market with live lending and borrowing products in production at [dano.finance](http://dano.finance).
+
+Our production data shows clear demand:
 
 - 220 borrowers and 2,360 positions
-- 226 liquidation events over the last 12 months
-- 693 collateral top-ups during drawdowns\
-  \
-  That last figure is the demand signal. Every top-up is a borrower who wanted to de-risk and had to spend capital to do it. Every liquidation is a borrower who could not.\
-  \
-  The structural evidence: no Cardano lending venue offers collateral substitution while a debt is open. Aave shipped the equivalent on Ethereum precisely because borrowers kept doing it manually and losing money in the gap, and it became a standard expectation there. Cardano borrowers face the same problem with none of the tooling.
+
+- 226 liquidations over the last 12 months
+
+- 693 collateral top-ups during market drawdowns
+
+The 693 top-ups are the strongest demand signal: borrowers were willing to deploy additional capital to protect their positions, while 226 liquidations show what happens when they cannot.
+
+This activity is verifiable on-chain through our lending smart contracts:
+
+- aca8e306eda3eb6c25a838bebac37d929c216aab13c8d463fca5a08d
+
+- c6ffee02caa95e0a25b55387f17695b0e365ade57422b249d263fc4d
+
+The market gap remains: no Cardano lending protocol currently supports collateral substitution while debt remains open. Borrowers must manage this manually, creating additional transactions, capital requirements, and execution risk. Similar functionality is already available in mature EVM lending markets, demonstrating that this is an established lending primitive rather than an untested use case.
 
 ### Applicant name
 
-Pham Tung Giang
+Mai Thanh Binh
 
 ### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
 
@@ -150,14 +156,14 @@ Yes
 
 This composes two systems we already run into a primitive neither provides alone so the whole position lifecycle sits inside newly deployed contracts.\
 \
-Allocation of the 140,000 ADA request:
+Allocation of the 95,000 ADA request:
 
-- Collateral swap validator and health-factor invariant, tests: 36,000
-- Permissionless liquidation validator and bounty mechanics: 24,000
-- Transaction builder, quote engine and integration library: 20,000
-- Position monitoring, liquidatable-position feed, dashboard: 16,000
-- External security audit and remediation: 34,000
-- Documentation, liquidator tooling, launch: 10,000\
+- Collateral swap validator and health-factor invariant, tests: 28,000
+- Permissionless liquidation validator and bounty mechanics: 16,000
+- Transaction builder, quote engine and integration library: 14,000
+- Position monitoring, liquidatable-position feed, dashboard: 8,000
+- External security audit and remediation: 24,000
+- Documentation, liquidator tooling, launch: 5,000\
   \
   The audit is not optional: this validator moves collateral inside live debt positions.
 
@@ -173,7 +179,7 @@ Yes
 
 Target delivery: month two of the three-month window, to earn extra measurement epochs.\
 \
-On-chain: USDM-denominated lending market contracts, newly deployed so the whole position lifecycle is inside the declared footprint; CollateralSwap validator executed via zero-withdrawal; permissionless liquidation validator; approved pool registry with timelocked, multisig-gated updates; declared mainnet script hashes, addresses and the Dune metadata message tag.\
+On-chain: CollateralSwap validator executed via zero-withdrawal; permissionless liquidation validator; approved pool registry with timelocked, multisig-gated updates; declared mainnet script hashes, addresses and the Dune metadata message tag.\
 \
 Off-chain: transaction builder for borrow, repay, swap, reverse swap and liquidation; quote engine returning expected collateral, health factor and fees; position view showing projected health factor before signing; liquidatable-position feed; reference liquidator bot.\
 \
@@ -215,6 +221,8 @@ Alongside it we open liquidations to anyone. Today liquidation depends on keeper
 
 - https://dano.finance
 - https://github.com/vnc4g/flexible-col-swap
+- https://github.com/dano-finance/bond-dex
+- https://github.com/dano-finance/bond-issue
 
 ### Identified dependencies
 
@@ -238,7 +246,9 @@ Yes
 
 ### Licensing / IP details
 
-We opensource our smart contract
+We have open-sourced two smart contracts: **Bond DEX** and **Bond Issue**.
+
+Our Lending and Concentrated Liquidity Pool contracts remain closed-source because they secure live user funds. We plan to publish them after they have undergone a second independent audit.
 
 ### Technical
 
@@ -254,7 +264,7 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-1550
+850
 
 ### Standard read and attested
 
@@ -262,7 +272,7 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-1100
+800
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 

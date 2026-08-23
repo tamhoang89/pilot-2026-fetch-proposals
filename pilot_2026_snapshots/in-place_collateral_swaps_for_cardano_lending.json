@@ -6,16 +6,16 @@
   "state": "finalized",
   "title": "In-Place Collateral Swaps for Cardano Lending",
   "tagline": "De-risk a loan without repaying it — one atomic transaction.",
-  "requestedAmount": 140000,
-  "updatedAt": 1787204401607,
+  "requestedAmount": 95000,
+  "updatedAt": 1787479686978,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 7 - System prototype demonstrated in operational environment",
-    "team": "This work extends a product we already operate. Dano Finance V2 runs lending, borrowing and a direct-spend concentrated liquidity AMM on Cardano mainnet, so the two systems this proposal composes are both ours, both live, and understood by the people writing the composition.\n\nMai Thanh Binh - Project Manager: <https://www.linkedin.com/in/binh-mai-6b572493/>\n\nPham Tung Giang - Smart Contract Lead. Built the Dano Finance Lending Validators: <https://github.com/vnc4g>\n\nNguyen Thac Dan Thanh - Protocol Engineer.\n\nBui Hoang Minh - Backend / Indexer: <https://github.com/minhnix>\n\nNguyen Thi Minh Thu - Frontend.\n\nSmart contracts reviewed by NoWithness Lab.",
+    "team": "This work extends a product we already operate. Dano Finance V2 runs lending, borrowing and a direct-spend concentrated liquidity AMM on Cardano mainnet, so the two systems this proposal composes are both ours, both live, and understood by the people writing the composition.\n\nMai Thanh Binh - Project Manager: <https://www.linkedin.com/in/binh-mai-6b572493/>\n\nHo Trung Dung - Smart contract Engineer: <https://github.com/hotrdung>\n\nGia Duong Duc Minh - Backend: <https://www.linkedin.com/in/ducminhgd/>\n\nBui Hoang Minh - Frontend: <https://github.com/minhnix>\n\nSmart contracts reviewed by NoWithness Lab.",
     "eligArea": true,
     "giveBack": "N/A",
-    "m2Target": "**Milestone Outputs:**\n\nCompletion of the Adoption phase and project close using the declared measurement structure: a one-epoch entry ramp from your M1 delivery, then six floored 5-day epochs - with extra epochs earned by delivering early - under the Standard's per-epoch floors and daily cap. The whole project completes within the program's four-month frame.\n\nYour declared adoption targets, restated from your answers. They drive the M2 payout and the Transaction Integrity checks, and are final at submission:\n\n- Stablecoins: 1,550 transactions expected, 1,100 ADA in counted fees\n\n**Acceptance criteria**\n\n1. The measurement window ran as declared at M1 delivery: the one-epoch entry ramp plus your floored epochs, including any extra epochs earned by early delivery.\n2. Per-epoch floors observed, with at most the Standard's one free miss.\n3. Counted totals respect the daily cap: a single day may exceed the Standard's share of your measurement-period total, but the excess does not count toward it.\n4. At least the Standard's minimum of distinct external wallets transacted with your integration during the window.\n5. All measured activity derives from the declared identifiers and complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard).\n\n**Evidence of milestone completion**\n\n1. Adoption summary statement: your actuals against each declared target.\n2. Per-epoch table: epoch number, date range, transactions and counted fees, daily cap applied (y/n), floor met (y/n), notes.\n3. Raw explorer and dashboard links for the declared identifiers.\n4. Short methodology note: how counts and fees were derived from the declared identifiers.\n5. A completion video (1-3 mins) is shared via YouTube showcasing the project outputs.\n6. Any additional cross-checks.",
-    "usagePlan": "All fees come from **external users**: borrowers opening, managing and repaying stablecoin debt, users swapping to defend and restore positions, and independent liquidators. **We sponsor no transactions.**\n\nWe project **\\~1,550 external transactions** across supply, withdraw, borrow, repay, swaps and liquidations on newly deployed contracts. Composed lending, pool and swap validators put the estimated average fee at **\\~0.71 ADA**, versus the 0.33 ADA network average. We target **65 external wallets**, above the 31-wallet minimum.\n\n**First 14 days:** contracts and position feed live (days 1–3); borrower migration and first swaps (4–7); public liquidator bot and external liquidator onboarding (8–12); per-epoch reporting (13–14).\n\nWe plan against floors of **91.7 ADA/epoch for epochs 1–3** and **183.3 ADA for epochs 4–6**, with activity distributed rather than concentrated at launch.",
+    "m2Target": "**Milestone Outputs:**\n\nCompletion of the Adoption phase and project close using the declared measurement structure: a one-epoch entry ramp from your M1 delivery, then six floored 5-day epochs - with extra epochs earned by delivering early - under the Standard's per-epoch floors and daily cap. The whole project completes within the program's four-month frame.\n\nYour declared adoption targets, restated from your answers. They drive the M2 payout and the Transaction Integrity checks, and are final at submission:\n\n- Stablecoins: 850 transactions expected, 800 ADA in counted fees\n\n**Acceptance criteria**\n\n1. The measurement window ran as declared at M1 delivery: the one-epoch entry ramp plus your floored epochs, including any extra epochs earned by early delivery.\n2. Per-epoch floors observed, with at most the Standard's one free miss.\n3. Counted totals respect the daily cap: a single day may exceed the Standard's share of your measurement-period total, but the excess does not count toward it.\n4. At least the Standard's minimum of distinct external wallets transacted with your integration during the window.\n5. All measured activity derives from the declared identifiers and complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard).\n\n**Evidence of milestone completion**\n\n1. Adoption summary statement: your actuals against each declared target.\n2. Per-epoch table: epoch number, date range, transactions and counted fees, daily cap applied (y/n), floor met (y/n), notes.\n3. Raw explorer and dashboard links for the declared identifiers.\n4. Short methodology note: how counts and fees were derived from the declared identifiers.\n5. A completion video (1-3 mins) is shared via YouTube showcasing the project outputs.\n6. Any additional cross-checks.",
+    "usagePlan": "All fees come from **external users**: borrowers opening, managing and repaying stablecoin debt, users swapping to defend and restore positions, and independent liquidators. **We sponsor no transactions.**\n\nWe project **\\~850 external transactions** across supply, withdraw, borrow, repay, swaps and liquidations on newly deployed contracts. Composed lending, pool and swap validators put the estimated average fee at **\\~0.95 ADA**, versus the 0.33 ADA network average. We target **50 external wallets**, above the 25-wallet minimum.\n\n**First 14 days:** contracts and position feed live (days 1–3); borrower migration and first swaps (4–7); public liquidator bot and external liquidator onboarding (8–12); per-epoch reporting (13–14).\n\nWe plan against floors of 66.7 **ADA/epoch for epochs 1–3** and 133.3 **ADA for epochs 4–6**, with activity distributed rather than concentrated at launch.",
     "goToMarket": "We do not have to find these users: 220 borrowers hold 2,360 positions on Dano Finance. This proposal does not need acquisition.\\\n\\\nWhat it does need is migration, and we would rather be precise than claim there is none. The Standard counts only newly deployed contracts, so a borrower is counted once their position sits in the new stable coin market. That is one transaction, started from the position view they already use, in the wallet they already hold - no new account, no new deposit, no bridge. Migration is not friction ahead of the value; it is the first counted transaction, and it opens the position to the swap feature the moment it lands.\\\n\\\nPermissionless liquidation needs a different audience. We publish a liquidator guide, a reference bot and a feed of liquidatable positions, and point at the 226 liquidations our market produced recently - the revenue we open to whoever runs one.",
     "m1Evidence": "These acceptance criteria and evidence apply to your declared integration(s) - at delivery you'll specify where each appears in the product, which user flows depend on it, and the identifier(s) that evidence it:\n\n- Stablecoins\n\n**Acceptance Criteria:**\n\n1. At least one full end-to-end mainnet transaction by a real user (please refer to [the Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard)), and the flow repeats without failure - the submitted transaction hashes show independent runs of the declared flow.\n2. The declared footprint is complete and valid: nothing pre-existing declared, and all submitted evidence matches the declared identifiers and flows.\n3. Release notes accurately describe architecture, scope, and limitations.\n4. Live demo and Q&A delivered at Demo Day using the same identifiers and flows (participation is required). Demo Day sign-off admits the project into the entry epoch of its adoption measurement window.\n\n**Evidence:**\n\n1. Live product URL.\n2. At least one transaction hash mapped to flow steps, with explorer links.\n3. The declared footprint as described in the [Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard): script hashes, policy IDs, addresses, token/NFT names (if any), registered message tag, team wallets.\n4. Short technical walkthrough demonstration video.\n5. Release notes.\n6. Repo URL + tag/commit (if project is open source).\n7. Test evidence bundle: checklist, bug log, security note.\n8. Present outputs at Demo Day.",
     "openSource": true,
@@ -29,15 +29,15 @@
     "otherFunding": false,
     "standOutTeam": true,
     "submittingAs": "Individual",
-    "targetMarket": "The market is borrowers on Cardano lending markets, and we already serve it: Dano Finance runs lending, borrowing in production at <https://dano.finance>.\\\n\\\nEvidence from our own production data:\n\n- 220 borrowers and 2,360 positions\n- 226 liquidation events over the last 12 months\n- 693 collateral top-ups during drawdowns\\\n  \\\n  That last figure is the demand signal. Every top-up is a borrower who wanted to de-risk and had to spend capital to do it. Every liquidation is a borrower who could not.\\\n  \\\n  The structural evidence: no Cardano lending venue offers collateral substitution while a debt is open. Aave shipped the equivalent on Ethereum precisely because borrowers kept doing it manually and losing money in the gap, and it became a standard expectation there. Cardano borrowers face the same problem with none of the tooling.",
-    "applicantName": "Pham Tung Giang",
+    "targetMarket": "Our target market is **borrowers across Cardano lending markets**. Dano Finance already serves this market with live lending and borrowing products in production at [dano.finance](http://dano.finance).\n\nOur production data shows clear demand:\n\n- 220 borrowers and 2,360 positions\n\n- 226 liquidations over the last 12 months\n\n- 693 collateral top-ups during market drawdowns\n\nThe 693 top-ups are the strongest demand signal: borrowers were willing to deploy additional capital to protect their positions, while 226 liquidations show what happens when they cannot.\n\nThis activity is verifiable on-chain through our lending smart contracts:\n\n- aca8e306eda3eb6c25a838bebac37d929c216aab13c8d463fca5a08d\n\n- c6ffee02caa95e0a25b55387f17695b0e365ade57422b249d263fc4d\n\nThe market gap remains: no Cardano lending protocol currently supports collateral substitution while debt remains open. Borrowers must manage this manually, creating additional transactions, capital requirements, and execution risk. Similar functionality is already available in mature EVM lending markets, demonstrating that this is an established lending primitive rather than an untested use case.",
+    "applicantName": "Mai Thanh Binh",
     "businessModel": "Borrowers pay us.\n\nWe charge a swap fee on each collateral swap, shown in the quote before signing. We also earn the existing lending spread, and CLMM pool fees on the volume a swap routes.\n\nThere is a fourth line we treat differently: a protocol share of liquidation bounties. It moves the opposite way to the others. If collateral swaps work, fewer positions get liquidated and this line shrinks. That is the outcome we want. Permissionless liquidation is in this proposal to remove a keeper as a point of failure for lenders, not to earn money.\n\nThe main reason this pays for itself is retention. A borrower who survives a drawdown keeps paying interest. A borrower who is liquidated stops. Saving a position preserves months of spread, so the swap fee can stay low enough that people actually use it.",
     "eligNamedTeam": true,
     "eligRealUsers": true,
-    "fundingImpact": "This composes two systems we already run into a primitive neither provides alone so the whole position lifecycle sits inside newly deployed contracts.\\\n\\\nAllocation of the 140,000 ADA request:\n\n- Collateral swap validator and health-factor invariant, tests: 36,000\n- Permissionless liquidation validator and bounty mechanics: 24,000\n- Transaction builder, quote engine and integration library: 20,000\n- Position monitoring, liquidatable-position feed, dashboard: 16,000\n- External security audit and remediation: 34,000\n- Documentation, liquidator tooling, launch: 10,000\\\n  \\\n  The audit is not optional: this validator moves collateral inside live debt positions.",
+    "fundingImpact": "This composes two systems we already run into a primitive neither provides alone so the whole position lifecycle sits inside newly deployed contracts.\\\n\\\nAllocation of the 95,000 ADA request:\n\n- Collateral swap validator and health-factor invariant, tests: 28,000\n- Permissionless liquidation validator and bounty mechanics: 16,000\n- Transaction builder, quote engine and integration library: 14,000\n- Position monitoring, liquidatable-position feed, dashboard: 8,000\n- External security audit and remediation: 24,000\n- Documentation, liquidator tooling, launch: 5,000\\\n  \\\n  The audit is not optional: this validator moves collateral inside live debt positions.",
     "termsAccepted": true,
     "eligRealTarget": true,
-    "m1Deliverables": "Target delivery: month two of the three-month window, to earn extra measurement epochs.\\\n\\\nOn-chain: USDM-denominated lending market contracts, newly deployed so the whole position lifecycle is inside the declared footprint; CollateralSwap validator executed via zero-withdrawal; permissionless liquidation validator; approved pool registry with timelocked, multisig-gated updates; declared mainnet script hashes, addresses and the Dune metadata message tag.\\\n\\\nOff-chain: transaction builder for borrow, repay, swap, reverse swap and liquidation; quote engine returning expected collateral, health factor and fees; position view showing projected health factor before signing; liquidatable-position feed; reference liquidator bot.\\\n\\\nLive mainnet: borrows and collateral swaps by external borrowers, and at least one liquidation, with hashes published.\\\n\\\nVerification: property and integration tests; external audit and remediation of critical and high findings; release notes.",
+    "m1Deliverables": "Target delivery: month two of the three-month window, to earn extra measurement epochs.\\\n\\\nOn-chain: CollateralSwap validator executed via zero-withdrawal; permissionless liquidation validator; approved pool registry with timelocked, multisig-gated updates; declared mainnet script hashes, addresses and the Dune metadata message tag.\\\n\\\nOff-chain: transaction builder for borrow, repay, swap, reverse swap and liquidation; quote engine returning expected collateral, health factor and fees; position view showing projected health factor before signing; liquidatable-position feed; reference liquidator bot.\\\n\\\nLive mainnet: borrows and collateral swaps by external borrowers, and at least one liquidation, with hashes published.\\\n\\\nVerification: property and integration tests; external audit and remediation of critical and high findings; release notes.",
     "trlIntegration": "TRL 2 - Technology concept formulated",
     "eligClearBudget": true,
     "eligGenuineWork": true,
@@ -45,34 +45,36 @@
     "problemSolution": "A borrower watching ADA fall has three options today, all bad. Post more collateral, which needs idle capital at the worst moment. Repay part of the debt, which means selling the asset they borrowed against. Or get liquidated and pay a penalty.\\\n\\\nWhat they want is currently impossible: keep the loan, change what backs it. Move collateral out of the falling asset into a stablecoin, ride out the volatility, move back later, without touching the debt.\\\n\\\nDoing it manually means repay, withdraw, swap, redeposit, borrow again. Five transactions, five fees, and a window where the user has no position and full market exposure. If price moves in that window, the manoeuvre taken to reduce risk has increased it.\\\n\\\nWe are building in-place collateral swaps: one atomic transaction that withdraws collateral from a lending position, swaps it through a direct-spend CLMM pool, and returns the proceeds as collateral to the same position, with the debt untouched. The position is never open, never unbacked, never briefly liquidatable. Either the sequence executes with a verifiably healthier position, or nothing happens.\\\n\\\nThe same mechanism runs in reverse to restore the original exposure, and works with assets the user already holds.\\\n\\\nAlongside it we open liquidations to anyone. Today liquidation depends on keepers the protocol runs itself - a centralisation point and a single point of failure. Under our design any wallet can execute a liquidation the contract deems valid.",
     "supportingLinks": [
       "https://dano.finance",
-      "https://github.com/vnc4g/flexible-col-swap"
+      "https://github.com/vnc4g/flexible-col-swap",
+      "https://github.com/dano-finance/bond-dex",
+      "https://github.com/dano-finance/bond-issue"
     ],
     "eligDependencies": true,
     "eligGoodStanding": true,
     "standOutBusiness": true,
     "activeCommitments": false,
     "eligMatureProduct": true,
-    "openSourceDetails": "We opensource our smart contract",
+    "openSourceDetails": "We have open-sourced two smart contracts: **Bond DEX** and **Bond Issue**.\n\nOur Lending and Concentrated Liquidity Pool contracts remain closed-source because they secure live user funds. We plan to publish them after they have undergone a second independent audit.",
     "standOutTechnical": true,
     "eligPublicProposal": true,
     "integrityConfirmed": true,
-    "stablecoinsTxCount": 1550,
+    "stablecoinsTxCount": 850,
     "eligStandardAttested": true,
-    "stablecoinsFeeTarget": 1100,
+    "stablecoinsFeeTarget": 800,
     "trlIntegrationEvidence": "The mechanism is specified against systems we already run: the health-factor invariant that must hold across an atomic collateral substitution, the routing constraint through direct-spend CLMM pools, and the liquidation validity rules that let any wallet execute.\\\n\\\nNo validator exists on any network yet, placing the integration at TRL 2.\\\n\\\nThe collateral swap validator, the permissionless liquidation validator, the transaction builder and quote engine, position monitoring and the liquidatable-position feed, property and integration tests, an external security audit and remediation, and live use by borrowers on Cardano mainnet at Milestone 1."
   },
   "createdAt": 1787197270183,
   "headRevision": {
-    "id": "10010d49-69e1-4a07-9fb9-d97fe32274e9",
-    "number": 12,
+    "id": "c6ce6091-ac53-4871-92bf-80e0f3b60285",
+    "number": 24,
     "kind": "saved",
-    "createdAt": 1787204388377
+    "createdAt": 1787479524418
   },
   "latestFinalization": {
-    "id": "89a7eacc-9d83-4cd2-997b-dde58adebca2",
-    "cycle": 4,
-    "revisionId": "10010d49-69e1-4a07-9fb9-d97fe32274e9",
-    "finalizedAt": 1787204401607
+    "id": "dc614676-2c13-4f14-9de4-e18af6f55082",
+    "cycle": 5,
+    "revisionId": "c6ce6091-ac53-4871-92bf-80e0f3b60285",
+    "finalizedAt": 1787479686978
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",
@@ -89,7 +91,7 @@
         "key": "submission",
         "window": {
           "startsAt": 1785996000000,
-          "endsAt": 1787227200000
+          "endsAt": 1787572800000
         },
         "functions": [
           {
@@ -103,14 +105,14 @@
             "key": "finalize",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787205600000
+              "endsAt": 1787572800000
             }
           },
           {
             "key": "withdraw",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787205600000
+              "endsAt": 1787572800000
             }
           }
         ]
@@ -126,7 +128,7 @@
             "key": "flag",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787551200000
+              "endsAt": 1787659200000
             },
             "config": {
               "schema": {
