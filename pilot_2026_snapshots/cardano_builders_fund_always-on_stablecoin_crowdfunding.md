@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 45
+- **Revision:** 46
 - **Proposer:** `stake1u84rzt9g539r3jd0m7tgd5ankpsldks4qmj23pykcglsp5ce7uar4`
 - **Funding requested:** ₳130,000
-- **Last finalized:** 2026-08-22T08:34:23.074000+00:00
+- **Last finalized:** 2026-08-23T06:16:55.795000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -42,11 +42,13 @@ We will start with 3 campaigns, 100 external wallets and 300 contributions in th
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-We already have a live builder application channel with two real applications received. For the first launch we also have two concrete campaign candidates already being built: YAMORI Wallet and[ TSUNAGI Node.](https://www.tsunagi.tech/) We will combine that pipeline with direct outreach to Cardano builders and Cardano Radio.
+We already have a live builder application channel with two real applications received. For launch we also have YAMORI Wallet and TSUNAGI Node as campaign candidates, plus an external candidate from the team behind the Fund14 proposal “Creating Cardano Business cases through Real Coffee World,” who plans to bring a revised coffee-related campaign to Cardano Builders Fund.
+
+We will combine this pipeline with direct outreach to Cardano builders and Cardano Radio.
 
 Our first two-week target is 3 campaigns, 100 external wallets and 300 contributions. We then plan to grow to 5 to 7 campaigns and 800 cumulative contributions, 8 to 10 campaigns and 1,400, then 10 to 15 campaigns and 2,100. Additional campaigns and repeat supporters take the total toward 3,000.
 
-The first 100 external wallets will come from supporters around the two existing builder applicants, YAMORI Wallet, TSUNAGI Node, Cardano Radio and direct Cardano outreach. Team wallets, fee sponsorship and artificial activity will not count.
+The first 100 external wallets will come from supporters around these campaigns, Cardano Radio and direct Cardano outreach. Team wallets, fee sponsorship and artificial activity will not count.
 
 ### Is the underlying project open source?
 
