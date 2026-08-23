@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 1
+- **Revision:** 3
 - **Proposer:** `stake1u8kr6zpxqc3h3rljg54ltdvex3vemk4mjk94ruclj9p7wqcleq8fv`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-20T00:49:58.096000+00:00
+- **Last finalized:** 2026-08-23T20:05:19.011000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -41,16 +41,16 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-**Who transacts and why:** independent merchants collect official USDM from subscribers for recurring or usage-based invoices. Subscribers create or fund mandates, top up or cancel; merchants sign collections. Each active mandate produces repeat lifecycle transactions without incentives.
+**Starting:** Marea has no signed merchant or subscriber commitments; none are presented as traction. Before mainnet, I will publish a tracker for 40 qualified Cardano SaaS/digital-service prospects needing recurring or usage-based billing, sourced from Catalyst, Intersect, Cardano Forum and GitHub. It records contact, reply, demo, pilot and invited-user counts. Target: 40 contacted → 12 demos → 6 pilots; each targets 20–22 customers.
 
 \
-**Target basis:** Preprod fees measured 0.180 ADA for create, 0.4655 for collect and 0.4535 for cancel. At that flow mix, 900 qualifying transactions should exceed the 361 ADA counted-fee target. At least 36 distinct external wallets will participate, with activity paced across the measurement epochs.
+**First 14 days:** Days 1–7: 2 merchants, 20 funded mandates, 25 external subscriber wallets, 45 repeat collects and 120 qualifying transactions. Days 8–14 cumulative: 4 merchants, 50 funded mandates, 60 external subscriber wallets, 220 repeat collects and 400 transactions. The tracker and dashboard show actuals.
 
 \
-**Fee attribution:** On `Collect`, the merchant contributes no spendable input; the network fee and payout min-ADA come from the subscriber-funded reserve. Marea will obtain written Catalyst classification. If excluded, the documented subscriber-side fee-UTxO fallback will be used before measurement.
+**Window model:** 125 create/fund + 2,500 collects (4–5 per wallet/week) + 125 top-up/cancel = 2,750 transactions. Preprod fees model \~1,240 ADA; the target is 1,100 ADA.
 
 \
-**Integrity:** Only approved external-wallet transactions executing Marea and moving official USDM count. Mock tokens, failures, team wallets, sponsored, reimbursed or rewarded activity are excluded. Telemetry tracks wallet diversity, funding clusters, concentration, epoch floors and daily caps.
+**Fee path:** The subscriber funds the ADA reserve at create/top-up; the external merchant signs Collect; the reserve pays the fee. This is the only production path. No team wallet funds fees. Team, mock-token, failed, rewarded or reimbursed activity is excluded.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -271,7 +271,7 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-900
+2750
 
 ### Standard read and attested
 
@@ -279,7 +279,7 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-361
+1100
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
