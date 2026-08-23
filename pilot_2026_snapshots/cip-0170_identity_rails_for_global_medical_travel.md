@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 19
+- **Revision:** 35
 - **Proposer:** `stake1uy3d2ywtn90megrayll7fxlrkf4976x7hv96dgcahuw5ssg34jyqe`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-19T17:30:13.048000+00:00
+- **Last finalized:** 2026-08-23T12:47:35.326000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,10 +16,15 @@ TRL 5 - Technology validated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-**Raschel Kaushal**\
-Computer science engineer (IGDTUW, Delhi) and AI venture founder at the INSEAD AI Venture Lab. She led partnerships for 16 months at Reslink, an Indian deep-tech hardware startup, taking it through Bharat Mobility and EV India Expo. At Aline Health she owns the product, operations, provider onboarding, the LOIs and patient-acquisition channels.\
-\
-[linkedin.com/in/raschelkaushal](http://linkedin.com/in/raschelkaushal)
+**Raschel Kaushal, Founder:** CS engineer (IGDTUW), INSEAD AI Venture Lab founder and former partnerships lead at Reslink. Leads product, operations, provider onboarding, LOIs and patient acquisition. [LinkedIn](http://linkedin.com/in/raschelkaushal)
+
+**Dr. Dinesh Kumar Kaushal, Medical Advisor:** MBBS, MAMC; Nuclear Medicine, INMAS (DRDO). Head of Nuclear Medicine & PET at National Heart Institute, Delhi, with 20+ years in imaging and radionuclide therapy. Defines clinical milestones, validates workflows and leads clinician onboarding. [LinkedIn](http://linkedin.com/in/dinesh-kaushal-032a3126)
+
+**Shubham Talwar, Fortis Worldwide Ops:** Leads Insurance, Embassy, Pacific Islands & Rest of World at Fortis Group, with seven years in international sales and business analysis. Runs the international patient desk and is our contact for referrals and consultant introductions. [LinkedIn](http://linkedin.com/in/shubham-talwar-544554ab)
+
+**Nandika Bassi, Marketing:** BA Psychology, University of Melbourne, with experience in marketing, outreach and operations. Leads campaigns and patient onboarding. [LinkedIn](http://au.linkedin.com/in/nandika-bassi-25b3a2296)
+
+**Sakshi Soni, Lead Engineer:** [B.Tech](http://B.Tech) CS, IGDTUW; Google Women Engineers scholar and former Microsoft intern. Leads KERI, ACDC credentials, TEL revocation, passkeys, attestations, verifier infrastructure, mainnet deployment, and the security review. [LinkedIn](http://linkedin.com/in/sakshisoni23)
 
 ### Eligible area
 
@@ -29,19 +34,19 @@ Yes
 
 Patients self-anchor a KERI credential at booking from their passkey wallet; clinicians attest admission and sign-off; aftercare teams attest recovery checks each epoch a case is active; the handover digest anchors at transfer of care; follow-up clinicians and the insurer attest; auditors review. Every transaction is signed and paid by the acting party's own wallet. A funded case generates 8-14 attestations; cadence is built into the care pathway itself, spreading across epochs rather than spiking.
 
-A 17-day Liberia pilot produced 600+ inbound patient leads at $0.2 per lead. A fraction of that flow converts to 100+ funded diagnostics and dental cases, plus 40 professional and auditor wallets across our hospital network (Fortis, Marengo Asia, Artemis, Max): \~1,300-1,500 attestations at the 0.33 ADA network average.
+A 17-day Liberia pilot produced 600+ inbound patient leads at $0.2 per lead. A fraction of that flow converts to 100+ funded diagnostics and dental cases, plus 40 professional and auditor wallets across our hospital network (NHI & Fortis): \~1,300-1,500 attestations at the 0.33 ADA network average.\
+\
+The front of the window is dated rather than assumed: around 120 transactions across 25 external wallets in the entry epoch, around 300 across 60 wallets by day 15. The rest accrues as those cases move through handover, aftercare and follow-up, with new bookings opening each epoch.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Our own acquisition funnel: 17 days on the ground in Liberia produced 600+ inbound patient leads at an optimized $0.2 per lead, from 325K+ impressions at \~2% CTR. That funnel now points at diagnostics and dental, which convert inside a 30-day window.
+Our funnel is live. In 17 days in Liberia, it generated 600+ inbound patient leads at $0.20/lead from 325K+ impressions at \~2% CTR. It now targets diagnostics and dental, which close within 30 days, so post–Demo Day conversions can transact. Teleconsult partners in Zambia, Nigeria and the Caribbean feed patients in.
 
-Hospital referrals: Fortis, Marengo Asia, Artemis, and Max Healthcare, onboarding as credentialed providers.
+Provider onboarding: Fortis Healthcare’s Shubham Talwar routes referrals to treating consultants, while NHI Delhi’s Dr. Dinesh Kumar Kaushal introduces clinicians and validates the workflow.
 
-(3) Teleconsult clinic partners in Zambia, Liberia, Nigeria, and the Caribbean feed assessed patients in.
+Onboarding happens inside booking: patients create a passkey wallet, anchor their credential and fund gas; professionals sign and pay for attestations.
 
-(4) 30+ professional attester wallets across those providers, plus independent auditors. Total 200+ external wallets against a 10-wallet minimum.
-
-Onboarding sits inside the booking journey. Each patient creates a passkey self-custody wallet, anchors their own CIP-0170 credential, and funds their own gas; every attestation is signed and paid by the professional's own wallet. Provider credentials anchor pre-window; first cases run from day 1.
+From Demo Day sign-off, with 10+ professionals credentialed: Days 1–5 target 15 patients, 25 external wallets and \~120 transactions. Days 6–15 add 35 patients, aftercare and first insurer/auditor attestations, reaching 60 wallets and \~300 cumulative transactions. Network target: 40 professionals vs. a 10-wallet minimum.
 
 ### Is the underlying project open source?
 
@@ -97,11 +102,11 @@ Incorporated entity
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-Our target market is patients who cross a border for treatment, plus the operators and insurers who serve them. The demand doesn't need our projections. The UK has 7.2 million people on the NHS waiting list; Caribbean households spend 40% of income on healthcare; patients face &gt;3x prices locally versus equally effective treatment abroad. India received 507K+ foreign arrivals for medical treatment in 2025, with costs 65-90% below developed-market prices, and the global market is headed from $58B toward $120B+ at 14% CAGR. Live operators already monetize this gap: The Medical Travel Company (UK), Bookimed, and hospital international patient desks.
+Our market is cross-border patients, plus the operators and insurers serving them. Demand is already proven: the UK has 7.2M people on NHS waiting lists, Caribbean households spend \~40% of income on healthcare, and India received 507K+ medical travellers in 2025, with treatment 65–90% cheaper than developed markets. The global market is growing from \~$58B toward $120B+.
 
-Our product-market fit evidence is our own. Before asking the market to believe us, we tested it: 17 days on the ground in Liberia produced 600+ inbound patient leads at an optimized $0.2 per lead, from 325K+ impressions at \~2% CTR. On the supply side, we work with India's leading hospital groups: Fortis, Marengo Asia, Artemis, and Max Healthcare.
+Our own PMF evidence is live. In 17 days in Liberia, we generated 600+ inbound patient leads at $0.20 each from 325K+ impressions at \~2% CTR. At NHI Delhi, Dr. Dinesh Kumar Kaushal introduces clinicians for credentialing; at Fortis, Shubham Talwar routes international referrals and consultant introductions.
 
-None of them sell verifiability. Insurers need treatment evidence they can trust; follow-up clinicians need handover records that cannot be quietly edited. That is the layer this grant funds, riding on cases our tested funnel already produces. Acquisition starts with diagnostics and dental, the packages with decision cycles fast enough to convert inside a 30-day window.
+Existing operators sell treatment access, not verifiability. We add trusted treatment evidence and tamper-resistant handover records to cases our funnel already produces, starting with diagnostics and dental, where decisions can close within 30 days.
 
 ### Applicant name
 
@@ -109,13 +114,13 @@ Raschel Kaushal
 
 ### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
 
-Our business runs on conventional infrastructure and fiat rails; the chain carries only identity and evidence, never money. Who pays, with tested numbers: 
+Our business runs on conventional infrastructure and fiat rails; the chain carries identity and evidence, never money.
 
-- Hospitals pay us a 30% referral commission per treated patient. For India, a $7,200 procedure at 30% is $2,160 per patient
-- Clinic partners in our teleconsultation stream (Zambia, Liberia, Nigeria, Caribbean) share a 30% consult fee
-- Providers pay credential and network fees to appear as verified, and insurers pay for the verifiable evidence feed. The grant funds only the identity integration; referral economics fund operations, and because no payments touch the chain, we carry no payment-licensing drag.
+Hospitals pay a 30% referral commission per treated patient. In India, a $7,200 procedure yields $2,160 to us, with commission routes through National Heart Institute and Fortis Healthcare. Teleconsult clinic partners across Zambia, Liberia, Nigeria and the Caribbean share a 30% consult fee. Providers pay credential/network fees to be verified, and insurers pay for the verifiable evidence feed.
 
-Usage continues because attestations are a byproduct of care happening: every funded case anchors a patient credential and a stream of care attestations, every onboarded hospital brings a recurring attester stream with no grant incentive attached, and each new corridor reuses the same declared footprint.
+Grant funding covers only identity integration; referral economics fund operations, with no payment-licensing burden because payments stay off-chain.
+
+Usage compounds with care: each funded case anchors a patient credential and care attestations, each hospital adds a recurring attester stream, and every new corridor reuses the same declared footprint.
 
 ### On-chain identity (CIP-0170) - expected transaction count
 
@@ -131,9 +136,25 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Without this grant it never reaches mainnet in a live medical operation. What remains unfunded: replacing the demo's sponsor relayer with user-paid flows (patients self-anchoring from passkey wallets, professionals paying their own attestations), moving KERI witnesses to stable hosts, tooling our hospital clinicians will actually use, a security review, and connecting the chain layer to our tested patient funnel. Nothing is retroactive: the prototype predates the grant and is not billed to it.\
-\
-We spend on user-paid flow rework and wallet onboarding; witness infrastructure; clinician tooling; platform integration and evidence explorer; security review and counsel; mainnet deploy, Demo Day, adoption ops.
+Funding takes the system from Preprod to production over three months,
+
+- User-paid flows, passkey wallets, self-anchoring and professional attestations: 46,000 ADA
+
+- Clinician tooling from admission through follow-up: 34,000 ADA
+
+- Mainnet deployment, 10+ professional credentials, Demo Day and adoption ops: 32,000 ADA
+
+- Platform integration and KEL/TEL evidence explorer: 32,000 ADA
+
+- Independent security review: 16,000 ADA
+
+- Security remediation and QA: 12,000 ADA
+
+- Three KERI witnesses, monitoring and infrastructure: 14,000 ADA
+
+- Legal, privacy and deployment counsel: 8,000 ADA
+
+- Release engineering and production testing: 6,000 ADA
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -145,18 +166,19 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-Within 3 months, live on Cardano mainnet and demonstrated at Demo Day:
+Within 3 months, live on mainnet and demonstrated at Demo Day:
 
-1. The Aline Health platform in production at a stable URL: booking journey with passkey wallet onboarding, patient credential self-anchoring, and a public evidence explorer.
-2. Our organizational KERI authority on mainnet (3 witnesses, 2-of-3 threshold), its CIP-0170 lifecycle anchored under the registered labels.
-3. A credentialed professional network: at least 10 named professionals (clinicians, aftercare, insurer, auditor) holding anchored, revocable credentials, attesting from their own wallets.
-4. User-paid attestation flows live: patient self-anchor, admission, treatment sign-off, discharge handover digest, aftercare, follow-up.
-5. Registered message tag on every transaction; full footprint declared (org AIDs, schema SAIDs, addresses, team wallets), all newly deployed.
-6. Demo Day: an external patient self-anchors and an independent clinician submits a live attestation on mainnet, plus a revocation demo.
+1. The platform in production at a stable URL: booking journey with passkey wallet onboarding, credential self-anchoring, and a public evidence explorer.
+2. Our organizational KERI authority on mainnet, 3 witnesses at 2-of-3, its CIP-0170 lifecycle anchored under the registered labels.
+3. A credentialed network before Demo Day: 10+ named clinicians from NHI & Fortis, aftercare, insurer and auditor roles holding anchored, revocable credentials and attesting from their own wallets.
+4. User-paid flows live: self-anchor, admission, sign-off, discharge handover digest, aftercare, follow-up.
+5. Registered message tag on every transaction; footprint declared (org AIDs, schema SAIDs, addresses, team wallets), all newly deployed.
+6. Launch readiness at sign-off: first cases booked, ready to transact from day 1.
+7. Demo Day: an external patient self-anchors, an independent clinician attests on mainnet, plus a revocation demo.
 
 ### How far along is the integration you're proposing, today?
 
-TRL 9 - Actual system proven in operational environment
+TRL 5 - Technology validated in relevant environment
 
 ### On-chain identity (CIP-0170) - fee target (ADA)
 
@@ -187,6 +209,9 @@ Three groups have this problem: patients trusting a provider network they cannot
 ### Supporting links (repo, site, demo)
 
 - https://preprod-id.alinehealth.world/
+- https://linkedin.com/in/raschelkaushal
+- https://www.linkedin.com/in/dinesh-kaushal-032a3126 
+- https://www.linkedin.com/in/shubham-talwar-544554ab
 
 ### Identified dependencies
 
@@ -226,10 +251,6 @@ Yes
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-The demo's sponsor relayer goes, replaced by user-paid flows where patients self-anchor from passkey wallets and professionals pay their own attestations, and the KERI witnesses move to stable production hosts.
+What exists today, live at [preprod-id.alinehealth.world ](http://preprod-id.alinehealth.world): our org KERI AID with three witnesses at 2-of-3, its lifecycle anchored under labels 170, 674 and 9126 with a registered CIP-20 tag; ACDC role credentials chained to that authority; a KEL at post-rotation sequence with witness receipts; a revoked credential failing to authorize later actions; SHA-256 milestone digests against opaque case references. All synthetic data, sponsor relayer paying fees.
 
-An independent security review, before any real user touches the system. 
-
-We deploy to mainnet with newly deployed identifiers and our declared footprint, and run a live Demo Day: an external patient self-anchors, a clinician submits a real attestation. 
-
-Live operation: real patients and clinicians from our tested funnel transact through the adoption window, and anyone can verify credential state on our explorer.
+The grant covers the ground from here: mainnet with newly deployed identifiers, user-paid flows from passkey wallets, witnesses on stable hosts, clinician tooling, and security review before any real user transacts.
