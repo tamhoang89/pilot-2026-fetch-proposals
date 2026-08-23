@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 41
+- **Revision:** 43
 - **Proposer:** `stake1uyjnt8h5kesf7hzxtvg2cmd4ltk27q8v4hzjxa0mf06xrtcjng4ck`
 - **Funding requested:** ₳120,000
-- **Last finalized:** 2026-08-20T05:27:16.091000+00:00
+- **Last finalized:** 2026-08-23T09:27:35.320000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -38,33 +38,23 @@ This proposal gives Cardano native gold exposure, productive USDM utility, real 
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-We target 1,000 ADA in counted Cardano network fees, approximately 3.6× the 279 ADA programme floor.
+Genuine usage comes from external Cardano users entering and exiting USDM/sGOLD positions because they want gold exposure without leaving Cardano, using a CEX, bridging, or managing a CDP.
 
-The projection assumes:
+We target 1,000 ADA in counted network fees from about 1,560 external transactions, at least 50 distinct external wallets, and activity spread across the measurement window. Team, treasury, test, internally funded or sponsored wallets will not be counted.
 
-- \~1,560 external transactions, averaging \~0.64 ADA in network fees.
-- 50 distinct external wallets, above the 28-wallet minimum.
-- Activity distributed across the measurement window, with no single day above 20% or wallet above 35%.
-- Approximately 50 external transactions per day after M1 delivery in month two.
+First 14 days after M1: Day 1 launch announcement with product URL, cap, risk note, USDM guide and walkthrough. Days 2-3 live support plus outreach to BTCGrow users, Cardano Vietnam, DeFi users, builders and treasury operators. Days 4-5 early usage update and public Q&A. Days 6-7 fix blockers and follow up with users who connected but did not transact. Day 8 publish Week 1 usage report. Days 9-11 second outreach wave through X, Telegram, Discord, Cardano Vietnam and direct DeFi outreach; share SDK/API examples with wallets and aggregators. Days 12-14 user follow-up, entry/redeem testing and Week 2 report.
 
-Activity will come from users entering and exiting USDM/sGOLD positions, treasury rotations, aggregator routing, and DeFi integrations. This is a round trip, not one transaction.
+14-day success: 20-30 external wallets, 150-250 transactions, visible USDM/sGOLD volume, and no single wallet dominating usage.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Distribution is partly engineering: adoption depends on external wallets transacting inside a fixed window.\
-Before M1, we publish the onchain architecture, threat model and risk parameters with the simulation, run builder reviews, and start a conversation with the USDM team.
+We will onboard real external users through channels we can access directly, not team-owned or sponsored wallets. We are not assuming access to official USDM/Mehen channels; any issuer support is upside, not required.
 
-\
-At M1, we launch one capped sGOLD pool: connect wallet, deposit USDM, review quote, fee, reserve ratio, oracle freshness and cap, sign, hold and redeem. Risk limits, identifiers and known limitations are public from day one.
+Initial sources: existing BTCGrow users and contacts from our live Cardano product; Cardano Vietnam and regional Cardano communities; public Cardano DeFi discussions on X, Telegram and Discord; direct outreach to DeFi users, builders and treasury operators; and wallet/aggregator teams that can review the TypeScript SDK and route users if useful.
 
-\
-The primary channel is stablecoin holders: users who hold or can acquire USDM. We use issuer co-marketing, USDM liquidity venues, and content around "I hold USDM, now what?"
+Before M1 we publish a launch pack: product URL, sGOLD risk note, USDM funding guide, pool cap, policy IDs, script hashes, known limitations and walkthrough.
 
-\
-For wallets and aggregators, we ship a TypeScript SDK, transaction build examples, reference scripts, deterministic errors and test vectors. We also use direct channels.
-
-\
-Activity is measured against declared script hashes, policy IDs, pool addresses and registered message tag on the programme dashboard from M1.
+For 14 days after M1 we run daily onboarding: launch posts, direct outreach, live support, follow-up with connected but inactive users, and Week 1/Week 2 reports covering external wallets, transactions, volume, fees, concentration and excluded team/test wallets.
 
 ### Is the underlying project open source?
 
