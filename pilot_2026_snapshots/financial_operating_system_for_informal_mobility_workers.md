@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 19
+- **Revision:** 22
 - **Proposer:** `stake1uxdspy5nvpfw8pushhkhr5eytlrka7t5dsapws7cc45ezzsdgy2zn`
-- **Funding requested:** ₳185,000
-- **Last finalized:** 2026-08-19T16:22:36.836000+00:00
+- **Funding requested:** ₳165,000
+- **Last finalized:** 2026-08-23T22:48:01.810000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,9 +16,9 @@ TRL 6 - Technology demonstrated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-- **Ndukwe Winnifred — COO:** Is a Petroleum engineer final year student Leads operations and execution, with experience across operational systems, logistics, and mobility.
+- **Ndukwe Anita — COO:**  Leads operations and execution, Anita has worked in [susus.club](https://susus.club) a fintech platform that allows users to save in usd and withdraw in dollar backed my pool togther and circle with experience across operational systems, logistics, and mobility.
 
-- <https://x.com/real_winni3>
+<https://www.linkedin.com/in/ndukwe-anita-2a3979243/>
 
 - **Andrew David — CTO:** \` is a Senior Backend Engineer with over 5 years of experience building distributed systems and fintech infrastructure. He works primarily in Python and Go, with deep expertise in payments —from NUBAN provisioning and SafeHaven API integrations to event-driven architectures using Kafka and Redis. His career has taken him through companies like Clear Codes, KAEDCO, DMPSIMPS, and Federal Medical Centre Abuja, where he built everything from ERP modules to HR systems and payslip platforms, giving him a rare mix of enterprise reliability and startup speed.
 
@@ -139,7 +139,7 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-3riKE already works. A Lagos driver owns his tricycle through TricycleNFT, a global investor holds a fractional share, and real yield has already been claimed. The loop is built, tested, and verifiable on Cardano Preprod. This grant moves 3riKE from testnet to mainnet with real Cardano native stablecoin settlement. Funding covers mainnet deployment (₳40,000), independent security audits and QA (₳35,000), and USDM/USDCx integration (₳35,000) to enable real driver repayments and investor payouts. ₳25,000 supports driver and investor onboarding through cooperatives in Lagos, Ibadan, and Accra, while ₳15,000 covers project management, Catalyst reporting, Dune analytics, compliance documentation, and Demo Day. Total requested: **₳150,000**.
+3riKE already works. A Lagos driver owns his tricycle through TricycleNFT, a global investor holds a fractional share, and real yield has already been claimed. The loop is built, tested, and verifiable on Cardano Preprod. This grant moves 3riKE from testnet to mainnet with real Cardano native stablecoin settlement. Funding covers mainnet deployment (₳40,000), independent security audits and QA (₳35,000), and USDM/USDCx integration (₳35,000) to enable real driver repayments and investor payouts. ₳40,000 supports driver and investor onboarding through cooperatives in Lagos, Ibadan, and Accra, while ₳15,000 covers project management, Catalyst reporting, Dune analytics, compliance documentation, and Demo Day. Total requested: **₳165,000**.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
