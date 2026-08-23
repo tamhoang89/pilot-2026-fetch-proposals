@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 45
+- **Revision:** 62
 - **Proposer:** `stake1uxy8uagayul3nmm7qmzl4tu9g7z37vdrdwmmrr8cv7fdn5gzyjywq`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-19T20:31:35.491000+00:00
+- **Last finalized:** 2026-08-23T14:03:30.319000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,13 +16,11 @@ TRL 7 - System prototype demonstrated in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-UzimaNexus combines healthcare domain expertise, software engineering, blockchain experience and an existing deployed healthcare platform. [**Prudence Ibila, CEO**](https://www.linkedin.com/in/ibila-prudence26/), leads product strategy, healthcare partnerships, user validation and business development. [**Alvin Maase, CTO**](https://www.linkedin.com/in/alvin-m-b3b968180/), leads the technical architecture and implementation. Our technical team has already built healthcare and enterprise software and understands the interoperability, security and workflow requirements of real-world health systems.
+[**Prudence Ibila, CEO**](https://www.linkedin.com/in/ibila-prudence26/), leads product strategy, healthcare partnerships, user validation and business development. [**Alvin Maase, CTO**](https://www.linkedin.com/in/alvin-m-b3b968180/), owns architecture and implementation, including the anchoring pipeline now running on PREPROD: Alvin's [**GITHUB**](https://github.com/maase-alvin). Our technical consulting partner [**Le-Bumba Technologies**](https://www.lebumbatech.com) is on retainer for additional engineering and infrastructure capacity.
 
-UzimaNexus is not starting from an idea. We have an existing healthcare platform with **1,530+ patients, 10+ specialists and a 500+ clinic pipeline valued at over $1M**, providing an existing environment in which to validate the proposed integration.
+UzimaNexus is not starting from an idea. We run a deployed clinical platform in Kenya: 4 tenants, 1,530+ patients, 2,581 medical records, 10+ specialists, a 500+ clinic pipeline, on Django, Celery, Postgres and Kubernetes. That gives us the one input this integration cannot buy, facilities that already log encounters daily, so a clinic-signed attestation is a new signature on an existing workflow rather than a new workflow.
 
-We were also part of the [**Techstars + Cardano Founder Catalyst Program**](https://www.techstars.com/blog/program-news/introducing-the-2025-techstars-cardano-founder-catalyst-cohort), giving the team direct exposure to Cardano ecosystem expertise and founder-focused guidance.
-
-Our technical consulting partner, [**Le-Bumba Technologies**](https://www.lebumbatech.com), on retainer, provides additional software engineering and infrastructure capability. Together, we have the domain knowledge, technical capacity, existing users, and ecosystem exposure required for full intergration.
+We were part of the [**Techstars + Cardano Founder Catalyst Program**](https://www.techstars.com/blog/program-news/introducing-the-2025-techstars-cardano-founder-catalyst-cohort). KERI is new to us and we say so: the funded plan builds on signify-ts and the published KERI specifications, with a third-party security review budgeted at 22,000 ADA to audit a custody model we do not yet run in production.
 
 ### Eligible area
 
@@ -34,21 +32,27 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-WHO: the clinic, not UzimaNexus. At shift close the nurse in-charge signs one attestation over that shift set of record hashes, anchoring its key event log under CIP-0170. UziAttest, a container it runs, generates its own KERI AID and Cardano keys on clinic hardware, never sent to us, and the clinic pays every mainnet fee from its own wallet. We cannot sign or pay for it, so no script over our wallets reproduces this. No reward, rebate, points or subsidy.
+WHO: the clinic, not UzimaNexus. At shift close its nurse in-charge signs one attestation over that shift set of record hashes, anchoring its key event log (CIP-0170). UziAttest, the container it runs, makes its KERI AID and Cardano keys on site, never sent to us, and pays every fee. No subsidy.
 
-WHY: obligations they already carry: SHA claim substantiation, donor audit at faith-based and NGO clinics, Data Protection Act records.
+WHY: obligations they already carry, SHA claim substantiation, donor audit at faith-based and NGO clinics, Data Protection Act.
 
-HOW OFTEN: two shift closes a day, with or without Cardano.
+HOW OFTEN, measured not assumed: 4 tenants run today, 3 provisioned inside 33 days. One logged 2,588 encounters over 345 active days since May 2024, median 7 a day.
 
-TARGET: 500 waitlisted, 100 targeted, 25 converted, one key pair each = 25 separately funded external stake keys, 2.5x the 10-wallet gate, clearing at 10 of 40. 25 x 60 = 1500 attestations over 30 days, at 0.367 = 550 ADA, tracking 0.363 tADA measured across 146 operator-signed PREPROD anchors (readiness, not footprint; mainnet at M1 inside 3 months, early to earn epochs). Ambitious band, 5.5x the 100 floor. 22 ADA per clinic, a lab reagent. No facility tops 4 percent, no day tops 3.
+TARGET, sized to the wallet gate, not conversion: 12 external clinics x 2 x 50 days = 1,200 attestations at 0.375 = 450 ADA, tracking 0.363 tADA over 146 operator-signed PREPROD anchors. 12, the minimum is 10 external stake keys, so 10 of 12 clears it; our own tenant is a declared own wallet, zero. At the 12-epoch window a month-2 cutover earns, the peak epoch floor needs 10.2 steady clinics, plan 12. Cutover waits on 10 signed letters of intent, plan 12, naming facility, shifts and stake key.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-We will use direct B2B healthcare sales, our existing provider pipeline, partnerships and our deployed patient platform to onboard users. Our strongest evidence is existing traction: **500+ clinics on our waitlist representing a $1M+ pipeline, 1,530+ patients and 10+ specialists**, alongside an already deployed patient prototype.
+Channel is direct B2B into facilities already on the platform: 4 tenants live, 3 provisioned inside 33 days; 500+ waitlisted is upside, not basis.
 
-We will first onboard selected clinics, diagnostic providers and specialists from this existing pipeline. Providers will access the Cardano functionality through APIs and familiar UzimaNexus workflows rather than replacing their existing systems. Patients will be onboarded through our existing mobile experience and consent flows.
+Gate before cutover: 10, plan 12 signed letters of intent, each naming the facility, its shifts and the stake key it will generate. No letters, no cutover.
 
-We will measure onboarding conversion, active providers, patients using consent, records anchored, verification events and repeat usage. Feedback from early users will guide iteration before broader deployment.
+Activation, 2 days per clinic: install UziAttest, keygen witnessed on clinic hardware and never received by us, clinic buys its own ADA (22 a month, USD 4), first attestation verified, nurse in-charge trained.
+
+First 14 days on mainnet: days 1-7, 8 clinics, 8 external stake keys, 112 attestations, 42 ADA clinic-paid; days 8-14, 12 clinics, 12 stake keys vs the 10 minimum, 280 cumulative, 105 ADA, 23 percent of target, 1,100 encounters covered.
+
+Support: named onboarding owner per clinic, WhatsApp line, day-3 and day-10 check-ins, missed shift close alert, per-epoch table weekly.
+
+Measured: clinics signing, external stake keys, attestations, records covered, counted fees, repeat rate.
 
 ### Is the underlying project open source?
 
@@ -64,11 +68,11 @@ KenyaEMR (OpenMRS distribution) and DHIS2 (HISP UiO, national in Kenya since 201
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-TRL 7 covers the existing product, on production operation rather than on mainnet: UzimaNexus is deployed and in clinical use in Kenya, serving 1,530+ patients, holding 2,581 medical records, on Django, Celery and Postgres.
+**TRL 7 covers the existing UzimaNexus healthcare product**, which is deployed and operating in a real healthcare environment in Kenya. It serves 1,530+ patients and operates on Django, Celery and Postgres.
 
-The Cardano integration sits lower and is declared separately at TRL 5. All chain activity to date is PREPROD, verifiable via Koios: [2,581 of 2,581 record hashes anchored](https://l1nq.com/e6x5s64) across 146 PREPROD transactions, so chain and database reconcile exactly.
+**The proposed Cardano integration is assessed separately at TRL 3.** The existing healthcare platform's maturity should not be interpreted as the maturity of the new CIP-0170/KERI integration.
 
-All 146 PREPROD anchors were operator signed, so they are readiness evidence, not adoption, and cannot be declared footprint. The integration reaches TRL 7, live on Cardano mainnet with real transactions, at Milestone 1 within 3 months of selection.
+All existing chain activity to date is PREPROD and is used only as technical readiness evidence. The [**2,581 record hashes anchored**](https://l1nq.com/e6x5s64) across 146 PREPROD transactions demonstrate that the existing record-anchoring pipeline can submit and reconcile hashes on Cardano, but they do not constitute a validated CIP-0170/KERI implementation or production adoption.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
@@ -120,7 +124,7 @@ The Cardano grant funds build and validation, not operations. After the pilot, t
 
 ### On-chain identity (CIP-0170) - expected transaction count
 
-1500
+1200
 
 ### Named, verifiable team
 
@@ -132,7 +136,7 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-Nothing clinic signed reaches Cardano today: in the repo, did_service submits nothing. Basis: 22 days/pm, senior backend Nairobi USD 116.50/day, ADA at USD 0.179, so 14,300 ADA/pm; 9.0 pm build labour. Of 200,000 ADA: KERI agent, KEL, pre-rotation, 3 witnesses 35,750 (2.5 pm); UziAttest container, keys generated on clinic hardware 35,750 (2.5); signify sidecar, newly registered message tag 21,450 (1.5); delete platform derived keys, replace mocked DID, verifier CLI 21,450 (1.5); mainnet cutover, live M1 demo 14,300 (1.0); security review 22,000 (20 days, USD 197); onboarding 25 clinics that pay own fees 25,000; hosting, docs, contingency 24,300. Target 550 ADA over about 1,500 clinic attestations.
+Nothing clinic signed reaches Cardano today: in the repo, did_service submits nothing. Basis: 22 days/pm, senior backend Nairobi USD 116.50/day, ADA at USD 0.179, so 14,300 ADA/pm; 9.0 pm build labour. Of 200,000 ADA: KERI agent, KEL, pre-rotation, 3 witnesses 35,750 (2.5 pm); UziAttest container, keys generated on clinic hardware 35,750 (2.5); signify sidecar, newly registered message tag 21,450 (1.5); delete platform derived keys, replace mocked DID, verifier CLI 21,450 (1.5); mainnet cutover, live M1 demo 14,300 (1.0); security review 22,000 (20 days, USD 197); activating 12 clinics that pay their own fees 25,000; hosting, docs, contingency 24,300. Target 450 ADA over about 1,200 clinic attestations, measured after M1.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -144,31 +148,29 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-Live on Cardano mainnet, demonstrated live inside 3 months; cutover month 2 to earn epochs.
+Live on mainnet inside 3 months, demonstrated live; cutover month 2 earns epochs.
 
-1 Registered CIP-10 message tag: merged registry PR and first mainnet tx carrying it, replacing squatted labels 721 and 674.
+1 Registered CIP-10 message tag: merged registry PR and first mainnet tx carrying it, replacing labels 721 and 674.
 
-2 Footprint file at a fixed commit: mainnet AID prefixes and anchor addresses created after selection, plus operator stake keys; nothing preprod declared.
+2 Footprint at a fixed commit: mainnet AIDs, anchor addresses and stake keys, made after selection; nothing preprod declared.
 
-3 UziAttest image tag, sha256 digest and keygen runbook: each clinic generates its own KERI AID and payment keys on its own hardware and pays its own fee.
+3 UziAttest image tag, sha256 digest, keygen runbook: each clinic makes its KERI AID and payment keys on its own hardware, pays its fee.
 
 4 KEL, pre-rotation, 3 witnesses: inception and rotation tx hashes, witness endpoints, duplicity vectors.
 
 5 Verifier CLI checking an attestation from a tx hash alone; diffs deleting generate_wallet_from_seed and the mocked DID anchor.
 
-6 25 of 100 clinics signing per shift, 25 external stake keys vs the 10 gate, 1,500 attestations, 550 ADA clinic-paid.
+6 Activation capacity, not adoption volume: 12 letters of intent, 12 clinic-held stake keys, 2 proof attestations each (about 24 mainnet txs), the flow repeats. None counted: 1,200 and 450 are measured only in the post-Demo-Day window.
 
 7 Third-party security review with remediation commits.
 
-Demo: inception, rotation, attestation still verifying.
-
 ### How far along is the integration you're proposing, today?
 
-TRL 5 - Technology validated in relevant environment
+TRL 3 - Experimental proof of concept
 
 ### On-chain identity (CIP-0170) - fee target (ADA)
 
-550
+450
 
 ### Clear budget
 
@@ -240,8 +242,8 @@ Yes
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-TRL 5 today, TRL 7 live on Cardano mainnet at Milestone 1, within 3 months of selection.
+TRL 3 for the declared integration. Nothing on the CIP-0170 path exists: no keripy, signify-ts, KERIA or CESR in the repo, did_service returns a placeholder, there is no registered CIP-10 tag and no mainnet identifier.
 
-Working now: the sign, submit, confirm pipeline. 2,581 record hashes, covering all [2,581 production records](https://l1nq.com/e6x5s64), are anchored across 146 PREPROD transactions in 7 epochs, 18 May to 19 Aug 2026, for 53.00 tADA, 0.363 per transaction, which sizes the declared target; all operator signed on PREPROD, so this is readiness for mainnet at Milestone 1, not adoption.
+What TRL 3 rests on is transport, not identity: a working build, sign, submit, confirm path that anchored 2,581 record hashes across 146 PREPROD transactions in 7 epochs, 18 May to 19 Aug 2026, 53.00 tADA, 0.363 per transaction. All 146 were operator signed on PREPROD. That is anchoring readiness. The KEL, pre-rotation, witness pool, signify sidecar, clinic-side keygen and verifier are our implementation points.
 
-Greenfield: no keripy, signify-ts, KERIA or CESR in the repo, so the KERI stack is new; did-service returns a placeholder; metadata sits under label 721; platform derived keys get deleted. Preprod is staging, never the deliverable, which is clinic signed on mainnet in production.
+PREPROD is staging, never the deliverable. The deliverable is clinic-signed attestations on mainnet, TRL 7, at Milestone 1 within 3 months of selection.
