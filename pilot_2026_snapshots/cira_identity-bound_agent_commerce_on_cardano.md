@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 15
+- **Revision:** 21
 - **Proposer:** `stake1u8raqfwgfrkteqzffrtm83lnhrrc50z65jwy8lv8kg6yh8qjph2y0`
 - **Funding requested:** ₳150,000
-- **Last finalized:** 2026-08-20T04:30:37.065000+00:00
+- **Last finalized:** 2026-08-23T13:30:54.529000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -36,11 +36,27 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-CIRA will generate usage through real business workflows involving purchasing agents, supplier agents and the organisations that operate them. Stablecoin transactions will settle authorised commerce events through the Wallet Node, including procurement and supplier payments. Identity transactions will establish or update verifiable agent identities, authority and workflow relationships. Activity will occur throughout the adoption phase as participating businesses execute recurring workflows rather than through one-time demonstrations. The initial target of 500 stablecoin transactions represents approximately 10 businesses averaging 50 completed settlement events during the adoption period. The 150 identity transactions provide supporting identity and authority activity across participating agents and workflows. These targets are ambitious but tied directly to the planned pilot participants and recurring commercial workflows. All counted transactions will comply with the Transaction Integrity Standard.
+CIRA will generate usage through named acquisition channels rather than simulated activity. Initial recruitment will come from CIRA's 240-user base, 200+ email subscribers and community that join Automation Wednesday on Cira weekly on YouTube, with additional founder/business recruitment through existing access to Founders Live Nairobi and JHUB Africa communities. We will target 6 pilot businesses during the initial rollout, with 12 active agents and external wallets participating in authorised commerce workflows.
+
+Days 1-3: onboard 2 businesses, activate 4 agents and complete the first external USDCx settlement and identity event.
+
+Days 4-7: reach 4 businesses and 8 agents, with at least 10 cumulative external settlements and 5 identity events.
+
+Days 8-12: reach 6 businesses and 12 agents, with at least 20 settlements and 10 identity events.
+
+Days 13-14: verify repeat activity, publish the counting methodology and establish the first adoption baseline. Team wallets, sponsored activity and artificial transactions will not count.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-CIRA will onboard users through the existing product environment, customer relationships and direct business outreach. The initial focus will be businesses already using or evaluating CIRA workflows where transactions are a natural part of the process, particularly procurement, supply chain, logistics and operational payments. These workflows provide a practical entry point because the value of automation can be measured through completed transactions, reduced manual intervention and faster execution. CIRA will also use direct enterprise partnerships and relationships with financial and technology providers to identify suitable pilot participants. The product's existing development has been shaped through user feedback, including requests and requirements that led to expanded agent, webhook and automation capabilities. The pilot will convert this existing workflow adoption into Cardano-enabled commerce.
+CIRA will recruit through four existing channels: its 240-user product base, 200+ subscriber email list, the recurring Automation Wednesday on Cira (AAWC) community, and established founder access through Founders Live Nairobi and JHUB Africa. Cira's LinkedIn (340+ followers) will support targeted outreach. The target is businesses already running workflows where procurement, compliance or supplier payments can become agent-executed actions.
+
+**Days 1-3:** Select and onboard 1 business, activate its relevant agents and complete the first external USDCx settlement and CIP-0170 identity flow.
+
+**Days 4-7:** Repeat and document reliability.
+
+**Days 8–12:** Identify and qualify the next 10 businesses through Founders Live Nairobi and JHUB, with direct outreach and workflow mapping to identify suitability for on-chain settlement, for onboarding after M1. Community channels will remain to support onboarding of SMEs.
+
+**Days 13-14:** Publish the first-epoch baseline and counting methodology.
 
 ### Is the underlying project open source?
 
@@ -52,7 +68,9 @@ https://youtube.com/shorts/-pngpXzfnew?feature=share
 
 ### Who else solves this today - competitors/alternatives, and why does your approach win?
 
-Current alternatives combine separate infrastructure: business automation platforms manage workflows, AI frameworks provide agents, and banks, mobile-money providers and payment APIs execute transactions. Emerging agent-payment systems address machine payments, but identity, workflow authority and settlement are often separated. CIRA integrates these layers. An agent operates within a defined workflow, is linked to a UID, receives specific authority, passes constitutional validation and reaches the financial execution layer. Cardano extends this architecture with verifiable identity and on-chain settlement. The result is an agent whose economic actions are connected to its identity, authority, workflow and transaction provenance, creating a foundation for governed agent-to-agent commerce.
+Currently, Agent Verse for agent-to-agent interactions and payments, Coinbase's x402 ecosystem for machine-to-machine stablecoin payments, and emerging agentic commerce infrastructure from Visa, Mastercard and Stripe. These solutions validate the market for autonomous agent payments, but approach the problem primarily from the payment, protocol or commerce layer.
+
+CIRA approaches things from the business execution layer. CIRA already provides workflows, AI agents, unique user identifiers - UIDs & policy-controlled execution. The Wallet Node extends this into economic action. An agent is not simply issued a wallet, its transaction originates from a defined workflow, is associated with a CIRA UID, checked against its authority and constitutional rules, and settled through Cardano.
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
@@ -95,15 +113,15 @@ Incorporated entity
 
 We will use four measurable channels.
 
-**1. AAWC pipeline:** CIRA’s Agent Automation Wednesday programme provides a recurring channel to businesses and professionals already engaging with practical AI automation workflows.
+1\. AAWC pipeline: CIRA’s Agent Automation Wednesday programme provides a recurring channel to businesses and professionals already engaging with practical AI automation workflows.
 
-**2. Founders Live Nairobi and JHUB Africa:** CIRA has established partnerships with both communities, providing direct access to founders and SMEs for pilots based on real business workflows.
+2\. Founders Live Nairobi and JHUB Africa: CIRA has established partnerships with both communities, providing direct access to founders and SMEs for pilots based on real business workflows.
 
-**3. Existing CIRA users:** CIRA currently has **240 users, 100+ active workflows and 92.5% workflow retention** as of end-July. Suitable users will be invited into the Cardano pilot based on relevant commerce workflows.
+3\. Existing CIRA users: CIRA currently has 240 users, 100+ active workflows and 92.5% workflow retention as of end-July. Suitable users will be invited into the Cardano pilot based on relevant commerce workflows.
 
-**4. Owned audience:** CIRA has **329 LinkedIn followers** and an email list of **200+ subscribers** interested in the product, providing additional recruitment and onboarding reach.
+4\. Owned audience: CIRA has 329 LinkedIn followers and an email list of 200+ subscribers interested in the product, providing additional recruitment and onboarding reach.
 
-**First two weeks after Milestone 1:** Days 1–3: onboard the first external business and complete the first transaction. Days 4–7: onboard additional businesses through partner communities and the CIRA pipeline. Days 8–12: resolve real-user onboarding issues and optimise flows. Days 13–14: publish the first-epoch results and counting methodology.
+First two weeks after Milestone 1: Days 1-3: onboard the first external business and complete the first transaction. Days 4-7: onboard additional businesses through partner communities and the CIRA pipeline. Days 8-12: resolve real-user onboarding issues and optimise flows. Days 13-14: publish the first-epoch results and counting methodology.
 
 Only genuine external activity will count; team wallets, sponsored transactions, duplicates and artificial usage will be excluded.
 
@@ -113,7 +131,13 @@ Cira IQ
 
 ### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
 
-CIRA operates as a business automation platform and will extend its existing commercial model to Cardano-enabled financial workflows. Revenue will come primarily from transaction and infrastructure usage, with additional enterprise and integration services for organisations requiring higher-volume or specialised workflows. Customers pay because automation reduces manual processing, improves execution speed and provides controlled transaction workflows. Once the pilot is complete, the Cardano integration becomes an additional settlement capability within the CIRA Wallet Node. Continued usage will therefore come from businesses deploying agents for procurement, supplier payments, cross-border settlement and other recurring workflows. As more workflows are activated, transaction volume and the number of participating agents increase. This creates a recurring commercial model where continued customer usage directly sustains the infrastructure beyond Catalyst funding.
+CIRA monetizes automation and transaction infrastructure for SMEs and enterprises. The Cardano integration extends the Wallet Node into a governed settlement layer, initially supporting stablecoins and capital-market workflows.
+
+Kenya's Mpesa reported 37.2 billion M-PESA transactions in FY2025, over 100 million transactions daily. Our long-term ambition is to capture 1% of this market's transactions abstracted on-chain, not as a pilot commitment but as a commercial objective.
+
+Distribution will scale through CIRA's existing 200+ users CRM, partners communities (JHUB Africa, FLN) and institutional partnerships. CIRA is engaging KEPSA around SME digitisation pilots focused on compliance, efficiency and automation targeting 10% of the portfolio. KEPSA reports 300,000+ members.
+
+Catalyst funds our Cardano integration, not the underlying business. After the pilot, customers pay for their monthly subscription on CIRA, settlement & on-chain fees and B2B enterprise integration.
 
 ### On-chain identity (CIP-0170) - expected transaction count
 

@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 12
+- **Revision:** 16
 - **Proposer:** `stake1uy9y2zuz4pyysct0d3k63mxya959wa3cmuqkknph6re6qsqymcgqw`
 - **Funding requested:** ₳100,000
-- **Last finalized:** 2026-08-20T05:22:50.474000+00:00
+- **Last finalized:** 2026-08-23T13:13:09.260000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,13 +16,13 @@ TRL 5 - Technology validated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-Kush Innovation Labs has software engineering experience across web applications, mobile applications, backend systems, cloud infrastructure and Cardano development.
+Kush Innovation Labs is delivering MarketMarkets through a four-person engineering team led by Shashwat S — Project Lead / Lead Engineer.
 
-The team has previously delivered production software and Cardano-focused projects.
+LinkedIn: <https://www.linkedin.com/in/shashwat-s-54235b39a/>
 
-For MarketMarkets, the team responsibilities will cover product architecture, frontend and backend engineering, Cardano integration, smart-contract/on-chain components, infrastructure, testing, security and user adoption.
+Team roles: Backend Developer, Frontend Developer, Cardano/CIP-113 & Smart Contract Developer, Testing & Infrastructure Developer.
 
-Additional contributors will be used where specialist marketplace, security, design or business-development capacity is required.
+Shashwat leads architecture, technical decisions, Cardano integration and delivery coordination.
 
 ### Eligible area
 
@@ -34,13 +34,11 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-MarketMarkets will generate genuine usage through external consumers purchasing and redeeming real marketplace products, services, memberships, vouchers and digital goods. Consumers will connect their own Cardano wallets because they receive a genuine marketplace utility, while merchants use the platform to reach Cardano users and accept programmable assets.
+MarketMarkets will onboard 5 participating merchants with a combined target of 20 active programmable offers. We will target 50 distinct external Cardano wallets during the adoption period through Cardano community outreach, merchant/creator outreach and direct promotion.
 
-Initial usage will come from a curated set of marketplace offerings and participating merchants. Consumer acquisition will use Cardano communities, merchant and creator outreach, ecosystem channels and direct promotion. Transactions are expected whenever users make purchases or redeem eligible utilities, with repeat usage as new offerings and memberships are introduced.
+The 250 qualifying CIP-113 transactions target is based on an average of 5 qualifying transactions per external wallet (50 × 5 = 250) across purchases, transfers and redemptions. Transactions will be counted from on-chain transaction identifiers and linked external wallets, excluding internal or sponsored activity.
 
-We target 250 genuine CIP-0113 transactions and at least 150 ADA in associated network fees during the adoption phase. This target is grounded in an initially curated marketplace and will be supported by merchant onboarding and external consumer acquisition.
-
-We will measure transaction identifiers, external wallets, completed transactions and network fees, excluding internal or sponsored activity.
+Merchant and consumer onboarding will be tracked through participating merchants, active programmable offers, external wallets and qualifying CIP-113 transaction IDs.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -195,6 +193,9 @@ The primary users are Cardano consumers who want to spend ADA and merchants who 
 
 - https://marketmarkets.shop
 - https://kushinnovationlabs.com/
+- https://www.linkedin.com/in/shashwat-s-54235b39a/
+- https://preprod.cardanoscan.io/transaction/444b27a7714352980790309301fc35d167a622c56889cdce0dca6627db0d5667
+- https://preprod.cardanoscan.io/transaction/0e794d480af6fb7b3368274e47e3eec9aaddb058cae2167deeae1ed3596e912e
 
 ### Identified dependencies
 
