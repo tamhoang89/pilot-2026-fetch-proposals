@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 14
+- **Revision:** 21
 - **Proposer:** `stake1uxvmpvst6rycjplpel59uv83kevs32xwux7mpz42xy6d5ccqqy5y8`
 - **Funding requested:** ₳120,000
-- **Last finalized:** 2026-08-20T04:57:25.452000+00:00
+- **Last finalized:** 2026-08-24T04:48:42.494000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -23,32 +23,35 @@ The team combines experience in blockchain engineering, Cardano smart contracts,
 Core capabilities include:
 
 - Cardano eUTXO architecture.
-- Smart-contract development.
 
+- Smart-contract development.
 
 - Transaction construction.
 
-
 - Backend services.
+
 - Frontend DeFi applications.
+
 - Protocol testing.
 
-
 - Mainnet deployment.
+
 - Production monitoring.
 
 ### Core Team
 
 **Nguyen Hai Chau — Product Lead / Solution Architect**\
-Responsible for product architecture and protocol design.
+Responsible for product architecture and protocol design.\
+<https://www.linkedin.com/in/hai-chau-nguyen-732817174/>
 
 **Truong Quang Khang — FullStack development** \
-Responsible for technical implementation and blockchain integration.
+Responsible for technical implementation and blockchain integration. <https://www.linkedin.com/in/quang-khang-7a96ba279/>
 
 **Le Thi Thanh Ngan — QC** \
-Responsible for quality assurance, test planning and release validation.
+Responsible for quality assurance, test planning and release validation.\
+<https://www.linkedin.com/in/thi-thanh-ngan-le/>
 
-Most importantly, the team is not proposing its first Cardano application. 
+Most importantly, the team is not proposing its first Cardano application.
 
 ### Eligible area
 
@@ -60,17 +63,52 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Real users generate transactions by participating in the Fixed Term Deposit lifecycle.
+**Expected transaction count: 800**
 
-A depositor submits a transaction to enter a pool and receives pT/yT. Position holders may subsequently transfer these programmable assets or use them in supported DeFi integrations. At maturity, holders submit redemption transactions to recover principal and yield.
+Keep **800**.
 
-These interactions have genuine economic purpose: users commit capital to earn yield, manage fixed-term positions and redeem real deposited assets.
+## Update:
 
-Our initial target is 50+ external wallets, 800+ eligible mainnet transactions and 20+ funded Fixed Term Deposit positions during the adoption period.
+**Fee target**
 
-Each completed position naturally requires multiple lifecycle interactions, making this target achievable without manufacturing activity.
+Change:
 
-Team wallets, test transactions and artificially generated volume will be excluded. Required Catalyst transaction labeling will be implemented so eligible activity and associated network fees can be independently verified.
+**₳175**
+
+to:
+
+**₳300**
+
+## Update field:
+
+**QHow will your product generate genuine usage - who transacts, why, and how often?**
+
+Replace with:
+
+Real usage is generated through economically meaningful PT/YT lifecycle activity.
+
+During the adoption measurement period, the target is:
+
+- 120+ external wallets.
+- 250 funded Fixed Term Deposit positions.
+- 300 genuine PT/YT owner-transfer transactions.
+- 250 completed maturity/redemption transactions.
+
+The 800 eligible mainnet transaction target is therefore based on:
+
+- **250 funded-position / PT-YT issuance transactions**
+- **300 genuine PT/YT owner-transfer transactions**
+- **250 maturity/redemption transactions**
+
+**250 + 300 + 250 = 800 eligible mainnet transactions.**
+
+Each category represents genuine economic activity rather than manufactured transaction volume.
+
+The fee target is at least **₳300**.
+
+Across 800 transactions, this corresponds to an average network fee of approximately **₳0.375 per eligible transaction**.
+
+The transaction-cost assumption will be validated against measured CIP-0113 execution costs during preprod testing.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -117,15 +155,49 @@ We do not aim to replace variable rate lending. Fixed Term Deposit complements i
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-The core Fixed Term Deposit architecture has been defined around Cardano's eUTXO model, including pool state, deposits, maturity, pT/yT issuance and redemption. Individual technical components use established Cardano primitives and have been validated through development prototypes and transaction-level testing. The product has not yet reached a production mainnet release. The Pilot will complete the integrated protocol, wallet-facing application, security validation and production deployment required to move from a controlled development environment to a live system used by external Cardano users.
+The existing Fixed Rate Lending / Fixed Term Deposit foundation is assessed at TRL 5. Core Cardano eUTXO components covering Protocol Config, Pool and Loan state, fixed maturity, PT/YT issuance and redemption have been implemented, with versioned Pool and Loan validators (v1.0.0) deployed on a Cardano test network. The deployed Pool validator has script hash `fbfe1688e61ff0e52da1ccbaf1b3a601c66b670272ddb5e197ca39bd` and reference UTxO `8a7b8a548cb04398eaa78e4160046f749e5ba865168489e751a173c3a99266ea#0`. Additional script hashes, addresses, deployment transactions and architecture evidence are published in the project README and HLD. The proposed CIP-0113 integration is a separate new layer currently assessed at TRL 2.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-Fixed Term Deposit uses Cardano's eUTXO model. A pool UTxO records the underlying asset, term, maturity and accounting state. When a supplier deposits, the protocol locks the underlying asset and issues two position assets: pT for principal and yT for yield. At maturity, the redemption transaction consumes the relevant position tokens and pool state, burns the redeemed tokens and releases the corresponding principal/yield.
+Fixed Term Deposit uses Cardano's eUTXO architecture with separate Pool and Loan state.
 
-For this Pilot, pT/yT issuance and transfers will be integrated with the CIP-0113 programmable-token framework. The minting/issuer logic remains tied to Dano's pool rules, while programmable transfer logic is invoked when these position assets move, allowing token-level rules to remain enforceable without changing the economic model of the fixed-term pool.
+A Pool UTxO records the supplied asset, PT/YT accounting, maturity, supported collateral, active-loan state and fee state.
 
-This fits Cardano because eUTXO provides deterministic pool state and maturity validation, while programmable tokens make pT/yT more composable and policy aware as they move between wallets or future DeFi integrations. The underlying deposit assets remain standard Cardano native assets.
+Creating a Pool:
+
+1. validates Pool configuration
+2. creates the Pool UTxO
+3. mints a unique Pool NFT
+4. issues PT representing the principal position
+5. issues YT representing the yield position.
+
+Loan UTxOs separately record borrower debt, maturity and collateral.
+
+At maturity, redemption is enforced by the Pool validator. The Pool must have reached maturity, outstanding Pool debt must be resolved, and assets released must correspond to the PT and/or YT burned.
+
+For this Pilot, PT/YT are extended using CIP-0113 programmable-token infrastructure.
+
+### Issuance and burn
+
+PT/YT may only be issued through valid Fixed Term Deposit Pool lifecycle transactions. Arbitrary issuance is rejected.
+
+Burning is permitted as part of valid redemption or other explicitly defined lifecycle operations.
+
+### Ownership and transfer
+
+PT and YT represent quantity-based claims.
+
+A holder may transfer all or part of a PT or YT balance through registered owner-transfer logic.
+
+### Maturity
+
+Maturity remains a property of the originating Pool.
+
+Moving PT or YT between wallets cannot change Pool maturity.
+
+### Redemption
+
+At maturity, redemption burns the relevant PT and/or YT and reduces the Pool's outstanding liability by the corresponding quantity
 
 ### Fits the timeline
 
@@ -192,17 +264,32 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-This budget reflects the full cost of taking the CIP-0113 integration from architecture (current TRL 2) through smart-contract implementation
+The Pilot does not fund creation of the underlying Fixed Term Deposit economic protocol.
 
-Budget breakdown:
+The existing protocol architecture already defines:
 
-- Smart-contract engineering (pT/yT programmable-token minting, transfer, issuer logic): ₳54,000 (45%)
-- Off-chain transaction building & wallet integration: ₳18,000 (15%)
-- Third-party security audit of the programmable-token integration: ₳21,600 (18%)
-- QA & test planning (unit tests, integration tests, preprod validation): ₳9,600 (8%)
-- Testnet & mainnet deployment, infrastructure and monitoring: ₳7,200 (6%)
-- Documentation & release notes: ₳4,800 (4%)
-- Adoption measurement tooling, onboarding campaigns and community engagement (AMAs, testnet campaign, dashboard integration): ₳4,800 (4%)
+- Pool and Loan state.
+- Fixed maturity.
+- Collateralized borrowing.
+- PT and YT economic claims.
+- Core redemption rules.
+
+Pilot funding is specifically for the incremental CIP-0113 integration required to make PT/YT programmable.
+
+The funded work includes:
+
+- CIP-0113 token registration.
+- PT/YT issuance and burn validation.
+- Owner-transfer validation.
+- Third-party-transfer policy.
+- Integration-specific transaction construction.
+
+
+- Automated integration testing.
+
+
+- Test-network and mainnet deployment.
+- Transaction labeling and adoption measurement.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -214,33 +301,37 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-Target delivery is month 2 of the 3-month window to allow additional time for adoption measurement.
+Target delivery: by the end of Month 2, leaving the remaining period for adoption measurement.
 
-**Acceptance evidence:**
+**M1 Outputs**
 
-- A working preprod Fixed Term Deposit pool
-- Successful deposit transactions using supported assets
-- pT and yT minted correctly for deposited positions
-- Transaction hashes showing deposit and token issuance
-- Published preprod script hashes and policy IDs
+- Finalized Fixed Term Deposit + CIP-0113 integration specification.
 
+- PT/YT programmable issuance, burn and owner-transfer logic.
 
-- Repository commit/tag matching the deployed preprod version
-- Technical walkthrough demonstrating the deposit-to-pT/yT flow
+- Third-party-transfer policy and CIP-0113 registry integration.
 
-**M1 Evidence:**
+- Off-chain transaction builder and wallet integration.
 
-- Finalized Fixed Term Deposit protocol specification
-- On-chain pool state and lifecycle architecture
+- Automated unit/integration tests and end-to-end preprod validation.
 
+- Cardano mainnet deployment with Catalyst transaction labeling.
 
-- pT/yT minting policies for principal and yield positions
-- Initial CIP-0113 programmable-token integration
+**Acceptance Evidence**
 
+- Public repository release/tag.
 
-- Preprod deployment of the core Fixed Term Deposit flow
+- Published mainnet validator hashes, PT/YT policy IDs and registry information.
 
-M1 will demonstrate that a user can deposit supported assets into a Fixed Term Deposit pool on Cardano preprod and receive valid programmable pT/yT positions representing principal and yield.
+- Mainnet transaction showing funded-position creation and programmable PT/YT issuance.
+
+- Mainnet PT/YT transfer transaction.
+
+- Mainnet redemption transaction where maturity permits.
+
+- Technical walkthrough and published test/security notes.
+
+Mainnet deployment and verifiable mainnet activity are the M1 acceptance condition.
 
 ### How far along is the integration you're proposing, today?
 
@@ -303,7 +394,9 @@ Yes
 
 ### Licensing / IP details
 
-Smart contracts are open source, and the smart contracts and technical components developed for the proposed programmable-token integration will also be published publicly. Product-specific frontend, backend, infrastructure and operational components may remain closed source.
+The smart contracts and technical specifications associated with the Fixed Term Deposit protocol and the proposed CIP-0113 programmable-token integration will be published publicly.
+
+This includes the programmable-token validators, integration specifications, deployment references, architecture documentation and integration-specific test artifacts
 
 ### Technical
 
