@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 26
+- **Revision:** 29
 - **Proposer:** `stake1uxps8zkp98wtp77cnzl0g6eya50qf4svjn03l78klhvyfts46n73h`
 - **Funding requested:** ₳120,000
-- **Last finalized:** 2026-08-20T02:35:56.487000+00:00
+- **Last finalized:** 2026-08-24T02:29:26.428000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -44,34 +44,32 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-900 ADA in counted Cardano network fees under the Oracles category, above the 232 ADA programme floor for a 120,000 ADA award.
+Dano Finance is the anchor source of real user activity. Cardano’s public app directory recorded **6,340 Dano Finance on-chain transactions in the latest 30-day snapshot**. Our target of 1,125 Oracle-consuming transactions represents about **17.7%** of that existing monthly activity.
 
-Fees are paid by end users of integrated protocols. Borrowing, repayment, liquidation and other price-dependent actions execute the aggregation validator inside the user’s transaction. We neither sponsor nor receive these fees.
-
-Usage is recurring because the aggregator is called whenever an integrated protocol performs a price-dependent action.
+Only price-dependent Lending V2 actions will execute Chorus, so we do not assume every Dano transaction will count. Relevant flows include borrowing, collateral valuation, repayment flows requiring revaluation and liquidation checks.
 
 Target assumptions:
 
-- 1 protocol live by M1
-- \~1,125 external transactions
+- 1,125 external Oracle-consuming transactions
+- 45 distinct external wallets
 - \~0.80 ADA average network fee
-- 45 distinct external wallets - above the 24-wallet minimum.
+- 900 ADA counted fees
 
-At a lower 0.65 ADA average fee, around 1,385 transactions would be needed to reach 900 ADA.
+Week 1 targets are 150 transactions and 20 wallets. Week 2 cumulative targets are 300 transactions and 30 wallets. Activity will then be tracked against per-epoch floors and the daily cap toward the final target.
 
-The target is ambitious but grounded in real protocol activity. At 900 ADA, it is about 3.9x the programme floor.
+Fees are paid by end users. We neither sponsor nor receive them.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
 Our users are protocols, not retail wallets, so onboarding focuses on developer experience and direct protocol integration.
 
-Dano Finance is the anchor integration. Dano has publicly committed that Lending Smart Contract V2 will use Chorus for all collateral valuation and liquidation checks from launch, with initial adapters for Liqwid, Minswap, SundaeSwap and Splash: <https://docs.dano.finance/news/lending-v2-will-price-your-collateral-from-many-sources-not-one>
+Dano Finance is the anchor integration. Dano has publicly committed that Lending Smart Contract V2 will use Chorus for all collateral valuation and liquidation checks from launch: <https://docs.dano.finance/news/lending-v2-will-price-your-collateral-from-many-sources-not-one>
 
-Integration will be supported through an Aiken library, examples, test vectors and technical documentation. Dano will also serve as the reference implementation.
+Dano already has measurable mainnet activity. Cardano’s public app directory recorded **6340 Dano Finance on-chain transactions in the latest 30-day snapshot**. Our final target of 1125 Oracle-consuming transactions is about 18% of that existing activity, although only price-dependent Lending V2 actions will count.
 
-In Week 1 after mainnet launch, we will monitor usage, transaction success, source health and counted fees, resolve issues and publish verified transactions. In Week 2, we will use the live integration for direct outreach and support to additional Cardano DeFi teams.
+**Week 1 target:** 150 Oracle-consuming transactions, 20 external wallets and about 120 ADA in counted fees.
 
-Usage will be tracked against per-epoch floors and the daily cap throughout the measurement window
+**Week 2 cumulative target:** 300 transactions, 30 external wallets and about 240 ADA in counted fees, plus direct outreach to at least 3 additional Cardano DeFi teams.
 
 ### Is the underlying project open source?
 
@@ -176,7 +174,7 @@ Allocation of 120,000 ADA:
 - Documentation, integration support and launch: 12,000
 - Contingency: 2,000
 
-The audit is essential because protocols may use this validator in critical paths such as collateral valuation and liquidation. Security review is therefore a direct requirement for production adoption.
+The external auditor has not yet been selected. We will appoint an independent Cardano security auditor before mainnet release. The 22,000 ADA budget covers the audit, issue review and remediation, with engagement evidence published before the audit begins.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
