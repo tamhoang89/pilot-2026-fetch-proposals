@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 40
+- **Revision:** 41
 - **Proposer:** `stake1u86sa7qzppfh24sugfdxasm0ye2cqp2f35n82yec06h7xsscfgpd9`
 - **Funding requested:** ₳150,000
-- **Last finalized:** 2026-08-21T19:24:00.143000+00:00
+- **Last finalized:** 2026-08-24T11:47:02.389000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -49,15 +49,19 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Coastal is just our first out of 400+ potential customers (MoU in links), \~90% of fees; auditors & importers are rest.\
-12 cells avg: 8 at M1 to 16; MoU names 120. 3 batches a cell a day (20-hr line, one release per 7 hrs). 0.42 ADA/tx: script + metadata; net avg 0.33.\
-CIP-0170: 3x12x30 = 1,080 QC releases + 220 from hygiene, maintenance, dispatch, auditors, importers. 1,300 txs, 546 raw. Coastal signer wallets are Coastal-funded, not ours, so §6.2 treats them as one; share over 35% counts at half. 387 counted, target 380.\
-CIP-0113: 650 mints at 0.50, 520 transfers at 0.45, 200 burns at 0.40. 1,370 txs, 639 raw, 471 counted. Only export lots carry BatchPass.\
-First 2 weeks:\
-D1-3: 8 cells, 6 QC + 1 auditor signing, keys made on site. \~10 releases/day, 12 ADA.\
-D4-7: all Coastal roles live; first mint-transfer-burn cycle with 5 importers. \~35 ADA cum.\
-D8-14: 12 cells, 15 importers receiving, \~20 releases + 6 mints/day. \~110 ADA cum vs 32 ADA epoch-1 floor.\
-Wallets: Coastal = 1. BAP/BRCGS certifiers on public registers. Coastal will add their 20 importers before M1;. full list on NDA as it is Coastal's confidential data. 21 wallets CIP-0113, 23 CIP-0170 vs min 18 & 9.
+Coastal is first of 400+ potential units (MoU in links), \~90% of fees; auditors/importers the rest.
+
+Cells 8 at M1 to 16, avg 12; MoU names 120. 3 batches/cell/day (20-hr line, one release/7 hrs). 0.42 ADA/tx: script + metadata; net avg 0.33.
+
+CIP-0170: 3x12x30 = 1,080 QC releases + 220 from hygiene, maintenance, dispatch, auditors, importers = 1,300 txs, 546 raw. Coastal-funded signer wallets aren't ours; §6.2 treats them as one, &gt;35% share at half: 387 counted vs 380.
+
+CIP-0113: 650 mints 0.50, 520 transfers 0.45, 200 burns 0.40 = 1,370 txs, 639 raw, 471 counted vs 470. Only export lots carry BatchPass; burns lag mints by shipping time.
+
+D1-3: 8 cells, 6 QC + 1 auditor, keys on site, \~10 releases/day. D4-7: all Coastal roles live, first mint-transfer-burn with 5 importers. D8-14: 12 cells, 15 importers, \~20 releases + 6 mints/day.
+
+PACE, each track on own txs (§5.4). 8-to-16 ramp puts late epochs \~25% over avg. CIP-0170 floors 32 then 63; make \~48 then \~81. CIP-0113 floors 39 then 78; \~59 then \~98.
+
+Wallets: Coastal = 1. BAP/BRCGS certifiers on public registers. 20 Coastal importers onboard before M1, named to Catalyst under NDA. 21 CIP-0113, 23 CIP-0170 vs min 18 & 9
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 

@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 1
+- **Revision:** 6
 - **Proposer:** `stake1u9cqfy4a5n0tqz0kvlz68wy3h9nqgv9y3yrkdq23pnez6dcakdahu`
 - **Funding requested:** ₳125,000
-- **Last finalized:** 2026-08-19T14:43:55.284000+00:00
+- **Last finalized:** 2026-08-24T12:00:20.212000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -44,25 +44,25 @@ UrbanLink voluntarily pledges to contribute 2% of net revenue generated directly
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-UrbanLink will generate genuine on-chain usage through real participants in the mobility pilot. Drivers and vehicles will have blockchain-linked identities, with relevant identity creation, verification and credential-related events recorded on Cardano. Where appropriate, riders may also participate in the identity system.
+UrbanLink will generate genuine Cardano usage through real pilot activity involving 20 riders, 2 drivers, and 2 vehicles. Each vehicle accommodates 10 riders, with the fleet operating up to two trips daily. Riders will use UrbanLink’s Cardano-enabled identity and credential flows during scheduled trips, while drivers and vehicles use verified identities.
 
-We target at least 100 genuine on-chain identity transactions during the Pilot. This target reflects the expected scale of our initial operational deployment and the fact that the Cardano identity integration is being introduced for the first time. Transactions will occur when there is a genuine product or verification requirement, rather than being created artificially to meet a target.
+Days 1–3: Deploy and activate the CIP-0170 integration, complete production checks, and onboard the 2 vehicles and drivers. \
+Days 4–5: onboard the first rider cohort and complete identity activation. \
+Days 6–7: commence live trips and monitor genuine user transactions. \
+Days 8–10: expand rider participation and continue operations. \
+Days 11–12: review usage, resolve onboarding or technical issues, and optimise the user flow. \
+Days 13–14: conduct a final activation push and assess performance against the transaction target.
 
-We will not generate unnecessary transactions, split activity artificially, or incentivize transactions solely to increase on-chain numbers. This ensures that reported activity represents genuine adoption and complies with the Transaction Integrity Standard.
+At 20 riders, 2 qualifying transactions per rider per day, and 9 operating days, the pilot has potential for 360 rider transactions. We therefore set a minimum target of 300 genuine transactions.\
+Driver and vehicle identity interactions will generate additional Cardano activity beyond the rider target.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-UrbanLink’s initial acquisition strategy focuses mainly on commuter corridors, and employer communities. We reach potential riders through our existing waitlist, direct community outreach, social media, corporate networks and targeted activation around launch routes.
-
-Our strongest evidence is our market study of 1,029 respondents across employees of more than 25 companies, which demonstrated strong demand for scheduled shared transportation. Our partnership with Mago Motors Ghana also provides an operational channel for deploying the bus pilot.
-
-Onboarding is simple: commuters register, provide required information, complete identity verification and select a scheduled route. Drivers and vehicles undergo separate verification before activation.
-
-During the Cardano Pilot, this process will incorporate UrbanLink’s Cardano-based on-chain identity layer for real mobility participants.
+UrbanLink will onboard real users through three evidence-backed channels: its signed contract with Mago Motors, 5,000+ LinkedIn connections, and direct outreach to participants from our market research. The [Mago Motors agreement](https://drive.google.com/file/d/14tU8KZPw9SJq7mTDNZ6m_sdkQrXZu1yY/view?usp=drive_link) provides the operational foundation for the vehicle pilot and participating drivers. Our [research](https://docs.google.com/presentation/d/1f9rw8u9YMqjwi0PbzupMuNWtszV2ruTX2Pht2exlyWo/edit?usp=sharing) generated 1,029 responses across 25+ companies in four business centres, demonstrating demand and providing a recruitment pool without treating respondents as confirmed users. Before mainnet launch, we will recruit riders. Days 4–5 will cover registration and identity activation, with live operations from Day 6. We target 20 riders daily, supported by continued outreach during Days 8–14. Registrations, trips, and qualifying Cardano activity will be tracked.
 
 ### Is the underlying project open source?
 
-Yes
+No
 
 ### Short Video Pitch
 
@@ -78,7 +78,9 @@ Our advantage is combining a real-world mobility product with practical blockcha
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-UrbanLink is at TRL 5, with the core product validated in a relevant environment. We have developed the product concept and MVP, conducted market validation with over 1,000 potential users, created a working website, and established mobility partnership with Mago Motors to support pilot deployment. The product has moved beyond a conceptual or laboratory stage, with its core mobility model, user requirements and operational processes validated through market research and pilot preparation. The Catalyst Pilot will enable us to further mature and demonstrate the product in an operational setting.
+UrbanLink has progressed beyond concept stage, with an MVP, validated market demand from **1,029 respondents across 25+ companies**, and a signed Mago Motors agreement supporting the two-vehicle pilot. We acknowledge that the full service has not yet operated live and do not present these as proof of technology readiness.
+
+Funding will move the existing MVP into real-world operation through implementation, user testing, deployment of the two-vehicle pilot, and **CIP-0170** integration on Cardano mainnet. The product foundation, operational partner, recruitment channels, and deployment plan are in place; funding enables us to execute, validate, and deploy within the three-month Pilot window.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
@@ -110,7 +112,7 @@ UrbanLink’s primary market is daily commuters in Greater Accra who travel pred
 
 Our demand is supported by research involving 1,029 respondents across employees of more than 25 companies in four major business centres. 97% preferred scheduled ride services, 87% expressed interest in scheduled bus transportation, and 91% were willing to pay more for greater predictability. Respondents also reported spending approximately 2–3 hours commuting daily.
 
-Beyond research, UrbanLink has progressed from concept validation into product development and pilot preparation, including a fleet partnership with Mago Motors Ghana and a planned bus pilot on the Adenta–Accra Central corridor. These commitments provide evidence that the problem is real and that stakeholders are willing to participate.
+Beyond research, UrbanLink has progressed from concept validation into product development and pilot preparation, including a fleet partnership with Mago Motors Ghana. These commitments provide evidence that the problem is real and that stakeholders are willing to participate.
 
 The Cardano Pilot builds on this existing mobility demand by introducing verifiable on-chain identity for the riders, drivers and vehicles participating in the network.
 
@@ -128,7 +130,7 @@ As adoption grows, UrbanLink earns recurring passenger revenue and expands acros
 
 ### On-chain identity (CIP-0170) - expected transaction count
 
-100
+250
 
 ### Named, verifiable team
 
@@ -174,7 +176,7 @@ TRL 3 - Experimental proof of concept
 
 ### On-chain identity (CIP-0170) - fee target (ADA)
 
-80
+130
 
 ### Clear budget
 

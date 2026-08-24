@@ -1,14 +1,14 @@
 # OriLife-Tokenised Produce, Owned by Growers and Consumers
 
-> OriLife recognises an individual tree or fruit by sight - no tag, no QR code - and gives it an identity of its own. 59,461 are registered today. None of them carries a rule anyone can check on-chain.
+> OriLife recognises an individual tree or fruit by itself with tag or QR, and gives it an identity of its own. 59,461 are registered today but no one of them carries a rule anyone can check on-chain.
 
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 11
+- **Revision:** 24
 - **Proposer:** `stake1u9cxecqjjqzn6y872lemnsjngxrq5mcxun9t0f36kryfp9qx8mt9k`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-20T05:58:55.530000+00:00
+- **Last finalized:** 2026-08-24T11:57:00.417000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,17 +16,27 @@ TRL 6 - Technology demonstrated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-GreenSun-Tech owns OriLife, submits this proposal and does the engineering. TonFarm is the application growers use; DDC Holdings runs the Dak Lak pilot.
+GreenSun Tech Inc owns OriLife, submits this proposal and does the engineering. TonFarm is the grower application; DDC DigiTech runs the Dak Lak field deployment.
 
-Engineering, all in the OriLifeTrace org: Thang Loi , Tien Tuan, Phu Thinh, Minh Thu, Thanh Tung.
+Engineering, OriLifeTrace org - one role and one public profile each:
 
-Pilot, DDC Holdings: [Nguyen Hung Son](https://www.ddcholdings.co/#leadership), Central Highlands director, on their published leadership page; Tran Huu Cuong, field deployment officer, [fb.com/100064740100482](http://fb.com/100064740100482); Phan Thi Quy Nhi, grower onboarding in Dak Lak.
+\- [Thang Loi](https://github.com/loinguyen1905) - lead engineer, backend, API and deployment
 
-We already ship the layers underneath. [api.orilife.io](http://api.orilife.io) runs in production. The field application is in operational beta, with keys in the device secure element, no seed phrase. Provenance is anchored to Cardano on Preview with a confirmed transaction. The same engineers have Plutus V3 validators and tokens minted on Preview with Lucid Evolution.
+\- [Tien Tuan](https://github.com/tuanzoro2k) - Cardano validators, CIP-0113 transfer logic
 
-Validator work is not new: our identity validators carry 653 test declarations in source, including twenty named attack tests - a forged policy reusing an asset name, a spend after revocation, two anchor references where the second is the attacker's. We claim no audited green build; that is what Milestone 1 buys.
+\- [Phu Thinh](https://github.com/lrybi) - validators and on-chain anchoring
 
-The gap we are honest about: nobody here has shipped a programmable token on mainnet - nobody has, the standard is not merged yet. A Cardano validator specialist is contracted for the transfer-logic work; the Milestone 1 audit checks it independently.
+\- [Minh Thu](https://github.com/thupham03) - mobile and computer vision
+
+\- [Thanh Tung ](https://github.com/thanhtungdo2003)- front end, UIUX and integration.
+
+The transfer logic is built in-house by Tuan and Thinh
+
+Field partner [DDC DigiTech](https://www.facebook.com/61590438448619), Director [Nguyen Hung Son ](https://www.ddcholdings.co/#leadership)is the partner signatory.
+
+[api.orilife.io](http://api.orilife.io) runs in production; the field app is in operational beta with outside testers, keys in the device secure element, no seed phrase. The same engineers have Plutus V3 validators and tokens minted on Preview with Lucid Evolution. Our identity validators carry 653 test declarations, including twenty named attack tests. We claim no audited green build; that is what Milestone 1 buys.
+
+Nobody here has shipped a programmable token on mainnet. Nobody has - the standard is not merged.
 
 ### Eligible area
 
@@ -34,25 +44,37 @@ Yes
 
 ### Optional: Voluntary give-back pledge: grant repayment terms and/or treasury revenue share, with your own thresholds/terms and/or %. If no such relevant offer exists, please write 'N/A'.
 
-We pledge to return 120% of the grant to the Catalyst treasury. A smart contract donates about 10% of the platform fees we collect each epoch, counted from real transactions only, until 120% of the grant value has been repaid. It is tied to what the business actually earns, so repayment starts the moment the product works rather than waiting on a revenue threshold that may never be crossed.
+10% of the platform fees we collect from the programmable-token compliance layer, paid to the Cardano treasury each epoch and counted from real transactions only. It starts when the product earns, not at a revenue threshold that may never be crossed, and runs until 120% of the grant has been returned. Reported annually alongside the figures the percentage is calculated from.
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Who pays, and with whose money. Every operation consumes MAGIC, a prepaid usage credit growers and packers buy with their own cash, like a haulier buying diesel. It is not airdropped and not earned by transacting - fees from our own or sponsored wallets would not count, so our model has none.
+One credit runs the platform: every OriLife service is bought with it, the same in every app built on us. Users buy it with their own money. The network fee is separate: each transaction's ADA leaves the user's own wallet, which is why it counts.
 
-Growers pay to register a tree, record a harvest and issue a batch. Packers and exporters pay on transfer and verification. Compliance already costs them money - lab tests, certificates - so this replaces a bill rather than adding one.
+Who pays, step by step:
 
-Target 660 ADA of counted fees: at the measured 0.389193 ADA per transfer, about 1,700 transactions across 32 external wallets, against a minimum of 20.
+\- A grower spends credit to give a fruit its identity, then to log care, pest checks, quality.
 
-- 24 issuers register 15 plots each: 360
-- Batch minting: 480
-- Batch transfers to packers and exporters: 320
-- Certificate and rule updates as documents expire: 240
-- Buyer-side acceptance and verification: 300
+\- At harvest the grower hands those tokens to a trader, who pays the transfer.
 
-No wallet exceeds 8% of counted fees, inside the 35% limit, and the largest day stays under the 20% daily cap even at harvest peak. Pacing: 55 ADA in each of the first three epochs, 110 in each of the last three.
+\- A packer splits a fruit token into box tokens, binding old identity to new.
 
-Not counted: our own or partner wallets, circular transfers, anything we subsidise.
+\- An exporter moves boxes to a buyer the issuer verified; the rule runs on-chain.
+
+\- Certificates expire, so rules update; a failed batch is frozen, then unfrozen.
+
+The fee follows from the count, not the reverse: 1,700 x 0.389193 = 661.6, declared as 660. 32 external wallets, min 20.
+
+\- grower registration: 360
+
+\- harvest handover to traders: 480
+
+\- packer splits: 320
+
+\- rule updates on expiry: 240
+
+\- export transfers to buyers: 300
+
+No wallet exceeds 8% of counted fees (limit 35%); no day exceeds the 20% cap. We plan above the Standard's per-epoch floors, 55 ADA then 110.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -70,7 +92,7 @@ No
 
 ### Short Video Pitch
 
-https://www.youtube.com/watch?v=viI7IjKMI2M&t=5s
+https://www.youtube.com/watch?v=Yh7JQQH69v0
 
 ### Who else solves this today - competitors/alternatives, and why does your approach win?
 
@@ -122,7 +144,7 @@ Yes
 
 ### Is the work in this proposal, or substantially similar work, currently funded, previously funded, or under active consideration by any other program?
 
-No
+Yes
 
 ### Team
 
@@ -134,15 +156,17 @@ Incorporated entity
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-[**OriLife**](https://api.orilife.io/) is for anyone who raises something living and loses the value of its history at the point of sale - growers and cooperatives first, then nurseries, aquaculture and livestock. The identity layer does not change by species.
+Primary market: **Durian farmers** in Dak Lak, Vietnam.
 
-We are not starting from a slide. TonFarm, an application built on OriLife, publishes a live gallery at [tonfarm.co/gallery](http://tonfarm.co/gallery) counting 383 grower projects, 462 gardens and 59,461 individually registered trees, each card naming the grower - VN01 (DDC Holdings, 741 trees), VN02 (HTX Farmland, 1,550), VN04 (Le Van Vinh, 380) - across 47 pages. Anyone reading this can open it and count.
+The route is stepwise. The infrastructure is built to carry [TonFarm](https://tonfarm.co/gallery) across 12,000 hectares of durian in Dak Lak, then 100,000 of Vietnam's 155,000, then any crop or herd in the food chain - some 70 million bearing trees worldwide.
 
-The limitation in the same breath, because it is why we are applying: none of those 59,461 registrations carries a token, and none of those holders has a Cardano wallet. What it proves is the slow part - roughly 400 households completed a digital registration for their own trees, in the field, and kept using it.
+Demand is a running product, not a paper. The TonFarm grower app (owned by DDC Holdings, powered by DDC DigiTech) covers 462 gardens for 383 named growers: 59,461 registered trees and 3,833 photographs. 168 gardens hold a GACC planting-area code, the licence Vietnam requires to export to China; 119 publish the issuing document. They pay for compliance today, so we replace a bill, not add one.
 
-The first deployment goes where commercial pressure is sharpest. Vietnam's durian trade runs to billions of dollars a year, nearly all to China, where one failed residue test can suspend a packing code for every grower behind it. DDC DigiTech runs that pilot deployment in Dak Lak.
+The deadline is legal, not aspirational. Vietnam's Circular 11/2026/TT-BCT requires unit-level traceability by end-2026; GACC returned \~100 containers of Thai durian in early 2025, costing some USD 14.6m; and the [EU deforestation rules](https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en) reach the same farms - 46.7% of Vietnam's coffee ships to the EU, and breach costs up to 4% of EU turnover.
 
-We have no measured figure for what a rejected lot costs a producer: the rejection is recorded by the buyer, and nobody in this market measures it. Producing the first measured figure is itself an output of this pilot.
+The gap: that app uses printed QR tags, manual registration, a central record, and anchors to TON and Ethereum. Not one of those 59,461 trees carries a programmable token; not one grower holds a Cardano wallet.
+
+What it proves is the slowest part: about 400 households register their own trees and keep using it.
 
 ### Applicant name
 
@@ -160,7 +184,7 @@ No customer pays us for this feature today, because it does not exist yet.
 
 ### Programmable tokens (CIP-0113) - expected transaction count
 
-660
+1700
 
 ### Named, verifiable team
 
@@ -186,15 +210,15 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-Each output is paired with the evidence that proves it, against the pre-filled criteria.
+Identification is deterministic and needs no tag, the record is anchored rather than held by us, and cost is measured not promised, the flow runs without us in it.
 
-1. Transfer logic and third-party path live on mainnet. Evidence: the full declared footprint - policy IDs, script hashes, addresses, token names, message tag, team wallets - and the deployment tx.
-2. Tokens minted on mainnet by an issuer that is not us, then a repeat run. Evidence: hashes mapped to each flow step, explorer links.
+1. Transfer logic and third-party path live on mainnet. Evidence: declared footprint and deployment tx.
+2. Tokens minted on mainnet by an issuer that is not us, then a repeat run. Evidence: hashes per flow step, explorer links.
 3. One transfer the rule approves, one it refuses for an unverified buyer. Evidence: both hashes - enforcement, not capability.
-4. Freeze and unfreeze on a live batch; forced transfer and seizure disabled. Evidence: hashes, published script.
-5. Independent audit. Evidence: full report with unresolved findings; test bundle - checklist, bug log, security note.
-6. SDK and reference integration, Apache 2.0. Evidence: repo URL, tag and commit, release notes stating scope and limits.
-7. Live demo and Q&A at Demo Day, same identifiers. Evidence: product URL, walkthrough video.
+4. Freeze and unfreeze on a live batch; forced transfer and seizure disabled. Evidence: hashes, script.
+5. A record verified end to end without our servers; the same fruit resolves to the same identifier across repeated captures. Evidence: anchor hash, retrieval path, test results.
+6. A published fee table for every on-chain operation, measured from mainnet.
+7. Independent audit and an Apache 2.0 SDK release. Evidence: report with unresolved findings; repo, tag, commit.
 
 ### How far along is the integration you're proposing, today?
 
@@ -202,7 +226,7 @@ TRL 2 - Technology concept formulated
 
 ### Programmable tokens (CIP-0113) - fee target (ADA)
 
-1700
+660
 
 ### Clear budget
 
@@ -228,11 +252,11 @@ Why on-chain, honestly: we are the platform. We hold the producer's record and s
 
 ### Supporting links (repo, site, demo)
 
-- https://orilife.io/proposals/pitchs
+- https://orilife.io/proposals
 - https://api.orilife.io/
 - https://tonfarm.co/gallery?page=1
 - https://github.com/OriLifeTrace/OriLife-SDK
-- https://fb.com/61590438448619
+- https://orilife.io/onchain
 
 ### Identified dependencies
 
@@ -265,6 +289,16 @@ Yes
 ### Confirmation: our plan complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard)
 
 Yes
+
+### Funder, status, and what it covers
+
+Cardano treasury, via an on-chain governance action - status: applied, not funded, no funds received.
+
+A governance action is a spending proposal that ADA holders vote on directly, separate from Catalyst. In 2026 we submitted a treasury withdrawal action titled "OriLife x TonFarm" requesting 2,400,000 ADA. It did not pass.
+
+The two are not the same ask: that action covered the whole OriLife and TonFarm programme, twelve times the 200,000 ADA here and far wider in scope. This proposal is one integration - CIP-0113 programmable tokens - taken to mainnet in three months against a declared fee target. The work proposed here would have been one component of it.
+
+Nothing here was paid for by it, so there is nothing to double-fund. We disclose it because it is a permanent public record on-chain and we would rather name it than have it found.
 
 ### Standard read and attested
 

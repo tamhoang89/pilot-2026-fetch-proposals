@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 20
+- **Revision:** 26
 - **Proposer:** `stake1u9wcuh0vyw9r6aacuwkufx8gaq7numn8dazx4u0fefyqneslmsep4`
 - **Funding requested:** ₳140,000
-- **Last finalized:** 2026-08-19T10:15:26.070000+00:00
+- **Last finalized:** 2026-08-24T11:59:53.184000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -30,9 +30,12 @@ Emmanuel Shikuku Titi (Supporting Developer), who leads the Lido Developer team 
 
 Organization references: <https://www.lidonation.com> · <https://www.catalystexplorer.com>
 
-Active funded project disclosure: LidoNation's Fund 14 "Cardano Hub NBO — Grassroot Community Building" (<https://www.catalystexplorer.com/en/proposals/cardano-hub-nbo-grassroot-community-building-by-lidonation-f14/details>) is funded and active ran by Herine Omollo (<https://www.linkedin.com/in/herine-omollo-319a6033b/>) a long time Cardano Community leader in Kenya. It funds community programming (meetups, hackathons, education) at the venue. 
+\
+Active funded project disclosure: LidoNation's Fund 14 "Cardano Hub NBO — Grassroot Community Building" (<https://www.catalystexplorer.com/en/proposals/cardano-hub-nbo-grassroot-community-building-by-lidonation-f14/details>) is funded and active ran by Herine Omollo (<https://www.linkedin.com/in/herine-omollo-319a6033b/>) a long time Cardano Community leader in the area. It funds community programming (meetups, hackathons, education) at the venue. 
 
-This proposal funds a distinct deliverable, the CIP-0170 identity integration in the venue's check-in platform, with no overlapping budget lines or scope.
+This proposal funds a distinct deliverable, the CIP-0170 identity integration in the venue's check-in platform, with no overlapping budget lines or scope.\
+\
+I'm not seeing a separate Funding disclosure field, that's why we've put it here. 
 
 ### Eligible area
 
@@ -44,27 +47,27 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Transacting wallets = attendees of the external communities that book Blockchain Centre Nairobi - Cardano, Midnight, Avalanche, and Binance hold recurring meetups; SUI, Base, and SingularityNet have also hosted events. The venue has hosted 97 public events since Apr 24, 2025 (\~6/month); wallet check-in applies to every event at the space, whichever community books it.
+Transacting wallets = attendees of the external communities that book the space. The venue has hosted 97 public events since Apr 24, 2025 (\~6/month).
 
-Each attendee generates 2-3 mainnet transactions per event: (1) an RSVP/identity anchor, (2) a check-in attendance credential (CIP-0170), (3) for select events, a non-transferable achievement badge mint gated on the verified credential. Fees average \~0.3 ADA per transaction; users sign and pay fees from their own wallets.
+Each attendee generates 2-3 mainnet transactions per event: (1) an RSVP/identity anchor, (2) a check-in attendance credential, (3) for select events, a non-transferable achievement badge mint gated on the verified credential. Fees average \~0.3 ADA per transaction; users sign and pay fees from their own wallets.
 
 Targets: 10-15 distinct external wallets per 5-day epoch (above the \~10-wallet minimum), \~50 transactions/epoch sustained by the booking calendar - no spikes, no synthetic activity.
 
-On-chain identity (CIP-0170) — expected transaction count: 280
+On-chain identity: expected transaction count: 280
 
-On-chain identity (CIP-0170) — fee target (ADA): 84 ADA (the program floor for a 140,000 ADA award; 280 x \~0.3 ADA clears it).
+On-chain identity: fee target (ADA): 84 ADA. This is our declared target everywhere in this application: the published CIP-0170 floor at a 140,000 ADA award is 83.7 ADA, we declare 84, and 280 transactions x \~0.3 ADA = 84 clears it.
 
-Channels: \~80% from events booked by external communities; \~20% from teams adopting the open-sourced library.
+Channels: \~80% from events booked at BC NBO by the named external communities above (Cardano monthly; Midnight,); \~20% from WADA Global, which has committed to pilot wallet check-in at 6 of its 12+ hubs across Africa during the window. 
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-The venue has hosted 97 public events since Apr 24, 2025 for multiple external communities; every attendee of every booked event checks in through the venue's platform, so user acquisition is the existing booking calendar, not a new channel. The on-site team  runs a wallet-onboarding desk at the door.
+The venue has hosted 97 public events since Apr 24, 2025 (\~6/month) for multiple external communities; every attendee of every booked event checks in through the venue's platform, so user acquisition is the existing booking calendar, not a new channel. The on-site team (which already staffs every event day) runs a wallet-onboarding desk at the door.
 
 **First two weeks after mainnet launch (M1):** 
 
 - **Week 1:** Deploy wallet check-in at the first 2-3 booked events with a staffed desk and guided wallet setup; targets: 25-35 onboarded, 15+ distinct external wallets, 40-60 CIP-0170 transactions. 
 
-- **Week 2:** Extend to the next external community's event, email the [lu.ma](http://lu.ma) RSVP list with the wallet option, run organizer walkthroughs; cumulative: 50+ onboarded, 25+ wallets, 90-120 transactions. Owners: on-site venue team + Nairobi dev team. We'll also publish docs for the open-sourced library and promote via [catalystexplorer.com](http://catalystexplorer.com) and [lidonation.com](http://lidonation.com).
+- **Week 2:** Extend to the next external community's event, email the [lu.ma](http://lu.ma) RSVP list with the wallet option, run organizer walkthroughs; cumulative: 50+ onboarded, 25+ wallets, 90-120 transactions. Owners: on-site venue team + Nairobi dev team. We'll also publish docs for the open-sourced library and promote via  [lidonation.com](http://lidonation.com).
 
 ### Is the underlying project open source?
 
@@ -122,7 +125,11 @@ Incorporated entity
 
 Primary users: attendees of the external communities that book the venue: Cardano, Midnight, Avalanche, and Binance communities hold recurring monthly/quarterly meetups at the space, with SUI, Base, and SingularityNet among the communities that have also hosted events there, plus open events (coworking days, mixers, trivia nights). These are not Lido Nation's users: each community is an independent organization whose members check in through the venue's platform because their event happens there.
 
-Evidence of demand: 97 public events hosted since April 24, 2025 (\~6/month), visible on the venue's public calendar ([blockchaincentrenbo.com/events](http://blockchaincentrenbo.com/events); e.g. a Cardano meetup on Aug 27, coworking and community nights weekly). Organizer-side demand is verified attendance reporting to sponsors and foundations; attendee-side demand is a cross-community participation record (bootcamp graduates proving completion, regulars carrying reputation between communities). Secondary audience: other Cardano teams who adopt the open-sourced integration library.
+Evidence of demand: 97 public events hosted since April 24, 2025 (\~6/month), visible on the venue's public calendar ([blockchaincentrenbo.com/events](http://blockchaincentrenbo.com/events); e.g. a Cardano meetup on Aug 27, coworking and community nights weekly). Organizer-side demand is verified attendance reporting to sponsors and foundations; attendee-side demand is a cross-community participation record (bootcamp graduates proving completion, regulars carrying reputation between communities). \
+\
+Organizer commitment: WADA Global has agreed to pilot wallet check-in at 6 of its 12+ hubs across Africa. \
+\
+Secondary audience: other Cardano teams who adopt the open-sourced integration library (upside, not forecast).
 
 ### Applicant name
 
@@ -295,4 +302,5 @@ Specs: 
 
   - select events: gated badge mint (\~0.4 ADA). 
 
+\
 Users sign and pay their own fees. Footprint (issuing key hash, policy IDs, addresses) published at M1.
