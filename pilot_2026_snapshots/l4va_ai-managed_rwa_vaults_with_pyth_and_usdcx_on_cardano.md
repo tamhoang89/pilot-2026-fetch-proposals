@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 18
+- **Revision:** 24
 - **Proposer:** `stake1uxxzr3kdrltfpgwx8zf7vh0jj44c6rdut4rjsegpcnzcw7gayt263`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-20T04:18:45.582000+00:00
+- **Last finalized:** 2026-08-24T03:57:26.323000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,11 +16,15 @@ TRL 9 - Actual system proven in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-L4VA is a proven Catalyst delivery team, not a new team assembling around a grant. Engineering is led by **Vladyslav Koshevoi**, with **Anton Hrabarchuk** and **Ihor Kordiukov**, supported by veteran architects/engineers **Aric Fedida** and **Nick Goehner** and Cardano advisor **Adrian Fanatiu**.
+L4VA is a proven Catalyst delivery team. Our Fund 12 proposal received **100,000 ADA and successfully completed all four milestones**, culminating in the Cardano mainnet protocol that this proposal extends. The team subsidized development beyond Catalyst funding and has since grown the protocol to approximately **1,500 locked assets and 350,000 ADA TVL**.
 
-Most importantly, we have already delivered for Catalyst. Our **Fund 12 proposal successfully closed out** after 100,000 ADA helped take L4VA from design and testnet through completion of the full RWA vault dApp on Cardano mainnet. The team subsidized substantial development costs beyond the grant and has demonstrated additional fundraising capability.
+**Vladyslav Koshevoi – Engineering Lead/CTO:** 15+ years full-stack development; Founder/CEO of UnitySpace. [LinkedIn profile](https://www.linkedin.com/in/vladyslav-koshevoi-aa0899a4/?utm_source=chatgpt.com)\
+**Artem Trehub – Full Stack Engineer:** 5+ years front- and back-end development. 2+ years Plutus and EVM development. [LinkedIn profile](https://www.linkedin.com/in/artem-trehub-a15880254/)\
+**Ihor Kordiukov – Project Manager:** 15+ years engineering/QA experience.[ LinkedIn profile](https://www.linkedin.com/in/ihor-kordiukov/)\
+**Aric Fedida – Architecture Advisor:** 35+ years software engineering and backend architecture. [LinkedIn profile](https://www.linkedin.com/in/aricfedida/?utm_source=chatgpt.com)\
+**Nick Goehner – Product Advisor:** 20+ years software and web application engineering. [LinkedIn profile](https://www.linkedin.com/in/nicholasgoehner/?utm_source=chatgpt.com)
 
-That infrastructure has already reached approximately **350,000 ADA in TVL** through early adoption. This pilot extends a shipped, funded and adopted Cardano product rather than starting from zero—giving Catalyst high leverage on a team and infrastructure it has already helped validate.
+This is therefore not a team proposing its first Cardano build: we have already converted Catalyst funding into a completed mainnet product and are extending that infrastructure with AI, Pyth and USDCx.
 
 ### Eligible area
 
@@ -32,13 +36,15 @@ L4VA pledges **5% of Cardano protocol fee revenue for 24 months** after mainnet 
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-L4VA will generate genuine usage from **existing and new Vault participants interacting with real RWA-backed strategies**. Users will transact when they acquire or trade Vault Tokens, provide liquidity, contribute assets, vote on governance actions, or when approved Vault strategies execute allocation or market actions.
+L4VA already has **1,533 assets locked and approximately 385,000 ADA TVL** on Cardano (with less 2% provided by team / affiliated contributions). This includes a live RWA Vault with **28 ounces of physical silver**, and our largest Vault has approximately **40 active users**, demonstrating real participation today.
 
-We currently have approximately **1,500 assets locked and 350,000 ADA in TVL**, so the pilot begins with an existing base of economic activity rather than hypothetical demand.
+Pyth, USDCx and AI-enabled Vault functionality are new capabilities, so their specific transaction baseline begins at zero. The pilot is designed to improve usability through automated pricing and NAV data, stablecoin liquidity and settlement, and AI-assisted configuration and market actions.
 
-Our targets of **5,000 oracle-enabled transactions and 10,000 stablecoin transactions** are reasonable but ambitious. Pyth will be used for RWA pricing, NAV calculations and AI strategy decisions, while USDCx will support settlement, liquidity, acquisitions and portfolio allocation.
+We target **50+ unique pilot wallets, 500 Oracle-enabled transactions and 1,000 USDCx transactions** during the pilot, generated through genuine activity including pricing, acquisitions, liquidity, allocation and governance-directed actions.
 
-That equates to only a few oracle and stablecoin interactions per existing locked asset over the pilot period, while still requiring meaningful growth in Vault usage. Transactions will be driven by real users, governance decisions and strategy activity—not artificial or circular volume created to satisfy grant metrics.
+Within the first two weeks, we target **10+ participating wallets, one AI-enabled Vault workflow, 25+ Oracle interactions and 50+ USDCx transactions**.
+
+These targets are ambitious but grounded in existing adoption and designed to show that better data, liquidity and AI-driven UX can materially increase Cardano Vault usage.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -105,7 +111,7 @@ Incorporated entity
 
 L4VA’s target market is RWA issuers, on-chain asset managers, DAOs and Cardano users who want to create and participate in programmable investment strategies without relying on a centralized manager.
 
-Demand is already visible in the product we have shipped. L4VA is live on Cardano mainnet with RWA-backed Vault Tokens, fractional ownership, decentralized governance and secondary-market liquidity. The protocol has already supported multiple live vaults and real assets, proving users will create, hold, trade and govern vault-based products.
+Demand is already visible in the product we have shipped. L4VA is live on Cardano mainnet with RWA-backed Vault Tokens (such as the Toto Silver Vault and TSLVR token backed by physical silver NFTs), fractional ownership, decentralized governance and secondary-market liquidity. The protocol has 18 live vaults, 1533 assets locked, across over 385,000 ADA TVL, proving there is early demand for users to create, hold, trade and govern vault-based token products.
 
 The AI pilot addresses the next need from that market: once assets are tokenized, they still require monitoring, allocation, liquidity management and ongoing decisions. Today that work is manual or centralized. L4VA enables creators to encode objectives and risk limits, then let AI agents execute or propose actions inside governance-defined boundaries.
 
@@ -135,9 +141,9 @@ Yes
 
 Catalyst funding will accelerate L4VA from **active R&D into a working AI-enabled RWA Vault pilot on Cardano**. The underlying protocol is already live on mainnet, and the team has already begun Pyth Oracle and USDCx integration work using its own resources.
 
-Funding will support **AI agent development, Pyth and USDCx integration, governance and execution logic, API infrastructure, smart-contract updates, security testing, UI/UX and pilot deployment**.
+The 200,000 ADA budget is focused primarily on engineering and integration. **127,500 ADA (63.75%)** directly funds AI, Pyth/USDCx, governance, API and backend development; 25,000 ADA supports frontend delivery; 25,000 ADA supports QA/security; and the remaining 22,500 ADA supports deployment, documentation, project management and infrastructure.
 
-Catalyst is therefore not funding a new dApp or initial feasibility research. It is leveraging an operational Cardano protocol and existing team-funded R&D to accelerate a new capability toward production.
+L4VA will continue subsidizing broader company operations and commercial development outside the grant, consistent with our Fund 12 approach.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 

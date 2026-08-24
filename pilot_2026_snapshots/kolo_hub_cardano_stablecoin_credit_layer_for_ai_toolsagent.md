@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 11
+- **Revision:** 14
 - **Proposer:** `stake1u8r837mdv93allvtghm2wvg9skrhhth3rcvk3mfs2af3v7qw4qrh6`
 - **Funding requested:** ₳100,000
-- **Last finalized:** 2026-08-20T04:39:44.286000+00:00
+- **Last finalized:** 2026-08-24T03:32:59.354000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,19 +16,19 @@ TRL 5 - Technology validated in relevant environment
 
 ### Why is your team well-suited to deliver this?
 
-The BBO team combines Cardano ecosystem experience, infrastructure operations, full-stack development, system administration, community building, and multimedia communications.\
-**\
-Do Duc Chau** is a Project Manager and Head of Cardano Integration Team. He has experience in blockchain, programming, data analysis, and application development. He has many years of experience with Cardano infrastructure. He is also the founder of Cardano ECO Talk / Tre Viet - a community of over 800 people dedicated to learning about the Cardano ecosystem.\
-[Linkedin](https://www.linkedin.com/in/chau-do-duc-68523099/)\
+The BBO team consists of members from BBO Tech, a company specializing in providing technology and digital transformation solutions to numerous clients and businesses. Regarding Cardano, we have 5 years of experience building the Cardano community and organizing numerous Cardano events in Vietnam, 4 years of experience building products under the BBO/Bamboo brand, and 3 years of operating a SPO (Special Purpose Order).\
+\
+Check: <https://docs.google.com/spreadsheets/d/1nCKDWHGXAKwSbr08IBN5bddbq8ETH_x1l4wm1vK6ZHg/edit?usp=sharing>\
+\
+Do Duc Chau is the Project Manager and Head of Cardano Integration. He has experience in blockchain, programming, data analysis, and application development.\
+\
+[Linkedin ](https://www.linkedin.com/in/chau-do-duc-68523099/)\
 \
 **Chu Cao Bang** is System Administrator. He has experience in data analytics, IT infrastructure, VPS/Linux operations, blockchain and AI node operations, Midnight node, Cardano SPO, db-sync, N8N automation, and finance-industry data management.\
 [Linkedin](https://www.linkedin.com/in/cao-b%E1%BA%B1ng-3472722b6/)\
 \
 **Nguyen Hoang Khai** is a full-stack developer with many years of experience in backend/frontend development, including APIs, system architecture, databases, performance, security, web applications, project management, and AI/automation-related work.\
-[Linkedin](https://www.linkedin.com/in/khai-hoang-nguyen-ba5a9b224/)\
-\
-**Nguyen Duy Hoang** is a multimedia communications specialist, proficient in content creation, production, and social media management.\
-[Linkedin](https://www.linkedin.com/in/duy-hoang-nguyen-089324350/)
+[Linkedin](https://www.linkedin.com/in/khai-hoang-nguyen-ba5a9b224/)
 
 ### Eligible area
 
@@ -40,11 +40,18 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-KOLO does not rely on speculation or random transactions, but on existing user demand for digital services. During the 3-month build phase before launch, KOLO will run a “Build in Public” strategy by sharing product progress, feature demos, development stories, community feedback, and real use cases. This helps us avoid launching from zero by building an early audience that understands the product and is ready to test it.\
-\
-The hypothesis is that Build in Public can attract around 5,000 interested people in 3 months across X, TikTok, and Threads. If 10% convert into real users, KOLO will have its first 500 users. Assuming each user makes an average of 2 USDCx top-up transactions per month, this group can generate 1,000 transactions/month. In addition, KOLO  expects 50 AI Agents/DEVs to use the credit/API layer. If each Agent/DEV makes 4 USDCx top-up transactions per month, this adds 200 transactions/month.\
-\
-In a downside case, if Build in Public grows slowly, KOLO can still leverage the Cardano ECO Talk community of 800+ people and reach several thousand university students through our advisory role in the digital economy board.
+During the 3-month build phase before launch, KOLO will run a "Public Build" strategy. Our hypothesis is that it can attract approximately 5,000 interested users within 3 months across X, TikTok and Threads. Based on our understanding and experience, this number is easily achievable and can be demonstrated here: <https://grok.com/share/bGVnYWN5_ad0f9df2-a26b-48fe-82d4-e03bff5eb5d0>. Users will also come from the Cardano ECO Talk community of over 800 people, and our advisory role on the digital economy team gives us potential reach to thousands of university students.
+
+We anticipate:
+
+- 400 users x 2 USDC deposit transactions/month = 800 transactions/month.
+- BBO expects 50 AI Agents/Developers x 4 USDC deposit transactions/month = 200 transactions/month.
+
+First 14 days: introduce the product, encourage followers to use it, create a 1:1 user support channel, collect feedback, and refine the product.
+
+We aim to achieve a minimum of 20 ADA/epoch (epochs 1-2) and 65 ADA/epoch (epochs 3-6).
+
+Because this project integrates a real, working solution, it cannot attract many speculative or spam transactions, but if successful it can maintain stability and sustainable long-term growth.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -174,13 +181,14 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-The three largest cost components are:
-
-- Developing over 20 digital applications and APIs, requiring approximately 50,000 ADA for design, backend, APIs, dashboards, and QA.
-- Initial infrastructure and AI model fees, around 25,000 ADA for servers, databases, nodes/indexers, monitoring, logging, and AI model call costs.
-- Public build-in media over 3 + 1 + 2 (6 months), approximately 25,000 ADA to produce over 240 posts per platform, demos, tutorial videos, documentation, and onboarding.\
-  \
-  Without funding, KOLO will struggle to publish over 20 applications on schedule, limit user onboarding, and fail to reach its goal of 1,000 stablecoin transactions, corresponding to 300 ADA in fees, within the program's timeframe.
+The three biggest costs are:\
+\
+- Tasks 1, 2, 3, and 4 in M1 require approximately 50,000 ADA.\
+\
+- Initial infrastructure costs for the platform, approximately 25,000 ADA, for servers, running validation nodes, Cardano APIs, databases, indexers, monitoring, management, on-chain operations, and AI model call costs.\
+\
+- A "build-in public" phase to promote the Cardano payment application over 3 + 1 + 2 (6 months), approximately 25,000 ADA for platform content creation, demos, tutorial videos, documentation, and user onboarding processes.\
+Without funding, BBO will struggle to deploy smart contracts for a payment gateway that requires high security and accuracy, along with the difficulty of maintaining continuous node and API operation infrastructure.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 

@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 1
+- **Revision:** 8
 - **Proposer:** `stake1ux9es7nq4wfegwxtenvxna5ern60zvp6xtqp4lwcmh4gcsqf7j4ry`
 - **Funding requested:** ₳140,000
-- **Last finalized:** 2026-08-20T02:14:43.777000+00:00
+- **Last finalized:** 2026-08-24T04:22:07.738000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,17 +16,19 @@ TRL 9 - Actual system proven in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-Our team pairs proven blockchain execution with real, on-the-ground Amazon reach, plus a track record of already shipping and monetizing this exact product category.
+Our team combines proven blockchain execution with Amazon field reach and a track record of monetizing this product category.
 
-Expedito Belmont (Founder & CEO) and Marcio Pessoa (Founder & CMO) built Hope Green from concept to a live B2B platform with paying institutional customers and recurring revenue - not a whitepaper.
+Expedito Belmont (Founder & CEO - <https://www.linkedin.com/in/expeditofernandes/>) and Marcio Pessoa (Founder & CMO - <https://www.linkedin.com/in/marcio-pessoa/>) built Hope Green from concept into an active B2B platform with paying institutional clients and recurring revenue.
 
-Wesley Sousa, Head of Blockchain, with prior experience at Greener and Sansa Labs, leads the technical build of the CIP-0113 and CIP-0170 integration - this is not our first blockchain implementation. Marcelo Chamy (VP Software Engineer) and Harlison Costa (UX/UI) round out execution capacity.
+Wesley Sousa (Head of Blockchain - <https://www.linkedin.com/in/wesley-sousa-e-sousa-83a5811a5/>), formerly at Greener and Sansa Labs, leads CIP-0113 and CIP-0170 integration—this is not our first blockchain implementation.
 
-Gabriel Maia (CIO) brings direct institutional ties to FAEMG, SENAR, INAES, and rural unions, and Fabiano Nagamatsu (Advisor, Osten Move/FEA Angels/Inovativa Brasil) is the direct channel to our largest institutional buyer, Osten BMW.
+Marcelo Chamy (VP Software Engineer - <https://www.linkedin.com/in/marcelo-chamy-machado-320134/>) and Harlison Costa (UX/UI - <https://www.linkedin.com/in/harlisoncosta/>) complete our execution team.
 
-Field credibility is independently verified: Ana Paula Paiva, Forestry Engineer at IDAM, has directly supported the agroforestry verification work this proposal builds on.
+Gabriel Maia (CIO - <https://www.linkedin.com/in/maia-gabriel/>) brings direct ties to FAEMG, SENAR, INAES and rural unions. Fabiano Nagamatsu (Advisor, Osten Move/FEA Angels/Inovativa Brasil - <https://www.linkedin.com/in/fabianonagamatsu/>) provides direct access to our largest institutional buyer, Osten BMW.
 
-In short: we already run the farmer network, the buyer relationships, and the underlying product this grant extends - we are not assembling a team to start from scratch, we are extending one that already delivers.
+Field credibility is independently validated by Ana Paula Paiva, Forest Engineer at IDAM (<https://www.linkedin.com/in/ana-paulapaiva/>), who supported the agroforestry verification behind it.
+
+In short: we already operate the farmer network, buyer relationships and core product this grant will extend—we are scaling a team that already delivers.
 
 ### Eligible area
 
@@ -38,23 +40,21 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Who transacts: two user groups already active in Hope Green's business today, not new users we need to invent.
+Institutional buyer (Osten BMW) mint and hold Carbon Rights Tokens as verifiable ESG/net-zero assets, then burn them upon retirement — creating a recurring annual corporate obligation. Osten already holds 1,288 NFTs under the current Polygon model, proving willingness to transact at this scale.
 
-Institutional buyers (Osten BMW, plus pipeline partners Nestle and Rumo) mint and hold Carbon Rights Tokens as verifiable ESG/net-zero assets, then burn them on retirement - a recurring annual corporate obligation. Osten alone already holds 1,288 NFTs under the existing Polygon model, proving willingness to transact at this scale.
+Family farmers receive a CIP-0170 credential once, then trigger new CRT mints as new plots or harvests are verified — tied to Hope Green’s existing annual photo-based verification cycle. This means there is no new behavior to teach, only a new chain destination for an existing habit.
 
-Family farmers receive a CIP-0170 credential once, then trigger fresh CRT mints as new plots or harvests are verified - tied to Hope Green's existing annual photo-verification cycle, so it's not new behavior, just a new destination chain for an existing habit.
-
-Targets are reasonable but ambitious: our 2,500 CIP-0113 transactions represent converting \~800 of the 6,152 seedlings already verified in production (\~13% of the existing base). Our 300 CIP-0170 transactions cover \~250 farmers, a credible subset of the 50,000 already mapped through field partners (IDAM, SEBRAE-AM, ADAF). Both are grounded in usage that already exists off-chain, not hypothetical growth.
+The targets are reasonable but ambitious: our 2,500 CIP-0113 transactions represent converting \~800 of the 6,152 already-verified seedlings into production (\~13% of the existing base). Our 300 CIP-0170 transactions cover \~250 farmers, a credible subset of the 50,000 already mapped through our field partner (IDAM). Both targets are grounded in usage that already exists off-chain.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-We are not building acquisition channels from zero - we are converting channels already in use.
+We are not building acquisition channels from scratch—we are converting channels already in use.
 
-Buyer side: migrate Hope Green's existing institutional buyers - Osten BMW (already 1,288 NFTs), Nestle, and Rumo - into the CRT flow as soon as it is live on mainnet. Advisor Fabiano Nagamatsu, linked to Osten Move, is a direct line into that buyer relationship.
+**Buyer side:** migrate Hope Green’s existing institutional buyer, Osten BMW (already holding 1,288 NFTs), to the CRT flow as soon as it goes live on mainnet. Advisor Fabiano Nagamatsu, connected to Osten Move, provides a direct line to this buyer relationship.
 
-Farmer side: onboard from the 50,000 family farmers already mapped through active institutional partners - IDAM, SEBRAE-AM, ADAF, and SENAI - the same partners already supporting Hope Green's field operations today, with technical endorsement from Ana Paula Paiva, Forestry Engineer at IDAM.
+**Farmer side:** onboard the 6 farmers who received the first payments from Osten and begin registering the 50,000 family farmers already mapped through our government institutional partner, IDAM.
 
-Evidence: these are not prospective partnerships, they are signed pilots and a live paying customer. CIP-0170 credentials can be issued in batches as farmer registration progresses through these existing channels, and CRT minting is tied to Hope Green's already-operating annual verification cycle - not a new user-acquisition effort.
+**Evidence:** these are not prospective partnerships; they are signed pilots and an active paying customer. CIP-0170 credentials can be issued in batches as farmer onboarding progresses through these existing channels, while CRT minting is tied to the annual verification cycle already in operation—not to a new user acquisition effort.
 
 ### Is the underlying project open source?
 
@@ -88,13 +88,13 @@ TRL 9 evidence: Hope Green is not a demo - it is a live production system with r
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-Architecture: a two-layer on-chain design mapping directly onto the two selected integration areas.
+Two-layer architecture matching our two selected areas.
 
-Layer 1 - Farmer Identity (CIP-0170): each participating family farmer receives an on-chain identity credential bound to their stake key, attesting a georeferenced plot, family-farming program enrollment, and planting history. Issued once per farmer, then referenced (not re-verified) by every subsequent token mint.
+Identity (CIP-0170, KERI-backed): each farmer gets a self-certifying Autonomic Identifier (AID) from a KERI inception event with pre-rotation. A 3-of-5 witness set (Hope Green + IDAM + neutral party) countersigns each Key Event Log entry (KERL), enabling duplicity detection. Verified plot data becomes an ACDC (KERI's verifiable credential), signed by the farmer's AID and countersigned by IDAM's; only its SAID (digest) is anchored on Cardano via CIP-0170 metadata - raw KERI state stays off-chain.
 
-Layer 2 - Carbon Rights Token (CIP-0113): a programmable native token minted per verified plot/harvest, representing tCO2e rights. Minting requires a valid CIP-0170 credential from the originating farmer (Sybil resistance) and restricts receiving addresses to KYC'd wallets. Built-in rules allow freezing in a verification dispute, and retirement is enforced via mandatory burn, eliminating on-chain double counting - the exact failure mode of legacy off-chain registries.
+Programmable tokens (CIP-0113): a Carbon Rights Token minted per verified plot. The Plutus validator requires a valid, witnessed, non-revoked SAID before minting (Sybil resistance via identity layer), restricts receiving addresses to KYC'd wallets, allows freeze-on-dispute, and enforces burn-on-retire, preventing double counting.
 
-Why this fits: CIP-0113 is purpose-built for regulated RWA, giving compliance (KYC/AML, freeze, jurisdictional control) natively at the ledger level rather than in an off-chain wrapper institutional buyers cannot audit. CIP-0170 solves originator identity without a centralized KYC database for farmers, keeping custodial risk minimal. Off-chain data (photos, geolocation) stays off-chain as source evidence; only compliance-critical state - rights, identity, lifecycle - lives on Cardano, directly matching what the Pilot's two chosen areas require.
+Why this fits: CIP-0113 gives ledger-native compliance (KYC/AML, freeze, jurisdiction control) that institutional RWA buyers require and off-chain wrappers can't audit. CIP-0170's KERI foundation solves originator identity and Sybil resistance without a centralized farmer database, keeping custodial risk minimal - exactly what dispersed-smallholder carbon credits need.
 
 ### Fits the timeline
 
@@ -119,25 +119,21 @@ Incorporated entity
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-Target market: institutional buyers with net-zero/ESG commitments seeking auditable, fraud-resistant carbon credits (TAM 608M family farmers worldwide, SAM 3.9M in Brazil, SOM 330K in Amazonas state alone), plus the 50,000 family farmers Hope Green already has mapped access to, each with average potential of 700 seedlings.
+Target market: institutional buyers with net-zero/ESG commitments seeking auditable, fraud-resistant carbon credits (TAM — Global: US$323M/year; SAM — Brazil: ≈R$7M/year; SOM — Amazonas: ≈US$700k/year), plus 50,000 family farmers already mapped by Hope Green, each with an average potential of 700 seedlings (TAM: 608M family farmers worldwide; SAM: 3.9M in Brazil; SOM: 330k in Amazonas).
 
-Evidence of demand is not hypothetical - it is live:
+**Demand is already proven:**
 
-\- 6,152 seedlings already planted and verified across \~30 species, 75 people impacted, 51 acres restored.
+- 6,152 seedlings planted and verified across \~30 species, impacting 75 people and restoring 51 acres.
+- Recurring institutional buyer: Osten BMW has acquired 1,288 NFTs.
+- Approved acceleration and funding programs in the Amazon, providing institutional and corporate validation.
+- Validated B2B revenue model: R$18/NFT annual subscription, 5-year contracts, with 40% of revenue going directly to family farmers.
+- 60% of Amazonas’ 330,000 family farmers were affected by the historic 2023/24 drought, reinforcing urgency: this is climate-resilience income, not “greenwashing.”
 
-\- A recurring institutional buyer already purchasing at scale: Osten BMW has acquired 1,288 NFTs.
-
-\- Signed partnerships and pilots with Nestle, Rumo, IDAM, SEBRAE-AM, SENAI, ADAF, AHK Mercosul, Capital Empreendedor, and Inova Amazonia - corporate and institutional validation beyond a single buyer.
-
-\- A validated B2B revenue model already generating recurring payments: R$18/NFT annual subscription, 5-year contracts, with 40% of revenue flowing directly to the family farmer.
-
-\- 60% of Amazonas' 330,000 family farmers were hit by the 2023/2024 historic drought, reinforcing urgency: this is climate resilience income, not vanity ESG.
-
-Competitors ([re.green](http://re.green), Mombak, Carbonext) restore degraded land at high entry cost with little or no active family-farmer inclusion. Hope Green uniquely combines a traceable NFT platform, active smallholder inclusion, and low entry cost - the Cardano integration adds the compliance layer institutional buyers require.
+Competitors ([re.green](http://re.green), Mombak, Carbonext) focus on restoring degraded land, with high entry costs and limited family-farmer inclusion. Hope Green uniquely combines traceable NFTs, active smallholder inclusion, and low entry costs. Cardano integration adds the compliance layer institutional buyers require.
 
 ### Applicant name
 
-Btracer
+Btracer Hope Green
 
 ### What is your business model, and what keeps this running after the pilot? Who pays, and why does usage continue once grant funding ends?
 
@@ -179,21 +175,21 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-By the end of the 3-month window, we will deliver:
+By the end of the 3-month window, we deliver:
 
-1\. CIP-0113 Carbon Rights Token contract on Preview testnet, enforcing KYC/AML-gated addresses, freeze-on-dispute, and burn-on-retire.
+1\. CIP-0113 Carbon Rights Token contract on Preview testnet: KYC/AML-gated addresses, freeze-on-dispute, burn-on-retire.
 
-2\. CIP-0170 Farmer Identity Credential service, issuing credentials bound to farmer stake keys, tested against real registered farmers.
+2\. CIP-0170/KERI identity layer: farmer AIDs, witnessed KEL, ACDC attestations anchored on-chain via SAID.
 
-3\. Data bridge connecting existing Polygon verification records (geolocation, species, farmer, photo updates) to Cardano, piloted on a real subset of the 6,152 verified seedlings.
+3\. Data bridge from Polygon verification records (geolocation, species, farmer, photos) to Cardano, piloted on a real subset of 6,152 verified seedlings.
 
-4\. Public open-source repository for both contracts, reusable for other environmental RWA projects.
+4\. Public open-source repository for both contracts.
 
-5\. Live mainnet mint: at least one real CRT and one real FIC, backed by a genuine verified plot and farmer.
+5\. Mainnet launch (Weeks 10-12) with a dated Week 1-2 post-launch ramp: Days 1-3, 5 CRT mints + 5 farmer credentials, 2 institutional wallets live; Days 4-7, 35 cumulative transactions, 15 farmers, 3 wallets; Week 2, \~95 cumulative transactions, 35 farmers, 4 wallets (Osten BMW, Nestle, Rumo, Hope Green treasury).
 
-6\. Standardized Dune Analytics dashboard tracking transactions and fees against our declared targets.
+6\. Dune Analytics dashboard tracking real transactions/fees against declared targets.
 
-7\. Demo Day showing the full flow: farmer verification to on-chain CRT held by a KYC'd buyer.
+7\. Demo Day showing the full flow live.
 
 8\. Completed team KYC/KYB with Catalyst.
 
@@ -223,21 +219,25 @@ Yes
 
 ### What solution are you building, and what specific problem does it solve - for whom?
 
-Hope Green already runs a live Payment-for-Environmental-Services platform: NFTs on Polygon representing 6,152 verified seedlings planted and maintained by Amazon family farmers, with an active institutional buyer (Osten BMW, 1,288 NFTs) and partners including Nestle and Rumo.
+### Hope Green — Carbon Passport
 
-The problem: dispersed family-farmer carbon credits lack trustworthy, low-cost MRV. Institutional buyers avoid this market after double-counting scandals at traditional registries, and smallholders are locked out of a space dominated by large corporate restoration projects with high entry costs.
+Hope Green operates a live Payment for Ecosystem Services platform: NFTs on Polygon represent 6,152 verified saplings planted and maintained by Amazonian family farmers. We already have an institutional buyer, Osten BMW, holding 1,288 NFTs, plus a partnership with IDAM, an Amazonas government institute.
 
-Hope Green already captures the raw MRV data - geolocation, species, farmer, growth stage, annual verification photos - but it lives as off-chain NFT metadata, not as a compliant financial asset.
+**The problem:** family farmers are key to fighting deforestation but face floods, wildfires, and droughts that can destroy up to 60% of crops. Meanwhile, companies seek credible ESG and carbon projects. Agroforestry can sequester significantly more CO₂ than conventional forests, but farmers lack funding and affordable, reliable MRV (Measurement, Reporting & Verification).
 
-Our solution: Carbon Passport, a new Cardano integration. Each verified plot mints a CIP-0113 programmable Carbon Rights Token with built-in KYC/AML, freeze-on-dispute, and burn-on-retire logic preventing double counting. Each farmer receives a CIP-0170 on-chain identity anchoring their plot and blocking Sybil fraud.
+Hope Green connects both sides by financing plantations with carbon-credit potential. We already capture MRV data—geolocation, species, farmer, growth metrics, and annual verification photos—but today this remains NFT metadata, without a compliance-ready financial asset structure.
 
-This serves two users: family farmers in the Amazon, who gain an auditable reputational passport and access to a market previously closed to them, and institutional carbon-credit buyers, who gain a compliant, fraud-resistant RWA they can trust and retire on-chain.
+**Our solution: Carbon Passport**, built on Cardano. Each verified plot issues a programmable Carbon Rights Token (CIP-0113) with KYC/AML logic, dispute freezing, and burning upon retirement, reducing fraud and double-counting. Each farmer receives an on-chain identity (CIP-0170) linked to their plot.
+
+Farmers gain an auditable reputation and access to the carbon market, while institutional buyers receive a traceable, compliance-ready RWA that can be securely retired on-chain.
 
 ### Supporting links (repo, site, demo)
 
 - https://www.hopegreenagro.com/
 - https://www.linkedin.com/company/b-tracer/
-- https://www.instagram.com/hopegreenagro/
+- https://drive.google.com/drive/folders/1lXC8xGhu3nLyWMt8ScxRtin-UDKO8vTS?usp=sharing
+- https://www.youtube.com/watch?v=SQOurpCkITY
+- https://www.fapeam.am.gov.br/wp-content/uploads/2026/01/Decisao-CD-061-2026-Proc.-2969.2023-53-Resultado-Final-TECNOVA-III-FAPEAM-ANEXO1.pdf
 
 ### Identified dependencies
 
@@ -291,14 +291,12 @@ Yes
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-The Cardano integration is currently at TRL 2-3 (concept formulated / early proof of concept).
+The Cardano integration is currently TRL 2-3 (concept formulated / early proof of concept).
 
-\- Design is defined but unbuilt: CIP-0113 Carbon Rights Token rules (KYC/AML, freeze-on-dispute, burn-on-retire) and the CIP-0170 Farmer Identity Credential schema are specified, but no smart contract code exists yet.
+Design defined but unbuilt: CIP-0113 Carbon Rights Token rules (KYC/AML, freeze-on-dispute, burn-on-retire) are specified; the CIP-0170/KERI identity layer (AID inception, witness set, ACDC attestations, SAID anchoring) is architected but no Aiken contracts or KERI witness infrastructure exist yet.
 
-\- No testnet or mainnet deployment exists for either primitive.
+No testnet or mainnet deployment for either primitive.
 
-\- What is already proven is the input data: live geolocation, species, farmer, and verification-photo data from 6,152 real seedlings on Hope Green's Polygon platform.
+Proven today is the input data only: live geolocation, species, farmer and verification-photo data from 6,152 real seedlings on Hope Green's Polygon platform.
 
-\- Technical ownership is assigned (Wesley Sousa, Head of Blockchain), building on Cardano Foundation reference implementations.
-
-\- The 3-month grant takes this to TRL 7-8: testnet build, then mainnet mint with real institutional transactions.
+Technical ownership assigned (Wesley Sousa, Head of Blockchain). The 3-month grant takes this to TRL 7-8: testnet build, then mainnet mint with real institutional transactions.
