@@ -5,28 +5,43 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 2
+- **Revision:** 8
 - **Proposer:** `stake1u8gsyfdqddcrvv2zklp4tydpum08u7ukgn8hpd79t0370aqpzyhdd`
 - **Funding requested:** ₳145,000
-- **Last finalized:** 2026-08-19T16:30:34.116000+00:00
+- **Last finalized:** 2026-08-24T09:01:44.883000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
-TRL 5 - Technology validated in relevant environment
+TRL 7 - System prototype demonstrated in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-The project is carried out by the[ TEX Labs](https://www.texlabs.org/) team, a blockchain engineering team and official partner of Midnight Network. The team has built and operated two infrastructure products for Midnight: Midnight Explorer and Midnight API Service, with hands-on experience in blockchain infrastructure, backend systems, and ecosystem development.
+The project is carried out by the[ TEX Labs](https://www.texlabs.org/) : <https://texlabs.org/> team, a blockchain engineering team and official partner of Midnight Network. The team has built and operated two infrastructure products for Midnight: Midnight Explorer and Midnight API Service, with hands-on experience in blockchain infrastructure, backend systems, and ecosystem development.
 
-[**Bach Trinh**](https://linkedin.com/in/trinh-bach) **- Engineering Lead** responsible for the backend architecture, API, the consistency of the transaction-processing pipeline, and the reliability of the relayer system.
+**Bach Trinh — Engineering Lead**\
+LinkedIn: <https://linkedin.com/in/trinh-bach> \
+Github: <https://github.com/Bachhsunkid> \
+Email: [txbach.11@gmail.com](mailto:txbach.11@gmail.com)
 
-[**Hiep Tran**](https://linkedin.com/in/tranhhiep) **- Senior DevOps Engineer** responsible for mainnet infrastructure, CI/CD, relayer deployment, monitoring, alerting, and key management.
+**Hiep Tran — Senior DevOps Engineer**\
+LinkedIn: <https://linkedin.com/in/tranhhiep> \
+Github: <https://github.com/TranHuyHiep> 
 
-[**Long Tran**](https://www.linkedin.com/in/longdevbf/) **- Blockchain Engineer** responsible for developing the blockchain architecture, integrating smart contracts, cross-chain protocols, building the transaction processing and verification mechanism.
+Email: [tranhuyhiep0710@gmail.com](mailto:tranhuyhiep0710@gmail.com)
 
-[**Trung Pham**](https://www.linkedin.com/in/trung-ph%E1%BA%A1m-029a5827b/) **- Senior Software Engineer** responsible for developing the relayer components and application, integrating source chains and end-to-end testing.
+**Long Tran — Blockchain Engineer**\
+LinkedIn: <https://www.linkedin.com/in/longdevbf/> \
+Github: <https://github.com/longdevbf> 
 
-[**Minh Le Dinh**](https://linkedin.com/in/dinhminhle) **- Business Development** responsible for partnerships, user-acquisition channels from CEXs, wallets, and DeFi applications, as well as tracking the adoption plan.
+Email: [longtd4work@gmail.com](mailto:longtd4work@gmail.com)
+
+**Trung Pham — Senior Software Engineer**
+
+LinkedIn: <https://www.linkedin.com/in/trung-ph%E1%BA%A1m-029a5827b/> 
+
+Github: <https://github.com/trungdev26>
+
+Email: [trungpvdev26@gmail.com](mailto:trungpvdev26@gmail.com)
 
 ### Eligible area
 
@@ -38,21 +53,21 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-The users transacting are those holding assets on Binance, OKX, and Bybit who want to bring them into Cardano to trade, provide liquidity, or use DeFi the demand to withdraw from a CEX already exists; it's simply missing a simple path. USDC → USDCx is the first use case, expanding later to EURC and USYC. Frequency isn't one-off: users return whenever they need to top up a DeFi position, rebalance, or move more assets from a CEX to Cardano producing repeat usage rather than a single test-and-abandon action.
+The users transacting are those holding assets on Binance, OKX, and Bybit who want to bring them into Cardano to trade, provide liquidity, or use DeFi — the demand to withdraw from a CEX already exists; it's simply missing a simple path. USDC → USDCx is the first use case, expanding later to EURC and USYC. Frequency isn't one-off: users return whenever they need to top up a DeFi position, rebalance, or move more assets from a CEX to Cardano — producing repeat usage rather than a single test-and-abandon action.
 
-The target of 1,000 mint transactions in 60 days (\~17/day, 50 external wallets) is reasonable because the scale of real demand is already proven: USDCx reached over 15 million tokens minted within the first few weeks after launching via xReserve (Feb 2026) the pilot's target is just a small, measurable slice of that demand, not a speculative figure.
+The target of 1,000 mint transactions in 35 days (\~29/day, 100 external wallets) is reasonable because the scale of real demand is proven: USDCx reached over 15 million tokens minted within the first few weeks after launching via xReserve (Feb 2026) — the pilot target is just a small, measurable slice of that demand, not a speculative figure.
 
-It's still ambitious because it exceeds the Stablecoins category's PoA floor (500 ADA in fees, 50 wallets vs. the floor of 435 ADA, 26 wallets), and every transaction is tied to a real CEX withdrawal with a real fee not something that can be faked or cheaply incentivized to hit a number.
+It's still ambitious because it exceeds the Stablecoins category's PoA floor (500 ADA in fees, 100 wallets vs. the floor of 435 ADA, 25 wallets), and every transaction is tied to a real CEX withdrawal with a real fee — not something that can be faked or cheaply incentivized to hit a number.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Our go-to-market strategy meets users where they already hold assets and have existing habits: centralized exchanges. Users simply withdraw from Binance, OKX, or Bybit to an address we provide, no bridge or DEX required.
+Our go-to-market strategy meets users where they already hold assets and have existing habits: centralized exchanges. Users simply withdraw from Binance, OKX, or Bybit to an address we provide — no bridge or DEX required.
 
-Initially we combine community-led and partner-led growth via the Cardano community, blockchain developers, and ecosystem partners: **Midnight Explorer** (educational content, product campaigns), **Blockchain Pioneer Student Club** (developer workshops, hands-on onboarding), and **SeerBot/C2VN** (community reach).
+Initially we combine community-led and partner-led growth: the Cardano community, blockchain developers, partner: Midnight Explorer [https://docs.google.com/document/d/1qidpLc5DrFQ6KmNDEgCkylnOwD7JlnPbG0iLJ7ir8p4/edit?usp=sharing ](https://docs.google.com/document/d/1qidpLc5DrFQ6KmNDEgCkylnOwD7JlnPbG0iLJ7ir8p4/edit?usp=sharing)(\~2,000 reach, \~40 wallets/35 days),...
 
 We also integrate the transfer flow into wallets, DeFi apps, and ecosystem projects' docs/user flows, turning each integration into a new acquisition channel.
 
-Channels are measured via traffic, started/successful transfers, conversion rate, and repeat usage. Milestone 1 targets \~1000 successful mainnet transactions, guiding resource priority and partnership expansion after mainnet.
+<https://docs.google.com/document/d/1rW2_GnfhA8bD-yeONfXDvq4BbankyACuNLyoVYhUpdo/edit?tab=t.0>
 
 ### Is the underlying project open source?
 
@@ -72,9 +87,9 @@ The infrastructure is also designed to support multiple assets, including USDC, 
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-The product currently has a complete implementation of the CEX → source chain → xReserve → Cardano flow on a public testnet, allowing the entire process from receiving assets to issuing the corresponding asset on Cardano to be verified, rather than simulating individual components separately. The system has created and managed deposit addresses following the HD standard, processed asset-transfer transactions, carried out transfers via xReserve, and tracked the asset-issuance process on Cardano using a mechanism that reconciles transaction identifiers with Circle's confirmation data.
+Midnight Explorer and Midnight API Service are two blockchain infrastructure products TEX Labs built and operates for Midnight Network, handling real traffic on high-load backend systems. This capability — relayer, monitoring, production backend — is reused to build the CEX-to-Cardano integration, not capability created solely for it.
 
-Regarding testing, 299 tests for the relayer system and 250 tests for the user interface all passed. The source code was also automatically checked for consistency, structure and common bugs before deployment.
+Operational evidence: [midnightexplorer.com](http://midnightexplorer.com)
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
@@ -111,13 +126,13 @@ Incorporated entity
 
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 
-The project's target market is the group of users who hold digital assets on centralized exchanges such as Binance, OKX, and Bybit and want to bring those assets into the Cardano ecosystem, but are not yet ready to use bridges or manage multiple wallets and networks themselves. This is a group of users accustomed to using CEXs but who have not yet had access to a direct, simple asset-transfer process suited to a mainstream experience.
+The project's target market is the group of users who hold digital assets on centralized exchanges such as Binance, OKX, and Bybit and want to bring those assets into the Cardano ecosystem, but are not yet ready to use bridges/DEXs or manage multiple wallets and networks themselves. This is a group of users accustomed to using CEXs but who have not yet had access to a direct, simple asset-transfer process suited to a mainstream experience.
 
 Demand for bringing assets from other ecosystems into Cardano has already been clearly shown by the growth of assets such as USDCx. After USDCx was launched via Circle's xReserve mechanism in February 2026, this asset quickly reached more than 15 million tokens minted within the first few weeks, helping expand stablecoin liquidity and DeFi activity on Cardano. This is evidence that demand for using stablecoin assets on Cardano is real, although current figures do not specifically reflect the segment of users coming from CEXs.
 
-The gap the project focuses on addressing is precisely this unmeasured segment of users: those accustomed to withdrawing assets from a CEX but who have never used a bridge or complex DeFi tools. The pilot aims to reach about 26 successful deposit transactions per day, thereby generating real-world data to measure the demand from this user group.
+The gap the project focuses on addressing is precisely this unmeasured segment of users: those accustomed to withdrawing assets from a CEX but who have never used a bridge or complex DeFi tools. The pilot aims to reach about 29 successful deposit transactions per day, thereby generating real-world data to measure the demand from this user group.
 
-As assets such as USDC, EURC, USYC and other tokenized assets are supported on Cardano, the same infrastructure can be expanded to serve the corresponding asset groups and users.
+As assets such as EURC, USYC, and other tokenized assets are supported on Cardano, the same infrastructure can be expanded to serve the corresponding asset groups and users.
 
 ### Applicant name
 
@@ -141,16 +156,19 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-The funding is expected to be used for:
+Funding of 145,000 ADA is allocated as follows:
 
-- **Software development**: Expanding the architecture to integrate multiple CEXs (Binance, OKX, Bybit), multiple blockchain networks, and multiple asset pairs: USDC → USDCx, EURC → EURCx, USYC → USYCx.
-- **Operations**: Servers, relayer, RPC, key management, monitoring, alerting, maintaining the system after deployment, and supporting users.
-- **Testing & security**: Testing new integrations, security assessments and resolving issues before moving into production.
+• Personnel (45%, \~65,250 ADA): Development, testing, security, operations, and system maintenance.
 
+• Software development (20%, \~29,000 ADA): Expanding the architecture for multiple CEXs (Binance, OKX, Bybit), multiple networks, and asset pairs: USDC→USDCx, EURC→EURCx, USYC→USYCx.
 
-- **Marketing**: Partnership outreach, ecosystem content and communications, and a bug bounty program to drive adoption, visibility, and community participation.
+• Infrastructure (20%, \~29,000 ADA): Servers, relayer, RPC, key management, monitoring, and alerting to keep the system stable on mainnet.
 
-The funding also builds the technical foundation and resources for the product to continue developing after the pilot phase.
+• Testing & security (8%, \~11,600 ADA): Testing new integrations, security assessments before mainnet
+
+• Operations & expansion (4%, \~5,800 ADA): Maintaining the system after deployment
+
+\- Marketing (3%, \~4,350 ADA): bringing the product to the community during M1; first 2 months on preprod, final month on mainnet.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -162,14 +180,19 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-By the end of Milestone 1, the project will complete:
+By the end of M1 (3 months), the project will complete:
 
-- Mainnet relayer deployment: Operating the relayer team with a 2-of-3 key-management mechanism, split among 3 independent operating parties.
-- Launching a bug bounty program, with targeted marketing to gather 30 external wallets and 100 transactions on the preprod/preview network.
-- First mainnet transaction: Completing at least 1 real transaction from a CEX to Cardano, in which the asset is successfully transferred and received into the user's Cardano wallet.
-- Infrastructure: Announcing the necessary on-chain addresses and identifiers, address, the relayer operating parties, and the policy IDs/assets.
-- Monitoring and alerting system: Completing monitoring for key system states, including slow transactions, rejected transactions, and errors during processing.
-- Public demo: Publishing a complete demo simulating the real usage flow, from withdrawing assets on a CEX to receiving the corresponding asset on Cardano.
+• Mainnet relayer deployment: complete the 2-of-3 key-management mechanism (MPC/HSM) and operator-selection criteria; confirm and publish at least 2/3 independent operators before mainnet custody goes live.
+
+• Launching a bug bounty program, with targeted marketing to gather 30 external wallets and 100 transactions on the 2 testnet network.
+
+• First mainnet transaction: Completing at least 1 real transaction from a CEX to Cardano, in which the asset is successfully transferred and the corresponding asset is received into the user's Cardano wallet.
+
+• Publishing on-chain infrastructure: announce the asset-processing address and the supported policy IDs/assets.
+
+• Monitoring and alerting system: Completing monitoring for key system states, including slow transactions, rejected transactions, and errors during processing.
+
+• Public demo: Publishing a complete demo simulating the real usage flow.
 
 ### How far along is the integration you're proposing, today?
 

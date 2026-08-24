@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 25
+- **Revision:** 27
 - **Proposer:** `stake1u9k6f967jnq3jn766k8x9jznqd0mx99hsep0yqksupx6jksynrqzt`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-19T13:29:28.367000+00:00
+- **Last finalized:** 2026-08-24T08:49:52.350000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -40,15 +40,25 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Counted activity comes only from external wallets. Team, related-party, team-funded, relay, batcher and keeper wallets are excluded.
+Only external-wallet activity counts. Team, related-party, team-funded, relay, batcher and keeper wallets are excluded.
 
-The ₳200,000 request covers security and delivery costs: independent audit, remediation, Pyth/stablecoin integration and mainnet launch. These costs do not scale with transaction volume.
+The ₳200,000 request covers fixed audit, remediation, Pyth/stablecoin integration and launch costs; it does not scale with transaction volume.
 
-LendADA has no external customers today. The ₳500 Oracle and ₳600 Stablecoin targets are conservative beta-test thresholds above program floors, not a claim of product-market fit or a guarantee of market conditions. The 600 oracle-consuming and 800 stablecoin-moving actions are planning targets for genuine user flows.
+LendADA has no external customers. ₳500 Oracle and ₳600 Stablecoin are conservative beta targets above program floors, not forecasts of product-market fit.
 
-Acquisition combines Jaromír Tesař’s Cardano X channel, audit/risk documentation, onboarding and fixed-scope creator education. James Meidinger will introduce USDM lending to the USDM community; Michal Urbanek will distribute LendADA’s launch and education through Cardanians. They will publish launch content and support community Q&As, providing direct routes to Cardano stablecoin users.
+The forecast treats the 600 Oracle transactions as a subset of 800 stablecoin-moving user transactions, not 1,400 distinct transactions. Cumulative ramp: Day 7: 75 stablecoin / 55 Oracle tx, 25 wallets; Day 14: 200 / 150, 50; Day 21: 400 / 310, 75; Day 35: 800 / 600, at least 100. Post-Day-14 growth comes from campaign conversion and repeat use; the endpoint averages 8 stablecoin and 6 Oracle actions per wallet.
 
-Users are not paid to deposit, borrow or transact. Suppliers return for variable interest; ADA holders return for stablecoin liquidity without selling collateral.
+Acquisition uses Jaromír Tesař’s Cardano X channel, documentation and onboarding. 
+
+James Meidinger (USDM)
+
+LnkedIn: <https://www.linkedin.com/in/james-meidinger-7a777b43/>
+
+X profile: @blockjock2017
+
+James will provide launch posts and education. He confirmed the collaboration via X. Contact him to ensure.
+
+No user is paid to deposit, borrow, or transact.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 

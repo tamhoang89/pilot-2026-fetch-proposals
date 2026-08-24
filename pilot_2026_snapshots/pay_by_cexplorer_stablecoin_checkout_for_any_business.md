@@ -1,14 +1,14 @@
 # Pay by Cexplorer: Stablecoin Checkout for Any Business
 
-> Create one link or QR code, set the price in USD or EUR and receive USDM or USDCx directly to your wallet without custody, middlemen or coding.
+> Create one link or QR code, set the price in USD and receive USDM or USDCx directly to your wallet without custody, middlemen or coding.
 
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 27
+- **Revision:** 34
 - **Proposer:** `stake1u8s9hfdektcafcqzgj7pcz2hh57wmpjgrfqsmruj7yf5m3gujfpue`
 - **Funding requested:** ₳50,000
-- **Last finalized:** 2026-08-19T12:52:38.555000+00:00
+- **Last finalized:** 2026-08-24T08:13:52.250000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -37,23 +37,27 @@ N/A
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-We target 1,000 genuine stablecoin payments during the 30-day measurement window, excluding the five-day entry ramp. The target is based on external distribution, not team-funded activity.
+We declare a target of 1,500 genuine stablecoin payments and 300 ADA in counted network fees, based on an estimated average fee of 0.20 ADA per transaction. Users will pay Cardano projects, creators, freelancers and community initiatives through USDM and USDCx payment links, QR codes and embedded checkout. We target at least 300 distinct external payer wallets; team wallets and sponsored transactions are excluded.
 
-[Cexplorer.io](http://Cexplorer.io) reaches approximately 15,000 unique users per month. A header banner, in-product placement and practical payment use cases will target 500 payments - equivalent to activating about 1% of visitors and averaging 3.3 payments per activated user or recipient. Our X account (\~10,000 followers) and Telegram/Discord communities (1,000+ members) will target a further 250 payments.
+The minimum-window plan is:
 
-The unpromoted baseline of 89 mainnet transactions between April and July 2026 supports an estimate of 25 organic payments. Three partners (confirmation within a week) will each target 75 payments through genuine sales, services or donation flows, contributing 225 in total.
+• Entry epoch: 50 transactions / 10 ADA; launch ramp, no floor.\
+• Epoch 1: 150 / 30 ADA.\
+• Epoch 2: 175 / 35 ADA.\
+• Epoch 3: 200 / 40 ADA.\
+• Epoch 4: 275 / 55 ADA.\
+• Epoch 5: 300 / 60 ADA.\
+• Epoch 6: 350 / 70 ADA.
 
-We will measure unique external wallets, active recipients, completed payments and repeat usage. At an estimated average Cardano network fee of 0.20 ADA, 1,000 transactions generate approximately 200 ADA, above the required 180 ADA floor.
+Total: 1,500 transactions and 300 ADA. The plan exceeds the required epoch floors of 25 ADA in epochs 1–3 and 50 ADA in epochs 4–6. Campaigns will run throughout the window rather than as one launch spike. No single day is planned to contribute more than 20% of the total. We will report transactions, fees, unique wallets, active recipients and repeat usage per epoch.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-CPay is live but currently receives no structured promotion. It recorded 89 mainnet transactions between April and July 2026, providing an unpromoted baseline.
+CPay is live but not actively promoted and recorded 89 mainnet transactions between April and July 2026. At launch, distribution will combine [Cexplorer.io](http://Cexplorer.io) header and in-product placement (\~15,000 monthly unique users), Cexplorer’s X, TG and DC channels, and Cardanians’ X account (71,000 followers) and newsletter. Cardanians is the only distribution partner; all counted transactions must come from external wallets and none will be team-funded.
 
-At launch, we will run a header banner and in-product placement across [Cexplorer.io](http://Cexplorer.io) (\~15,000 monthly unique users), supported by our X account (\~10,000 followers) and Telegram/Discord communities (1,000+ members). We target 500 payments from Cexplorer, 250 from social channels and 25 from existing organic usage.
+The 1,500-payment target is allocated as 500 from Cexplorer placement, 250 from Cexplorer social channels, 725 from Cardanians distribution and 25 from organic usage. Tagged links, source-specific QR codes and unique-wallet tracking will limit channel overlap.
 
-We will also onboard three ecosystem partners (within a week) using dedicated links, QR codes or embeds, targeting 75 payments each. Days 1–3: launch placements and configure partner flows. Days 4–7: activate the first campaigns. Days 8–10: onboard remaining partners and publish use cases. Days 11–14: resolve friction and repeat promotion.
-
-The 30-day target is 1,000 stablecoin payments from external wallets. Team-funded transactions and conditional Token2049 activity are excluded.
+Days 1–3: launch placements and onboarding content. Days 4–7: publish payment use cases and support recipients. Days 8–10: repeat Cardanians and Cexplorer campaigns. Days 11–14: address friction and retarget users who created links but have not received a payment.
 
 ### Is the underlying project open source?
 
@@ -147,28 +151,23 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
+Month 1 – Core integration\
+• Add verified USDM and USDCx policies to the transaction builder.\
+• Implement invoices, expiry, single-use links, exact-amount validation and under/overpayment protection.\
+• Complete automated and preprod tests.
 
-- A production mainnet release supporting USDM and USDCx through a verified stablecoin asset registry.
+Month 2 – Merchant integration\
+• Add indexer confirmation, reconciliation and payment history.\
+• Deliver embeddable checkout, signed webhooks and merchant configuration.\
+• Begin end-to-end testing, monitoring and security review.
 
-- Fixed and flexible stablecoin invoices denominated or displayed in USD and EUR.
+Month 3 – Mainnet delivery\
+• Resolve QA and security findings and deploy the production release.\
+• Publish documentation, release notes and the declared on-chain footprint.\
+• Complete independent mainnet payments with USDM and USDCx.\
+• Provide the live URL, transaction hashes, test evidence, walkthrough video and Demo Day presentation.
 
-- Expiring, single-use invoice links with unique payment references.
-
-- Exact-amount transaction construction and detection of underpaid, overpaid, expired or duplicate payments.
-
-- Stablecoin invoice history, reconciliation and persistent payment statuses.
-
-- An embeddable payment button for merchant websites.
-
-- Signed merchant webhooks for submitted, confirmed, expired, underpaid and overpaid payments.
-
-- Indexer-based verification of policy ID, asset amount, recipient, payment reference and confirmation.
-
-- Integration documentation, release notes, security testing and mainnet monitoring.
-
-- At least two independent external-user mainnet payments: one using USDM and one using USDCx.
-
-- A live Demo Day walkthrough supported by transaction hashes, declared identifiers and technical evidence.
+M1 is complete only when the stablecoin flow is live, repeatable and independently verifiable on Cardano mainnet.
 
 ### How far along is the integration you're proposing, today?
 
@@ -192,7 +191,7 @@ Merchants, creators, freelancers and event organizers need a simple way to accep
 
 Pay by Cexplorer is an existing non-custodial payment-link product operating on Cardano mainnet. The proposed project will extend it into a stablecoin invoicing and checkout platform supporting verified USDM and USDCx assets.
 
-Recipients will create fixed or flexible payment requests denominated in USD or EUR and share them as links, QR codes or embedded payment buttons. New invoice functionality will include expiration, single-use payment requests, exact-amount validation, and detection of underpaid or overpaid transactions.
+Recipients will create fixed or flexible payment requests denominated in USD and share them as links, QR codes or embedded payment buttons. New invoice functionality will include expiration, single-use payment requests, exact-amount validation, and detection of underpaid or overpaid transactions.
 
 A merchant integration layer will add signed webhooks, persistent payment statuses and transaction reconciliation. This allows businesses to connect confirmed payments to orders, tickets, subscriptions or services.
 
@@ -236,7 +235,7 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-1000
+1500
 
 ### Standard read and attested
 
@@ -244,7 +243,7 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-200
+300
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
