@@ -5,50 +5,56 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 54
+- **Revision:** 68
 - **Proposer:** `stake1u80ce430kes6aqtyf5k9nutt08gpl6ltggmnj2t9r970fqgtkuwq2`
 - **Funding requested:** ₳150,000
-- **Last finalized:** 2026-08-20T01:51:55.515000+00:00
+- **Last finalized:** 2026-08-24T11:39:36.501000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
-TRL 5 - Technology validated in relevant environment
+TRL 9 - Actual system proven in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-Ivana Zafirovski - Founder of Walkers
+**Product Leadership**
 
-<https://x.com/Ivanaarch>\
-[https://www.linkedin.com/in/ivana-zafirovski-253912355/](https://www.linkedin.com/in/ivana-zafirovski-253912355/?skipRedirect=true)
+**Ivana Zafirovski — Founder, WFit/Walkers**\
+Ivana leads product strategy, funding oversight and delivery coordination. Her experience is supported by 4 years of WFit/Walkers delivery, including the live mobile app, WChronicles, WAirdrops,WBoard... Her LinkedIn has also been updated with additional professional informations\
+X: <https://x.com/Ivanaarch>\
+LinkedIn: <https://www.linkedin.com/in/ivana-zafirovski-253912355/>
 
-Ruben Duarte - Head of Marketing and Growth
+**Ruben Duarte — Head of Marketing & Growth**\
+Responsible for user acquisition, partnerships, campaigns and adoption\
+X: <https://x.com/RuduarteD>\
+LinkedIn: <https://www.linkedin.com/in/ruben-duarte-8a71314a/>
 
-<https://x.com/RuduarteD>\
-<https://www.linkedin.com/in/ruben-duarte-8a71314a/>
+**Technical Delivery**
 
-André Morais - Software engineer
+**André Morais — Software Engineer**\
+X: <https://x.com/andrefmmorais>\
+LinkedIn: <https://www.linkedin.com/in/andre-moniz-morais/>\
+GitHub: <https://github.com/andre-moniz-morais>
 
-<https://x.com/andrefmmorais>\
-<https://www.linkedin.com/in/andre-moniz-morais/>\
-<https://github.com/andre-moniz-morais>\
-\
-Meswar Al Arik - Developer & Web3 Builder\
-<https://x.com/iammeswaralarik>\
-<https://github.com/arikbd123> <https://linkedin.com/in/meswaralarik>
+**Meswar Al Arik — Developer & Web3 Builder**\
+X: <https://x.com/iammeswaralarik>\
+GitHub: <https://github.com/arikbd123>\
+LinkedIn: <https://linkedin.com/in/meswaralarik>
 
-Olie Merza - Lead Artist
+**Abhiwan — Mobile App Development**\
+<https://www.abhiwan.com/>
 
-<https://x.com/OlieMerza>
-
-Bojan Mitevski - UX/UI and Motion Graphics
-
+**Bojan Mitevski — UX/UI & Motion Graphics**\
 <https://www.bojanmitevski.com/>
 
-Noma Tokenomics - Tokenomics,Economy creation and Audit - <https://noma.pro/>
+**Supporting Team**
 
-Abhiwan - Mobile app developers - <https://www.abhiwan.com/>
+**Olie Merza — Lead Artist**, supporting WFit NFT/art direction and not a technical dependency for the  Gateway\
+X: <https://x.com/OlieMerza>
 
-Yepple Ink - Blockchain developments and services
+**Noma Tokenomics — Tokenomics, economy design & audit**\
+<https://noma.pro/>
+
+**Yepple Ink / BankFi Pillar — Blockchain development and services**
 
 ### Eligible area
 
@@ -60,19 +66,31 @@ Yes
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-WFit will generate genuine usage through **real product activity from independent users**, not artificial transaction loops. Users will transact when they fund WFit Credits with supported stablecoins from **seven blockchain networks**, with corresponding liquidity converted or settled into **USDM/USDCx on Cardano**. They will also transact when paying WFit subscriptions for AI personal coaches, purchasing TCG packs, trading on the WChronicles marketplace, playing Battles, joining sponsored challenges, claiming rewards, and withdrawing balances in USDM/USDCx.
+We will make the first two weeks and adoption pacing explicit.
 
-Usage will come from our existing **\~3,000-user ecosystem**, WChronicles/TCG users, multichain and CEX communities, sports events, partner campaigns, and corporate wellness clients. Activity is naturally recurring through subscriptions, repeated Credits purchases, ongoing challenges, marketplace activity, games, and rewards.
+Our \~3,000 users and 16,381 Cardano transactions show existing ecosystem activity, not current USDM/USDCx adoption, so our conversion model is explicit. We target 1,000 Gateway users, \~33% of our current base, before adding CEX/multichain, partner, sports-event and corporate users.
 
-We declare **2,000 eligible mainnet transactions and 700 ADA in fees**. At \~0.33–0.40 ADA per transaction, this is realistic and ambitious. Over the last four months, the WFit ecosystem has already generated **16,381 Cardano transactions**.
+We model 2 qualifying stablecoin transactions per user:
+
+1. USDM/USDCx funding of WFit Credits;
+
+2. USDM/USDCx withdrawal/settlement after Credits are used or earned through WChronicles, Battles, Raid rewards, subscriptions or other WFit services.
+
+1,000 users × 2 = 2,000 transactions, with a 700 ADA fee target.
+
+Post-launch pacing: Week 1: 100 external wallets, 150 stablecoin tx, 60 Credit purchases, 20 subscriptions and 30 withdrawals. Week 2: 150 additional wallets, 220 tx, 90 Credit purchases, 30 subscriptions and 50 withdrawals.
+
+Remaining usage will be spread across recurring Credits funding, subscriptions and withdrawals, targeting roughly 250–300 tx per 5-day epoch. We will monitor per-epoch floors and ensure no single day contributes more than the 20% counted daily cap, avoiding launch day concentration.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
 WFit will onboard users through channels we already operate: our \~3,000-user WFit/Walkers ecosystem,WFit ambassador program, Affiliate program,WBoard, WChronicles TCG communities, social channels, WAirdrops partner communities, sports activations and corporate wellness relationships.
 
-A key acquisition channel is WFit’s real-world sports events. Our first major activation is an October Padel Tournament with 300+ registered players, sponsors and partners. It will be the first in a recurring series of WFit events designed to onboard mainstream users through app registration, wallet creation, subscriptions, credits and sponsored challenges.
+The October Padel Tournament is additional acquisition and pre-onboarding channel, not as the primary evidence supporting our post-M1 adoption target.
 
-We will also grow through multichain/CEX users, sports clubs and B2B wellness campaigns. Traction includes \~3,000 active users, 5,000–8,000 monthly transactions, TCG sales/trading and airdrop campaigns.
+The event is intended to expose Web2 users to WFit, drive app registrations, wallet onboarding and prepare users for later stablecoin activity.
+
+Our adoption case does not depend on this event. The main sources are our existing \~3,000-user ecosystem, WChronicles users, recurring Credits purchases, subscriptions, rewards, multichain/CEX users, partner communities and corporate wellness campaigns.
 
 Success will be measured through USDM/USDCx transactions, unique wallets/users, stablecoin volume, Credits funded and average transaction value.
 
@@ -94,17 +112,59 @@ Flow: Exchange or other blockchain (Eterium - USDT ,Solana - USDC,Abstract - USD
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-WFit already has validated components supporting this proposal, including the **WFit Credits system and multichain payment flows used in WChronicles and our TCG products**. These have been tested with real users, proving the underlying technology and business model. The proposed integration of **USDM and USDCx across the WFit ecosystem for payments, Credits purchases, rewards, subscriptions and withdrawals** is still at validation stage. The pilot will connect these components across the new WFit App, games,WBoard,AI personal coaches, test them with real users and partners, and move WFit from **TRL 5 toward a production-ready mainnet solution**.
+WFit is a proven production ecosystem with real users. The WFit/Walkers App has operated since 2023, WAirdrops since 2024, and WChronicles is live with Credits, multichain/CEX funding, payments and withdrawals. 
+
+[https://play.google.com/store/apps/details?id=com.walkers.walkerscnft&pli=1 ](https://play.google.com/store/apps/details?id=com.walkers.walkerscnft&pli=1)- App on Play Store [https://apps.apple.com/mk/app/walkerscnft/id6450308902 ](https://apps.apple.com/mk/app/walkerscnft/id6450308902)- App on App Store <https://chronicles.wfitapp.xyz/> - TCG Cards,marketplace and arenas\
+<https://wairdrops.xyz/> - Airdrop tool\
+[https://whubapp.xyz/ ](https://whubapp.xyz/)- Geolocations mapping  <https://board.wfitapp.xyz/> - WBoard\
+<https://www.walkersraffles.xyz/> - Wraffles platform
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-WFit will use a hybrid on-chain/off-chain architecture optimized for Cardano. High-volume and sensitive data including fitness activity, verification logic, the WFit Credits ledger, TCG marketplace activity will remain off-chain for privacy, scalability and lower costs. All stable USDM/USDC payments and transactions, withdrawals and reward settlements will be executed and verifiable on Cardano mainnet.
+We agree that the original proposal did not describe the operational architecture in enough detail. We have now added a working Preprod Gateway together with a technical architecture document covering the complete end-to-end flow.
 
-Users will be able to enter through seven supported blockchains or CEX routes using supported stablecoins (USDT,USDC,USDCe). WFit will validate the asset, amount and transaction before issuing credits, activating subscriptions or confirming purchases. Withdrawals and rewards will settle in verified USDM/USDCx to user-controlled Cardano wallets.
+The latest version covers all the catalyst points and makes clear what is already working and what belongs to the future pilot.
 
-Our multichain layer simplifies onboarding from other ecosystems, while Cardano becomes the stablecoin settlement and utility layer. We will integrate existing interoperability infrastructure rather than build a new bridge.
+**already validated :**
 
-This architecture directly fits the pilot because it creates genuine mainnet stablecoin usage while keeping non-essential data off-chain, and enables transparent measurement of wallets, stablecoin volume, transaction count and network fees.
+- separate wfit gateway infrastructure running on cardano preprod
+- deposit validation flow
+- credits accounting and ledger
+- settlement flow demonstration
+- reserve tracking
+- withdrawal flow architecture
+- preprod transaction evidence
+- failure handling logic
+
+complete reviewer flow:
+
+deposit → validation → credits → withdrawal request → settlement
+
+architecture flow:
+
+user wallet
+
+→ deposit address
+
+→ credits ledger
+
+→ treasury/rebalancing layer
+
+→ cardano settlement vault
+
+→ user cardano wallet
+
+Also clarified:
+
+- external chains/assets are deposit routes only
+- settlement targets are cardano assets (usdm/usdcx)
+- the gateway does not claim instant conversion of every deposit
+- liquidity/rebalancing manages how settlement liquidity is maintained\
+  \
+  Supporting documentation: \
+  gateway: <https://wfit-gateway.anchorflow.cloud/> architecture: <https://wfit-gateway.anchorflow.cloud/architecture> \
+  evidence: <https://wfit-gateway.anchorflow.cloud/evidence> \
+  repo: <https://github.com/WalkersApp/credits-gateway>
 
 ### Fits the timeline
 
@@ -130,19 +190,21 @@ Incorporated entity
 
 The global fitness app market is estimated at **USD 13B in 2026** and projected to reach around **USD 25B by 2030**.
 
-WFit targets three core groups: **crypto and CEX communities interested in fitness and gaming, mainstream fitness users, and businesses seeking corporate wellness solutions**.
+WFit targets three core groups: **crypto/CEX communities interested in fitness and gaming, mainstream users, and businesses seeking corporate wellness solutions**.
 
 WFit is not a concept-only product. We already have **\~3,000 active users, a working Credits system, multichain payments, blockchain rewards, and 5,000–8,000 monthly transactions**.
 
-Our model connects **verified physical activity with stable-value digital rewards and services**. For B2B, we work with sports brands, clubs, sponsors and corporate wellness partners that can fund challenges and reward pools.
+Our model connects **verified physical activity with stable-value digital rewards and services**. B2B partners and corporate wellness clients can fund challenges and reward pools.
 
-Real-world events are also a major acquisition channel. Our first WFit sports activation is an **October Padel Tournament with 300+ registered players, sponsors and partners**, followed by recurring events designed to onboard mainstream Web2 users, wallet creation,pay with credits and USDM/USDCx withdrawals. 
+Real-world events are an additional acquisition channel. Our first major WFit activation is an **October Padel Tournament**, followed by recurring events designed to onboard Web2 users into WFit, wallets, Credits and USDM/USDCx. \
+More details:\
+<https://docs.google.com/document/d/1rHjqT7r1E0RNtXDzNvZdXf0vHND3y5WZajIr3-tDFFQ/edit?usp=drive_link>
 
-The Stablecoin Gateway enables users to bring value from **CEXs and other blockchains into Cardano**, spend, earn and withdraw through **USDM/USDCx**.
+Our adoption does not depend on one event. Core usage comes from existing users, WChronicles, recurring Credits purchases, subscriptions, rewards, multichain/CEX communities and corporate wellness.
 
-**Why now:** our new WFit App introduces Web2 onboarding, health-device integrations, **150+ activities, Credits, AI coaches, subscriptions, challenges and corporate wellness**.
+The Stablecoin Gateway enables value to move from **CEXs and other chains into Cardano**, with spending, rewards and withdrawals through **USDM/USDCx**.
 
-Success will be measured through **USDM/USDCx transactions, unique wallets/users, stablecoin volume, Credits funded and average transaction value**.
+Success will be measured by **transactions, unique wallets/users, stablecoin volume, Credits funded and average transaction value**.
 
 ### Applicant name
 
@@ -166,11 +228,19 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-This funding enables WFit to evolve from a validated Credits and multichain payment system into a fully integrated Cardano stablecoin layer using USDM and USDCx. It will accelerate stablecoin integration across the new WFit App and existing products, while preparing the next step: credit-card payments that convert fiat into WFit Credits and USDM/USDCx liquidity.
+This funding enables WFit to evolve its validated Credits/multichain payment system into a **Cardano stablecoin layer using USDM/USDCx**, while preparing **credit card → Credits → stablecoin liquidity** flows
 
-Funding will support USDM/USDCx integration, wallet and withdrawal flows, stablecoin-to-Credits purchases, subscriptions and rewards, WChronicles integration, CEX/multichain onboarding, credit-card payment preparation, security, mainnet testing and analytics.
+**M1 Budget: 150,000 ADA / 1,900h**
 
-The result is reusable infrastructure bringing both crypto and mainstream users into Cardano stablecoin usage.
+- Architecture & settlement: **220h×80 = 17,600 ADA**
+- Multichain/CEX deposits: **420h×85 = 35,700 ADA**
+- Credits & reconciliation: **260h×75 = 19,500 ADA**
+- USDM/USDCx vaults & withdrawals: **360h×90 = 32,400 ADA**
+- WFit integrations: **280h×70 = 19,600 ADA**
+- QA, security & analytics: **280h×70 = 19,600 ADA**
+- Documentation & management: **80h×70 = 5,600 ADA**
+
+Within 3 months, WFit will launch the gateway on **Cardano mainnet**, supporting deposits,Credits conversion, settlement, withdrawals and tracking toward **2,000 tx / 700 ADA fees**
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -182,49 +252,19 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-**M1 Budget and Outputs — 150,000 ADA**
+Within the 3-month M1 window, WFit will deliver a **live multichain Stablecoin Gateway on mainnet**
 
-Within 3 months, WFit will deliver a live multichain stablecoin gateway connected to Cardano mainnet.
+M1 outputs include:
 
-Architecture design — 17,600 ADA
+- **Architecture & settlement:** finalized gateway architecture, declared vault/settlement wallets, transaction flows and liquidity model
+- **Multichain/CEX deposits:** USDC, USDT and USDCe routes from selected chains/CEXs, with transaction detection and validation
+- **Credits & reconciliation:** automatic deposit-to-Credits issuance, transaction history, accounting and withdrawal eligibility
+- **USDM/USDCx settlement:** Cardano vaults, wallet integration, liquidity monitoring and withdrawals to user 
+- **WFit integrations:** subscriptions, WChronicles, gaming and rewards
+- **QA, security and analytics:** end-to-end testing, failure handling and monitoring for the **2,000 tx / 700 ADA fee target**
+- **Documentation:** architecture, release notes, declared identifiers and Demo Day evidence
 
-220h × 80 ADA/h
-
-Structure, settlement wallets and transaction architecture
-
-Multichain and CEX deposits — 35,700 ADA
-
-420h × 85 ADA/h
-
-USDC, USDT, USDCe deposits from selected chains/CEX routes, monitoring and deposit validation
-
-Credits and reconciliation — 19,500 ADA
-
-260h × 75 ADA/h
-
-Deposit-to-Credits conversion, transaction history, withdrawal eligibility and liquidity accounting.
-
-USDM/USDCx vaults and withdrawals — 32,400 ADA
-
-360h × 90 ADA/h
-
-Wallets integration, settlement, withdrawals and monitoring.
-
-WFit product integrations — 19,600 ADA
-
-280h × 70 ADA/h
-
-QA, security & analytics — 19,600 ADA
-
-280h × 70 ADA/h
-
-Mainnet testing, review and tracking for the 2,000 tx / 700 ADA fee target.
-
-Documentation & management — 5,600 ADA
-
-80h × 70 ADA/h
-
-Total: 1,900 hours / 150,000 ADA
+By M1 reviewers can verify the complete end-to-end mainnet flow
 
 ### How far along is the integration you're proposing, today?
 
@@ -338,6 +378,12 @@ This commitment is **separate from the Stablecoin Gateway proposal**. Builder DA
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-The proposed integration builds on WFit components that are already working, including our Credits system, multichain payment flows and blockchain-based products. However, the specific integration of verified stablecoins withdrawals and rewards in USDM/USDCx across the WFit ecosystem is not yet fully deployed in production.
+The proposed Stablecoin Gateway builds on WFit components already proven in production, including our Credits system, multichain/CEX funding flows and payment infrastructure.
 
-At TRL 5, we will validate the integration through real payment, reward and withdrawal flows using the new WFit App, WChronicles packs opening, subscriptions, Raid Boss TCG battles game. The pilot will test asset-policy validation, wallet flows, stablecoin-to-Credits payments, subscriptions and withdrawals with real users and partners, providing the evidence required to progress toward a production-ready mainnet deployment.
+The core Gateway flow is already being validated on Cardano Preprod, where reviewers can test the payment and settlement experience directly:
+
+Supported stablecoin/CEX deposit → WFit Credits → USDM/USDCx settlement → withdrawal to a user-controlled Cardano wallet.
+
+Preprod validation covers wallet interaction, transaction and asset validation, Credits issuance, settlement logic and USDM/USDCx withdrawal flows under realistic conditions.
+
+**Preprod demo :** [https://wfit-gateway.anchorflow.cloud/ ](https://wfit-gateway.anchorflow.cloud/)

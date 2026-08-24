@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 56
+- **Revision:** 69
 - **Proposer:** `stake1u9mzuqyq7c0arwx9knnfccalzydln4mxcvzl6d83y8jn49q6wz2wf`
 - **Funding requested:** ₳140,000
-- **Last finalized:** 2026-08-21T20:49:04.466000+00:00
+- **Last finalized:** 2026-08-24T11:30:12.219000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -45,14 +45,17 @@ anyqr pledges 5% of all protocol fee revenue to the Cardano treasury from our fi
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-Every order is 3 txs from users' wallets; no server keys,  no sponsored fees. Mainnet wk10 gives \~10 epochs.\
-STABLECOINS. 76 Preprod txs calibrate unit cost, not demand: 0.31 ADA/tx. Every order emits 3 txs: matched open, fund, close; unmatched open, fund, buyer claims back on timeout. 700 orders = 2,100 txs, \~650 ADA on a 301 floor; we declare 600.\
-\
-IDENTITY. 1 attestation per closed order: \~550 of 700 close, \~150 time out unmatched (refund, no attestation). Plus 15 merchant DID+zkTLS mints (30) and 120 buyer anchors = 700 total.\
-\
-FIRST 14 DAYS. All in the floorless entry epoch (§1.1). Pre-launch: 15 merchants off P2P leaderboards, DIDs minted, merchants fund own floats, no team capital (§5.2). D1-3: 5 concierge merchants on UPI/PIX/QRIS, \~5 orders/day. D4-7: open signup, regional communities, \~10/day. D8-14: all 10 corridors, SDK on npm, 16/day, 40+ external wallets, past the 31 min. Wallet embeds & [p2p.me](http://p2p.me) fills are upside, not assumed.\
-\
-PACE. Floors bind first: §7.3 sets \~33 ADA/epoch for five, \~67 for four, so 14/day (\~64) misses; we run 16/day, \~73/epoch. Steady, not bursts; 15 merchants keeps \~2% fees.
+3 txs/order from users' wallets - matched: open, fund, close; unmatched: open, fund, timeout claim - plus a 4th DID tx when an order closes. Mainnet launches wk10.
+
+RATE. \~0.31 ADA/tx on both tracks.
+
+STABLECOINS. \~1,400 orders = \~4,200 txs, \~1,300 ADA on a 301 floor; we declare 3,100 txs and 960.
+
+IDENTITY. 1 buyer-paid script tx to merchant DID per closed order, \~78% close. Plus 25 merchants' DID+zkTLS mints (50 txs) and \~250 buyer anchors = \~1,400 txs, \~435 ADA; we declare 1,000 and 310, on an 84 floor, 9-wallet min.
+
+FIRST 14 DAYS. Entry ramp (§1.1), floors from \~D10. Pre-launch: 25 merchants off P2P leaderboards, own floats, no team capital (§5.2). D1-3: DIDs+zkTLS minted, 8 concierge merchants, \~10 orders/day. D4-7: open signup, \~20/day. D8-14: 10 corridors, SDK on npm, 30/day, 60+ wallets, past the 31 min. 30/day is \~1.2 orders per merchant; the same model has run 341,200 orders elsewhere. Wallet embeds and [p2p.me](http://p2p.me) fills are upside, not assumed.
+
+PACE. Clears at 8 or 9 epochs. Stablecoins 53-107 (60-120 at 8); 30 orders x 3/day = \~140. Identity 17-34 (19-39 at 8); \~24 closes/day + anchors = \~44. No bursts.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
@@ -83,11 +86,11 @@ USDCx is Cardano’s largest stablecoin, funded by a 70M ADA vote. anyqr gives u
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-anyqr runs end to end on Cardano Preprod today. A buyer scans a shop QR, locks tUSDM in escrow, a merchant accepts and pays the shop in fiat, the buyer confirms, and the escrow releases to the merchant. 76 transactions at the escrow address so far.
+anyqr runs end to end on Cardano Preprod today (Tx links on github) A buyer scans a shop QR, locks tUSDM in escrow, a merchant accepts and pays the shop in fiat, the buyer confirms, and the escrow releases to the merchant. 76 transactions at the escrow address so far.
 
 Underneath: one Aiken Plutus V3 validator carries each order as its own UTxO through Placed, Accepted, Paid and Disputed, with 9 property tests over every redeemer, deadline and failure path. @qrpay/sdk on Lucid Evolution gives every action a prepare and an execute. CIP-30 connect ships for Lace, Eternl and Vespr. Release is automatic: no merchant signature, no claim button, and no server key: a keyless relayer pushes it, proven on chain.
 
-CIP-0170 identity anchors for buyers and merchants are live on Preprod too in codebase.
+CIP-0170 identity anchors for buyers and merchants are live on Preprod too in codebase
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
@@ -128,7 +131,7 @@ anyqr sits between two markets that already exist at scale.
 
 **RAILS.** QR is how these countries pay. Brazil's PIX moved R$35.4 trillion across 79.8 billion payments in 2025. India's UPI processed $3.56 trillion in FY26. Indonesia's QRIS doubled to 12.5B+ txs in H1 2026. Vietnam, Thailand & Peru run the same model, and every shop already accepts.
 
-**PROVEN.** [p2p.me](http://p2p.me) runs this model on Base, swapping USDC against UPI and PIX QR: $31.4M settled, 341,200+ orders, $4.69M in July 2026, up 31% MoM, backed by Coinbase Ventures. Demand is not the question. We will integrate their merchant network so those merchants fill Cardano orders too, giving liquidity on day one, not a cold start.
+**PROVEN.** [p2p.me](http://p2p.me) runs this model on Base, swapping USDC against UPI and PIX QR: $31.4M settled, 341,200+ orders, $4.69M in July 2026, up 31% MoM, backed by Coinbase Ventures. Demand is not the question. We will integrate their merchant network so those merchants can fill Cardano orders too.
 
 TIMING. USDCx launched 27 Feb 2026 & is Cardano's largest stablecoin at $17.5M, 36% share (Messari). No spend rail exists. We are building it.
 
@@ -140,7 +143,7 @@ Mohammed Adnan Khan
 
 Bob is visiting Vietnam and wants to buy a $10 item. The shop only takes VietQR. He has no Dongs, but he holds USDCx on Cardano.
 
-He scans the shop's QR in anyqr and signs once. About $10.25 of USDCx locks: $10 for the shop, \~2% to the merchant, a small anyqr fee, all quoted before he signs. A merchant, from our book or [p2p.me](http://p2p.me) 's open network, accepts through their public smart contract and pays the shop in Dongs from their bank app. Charles confirms the money arrived and the escrow releases the money.
+He scans the shop's QR in anyqr and signs once. About $10.25 of USDCx locks: $10 for the shop, \~2% to the merchant, a small anyqr fee, all quoted before he signs. A merchant, from our book or [p2p.me](http://p2p.me) 's open network, accepts through their public smart contract and pays the shop in Dongs from their bank app. Bob confirms the money arrived and the escrow releases the money.
 
 **WHO PAYS.** Bob, once, at settlement. Merchants set their own spread and compete on rate in an open book. anyqr never touches fiat, so we are not a money transmitter, only a fee on settled volume.
 
@@ -148,7 +151,7 @@ He scans the shop's QR in anyqr and signs once. About $10.25 of USDCx locks: $10
 
 ### On-chain identity (CIP-0170) - expected transaction count
 
-700
+1000
 
 ### Named, verifiable team
 
@@ -204,7 +207,7 @@ CORRIDORS. UPI, QRIS, PIX, VietQR, PromptPay, QR Ph, Yape, Nequi, DeUna, Mercado
 
 MEASUREMENT. A message tag on every tx, a public dashboard, a declared footprint: script hashes, USDCx policy, stake keys
 
-PROOF. 20+ orders from 10+ non-team wallets, 5+ DIDs
+PROOF. 40+ orders from 20+ non-team wallets, 25+ DIDs
 
 ### How far along is the integration you're proposing, today?
 
@@ -212,7 +215,7 @@ TRL 5 - Technology validated in relevant environment
 
 ### On-chain identity (CIP-0170) - fee target (ADA)
 
-203
+310
 
 ### Clear budget
 
@@ -286,7 +289,7 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-2100
+3100
 
 ### Standard read and attested
 
@@ -294,7 +297,7 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-600
+960
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
