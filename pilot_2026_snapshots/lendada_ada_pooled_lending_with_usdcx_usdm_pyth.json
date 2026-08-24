@@ -7,7 +7,7 @@
   "title": "LendADA: ADA Pooled Lending with USDCx, USDM & Pyth",
   "tagline": "Launch separate, audited ADA-collateral lending markets for USDCx and USDM, using signed Pyth price data and conservative risk controls.",
   "requestedAmount": 200000,
-  "updatedAt": 1787561392350,
+  "updatedAt": 1787564781457,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 6 - Technology demonstrated in relevant environment",
@@ -45,12 +45,11 @@
     "eligClearBudget": true,
     "eligGenuineWork": true,
     "eligOneProposal": true,
-    "problemSolution": "ADA holders often need dollar liquidity without selling their long-term position, while stablecoin holders need transparent, non-custodial ways to earn yield. Cardano lending remains concentrated in a few protocols, limiting choice in market design, risk controls and operating models.\n\nLendADA is a non-custodial pooled lending protocol. Users will supply USDCx or USDM and earn variable interest, or deposit ADA as collateral and borrow a stablecoin. USDCx and USDM will use separate per-asset accounting, utilisation, interest indices, caps and risk parameters. ADA collateral backs stablecoin borrowing.\n\nA working Cardano Preprod MVP already supports supply and withdrawal, borrowing and repayment, collateral management, utilisation-based rates, position-health tracking, liquidations and permissionless batch settlement. It can be inspected at <https://morfeus.176-102-64-240.sslip.io/>. The deployment uses test assets. It has no external customers and has not been independently audited.\n\nThe project will integrate mainnet USDCx and USDM asset policies and signed Pyth ADA/USD data, add strict oracle checks and monitoring, complete an independent security review, and launch a conservatively capped mainnet beta. Grant funding covers this future integration, audit, remediation, deployment and user education, not protocol liquidity, loans, transaction rebates or user incentives.",
+    "problemSolution": "ADA holders often need dollar liquidity without selling their long-term position, while stablecoin holders need transparent, non-custodial ways to earn yield. Cardano lending remains concentrated in a few protocols, limiting choice in market design, risk controls and operating models.\n\nLendADA is a non-custodial pooled lending protocol. Users will supply USDCx or USDM and earn variable interest, or deposit ADA as collateral and borrow a stablecoin. USDCx and USDM will use separate per-asset accounting, utilisation, interest indices, caps and risk parameters. ADA collateral backs stablecoin borrowing.\n\nA working Cardano Preprod MVP already supports supply and withdrawal, borrowing and repayment, collateral management, utilisation-based rates, position-health tracking, liquidations and permissionless batch settlement. It can be inspected at [https://lendada.com](https://morfeus.176-102-64-240.sslip.io/). The deployment uses test assets. It has no external customers and has not been independently audited.\n\nThe project will integrate mainnet USDCx and USDM asset policies and signed Pyth ADA/USD data, add strict oracle checks and monitoring, complete an independent security review, and launch a conservatively capped mainnet beta. Grant funding covers this future integration, audit, remediation, deployment and user education, not protocol liquidity, loans, transaction rebates or user incentives.",
     "supportingLinks": [
       "https://github.com/Satuchac?tab=repositories",
       "https://www.linkedin.com/in/jaromir-tesar-43b59817a/?enhance=null",
-      "https://morfeus.176-102-64-240.sslip.io/",
-      "https://drepdao.176-102-64-240.sslip.io/?view=overview"
+      "https://lendada.com"
     ],
     "eligDependencies": true,
     "eligGoodStanding": true,
@@ -69,16 +68,16 @@
   },
   "createdAt": 1787049545023,
   "headRevision": {
-    "id": "24abc1d3-5148-4e3e-a1b0-d2f250cd0941",
-    "number": 27,
+    "id": "1b2349d2-c029-4d32-834a-91420d5e8346",
+    "number": 30,
     "kind": "saved",
-    "createdAt": 1787561371994
+    "createdAt": 1787564772793
   },
   "latestFinalization": {
-    "id": "6b19d4a7-de5a-4d66-a2b5-7d9f4bde602c",
-    "cycle": 4,
-    "revisionId": "24abc1d3-5148-4e3e-a1b0-d2f250cd0941",
-    "finalizedAt": 1787561392350
+    "id": "c3b36dfd-4875-445c-aac8-1884c2896515",
+    "cycle": 7,
+    "revisionId": "1b2349d2-c029-4d32-834a-91420d5e8346",
+    "finalizedAt": 1787564781457
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",

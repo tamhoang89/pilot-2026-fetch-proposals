@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 27
+- **Revision:** 30
 - **Proposer:** `stake1u9k6f967jnq3jn766k8x9jznqd0mx99hsep0yqksupx6jksynrqzt`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-24T08:49:52.350000+00:00
+- **Last finalized:** 2026-08-24T09:46:21.457000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -223,7 +223,7 @@ ADA holders often need dollar liquidity without selling their long-term position
 
 LendADA is a non-custodial pooled lending protocol. Users will supply USDCx or USDM and earn variable interest, or deposit ADA as collateral and borrow a stablecoin. USDCx and USDM will use separate per-asset accounting, utilisation, interest indices, caps and risk parameters. ADA collateral backs stablecoin borrowing.
 
-A working Cardano Preprod MVP already supports supply and withdrawal, borrowing and repayment, collateral management, utilisation-based rates, position-health tracking, liquidations and permissionless batch settlement. It can be inspected at <https://morfeus.176-102-64-240.sslip.io/>. The deployment uses test assets. It has no external customers and has not been independently audited.
+A working Cardano Preprod MVP already supports supply and withdrawal, borrowing and repayment, collateral management, utilisation-based rates, position-health tracking, liquidations and permissionless batch settlement. It can be inspected at [https://lendada.com](https://morfeus.176-102-64-240.sslip.io/). The deployment uses test assets. It has no external customers and has not been independently audited.
 
 The project will integrate mainnet USDCx and USDM asset policies and signed Pyth ADA/USD data, add strict oracle checks and monitoring, complete an independent security review, and launch a conservatively capped mainnet beta. Grant funding covers this future integration, audit, remediation, deployment and user education, not protocol liquidity, loans, transaction rebates or user incentives.
 
@@ -231,8 +231,7 @@ The project will integrate mainnet USDCx and USDM asset policies and signed Pyth
 
 - https://github.com/Satuchac?tab=repositories
 - https://www.linkedin.com/in/jaromir-tesar-43b59817a/?enhance=null
-- https://morfeus.176-102-64-240.sslip.io/
-- https://drepdao.176-102-64-240.sslip.io/?view=overview
+- https://lendada.com
 
 ### Identified dependencies
 
