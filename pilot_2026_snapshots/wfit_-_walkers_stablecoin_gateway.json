@@ -7,7 +7,7 @@
   "title": "WFit - Walkers Stablecoin Gateway",
   "tagline": "Multichain Onboarding, Stablecoin Payments,USDM and USDCx withdrawals",
   "requestedAmount": 150000,
-  "updatedAt": 1787571576501,
+  "updatedAt": 1787592298627,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 9 - Actual system proven in operational environment",
@@ -22,7 +22,7 @@
     "pitchVideo": "https://youtu.be/kIlwrwMB5EE",
     "competitors": "Strava, Sweatcoin,StepN... focus on fitness tracking or activity rewards. DEXs, wallets and bridges solve liquidity and transfer needs, but the experience remains fragmented.\n\nWFit combines these layers. We already have users, multichain payments and CNT's rewards. Our advantage is creating real stablecoin utility on Cardano. Users can enter from CEXs or other chains, use Credits across fitness, gaming and subscriptions, and settle through USDM/USDCx. Credit withdrawals are in USDM and USDCx.\n\nFlow: Exchange or other blockchain (Eterium - USDT ,Solana - USDC,Abstract - USDCe/USDT,Injective - USDC ,Robinhood - USDCe,Sui - USDC ) → WFit onboarding route → Credits 1 USDC/USDT = 1 Credit → USDM or USDCx vault → WFit credit withdrawals in USDM or USDCx after usage in WFit.",
     "trlEvidence": "WFit is a proven production ecosystem with real users. The WFit/Walkers App has operated since 2023, WAirdrops since 2024, and WChronicles is live with Credits, multichain/CEX funding, payments and withdrawals. \n\n[https://play.google.com/store/apps/details?id=com.walkers.walkerscnft&pli=1 ](https://play.google.com/store/apps/details?id=com.walkers.walkerscnft&pli=1)- App on Play Store [https://apps.apple.com/mk/app/walkerscnft/id6450308902 ](https://apps.apple.com/mk/app/walkerscnft/id6450308902)- App on App Store <https://chronicles.wfitapp.xyz/> - TCG Cards,marketplace and arenas\\\n<https://wairdrops.xyz/> - Airdrop tool\\\n[https://whubapp.xyz/ ](https://whubapp.xyz/)- Geolocations mapping  <https://board.wfitapp.xyz/> - WBoard\\\n<https://www.walkersraffles.xyz/> - Wraffles platform",
-    "architecture": "We agree that the original proposal did not describe the operational architecture in enough detail. We have now added a working Preprod Gateway together with a technical architecture document covering the complete end-to-end flow.\n\nThe latest version covers all the catalyst points and makes clear what is already working and what belongs to the future pilot.\n\n**already validated :**\n\n- separate wfit gateway infrastructure running on cardano preprod\n- deposit validation flow\n- credits accounting and ledger\n- settlement flow demonstration\n- reserve tracking\n- withdrawal flow architecture\n- preprod transaction evidence\n- failure handling logic\n\ncomplete reviewer flow:\n\ndeposit → validation → credits → withdrawal request → settlement\n\narchitecture flow:\n\nuser wallet\n\n→ deposit address\n\n→ credits ledger\n\n→ treasury/rebalancing layer\n\n→ cardano settlement vault\n\n→ user cardano wallet\n\nAlso clarified:\n\n- external chains/assets are deposit routes only\n- settlement targets are cardano assets (usdm/usdcx)\n- the gateway does not claim instant conversion of every deposit\n- liquidity/rebalancing manages how settlement liquidity is maintained\\\n  \\\n  Supporting documentation: \\\n  gateway: <https://wfit-gateway.anchorflow.cloud/> architecture: <https://wfit-gateway.anchorflow.cloud/architecture> \\\n  evidence: <https://wfit-gateway.anchorflow.cloud/evidence> \\\n  repo: <https://github.com/WalkersApp/credits-gateway>",
+    "architecture": "We agree that the original proposal did not describe the operational architecture in enough detail. We have now added a **working Cardano Preprod Gateway** and technical documentation covering the complete end-to-end flow, clearly separating what is already validated from what will be delivered during the pilot.\n\n**The demo proves:**\\\nUser Credits → withdrawal request → gateway validation → settlement wallet → tUSDM Preprod transaction → on-chain evidence.\n\n**Already validated:**\n\n- Automated Preprod settlement flow\n- tUSDM withdrawal demonstration\n- Deposit validation and Credits ledger\n- Reserve/liability tracking\n- Settlement asset handling\n- Rebalancing request logic\n- Custody and treasury architecture\n- Failure/refund handling\n- Preprod transaction evidence\n\n**Reviewer flow:** Deposit → validation → Credits → withdrawal request → settlement.\n\n**Architecture:** User wallet → deposit address → Credits ledger → treasury/rebalancing layer → Cardano settlement vault → user wallet.\n\nExternal chains/assets are deposit routes only; settlement targets are **USDM/USDCx on Cardano**. The Gateway does not claim instant conversion of every deposit; liquidity/rebalancing maintains settlement capacity.\n\nGateway: <https://wfit-gateway.anchorflow.cloud/>\\\nArchitecture: <https://wfit-gateway.anchorflow.cloud/architecture>\\\nEvidence: <https://wfit-gateway.anchorflow.cloud/evidence>\\\nRepo: <https://github.com/WalkersApp/credits-gateway>",
     "eligTimeline": true,
     "integrations": [
       "stablecoins"
@@ -67,16 +67,16 @@
   },
   "createdAt": 1786029233073,
   "headRevision": {
-    "id": "22993e05-2053-4ced-ab01-bf6cfaf28016",
-    "number": 68,
+    "id": "95426c6f-1bfc-4db3-abfa-41ff1b0575da",
+    "number": 69,
     "kind": "saved",
-    "createdAt": 1787571331487
+    "createdAt": 1787592262914
   },
   "latestFinalization": {
-    "id": "4cca2bd4-5190-456c-a497-7aff1d9b8f94",
-    "cycle": 2,
-    "revisionId": "22993e05-2053-4ced-ab01-bf6cfaf28016",
-    "finalizedAt": 1787571576501
+    "id": "f835da11-9beb-485b-bd82-7765489aa8b0",
+    "cycle": 3,
+    "revisionId": "95426c6f-1bfc-4db3-abfa-41ff1b0575da",
+    "finalizedAt": 1787592298627
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",
@@ -93,7 +93,7 @@
         "key": "submission",
         "window": {
           "startsAt": 1785996000000,
-          "endsAt": 1787572800000
+          "endsAt": 1787594400000
         },
         "functions": [
           {
@@ -107,14 +107,14 @@
             "key": "finalize",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787572800000
+              "endsAt": 1787594400000
             }
           },
           {
             "key": "withdraw",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787572800000
+              "endsAt": 1787594400000
             }
           }
         ]

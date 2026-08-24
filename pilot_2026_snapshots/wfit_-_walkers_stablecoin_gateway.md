@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 68
+- **Revision:** 69
 - **Proposer:** `stake1u80ce430kes6aqtyf5k9nutt08gpl6ltggmnj2t9r970fqgtkuwq2`
 - **Funding requested:** ₳150,000
-- **Last finalized:** 2026-08-24T11:39:36.501000+00:00
+- **Last finalized:** 2026-08-24T17:24:58.627000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -121,50 +121,33 @@ WFit is a proven production ecosystem with real users. The WFit/Walkers App has 
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-We agree that the original proposal did not describe the operational architecture in enough detail. We have now added a working Preprod Gateway together with a technical architecture document covering the complete end-to-end flow.
+We agree that the original proposal did not describe the operational architecture in enough detail. We have now added a **working Cardano Preprod Gateway** and technical documentation covering the complete end-to-end flow, clearly separating what is already validated from what will be delivered during the pilot.
 
-The latest version covers all the catalyst points and makes clear what is already working and what belongs to the future pilot.
+**The demo proves:**\
+User Credits → withdrawal request → gateway validation → settlement wallet → tUSDM Preprod transaction → on-chain evidence.
 
-**already validated :**
+**Already validated:**
 
-- separate wfit gateway infrastructure running on cardano preprod
-- deposit validation flow
-- credits accounting and ledger
-- settlement flow demonstration
-- reserve tracking
-- withdrawal flow architecture
-- preprod transaction evidence
-- failure handling logic
+- Automated Preprod settlement flow
+- tUSDM withdrawal demonstration
+- Deposit validation and Credits ledger
+- Reserve/liability tracking
+- Settlement asset handling
+- Rebalancing request logic
+- Custody and treasury architecture
+- Failure/refund handling
+- Preprod transaction evidence
 
-complete reviewer flow:
+**Reviewer flow:** Deposit → validation → Credits → withdrawal request → settlement.
 
-deposit → validation → credits → withdrawal request → settlement
+**Architecture:** User wallet → deposit address → Credits ledger → treasury/rebalancing layer → Cardano settlement vault → user wallet.
 
-architecture flow:
+External chains/assets are deposit routes only; settlement targets are **USDM/USDCx on Cardano**. The Gateway does not claim instant conversion of every deposit; liquidity/rebalancing maintains settlement capacity.
 
-user wallet
-
-→ deposit address
-
-→ credits ledger
-
-→ treasury/rebalancing layer
-
-→ cardano settlement vault
-
-→ user cardano wallet
-
-Also clarified:
-
-- external chains/assets are deposit routes only
-- settlement targets are cardano assets (usdm/usdcx)
-- the gateway does not claim instant conversion of every deposit
-- liquidity/rebalancing manages how settlement liquidity is maintained\
-  \
-  Supporting documentation: \
-  gateway: <https://wfit-gateway.anchorflow.cloud/> architecture: <https://wfit-gateway.anchorflow.cloud/architecture> \
-  evidence: <https://wfit-gateway.anchorflow.cloud/evidence> \
-  repo: <https://github.com/WalkersApp/credits-gateway>
+Gateway: <https://wfit-gateway.anchorflow.cloud/>\
+Architecture: <https://wfit-gateway.anchorflow.cloud/architecture>\
+Evidence: <https://wfit-gateway.anchorflow.cloud/evidence>\
+Repo: <https://github.com/WalkersApp/credits-gateway>
 
 ### Fits the timeline
 

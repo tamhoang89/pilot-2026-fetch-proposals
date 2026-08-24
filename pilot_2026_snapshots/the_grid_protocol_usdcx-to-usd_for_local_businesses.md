@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 37
+- **Revision:** 42
 - **Proposer:** `stake1u9pql8dvjfvym2zjhnm5x7fk2sv9l4zfv8xhmjkx444q80qkqty7f`
 - **Funding requested:** ₳100,000
-- **Last finalized:** 2026-08-24T10:15:54.908000+00:00
+- **Last finalized:** 2026-08-24T16:54:45.032000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -16,11 +16,13 @@ TRL 9 - Actual system proven in operational environment
 
 ### Why is your team well-suited to deliver this?
 
-Alonzo G. founder and operator, brings 20 years as an L3 Support Analyst and IT infrastructure consultant, plus 4 years of Azure/Microsoft 365 cloud solutions experience — the same systems-reliability discipline this integration depends on, since a payout pipeline touching real business funds needs to be built and monitored like production infrastructure. Alonzo has also been an active Cardano community member for 6 years, and is an active member of the ABC Atlanta Black Chambers, connecting this work directly to the local business community it's designed to reach.
+Alonzo G., founder/operator, brings 20 years as an L3 Support Analyst and IT infrastructure consultant, plus 4 years in Azure/M365 cloud solutions — the systems-reliability discipline a payout pipeline touching real funds demands. He's also a 6-year active Cardano community member and a member of the ABC Atlanta Black Chambers, connecting this work to the local business community it serves.\
+<https://www.linkedin.com/in/alonzo-green-989581303>
 
-More importantly, this isn't a team proposing to build from a standing start: we already operate The Grid Protocol as a live product — registration and moderation pipeline, KYB verification via Didit, Stripe-based booking and payments with real refund handling, and an owner-facing dashboard with CSV/PDF export — all shipped and running with 40 real business sign-ups. This proposal adds Cardano-specific integration on top of infrastructure we've already proven we can build and operate reliably.
+This isn't a standing start — The Grid Protocol is already live: registration/moderation pipeline, KYB via Didit, Stripe-based bookings and payments with real refunds, and an owner dashboard with CSV/PDF export, all running with 40 real business sign-ups. This proposal adds Cardano integration on top of infrastructure we've already built and operate.
 
-For the parts outside our core expertise, we're not overreaching: Saqib Shoukat — Top Rated on Upwork, 100% Job Success score, 19 completed jobs, 1,400+ hours delivered, with production Stripe payment integration experience — is contracted to build the Transak Stream and MoonPay off-ramp integration, and an independent third-party security firm (Cyberscope or Zealynx Security) audits it before launch.
+For work outside our core expertise, we're not overreaching: Saqib Shoukat — Top Rated on Upwork, 100% JSS, 1,400+ hours delivered, production Stripe integration experience — is contracted for the Transak Stream/MoonPay off-ramp build. An independent security firm (Cyberscope or Zealynx) audits it before launch.\
+<https://github.com/saqibshoukat1>
 
 ### Eligible area
 
@@ -49,6 +51,10 @@ For consumer/holder-side awareness, we use Cardano's own community channels wher
 ### Is the underlying project open source?
 
 Yes
+
+### Short Video Pitch
+
+https://www.youtube.com/watch?v=qFhVLA3-cA0
 
 ### Who else solves this today - competitors/alternatives, and why does your approach win?
 
@@ -152,11 +158,11 @@ Yes
 
 ### What solution are you building, and what specific problem does it solve - for whom?
 
-The Grid Protocol is a live directory platform ([thegridprotocol.com](http://thegridprotocol.com)) connecting Atlanta businesses with customers via an interactive map  40 business sign-ups, a working KYB pipeline, and a live Stripe-based booking and payments system.
+The Grid Protocol is a live directory platform (www.[thegridprotocol.com](http://thegridprotocol.com)) connecting Atlanta businesses with customers via an interactive map 40 business sign-ups, a working KYB pipeline, and a live Stripe-based booking and payments system.
 
 We're building a licensed USDCx-to-USD conversion and payout pipeline, integrated into our existing business dashboard, so local ADA and stablecoin holders can pay for real goods and services at Grid Protocol businesses, while the business receives predictable US dollars in their bank account no wallet or crypto literacy required.
 
-The problem: roughly one in four American adults now own cryptocurrency, and Atlanta has an active Cardano and crypto community, but holders currently have no way to spend it at local businesses they already support. Meanwhile, local businesses — particularly Black-owned businesses, a meaningful share of our sign-ups  have limited low-friction ways to reach new customers or get paid without cash handling or middleman fees.
+The problem: roughly one in four American adults now own cryptocurrency, and Atlanta has an active Cardano and crypto community, but holders currently have no way to spend it at local businesses they already support. Meanwhile, local businesses — particularly Black-owned businesses, a meaningful share of our sign-ups have limited low-friction ways to reach new customers or get paid without cash handling or middleman fees.
 
 USDCx is dollar-pegged and backed 1:1 by USDC, removing price volatility for the business. Conversion and payout are handled by a licensed third-party off-ramp provider — Transak Stream as primary, MoonPay as named fallback, so no party ever holds custody or signing keys, and no money-transmitter burden falls on our platform.
 
@@ -167,6 +173,8 @@ This gives Cardano a real, documented example of a stablecoin becoming spendable
 - https://thegridprotocol.com
 - https://www.linkedin.com/in/alonzo-green-989581303
 - https://github.com/saqibshoukat1?tab=overview&from=2025-12-01&to=2025-12-31
+- https://www.youtube.com/watch?v=34gLWCUHhkg
+- https://atlantablackchambers.org/
 
 ### Identified dependencies
 

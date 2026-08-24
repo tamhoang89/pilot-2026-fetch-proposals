@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 5
+- **Revision:** 12
 - **Proposer:** `stake1uywd6eyum5dsnmr7x9kk2n29e9uuwn8w5vkfq8wy37wfdcsqd0z8d`
 - **Funding requested:** ₳200,000
-- **Last finalized:** 2026-08-20T03:48:30.404000+00:00
+- **Last finalized:** 2026-08-24T17:04:25.560000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -19,10 +19,13 @@ TRL 7 - System prototype demonstrated in operational environment
 A senior team that ships. \
 Core team of four: \
 Principal architects ( Kasey White & Lucas Rosas)\
+[Lucas F. | LinkedIn , ](https://www.linkedin.com/in/rvcas/)[Kasey W. | LinkedIn](https://www.linkedin.com/in/kasey-w-08ab33126/)\
 Senior software engineer (Seungheon Oh)\
+[Seungheon Oh | LinkedIn](https://www.linkedin.com/in/seungheon-oh/)\
 Chief business development officer (Joseph Escobar)\
+[Joseph Escobar | LinkedIn](https://www.linkedin.com/in/joseph-escobar-488a6a378/)\
 \
-Note: the platform is built, the grant is for Stable coin integration.
+Note: the platform is built, the grant is for Cardano Stable coin integration.
 
 ### Eligible area
 
@@ -30,44 +33,58 @@ Yes
 
 ### Optional: Voluntary give-back pledge: grant repayment terms and/or treasury revenue share, with your own thresholds/terms and/or %. If no such relevant offer exists, please write 'N/A'.
 
-We are opensourcing the implementation.
+We are open sourcing the implementation.\
+\
+We believe all platforms should offer Cardano stable coins to their users, this contributes to gaining liquidity for the stable coins and also provides their users with the means to convert to a non volatile asset.
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-- Users will generate regular cardano transactions from their BETTER platform wallet
+Activity that generates transactions on Cardano:
+
+- Users will generate Cardano transactions from their BETTER platform wallet.
 - Users will generate transactions when sending NFT's and FT's
 - Users will generate transactions when withdrawing platform participation rewards into Cardano stables.
 - Users will generate transactions when minting their referral code as an NFT.
 - Users will interact with Cardano bounties
 - Users will generate transactions when staking
 - users will generate transactions when interacting with DeFi
-- Users will generate transactions when interacting with governance
+
+As for Stable coin specific transactions:\
+The platform has a bounty page where users and companies meet. Companies set bounties for users to claim based on specific activities set, the user completes the bounties and they are rewarded $BTR points. The user than can redeem those better points for their collateral USD value in the form of stable coins. This redemption process will generate transactions when users redeem their points to stablecoins. \
+Our first adoption goal is 10,000 users. we are assuming that if we reach that user adoption that each of those users will redeem at least once.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
 G O T O M A R K E T S T R A T E G I E S \
 \
-Getting in front of users and companies USERS
+Getting in front of users and companies
 
-\- Social Media / MultiMedia
+\- Social Media / MultiMedia\
+[(3) BETTER (@Web3Better) / X](https://x.com/Web3Better)
 
-\- Partner Cross Promotions and Marketing
+[(1) Instagram](https://www.instagram.com/web3better/)
 
-\- Incentivized onboarding via referral code
+[TikTok - Make Your Day](https://www.tiktok.com/@better.web3)
 
-\- Incentivized daily participation
+\- Partner Cross Promotions and Marketing\
+Partner: [Nexus Prospera](https://www.nexusprospera.com/)
 
-\- Incentivized engagement- \[Redacted\]
+\- Onboarding via referral code
 
+\- Daily participation & Engagement Bounties
+
+\
 COMPANIES
 
-\- Free dApp Ecosystem Map Feature
+\- Free dApp listing in dApp explorer
 
-\- Quantifiable Metrics of Potential Users Funnel
+\- Conversion based customer cquisition funnel
 
-\- Product / Service integration into BETTER
-
-\- \[Redacted\]
+\- Product / Service integration into BETTER\
+\
+Evidence to back our claims:\
+1- as mentioned above there are two close examples of similar platforms "Galxe and Layer3" both which do not support Cardano, and both require users to already have wallets.\
+BETTER onboards users in 10 seconds, creates wallets for the user and instantly exposes them to what the Cardano ecosystem has to offer.
 
 ### Is the underlying project open source?
 
@@ -83,17 +100,18 @@ Positioned where our competitors are not. Galxe and Layer3 serve crypto-natives 
 
 ### Please provide details about the Technology Readiness Level selected for your existing product
 
-BETTER web3 is build but we currently do not support USDCx or USDM                                     
+BETTER web3 is build but we currently do not support USDCx or USDM. we would like to offer Cardano stable coins to our users.
 
 ### What is your on-chain architecture, and why is it the right fit for selected integration(s) and this area of interest's technical requirements?
 
-BETTER Web3 supports Cardano the following ways:\
-- Wallet creation at point of onboarding\
-- Primordial wallet functionality\
-- Cardano App Explorer\
-- Cardano staking\
-- Cardano Defi \
-- Cardano incentivized marketing funnels\
+BETTER Web3 supports Cardano the following ways:
+
+- Wallet creation at point of onboarding
+- Primordial wallet functionality
+- Cardano App Explorer
+- Cardano staking
+- Cardano Defi 
+- Cardano incentivized marketing funnels
 - and more.
 
 ### Fits the timeline
@@ -120,7 +138,7 @@ Incorporated entity
 
 Swift and incentivized onboarding of global users in the 18-40 year old target audience via familiar log-in path and multilingual UI/UX.\
 \
-                                                                                 
+Our target market is the "no previous experience crypto curious" audience. bringing new people, not competing for the existing.
 
 ### Applicant name
 
@@ -134,7 +152,7 @@ The Perpetual Treasury Leverage System
 
 100% of revenue and investor capital is permanently allocated to a protected corporate treasury that is never spent. Operations run exclusively on the yield it generates.\
 \
-Note: BETTERweb3 is live on production although not launched to the public. the platform comes with no financial burden, the grant we are requesting is for specific stablecoin integration.
+Note: BETTERweb3 is live on production although not launched to the public. the platform comes with no financial burden, the grant we are requesting is for stablecoin integration specifically ahead of the alphagrowth DeFi primitive implementations.
 
 ### Named, verifiable team
 
@@ -146,7 +164,10 @@ Yes
 
 ### What does this funding enable that wouldn't happen otherwise - and, at a high level, what will it be spent on?
 
-This grant funding would enable Cardano stable coins as the incentive value vehicle rather than a speculative token.
+The BETTER platform has a bounty system where companies align incentives via bounties, once this bounties are completed the bounty hunter will redeem the bounty in the form of stable coins.\
+\
+We are applying for this grant to implement a smart contract based stable coin bounty redemption function in the platform.\
+The money will be used to develop and audit the contract for the bounty redemption system.
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -158,7 +179,12 @@ Yes
 
 ### M1 outputs: what measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
 
-BetterWeb3 is a live platform on ten blockchains with Cardano ADA wallets in production and a built in incentive engine of bounties, quests, and daily rewards. In three months we ship: 1) USDM and USDCx support in our wallet, live in production, with balances, transfers, history, and Cardano scan links; policy IDs declared at delivery. 2) A mainnet incentive funnel: a real user completes a bounty and receives or sends USDM or USDCx, built on our proven bounty engine so the flow repeats without failure. 3) A verifiable footprint: every platform transaction carries our registered message tag via CIP 20 metadata; declared identifiers cover policy IDs, team wallets, and any script hashes; the existing ADA wallet is excluded. 4) Real external users transacting on mainnet, with hashes mapped to flow steps and explorer links. 5) Demo Day: live URL, walkthrough video, release notes, repo tag, test evidence bundle.
+BetterWeb3 is a live platform on ten blockchains with Cardano ADA wallets in production and a built in incentive engine of bounties, quests, and daily rewards. In three months we ship:\
+ 1) USDM and USDCx support in our wallet, live in production, with balances, transfers, history, and Cardano scan links; policy IDs declared at delivery. \
+2) A mainnet incentive funnel: a real user completes a bounty and receives $BTR points than redeems USDM or USDCx, built on our proven bounty engine so the flow repeats without failure. \
+3) A verifiable footprint: every platform transaction carries our registered message tag via CIP 20 metadata; declared identifiers cover policy IDs, team wallets, and any script hashes; the existing ADA wallet is excluded. \
+4) Real external users transacting on mainnet, with hashes mapped to flow steps and explorer links. 5) Demo Day: live URL, walkthrough video, release notes, repo tag, test evidence bundle.\
+5) Stablecoin redemption via audited smart contract.
 
 ### How far along is the integration you're proposing, today?
 
@@ -225,7 +251,7 @@ Yes
 
 ### Stablecoins - expected transaction count
 
-100000
+10000
 
 ### Standard read and attested
 
@@ -233,8 +259,10 @@ Yes
 
 ### Stablecoins - fee target (ADA)
 
-15000
+1500
 
 ### Please provide details about the Technology Readiness Level selected for the integration you're proposing
 
-We would be using the development grant fund to start and complete the stablecoin integration.      
+We would be using the development grant fund to start and complete the stablecoin integration. We are at stage 0 in this but have a very capable team.\
+\
+Keep in mind the team behind this platform are the original creators of Aiken and also one of the original implementors and maintainers of the USDCx integration.

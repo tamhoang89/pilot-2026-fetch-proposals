@@ -7,11 +7,11 @@
   "title": "The Grid Protocol: USDCx-to-USD for Local Businesses",
   "tagline": "Metro Atlanta has real ADA/stablecoin holders with no local businesses to spend at. The Grid Protocol builds the missing supply side: USDCx to real fiat, no crypto exposure for the business.",
   "requestedAmount": 100000,
-  "updatedAt": 1787566554908,
+  "updatedAt": 1787590485032,
   "returnedForRework": false,
   "formData": {
     "trl": "TRL 9 - Actual system proven in operational environment",
-    "team": "Alonzo G. founder and operator, brings 20 years as an L3 Support Analyst and IT infrastructure consultant, plus 4 years of Azure/Microsoft 365 cloud solutions experience — the same systems-reliability discipline this integration depends on, since a payout pipeline touching real business funds needs to be built and monitored like production infrastructure. Alonzo has also been an active Cardano community member for 6 years, and is an active member of the ABC Atlanta Black Chambers, connecting this work directly to the local business community it's designed to reach.\n\nMore importantly, this isn't a team proposing to build from a standing start: we already operate The Grid Protocol as a live product — registration and moderation pipeline, KYB verification via Didit, Stripe-based booking and payments with real refund handling, and an owner-facing dashboard with CSV/PDF export — all shipped and running with 40 real business sign-ups. This proposal adds Cardano-specific integration on top of infrastructure we've already proven we can build and operate reliably.\n\nFor the parts outside our core expertise, we're not overreaching: Saqib Shoukat — Top Rated on Upwork, 100% Job Success score, 19 completed jobs, 1,400+ hours delivered, with production Stripe payment integration experience — is contracted to build the Transak Stream and MoonPay off-ramp integration, and an independent third-party security firm (Cyberscope or Zealynx Security) audits it before launch.",
+    "team": "Alonzo G., founder/operator, brings 20 years as an L3 Support Analyst and IT infrastructure consultant, plus 4 years in Azure/M365 cloud solutions — the systems-reliability discipline a payout pipeline touching real funds demands. He's also a 6-year active Cardano community member and a member of the ABC Atlanta Black Chambers, connecting this work to the local business community it serves.\\\n<https://www.linkedin.com/in/alonzo-green-989581303>\n\nThis isn't a standing start — The Grid Protocol is already live: registration/moderation pipeline, KYB via Didit, Stripe-based bookings and payments with real refunds, and an owner dashboard with CSV/PDF export, all running with 40 real business sign-ups. This proposal adds Cardano integration on top of infrastructure we've already built and operate.\n\nFor work outside our core expertise, we're not overreaching: Saqib Shoukat — Top Rated on Upwork, 100% JSS, 1,400+ hours delivered, production Stripe integration experience — is contracted for the Transak Stream/MoonPay off-ramp build. An independent security firm (Cyberscope or Zealynx) audits it before launch.\\\n<https://github.com/saqibshoukat1>",
     "eligArea": true,
     "giveBack": "N/A",
     "m2Target": "**Milestone Outputs:**\n\nCompletion of the Adoption phase and project close using the declared measurement structure: a one-epoch entry ramp from your M1 delivery, then six floored 5-day epochs - with extra epochs earned by delivering early - under the Standard's per-epoch floors and daily cap. The whole project completes within the program's four-month frame.\n\nYour declared adoption targets, restated from your answers. They drive the M2 payout and the Transaction Integrity checks, and are final at submission:\n\n- Stablecoins: 306 transactions expected, 260 ADA in counted fees\n\n**Acceptance criteria**\n\n1. The measurement window ran as declared at M1 delivery: the one-epoch entry ramp plus your floored epochs, including any extra epochs earned by early delivery.\n2. Per-epoch floors observed, with at most the Standard's one free miss.\n3. Counted totals respect the daily cap: a single day may exceed the Standard's share of your measurement-period total, but the excess does not count toward it.\n4. At least the Standard's minimum of distinct external wallets transacted with your integration during the window.\n5. All measured activity derives from the declared identifiers and complies with the [Transaction Integrity Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard#transaction-integrity-standard).\n\n**Evidence of milestone completion**\n\n1. Adoption summary statement: your actuals against each declared target.\n2. Per-epoch table: epoch number, date range, transactions and counted fees, daily cap applied (y/n), floor met (y/n), notes.\n3. Raw explorer and dashboard links for the declared identifiers.\n4. Short methodology note: how counts and fees were derived from the declared identifiers.\n5. A completion video (1-3 mins) is shared via YouTube showcasing the project outputs.\n6. Any additional cross-checks.",
@@ -19,6 +19,7 @@
     "goToMarket": "We're not starting from zero — reach and onboarding channels are already proven, not hypothetical. Our existing 40-business cohort is the recruitment pool for the pilot: they're already signed up, already KYB-verified, and already using the platform, so onboarding them to a new payout option is a feature announcement to an existing user base, not cold outreach.\n\nFor business-side growth, the ABC Atlanta Black Chambers network — where our operator is an active member — gives direct, warm access to member businesses.\n\nFor consumer/holder-side awareness, we use Cardano's own community channels where crypto holders already gather looking for ways to use their holdings, alongside geo-targeted metro Atlanta outreach. Because four to five businesses in the base ship goods nationally via EasyPost, the Cardano channel reaches buyers who can actually transact rather than only those in Atlanta. Evidence backing these channels: the 40 existing sign-ups themselves.",
     "m1Evidence": "These acceptance criteria and evidence apply to your declared integration(s) - at delivery you'll specify where each appears in the product, which user flows depend on it, and the identifier(s) that evidence it:\n\n- Stablecoins\n\n**Acceptance Criteria:**\n\n1. At least one full end-to-end mainnet transaction by a real user (please refer to [the Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard)), and the flow repeats without failure - the submitted transaction hashes show independent runs of the declared flow.\n2. The declared footprint is complete and valid: nothing pre-existing declared, and all submitted evidence matches the declared identifiers and flows.\n3. Release notes accurately describe architecture, scope, and limitations.\n4. Live demo and Q&A delivered at Demo Day using the same identifiers and flows (participation is required). Demo Day sign-off admits the project into the entry epoch of its adoption measurement window.\n\n**Evidence:**\n\n1. Live product URL.\n2. At least one transaction hash mapped to flow steps, with explorer links.\n3. The declared footprint as described in the [Proof of Adoption & Standard](https://docs.projectcatalyst.io/open-funding/funding-basics/proof-of-adoption-and-standard): script hashes, policy IDs, addresses, token/NFT names (if any), registered message tag, team wallets.\n4. Short technical walkthrough demonstration video.\n5. Release notes.\n6. Repo URL + tag/commit (if project is open source).\n7. Test evidence bundle: checklist, bug log, security note.\n8. Present outputs at Demo Day.",
     "openSource": true,
+    "pitchVideo": "https://www.youtube.com/watch?v=qFhVLA3-cA0",
     "competitors": "Crypto debit cards (Coinbase Card, [Crypto.com](http://Crypto.com)) let holders spend crypto via Visa rails, but offer no local discovery and no Cardano-specific focus. Crypto-payment processors (BitPay, Strike) let individual businesses accept crypto, but each must integrate and market it separately — no existing audience already browsing to find them.\n\nThe Grid Protocol combines both: a live, already-used local directory (40 sign-ups, real bookings) plus built-in USDCx acceptance with zero setup burden — no wallet, no integration, funds arrive as USD automatically. Businesses get discovery and payment together; customers get a map of real, KYB-verified businesses that accept what they hold. No competitor pairs Cardano-native stablecoin acceptance with an active local discovery platform.",
     "trlEvidence": "The Grid Protocol itself is TRL 9 — an actual system proven in an operational environment, not a lab result or pilot claim. It is live in production at [thegridprotocol.com](http://thegridprotocol.com) with 40 real business sign-ups, a working registration and moderation pipeline, KYB verification via Didit processing real approvals, a live Stripe-based booking and payments system handling real transactions and refunds, and an owner-facing sales/payments dashboard with CSV/PDF export already in daily use. This proposal does not build a new product; it adds a Cardano-specific payment integration onto infrastructure that has already been operating since July 2026.",
     "architecture": "Our on-chain architecture deliberately avoids building or deploying any new smart contracts on Cardano. Each participating business receives a standard Cardano wallet address (UTXO-based, generated via standard Cardano tooling), displayed on their Grid Protocol profile. Incoming USDCx transactions to that address are monitored off-chain via a Cardano data provider (Blockfrost or Koios), triggering our dashboard to reflect activity in near-real time.\n\nConversion itself happens through Circle's existing xReserve smart contract system, which redeems USDCx 1:1 for USDC non-custodially — we do not write or operate any conversion logic on-chain ourselves. The final USDC-to-USD off-ramp is handled by a licensed money-services provider — Transak Stream as primary, MoonPay as named fallback — via their off-ramp APIs.\n\nThis architecture is the right fit for a stablecoin-integration pilot because it composes already-audited, already-live Cardano and cross-chain infrastructure rather than introducing new on-chain code and its associated security surface. Our engineering effort goes entirely into integration and UX — the off-chain dashboard, monitoring, and business onboarding — which matches both our team's actual expertise and the pilot's preference for low-risk, real-world integrations onto existing working products rather than novel protocol development.",
@@ -42,11 +43,13 @@
     "eligClearBudget": true,
     "eligGenuineWork": true,
     "eligOneProposal": true,
-    "problemSolution": "The Grid Protocol is a live directory platform ([thegridprotocol.com](http://thegridprotocol.com)) connecting Atlanta businesses with customers via an interactive map  40 business sign-ups, a working KYB pipeline, and a live Stripe-based booking and payments system.\n\nWe're building a licensed USDCx-to-USD conversion and payout pipeline, integrated into our existing business dashboard, so local ADA and stablecoin holders can pay for real goods and services at Grid Protocol businesses, while the business receives predictable US dollars in their bank account no wallet or crypto literacy required.\n\nThe problem: roughly one in four American adults now own cryptocurrency, and Atlanta has an active Cardano and crypto community, but holders currently have no way to spend it at local businesses they already support. Meanwhile, local businesses — particularly Black-owned businesses, a meaningful share of our sign-ups  have limited low-friction ways to reach new customers or get paid without cash handling or middleman fees.\n\nUSDCx is dollar-pegged and backed 1:1 by USDC, removing price volatility for the business. Conversion and payout are handled by a licensed third-party off-ramp provider — Transak Stream as primary, MoonPay as named fallback, so no party ever holds custody or signing keys, and no money-transmitter burden falls on our platform.\n\nThis gives Cardano a real, documented example of a stablecoin becoming spendable money in the local physical economy.",
+    "problemSolution": "The Grid Protocol is a live directory platform (www.[thegridprotocol.com](http://thegridprotocol.com)) connecting Atlanta businesses with customers via an interactive map 40 business sign-ups, a working KYB pipeline, and a live Stripe-based booking and payments system.\n\nWe're building a licensed USDCx-to-USD conversion and payout pipeline, integrated into our existing business dashboard, so local ADA and stablecoin holders can pay for real goods and services at Grid Protocol businesses, while the business receives predictable US dollars in their bank account no wallet or crypto literacy required.\n\nThe problem: roughly one in four American adults now own cryptocurrency, and Atlanta has an active Cardano and crypto community, but holders currently have no way to spend it at local businesses they already support. Meanwhile, local businesses — particularly Black-owned businesses, a meaningful share of our sign-ups have limited low-friction ways to reach new customers or get paid without cash handling or middleman fees.\n\nUSDCx is dollar-pegged and backed 1:1 by USDC, removing price volatility for the business. Conversion and payout are handled by a licensed third-party off-ramp provider — Transak Stream as primary, MoonPay as named fallback, so no party ever holds custody or signing keys, and no money-transmitter burden falls on our platform.\n\nThis gives Cardano a real, documented example of a stablecoin becoming spendable money in the local physical economy.",
     "supportingLinks": [
       "https://thegridprotocol.com",
       "https://www.linkedin.com/in/alonzo-green-989581303",
-      "https://github.com/saqibshoukat1?tab=overview&from=2025-12-01&to=2025-12-31"
+      "https://github.com/saqibshoukat1?tab=overview&from=2025-12-01&to=2025-12-31",
+      "https://www.youtube.com/watch?v=34gLWCUHhkg",
+      "https://atlantablackchambers.org/"
     ],
     "eligDependencies": true,
     "eligGoodStanding": true,
@@ -64,16 +67,16 @@
   },
   "createdAt": 1787199223818,
   "headRevision": {
-    "id": "af1828f2-b21e-4e1f-9406-88d94955defe",
-    "number": 37,
+    "id": "afa931af-eedd-40c6-bd4b-f2d0e4558d61",
+    "number": 42,
     "kind": "saved",
-    "createdAt": 1787566510868
+    "createdAt": 1787590466452
   },
   "latestFinalization": {
-    "id": "17a3e3aa-a39c-4e92-9a52-b748bf19fdeb",
-    "cycle": 3,
-    "revisionId": "af1828f2-b21e-4e1f-9406-88d94955defe",
-    "finalizedAt": 1787566554908
+    "id": "c6762650-d24f-4244-b561-738eb9bf1c6f",
+    "cycle": 4,
+    "revisionId": "afa931af-eedd-40c6-bd4b-f2d0e4558d61",
+    "finalizedAt": 1787590485032
   },
   "campaign": {
     "id": "6c4b4dd9-0000-5575-a5d3-d2ef6765893d",
@@ -90,7 +93,7 @@
         "key": "submission",
         "window": {
           "startsAt": 1785996000000,
-          "endsAt": 1787572800000
+          "endsAt": 1787594400000
         },
         "functions": [
           {
@@ -104,14 +107,14 @@
             "key": "finalize",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787572800000
+              "endsAt": 1787594400000
             }
           },
           {
             "key": "withdraw",
             "window": {
               "startsAt": 1785996000000,
-              "endsAt": 1787572800000
+              "endsAt": 1787594400000
             }
           }
         ]
