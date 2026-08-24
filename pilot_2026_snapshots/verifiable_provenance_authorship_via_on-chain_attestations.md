@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 95
+- **Revision:** 104
 - **Proposer:** `stake1uxnuuh3h9ppxh9ru9zqs044fendnahp84afcrwelpsfxalqjv9mhr`
 - **Funding requested:** ₳125,000
-- **Last finalized:** 2026-08-24T11:58:00.472000+00:00
+- **Last finalized:** 2026-08-24T14:55:59.552000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -61,44 +61,41 @@ Yes
 
 ### How will your product generate genuine usage - who transacts, why, and how often? Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
 
-PubWeave supports blog\[s\] → preprint → final (optional stages); bloggers, journalists, academics all fit.
+PubWeave supports blog\[s\] → preprint → final as optional stages; bloggers, journalists, academics all fit.
 
-Timestamping recurs throughout creation for:
-
-- founders: notes/drafts/pitch decks
-- researchers: datasets/analyses/revisions
-
-creating multiple txs/user/week, not just at publication.
+Timestamping recurs throughout creation for bloggers, journalists and founders (notes/drafts/pitch decks), and researchers (datasets/analyses/revisions) creating multiple txs/user/week.
 
 Our success metric is sustained use: users with an existing need for provenance generate recurring transactions as they develop, revise, and finalize content.
 
-The advantages:
+Our value prop:
 
 - Provable authorship (priority disputes, patent claims)
 - Verifiable peer review trail
 - Reputation anchored in KERI, traveling with the writer
 
-This provides a credible path to reach 750 transactions in three months while generating feedback to support broader adoption.
+Assuming busy writers (journalists, bloggers, founders) roughly execute 10 CIP-0170 attestations per week, we will target onboarding at least 10 new writers each week, coming back regularly. At \~10 att/week:
 
-Assuming a paper generates &gt;50 attestations; 2 per year, &gt;100/y. Journalists and bloggers have a more dynamic writing style; let's estimate 200/y. On average 3 CIP-0170 attestations per week.
+- 1 -&gt; 10 users, 100 att
+- 2 -&gt; 20 users, 200 att
+- 3 -&gt; 35 users, 350 att
+- 4 -&gt; 50 users, 500 att
 
-First 14 days: onboarding \~5 new writers each week @ 3/week coming back regularly. Weeks 1 and 2 would see 12 and 24 attestations, with a total of 36.
+Ramping to 50 writers over 4 weeks should yield 1150 attestations over the measurement window of 6 epochs.
 
-Ramping to 30 researchers and 30 writers over a 12-week window would produce \~936 attestations.
+To reduce unpredictability and maximize our chances, we will seek to publish to mainnet 2-4 weeks in advance, accounting for a possible slow ramp-up.
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
 Adoption channels:
 
-1. Day 1: Albert Feghaly's biotech consulting network. 2-3 actionable networks to target.
+1. Before M1 completion: Albert Feghaly's biotech consulting network. 2-3 actionable networks to target.
 2. Week 1: Blockchain/innovation communities. Targets wallet-holding founders, analysts, writers whose workflows naturally generate timestampable events.
-3. Weeks 1-2: Puzzlewood conversion machine. Messaging workshop, landing page conversion design, 2-min explainer video, content blitz (2–3 articles), early-adopter webinar, real-life event attendance. Drives funnel: visit → sign up → bind ORCID → first attestation.
-4. Weeks 2-4:  Targeted LinkedIn campaigns outreach to biotech/research connections and beyond.
-5. Month 2 and beyond: Iterate on feedback.
+3. Weeks 1-2: Puzzlewood conversion machine. Messaging workshop, landing page conversion design, 2-min explainer video, content blitz (2–3 articles), early-adopter webinar.
+4. Weeks 2-4: Targeted LinkedIn campaigns outreach to biotech/research connections and beyond.
 
-Funnel: identify communities → recruit cohort → onboard → feedback loop → expand via referrals.
+Drives funnel: identify communities → recruit cohort → onboard → visit → sign up → first attestation → feedback loop → expand.
 
-Timeline: Blockchain-native users (wallets, low friction) convert first; Albert's network provides trust anchor; Puzzlewood optimizes conversion; academic onboarding deferred to weeks 3–4 as lower-priority/high-upside channel.
+Timeline: Blockchain-native users (wallets, low friction) and "dynamic writers" (bloggers, journalists) are prioritized at the beginning: convert first; Albert's network provides the trust anchor; Puzzlewood optimizes conversion; academic onboarding deferred to weeks 3–4 as lower-priority/higher-upside channel.
 
 ### Is the underlying project open source?
 
@@ -252,7 +249,7 @@ B. Thespian and Intellart: 25k ADA
 
 - Outreach, social, maintenance, bug fixes, contract updates, feedback loops
 
-*Note: Intellart will fund adoption out-of-pocket and absorb losses if target is not met or CIP-0170  is not ready.*
+*Note: Intellart fully commits to paying Puzzlewood and Thespian regardless of target or CIP-0170 readiness outcome.*
 
 ### I confirm that I have read, understood and shall adhere to the Terms & Conditions, Fund Rules, Proof of Adoption & Standard, and Privacy Policy. I understand that providing accurate and truthful information is essential for my proposal to remain eligible to participate in the current Fund.
 
@@ -310,6 +307,7 @@ In practice, a writer self-anchors a signed authorship record via their own irre
 
 - https://www.pubweave.com
 - https://github.com/Intellart
+- https://www.pubweave.com/files/Puzzlewood_Marcom_Catalyst.pdf
 
 ### Identified dependencies
 
