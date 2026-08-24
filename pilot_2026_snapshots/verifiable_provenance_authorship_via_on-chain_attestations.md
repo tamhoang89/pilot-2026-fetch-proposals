@@ -5,10 +5,10 @@
 ## Proposal Metadata
 
 - **Status:** finalized
-- **Revision:** 104
+- **Revision:** 109
 - **Proposer:** `stake1uxnuuh3h9ppxh9ru9zqs044fendnahp84afcrwelpsfxalqjv9mhr`
 - **Funding requested:** ₳125,000
-- **Last finalized:** 2026-08-24T14:55:59.552000+00:00
+- **Last finalized:** 2026-08-24T16:47:12.525000+00:00
 
 ### What is the current status and Technology Readiness Level of your existing product?
 
@@ -22,7 +22,7 @@ Intellart and Thespian have handled smart contracts and full stack, interchangea
 
 Puzzlewood will now manage marketing and communication (the missing piece).
 
-Albert Feghaly (Intellart) — <https://www.linkedin.com/in/albert-feghaly-28060a113/>
+**Neurocan Inc. (DBA Intellart)**: Albert Feghaly — <https://www.linkedin.com/in/albert-feghaly-28060a113/>
 
 - Intellart Project lead
 
@@ -32,19 +32,13 @@ Albert Feghaly (Intellart) — <https://www.linkedin.com/in/albert-feghaly-28060
 
 - Design architect and developer of PubWeave's treasury Plutus smart contracts
 
-Rebecca Johnston (Puzzlewood) — <https://www.linkedin.com/in/puzzlewood/>
+**Puzzlewood Communications Inc.**: Rebecca Johnston — <https://www.linkedin.com/in/puzzlewood/>
 
 - Principal at Puzzlewood Communication Inc. since 2008
 - Specializes in science and technology communication
-- Co-author of PubWeave's positioning narrative
+- Leads a network of specialist subcontractors supporting messaging, content development, design, digital campaigns, web development, and audience engagement
 
-Megan Helmer (Puzzlewood) — <https://www.linkedin.com/in/meganhelmer/>
-
-- Partner at Puzzlewood Communication Inc. since 2021
-- MA in Professional Communication
-- Co-author of PubWeave's positioning narrative
-
-Thespian d.o.o. — <https://www.linkedin.com/company/thespian-eu/>
+**Thespian d.o.o.** — <https://www.linkedin.com/company/thespian-eu/>
 
 - Full-cycle software development: product dev, modernization, staff augmentation, consulting
 - Tech stack: JavaScript, React.js, Ruby on Rails, Node.js, Elixir, Haskell, Cardano smart contracts
@@ -65,11 +59,11 @@ PubWeave supports blog\[s\] → preprint → final as optional stages; bloggers,
 
 Timestamping recurs throughout creation for bloggers, journalists and founders (notes/drafts/pitch decks), and researchers (datasets/analyses/revisions) creating multiple txs/user/week.
 
-Our success metric is sustained use: users with an existing need for provenance generate recurring transactions as they develop, revise, and finalize content.
+Initial users are intentionally recruited from existing blockchain, creator, startup, and research communities to validate usage patterns before broader institutional adoption.
 
 Our value prop:
 
-- Provable authorship (priority disputes, patent claims)
+- Provable authorship (patent claims)
 - Verifiable peer review trail
 - Reputation anchored in KERI, traveling with the writer
 
@@ -86,16 +80,16 @@ To reduce unpredictability and maximize our chances, we will seek to publish to 
 
 ### How will you reach and onboard real users - and what evidence backs your channels?
 
-Adoption channels:
+Channels:
 
-1. Before M1 completion: Albert Feghaly's biotech consulting network. 2-3 actionable networks to target.
-2. Week 1: Blockchain/innovation communities. Targets wallet-holding founders, analysts, writers whose workflows naturally generate timestampable events.
-3. Weeks 1-2: Puzzlewood conversion machine. Messaging workshop, landing page conversion design, 2-min explainer video, content blitz (2–3 articles), early-adopter webinar.
-4. Weeks 2-4: Targeted LinkedIn campaigns outreach to biotech/research connections and beyond.
+1. During M1: Albert Feghaly's biotech consulting network. 3 actionable targets.
+2. Week 1: Targeted outreach to wallet-holding founders, analysts, technical writers, and blockchain-native creators in Cardano communities. Existing wallets reduce onboarding friction and accelerate early adoption.
+3. Week 2: Audience-specific onboarding campaigns: targeted LinkedIn outreach, educational content, webinars, and landing-page conversion focused on blockchain-native creators, startup founders, and research innovators.
+4. Weeks 3-4: Targeted LinkedIn campaigns outreach to biotech/research connections and beyond.
 
-Drives funnel: identify communities → recruit cohort → onboard → visit → sign up → first attestation → feedback loop → expand.
+Funnel: Identify communities → recruit → onboard → visit → sign up → first attestation → feedback loop → expand.
 
-Timeline: Blockchain-native users (wallets, low friction) and "dynamic writers" (bloggers, journalists) are prioritized at the beginning: convert first; Albert's network provides the trust anchor; Puzzlewood optimizes conversion; academic onboarding deferred to weeks 3–4 as lower-priority/higher-upside channel.
+Timeline: Initial recruitment focuses on Cardano natives. Albert's network provides the trust anchor. Puzzlewood's marcom strategy converts early adopters into active users. The pilot prioritizes validation, feedback, and recurring usage within this cohort.
 
 ### Is the underlying project open source?
 
@@ -301,7 +295,7 @@ We propose a verifiable provenance and authorship layer for research outputs via
 
 This technology would enable researchers, funders, reviewers and journal editors to prove authorship and priority using an audit trail they don't have to take anyone's word for. Moreover, ethics boards investigating misconduct, and judicial systems attributing IP rights, would have a tamper-proof, universally verifiable timestamped source to validate their assessments, especially in cross-border or adversarial collaborations where no single institution's record is accepted as authoritative.
 
-In practice, a writer self-anchors a signed authorship record via their own irrevocable receipt.
+The value lies not only in proving ownership of finished work, but in creating an auditable record throughout the creative and research process.
 
 ### Supporting links (repo, site, demo)
 
